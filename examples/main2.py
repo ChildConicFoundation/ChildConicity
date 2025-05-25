@@ -548,5 +548,10 @@ def main():
     pruebas_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "pruebas")
     os.makedirs(pruebas_dir, exist_ok=True)
     plotter.plot_iconicity_distribution_by_age_group(save_dir=pruebas_dir)
+    
+    # Generar gráfica de distribución de iconicidad para todos los grupos de adultos
+    print("\nGenerando gráfica de distribución de iconicidad para todos los grupos de adultos...")
+    plotter.plot_all_adults_iconicity_distribution(os.path.join(pruebas_dir, 'distribucion_iconicidad_todos_adultos.png'))
+
 if __name__ == "__main__":
     main()  

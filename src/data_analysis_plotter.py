@@ -365,6 +365,82 @@ class DataAnalysisPlotter:
                 plt.show()
                 plt.close()
 
+    def plot_all_adults_iconicity_distribution(self, save_path: str = None):
+        """
+        Genera una gráfica que muestra la distribución acumulativa de iconicidad para todos los grupos de edad
+        de adultos superpuestos en una sola gráfica.
+        
+        Args:
+            save_path (str, optional): Ruta donde guardar la gráfica. Si es None, la gráfica se muestra en pantalla.
+        """
+        plt.figure(figsize=(12, 8))
+        
+        # Obtener el rango global de iconicidad
+        min_rating = float('inf')
+        max_rating = float('-inf')
+        
+        # Primera pasada para obtener el rango global
+        for age_group, stats in sorted(self.data.items()):
+            adults_words_with_rating = stats['adults']['iconic_words']
+            if adults_words_with_rating:
+                ratings = [word_data['rating'] for word_data in adults_words_with_rating.values()]
+                min_rating = min(min_rating, min(ratings))
+                max_rating = max(max_rating, max(ratings))
+        
+        if min_rating == float('inf') or max_rating == float('-inf'):
+            print("No hay datos de iconicidad para adultos en ningún grupo de edad")
+            return
+        
+        # Crear bins para la iconicidad
+        x_axis = np.arange(min_rating, max_rating + 0.25, 0.25)
+        
+        # Plotear cada grupo de edad
+        for age_group, stats in sorted(self.data.items()):
+            adults_words_with_rating = stats['adults']['iconic_words']
+            if not adults_words_with_rating:
+                continue
+                
+            # Crear lista de (rating, count) y ordenarla
+            ratings_counts = [(word_data['rating'], word_data['count']) 
+                            for word_data in adults_words_with_rating.values()]
+            sorted_ratings = sorted(ratings_counts, key=lambda x: x[0])
+            
+            # Calcular distribución acumulativa
+            total_words = sum(count for _, count in sorted_ratings)
+            cumulative = np.zeros(len(x_axis))
+            
+            current_count = 0
+            current_bin = 0
+            for rating, count in sorted_ratings:
+                while current_bin < len(x_axis) and rating > x_axis[current_bin]:
+                    cumulative[current_bin] = current_count
+                    current_bin += 1
+                current_count += count
+            
+            # Actualizar el último bin y los restantes
+            for i in range(current_bin, len(x_axis)):
+                cumulative[i] = current_count
+            
+            # Plotear la línea para este grupo de edad
+            plt.plot(x_axis, cumulative/total_words * 100, 
+                    label=f'Grupo {age_group}', 
+                    marker='o', 
+                    markersize=4,
+                    alpha=0.7)
+        
+        plt.xlabel('Iconicidad')
+        plt.ylabel('Porcentaje acumulado de palabras (%)')
+        plt.title('Distribución acumulativa de iconicidad para todos los grupos de edad (Adultos)')
+        plt.legend(bbox_to_anchor=(1.05, 1), loc='upper left')
+        plt.grid(True)
+        plt.tight_layout()
+        
+        if save_path:
+            plt.savefig(save_path, bbox_inches='tight', dpi=300)
+        else:
+            plt.show()
+        plt.close()
+
 
 
 def print_valid_words_statistics(valid_words_stats):

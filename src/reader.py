@@ -141,21 +141,63 @@ class Reader:
         return match.group(1).strip().split(',') if match else []
 
     def _extract_utterances(self, content):
-        """Extrae las expresiones del archivo."""
+        """
+        Extrae las expresiones del archivo.
+        Limpia las notaciones especiales como:
+        - [= babble], (.), etc.
+        - &=babble, &=laugh, etc.
+        - Notaciones de vocalizaciones y sonidos
+        """
         utterances = []
         for line in content.split('\n'):
             if line.startswith('*'):
                 speaker, text = line.split(':', 1)
                 speaker = speaker[1:].strip()  # Eliminar el asterisco
-                # Extraer la marca de tiempo y limpiar el texto
+                
+                # Extraer la marca de tiempo
                 timestamp = self._extract_timestamp(text)
-                # Eliminar la marca de tiempo del texto
-                clean_text = re.sub(r'\d+_\d+', '', text).strip()
-                utterances.append({
-                    'speaker': speaker,
-                    'text': clean_text,
-                    'timestamp': timestamp
-                })
+                
+                # Limpiar el texto:
+                # 1. Eliminar marcas de tiempo
+                clean_text = re.sub(r'\d+_\d+', '', text)
+                
+                # 2. Eliminar notaciones entre corchetes [= xxx]
+                clean_text = re.sub(r'\[=.*?\]', '', clean_text)
+                
+                # 3. Eliminar notaciones entre paréntesis (xxx)
+                clean_text = re.sub(r'\(.*?\)', '', clean_text)
+                
+                # 4. Eliminar notaciones que empiezan con &= (vocalizaciones, sonidos, etc.)
+                clean_text = re.sub(r'&=\w+', '', clean_text)
+                
+                # 5. Eliminar notaciones de puntuación (., ?, !)
+                clean_text = re.sub(r'[.?!]', '', clean_text)
+                
+                # 6. Eliminar notaciones de vocalizaciones comunes
+                vocalizations = [
+                    r'&[a-z]+',  # Notaciones que empiezan con & (&=xxx)
+                    r'[<>]',     # Notaciones de entonación
+                    r'[()]',     # Paréntesis sueltos
+                    r'[\[\]]',   # Corchetes sueltos
+                    r'[{}]',     # Llaves
+                    r'[+-]',     # Signos + y -
+                    r'[0-9]',    # Números
+                    r'[#@]',     # Caracteres especiales
+                    r'[A-Z]',    # Letras mayúsculas sueltas (códigos)
+                ]
+                for pattern in vocalizations:
+                    clean_text = re.sub(pattern, '', clean_text)
+                
+                # 7. Eliminar espacios múltiples y espacios al inicio/final
+                clean_text = re.sub(r'\s+', ' ', clean_text).strip()
+                
+                # Solo añadir la expresión si después de la limpieza queda texto
+                if clean_text:
+                    utterances.append({
+                        'speaker': speaker,
+                        'text': clean_text,
+                        'timestamp': timestamp
+                    })
         return utterances
 
     def _extract_timestamp(self, text):

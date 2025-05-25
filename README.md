@@ -35,3 +35,76 @@ Para ver el informe de cobertura:
 2. Selecciona la última ejecución exitosa
 3. Descarga el artefacto "coverage-report"
 4. Abre el archivo `htmlcov/index.html` en tu navegador
+
+## Ejecución del Programa Principal
+
+El programa principal se encuentra en `examples/main2.py` y realiza un análisis completo de la iconicidad en el desarrollo del lenguaje infantil. Para ejecutarlo:
+
+1. Asegúrate de tener todas las dependencias instaladas:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+2. Ejecuta el programa principal:
+   ```bash
+   python3 examples/main2.py
+   ```
+
+### ¿Qué hace el programa?
+
+El programa realiza las siguientes operaciones:
+
+1. **Inicialización de Corpus**:
+   - Requiere que todos los corpus (Brent, NewEngland, Post y VanKleeck) estén ubicados dentro de la carpeta `Corpus/` en la raíz del proyecto
+   - La estructura de directorios debe ser:
+     ```
+     Corpus/
+     ├── Brent/
+     ├── NewEngland/
+     ├── Post/
+     └── VanKleeck/
+     ```
+   - Procesa los corpus y los organiza en una nueva estructura en `Corpus_modified/`
+   - Prepara los datos para su análisis
+
+2. **Análisis de Datos**:
+   - Agrupa los datos por edad en trimestres (formato YYQ)
+   - Separa las expresiones de niños y adultos
+   - Analiza la iconicidad de las palabras utilizadas
+   - Genera estadísticas detalladas por grupo de edad
+
+3. **Generación de Gráficos**:
+   - Crea gráficos de distribución de iconicidad por grupo de edad
+   - Genera gráficos comparativos de palabras icónicas vs no icónicas
+   - Produce visualizaciones separadas para adultos y niños
+   - Los gráficos se guardan en:
+     - `iconic_vs_noniconic/`: Gráficos de comparación general
+     - `pruebas/`: Gráficos de distribución de iconicidad
+
+### Resultados Esperados
+
+Al ejecutar el programa, obtendrás:
+
+1. **Estadísticas por Grupo de Edad**:
+   - Total de palabras utilizadas
+   - Distribución de palabras icónicas vs no icónicas
+   - Top 10 palabras más usadas en cada categoría
+   - Porcentajes de iconicidad para adultos y niños
+
+2. **Gráficos de Análisis**:
+   - Distribución de iconicidad por grupo de edad
+   - Comparativas de uso de palabras icónicas vs no icónicas
+   - Análisis separado para adultos y niños
+   - Visualización de tendencias en el desarrollo del lenguaje
+
+3. **Metadatos y Estructura**:
+   - Información detallada de los archivos procesados
+   - Estructura del corpus organizado
+   - Ejemplos de expresiones tempranas
+
+### Notas Importantes
+
+- El programa procesa una gran cantidad de datos, por lo que la ejecución puede tomar varios minutos
+- Se generan múltiples archivos de salida en diferentes directorios
+- Los resultados incluyen tanto análisis cuantitativos como visualizaciones gráficas
+- Los datos se agrupan en trimestres para facilitar el análisis del desarrollo lingüístico

@@ -298,31 +298,43 @@ def print_valid_words_statistics(valid_words_stats):
         print("\nTop 10 palabras icónicas más usadas por adultos:")
         adult_iconic = sorted(stats['adults']['iconic_words'].items(), 
                             key=lambda x: x[1]['count'], reverse=True)[:10]
+        total_top10_adult_iconic = sum(data['count'] for _, data in adult_iconic)
+        percentage_top10_adult_iconic = (total_top10_adult_iconic / total_iconic_occurrences_adults * 100) if total_iconic_occurrences_adults > 0 else 0
         for word, data in adult_iconic:
             print(f"  {word}: {data['count']} usos, rating: {data['rating']}")
+        print(f"  Porcentaje de uso de las top 10 palabras icónicas: {percentage_top10_adult_iconic:.1f}% del total de palabras icónicas")
         
         # Top 10 palabras icónicas más usadas por niños
         print("\nTop 10 palabras icónicas más usadas por niños:")
         child_iconic = sorted(stats['children']['iconic_words'].items(), 
                             key=lambda x: x[1]['count'], reverse=True)[:10]
+        total_top10_child_iconic = sum(data['count'] for _, data in child_iconic)
+        percentage_top10_child_iconic = (total_top10_child_iconic / total_iconic_occurrences_children * 100) if total_iconic_occurrences_children > 0 else 0
         for word, data in child_iconic:
             print(f"  {word}: {data['count']} usos, rating: {data['rating']}")
+        print(f"  Porcentaje de uso de las top 10 palabras icónicas: {percentage_top10_child_iconic:.1f}% del total de palabras icónicas")
         print("-" * 50)
 
         # Top 10 palabras no icónicas más usadas por niños
         print("\nTop 10 palabras NO icónicas más usadas por niños:")
         child_non_iconic = sorted(stats['children']['non_iconic_words'].items(), 
                             key=lambda x: x[1], reverse=True)[:10]
+        total_top10_child_non_iconic = sum(count for _, count in child_non_iconic)
+        percentage_top10_child_non_iconic = (total_top10_child_non_iconic / total_non_iconic_occurrences_children * 100) if total_non_iconic_occurrences_children > 0 else 0
         for word, count in child_non_iconic:
             print(f"  {word}: {count} usos")
+        print(f"  Porcentaje de uso de las top 10 palabras no icónicas: {percentage_top10_child_non_iconic:.1f}% del total de palabras no icónicas")
         print("-" * 50)
 
-                # Top 10 palabras no icónicas más usadas por niños
+        # Top 10 palabras no icónicas más usadas por adultos
         print("\nTop 10 palabras NO icónicas más usadas por adultos:")
-        child_non_iconic = sorted(stats['adults']['non_iconic_words'].items(), 
+        adult_non_iconic = sorted(stats['adults']['non_iconic_words'].items(), 
                             key=lambda x: x[1], reverse=True)[:10]
-        for word, count in child_non_iconic:
+        total_top10_adult_non_iconic = sum(count for _, count in adult_non_iconic)
+        percentage_top10_adult_non_iconic = (total_top10_adult_non_iconic / total_non_iconic_occurrences_adults * 100) if total_non_iconic_occurrences_adults > 0 else 0
+        for word, count in adult_non_iconic:
             print(f"  {word}: {count} usos")
+        print(f"  Porcentaje de uso de las top 10 palabras no icónicas: {percentage_top10_adult_non_iconic:.1f}% del total de palabras no icónicas")
         print("-" * 50)
 
 def print_directory_structure(data, level=0):
@@ -552,6 +564,10 @@ def main():
     # Generar gráfica de distribución de iconicidad para todos los grupos de adultos
     print("\nGenerando gráfica de distribución de iconicidad para todos los grupos de adultos...")
     plotter.plot_all_adults_iconicity_distribution(os.path.join(pruebas_dir, 'distribucion_iconicidad_todos_adultos.png'))
+
+    # Generar gráfica de distribución de iconicidad para todos los grupos de niños
+    print("\nGenerando gráfica de distribución de iconicidad para todos los grupos de niños...")
+    plotter.plot_all_children_iconicity_distribution(os.path.join(pruebas_dir, 'distribucion_iconicidad_todos_ninos.png'))
 
 if __name__ == "__main__":
     main()  

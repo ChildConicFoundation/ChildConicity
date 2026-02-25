@@ -1,4 +1,4 @@
-from src.reader import Reader
+from src.data_io.reader import Reader
 
 class DataFormatter:
     def __init__(self):

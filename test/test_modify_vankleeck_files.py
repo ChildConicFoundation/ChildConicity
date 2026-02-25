@@ -3,7 +3,7 @@ import os
 import shutil
 import tempfile
 from pathlib import Path
-from src.modify_vankleeck_files import extract_age, modify_cha_file, process_directory
+from src.corpus_normalizers.vankleeck_normalizer import extract_age, modify_cha_file, process_directory
 
 class TestModifyVanKleeckFiles(unittest.TestCase):
     def setUp(self):

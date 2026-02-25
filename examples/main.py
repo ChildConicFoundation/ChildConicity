@@ -2,7 +2,7 @@ import os
 import sys
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from src.brend_manipulator import BrendManipulator
+from src.corpus_normalizers.brent_normalizer import BrendManipulator
 
 def main():
     """Función principal para procesar el corpus de Brend"""

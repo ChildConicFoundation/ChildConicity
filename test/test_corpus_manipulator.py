@@ -4,7 +4,7 @@ import shutil
 import sys
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from src.corpus_manipulator import CorpusManipulator
+from src.corpus_normalizers.base_normalizer import CorpusManipulator
 
 class TestCorpusManipulator(unittest.TestCase):
     def setUp(self):

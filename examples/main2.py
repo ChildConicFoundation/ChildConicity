@@ -3,13 +3,13 @@ import os
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from examples.initialize_corpuses import main as initialize_corpuses
-from src.corpus_manipulator import CorpusManipulator
-from src.data_formatter import DataFormatter
-from src.iconicity_model import IconicityModel
-from src.reader import Reader
-from src.word_counter import WordCounter
-from src.word_dictionary_merger import WordDictionaryMerger
-from src.data_analysis_plotter import DataAnalysisPlotter
+from src.corpus_normalizers.base_normalizer import CorpusManipulator
+from src.data_io.data_formatter import DataFormatter
+from src.analysis.iconicity_model import IconicityModel
+from src.data_io.reader import Reader
+from src.analysis.word_counter import WordCounter
+from src.analysis.word_dictionary_merger import WordDictionaryMerger
+from src.visualization.data_analysis_plotter import DataAnalysisPlotter
 
 def get_age_quarter(age_str):
     """

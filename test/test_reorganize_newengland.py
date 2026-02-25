@@ -1,6 +1,6 @@
 import os
 import pytest
-from src.reorganize_newengland import extract_age, modify_cha_file, process_directory
+from src.corpus_normalizers.newengland_normalizer import extract_age, modify_cha_file, process_directory
 
 def test_extract_age():
     # Caso 1: Edad válida

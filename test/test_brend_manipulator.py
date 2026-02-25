@@ -4,7 +4,7 @@ import shutil
 import sys
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from src.brend_manipulator import BrendManipulator
+from src.corpus_normalizers.brent_normalizer import BrendManipulator
 
 class TestBrendManipulator(unittest.TestCase):
     def setUp(self):

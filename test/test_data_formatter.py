@@ -1,7 +1,7 @@
 import pytest
 import os
 import pandas as pd
-from src.data_formatter import DataFormatter
+from src.data_io.data_formatter import DataFormatter
 
 @pytest.fixture
 def formatter():

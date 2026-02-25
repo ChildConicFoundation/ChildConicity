@@ -1,7 +1,7 @@
 import os
 import pytest
 import shutil
-from src.modify_post_files import extract_age, modify_cha_file, process_directory
+from src.corpus_normalizers.post_normalizer import extract_age, modify_cha_file, process_directory
 
 @pytest.fixture
 def test_files():

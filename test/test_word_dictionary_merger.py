@@ -1,5 +1,5 @@
 import pytest
-from src.word_dictionary_merger import WordDictionaryMerger
+from src.analysis.word_dictionary_merger import WordDictionaryMerger
 
 @pytest.fixture
 def merger():

@@ -1,5 +1,5 @@
 import pytest
-from src.iconicity_model import IconicityModel
+from src.analysis.iconicity_model import IconicityModel
 
 @pytest.fixture
 def sample_data():

@@ -1,4 +1,4 @@
-from src.reader import Reader
+from src.data_io.reader import Reader
 import os
 
 def test_reader():

@@ -1,5 +1,5 @@
 import pytest
-from src.word_counter import WordCounter
+from src.analysis.word_counter import WordCounter
 
 @pytest.fixture
 def word_counter():

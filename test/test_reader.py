@@ -1,7 +1,7 @@
 import pytest
 import os
 import pandas as pd
-from src.reader import Reader
+from src.data_io.reader import Reader
 
 @pytest.fixture
 def reader():

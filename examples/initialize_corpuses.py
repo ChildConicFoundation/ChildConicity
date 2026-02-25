@@ -2,10 +2,10 @@ import os
 import sys
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from src.brend_manipulator import BrendManipulator
-from src.reorganize_newengland import process_directory as process_newengland
-from src.modify_post_files import process_directory as process_post
-from src.modify_vankleeck_files import process_directory as process_vankleeck
+from src.corpus_normalizers.brent_normalizer import BrendManipulator
+from src.corpus_normalizers.newengland_normalizer import process_directory as process_newengland
+from src.corpus_normalizers.post_normalizer import process_directory as process_post
+from src.corpus_normalizers.vankleeck_normalizer import process_directory as process_vankleeck
 
 def initialize_brent_corpus():
     """Inicializa el corpus de Brent"""

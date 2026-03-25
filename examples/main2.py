@@ -9,108 +9,11 @@ from src.analysis.iconicity_model import IconicityModel
 from src.data_io.reader import Reader
 from src.analysis.word_counter import WordCounter
 from src.analysis.word_dictionary_merger import WordDictionaryMerger
+from src.quarterly_samples import (
+    ValidWordsStatsExporter,
+    group_data_by_age,
+)
 from src.visualization.data_analysis_plotter import DataAnalysisPlotter
-
-def get_age_quarter(age_str):
-    """
-    Convierte una cadena de edad en formato YYYYMMDD o "X years Y months Z days" a formato YYQ.
-    Calcula el cuarto basado en los meses del año.
-    
-    Args:
-        age_str (str): Edad en formato YYYYMMDD o "X years Y months Z days"
-        
-    Returns:
-        str: Edad en formato YYQ (años y cuarto)
-    """
-    try:
-        # Si la edad está en formato "X years Y months Z days"
-        if 'years' in age_str:
-            parts = age_str.split()
-            years = int(parts[0])
-            months = int(parts[2])
-        else:
-            # Si la edad está en formato YYYYMMDD
-            years = int(age_str[:2])
-            months = int(age_str[2:4])
-        
-        # Calcular el cuarto basado en los meses (1-3, 4-6, 7-9, 10-12)
-        quarter = ((months - 1) // 3) + 1
-        
-        # Asegurar que el cuarto esté en el rango 1-4
-        quarter = min(max(quarter, 1), 4)
-        
-        return f"{years:02d}Y{quarter:02d}Q"
-    except (ValueError, IndexError):
-        return "00Y00Q"
-
-def group_data_by_age(processed_data):
-    """
-    Agrupa los datos por edad del niño en cuartos de año.
-    
-    Args:
-        processed_data (dict): Datos procesados del corpus
-        
-    Returns:
-        dict: Datos agrupados por edad en formato YYQ
-    """
-    data_grouped_by_age = {}
-    processed_files = set()  # Conjunto para rastrear archivos ya procesados
-    
-    # Iterar sobre cada corpus
-    for corpus_name, corpus_data in processed_data['Corpus_modified'].items():
-        # Iterar sobre cada subdirectorio (niño)
-        for child_name, child_data in corpus_data.items():
-            if 'files' in child_data:
-                # Iterar sobre cada archivo
-                for file in child_data['files']:
-                    file_path = file['metadata']['file_path']
-                    
-                    # Si el archivo ya fue procesado, saltarlo
-                    if file_path in processed_files:
-                        continue
-                    processed_files.add(file_path)
-
-                    age = file['metadata'].get('child_age', '')
-                    if age:
-                        age_quarter = get_age_quarter(age)
-                        
-                        # Inicializar la estructura si no existe
-                        if age_quarter not in data_grouped_by_age:
-                            data_grouped_by_age[age_quarter] = {
-                                'children_data': {},
-                                'adults_data': {},
-                                'files': []
-                            }
-                        
-                        # Generar claves únicas para los datos de niños y adultos
-                        child_base = len(data_grouped_by_age[age_quarter]['children_data'])
-                        adult_base = len(data_grouped_by_age[age_quarter]['adults_data'])
-                        
-                        # Añadir los datos de niños con claves únicas
-                        for i, (_, utterance) in enumerate(file['children_data'].items()):
-                            key = f"{child_base + i + 1}"
-                            data_grouped_by_age[age_quarter]['children_data'][key] = utterance
-                        
-                        # Añadir los datos de adultos con claves únicas
-                        for i, (_, utterance) in enumerate(file['adults_data'].items()):
-                            key = f"{adult_base + i + 1}"
-                            data_grouped_by_age[age_quarter]['adults_data'][key] = utterance
-                        
-                        # Obtener una frase de ejemplo de niño y adulto
-                        child_example = next(iter(file['children_data'].values()))['text'] if file['children_data'] else "No hay expresiones de niños"
-                        adult_example = next(iter(file['adults_data'].values()))['text'] if file['adults_data'] else "No hay expresiones de adultos"
-                        
-                        # Añadir información del archivo
-                        data_grouped_by_age[age_quarter]['files'].append({
-                            'file_path': file_path,
-                            'child_name': file['metadata'].get('child_name', 'N/A'),
-                            'child_age': age,
-                            'age_group': age_quarter,
-                            'child_example': child_example,
-                            'adult_example': adult_example
-                        })
-    
-    return data_grouped_by_age
 
 def create_age_group_statistics(data_grouped_by_age, iconicity_model):
     """
@@ -510,7 +413,7 @@ def main():
     # Agrupar datos por edad
     print("\nAgrupando datos por edad...")
     data_grouped_by_age = group_data_by_age(processed_data)
-    
+
     # Crear el modelo de iconicidad
     print("\nCreando modelo de iconicidad...")
     formatter = DataFormatter()
@@ -528,6 +431,11 @@ def main():
     # Mostrar estadísticas de palabras válidas
     print("\nMostrando estadísticas de palabras válidas por grupo de edad:")
     print_valid_words_statistics(valid_words_stats)
+
+    # Exportar las estadísticas válidas que usa el plotter
+    print("\nExportando valid_words_stats a JSON y CSV...")
+    stats_exporter = ValidWordsStatsExporter("quarterly_valid_words")
+    stats_exporter.export(valid_words_stats)
 
     # Crear y mostrar gráficas de análisis
     print("\nCreando gráficas de análisis...")

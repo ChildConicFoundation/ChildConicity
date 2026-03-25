@@ -30,6 +30,9 @@ MANIFEST
 Corpus_processed/
 Corpus_modified/
 coverage_report/
+pruebas/
+iconic_vs_noniconic/
+quarterly_valid_words/
 
 # PyInstaller
 #  Usually these files are written by a python script from a template

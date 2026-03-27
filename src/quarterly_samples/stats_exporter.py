@@ -103,9 +103,17 @@ class ValidWordsStatsExporter:
                 }
             )
 
+        rows = sorted(
+            rows,
+            key=lambda row: (-row["count"], row["word"]),
+        )
+        for index, row in enumerate(rows, start=1):
+            row["id"] = index
+
         return {
             "quarter": quarter,
             "speaker_group": speaker_group,
+            "total_rows": len(rows),
             "summary": summary,
             "rows": rows,
         }
@@ -115,7 +123,7 @@ class ValidWordsStatsExporter:
             json.dump(payload, file, ensure_ascii=False, indent=2)
 
     def _write_csv(self, file_path, rows):
-        fieldnames = ["quarter", "speaker_group", "word", "count", "is_iconic", "rating"]
+        fieldnames = ["quarter", "speaker_group", "id", "word", "count", "is_iconic", "rating"]
         with open(file_path, "w", encoding="utf-8", newline="") as file:
             writer = csv.DictWriter(file, fieldnames=fieldnames)
             writer.writeheader()

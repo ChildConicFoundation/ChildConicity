@@ -170,9 +170,13 @@ def test_valid_words_stats_exporter_creates_plotter_aligned_exports(tmp_path):
 
     assert payload["quarter"] == "02Y02Q"
     assert payload["speaker_group"] == "adults"
+    assert payload["total_rows"] == 2
     assert payload["summary"]["total_words"] == 10
     assert payload["summary"]["iconic_percentage"] == 40.0
+    assert payload["rows"][0]["id"] == 1
     assert payload["rows"][0]["word"] == "go"
+    assert payload["rows"][1]["id"] == 2
+    assert payload["rows"][1]["word"] == "yeah"
 
     with open(adults_csv_path, "r", encoding="utf-8", newline="") as file:
         rows = list(csv.DictReader(file))
@@ -180,9 +184,12 @@ def test_valid_words_stats_exporter_creates_plotter_aligned_exports(tmp_path):
     assert len(rows) == 2
     assert rows[0]["quarter"] == "02Y02Q"
     assert rows[0]["speaker_group"] == "adults"
+    assert rows[0]["id"] == "1"
     assert rows[0]["word"] == "go"
     assert rows[0]["is_iconic"] == "True"
     assert rows[0]["rating"] == "4.9"
+    assert rows[1]["id"] == "2"
+    assert rows[1]["word"] == "yeah"
 
     with open(adults_summary_path, "r", encoding="utf-8", newline="") as file:
         summary_rows = list(csv.DictReader(file))

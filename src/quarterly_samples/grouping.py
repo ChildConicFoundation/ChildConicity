@@ -75,15 +75,11 @@ def group_data_by_age(processed_data):
                     key = f"{adult_base + i + 1}"
                     data_grouped_by_age[age_quarter]["adults_data"][key] = utterance
 
-                child_example = (
-                    next(iter(file["children_data"].values()))["text"]
-                    if file["children_data"]
-                    else "No hay expresiones de niños"
+                child_example = _build_entry_example(
+                    file["children_data"], "No hay expresiones de niños"
                 )
-                adult_example = (
-                    next(iter(file["adults_data"].values()))["text"]
-                    if file["adults_data"]
-                    else "No hay expresiones de adultos"
+                adult_example = _build_entry_example(
+                    file["adults_data"], "No hay expresiones de adultos"
                 )
 
                 data_grouped_by_age[age_quarter]["files"].append(
@@ -98,3 +94,20 @@ def group_data_by_age(processed_data):
                 )
 
     return data_grouped_by_age
+
+
+def _build_entry_example(entries, default_text):
+    if not entries:
+        return default_text
+
+    first_entry = next(iter(entries.values()))
+    if "text" in first_entry:
+        return first_entry["text"]
+
+    category = first_entry.get("category", "")
+    lemma = first_entry.get("lemma", "")
+    attributes = "-".join(first_entry.get("attributes", []))
+
+    if attributes:
+        return f"{category}|{lemma}-{attributes}"
+    return f"{category}|{lemma}"

@@ -2,6 +2,7 @@ import pandas as pd
 import re
 import os
 
+
 class Reader:
     def __init__(self):
         self.data = None
@@ -54,7 +55,8 @@ class Reader:
                 'child_age': self._extract_child_age(content),
                 'child_name': self._extract_child_name(content),
                 'types': self._extract_types(content),
-                'utterances': self._extract_utterances(content)
+                'utterances': self._extract_utterances(content),
+                'morphological_utterances': self._extract_morphological_utterances(content),
             }
             
             self.data = {
@@ -200,6 +202,83 @@ class Reader:
                         'timestamp': timestamp
                     })
         return utterances
+
+    def _extract_morphological_utterances(self, content):
+        """
+        Extrae las expresiones morfológicas del archivo y las vincula
+        al hablante de la línea * inmediatamente anterior.
+        """
+        morphological_utterances = []
+        current_speaker = None
+        current_timestamp = None
+
+        for line in content.split('\n'):
+            if line.startswith('*'):
+                speaker, text = line.split(':', 1)
+                current_speaker = speaker[1:].strip()
+                current_timestamp = self._extract_timestamp(text)
+            elif line.startswith('%mor:') and current_speaker:
+                mor_text = line.split(':', 1)[1].strip()
+                tokens = self._parse_morphological_tokens(mor_text)
+                if tokens:
+                    morphological_utterances.append({
+                        'speaker': current_speaker,
+                        'timestamp': current_timestamp,
+                        'tokens': tokens
+                    })
+
+        return morphological_utterances
+
+    def _parse_morphological_tokens(self, mor_text):
+        """
+        Parsea una línea %mor: a tokens estructurados con:
+        - category
+        - lemma
+        - attributes
+        """
+        tokens = []
+
+        # Separar por espacios y después por ~ para dividir contracciones/clíticos.
+        for raw_chunk in mor_text.split():
+            for raw_token in raw_chunk.split('~'):
+                parsed = self._parse_morphological_token(raw_token.strip())
+                if parsed is not None:
+                    tokens.append(parsed)
+
+        return tokens
+
+    def _parse_morphological_token(self, raw_token):
+        if not raw_token or '|' not in raw_token:
+            return None
+
+        category, remainder = raw_token.split('|', 1)
+        category = category.strip()
+        remainder = remainder.strip()
+
+        if not category or not remainder:
+            return None
+
+        # Ignorar restos de puntuación u otros tokens sin lema.
+        if remainder in {'.', ',', '!', '?'}:
+            return None
+
+        if '-' in remainder:
+            lemma, attribute_text = remainder.split('-', 1)
+            attributes = [part for part in attribute_text.split('-') if part]
+        else:
+            lemma = remainder
+            attributes = []
+
+        lemma = lemma.strip()
+        if not lemma or lemma in {'.', ',', '!', '?'}:
+            return None
+
+        return {
+            'category': category,
+            'lemma': lemma,
+            'attributes': attributes,
+            'raw_token': raw_token,
+        }
 
     def _extract_timestamp(self, text):
         """Extrae la marca de tiempo de una expresión."""

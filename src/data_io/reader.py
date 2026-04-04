@@ -1,4 +1,3 @@
-import pandas as pd
 import re
 import os
 
@@ -18,8 +17,15 @@ class Reader:
             pandas.DataFrame: Los datos leídos del archivo CSV
         """
         try:
+            import pandas as pd
+
             self.data = pd.read_csv(file_path)
             return self.data
+        except ModuleNotFoundError:
+            print(
+                "Error: pandas no está instalado y es necesario para leer archivos CSV."
+            )
+            return None
         except FileNotFoundError:
             print(f"Error: No se encontró el archivo {file_path}")
             return None

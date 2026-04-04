@@ -3,6 +3,11 @@ import json
 from pathlib import Path
 
 from src.data_io.grammatical_formatter import GrammaticalDataFormatter
+from src.data_io.grammatical_corpus_processing import (
+    collect_grammatical_categories,
+    process_grammatical_data_with_formatter,
+    run_grammatical_pipeline,
+)
 from src.data_io.reader import Reader
 from src.quarterly_samples import GrammaticalCategoriesExporter, group_data_by_age
 
@@ -52,6 +57,157 @@ def test_grammatical_formatter_splits_children_and_adults(tmp_path):
     assert adults_data[1]["category"] == "verb"
     assert adults_data[1]["lemma"] == "pull"
     assert adults_data[2]["lemma"] == "it"
+
+
+def test_grammatical_formatter_filters_selected_categories(tmp_path):
+    file_path = tmp_path / "sample_filtered.cha"
+    file_path.write_text(
+        """
+@UTF8
+@Languages:\teng
+@ChildAge: 1 years 06 months 00 days
+@ChildName: Kid
+*MOT:\tpull ball up ! \x15131_1537\x15
+%mor:\tverb|pull-Fin-Imp-S noun|ball adp|up !
+*CHI:\tball up . \x15131_1537\x15
+%mor:\tnoun|ball adp|up .
+""".strip(),
+        encoding="utf-8",
+    )
+
+    formatter = GrammaticalDataFormatter(grammatical_categories=["noun"])
+    children_data, adults_data = formatter.format_cha_data_from(str(file_path))
+
+    assert len(children_data) == 1
+    assert children_data[1]["category"] == "noun"
+    assert children_data[1]["lemma"] == "ball"
+    assert len(adults_data) == 1
+    assert adults_data[1]["category"] == "noun"
+    assert adults_data[1]["lemma"] == "ball"
+
+
+def test_collect_grammatical_categories_returns_sorted_categories():
+    corpus_data = {
+        "Corpus_modified": {
+            "Post": {
+                "Lew": {
+                    "files": [
+                        {
+                            "metadata": {
+                                "morphological_utterances": [
+                                    {
+                                        "tokens": [
+                                            {"category": "verb"},
+                                            {"category": "noun"},
+                                        ]
+                                    },
+                                    {"tokens": [{"category": "adj"}]},
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    }
+
+    categories = collect_grammatical_categories(corpus_data)
+
+    assert categories == ["adj", "noun", "verb"]
+
+
+def test_process_grammatical_data_with_formatter_filters_categories(tmp_path):
+    file_path = tmp_path / "sample_pipeline.cha"
+    file_path.write_text(
+        """
+@UTF8
+@Languages:\teng
+@ChildAge: 1 years 06 months 00 days
+@ChildName: Kid
+*MOT:\tpull ball up ! \x15131_1537\x15
+%mor:\tverb|pull-Fin-Imp-S noun|ball adp|up !
+*CHI:\tball up . \x15131_1537\x15
+%mor:\tnoun|ball adp|up .
+""".strip(),
+        encoding="utf-8",
+    )
+
+    corpus_data = {
+        "Corpus_modified": {
+            "Post": {
+                "Lew": {
+                    "files": [
+                        {
+                            "metadata": {
+                                "file_path": str(file_path),
+                                "child_age": "1 years 06 months 00 days",
+                                "child_name": "Kid",
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    }
+
+    processed_data = process_grammatical_data_with_formatter(
+        corpus_data, grammatical_categories=["noun"]
+    )
+    processed_file = processed_data["Corpus_modified"]["Post"]["Lew"]["files"][0]
+
+    assert len(processed_file["children_data"]) == 1
+    assert processed_file["children_data"][1]["category"] == "noun"
+    assert processed_file["children_data"][1]["lemma"] == "ball"
+    assert len(processed_file["adults_data"]) == 1
+    assert processed_file["adults_data"][1]["category"] == "noun"
+    assert processed_file["adults_data"][1]["lemma"] == "ball"
+
+
+def test_run_grammatical_pipeline_exports_filtered_data(tmp_path):
+    file_path = tmp_path / "sample_run_pipeline.cha"
+    file_path.write_text(
+        """
+@UTF8
+@Languages:\teng
+@ChildAge: 1 years 06 months 00 days
+@ChildName: Kid
+*MOT:\tpull ball up ! \x15131_1537\x15
+%mor:\tverb|pull-Fin-Imp-S noun|ball adp|up !
+*CHI:\tball up . \x15131_1537\x15
+%mor:\tnoun|ball adp|up .
+""".strip(),
+        encoding="utf-8",
+    )
+
+    corpus_data = {
+        "Corpus_modified": {
+            "Post": {
+                "Lew": {
+                    "files": [
+                        {
+                            "metadata": {
+                                "file_path": str(file_path),
+                                "child_age": "1 years 06 months 00 days",
+                                "child_name": "Kid",
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    }
+
+    result = run_grammatical_pipeline(
+        corpus_data,
+        output_dir=str(tmp_path / "quarterly_grammatical_categories"),
+        grammatical_categories=["noun"],
+    )
+
+    processed_file = result["processed_data"]["Corpus_modified"]["Post"]["Lew"]["files"][0]
+    assert len(processed_file["children_data"]) == 1
+    assert len(processed_file["adults_data"]) == 1
+    assert "01Y02Q" in result["grouped_data"]
+    assert "Raw" in result["outputs"]["children"]
 
 
 def test_grammatical_exporter_exports_grouped_rows(tmp_path):

@@ -4,17 +4,32 @@ import sys
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from examples.initialize_corpuses import main as initialize_corpuses
-from src.cli import parse_grammatical_cli_options, prepare_grammatical_cli_options
+from src.cli import (
+    CorpusCLIOptions,
+    GrammaticalCLIOptions,
+    add_corpus_options,
+    build_grammatical_options_parser,
+    prepare_corpus_cli_options,
+    prepare_grammatical_cli_options,
+)
 from src.data_io.corpus_inspector import print_directory_structure, print_sampled_metadata
 from src.data_io.grammatical_corpus_processing import (
     collect_grammatical_categories,
     run_grammatical_pipeline,
 )
 from src.data_io.reader import Reader
+from src.data_io.corpus_selection import (
+    discover_available_corpora,
+    filter_corpus_data,
+)
 
 
 def main(argv=None):
-    options = parse_grammatical_cli_options(argv)
+    parser = build_grammatical_options_parser()
+    add_corpus_options(parser)
+    namespace = parser.parse_args(argv)
+    options = GrammaticalCLIOptions.from_namespace(namespace)
+    corpus_options = CorpusCLIOptions.from_namespace(namespace)
     source_root = "Corpus"
     output_root = "Corpus_modified"
 
@@ -22,9 +37,17 @@ def main(argv=None):
     initialize_corpuses(source_root=source_root, output_root=output_root)
     print("Corpus inicializados correctamente.")
 
+    available_corpora = discover_available_corpora(output_root)
+    corpus_options, should_exit = prepare_corpus_cli_options(
+        corpus_options, available_corpora
+    )
+    if should_exit:
+        return 0
+
     input_dir = output_root
     reader = Reader()
     corpus_data = reader.read_directory(input_dir)
+    corpus_data = filter_corpus_data(corpus_data, corpus_options.corpora)
 
     available_categories = collect_grammatical_categories(corpus_data)
     options, should_exit = prepare_grammatical_cli_options(

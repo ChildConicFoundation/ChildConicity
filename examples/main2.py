@@ -1,8 +1,14 @@
+import argparse
 import sys
 import os
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from examples.initialize_corpuses import main as initialize_corpuses
+from src.cli import (
+    CorpusCLIOptions,
+    add_corpus_options,
+    prepare_corpus_cli_options,
+)
 from src.analysis.age_group_analysis import (
     create_age_group_statistics,
     print_valid_words_statistics,
@@ -13,14 +19,28 @@ from src.analysis.iconicity_model import IconicityModel
 from src.data_io.corpus_inspector import print_directory_structure, print_sampled_metadata
 from src.data_io.corpus_processing import process_data_with_formatter
 from src.data_io.reader import Reader
+from src.data_io.corpus_selection import (
+    discover_available_corpora,
+    filter_corpus_data,
+)
 from src.quarterly_samples import (
     ValidWordsStatsExporter,
     group_data_by_age,
 )
 from src.visualization.data_analysis_plotter import DataAnalysisPlotter
 
-def main():
+def main(argv=None):
     """Función principal del programa"""
+    parser = add_corpus_options(
+        argparse.ArgumentParser(
+            description=(
+                "Procesa el corpus por tokens y permite filtrar qué corpus usar."
+            )
+        )
+    )
+    namespace = parser.parse_args(argv)
+    corpus_options = CorpusCLIOptions.from_namespace(namespace)
+
     source_root = "Corpus"
     output_root = "Corpus_modified"
 
@@ -28,6 +48,13 @@ def main():
     print("Inicializando corpus...")
     initialize_corpuses(source_root=source_root, output_root=output_root)
     print("Corpus inicializados correctamente.")
+
+    available_corpora = discover_available_corpora(output_root)
+    corpus_options, should_exit = prepare_corpus_cli_options(
+        corpus_options, available_corpora
+    )
+    if should_exit:
+        return 0
     
     # Definir directorios de entrada y salida
     input_dir = output_root
@@ -37,6 +64,7 @@ def main():
     
     # Leer todos los directorios dentro del directorio procesado
     corpus_data = reader.read_directory(input_dir)
+    corpus_data = filter_corpus_data(corpus_data, corpus_options.corpora)
     
     # Mostrar la estructura del diccionario anidado
     print("\nEstructura del corpus:")
@@ -118,4 +146,8 @@ def main():
     plotter.plot_all_children_iconicity_distribution(os.path.join(pruebas_dir, 'distribucion_iconicidad_todos_ninos.png'))
 
 if __name__ == "__main__":
-    main()  
+    try:
+        raise SystemExit(main())
+    except ValueError as exc:
+        print(f"Error: {exc}", file=sys.stderr)
+        raise SystemExit(1)

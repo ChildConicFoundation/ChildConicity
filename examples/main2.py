@@ -21,13 +21,16 @@ from src.visualization.data_analysis_plotter import DataAnalysisPlotter
 
 def main():
     """Función principal del programa"""
+    source_root = "Corpus"
+    output_root = "Corpus_modified"
+
     # Inicializar los corpus
     print("Inicializando corpus...")
-    initialize_corpuses()
+    initialize_corpuses(source_root=source_root, output_root=output_root)
     print("Corpus inicializados correctamente.")
     
     # Definir directorios de entrada y salida
-    input_dir = 'Corpus_modified'
+    input_dir = output_root
     
     # Crear instancia del Reader
     reader = Reader()

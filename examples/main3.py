@@ -15,12 +15,14 @@ from src.data_io.reader import Reader
 
 def main(argv=None):
     options = parse_grammatical_cli_options(argv)
+    source_root = "Corpus"
+    output_root = "Corpus_modified"
 
     print("Inicializando corpus...")
-    initialize_corpuses()
+    initialize_corpuses(source_root=source_root, output_root=output_root)
     print("Corpus inicializados correctamente.")
 
-    input_dir = "Corpus_modified"
+    input_dir = output_root
     reader = Reader()
     corpus_data = reader.read_directory(input_dir)
 

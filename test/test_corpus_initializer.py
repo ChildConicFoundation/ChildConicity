@@ -20,6 +20,8 @@ def test_corpus_initializer_initialize_all_uses_source_and_output_roots():
     ) as mock_bloom, patch(
         "src.corpus_initialization.initializer.process_brown"
     ) as mock_brown, patch(
+        "src.corpus_initialization.initializer.process_hslld"
+    ) as mock_hslld, patch(
         "src.corpus_initialization.initializer.process_vankleeck"
     ) as mock_vankleeck:
         manipulator_instance = mock_brend_manipulator.return_value
@@ -44,6 +46,10 @@ def test_corpus_initializer_initialize_all_uses_source_and_output_roots():
     mock_brown.assert_called_once_with(
         "/tmp/source/Brown",
         "/tmp/output/Brown",
+    )
+    mock_hslld.assert_called_once_with(
+        "/tmp/source/HSLLD",
+        "/tmp/output/HSLLD",
     )
     mock_vankleeck.assert_called_once_with(
         "/tmp/source/VanKleeck",

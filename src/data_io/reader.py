@@ -10,6 +10,7 @@ OTHER_CHILD_PARTICIPANT_ROLES = {
     "sibling",
     "sister",
     "brother",
+    "playmate",
 }
 
 

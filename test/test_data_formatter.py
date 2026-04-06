@@ -105,3 +105,32 @@ def test_format_cha_data_separates_non_target_children(tmp_path):
     assert other_children_data[1]["speaker"] == "JEN"
     assert len(adults_data) == 1
     assert adults_data[1]["speaker"] == "MOT"
+
+
+def test_format_cha_data_separates_playmates_as_other_children(tmp_path):
+    test_cha_path = tmp_path / "playmate_roles.cha"
+    test_cha_path.write_text(
+        """@UTF8
+@Languages: eng
+@Participants: CHI Target_Child, JEN Playmate, MOT Mother
+@ID: eng|Sachs|CHI|2;05.05|female|||Target_Child|||
+@ID: eng|Sachs|JEN|||||Playmate|||
+@ID: eng|Sachs|MOT||female|||Mother|||
+*CHI: mío .
+*JEN: no .
+*MOT: comparte .
+""",
+        encoding="utf-8",
+    )
+
+    formatter = DataFormatter()
+    children_data, other_children_data, adults_data = formatter.format_cha_data_from(
+        str(test_cha_path)
+    )
+
+    assert len(children_data) == 1
+    assert children_data[1]["speaker"] == "CHI"
+    assert len(other_children_data) == 1
+    assert other_children_data[1]["speaker"] == "JEN"
+    assert len(adults_data) == 1
+    assert adults_data[1]["speaker"] == "MOT"

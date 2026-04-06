@@ -55,7 +55,7 @@ El programa principal se encuentra en `examples/main2.py` y realiza un análisis
 El programa realiza las siguientes operaciones:
 
 1. **Inicialización de Corpus**:
-   - Requiere que todos los corpus (Brent, NewEngland, Post, Bloom, Brown, HSLLD, Kuczaj y VanKleeck) estén ubicados dentro de la carpeta `Corpus/` en la raíz del proyecto
+   - Requiere que todos los corpus (Brent, NewEngland, Post, Bloom, Brown, HSLLD, Kuczaj, Sachs y VanKleeck) estén ubicados dentro de la carpeta `Corpus/` en la raíz del proyecto
    - La estructura de directorios debe ser:
      ```
      Corpus/
@@ -66,6 +66,7 @@ El programa realiza las siguientes operaciones:
      ├── Kuczaj/
      ├── NewEngland/
      ├── Post/
+     ├── Sachs/
      └── VanKleeck/
      ```
    - Procesa los corpus y los organiza en una nueva estructura en `Corpus_modified/`

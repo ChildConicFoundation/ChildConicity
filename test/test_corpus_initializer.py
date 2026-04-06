@@ -24,6 +24,8 @@ def test_corpus_initializer_initialize_all_uses_source_and_output_roots():
     ) as mock_hslld, patch(
         "src.corpus_initialization.initializer.process_kuczaj"
     ) as mock_kuczaj, patch(
+        "src.corpus_initialization.initializer.process_sachs"
+    ) as mock_sachs, patch(
         "src.corpus_initialization.initializer.process_vankleeck"
     ) as mock_vankleeck:
         manipulator_instance = mock_brend_manipulator.return_value
@@ -56,6 +58,10 @@ def test_corpus_initializer_initialize_all_uses_source_and_output_roots():
     mock_kuczaj.assert_called_once_with(
         "/tmp/source/Kuczaj",
         "/tmp/output/Kuczaj",
+    )
+    mock_sachs.assert_called_once_with(
+        "/tmp/source/Sachs",
+        "/tmp/output/Sachs",
     )
     mock_vankleeck.assert_called_once_with(
         "/tmp/source/VanKleeck",

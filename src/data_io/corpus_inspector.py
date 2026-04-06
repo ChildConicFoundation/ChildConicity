@@ -38,7 +38,7 @@ def print_sampled_metadata(data):
     """
     Imprime los metadatos de 4 archivos de cada corpus.
     """
-    main_dirs = ["Brent", "NewEngland", "Post", "Bloom", "Brown", "HSLLD", "Kuczaj", "VanKleeck"]
+    main_dirs = ["Brent", "NewEngland", "Post", "Bloom", "Brown", "HSLLD", "Kuczaj", "Sachs", "VanKleeck"]
 
     for corpus in main_dirs:
         print(f"\n=== Corpus {corpus} ===")

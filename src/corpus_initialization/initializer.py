@@ -10,6 +10,7 @@ from src.corpus_normalizers.newengland_normalizer import (
     process_directory as process_newengland,
 )
 from src.corpus_normalizers.post_normalizer import process_directory as process_post
+from src.corpus_normalizers.sachs_normalizer import process_directory as process_sachs
 from src.corpus_normalizers.vankleeck_normalizer import (
     process_directory as process_vankleeck,
 )
@@ -82,6 +83,15 @@ class CorpusInitializer:
         )
         print("¡Corpus de Kuczaj inicializado!")
 
+    def initialize_sachs(self):
+        """Inicializa el corpus de Sachs."""
+        print("\nInicializando corpus de Sachs...")
+        process_sachs(
+            self._source_dir("Sachs"),
+            self._output_dir("Sachs"),
+        )
+        print("¡Corpus de Sachs inicializado!")
+
     def initialize_van_kleeck(self):
         """Inicializa el corpus de VanKleeck."""
         print("\nInicializando corpus de VanKleeck...")
@@ -98,6 +108,7 @@ class CorpusInitializer:
         self.initialize_brown()
         self.initialize_hslld()
         self.initialize_kuczaj()
+        self.initialize_sachs()
         self.initialize_van_kleeck()
         print("\n¡Inicialización de corpus completada!")
 

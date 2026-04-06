@@ -1,0 +1,199 @@
+@UTF8
+@PID:	11312/c-00034986-1
+@Begin
+@Languages:	eng
+@Participants:	MOT Mother, CHI Target_Child, SIS Sister
+@ID:	eng|HSLLD|MOT||female|||Mother|8||
+@ID:	eng|HSLLD|CHI|4;00.15|female|||Target_Child|||
+@ID:	eng|HSLLD|SIS|||||Sister|||
+@Birth of CHI:	17-JUL-1985
+@Media:	sopmt1, audio, missing
+@Comment:	SES of Mot is lower
+@Date:	02-AUG-1989
+@Location:	Boston , MA USA
+@Situation:	Home Visit 1
+@Activities:	Meal time
+@Types:	long, meal, TD
+*MOT:	xxx .
+%com:	mother gives directions to children in another language; talking is very soft , difficult to hear
+@Comment:	Time is 00:04
+*CHI:	(..) can xxx come ?
+%spa:	$UNCO
+%mor:	aux|can-Fin-S verb|come-Inf-S ?
+%gra:	1|2|AUX 2|0|ROOT 3|2|PUNCT
+*MOT:	mm@i ?
+%spa:	$CONV:RP
+%mor:	intj|mm ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	did Chi xxx come ?
+%spa:	$UNCO
+%mor:	aux|do-Fin-Ind-Past-S3-irr propn|Chi verb|come-Inf-S ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|3|PUNCT
+*MOT:	yeah ?
+%spa:	$CONV:CO
+%com:	mother is washing dishes and someone enters kitchen and closes door behind them
+%mor:	intj|yeah ?
+%gra:	1|0|ROOT 2|1|PUNCT
+@Bg:	5
+*MOT:	(..) why aren't you at the movie ?
+%mor:	adv|why verb|arent-Fin-Ind-Pres-S pron|you-Prs-Acc-S2 adp|at det|the-Def-Art noun|movie ?
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|OBJ 4|6|CASE 5|6|DET 6|2|OBL 7|2|PUNCT
+@Eg:	5
+*SIS:	(.) xxx .
+%com:	dishes and plates are being moved around
+*CHI:	(..) I know you're sposta talk to me .
+%mor:	pron|I-Prs-Nom-S1 verb|know-Fin-Ind-Pres-S1 pron|your-Prs-Acc-S2 noun|sposta verb|talk-Fin-Ind-Pres-S adp|to pron|I-Prs-Acc-S1 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|COMPOUND 4|5|NSUBJ 5|2|CCOMP 6|7|CASE 7|5|OBL 8|2|PUNCT
+*SIS:	so ?
+%mor:	adv|so ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	(.) xxx .
+*SIS:	(.) when I do it don't do it okay ?
+%mor:	adv|when pron|I-Prs-Nom-S1 verb|do-Fin-Ind-Pres-S1 pron|it-Prs-Acc-S3 adv|dont verb|do-Inf-S pron|it-Prs-Acc-S3 adj|okay-S1 ?
+%gra:	1|3|ADVMOD 2|3|NSUBJ 3|6|ADVCL 4|3|OBJ 5|6|ADVMOD 6|0|ROOT 7|6|OBJ 8|6|XCOMP 9|6|PUNCT
+*SIS:	(.) when you're finished eat Chit .
+%mor:	adv|when pron|your-Prs-Nom-S2 verb|finish-Fin-Ind-Past-S1 verb|eat-Inf-S propn|Chit-Acc .
+%gra:	1|3|ADVMOD 2|3|NSUBJ 3|4|ADVCL 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*CHI:	mommy when I finish eat xxx can I have another one ?
+%spa:	$CONV:PRQ
+%mor:	noun|mommy adv|when pron|I-Prs-Nom-S1 verb|finish-Fin-Ind-Pres-S1 verb|eat-Inf-S aux|can-Fin-S pron|I-Prs-Nom-S1 verb|have-Inf-S det|another-Def-Ind noun|one-Acc ?
+%gra:	1|8|VOCATIVE 2|4|ADVMOD 3|4|NSUBJ 4|8|ADVCL 5|4|XCOMP 6|8|AUX 7|8|NSUBJ 8|0|ROOT 9|10|DET 10|8|OBJ 11|8|PUNCT
+*MOT:	hm: xxx ?
+%mor:	intj|hm ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*SIS:	not yet Chi .
+%mor:	part|not adv|yet propn|Chi .
+%gra:	1|3|ADVMOD 2|3|ADVMOD 3|0|ROOT 4|3|PUNCT
+*CHI:	[^ taking the mouse from Leo] I know .
+%mor:	pron|I-Prs-Nom-S1 verb|know-Fin-Ind-Pres-S1 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|PUNCT
+*CHI:	(.) don't [/] know [/] dunno [: how to] how to .
+%mor:	adv|how adp|to adv|how part|to .
+%gra:	1|0|ROOT 2|3|CASE 3|1|OBL 4|1|ACL 5|1|PUNCT
+*SIS:	oh !
+%mor:	intj|oh !
+%gra:	1|0|ROOT 2|1|PUNCT
+*SIS:	if you must of drop Chit then it's my turn .
+%com:	sister is talking with food in her mouth
+%mor:	sconj|if pron|you-Prs-Nom-S2 aux|must-Fin-S adp|of verb|drop-Inf-S propn|Chit-Acc adv|then pron|its-Prs-Gen-S3 pron|my-Prs-Gen-S1 noun|turn .
+%gra:	1|5|MARK 2|5|NSUBJ 3|5|AUX 4|5|MARK 5|10|ADVCL 6|5|OBJ 7|10|ADVMOD 8|10|NMOD-POSS 9|10|NMOD-POSS 10|0|ROOT 11|10|PUNCT
+*SIS:	(.) I'm still doing it (.) .
+%mor:	aux|be-Fin-Ind-Pres-S3 adv|still verb|do-Part-Pres-S pron|it-Prs-Acc-S3 .
+%gra:	1|3|AUX 2|3|ADVMOD 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*CHI:	so ?
+%mor:	adv|so ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	(.) mommy I'm finished .
+%mor:	propn|mommy propn|Im verb|finish-Fin-Ind-Past-S3 .
+%gra:	1|3|NSUBJ 2|1|FLAT 3|0|ROOT 4|3|PUNCT
+*MOT:	mm@i ?
+%spa:	$CONV:RP
+%mor:	intj|mm ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*SIS:	xxx mommy xxx ?
+%mor:	noun|mommy ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*SIS:	yo mommy ?
+%mor:	pron|yo-Prs-Gen-S2 noun|mommy ?
+%gra:	1|2|NMOD-POSS 2|0|ROOT 3|2|PUNCT
+*CHI:	alright stop &=yelling !
+%mor:	intj|alright verb|stop-Fin-Imp-S !
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|PUNCT
+*SIS:	yyy &=whines !
+%com:	utterance is in another language; possibly elle est xxx
+*CHI:	no &=cries .
+%mor:	intj|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	hey !
+%mor:	intj|hey !
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	eat it !
+%mor:	verb|eat-Fin-Imp-S pron|it-Prs-Acc-S3 !
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*CHI:	you hafta eat it .
+%mor:	pron|you-Prs-Nom-S2 aux|hafta-Fin-Ind-Pres-S2 verb|eat-Inf-S pron|it-Prs-Acc-S3 .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*SIS:	gimme [: give me] Chit xxx .
+%mor:	verb|give-Fin-Imp-S pron|I-Prs-Acc-S1 propn|Chit-Acc .
+%gra:	1|0|ROOT 2|1|IOBJ 3|1|OBJ 4|1|PUNCT
+*CHI:	you hafta eat it .
+%mor:	pron|you-Prs-Nom-S2 aux|hafta-Fin-Ind-Pres-S2 verb|eat-Inf-S pron|it-Prs-Acc-S3 .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*SIS:	<I won't> [//] <give you> [/] none won't gi(ve) you none .
+%mor:	pron|none-Neg-S1 adv|wont verb|give-Inf-S pron|you-Prs-Acc-S2 pron|none-Neg-S1 .
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|3|IOBJ 5|3|OBJ 6|3|PUNCT
+*SIS:	I'm not gonna let you talk to me .
+%mor:	aux|be-Fin-Ind-Pres-S1 part|not part|go verb|let-Inf-S pron|you-Prs-Acc-S2 verb|talk-Inf-S adp|to pron|I-Prs-Acc-S1 .
+%gra:	1|4|AUX 2|4|ADVMOD 3|4|ADVMOD 4|0|ROOT 5|4|OBJ 6|4|XCOMP 7|8|CASE 8|6|OBL 9|4|PUNCT
+*CHI:	please can I have it ?
+%mor:	intj|please aux|can-Fin-S pron|I-Prs-Nom-S1 verb|have-Inf-S pron|it-Prs-Acc-S3 ?
+%gra:	1|4|DISCOURSE 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*CHI:	please can I have it back [>] ?
+%mor:	intj|please aux|can-Fin-S pron|I-Prs-Nom-S1 verb|have-Inf-S pron|it-Prs-Acc-S3 adv|back ?
+%gra:	1|4|DISCOURSE 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|4|OBJ 6|4|ADVMOD 7|4|PUNCT
+*SIS:	holding it .
+%mor:	verb|hold-Part-Pres-S pron|it-Prs-Acc-S3 .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*CHI:	[^ pointing up to a top shelf] there !
+%mor:	adv|there !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	you want something to drink ?
+%spa:	$REAL:TOM
+%mor:	pron|you-Prs-Nom-S2 verb|want-Fin-Ind-Pres-S2 pron|something-Ind-S1 part|to verb|drink-Inf-S ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|5|MARK 5|3|ACL 6|2|PUNCT
+*CHI:	yes .
+%mor:	intj|yes .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	xxx please .
+%mor:	intj|please .
+%gra:	1|0|ROOT 2|1|PUNCT
+*SIS:	what [/] you [/] want you want ?
+%mor:	verb|want-Fin-Ind-Pres-S2 pron|you-Prs-Acc-S2 verb|want-Inf-S ?
+%gra:	1|0|ROOT 2|1|OBJ 3|1|XCOMP 4|1|PUNCT
+*SIS:	this ?
+%mor:	pron|this-Dem-S1 ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	no ?
+%mor:	intj|no ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	put it here ?
+%mor:	verb|put-Fin-Imp-S pron|it-Prs-Acc-S3 adv|here ?
+%gra:	1|0|ROOT 2|1|OBJ 3|1|ADVMOD 4|1|PUNCT
+*CHI:	I know you're goin(g) to get it .
+%mor:	pron|I-Prs-Nom-S1 verb|know-Fin-Ind-Pres-S1 pron|your-Prs-Acc-S2 verb|go-Part-Pres-S part|to verb|get-Inf-S pron|it-Prs-Acc-S3 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|NSUBJ 4|2|CCOMP 5|6|MARK 6|4|XCOMP 7|6|OBJ 8|2|PUNCT
+*SIS:	hm: ?
+%mor:	intj|hm ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	xxx .
+*MOT:	I'm not gonna accept this from you .
+%mor:	aux|be-Fin-Ind-Pres-S3 part|not part|go verb|accept-Inf-S pron|this-Dem-S1 adp|from pron|you-Prs-Acc-S2 .
+%gra:	1|4|AUX 2|4|ADVMOD 3|4|ADVMOD 4|0|ROOT 5|4|OBJ 6|7|CASE 7|4|OBL 8|4|PUNCT
+*CHI:	stop !
+%mor:	verb|stop-Fin-Imp-S !
+%gra:	1|0|ROOT 2|1|PUNCT
+*SIS:	then I'm gonna move .
+%mor:	adv|then propn|Im part|go verb|move-Inf-S .
+%gra:	1|4|ADVMOD 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|4|PUNCT
+*SIS:	+" me too mommy .
+%mor:	pron|I-Prs-Acc-S1 adv|too noun|mommy .
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|3|PUNCT
+*CHI:	+" me too mommy .
+%mor:	pron|I-Prs-Acc-S1 adv|too noun|mommy .
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|3|PUNCT
+*SIS:	mommy xxx .
+%mor:	noun|mommy .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	me to .
+%com:	sounds like she is mimmicking Sis
+%mor:	pron|I-Prs-Acc-S1 part|to .
+%gra:	1|0|ROOT 2|1|PUNCT 3|1|PUNCT
+*CHI:	you're not finished .
+%mor:	aux|your-Fin-Ind-Pres-S2 part|not verb|finish-Part-Past-S .
+%gra:	1|3|AUX 2|3|ADVMOD 3|0|ROOT 4|3|PUNCT
+*CHI:	can you xxx .
+%mor:	aux|can-Fin-S pron|you-Prs-Nom-S2 .
+%gra:	1|0|ROOT 2|1|NSUBJ 3|1|PUNCT
+*SIS:	xxx .
+@Comment:	Time is 7:25
+@End

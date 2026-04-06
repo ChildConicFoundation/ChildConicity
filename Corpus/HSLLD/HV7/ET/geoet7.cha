@@ -1,0 +1,998 @@
+@UTF8
+@PID:	11312/c-00035861-1
+@Begin
+@Languages:	eng
+@Participants:	MOT Mother, EX2 Investigator, INV Investigator, CHI Target_Child
+@ID:	eng|HSLLD|MOT||female|||Mother|15||
+@ID:	eng|HSLLD|EX2|||||Investigator|||
+@ID:	eng|HSLLD|INV|||||Investigator|||
+@ID:	eng|HSLLD|CHI|9;08.24|male|||Target_Child|||
+@Birth of CHI:	30-NOV-1985
+@Media:	geoet7, audio, missing
+@Comment:	SES of Mot is lower
+@Date:	23-AUG-1995
+@Location:	Boston , MA USA
+@Situation:	Home Visit 7
+@Activities:	Magnet Activity
+@Types:	long, toyplay, TD
+*MOT:	now the money in there is on purpose ?
+%mor:	adv|now det|the-Def-Art noun|money adp|in pron|there-Int-S1 verb|be-Fin-Ind-Pres-S3 adp|on noun|purpose ?
+%gra:	1|6|ADVMOD 2|3|DET 3|6|NSUBJ 4|5|CASE 5|6|EXPL 6|0|ROOT 7|8|CASE 8|6|OBL 9|6|PUNCT
+@Comment:	Time is 14:07. side B
+@Comment:	The mood is comfortable for this activity. EXP and EX2 remain in the background and do not participate in the discussion between Mot and Chi. Mot does the vast majority of the talking; Chi's longest utterance is about six words and most of his utterances are one to three word answers to questions which were posed by Mot. Mot spends a good deal of time talking to Chi about the scientific ideas behind magnetism , reminding him that they had read something about it previously. Unfortunately , MOT doesn't remember the general idea , that opposites attract and like poles repel , and it's hard to tell if Chi knows this since he doesn't verbalize it clearly. The final part of the activity is spent building a structure
+*MOT:	&=laughs [>] .
+*EX2:	&=laughs [<] [>] .
+*INV:	&=laughs [<] .
+*INV:	you can't keep the money .
+%mor:	pron|you-Prs-Nom-S2 aux|cant-Fin-S verb|keep-Inf-S det|the-Def-Art noun|money-Acc .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|PUNCT
+*EX2:	&=laughs .
+*MOT:	www .
+%sit:	talks more about the money
+*MOT:	oh wow .
+%mor:	intj|oh intj|wow .
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|PUNCT
+*CHI:	(.) what ?
+%sit:	<$=30> EXP and EX2 whisper to one another; at points their conversation overpowers Mot and Chi's
+%mor:	pron|what-Int-S1 ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	that's [= black base] a strong magnet .
+%mor:	aux|that-Fin-Ind-Pres-S3 det|a-Ind-Art adj|strong-S1 noun|magnet .
+%gra:	1|4|COP 2|4|DET 3|4|AMOD 4|0|ROOT 5|4|PUNCT
+*CHI:	very strong .
+%mor:	adv|very adj|strong-S1 .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*MOT:	&=laughs .
+*MOT:	don't hurt yourself .
+%mor:	adv|dont verb|hurt-Fin-Imp-S pron|yourself-Prs-Acc-reflx-S2 .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*MOT:	does that open ?
+%mor:	aux|do-Fin-Ind-Pres-S3 pron|that-Dem adj|open-S1 ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|3|PUNCT
+*MOT:	the magnet's inside here [= black base] .
+%mor:	det|the-Def-Art noun|magnet-Plur adp|inside adv|here .
+%gra:	1|2|DET 2|0|ROOT 3|4|CASE 4|2|NMOD 5|2|PUNCT
+*MOT:	xxx .
+*MOT:	[^ popping a jelly bean in his mouth] watch .
+%act:	puts black base down on table
+%mor:	verb|watch-Fin-Imp-S .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	do you think +//.
+%mor:	aux|do-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 verb|think-Inf-S +//.
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|3|PUNCT
+*MOT:	is the magnet inserted in here [= black base] ?
+%mor:	aux|be-Fin-Ind-Pres-S3 det|the-Def-Art noun|magnet verb|insert-Part-Past-S adp|in adv|here ?
+%gra:	1|4|AUX-PASS 2|3|DET 3|0|ROOT 4|3|ACL 5|6|CASE 6|4|OBL 7|3|PUNCT
+*CHI:	xxx .
+*MOT:	how can they tell if it's [= black base?] &-um +...
+%mor:	adv|how aux|can-Fin-S pron|they-Prs-Nom-P3 verb|tell-Inf-S sconj|if pron|its-Prs-Gen-S3 +...
+%gra:	1|4|ADVMOD 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|6|MARK 6|4|ADVCL 7|4|PUNCT
+*CHI:	0 .
+%act:	places nickel on black base
+*MOT:	see how it [= nickel] moves around ?
+%mor:	verb|see-Fin-Imp-S adv|how pron|it-Prs-Nom-S3 verb|move-Fin-Ind-Pres-S3 adv|around ?
+%gra:	1|0|ROOT 2|1|OBJ 3|4|NSUBJ 4|2|ADVCL-RELCL 5|4|ADVMOD 6|1|PUNCT
+*MOT:	[^ popping a jelly bean in his mouth] watch .
+%act:	picks up black base and shakes it; causing nickel to slide back and forth across its surface
+%mor:	verb|watch-Fin-Imp-S .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	right .
+%mor:	adj|right-S1 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	+^ how can you test it [= magnet in black base?] ?
+%mor:	adv|how aux|can-Fin-S pron|you-Prs-Nom-S2 verb|test-Inf-S pron|it-Prs-Acc-S3 ?
+%gra:	1|4|ADVMOD 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*MOT:	like maybe put it [= nickel] (.) here +...
+%act:	points to a corner of the black base
+%mor:	intj|like adv|maybe verb|put-Fin-Imp-S pron|it-Prs-Acc-S3 adv|here +...
+%gra:	1|3|DISCOURSE 2|3|ADVMOD 3|0|ROOT 4|3|OBJ 5|3|ADVMOD 6|3|PUNCT
+*MOT:	versus over here (be)cause +...
+%mor:	adp|versus adp|over adv|here adv|because +...
+%gra:	1|3|CASE 2|3|CASE 3|0|ROOT 4|3|ADVMOD 5|3|PUNCT
+*MOT:	wait .
+%act:	points to opposite corner of black base
+%mor:	verb|wait-Fin-Imp-S .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	+^ we just put the magnet on this side ?
+%mor:	pron|we-Prs-Nom-P1 adv|just verb|put-Fin-Ind-Past-P1-irr det|the-Def-Art noun|magnet-Acc adp|on det|this-Def-Dem-Sing noun|side ?
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|5|DET 5|3|OBJ 6|8|CASE 7|8|DET 8|3|OBL 9|3|PUNCT
+*MOT:	to see if there's a difference .
+%mor:	part|to verb|see-Inf-S sconj|if verb|there-Fin-Ind-Pres-S3 det|a-Ind-Art noun|difference-Acc .
+%gra:	1|2|MARK 2|0|ROOT 3|4|MARK 4|2|CCOMP 5|6|DET 6|4|OBJ 7|2|PUNCT
+*CHI:	0 .
+%act:	puts nickel down on base; tilts base to one side; nickel slides across it and falls off
+*CHI:	nope .
+%mor:	intj|nope .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	does the coin +//.
+%mor:	aux|do-Fin-Ind-Pres-S3 det|the-Def-Art noun|coin +//.
+%gra:	1|0|ROOT 2|3|DET 3|1|NSUBJ 4|1|PUNCT
+*MOT:	yeah .
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	the coin's not staying with it .
+%mor:	det|the-Def-Art noun|coin-Plur part|not verb|stay-Ger-S adp|with pron|it-Prs-Acc-S3 .
+%gra:	1|2|DET 2|4|NSUBJ 3|4|ADVMOD 4|0|ROOT 5|6|CASE 6|4|OBL 7|4|PUNCT
+*MOT:	+^ try that on the other side of the (.) coin .
+%act:	picks up black base and turns it over
+%mor:	verb|try-Fin-Imp-S sconj|that adp|on det|the-Def-Art adj|other-S1 noun|side adp|of det|the-Def-Art noun|coin .
+%gra:	1|0|ROOT 2|6|MARK 3|6|CASE 4|6|DET 5|6|AMOD 6|1|OBL 7|9|CASE 8|9|DET 9|6|NMOD 10|1|PUNCT
+*MOT:	try this one .
+%mor:	verb|try-Fin-Imp-S det|this-Masc-Def-Dem-Sing noun|one-Acc .
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|1|PUNCT
+*CHI:	0 .
+%act:	puts nickel on black base
+*MOT:	will the coin stay ?
+%sit:	the coin falls off the black base
+%mor:	aux|will-Fin-S det|the-Def-Art noun|coin verb|stay-Inf-S ?
+%gra:	1|4|AUX 2|3|DET 3|4|NSUBJ 4|0|ROOT 5|4|PUNCT
+*CHI:	nope .
+%mor:	intj|nope .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	let's try one that we know works .
+%act:	clears off silver circle and moves it across table; picks up yellow wand and begins to pull magnets off it
+%mor:	adv|let verb|try-Fin-Imp-S num|one pron|that-Rel pron|we-Prs-Nom-P1 verb|know-Fin-Ind-Pres-P1 noun|work-Plur-Acc .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|OBJ 4|6|OBJ 5|6|NSUBJ 6|3|ACL-RELCL 7|6|OBJ 8|2|PUNCT
+*CHI:	this .
+%act:	tilts black base back and forth; there is a nut on it that the Chi has placed there
+%mor:	pron|this-Dem-S1 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	xxx .
+*MOT:	why don't you make one of your creations ?
+%mor:	adv|why adv|dont pron|you-Prs-Nom-S2 verb|make-Fin-Ind-Pres-S2 num|one adp|of pron|your-Prs-Gen-S2 noun|creation-Plur ?
+%gra:	1|4|ADVMOD 2|4|ADVMOD 3|4|NSUBJ 4|0|ROOT 5|4|OBJ 6|8|CASE 7|8|NMOD-POSS 8|5|NMOD 9|4|PUNCT
+*MOT:	xxx awesome configurations that you make .
+%mor:	adj|awesome-S1 noun|configuration-Plur pron|that-Rel pron|you-Prs-Nom-S2 verb|make-Fin-Ind-Pres-S2 .
+%gra:	1|2|AMOD 2|0|ROOT 3|5|OBJ 4|5|NSUBJ 5|2|ACL-RELCL 6|2|PUNCT
+*CHI:	oh yeah .
+%mor:	intj|oh intj|yeah .
+%gra:	1|0|ROOT 2|1|DISCOURSE 3|1|PUNCT
+*MOT:	terrific .
+%mor:	adj|terrific-S1 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	here's a stick .
+%act:	picks up silver stick and hands it to Chi
+%mor:	verb|here-Fin-Ind-Pres-S3 det|a-Ind-Art noun|stick-Acc .
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|1|PUNCT
+*MOT:	(.) whoa &=laughs !
+%mor:	intj|whoa !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	wow !
+%act:	waves yellow wand over black base
+%mor:	intj|wow !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	look at that !
+%mor:	verb|look-Fin-Imp-S adp|at pron|that-Dem !
+%gra:	1|0|ROOT 2|3|CASE 3|1|OBL 4|1|PUNCT
+*MOT:	oh Chi &=laughs .
+%mor:	intj|oh propn|Chi .
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|PUNCT
+*MOT:	feel that .
+%act:	hands yellow wand to Chi
+%mor:	verb|feel-Fin-Imp-S pron|that-Dem .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*MOT:	what's happening there ?
+%mor:	adv|whats verb|happen-Part-Pres-S adv|there ?
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|ADVMOD 4|2|PUNCT
+*MOT:	what do you think is going on ?
+%mor:	pron|what-Int-S1 aux|do-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 verb|think-Inf-S aux|be-Fin-Ind-Pres-S3 verb|go-Part-Pres-S adp|on ?
+%gra:	1|6|OBJ 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|6|AUX 6|4|CCOMP 7|6|COMPOUND-PRT 8|4|PUNCT
+*CHI:	0 .
+%act:	waves yellow wand over black base; brings it close and wand sticks to base
+*MOT:	whoa !
+%mor:	intj|whoa !
+%gra:	1|0|ROOT 2|1|PUNCT
+*EX2:	&=laughs .
+*MOT:	why did it do that ?
+%mor:	adv|why aux|do-Fin-Ind-Past-S3-irr pron|it-Prs-Nom-S3 verb|do-Inf-S pron|that-Dem ?
+%gra:	1|4|ADVMOD 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*CHI:	(be)cause the magnet's on this side .
+%act:	indicates one side of the base with the wand
+%mor:	sconj|because det|the-Def-Art noun|magnet adp|on det|this-Def-Dem-Sing noun|side .
+%gra:	1|3|MARK 2|3|DET 3|0|ROOT 4|6|CASE 5|6|DET 6|3|NMOD 7|3|PUNCT
+*MOT:	well the magnet's on (.) both sides .
+%mor:	intj|well det|the-Def-Art noun|magnet-Plur adp|on det|both-Def-Tot noun|side-Plur .
+%gra:	1|3|DISCOURSE 2|3|DET 3|0|ROOT 4|6|CASE 5|6|DET 6|3|NMOD 7|3|PUNCT
+*CHI:	0 .
+%act:	moves the yellow wand to the other side of the black base; it sticks
+*MOT:	but what you &~s +//.
+%mor:	cconj|but pron|what-Int-S1 pron|you-Prs-Nom-S2 +//.
+%gra:	1|2|CC 2|0|ROOT 3|2|NSUBJ 4|2|PUNCT
+*MOT:	remember what you learned about &-um +...
+%mor:	verb|remember-Fin-Imp-S pron|what-Rel-S1 pron|you-Prs-Nom-S2 verb|learn-Fin-Ind-Past-S2 adp|about +...
+%gra:	1|0|ROOT 2|1|OBJ 3|4|NSUBJ 4|2|ACL-RELCL 5|1|PUNCT 6|1|PUNCT
+*MOT:	what was it in the [/] book [//] we read about magnets and (.) electromagnetic energy electromagnetic energy ?
+%mor:	pron|what-Int-S1 aux|be-Fin-Ind-Past-S3-irr pron|it-Prs-Nom-S3 sconj|in pron|we-Prs-Nom-P1 verb|read-Fin-Ind-Past-P1-irr adp|about noun|magnet-Plur cconj|and adj|electromagnetic-S1 noun|energy adj|electromagnetic-S1 noun|energy ?
+%gra:	1|0|ROOT 2|1|COP 3|1|NSUBJ 4|6|MARK 5|6|NSUBJ 6|1|ADVCL 7|8|CASE 8|6|OBL 9|13|CC 10|11|AMOD 11|13|COMPOUND 12|13|AMOD 13|8|CONJ 14|1|PUNCT
+*MOT:	d(o) ya [: you] remember what it said about (.) &-um (.) positive and negative (.) connections ?
+%mor:	aux|do-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 verb|remember-Inf-S pron|what-Rel-S1 pron|it-Prs-Nom-S3 verb|say-Fin-Ind-Past-S3-irr adp|about adj|positive-S1 cconj|and adj|negative-S1 noun|connection-Plur ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|3|OBJ 5|6|NSUBJ 6|4|ACL-RELCL 7|11|CASE 8|11|AMOD 9|10|CC 10|8|CONJ 11|6|OBL 12|3|PUNCT
+*MOT:	do you remember what that said ?
+%mor:	aux|do-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 verb|remember-Inf-S pron|what-Int-S1 pron|that-Dem verb|say-Fin-Ind-Past-S3-irr ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|3|OBJ 5|6|NSUBJ 6|4|ACL-RELCL 7|3|PUNCT
+*CHI:	no .
+%act:	continues to stick wand to black base and pull it off
+%mor:	intj|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	0 [=! strange vocalization] .
+%act:	grabs Chi's head and moves it up and down with hands
+*MOT:	do you remember what that said ?
+%mor:	aux|do-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 verb|remember-Inf-S pron|what-Int-S1 pron|that-Dem verb|say-Fin-Ind-Past-S3-irr ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|3|OBJ 5|6|NSUBJ 6|4|ACL-RELCL 7|3|PUNCT
+*MOT:	hello !
+%act:	taps Chi on head
+%mor:	intj|hello !
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	yeah .
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	what did it say ?
+%mor:	pron|what-Int-S1 aux|do-Fin-Ind-Past-S3-irr pron|it-Prs-Nom-S3 verb|say-Inf-S ?
+%gra:	1|4|OBJ 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|4|PUNCT
+*CHI:	what ?
+%mor:	pron|what-Int-S1 ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	(re)member what we read ?
+%mor:	verb|remember-Fin-Imp-S pron|what-Rel-S1 pron|we-Prs-Nom-P1 verb|read-Fin-Ind-Pres-P1 ?
+%gra:	1|0|ROOT 2|1|OBJ 3|4|NSUBJ 4|2|ACL-RELCL 5|1|PUNCT
+*MOT:	&=laughs .
+*INV:	&=laughs .
+*MOT:	I didn't think you were &-um [=? on] +...
+%mor:	pron|I-Prs-Nom-S1 adv|didnt verb|think-Inf-S pron|you-Prs-Nom-S2 aux|be-Fin-Ind-Past-S2-irr +...
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|5|NSUBJ 5|3|CCOMP 6|3|PUNCT
+*MOT:	&-um remember what we read <in your> [//] book for the electromagnetic &-um (.) energy electromagnetic energy ?
+%mor:	verb|remember-Fin-Imp-S pron|what-Rel-S1 pron|we-Prs-Nom-P1 verb|read-Fin-Ind-Pres-P1 noun|book-Acc adp|for det|the-Def-Art adj|electromagnetic-S1 noun|energy adj|electromagnetic-S1 noun|energy ?
+%gra:	1|0|ROOT 2|1|OBJ 3|4|NSUBJ 4|2|ACL-RELCL 5|4|OBJ 6|11|CASE 7|11|DET 8|11|AMOD 9|11|COMPOUND 10|11|AMOD 11|4|OBL 12|1|PUNCT
+*MOT:	+^ the light and electricity and stuff ?
+%mor:	det|the-Def-Art noun|light cconj|and noun|electricity cconj|and noun|stuff ?
+%gra:	1|2|DET 2|0|ROOT 3|4|CC 4|2|CONJ 5|6|CC 6|2|CONJ 7|2|PUNCT
+*MOT:	about the positive and negative (.) whatever waves ?
+%mor:	adp|about det|the-Def-Art adj|positive-S1 cconj|and adj|negative-S1 det|whatever-Def-Int noun|wave-Plur ?
+%gra:	1|7|CASE 2|7|DET 3|7|AMOD 4|5|CC 5|3|CONJ 6|7|DET 7|0|ROOT 8|7|PUNCT
+*CHI:	&=vocalization .
+*MOT:	(.) how it caused [?] +...
+%mor:	adv|how pron|it-Prs-Nom-S3 verb|cause-Fin-Ind-Past-S3 +...
+%gra:	1|0|ROOT 2|3|NSUBJ 3|1|ADVCL-RELCL 4|1|PUNCT
+*MOT:	you know .
+%mor:	pron|you-Prs-Nom-S2 verb|know-Fin-Ind-Pres-S2 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|PUNCT
+*MOT:	some attract and some repel ?
+%mor:	det|some-Def-Ind verb|attract-Fin-Ind-Pres-P3 cconj|and det|some-Def-Ind verb|repel-Fin-Ind-Pres-P3 ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|5|CC 4|5|NSUBJ 5|2|CONJ 6|2|PUNCT
+*MOT:	do you remember that ?
+%mor:	aux|do-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 verb|remember-Inf-S pron|that-Dem ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*CHI:	yes .
+%mor:	intj|yes .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	positive and negative (.) energy ?
+%mor:	adj|positive-S1 cconj|and adj|negative-S1 noun|energy ?
+%gra:	1|4|AMOD 2|3|CC 3|1|CONJ 4|0|ROOT 5|4|PUNCT
+*CHI:	yeah .
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	so what do you think (i)s goin(g) on here ?
+%act:	holds up yellow wand and points it toward the black base
+%mor:	adv|so pron|what-Int-S1 aux|do-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 verb|think-Inf-S aux|be-Fin-Ind-Pres-S3 verb|go-Part-Pres-S adp|on adv|here ?
+%gra:	1|5|ADVMOD 2|7|OBJ 3|5|AUX 4|5|NSUBJ 5|0|ROOT 6|7|AUX 7|5|CCOMP 8|7|COMPOUND-PRT 9|7|ADVMOD 10|5|PUNCT
+*MOT:	(be)cause these are magnets just like what we read about .
+%act:	indicates the other objects on the table with the yellow wand
+%mor:	sconj|because pron|this-Dem-P1 aux|be-Fin-Ind-Pres-P3 noun|magnet-Plur adv|just adp|like pron|what-Rel-S1 pron|we-Prs-Nom-P1 verb|read-Fin-Ind-Pres-P1 adp|about .
+%gra:	1|4|MARK 2|4|NSUBJ 3|4|COP 4|0|ROOT 5|7|ADVMOD 6|7|CASE 7|4|OBL 8|9|NSUBJ 9|7|ACL-RELCL 10|9|OBL 11|4|PUNCT
+*CHI:	[^ taking the mouse from Leo] I know .
+%mor:	pron|I-Prs-Nom-S1 verb|know-Fin-Ind-Pres-S1 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|PUNCT
+*MOT:	do you remember what it said about (.) positives and negatives ?
+%mor:	aux|do-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 verb|remember-Inf-S pron|what-Rel-S1 pron|it-Prs-Nom-S3 verb|say-Fin-Ind-Past-S3-irr adp|about noun|positive-Plur cconj|and noun|negative-Plur ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|3|OBJ 5|6|NSUBJ 6|4|ACL-RELCL 7|8|CASE 8|6|OBL 9|10|CC 10|8|CONJ 11|3|PUNCT
+*MOT:	hm: ?
+%mor:	intj|hm ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	&-uh yeah .
+%act:	puts silver circle on black base; places two silver men in standing positions on silver circle
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	what did it say ?
+%mor:	pron|what-Int-S1 aux|do-Fin-Ind-Past-S3-irr pron|it-Prs-Nom-S3 verb|say-Inf-S ?
+%gra:	1|4|OBJ 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|4|PUNCT
+*MOT:	+^ (be)cause that'll help explain why on [//] this side what is it doing doin(g) ?
+%act:	taps the top of the black base with the yellow wand
+%mor:	sconj|because noun|thatll verb|help-Fin-S verb|explain-Inf-S adv|why det|this-Def-Dem-Sing noun|side pron|what-Int-S1 aux|be-Fin-Ind-Pres-S3 pron|it-Prs-Nom-S3 verb|do-Part-Pres-S verb|do-Part-Pres-S ?
+%gra:	1|3|MARK 2|3|NSUBJ 3|0|ROOT 4|3|XCOMP 5|4|OBJ 6|7|DET 7|8|NSUBJ 8|11|OBJ 9|11|AUX 10|11|NSUBJ 11|5|ADVCL-RELCL 12|11|XCOMP 13|3|PUNCT
+*MOT:	compared to this side ?
+%act:	taps the side of the black base with the yellow wand
+%mor:	verb|compare-Part-Past-S adp|to det|this-Def-Dem-Sing noun|side ?
+%gra:	1|0|ROOT 2|4|CASE 3|4|DET 4|1|OBL 5|1|PUNCT
+*CHI:	(o)kay [=? wait] .
+%mor:	intj|okay .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	hm: ?
+%mor:	intj|hm ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	hm: .
+%mor:	intj|hm .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	it's makin(g) it (.) &-um +...
+%act:	places another silver man on the black base
+%mor:	pron|its-Prs-Gen-S3 verb|make-Ger-S pron|it-Prs-Acc-S3 +...
+%gra:	1|2|NMOD-POSS 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*CHI:	&-um .
+*CHI:	I don't know .
+%act:	places a fourth silver man on the black base
+%mor:	pron|I-Prs-Nom-S1 adv|dont verb|know-Fin-Ind-Pres-S1 .
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|3|PUNCT
+*MOT:	wait a minute .
+%mor:	verb|wait-Fin-Imp-S det|a-Ind-Art noun|minute .
+%gra:	1|0|ROOT 2|3|DET 3|1|OBL-UNMARKED 4|1|PUNCT
+*MOT:	you know what ?
+%mor:	pron|you-Prs-Nom-S2 verb|know-Fin-Ind-Pres-S2 pron|what-Int-S1 ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*MOT:	+^ I asked you to make one of these neat figures .
+%act:	reaches over and pulls black base away from Chi toward her
+%mor:	pron|I-Prs-Nom-S1 verb|ask-Fin-Ind-Past-S1 pron|you-Prs-Acc-S2 part|to verb|make-Inf-S num|one adp|of det|this-Def-Dem-Plur adj|neat-S1 noun|figure-Plur .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|IOBJ 4|5|MARK 5|2|XCOMP 6|5|OBJ 7|10|CASE 8|10|DET 9|10|AMOD 10|6|NMOD 11|2|PUNCT
+*MOT:	I really want you to .
+%mor:	pron|I-Prs-Nom-S1 adv|really verb|want-Fin-Ind-Pres-S1 pron|you-Prs-Acc-S2 part|to .
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|3|OBJ 5|3|XCOMP 6|3|PUNCT
+*MOT:	+^ but I just want you to figure this out for a minute first .
+%mor:	cconj|but pron|I-Prs-Nom-S1 adv|just verb|want-Fin-Ind-Pres-S1 pron|you-Prs-Acc-S2 part|to verb|figure-Inf-S pron|this-Dem-S1 adp|out adp|for det|a-Ind-Art noun|minute adv|first .
+%gra:	1|4|CC 2|4|NSUBJ 3|4|ADVMOD 4|0|ROOT 5|4|OBJ 6|7|MARK 7|4|XCOMP 8|7|OBJ 9|7|COMPOUND-PRT 10|12|CASE 11|12|DET 12|7|OBL 13|7|ADVMOD 14|4|PUNCT
+*MOT:	okay ?
+%mor:	intj|okay ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	can you do that ?
+%mor:	aux|can-Fin-S pron|you-Prs-Nom-S2 verb|do-Inf-S pron|that-Dem ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*MOT:	+^ just for a minute ?
+%mor:	adv|just adp|for det|a-Ind-Art noun|minute ?
+%gra:	1|4|ADVMOD 2|4|CASE 3|4|DET 4|0|ROOT 5|4|PUNCT
+*MOT:	+^ and then you can do that ?
+%mor:	cconj|and adv|then pron|you-Prs-Nom-S2 aux|can-Fin-S verb|do-Inf-S pron|that-Dem ?
+%gra:	1|5|CC 2|5|ADVMOD 3|5|NSUBJ 4|5|AUX 5|0|ROOT 6|5|OBJ 7|5|PUNCT
+*CHI:	wait a second .
+%act:	attempts to finish arranging silver men on black base
+%mor:	verb|wait-Fin-Imp-S det|a-Ind-Art noun|second-Acc .
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|1|PUNCT
+*MOT:	I [//] just want you to answer me this this .
+%mor:	adv|just verb|want-Fin-Ind-Pres-S1 pron|you-Prs-Acc-S2 part|to verb|answer-Inf-S pron|I-Prs-Acc-S1 pron|this-Dem-S1 pron|this-Dem-S1 .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|OBJ 4|5|MARK 5|2|XCOMP 6|5|IOBJ 7|5|OBJ 8|5|OBJ 9|2|PUNCT
+*MOT:	(be)cause that'll help you figure a lot .
+%act:	moves yellow wand toward black base
+%mor:	sconj|because pron|thatll-Prs-Nom-S3 verb|help-Fin-Imp-S pron|you-Prs-Acc-S2 verb|figure-Inf-S det|a-Ind-Art noun|lot-Acc .
+%gra:	1|3|MARK 2|3|NSUBJ 3|0|ROOT 4|3|OBJ 5|3|XCOMP 6|7|DET 7|5|OBJ 8|3|PUNCT
+*MOT:	why is it that this one <pushes away [?]> [//] from here and that [= the top of the black base] it's attracting there [= the yellow wand] attracting there [= side of the black base] .
+%gpx:	points to the top and side of the black base with the yellow wand as she refers to them in her speech
+%mor:	adv|why aux|be-Fin-Ind-Pres-S3 pron|it-Prs-Nom-S3 sconj|that det|this-Def-Dem-Sing noun|one adp|from adv|here cconj|and pron|that-Dem aux|its-Fin-Ind-Pres-S3 verb|attract-Part-Pres-S adv|there verb|attract-Part-Pres-S adv|there .
+%gra:	1|0|ROOT 2|1|COP 3|1|NSUBJ 4|6|MARK 5|6|DET 6|12|NSUBJ 7|8|CASE 8|6|NMOD 9|12|CC 10|12|NSUBJ 11|12|AUX 12|1|CONJ 13|12|ADVMOD 14|12|ADVCL 15|14|ADVMOD 16|1|PUNCT
+*CHI:	(be)cause this is a (.) positive +...
+%act:	taps top of black base
+%mor:	sconj|because pron|this-Dem-S1 aux|be-Fin-Ind-Pres-S3 det|a-Ind-Art adj|positive-S1 +...
+%gra:	1|5|MARK 2|5|NSUBJ 3|5|COP 4|5|DET 5|0|ROOT 6|5|PUNCT
+*CHI:	this one's negative .
+%act:	taps yellow wand
+%mor:	det|this-Def-Dem-Sing adj|one-S1 noun|negative .
+%gra:	1|3|DET 2|3|AMOD 3|0|ROOT 4|3|PUNCT
+*CHI:	that part's negative .
+%act:	taps yellow wand
+%mor:	det|that-Def-Dem-Sing noun|part-Plur noun|negative .
+%gra:	1|3|DET 2|3|COMPOUND 3|0|ROOT 4|3|PUNCT
+*CHI:	and this one's (.) negative .
+%act:	taps side of black base
+%mor:	cconj|and det|this-Def-Dem-Sing adj|one-S1 noun|negative .
+%gra:	1|4|CC 2|4|DET 3|4|AMOD 4|0|ROOT 5|4|PUNCT
+*CHI:	and that one's negative .
+%act:	taps yellow wand
+%mor:	cconj|and det|that-Def-Dem-Sing adj|one-S1 noun|negative .
+%gra:	1|4|CC 2|4|DET 3|4|AMOD 4|0|ROOT 5|4|PUNCT
+*MOT:	what's this called <when they> [/] push away push away ?
+%act:	moves yellow wand over top of black base
+%mor:	aux|what-Fin-Ind-Pres-S3 pron|this-Dem-S1 verb|call-Part-Past-S verb|push-Fin-Imp-S adv|away verb|push-Fin-Imp-S adv|away ?
+%gra:	1|3|AUX-PASS 2|3|NSUBJ-PASS 3|0|ROOT 4|3|XCOMP 5|4|ADVMOD 6|3|XCOMP 7|6|ADVMOD 8|3|PUNCT
+*CHI:	&-um negative [>] .
+%act:	takes yellow wand out of Mot's hands
+%mor:	adj|negative-S1 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	<are they attractive> [<] or [/] repeling repeling ?
+%mor:	aux|be-Fin-Ind-Pres-P3 pron|they-Prs-Nom-P3 adj|attractive-S1 noun|repeling-Ger noun|repeling-Ger ?
+%gra:	1|5|COP 2|5|NSUBJ 3|5|AMOD 4|5|COMPOUND 5|0|ROOT 6|5|PUNCT
+*CHI:	repeling .
+%mor:	verb|repel-Part-Pres-S .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	what does that mean ?
+%mor:	pron|what-Int-S1 aux|do-Fin-Ind-Pres-S3 pron|that-Dem verb|mean-Inf-S ?
+%gra:	1|4|OBJ 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|4|PUNCT
+*CHI:	+< that +/.
+%mor:	pron|that-Dem +/.
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	it bounces off (.) right ?
+%act:	moves hands toward one another and then away before they touch
+%mor:	pron|it-Prs-Nom-S3 verb|bounce-Fin-Ind-Pres-S3 adp|off adv|right ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|COMPOUND-PRT 4|2|ADVMOD 5|2|PUNCT
+*MOT:	<it pushes away> [>] ?
+%mor:	pron|it-Prs-Nom-S3 verb|push-Fin-Ind-Pres-S3 adv|away ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|ADVMOD 4|2|PUNCT
+*CHI:	<that (.) one's nega(tive)> [<] +//.
+%act:	uses yellow wand to indicate black base
+%mor:	det|that-Def-Dem-Sing noun|one noun|negative +//.
+%gra:	1|3|DET 2|3|COMPOUND 3|0|ROOT 4|3|PUNCT
+*CHI:	that (.) that one's negative .
+%mor:	sconj|that det|that-Def-Dem-Sing adj|one-S1 noun|negative .
+%gra:	1|4|MARK 2|4|DET 3|4|AMOD 4|0|ROOT 5|4|PUNCT
+*CHI:	this one's positive .
+%act:	holds up yellow wand; moves it toward top of black base until the two stick together
+%mor:	det|this-Def-Dem-Sing noun|one adj|positive-S1 .
+%gra:	1|3|DET 2|3|NSUBJ 3|0|ROOT 4|3|PUNCT
+*EX2:	&=laughs .
+*CHI:	&=laughs .
+*MOT:	&=laughs .
+*MOT:	so what happens when (.) you're goin(g) like that ?
+%act:	moves yellow wand from the top of the black base to the side of it
+%mor:	adv|so pron|what-Int-S1 verb|happen-Fin-Ind-Pres-S3 adv|when pron|your-Prs-Acc-S2 verb|go-Part-Pres-S adp|like pron|that-Dem ?
+%gra:	1|3|DISCOURSE 2|3|NSUBJ 3|0|ROOT 4|6|ADVMOD 5|6|NSUBJ 6|3|ADVCL 7|8|CASE 8|6|OBL 9|3|PUNCT
+*MOT:	what's that connection ?
+%mor:	pron|what-Int-S1 det|that-Def-Dem-Sing noun|connection-Acc ?
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|1|PUNCT
+*MOT:	when there's [=? this] +...
+%mor:	adv|when verb|there-Fin-Ind-Pres-S3 +...
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*CHI:	<positive and positive> [>] .
+%mor:	adj|positive-S1 cconj|and adj|positive-S1 .
+%gra:	1|0|ROOT 2|3|CC 3|1|CONJ 4|1|PUNCT
+*MOT:	come together .
+%mor:	verb|come-Fin-Imp-S adv|together .
+%gra:	1|0|ROOT 2|1|ADVMOD 3|1|PUNCT
+*MOT:	no .
+%mor:	intj|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	+^ that's when they attract (.) right ?
+%mor:	verb|that-Fin-Ind-Pres-S3 adv|when pron|they-Prs-Nom-P3 verb|attract-Fin-Ind-Pres-P3 adj|right-S1 ?
+%gra:	1|0|ROOT 2|4|ADVMOD 3|4|NSUBJ 4|1|ADVCL 5|4|ADVMOD 6|1|PUNCT
+*CHI:	yeah .
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	right .
+%mor:	adj|right-S1 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	and I forget +...
+%mor:	cconj|and pron|I-Prs-Nom-S1 verb|forget-Fin-Ind-Pres-S1 +...
+%gra:	1|3|CC 2|3|NSUBJ 3|0|ROOT 4|3|PUNCT
+*CHI:	xxx .
+*MOT:	was it negatives ?
+%mor:	aux|be-Fin-Ind-Past-S3-irr pron|it-Prs-Nom-S3 noun|negative-Plur ?
+%gra:	1|3|COP 2|3|NSUBJ 3|0|ROOT 4|3|PUNCT
+*MOT:	positives [>] ?
+%mor:	noun|positive-Plur ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	<negative and> [<] +...
+%mor:	adj|negative-S1 cconj|and +...
+%gra:	1|0|ROOT 2|1|CC 3|1|PUNCT
+*MOT:	<I forget what it was> [>] .
+%mor:	pron|I-Prs-Nom-S1 verb|forget-Fin-Ind-Pres-S1 pron|what-Int-S1 pron|it-Prs-Nom-S3 aux|be-Fin-Ind-Past-S3-irr .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|5|NSUBJ 5|3|ACL-RELCL 6|2|PUNCT
+*CHI:	positives [<] .
+%mor:	noun|positive-Plur .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	this one's pogitive [//] positive [>] .
+%act:	holds yellow wand above black base
+%mor:	det|this-Def-Dem-Sing noun|one adj|positive-S1 .
+%gra:	1|3|DET 2|3|NSUBJ 3|0|ROOT 4|3|PUNCT
+*MOT:	<but (.) one [/] connection of> [<] them attract (.) attract .
+%act:	holds hand out toward base
+%mor:	cconj|but noun|connection adp|of pron|they-Prs-Acc-P3 verb|attract-Fin-Ind-Pres-P3 verb|attract-Inf-S .
+%gra:	1|5|CC 2|5|NSUBJ 3|4|CASE 4|2|NMOD 5|0|ROOT 6|5|XCOMP 7|5|PUNCT
+*MOT:	and one combination of (th)em repel right ?
+%mor:	cconj|and num|one noun|combination adp|of pron|they-Prs-Acc-P3 verb|repel-Fin-Ind-Pres-P3 adj|right-S1 ?
+%gra:	1|6|CC 2|3|NUMMOD 3|6|NSUBJ 4|5|CASE 5|3|NMOD 6|0|ROOT 7|6|ADVMOD 8|6|PUNCT
+*EX2:	&=laughs .
+*CHI:	cool .
+%act:	moves yellow wand toward side of black base; black base slides across the table away from the wand
+%mor:	adj|cool-S1 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	you can actually +//.
+%mor:	pron|you-Prs-Nom-S2 aux|can-Fin-S adv|actually +//.
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|ADVMOD 4|2|PUNCT
+*MOT:	do you think you could move like (.) move a car that way ?
+%mor:	aux|do-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 verb|think-Inf-S pron|you-Prs-Nom-S2 aux|could-Fin-S verb|move-Inf-S intj|like verb|move-Inf-S det|a-Ind-Art noun|car-Acc pron|that-Rel noun|way ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|6|NSUBJ 5|6|AUX 6|3|CCOMP 7|8|DISCOURSE 8|6|XCOMP 9|10|DET 10|8|OBJ 11|12|NSUBJ 12|10|NMOD-UNMARKED 13|3|PUNCT
+*MOT:	if you put that [= yellow wand?] in the engine +...
+%mor:	sconj|if pron|you-Prs-Nom-S2 verb|put-Fin-Ind-Past-S2-irr pron|that-Dem adp|in det|the-Def-Art noun|engine +...
+%gra:	1|3|MARK 2|3|NSUBJ 3|0|ROOT 4|3|OBJ 5|7|CASE 6|7|DET 7|3|OBL 8|3|PUNCT
+*MOT:	and you put it on wheels ?
+%mor:	cconj|and pron|you-Prs-Nom-S2 verb|put-Fin-Ind-Past-S2-irr pron|it-Prs-Acc-S3 adp|on noun|wheel-Plur ?
+%gra:	1|3|CC 2|3|NSUBJ 3|0|ROOT 4|3|OBJ 5|6|CASE 6|3|OBL 7|3|PUNCT
+*MOT:	and made it move .
+%mor:	cconj|and verb|make-Fin-Ind-Past-S3-irr pron|it-Prs-Acc-S3 verb|move-Inf-S .
+%gra:	1|2|CC 2|0|ROOT 3|2|OBJ 4|2|XCOMP 5|2|PUNCT
+*MOT:	look .
+%act:	grabs Chi's hand on wand and moves wand over the top of the base
+%mor:	verb|look-Fin-Imp-S .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	that's not the one !
+%mor:	aux|that-Fin-Ind-Pres-S3 part|not det|the-Def-Art noun|one !
+%gra:	1|4|COP 2|4|ADVMOD 3|4|DET 4|0|ROOT 5|4|PUNCT
+*MOT:	you think you could though ?
+%mor:	pron|you-Prs-Nom-S2 verb|think-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 aux|could-Fin-S adv|though ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|NSUBJ 4|2|CCOMP 5|4|ADVMOD 6|2|PUNCT
+*MOT:	with that kind of energy ?
+%mor:	adp|with det|that-Def-Dem-Sing noun|kind adp|of noun|energy ?
+%gra:	1|3|CASE 2|3|DET 3|0|ROOT 4|5|CASE 5|3|NMOD 6|3|PUNCT
+*CHI:	0 .
+%act:	resumes action of using yellow wand to push base across the table
+*MOT:	see <see how> [//] you [//] make it move make it move ?
+%mor:	verb|see-Fin-Imp-S verb|make-Inf-S pron|it-Prs-Acc-S3 noun|move verb|make-Inf-S pron|it-Prs-Acc-S3 verb|move-Inf-S ?
+%gra:	1|0|ROOT 2|1|XCOMP 3|2|OBJ 4|2|XCOMP 5|2|XCOMP 6|5|OBJ 7|5|XCOMP 8|1|PUNCT
+*MOT:	without even touchin(g) it ?
+%mor:	sconj|without adv|even verb|touch-Part-Pres-S pron|it-Prs-Acc-S3 ?
+%gra:	1|3|MARK 2|3|ADVMOD 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*MOT:	wouldn't that be neat if you could like (.) power a car that way ?
+%mor:	aux|wouldnt-Fin-S pron|that-Dem aux|be-Inf-S adj|neat-S1 sconj|if pron|you-Prs-Nom-S2 aux|could-Fin-S verb|like-Inf-S verb|power-Inf-S det|a-Ind-Art noun|car-Acc pron|that-Rel noun|way ?
+%gra:	1|4|AUX 2|4|NSUBJ 3|4|COP 4|0|ROOT 5|8|MARK 6|8|NSUBJ 7|8|AUX 8|4|ADVCL 9|8|XCOMP 10|11|DET 11|9|OBJ 12|13|NSUBJ 13|11|NMOD-UNMARKED 14|4|PUNCT
+*MOT:	and you wouldn't need any gas ?
+%mor:	cconj|and pron|you-Prs-Nom-S2 aux|wouldnt-Fin-S verb|need-Inf-S det|any-Def-Ind noun|gas-Acc ?
+%gra:	1|4|CC 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|PUNCT
+*MOT:	how do you think you could do that xxx ?
+%mor:	adv|how aux|do-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 verb|think-Inf-S pron|you-Prs-Nom-S2 aux|could-Fin-S verb|do-Inf-S pron|that-Dem ?
+%gra:	1|4|ADVMOD 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|7|NSUBJ 6|7|AUX 7|4|CCOMP 8|7|OBJ 9|4|PUNCT
+*CHI:	0 .
+%act:	moves yellow wand to top of black base and picks it up
+*MOT:	Chi (.) imagine that you had the wheels (.) right ?
+%act:	pulls black base off of yellow wand and attempts to put a washer on the side of it
+%mor:	propn|Chi verb|imagine-Fin-Imp-S sconj|that pron|you-Prs-Nom-S2 verb|have-Fin-Ind-Past-S2-irr det|the-Def-Art noun|wheel-Plur-Acc adv|right ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|5|MARK 4|5|NSUBJ 5|2|CCOMP 6|7|DET 7|5|OBJ 8|5|ADVMOD 9|2|PUNCT
+*MOT:	put the wheels on the side .
+%mor:	verb|put-Fin-Imp-S det|the-Def-Art noun|wheel-Plur-Acc adp|on det|the-Def-Art noun|side .
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|6|CASE 5|6|DET 6|1|OBL 7|1|PUNCT
+*CHI:	0 .
+%act:	takes black base from Mot's hands
+*MOT:	+^ imagine you could glue them on and they would turn .
+%mor:	verb|imagine-Fin-Imp-S pron|you-Prs-Nom-S2 aux|could-Fin-S verb|glue-Inf-S pron|they-Prs-Acc-P3 adp|on cconj|and pron|they-Prs-Nom-P3 aux|would-Fin-S verb|turn-Inf-S .
+%gra:	1|0|ROOT 2|4|NSUBJ 3|4|AUX 4|1|CCOMP 5|4|OBJ 6|4|COMPOUND-PRT 7|10|CC 8|10|NSUBJ 9|10|AUX 10|1|CONJ 11|1|PUNCT
+*MOT:	right ?
+%mor:	adj|right-S1 ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	do you think you could make it [= black base] roll ?
+%mor:	aux|do-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 verb|think-Inf-S pron|you-Prs-Nom-S2 aux|could-Fin-S verb|make-Inf-S pron|it-Prs-Acc-S3 verb|roll-Inf-S ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|6|NSUBJ 5|6|AUX 6|3|CCOMP 7|6|OBJ 8|6|XCOMP 9|3|PUNCT
+*MOT:	with just [= yellow wand] [//] this magnetic energy [//] magnetic energy ?
+%mor:	adp|with det|this-Def-Dem-Sing adj|magnetic-S1 adj|magnetic-S1 noun|energy ?
+%gra:	1|5|CASE 2|5|DET 3|5|AMOD 4|5|AMOD 5|0|ROOT 6|5|PUNCT
+*MOT:	do you think ?
+%mor:	aux|do-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 verb|think-Inf-S ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|3|PUNCT
+*CHI:	maybe .
+%act:	is attempting to stick washers to side of black base
+%mor:	adv|maybe .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	I think that's kinda neat .
+%mor:	pron|I-Prs-Nom-S1 verb|think-Fin-Ind-Pres-S1 aux|that-Fin-Ind-Pres-S3 adv|kinda adj|neat-S1 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|5|COP 4|5|ADVMOD 5|2|CCOMP 6|2|PUNCT
+*CHI:	do you ?
+%mor:	aux|do-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 ?
+%gra:	1|0|ROOT 2|1|NSUBJ 3|1|PUNCT
+*MOT:	well I forget what combinations of positive and negatives it is but we could look that up .
+%mor:	intj|well pron|I-Prs-Nom-S1 verb|forget-Fin-Ind-Pres-S1 det|what-Def-Int noun|combination-Plur-Acc adp|of adj|positive-S1 cconj|and noun|negative-Plur pron|it-Prs-Nom-S3 aux|be-Fin-Ind-Pres-S3 cconj|but pron|we-Prs-Nom-P1 aux|could-Fin-S verb|look-Inf-S pron|that-Dem adp|up .
+%gra:	1|3|DISCOURSE 2|3|NSUBJ 3|0|ROOT 4|5|DET 5|3|OBJ 6|7|CASE 7|5|NMOD 8|9|CC 9|7|CONJ 10|11|NSUBJ 11|7|COP 12|15|CC 13|15|NSUBJ 14|15|AUX 15|3|CONJ 16|15|OBJ 17|15|COMPOUND-PRT 18|3|PUNCT
+*CHI:	hm: .
+%mor:	intj|hm .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	why don't you make a platform <for your> [/] stage your &-uh stage ?
+%act:	picks up silver circle
+%mor:	adv|why adv|dont pron|you-Prs-Nom-S2 verb|make-Fin-Ind-Pres-S2 det|a-Ind-Art noun|platform-Acc verb|stage-Inf-S pron|your-Prs-Gen-S2 noun|stage-Acc ?
+%gra:	1|4|ADVMOD 2|4|ADVMOD 3|4|NSUBJ 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|XCOMP 8|9|NMOD-POSS 9|7|OBJ 10|4|PUNCT
+*MOT:	now do this .
+%mor:	adv|now verb|do-Fin-Imp-S pron|this-Dem-S1 .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*MOT:	(be)cause you make these really [//] (.) awesome designs (.) designs .
+%mor:	sconj|because pron|you-Prs-Nom-S2 verb|make-Fin-Ind-Pres-S2 det|this-Def-Dem-Plur adj|awesome-S1 noun|design-Plur noun|design-Plur-Acc .
+%gra:	1|3|MARK 2|3|NSUBJ 3|0|ROOT 4|7|DET 5|7|AMOD 6|7|COMPOUND 7|3|OBJ 8|3|PUNCT
+*CHI:	0 .
+%act:	puts silver circle on black base
+*MOT:	0 .
+%act:	picks up several pieces and moves them towards the base
+*CHI:	0 [=! strange vocalization] .
+%act:	waves hands
+*MOT:	+" oh I know .
+%mor:	intj|oh pron|I-Prs-Nom-S1 verb|know-Fin-Ind-Pres-S1 .
+%gra:	1|3|DISCOURSE 2|3|NSUBJ 3|0|ROOT 4|3|PUNCT
+*MOT:	I'm just +//.
+%mor:	intj|im adv|just +//.
+%gra:	1|0|ROOT 2|1|ADVMOD 3|1|PUNCT
+*MOT:	you have these [= magnet balls] at home (.) right ?
+%mor:	pron|you-Prs-Nom-S2 verb|have-Fin-Ind-Pres-S2 pron|this-Dem-P1 adp|at noun|home adv|right ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|5|CASE 5|2|OBL 6|2|ADVMOD 7|2|PUNCT
+*MOT:	these things ?
+%mor:	det|this-Def-Dem-Plur noun|thing-Plur ?
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*CHI:	yeah .
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	+^ well actually !
+%mor:	intj|well adv|actually !
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|PUNCT
+*MOT:	wow .
+%mor:	intj|wow .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	you think you could &-um [>] +/.
+%act:	picks up several nuts
+%mor:	pron|you-Prs-Nom-S2 verb|think-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 aux|could-Fin-S +/.
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|NSUBJ 4|2|CCOMP 5|2|PUNCT
+*CHI:	ugh [<] .
+%mor:	intj|ugh .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	you could make it a wheel with it ?
+%mor:	pron|you-Prs-Nom-S2 aux|could-Fin-S verb|make-Inf-S pron|it-Prs-Acc-S3 det|a-Ind-Art noun|wheel adp|with pron|it-Prs-Acc-S3 ?
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|6|DET 6|3|XCOMP 7|8|CASE 8|6|NMOD 9|3|PUNCT
+*CHI:	I don't wanna do it like that .
+%act:	shakes head
+%mor:	pron|I-Prs-Nom-S1 adv|dont aux|wanna-Fin-S verb|do-Inf-S pron|it-Prs-Acc-S3 adp|like pron|that-Dem .
+%gra:	1|4|NSUBJ 2|4|ADVMOD 3|4|AUX 4|0|ROOT 5|4|OBJ 6|7|CASE 7|4|OBL 8|4|PUNCT
+*MOT:	look .
+%mor:	verb|look-Fin-Imp-S .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	whoop !
+%mor:	noun|whoop !
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	&=vocalization .
+*CHI:	whoop .
+%mor:	noun|whoop .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	(.) xxx .
+*CHI:	xxx .
+*CHI:	whoops .
+%act:	places a small construction of nuts and magnet balls on the black base
+%mor:	intj|whoops .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	&=laughs .
+*MOT:	wow !
+%mor:	intj|wow !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	<is that [= Chi's construction] &~re> [//] repeling that [= Chi's construction] repeling ?
+%mor:	verb|repel-Part-Pres-S det|that-Def-Dem-Sing noun|repeling-Acc-Ger ?
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|1|PUNCT
+*MOT:	(.) xxx .
+*MOT:	I think that we needta get some more (.) make them +...
+%mor:	pron|I-Prs-Nom-S1 verb|think-Fin-Ind-Pres-S1 sconj|that pron|we-Prs-Nom-P1 aux|needta-Fin-Ind-Pres-P1 verb|get-Inf-S det|some-Def-Ind adj|more-Cmp-S1 verb|make-Inf-S pron|they-Prs-Acc-P3 +...
+%gra:	1|2|NSUBJ 2|0|ROOT 3|6|MARK 4|6|NSUBJ 5|6|AUX 6|2|CCOMP 7|8|DET 8|6|OBJ 9|6|XCOMP 10|9|OBJ 11|2|PUNCT
+*MOT:	these guys .
+%mor:	det|this-Def-Dem-Plur noun|guy-Plur .
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*CHI:	hm: .
+%mor:	intj|hm .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	you know how like the thing [= yellow wand?] was pushing like that ?
+%act:	shakes hand over black base
+%mor:	pron|you-Prs-Nom-S2 verb|know-Fin-Ind-Pres-S2 adv|how sconj|like det|the-Def-Art noun|thing-Ger aux|be-Fin-Ind-Past-S3-irr verb|push-Part-Pres-S adp|like pron|that-Dem ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|8|MARK 5|6|DET 6|8|NSUBJ 7|8|AUX 8|2|CCOMP 9|10|CASE 10|8|OBL 11|2|PUNCT
+*MOT:	+^ if you can make one of the guys kinda [= kind of] standin(g) up somehow ?
+%act:	holds up a silver man
+%mor:	sconj|if pron|you-Prs-Nom-S2 aux|can-Fin-S verb|make-Inf-S num|one adp|of det|the-Def-Art noun|guy-Plur adv|kinda verb|stand-Ger-S adp|up adv|somehow ?
+%gra:	1|4|MARK 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|8|CASE 7|8|DET 8|5|NMOD 9|10|ADVMOD 10|8|ACL 11|10|COMPOUND-PRT 12|10|ADVMOD 13|4|PUNCT
+*MOT:	&=laughs .
+*CHI:	stand up ?
+%mor:	verb|stand-Fin-Imp-S adp|up ?
+%gra:	1|0|ROOT 2|1|COMPOUND-PRT 3|1|PUNCT
+*MOT:	like yeah .
+%mor:	intj|like intj|yeah .
+%gra:	1|0|ROOT 2|1|DISCOURSE 3|1|PUNCT
+*MOT:	like (.) you know like with that [//] repeling repeling ?
+%mor:	sconj|like pron|you-Prs-Nom-S2 verb|know-Fin-Ind-Pres-S2 intj|like sconj|with verb|repel-Part-Pres-S noun|repeling-Acc-Ger ?
+%gra:	1|3|MARK 2|3|NSUBJ 3|0|ROOT 4|3|DISCOURSE 5|6|MARK 6|3|ADVCL 7|6|OBJ 8|3|PUNCT
+*MOT:	how it [/] went like xxx &=vocalization that that ?
+%act:	picks up yellow wand and holds it near black platform
+%mor:	adv|how verb|go-Fin-Ind-Past-S3-irr adp|like pron|that-Dem pron|that-Dem ?
+%gra:	1|2|ADVMOD 2|0|ROOT 3|4|CASE 4|2|OBL 5|2|OBL-UNMARKED 6|2|PUNCT
+*MOT:	if you could keep [/] it suspended [= silver man] suspended .
+%mor:	sconj|if pron|you-Prs-Nom-S2 aux|could-Fin-S pron|it-Prs-Nom-S3 verb|suspend-Part-Past-S verb|suspend-Part-Past-S .
+%gra:	1|5|MARK 2|5|NSUBJ-PASS 3|5|AUX 4|5|NSUBJ-PASS 5|0|ROOT 6|5|XCOMP 7|5|PUNCT
+*MOT:	above (.) something .
+%act:	points to yellow wand
+%mor:	adp|above pron|something-Ind-S1 .
+%gra:	1|2|CASE 2|0|ROOT 3|2|PUNCT
+*MOT:	+^ like being pulled with the magnetic (.) energy this way .
+%act:	grabs silver man and attempts to attach it to the under side of the yellow wand above the black base
+%mor:	sconj|like aux|be-Part-Pres-S verb|pull-Part-Past-S adp|with det|the-Def-Art adj|magnetic-S1 noun|energy det|this-Def-Dem-Sing noun|way .
+%gra:	1|3|MARK 2|3|AUX-PASS 3|0|ROOT 4|7|CASE 5|7|DET 6|7|AMOD 7|3|OBL 8|9|DET 9|3|OBL-UNMARKED 10|3|PUNCT
+*MOT:	right ?
+%mor:	adj|right-S1 ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	[^ popping a jelly bean in his mouth] watch .
+%mor:	verb|watch-Fin-Imp-S .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	it [//] could stand up like that that .
+%act:	takes silver man from Mot and puts it on the black base
+%mor:	aux|could-Fin-S verb|stand-Inf-S adp|up adp|like pron|that-Dem pron|that-Dem .
+%gra:	1|2|AUX 2|0|ROOT 3|2|COMPOUND-PRT 4|5|CASE 5|2|OBL 6|2|OBL-UNMARKED 7|2|PUNCT
+*MOT:	but to have that +//.
+%act:	pulls silver man off black base
+%mor:	cconj|but part|to verb|have-Inf-S pron|that-Dem +//.
+%gra:	1|3|CC 2|3|MARK 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*MOT:	no .
+%mor:	intj|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	to have that yank ?
+%mor:	part|to verb|have-Inf-S det|that-Def-Dem-Sing noun|yank-Acc ?
+%gra:	1|2|MARK 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|PUNCT
+*MOT:	you [/] know [//] (.) that pull that pull ?
+%mor:	pron|that-Dem verb|pull-Fin-Ind-Pres-P3 det|that-Def-Dem-Sing noun|pull-Acc ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|PUNCT
+*MOT:	see that pull ?
+%act:	holds yellow wand at a slight distance from the silver man that Chi is holding
+%mor:	verb|see-Fin-Imp-S det|that-Def-Dem-Sing noun|pull-Acc ?
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|1|PUNCT
+*MOT:	but not have it [= yellow wand] actually touch .
+%mor:	cconj|but part|not aux|have-Fin-Imp-S pron|it-Prs-Nom-S3 adv|actually verb|touch-Inf-S .
+%gra:	1|6|CC 2|6|ADVMOD 3|6|AUX 4|6|NSUBJ 5|6|ADVMOD 6|0|ROOT 7|6|PUNCT
+*MOT:	just +...
+%mor:	adv|just +...
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	xxx .
+*MOT:	see that ?
+%sit:	yellow wand has just pulled silver man toward it
+%mor:	verb|see-Fin-Imp-S pron|that-Dem ?
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*MOT:	how it's not touching (.) but if you can feel the pull down [?] ?
+%mor:	adv|how pron|its-Prs-Nom-S3 part|not verb|touch-Part-Pres-S cconj|but sconj|if pron|you-Prs-Nom-S2 aux|can-Fin-S verb|feel-Inf-S det|the-Def-Art noun|pull-Acc adp|down ?
+%gra:	1|4|ADVMOD 2|4|NSUBJ 3|4|ADVMOD 4|0|ROOT 5|9|CC 6|9|MARK 7|9|NSUBJ 8|9|AUX 9|4|CONJ 10|11|DET 11|9|OBJ 12|9|COMPOUND-PRT 13|4|PUNCT
+*CHI:	0 .
+%act:	takes yellow wand from Mot; holds it over silver man on black base; the whole base sticks to the yellow wand
+*CHI:	(wh)oops .
+%mor:	intj|whoops .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	what's the difference in this [= yellow wand] ?
+%mor:	aux|what-Fin-Ind-Pres-S3 det|the-Def-Art noun|difference adp|in pron|this-Dem-S1 ?
+%gra:	1|0|ROOT 2|3|DET 3|1|NSUBJ 4|5|CASE 5|3|NMOD 6|1|PUNCT
+*MOT:	does that [= other side of wand] do the same thing ?
+%mor:	aux|do-Fin-Ind-Pres-S3 pron|that-Dem verb|do-Inf-S det|the-Def-Art adj|same-S1 noun|thing-Acc-Ger ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|6|DET 5|6|AMOD 6|3|OBJ 7|3|PUNCT
+*CHI:	0 .
+%act:	turns yellow wand over and tries to move silver man with it
+*MOT:	(.) now try [/] the difference &-uh on here [/] on here .
+%act:	points to black base
+%mor:	adv|now det|the-Def-Art noun|difference adp|on adp|on adv|here .
+%gra:	1|3|ADVMOD 2|3|DET 3|0|ROOT 4|3|NMOD 5|6|CASE 6|3|NMOD 7|3|PUNCT
+*MOT:	<see both> [//] sides both sides .
+%mor:	noun|side-Plur det|both-Def-Tot noun|side-Plur-Acc .
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|1|PUNCT
+*MOT:	if it's [= yellow wand] the same on both sides .
+%mor:	sconj|if pron|its-Prs-Gen-S3 det|the-Def-Art adj|same-S1 adp|on det|both-Def-Tot noun|side-Plur .
+%gra:	1|4|MARK 2|4|NMOD-POSS 3|4|DET 4|0|ROOT 5|7|CASE 6|7|DET 7|4|OBL 8|4|PUNCT
+*CHI:	0 .
+%act:	tries both sides of yellow wand on black base
+*CHI:	it's not the same .
+%mor:	pron|its-Prs-Nom-S3 part|not det|the-Def-Art adj|same-S1 .
+%gra:	1|4|NSUBJ 2|4|ADVMOD 3|4|DET 4|0|ROOT 5|4|PUNCT
+*MOT:	it's not ?
+%mor:	pron|its-Prs-Gen-S3 part|not ?
+%gra:	1|0|ROOT 2|1|ADVMOD 3|1|PUNCT
+*MOT:	is one repeling and one attracting ?
+%mor:	aux|be-Fin-Ind-Pres-S3 num|one noun|repeling-Ger cconj|and num|one verb|attract-Ger-S ?
+%gra:	1|3|COP 2|3|NUMMOD 3|0|ROOT 4|6|CC 5|6|NSUBJ 6|3|CONJ 7|3|PUNCT
+*CHI:	yeah .
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	what_about the sides ?
+%act:	points to the sides of the yellow wand
+%mor:	verb|whatabout-Fin-Imp-S det|the-Def-Art noun|side-Plur-Acc ?
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|1|PUNCT
+*CHI:	sides are (.) stayin(g) +...
+%act:	moves one side of the yellow wand down toward the black base; it pushes away; then flips the wand and tries the other side; it sticks and pulls the silver man who had been on the black base to it
+%mor:	noun|side-Plur aux|be-Fin-Ind-Pres-P3 verb|stay-Part-Pres-S +...
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|PUNCT
+*MOT:	&=laughs .
+*MOT:	they're different too .
+%mor:	adv|their adj|different-S1 adv|too .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|ADVMOD 4|2|PUNCT
+*MOT:	(.) hm: .
+%mor:	intj|hm .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	try and make [/] one of your figures figures .
+%mor:	verb|try-Fin-Imp-S cconj|and num|one adp|of pron|your-Prs-Gen-S2 noun|figure-Plur verb|figure-Fin-Ind-Pres-S3 .
+%gra:	1|0|ROOT 2|7|CC 3|7|NSUBJ 4|6|CASE 5|6|NMOD-POSS 6|3|NMOD 7|1|CONJ 8|1|PUNCT
+*MOT:	you know ?
+%mor:	pron|you-Prs-Nom-S2 verb|know-Fin-Ind-Pres-S2 ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|PUNCT
+*MOT:	some awesome things .
+%mor:	det|some-Def-Ind adj|awesome-S1 noun|thing-Plur .
+%gra:	1|3|DET 2|3|AMOD 3|0|ROOT 4|3|PUNCT
+*MOT:	I keep interrupting you .
+%mor:	pron|I-Prs-Nom-S1 verb|keep-Fin-Ind-Pres-S1 verb|interrupt-Ger-S pron|you-Prs-Acc-S2 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|XCOMP 4|3|OBJ 5|2|PUNCT
+*MOT:	sorry .
+%mor:	adj|sorry-S1 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	whoops .
+%sit:	a silver stick , or something similar to that , falls onto the floor; Chi uses yellow wand to pick it up
+%mor:	intj|whoops .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	&=laughs .
+*INV:	&=laughs .
+*MOT:	have it ?
+%mor:	verb|have-Fin-Imp-S pron|it-Prs-Acc-S3 ?
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*MOT:	&=laughs .
+*EX2:	&=laughs .
+*MOT:	he's smart .
+%mor:	noun|he-Plur adj|smart-S1 .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*MOT:	&=laughs .
+*MOT:	okay (.) <make something> [/] neat something neat .
+%mor:	intj|okay adj|neat-S1 pron|something-Ind-S1 adj|neat-S1 .
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|NSUBJ 4|2|CONJ 5|2|PUNCT
+*CHI:	see ?
+%mor:	verb|see-Fin-Imp-S ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	+^ here's what I did .
+%mor:	verb|here-Fin-Ind-Pres-S3 pron|what-Rel-S1 pron|I-Prs-Nom-S1 verb|do-Fin-Ind-Past-S1-irr .
+%gra:	1|0|ROOT 2|1|OBJ 3|4|NSUBJ 4|2|ACL-RELCL 5|1|PUNCT
+*MOT:	I know you did .
+%mor:	pron|I-Prs-Nom-S1 verb|know-Fin-Ind-Pres-S1 pron|you-Prs-Nom-S2 aux|do-Fin-Ind-Past-S2-irr .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|NSUBJ 4|2|CCOMP 5|2|PUNCT
+*MOT:	make one of your little things .
+%mor:	verb|make-Fin-Imp-S num|one adp|of pron|your-Prs-Gen-S2 adj|little-S1 noun|thing-Plur .
+%gra:	1|0|ROOT 2|1|OBJ 3|6|CASE 4|6|NMOD-POSS 5|6|AMOD 6|2|NMOD 7|1|PUNCT
+*MOT:	(.) one of your shapes .
+%mor:	num|one adp|of pron|your-Prs-Gen-S2 noun|shape-Plur .
+%gra:	1|0|ROOT 2|4|CASE 3|4|NMOD-POSS 4|1|NMOD 5|1|PUNCT
+*MOT:	the cons [: coins] .
+%mor:	det|the-Def-Art noun|coin-Plur .
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*CHI:	none of them .
+%mor:	pron|none-Neg-S1 adp|of pron|they-Prs-Acc-P3 .
+%gra:	1|0|ROOT 2|3|CASE 3|1|NMOD 4|1|PUNCT
+*MOT:	none of the coins are (.) magnetic ?
+%mor:	pron|none-Neg-S1 adp|of det|the-Def-Art noun|coin-Plur aux|be-Fin-Ind-Pres-P3 adj|magnetic-S1 ?
+%gra:	1|6|NSUBJ 2|4|CASE 3|4|DET 4|1|NMOD 5|6|COP 6|0|ROOT 7|6|PUNCT
+*CHI:	nope .
+%mor:	intj|nope .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	how do you know ?
+%mor:	adv|how aux|do-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 verb|know-Inf-S ?
+%gra:	1|4|ADVMOD 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|4|PUNCT
+*MOT:	you know they're made out of different metals .
+%mor:	pron|you-Prs-Nom-S2 verb|know-Fin-Ind-Pres-S2 pron|their-Prs-Nom-S1 verb|make-Part-Past-S-irr adp|out adp|of adj|different-S1 noun|metal-Plur .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|NSUBJ-PASS 4|2|XCOMP 5|8|CASE 6|8|CASE 7|8|AMOD 8|4|OBL 9|2|PUNCT
+*MOT:	don't you ?
+%mor:	verb|do-Fin-Imp-S pron|you-Prs-Acc-S2 ?
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*MOT:	right ?
+%mor:	adj|right-S1 ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	made out of different metals +...
+%mor:	verb|make-Part-Past-S-irr adp|out adp|of adj|different-S1 noun|metal-Plur +...
+%gra:	1|0|ROOT 2|5|CASE 3|2|FIXED 4|5|AMOD 5|1|OBL 6|1|PUNCT
+*CHI:	so_that (.) and &-um .
+%act:	clears yellow wand of all the magnets that have become stuck to it
+%mor:	intj|sothat cconj|and .
+%gra:	1|0|ROOT 2|1|CC 3|1|PUNCT
+*CHI:	so (.) and they willn't stick .
+%mor:	adv|so cconj|and pron|they-Prs-Nom-P3 aux|willnt-Fin-S verb|stick-Inf-S .
+%gra:	1|5|DISCOURSE 2|5|CC 3|5|NSUBJ 4|5|AUX 5|0|ROOT 6|5|PUNCT
+*MOT:	none of (th)em will ?
+%mor:	pron|none-Neg-S1 adp|of pron|they-Prs-Acc-P3 aux|will-Fin-S ?
+%gra:	1|4|NSUBJ 2|3|CASE 3|1|NMOD 4|0|ROOT 5|4|PUNCT
+*CHI:	nope .
+%mor:	intj|nope .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	[^ popping a jelly bean in his mouth] watch .
+%act:	takes yellow wand and moves it over a coin on the table
+%mor:	verb|watch-Fin-Imp-S .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	no .
+%mor:	intj|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	oh !
+%mor:	intj|oh !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	<what's a penny> [/] made out of made out of ?
+%mor:	verb|make-Part-Past-S-irr adp|out adp|of verb|make-Part-Past-S-irr adp|out adp|of ?
+%gra:	1|0|ROOT 2|4|MARK 3|2|FIXED 4|1|ADVCL 5|4|COMPOUND-PRT 6|4|OBL 7|1|PUNCT
+*CHI:	steel ?
+%mor:	noun|steel ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	no .
+%mor:	intj|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	I don't know .
+%mor:	pron|I-Prs-Nom-S1 adv|dont verb|know-Fin-Ind-Pres-S1 .
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|3|PUNCT
+*MOT:	copper .
+%mor:	noun|copper .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	what_about if you turn these [= coins] over ?
+%mor:	intj|whatabout sconj|if pron|you-Prs-Nom-S2 verb|turn-Fin-Ind-Pres-S2 pron|this-Dem-P1 adv|over ?
+%gra:	1|4|DISCOURSE 2|4|MARK 3|4|NSUBJ 4|0|ROOT 5|4|OBJ 6|4|ADVMOD 7|4|PUNCT
+*MOT:	do you think it makes a difference ?
+%mor:	aux|do-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 verb|think-Inf-S pron|it-Prs-Nom-S3 verb|make-Fin-Ind-Pres-S3 det|a-Ind-Art noun|difference-Acc ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|5|NSUBJ 5|3|CCOMP 6|7|DET 7|5|OBJ 8|3|PUNCT
+*CHI:	no it doesn't .
+%act:	places coins on black base; then tips base so they all slide off
+%mor:	intj|no pron|it-Prs-Nom-S3 adv|doesnt .
+%gra:	1|3|DISCOURSE 2|3|NSUBJ 3|0|ROOT 4|3|PUNCT
+*MOT:	how (a)bout on the back side of the magnet ?
+%mor:	adv|how adp|about adp|on det|the-Def-Art adj|back-S1 noun|side adp|of det|the-Def-Art noun|magnet ?
+%gra:	1|0|ROOT 2|6|CASE 3|6|CASE 4|6|DET 5|6|AMOD 6|1|OBL 7|9|CASE 8|9|DET 9|6|NMOD 10|1|PUNCT
+*CHI:	0 .
+%act:	picks up black base and holds it above coins; coins don't move , but the large silver circle slides across the table and sticks to it
+*MOT:	whoa !
+%mor:	intj|whoa !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	&=laughs .
+*EX2:	&=laughs .
+*MOT:	okay .
+%mor:	intj|okay .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	we'll stop .
+%mor:	intj|well verb|stop-Fin-Imp-S .
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|PUNCT
+*MOT:	you can make your design now .
+%mor:	pron|you-Prs-Nom-S2 aux|can-Fin-S verb|make-Inf-S pron|your-Prs-Gen-S2 noun|design-Acc adv|now .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|5|NMOD-POSS 5|3|OBJ 6|3|ADVMOD 7|3|PUNCT
+*MOT:	imagine <how tall> [//] you can make it &-um (.) make it .
+%mor:	verb|imagine-Fin-Imp-S pron|you-Prs-Nom-S2 aux|can-Fin-S verb|make-Inf-S pron|it-Prs-Acc-S3 verb|make-Inf-S pron|it-Prs-Acc-S3 .
+%gra:	1|0|ROOT 2|4|NSUBJ 3|4|AUX 4|1|CCOMP 5|4|OBJ 6|4|XCOMP 7|6|OBJ 8|1|PUNCT
+*CHI:	I can make it .
+%mor:	pron|I-Prs-Nom-S1 aux|can-Fin-S verb|make-Inf-S pron|it-Prs-Acc-S3 .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*MOT:	there you go .
+%mor:	pron|there-Dem-S1 pron|you-Prs-Nom-S2 verb|go-Fin-Ind-Pres-S2 .
+%gra:	1|3|EXPL 2|3|NSUBJ 3|0|ROOT 4|3|PUNCT
+*MOT:	I'll give you the (.) pieces and you can do it (.) okay ?
+%mor:	intj|ill verb|give-Fin-Ind-Pres-S3 pron|you-Prs-Acc-S2 det|the-Def-Art noun|piece-Plur-Acc cconj|and pron|you-Prs-Nom-S2 aux|can-Fin-S verb|do-Inf-S pron|it-Prs-Acc-S3 adj|okay-S1 ?
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|IOBJ 4|5|DET 5|2|OBJ 6|9|CC 7|9|NSUBJ 8|9|AUX 9|2|CONJ 10|9|OBJ 11|9|XCOMP 12|2|PUNCT
+*CHI:	mom give me pieces .
+%act:	begins to stack silver men one on top of another on the platform
+%mor:	noun|mom verb|give-Fin-Imp-S pron|I-Prs-Acc-S1 noun|piece-Plur-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|IOBJ 4|2|OBJ 5|2|PUNCT
+*MOT:	whoa@i .
+%mor:	intj|whoa .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	are there any others [= silver men] ?
+%mor:	verb|be-Fin-Ind-Pres-P3 pron|there-Int-S1 det|any-Def-Ind noun|other-Plur ?
+%gra:	1|0|ROOT 2|1|EXPL 3|4|DET 4|1|NSUBJ 5|1|PUNCT
+*MOT:	now imagine if they [= silver men] weren't magnetic .
+%mor:	adv|now verb|imagine-Fin-Imp-S sconj|if pron|they-Prs-Nom-P3 aux|werent-Fin-Ind-Pres-P3 adj|magnetic-S1 .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|6|MARK 4|6|NSUBJ 5|6|COP 6|2|CCOMP 7|2|PUNCT
+*MOT:	they [= silver men] wouldn't stay up too well would they ?
+%mor:	pron|they-Prs-Nom-P3 aux|wouldnt-Fin-S verb|stay-Inf-S adp|up adv|too adv|well aux|would-Fin-S pron|they-Prs-Nom-P3 ?
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|COMPOUND-PRT 5|6|ADVMOD 6|3|ADVMOD 7|3|PARATAXIS 8|3|PARATAXIS 9|3|PUNCT
+*CHI:	[^ taking the mouse from Leo] I know .
+%mor:	pron|I-Prs-Nom-S1 verb|know-Fin-Ind-Pres-S1 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|PUNCT
+*MOT:	what are you looking for ?
+%mor:	pron|what-Int-S1 aux|be-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 verb|look-Part-Pres-S adp|for ?
+%gra:	1|4|OBJ 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|1|CASE 6|4|PUNCT
+*CHI:	I'm looking for another person .
+%mor:	aux|be-Fin-Ind-Pres-S3 verb|look-Part-Pres-S adp|for det|another-Def-Ind noun|person .
+%gra:	1|2|AUX 2|0|ROOT 3|5|CASE 4|5|DET 5|2|OBL 6|2|PUNCT
+*MOT:	another person ?
+%mor:	det|another-Def-Ind noun|person ?
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*CHI:	yeah .
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	oh wait .
+%mor:	intj|oh verb|wait-Fin-Imp-S .
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|PUNCT
+*CHI:	I got an idea .
+%mor:	pron|I-Prs-Nom-S1 verb|get-Fin-Ind-Past-S1-irr det|a-Ind-Art noun|idea-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|PUNCT
+*MOT:	stay up .
+%mor:	verb|stay-Fin-Imp-S adp|up .
+%gra:	1|0|ROOT 2|1|COMPOUND-PRT 3|1|PUNCT
+*MOT:	xxx .
+*INV:	(.) okay .
+%mor:	intj|okay .
+%gra:	1|0|ROOT 2|1|PUNCT
+*INV:	that's great .
+%mor:	aux|that-Fin-Ind-Pres-S3 adj|great-S1 .
+%gra:	1|2|COP 2|0|ROOT 3|2|PUNCT
+*EX2:	wow .
+%mor:	intj|wow .
+%gra:	1|0|ROOT 2|1|PUNCT
+*INV:	well you know what ?
+%mor:	intj|well pron|you-Prs-Nom-S2 verb|know-Fin-Ind-Pres-S2 pron|what-Int-S1 ?
+%gra:	1|3|DISCOURSE 2|3|NSUBJ 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*INV:	it's been about ten minutes .
+%mor:	pron|its-Prs-Nom-S3 aux|be-Part-Past-S-irr adv|about num|ten noun|minute-Plur .
+%gra:	1|5|NSUBJ 2|5|COP 3|4|ADVMOD 4|5|NUMMOD 5|0|ROOT 6|5|PUNCT
+@End

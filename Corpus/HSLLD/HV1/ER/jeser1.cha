@@ -1,0 +1,674 @@
+@UTF8
+@PID:	11312/c-00034891-1
+@Begin
+@Languages:	eng
+@Participants:	MOT Mother, CHI Target_Child, INV Investigator
+@ID:	eng|HSLLD|MOT||female|||Mother|10||
+@ID:	eng|HSLLD|CHI|3;07.01|female|||Target_Child|||
+@ID:	eng|HSLLD|INV|||||Investigator|||
+@Birth of CHI:	18-DEC-1985
+@Media:	jeser1, audio
+@Comment:	SES of Mot is lower
+@Date:	17-JUL-1989
+@Location:	Boston , MA USA
+@Situation:	Home Visit 1
+@Activities:	Elicited report
+@Transcriber:	Monica Frazier , Jim Catalano
+@Types:	long, narrative, TD
+*MOT:	where did we go camping ? 44145_45205
+%cod:	$N:RI:S
+%mor:	adv|where aux|do-Fin-Ind-Past-P1-irr pron|we-Prs-Nom-P1 verb|go-Inf-S noun|camping-Acc-Ger ?
+%gra:	1|4|ADVMOD 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*CHI:	huh ?
+%cod:	$N:RC
+%mor:	intj|huh ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	whatchya [: what did you] do when we went camping where'd [: did] we go ? 46288_48670
+%cod:	$N:GC $N:RI:S
+%mor:	pron|what-Int-S1 aux|do-Fin-Ind-Past-S2-irr pron|you-Prs-Nom-S2 verb|do-Inf-S adv|when pron|we-Prs-Nom-P1 verb|go-Fin-Ind-Past-P1-irr noun|camping-Acc-Ger aux|do-Fin-Ind-Past-P1-irr pron|we-Prs-Nom-P1 verb|go-Inf-S ?
+%gra:	1|4|OBJ 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|7|ADVMOD 6|7|NSUBJ 7|4|ADVCL 8|7|OBJ 9|11|AUX 10|11|NSUBJ 11|4|PARATAXIS 12|4|PUNCT
+*CHI:	park . 49632_50112
+%cod:	$N:GI:RS
+%mor:	noun|park .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	uhuh where else ?
+%cod:	$N:FA $N:RI:C
+%mor:	intj|uhuh adv|where adv|else ?
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|ADVMOD 4|2|PUNCT
+*CHI:	&-um to waty [: water] . 50594_51734
+%cod:	$N:GI:RC
+%mor:	part|to noun|water .
+%gra:	1|2|CASE 2|0|ROOT 3|2|PUNCT
+*MOT:	to +/. 56202_56701
+%cod:	$N:RC
+%mor:	adp|to +/.
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	+< xxx water .
+%cod:	$N:GC
+%mor:	noun|water .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	to the water ? 57003_57802
+%cod:	$N:RC
+%mor:	adp|to det|the-Masc-Def-Art noun|water ?
+%gra:	1|3|CASE 2|3|DET 3|0|ROOT 4|3|PUNCT
+*CHI:	yeah . 58203_58404
+%cod:	$N:GC
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	&-um .
+%cod:	$N:FA
+*CHI:	to go in it . 60486_61166
+%cod:	$N:GI:S
+%mor:	part|to verb|go-Inf-S adp|in pron|it-Prs-Acc-S3 .
+%gra:	1|2|MARK 2|0|ROOT 3|2|COMPOUND-PRT 4|2|OBL 5|2|PUNCT
+*MOT:	to go swimming ? 60766_61406
+%cod:	$N:RC
+%mor:	part|to verb|go-Inf-S noun|swim-Acc-Ger ?
+%gra:	1|2|MARK 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*CHI:	&-um .
+%cod:	$N:GC
+*MOT:	&-um (.) did anybody come up that you knew ? 63249_64951
+%cod:	$N:FA $N:RI:L
+%mor:	aux|do-Fin-Ind-Past-S3-irr pron|anybody-Ind-S1 verb|come-Inf-S adp|up sconj|that pron|you-Prs-Nom-S2 verb|know-Fin-Ind-Past-S2-irr ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|3|COMPOUND-PRT 5|7|MARK 6|7|NSUBJ 7|3|ADVCL 8|3|PUNCT
+*CHI:	no .
+%int:	short
+%cod:	$N:GI:RL
+%mor:	intj|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	no ? 66653_66954
+%cod:	$N:FC
+%mor:	intj|no ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	only us . 67675_68495
+%cod:	$N:FR
+%mor:	adv|only pron|we-Prs-Acc-P1 .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*MOT:	only us ? 68677_69496
+%cod:	$N:FC
+%mor:	adv|only pron|we-Prs-Acc-P1 ?
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*MOT:	<nobody else> [>] came ? 70119_71279
+%cod:	$N:RI:S
+%mor:	pron|nobody-Neg-S1 adj|else-S1 verb|come-Fin-Ind-Past-S3-irr ?
+%gra:	1|3|NSUBJ 2|1|AMOD 3|0|ROOT 4|3|PUNCT
+*CHI:	<and &-um> [<] (.) my grandparents . 72162_73021
+%cod:	$N:GI:RS
+%mor:	cconj|and pron|my-Prs-Gen-S1 noun|grandparent-Plur .
+%gra:	1|3|CC 2|3|NMOD-POSS 3|0|ROOT 4|3|PUNCT
+*MOT:	what's [: are] their names ? 74083_74664
+%cod:	$N:RI:S
+%mor:	aux|be-Fin-Ind-Pres-P3 pron|their-Prs-Gen-P3 noun|name-Plur ?
+%gra:	1|3|COP 2|3|NMOD-POSS 3|0|ROOT 4|3|PUNCT
+*CHI:	&-um Carola and caterpill(ar) . 77606_80788
+%cod:	$N:GI:RS
+%mor:	propn|Carola cconj|and noun|caterpillar .
+%gra:	1|0|ROOT 2|3|CC 3|1|CONJ 4|1|PUNCT
+*MOT:	she's got that caterpillar book on her brains &=laughs . 80788_82809
+%cod:	$O:R
+%mor:	pron|she-Prs-Nom-S1 verb|get-Fin-Ind-Past-S3-irr det|that-Def-Dem-Sing noun|caterpillar noun|book-Acc adp|on pron|her-Prs-Gen-S3 noun|brain-Plur .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|5|DET 4|5|COMPOUND 5|2|OBJ 6|8|CASE 7|8|NMOD-POSS 8|2|OBL 9|2|PUNCT
+*INV:	zzz .
+%par:	laughs
+%cod:	$O:O
+%mor:	intj|zzz .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	who else came ? 84751_85730
+%cod:	$N:RI:C
+%mor:	pron|who-Int adv|else verb|come-Fin-Ind-Past-S3-irr ?
+%gra:	1|3|NSUBJ 2|1|ADVMOD 3|0|ROOT 4|3|PUNCT
+*CHI:	&-um . 86392_86891
+%cod:	$N:U
+*MOT:	who's like your sister ? 88814_89834
+%cod:	$N:RI:S
+%mor:	pron|whose-Int-S1 adp|like pron|your-Prs-Gen-S2 noun|sister ?
+%gra:	1|0|ROOT 2|4|CASE 3|4|NMOD-POSS 4|1|NMOD 5|1|PUNCT
+*CHI:	my brother . 90975_91635
+%cod:	$N:GI:RS
+%mor:	pron|my-Prs-Gen-S1 noun|brother .
+%gra:	1|2|NMOD-POSS 2|0|ROOT 3|2|PUNCT
+*MOT:	no who's like your sister ? 91916_93137
+%cod:	$N:FC $N:RI:S:R
+%mor:	intj|no pron|whose-Int-S1 adp|like pron|your-Prs-Gen-S2 noun|sister ?
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|5|CASE 4|5|NMOD-POSS 5|2|NMOD 6|2|PUNCT
+*MOT:	Angela ? [+ im] 93679_94179
+%cod:	$N:GI:RS:S
+%mor:	propn|Angela ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	Angie ? 94280_94779
+%cod:	$N:GI::R
+%mor:	propn|Angie ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	Angie . 96223_96722
+%cod:	$N:FA
+%mor:	propn|Angie .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	Angie (.) Angie came ? 96864_99246
+%cod:	$N:FR $N:RI:L
+%mor:	propn|Angie propn|Angie verb|come-Fin-Ind-Past-S3-irr ?
+%gra:	1|3|NSUBJ 2|1|FLAT 3|0|ROOT 4|3|PUNCT
+*MOT:	and who else ? 99468_100408
+%cod:	$N:RI:C
+%mor:	cconj|and pron|who-Int adv|else ?
+%gra:	1|2|CC 2|0|ROOT 3|2|ADVMOD 4|2|PUNCT
+*CHI:	&-um and Ken . 100710_102311
+%cod:	$N:GI:RC
+%mor:	cconj|and propn|Ken .
+%gra:	1|2|CC 2|0|ROOT 3|2|PUNCT
+*MOT:	and who else ? 102914_103834
+%cod:	$N:RI:C
+%mor:	cconj|and pron|who-Int adv|else ?
+%gra:	1|2|CC 2|0|ROOT 3|2|ADVMOD 4|2|PUNCT
+*CHI:	Ken and Nikki (.) and Angie . 105445_107807
+%cod:	$N:GI:RC $N:GI:S $N:GI:S
+%mor:	propn|Ken cconj|and propn|Nikki cconj|and propn|Angie .
+%gra:	1|0|ROOT 2|3|CC 3|1|CONJ 4|5|CC 5|1|CONJ 6|1|PUNCT
+*MOT:	uhuh and what did we do yesterday ? 108169_110150
+%cod:	$N:RI:S
+%mor:	intj|uhuh cconj|and pron|what-Int-S1 aux|do-Fin-Ind-Past-P1-irr pron|we-Prs-Nom-P1 verb|do-Inf-S noun|yesterday ?
+%gra:	1|6|DISCOURSE 2|6|CC 3|6|OBJ 4|6|AUX 5|6|NSUBJ 6|0|ROOT 7|6|OBL-UNMARKED 8|6|PUNCT
+*MOT:	did we [/] have a big dinner dinner ? 110532_112333
+%cod:	$N:RI:L
+%mor:	aux|do-Fin-Ind-Past-S3-irr verb|have-Inf-S det|a-Ind-Art adj|big-S1 noun|dinner noun|dinner-Acc ?
+%gra:	1|2|AUX 2|0|ROOT 3|6|DET 4|6|AMOD 5|6|COMPOUND 6|2|OBJ 7|2|PUNCT
+*MOT:	what did we have for dinner do you remember ? 112695_114396
+%cod:	$N:RI:S $N:RI:L
+%mor:	pron|what-Int-S1 aux|do-Fin-Ind-Past-P1-irr pron|we-Prs-Nom-P1 verb|have-Inf-S adp|for noun|dinner aux|do-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 verb|remember-Inf-S ?
+%gra:	1|4|OBJ 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|6|CASE 6|4|OBL 7|9|AUX 8|9|NSUBJ 9|4|PARATAXIS 10|4|PUNCT
+*CHI:	&-um had chicken (.) <chicken xxx> [>] . 115560_118582
+%cod:	$N:GI:RS $N:U
+%mor:	verb|have-Fin-Ind-Past-S1-irr noun|chicken noun|chicken-Acc .
+%gra:	1|0|ROOT 2|3|COMPOUND 3|1|OBJ 4|1|PUNCT
+*MOT:	<everything's chicken> [<] &=laughs .
+%cod:	$O:R
+%mor:	adj|everythings-S1 noun|chicken .
+%gra:	1|2|AMOD 2|0|ROOT 3|2|PUNCT
+*CHI:	and steak (.) and for lunch (.) and &-um (.) &-um and that's it ! 122105_128129
+%cod:	$N:GI:S $N:GI:S
+%mor:	cconj|and noun|steak cconj|and adp|for noun|lunch cconj|and cconj|and verb|that-Fin-Ind-Pres-S3 pron|it-Prs-Acc-S3 !
+%gra:	1|2|CC 2|0|ROOT 3|5|CC 4|5|CASE 5|2|CONJ 6|8|CC 7|8|CC 8|2|CONJ 9|8|OBJ 10|2|PUNCT
+*MOT:	no sir we had more than that . 135675_137316
+%cod:	$N:FC
+%mor:	det|no-Def-Neg noun|sir pron|we-Prs-Nom-P1 verb|have-Fin-Ind-Past-P1-irr adj|more-Cmp-S1 adp|than pron|that-Dem .
+%gra:	1|2|DET 2|0|ROOT 3|4|NSUBJ 4|2|ACL-RELCL 5|4|OBJ 6|7|CASE 7|5|OBL 8|2|PUNCT
+*MOT:	salad . 140181_140661
+%cod:	$N:GI:S
+%mor:	noun|salad .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	xxx xxx salad !
+%cod:	$N:GI::R
+%mor:	noun|salad !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	what else ? 143306_143926
+%cod:	$N:RI:C
+%mor:	pron|what-Int-S1 adv|else ?
+%gra:	1|0|ROOT 2|1|ADVMOD 3|1|PUNCT
+*CHI:	cucumbers . [+ i]
+%sit:	child makes some noise before starting to speak .
+%cod:	$N:GI:RC
+%mor:	noun|cucumber-Plur .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	what [/] did you do when you were by the fire fire ? 147172_149393
+%cod:	$N:RI:S
+%mor:	aux|do-Fin-Ind-Past-S2-irr pron|you-Prs-Nom-S2 verb|do-Inf-S adv|when pron|you-Prs-Nom-S2 aux|be-Fin-Ind-Past-S2-irr adp|by det|the-Def-Art noun|fire noun|fire ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|10|ADVMOD 5|10|NSUBJ 6|10|COP 7|10|CASE 8|10|DET 9|10|COMPOUND 10|3|ADVCL 11|3|PUNCT
+*MOT:	when you were by the fire at night time ? 150945_153166
+%cod:	$N:RI:S
+%mor:	adv|when pron|you-Prs-Nom-S2 aux|be-Fin-Ind-Past-S2-irr adp|by det|the-Def-Art noun|fire adp|at noun|night noun|time ?
+%gra:	1|6|ADVMOD 2|6|NSUBJ 3|6|COP 4|6|CASE 5|6|DET 6|0|ROOT 7|9|CASE 8|9|COMPOUND 9|6|OBL 10|6|PUNCT
+*CHI:	&-um I roast marshmallows . 153366_154967
+%cod:	$N:GI:RS
+%mor:	pron|I-Prs-Nom-S1 verb|roast-Fin-Ind-Pres-S1 noun|marshmallow-Plur-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*MOT:	uhhuh .
+%cod:	$N:FA
+%mor:	intj|uhhuh .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	and what else ?
+%cod:	$N:RI:C
+%mor:	cconj|and pron|what-Int-S1 adj|else-S1 ?
+%gra:	1|2|CC 2|0|ROOT 3|2|AMOD 4|2|PUNCT
+*MOT:	what else ?
+%cod:	$N:RC
+%mor:	pron|what-Int-S1 adv|else ?
+%gra:	1|0|ROOT 2|1|ADVMOD 3|1|PUNCT
+*MOT:	where did you sleep ? 159551_160510
+%cod:	$N:RI:S
+%mor:	adv|where aux|do-Fin-Ind-Past-S2-irr pron|you-Prs-Nom-S2 verb|sleep-Inf-S ?
+%gra:	1|4|ADVMOD 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|4|PUNCT
+*CHI:	in the tent . 161632_162472
+%cod:	$N:GI:RS
+%mor:	adp|in det|the-Def-Art noun|tent .
+%gra:	1|3|CASE 2|3|DET 3|0|ROOT 4|3|PUNCT
+*MOT:	uhhuh .
+%cod:	$N:FA
+%mor:	intj|uhhuh .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	with my sleepin(g) bag . 163254_164694
+%cod:	$N:GI:S
+%mor:	adp|with pron|my-Prs-Gen-S1 noun|sleeping-Ger noun|bag .
+%gra:	1|4|CASE 2|4|NMOD-POSS 3|4|COMPOUND 4|0|ROOT 5|4|PUNCT
+*MOT:	&-um .
+%cod:	$N:FA
+*CHI:	bag .
+%cod:	$N:GI::R
+%mor:	noun|bag .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	what did we do to your sleeping bag ? 166285_167906
+%cod:	$N:RI:S
+%mor:	pron|what-Int-S1 aux|do-Fin-Ind-Past-P1-irr pron|we-Prs-Nom-P1 verb|do-Inf-S adp|to pron|your-Prs-Gen-S2 noun|sleeping-Ger noun|bag ?
+%gra:	1|4|OBJ 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|8|CASE 6|8|NMOD-POSS 7|8|COMPOUND 8|4|OBL 9|4|PUNCT
+*CHI:	we washed it . 168528_170810
+%cod:	$N:GI:RS
+%mor:	pron|we-Prs-Nom-P1 verb|wash-Fin-Ind-Past-P1 pron|it-Prs-Acc-S3 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*MOT:	yeah but <what did we> [/] put in it put in it ? 170371_172332
+%cod:	$N:FA $N:RI:S
+%mor:	intj|yeah cconj|but verb|put-Fin-Imp-S adp|in pron|it-Prs-Acc-S3 verb|put-Part-Past-S-irr adp|in pron|it-Prs-Acc-S3 ?
+%gra:	1|3|DISCOURSE 2|3|CC 3|0|ROOT 4|3|COMPOUND-PRT 5|3|OBJ 6|3|XCOMP 7|8|CASE 8|6|OBL 9|3|PUNCT
+*CHI:	bags ! 173395_173894
+%cod:	$N:GI:RS
+%mor:	noun|bag-Plur !
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	I don't . 174537_175076
+%cod:	$N:D
+%mor:	pron|I-Prs-Nom-S1 aux|dont-Fin-S .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|PUNCT
+*MOT:	did [/] why'd [: we] do that that ? 174997_176077
+%cod:	$N:RI:S
+%mor:	pron|we-Prs-Nom-P1 verb|do-Fin-Ind-Pres-P1 pron|that-Dem pron|that-Dem ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|OBJ 5|2|PUNCT
+*CHI:	so I don't pee on my sleeping bag . 177221_179622
+%cod:	$N:GI:RS
+%mor:	adv|so pron|I-Prs-Nom-S1 aux|dont-Fin-S verb|pee-Inf-S adp|on pron|my-Prs-Gen-S1 noun|sleeping-Ger noun|bag .
+%gra:	1|4|ADVMOD 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|8|CASE 6|8|NMOD-POSS 7|8|COMPOUND 8|4|OBL 9|4|PUNCT
+*MOT:	good girl ! 179404_180003
+%cod:	$O:O
+%mor:	adj|good-S1 noun|girl !
+%gra:	1|2|AMOD 2|0|ROOT 3|2|PUNCT
+*CHI:	+< that +/.
+%cod:	$N:U
+%mor:	pron|that-Dem +/.
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	let's see what else .
+%cod:	$N:RI:C
+%mor:	intj|let verb|see-Fin-Imp-S pron|what-Int-S1 adj|else-S1 .
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|OBJ 4|3|AMOD 5|2|PUNCT
+*CHI:	and that's it ! 184736_185515
+%cod:	$O:O
+%mor:	cconj|and aux|that-Fin-Ind-Pres-S3 pron|it-Prs-Acc-S3 !
+%gra:	1|2|CC 2|0|ROOT 3|2|NSUBJ 4|2|PUNCT
+*MOT:	and that's it ? 185076_185956
+%cod:	$O:O
+%mor:	cconj|and aux|that-Fin-Ind-Pres-S3 pron|it-Prs-Acc-S3 ?
+%gra:	1|2|CC 2|0|ROOT 3|2|NSUBJ 4|2|PUNCT
+*CHI:	yeah . 186597_187096
+%cod:	$O:O
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	what'd [: did] you do at the park what'd [: did] you ride ? 186737_188417
+%cod:	$N:RI:S $N:RI:S
+%mor:	aux|do-Fin-Ind-Past-S2-irr pron|you-Prs-Nom-S2 verb|do-Inf-S adp|at det|the-Def-Art noun|park aux|do-Fin-Ind-Past-S2-irr pron|you-Prs-Nom-S2 verb|ride-Inf-S ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|6|CASE 5|6|DET 6|3|OBL 7|9|AUX 8|9|NSUBJ 9|3|PARATAXIS 10|3|PUNCT
+*MOT:	what'd [: did] they have over there ? 190560_191899
+%cod:	$N:RI:S
+%mor:	aux|do-Fin-Ind-Past-P3-irr pron|they-Prs-Nom-P3 verb|have-Inf-S adp|over adv|there ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|5|CASE 5|3|OBL 6|3|PUNCT
+*CHI:	I went on a &~b &~t slide I went on a swing . 194022_197984
+%cod:	$N:GI:RS $N:GI:S
+%mor:	pron|I-Prs-Nom-S1 verb|go-Fin-Ind-Past-S1-irr adp|on det|a-Ind-Art noun|slide pron|I-Prs-Nom-S1 verb|go-Fin-Ind-Past-S1-irr adp|on det|a-Ind-Art noun|swing-Ger .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|5|CASE 4|5|DET 5|2|OBL 6|7|NSUBJ 7|5|ACL-RELCL 8|10|CASE 9|10|DET 10|7|OBL 11|2|PUNCT
+*MOT:	uhhum@i .
+%cod:	$N:FA
+%mor:	intj|uhhum .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	and I went on a horsie . 199185_200586
+%cod:	$N:GI:S
+%mor:	cconj|and pron|I-Prs-Nom-S1 verb|go-Fin-Ind-Past-S1-irr adp|on det|a-Ind-Art noun|horsie .
+%gra:	1|3|CC 2|3|NSUBJ 3|0|ROOT 4|6|CASE 5|6|DET 6|3|OBL 7|3|PUNCT
+*CHI:	I went on &-um what else ? 201749_205674
+%cod:	$N:GI:S:I $N:RI:C
+%mor:	pron|I-Prs-Nom-S1 verb|go-Fin-Ind-Past-S1-irr adp|on pron|what-Int-S1 adv|else ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|CASE 4|2|OBL 5|4|ADVMOD 6|2|PUNCT
+*MOT:	the crane ? 206777_207456
+%cod:	$N:GI:RC
+%mor:	det|the-Def-Art noun|crane ?
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*CHI:	&-um the horsie . 207378_208378
+%cod:	$N:GI:S
+%mor:	det|the-Def-Art noun|horsie .
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*MOT:	the crane did you go on the crane ? 213515_215176
+%cod:	$N:RI:L
+%mor:	det|the-Def-Art noun|crane-Acc aux|do-Fin-Ind-Past-S2-irr pron|you-Prs-Nom-S2 verb|go-Inf-S adp|on det|the-Def-Art noun|crane ?
+%gra:	1|2|DET 2|5|OBJ 3|5|AUX 4|5|NSUBJ 5|0|ROOT 6|8|CASE 7|8|DET 8|5|OBL 9|5|PUNCT
+*MOT:	did you sit on it and pull the handles ? 215858_217319
+%cod:	$N:RI:L $N:RI:L
+%mor:	aux|do-Fin-Ind-Past-S2-irr pron|you-Prs-Nom-S2 verb|sit-Inf-S adp|on pron|it-Prs-Acc-S3 cconj|and verb|pull-Inf-S det|the-Def-Art noun|handle-Plur-Acc ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|5|CASE 5|3|OBL 6|7|CC 7|3|CONJ 8|9|DET 9|7|OBJ 10|3|PUNCT
+*CHI:	yeah . 217079_217479
+%cod:	$N:GI:RL
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	uhhum@i .
+%cod:	$N:FA
+%mor:	intj|uhhum .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	uhhuh what else ? 217220_217940
+%cod:	$N:FR $N:RI:C
+%mor:	intj|uhhuh pron|what-Int-S1 adv|else ?
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|ADVMOD 4|2|PUNCT
+*MOT:	the see saw ? 220905_221804
+%cod:	$N:GI:RC
+%mor:	det|the-Def-Art verb|see-Inf-S verb|see-Fin-Ind-Past-S3-irr ?
+%gra:	1|2|DET 2|3|COMPOUND 3|0|ROOT 4|3|PUNCT
+*CHI:	see saw !
+%cod:	$N:FA
+%mor:	verb|see-Fin-Imp-S verb|see-Fin-Ind-Past-S-irr !
+%gra:	1|0|ROOT 2|1|XCOMP 3|1|PUNCT
+*MOT:	uhhum@i .
+%cod:	$N:FR
+%mor:	intj|uhhum .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	and that's it ! 223868_225048
+%cod:	$O:O
+%mor:	cconj|and aux|that-Fin-Ind-Pres-S3 pron|it-Prs-Acc-S3 !
+%gra:	1|2|CC 2|0|ROOT 3|2|NSUBJ 4|2|PUNCT
+*MOT:	and that's it ? 225250_226071
+%cod:	$O:O
+%mor:	cconj|and aux|that-Fin-Ind-Pres-S3 pron|it-Prs-Acc-S3 ?
+%gra:	1|2|CC 2|0|ROOT 3|2|NSUBJ 4|2|PUNCT
+*CHI:	yeah . 225810_226151
+%cod:	$O:O
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	what did we buy at the store do you remember ? 226672_228473
+%cod:	$N:RI:S $N:RI:L
+%mor:	pron|what-Int-S1 aux|do-Fin-Ind-Past-P1-irr pron|we-Prs-Nom-P1 verb|buy-Inf-S adp|at det|the-Def-Art noun|store aux|do-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 verb|remember-Inf-S ?
+%gra:	1|4|OBJ 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|7|CASE 6|7|DET 7|4|OBL 8|10|AUX 9|10|NSUBJ 10|4|PARATAXIS 11|4|PUNCT
+*MOT:	we actually went to the store three times .
+%add:	MOT- EXP
+%cod:	$N:GI:S
+%mor:	pron|we-Prs-Nom-P1 adv|actually verb|go-Fin-Ind-Past-P1-irr adp|to det|the-Def-Art noun|store num|three noun|time-Plur .
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|6|CASE 5|6|DET 6|3|OBL 7|8|NUMMOD 8|3|OBL-UNMARKED 9|3|PUNCT
+*CHI:	went to store and buy candy and duff . 232740_234963
+%cod:	$N:GI:RS $N:GI:S
+%mor:	verb|go-Fin-Ind-Past-S1-irr adp|to noun|store cconj|and verb|buy-Inf-S noun|candy-Acc cconj|and noun|duff .
+%gra:	1|0|ROOT 2|3|CASE 3|1|OBL 4|5|CC 5|1|CONJ 6|5|OBJ 7|8|CC 8|6|CONJ 9|1|PUNCT
+*MOT:	ah what did you do up at the &-um whatdya [: what did you] do when mommy went and did laundry ? 236125_240211
+%cod:	$N:FA $N:RI:S
+%mor:	intj|ah pron|what-Int-S1 aux|do-Fin-Ind-Past-S2-irr pron|you-Prs-Nom-S2 verb|do-Inf-S adp|up adp|at det|the-Def-Art pron|what-Int-S1 aux|do-Fin-Ind-Past-S2-irr pron|you-Prs-Nom-S2 verb|do-Inf-S adv|when propn|mommy verb|go-Fin-Ind-Past-S3-irr cconj|and verb|do-Fin-Ind-Past-S3-irr noun|laundry-Acc ?
+%gra:	1|5|DISCOURSE 2|5|OBJ 3|5|AUX 4|5|NSUBJ 5|0|ROOT 6|5|COMPOUND-PRT 7|9|CASE 8|9|DET 9|12|OBJ 10|12|AUX 11|12|NSUBJ 12|5|PARATAXIS 13|15|ADVMOD 14|15|NSUBJ 15|12|ADVCL 16|17|CC 17|15|CONJ 18|17|OBJ 19|5|PUNCT
+*MOT:	where'd [: did] you go (.) with Steven ? 240592_241574
+%cod:	$N:RI:S
+%mor:	aux|do-Fin-Ind-Past-S2-irr pron|you-Prs-Nom-S2 verb|go-Inf-S adp|with propn|Steven ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|5|CASE 5|3|OBL 6|3|PUNCT
+*CHI:	to play the games . 244715_245835
+%cod:	$N:GI:RS
+%mor:	part|to verb|play-Inf-S det|the-Def-Art noun|game-Plur-Acc .
+%gra:	1|2|MARK 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|PUNCT
+*MOT:	what kind of games ? 250422_250863
+%cod:	$N:RI:S
+%mor:	det|what-Def-Int noun|kind adp|of noun|game-Plur ?
+%gra:	1|2|DET 2|0|ROOT 3|4|CASE 4|2|NMOD 5|2|PUNCT
+*CHI:	driving ones .
+%cod:	$N:GI:RS
+%mor:	verb|drive-Part-Pres-S noun|one-Plur-Acc .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*MOT:	driving ones ?
+%cod:	$N:FA
+%mor:	verb|drive-Part-Pres-S noun|one-Plur-Acc ?
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*CHI:	because .
+%cod:	$N:U
+%mor:	adv|because .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	they were playing video games &=laughs . 252905_254947
+%cod:	$O:O
+%mor:	pron|they-Prs-Nom-P3 aux|be-Fin-Ind-Past-P3-irr verb|play-Part-Pres-S noun|video noun|game-Plur-Acc .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|5|COMPOUND 5|3|OBJ 6|3|PUNCT
+*CHI:	video .
+%cod:	$N:U
+%mor:	noun|video .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	video games ? 256812_257731
+%cod:	$N:RC
+%mor:	noun|video noun|game-Plur ?
+%gra:	1|2|COMPOUND 2|0|ROOT 3|2|PUNCT
+*CHI:	yeah vide(o) games . 257953_259233
+%cod:	$N:GC
+%mor:	intj|yeah noun|video noun|game-Plur .
+%gra:	1|3|DISCOURSE 2|3|COMPOUND 3|0|ROOT 4|3|PUNCT
+*MOT:	uhhuh .
+%cod:	$N:FA
+%mor:	intj|uhhuh .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	and vide(o) games↑ what else ? 261605_263546
+%cod:	$N:FR $N:RI:C
+%mor:	cconj|and noun|video noun|game-Plur pron|what-Int-S1 adv|else ?
+%gra:	1|3|CC 2|3|COMPOUND 3|0|ROOT 4|3|APPOS 5|4|ADVMOD 6|3|PUNCT
+*MOT:	what else ? 263126_263706
+%cod:	$N:RC
+%mor:	pron|what-Int-S1 adv|else ?
+%gra:	1|0|ROOT 2|1|ADVMOD 3|1|PUNCT
+*CHI:	tell me .
+%cod:	$N:RI:C:R
+%mor:	verb|tell-Fin-Imp-S pron|I-Prs-Acc-S1 .
+%gra:	1|0|ROOT 2|1|IOBJ 3|1|PUNCT
+*MOT:	Oyou want me to tell you ? 265227_266248
+%int:	<1-3> quickly
+%cod:	$O:O
+%mor:	propn|Oyou verb|want-Fin-Ind-Pres-S3 pron|I-Prs-Acc-S1 part|to verb|tell-Inf-S pron|you-Prs-Acc-S2 ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|5|MARK 5|2|XCOMP 6|5|IOBJ 7|2|PUNCT
+*CHI:	yeah . 266209_266708
+%cod:	$O:O
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	you tell me . 266409_267288
+%cod:	$O
+%mor:	pron|you-Prs-Nom-S2 verb|tell-Fin-Ind-Pres-S2 pron|I-Prs-Acc-S1 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|IOBJ 4|2|PUNCT
+*CHI:	no (.) you tell me . 267490_268910
+%cod:	$O:O
+%mor:	intj|no pron|you-Prs-Nom-S2 verb|tell-Fin-Ind-Pres-S2 pron|I-Prs-Acc-S1 .
+%gra:	1|3|DISCOURSE 2|3|NSUBJ 3|0|ROOT 4|3|IOBJ 5|3|PUNCT
+*MOT:	you went swimmin(g) in the pool . 268971_270391
+%cod:	$N:GI:RC
+%mor:	pron|you-Prs-Nom-S2 verb|go-Fin-Ind-Past-S2-irr verb|swim-Ger-S adp|in det|the-Def-Art noun|pool .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|XCOMP 4|6|CASE 5|6|DET 6|3|OBL 7|2|PUNCT
+*CHI:	I went swimmin(g) Oin the pool . 270492_271972
+%cod:	$N:GI::R
+%mor:	pron|I-Prs-Nom-S1 verb|go-Fin-Ind-Past-S1-irr verb|swim-Ger-S adp|oin det|the-Def-Art noun|pool .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|XCOMP 4|6|CASE 5|6|DET 6|3|OBL 7|2|PUNCT
+*MOT:	what did you do when you went swi(mming) what did you wear ? 271673_273833
+%cod:	$N:RI:S $N:RI:S
+%mor:	pron|what-Int-S1 aux|do-Fin-Ind-Past-S2-irr pron|you-Prs-Nom-S2 verb|do-Inf-S adv|when pron|you-Prs-Nom-S2 verb|go-Fin-Ind-Past-S2-irr verb|swim-Ger-S pron|what-Int-S1 aux|do-Fin-Ind-Past-S2-irr pron|you-Prs-Nom-S2 verb|wear-Inf-S ?
+%gra:	1|4|OBJ 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|7|ADVMOD 6|7|NSUBJ 7|4|ADVCL 8|7|XCOMP 9|12|OBJ 10|12|AUX 11|12|NSUBJ 12|4|PARATAXIS 13|4|PUNCT
+*CHI:	my tube so I don't go under water ? 274655_277338
+%cod:	$N:GI:RS
+%mor:	pron|my-Prs-Gen-S1 noun|tube adv|so pron|I-Prs-Nom-S1 adv|dont verb|go-Inf-S adp|under noun|water ?
+%gra:	1|2|NMOD-POSS 2|6|DISLOCATED 3|6|ADVMOD 4|6|NSUBJ 5|6|ADVMOD 6|0|ROOT 7|8|CASE 8|6|OBL 9|6|PUNCT
+*MOT:	uhhuh .
+%cod:	$N:FA
+%mor:	intj|uhhuh .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	and what else ? 277179_278079
+%cod:	$N:RI:C
+%mor:	cconj|and pron|what-Int-S1 adj|else-S1 ?
+%gra:	1|2|CC 2|0|ROOT 3|2|AMOD 4|2|PUNCT
+*MOT:	was you swimmin(g) ?
+%cod:	$N:RI:L
+%mor:	aux|be-Fin-Ind-Past-S3-irr pron|you-Prs-Nom-S2 verb|swim-Part-Pres-S ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|3|PUNCT
+*CHI:	yeah .
+%cod:	$N:GI:RL
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	yeah .
+%cod:	$N:FA
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	swimmin(g) go (s)wimmin(g) swimming . 277920_280943
+%cod:	$N:GI:S $N:GI:S $N:GI:S
+%mor:	noun|swim-Ger verb|go-Fin-Imp-S noun|swim-Ger noun|swim-Acc-Ger .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|COMPOUND 4|2|OBJ 5|2|PUNCT
+*CHI:	what else ?
+%cod:	$N:RI:C
+%mor:	pron|what-Int-S1 adv|else ?
+%gra:	1|0|ROOT 2|1|ADVMOD 3|1|PUNCT
+*MOT:	I trying to think &=laughs .
+%cod:	$O:O
+%mor:	pron|I-Prs-Nom-S1 verb|try-Part-Pres-S part|to verb|think-Inf-S .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|MARK 4|2|XCOMP 5|2|PUNCT
+*CHI:	what else ? 293805_294225
+%cod:	$N:RI:C
+%mor:	pron|what-Int-S1 adv|else ?
+%gra:	1|0|ROOT 2|1|ADVMOD 3|1|PUNCT
+*MOT:	what else ?
+%cod:	$N:RC
+%mor:	pron|what-Int-S1 adv|else ?
+%gra:	1|0|ROOT 2|1|ADVMOD 3|1|PUNCT
+*MOT:	did you wear mommy's necklace for awhile ? 295286_297147
+%cod:	$N:RI:L
+%mor:	aux|do-Fin-Ind-Past-S2-irr pron|you-Prs-Nom-S2 verb|wear-Inf-S noun|mommy noun|necklace-Acc adp|for adv|awhile ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|5|COMPOUND 5|3|OBJ 6|7|CASE 7|3|OBL 8|3|PUNCT
+*CHI:	when ?
+%cod:	$N:RI:S
+%mor:	adv|when ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	just for while ? 298389_299589
+%cod:	$N:U
+%mor:	adv|just adp|for sconj|while ?
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|FIXED 4|2|PUNCT
+*CHI:	momma's (w)atch .
+%cod:	$N:GI:S
+%mor:	noun|momma-Plur noun|watch .
+%gra:	1|2|COMPOUND 2|0|ROOT 3|2|PUNCT
+*CHI:	zzz .
+%par:	hiccups
+%mor:	intj|zzz .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	momma's watch ? 301872_302833
+%cod:	$N:RC
+%mor:	noun|momma-Plur noun|watch ?
+%gra:	1|2|COMPOUND 2|0|ROOT 3|2|PUNCT
+*MOT:	what else ?
+%cod:	$N:RI:C
+%mor:	pron|what-Int-S1 adv|else ?
+%gra:	1|0|ROOT 2|1|ADVMOD 3|1|PUNCT
+*MOT:	you went out in the sun ? 307755_310978
+%cod:	$N:RI:L
+%mor:	pron|you-Prs-Nom-S2 verb|go-Fin-Ind-Past-S2-irr adv|out adp|in det|the-Def-Art noun|sun ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|ADVMOD 4|6|CASE 5|6|DET 6|2|OBL 7|2|PUNCT
+*CHI:	lay out in Othe sun ? 312220_314923
+%cod:	$N:GI:RL:R
+%mor:	verb|lay-Fin-Imp-S adp|out adp|in propn|Othe noun|sun ?
+%gra:	1|0|ROOT 2|1|COMPOUND-PRT 3|5|CASE 4|5|COMPOUND 5|1|OBL 6|1|PUNCT
+*MOT:	and put sun lotion on ? 314504_315544
+%cod:	$N:RI:L
+%mor:	cconj|and verb|put-Fin-Imp-S noun|sun noun|lotion-Acc adp|on ?
+%gra:	1|2|CC 2|0|ROOT 3|4|COMPOUND 4|2|OBJ 5|2|ADVMOD 6|2|PUNCT
+*CHI:	sun lotion on ? 315165_315864
+%cod:	$N:GI:RL:R
+%mor:	noun|sun noun|lotion adp|on ?
+%gra:	1|2|COMPOUND 2|0|ROOT 3|2|PUNCT 4|2|PUNCT
+*MOT:	zzz .
+%par:	laughs
+%mor:	intj|zzz .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	she's just repeating everything I'm sayin(g) &=laughs . 315405_317466
+%cod:	$O:O
+%mor:	adv|shes adv|just verb|repeat-Part-Pres-S pron|everything-Tot-S1 pron|im-Prs-Nom-S3 verb|say-Part-Pres-S .
+%gra:	1|3|ADVMOD 2|3|ADVMOD 3|0|ROOT 4|3|OBJ 5|6|NSUBJ 6|3|PARATAXIS 7|3|PUNCT
+*MOT:	I know she remembers it though when I say it to her . 317168_319128
+%cod:	$O:O
+%mor:	pron|I-Prs-Nom-S1 verb|know-Fin-Ind-Pres-S1 pron|she-Prs-Nom-S3 verb|remember-Fin-Ind-Pres-S3 pron|it-Prs-Acc-S3 adv|though adv|when pron|I-Prs-Nom-S1 verb|say-Fin-Ind-Pres-S1 pron|it-Prs-Acc-S3 adp|to pron|her-Prs-Acc-S3 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|NSUBJ 4|2|CCOMP 5|4|OBJ 6|4|ADVMOD 7|9|ADVMOD 8|9|NSUBJ 9|4|ADVCL 10|9|OBJ 11|12|CASE 12|9|OBL 13|2|PUNCT
+*MOT:	huh ? 318810_319308
+%add:	MOT- Chi
+%cod:	$N:RI:L
+%mor:	intj|huh ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	yup .
+%cod:	$N:GI:RL
+%mor:	intj|yup .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	what else ? 318950_319609
+%cod:	$N:RI:C
+%mor:	pron|what-Int-S1 adv|else ?
+%gra:	1|0|ROOT 2|1|ADVMOD 3|1|PUNCT
+*MOT:	what happened to [//] your head head ? 322665_324065
+%cod:	$N:RI:S
+%mor:	pron|what-Int-S1 verb|happen-Fin-Ind-Past-S3 pron|your-Prs-Gen-S2 noun|head noun|head-Acc ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|5|NMOD-POSS 4|5|COMPOUND 5|2|OBJ 6|2|PUNCT
+*CHI:	zzz .
+%par:	hiccups
+%mor:	intj|zzz .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	ah the hiccups (.) what happened to your head and your eye ? 324086_328368
+%cod:	$O:R $N:RI:S
+%mor:	intj|ah det|the-Def-Art noun|hiccup-Plur pron|what-Int-S1 verb|happen-Fin-Ind-Past-S3 adp|to pron|your-Prs-Gen-S2 noun|head cconj|and pron|your-Prs-Gen-S2 noun|eye ?
+%gra:	1|3|DISCOURSE 2|3|DET 3|0|ROOT 4|5|NSUBJ 5|3|ACL-RELCL 6|8|CASE 7|8|NMOD-POSS 8|5|OBL 9|11|CC 10|11|NMOD-POSS 11|8|CONJ 12|3|PUNCT
+*CHI:	I fell down (.) fell down↑ on a building ! 328129_332451
+%int:	high pitched
+%cod:	$N:GI:RS $N:GI:S
+%mor:	pron|I-Prs-Nom-S1 verb|fall-Fin-Ind-Past-S1-irr adp|down verb|fall-Fin-Ind-Past-S3-irr adp|down adp|on det|a-Ind-Art noun|building-Ger !
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|COMPOUND-PRT 4|2|XCOMP 5|4|COMPOUND-PRT 6|8|CASE 7|8|DET 8|4|OBL 9|2|PUNCT
+*MOT:	on a building ? 333653_334392
+%cod:	$N:FA
+%mor:	adp|on det|a-Ind-Art noun|building-Ger ?
+%gra:	1|3|CASE 2|3|DET 3|0|ROOT 4|3|PUNCT
+*MOT:	yeah where were you going ? 335114_336393
+%cod:	$N:FA $N:RI:S
+%mor:	intj|yeah adv|where aux|be-Fin-Ind-Past-S2-irr pron|you-Prs-Nom-S2 verb|go-Part-Pres-S ?
+%gra:	1|5|DISCOURSE 2|5|ADVMOD 3|5|AUX 4|5|NSUBJ 5|0|ROOT 6|5|PUNCT
+*CHI:	to the store .
+%cod:	$N:GI:RS
+%mor:	adp|to det|the-Def-Art noun|store .
+%gra:	1|3|CASE 2|3|DET 3|0|ROOT 4|3|PUNCT
+*MOT:	to get what ? 338735_339595
+%cod:	$N:RI:S
+%mor:	part|to verb|get-Inf-S pron|what-Int-S1 ?
+%gra:	1|2|MARK 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*CHI:	ice cream . 342717_343357
+%cod:	$N:GI:RS
+%mor:	noun|ice noun|cream .
+%gra:	1|2|COMPOUND 2|0|ROOT 3|2|PUNCT
+*MOT:	ice cream ? 343818_344498
+%cod:	$N:FA
+%mor:	noun|ice noun|cream ?
+%gra:	1|2|COMPOUND 2|0|ROOT 3|2|PUNCT
+*MOT:	did you get one ? 344439_345579
+%cod:	$N:RI:L
+%mor:	aux|do-Fin-Ind-Past-S2-irr pron|you-Prs-Nom-S2 verb|get-Inf-S num|one ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*CHI:	<yep uhhuh> [<] . 345640_346659
+%cod:	$N:GI:RL
+%mor:	intj|yep intj|uhhuh .
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|PUNCT
+*MOT:	yeah ? 346720_347220
+%cod:	$N:RC
+%mor:	intj|yeah ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	yeah . 346920_347401
+%cod:	$N:GC
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	who'd [: did] you go with ? 348302_349321
+%cod:	$N:RI:S
+%mor:	aux|do-Fin-Ind-Past-S2-irr pron|you-Prs-Nom-S2 verb|go-Inf-S adp|with ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|3|OBL 5|3|PUNCT
+*CHI:	with Jimmy . 350723_351463
+%cod:	$N:GI:RS
+%mor:	adp|with propn|Jimmy .
+%gra:	1|2|CASE 2|0|ROOT 3|2|PUNCT
+*MOT:	with Jimmy . 351664_352344
+%cod:	$N:FA
+%mor:	adp|with propn|Jimmy .
+%gra:	1|2|CASE 2|0|ROOT 3|2|PUNCT
+*CHI:	yeah .
+%int:	softly
+%cod:	$N:FR
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+@End

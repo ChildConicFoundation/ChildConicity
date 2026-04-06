@@ -1,0 +1,158 @@
+@UTF8
+@PID:	11312/c-00035429-1
+@Begin
+@Languages:	eng
+@Participants:	INV1 Investigator, CHI Target_Child, INV2 Investigator, MOT Mother
+@ID:	eng|HSLLD|INV1|||||Investigator|||
+@ID:	eng|HSLLD|CHI|5;06.28|male|||Target_Child|||
+@ID:	eng|HSLLD|INV2|||||Investigator|||
+@ID:	eng|HSLLD|MOT||female|||Mother|10||
+@Birth of CHI:	27-JUL-1984
+@Media:	toder3, audio, missing
+@Comment:	SES of Mot is lower
+@Date:	24-JAN-1989
+@Location:	Boston , MA USA
+@Situation:	Home Visit 3
+@Activities:	Elicited report
+@Transcriber:	Jim Catalano , Mary Fischer
+@Types:	long, narrative, TD
+*INV1:	Chi on the way here you know it's really raining today and it's really foggy ?
+%mor:	propn|Chi adp|on det|the-Def-Art noun|way adv|here pron|you-Prs-Nom-S2 verb|know-Fin-Ind-Pres-S2 pron|its-Prs-Acc-S3 adv|really verb|rain-Ger-S noun|today cconj|and pron|its-Prs-Nom-S3 adv|really adj|foggy-S1 ?
+%gra:	1|7|VOCATIVE 2|4|CASE 3|4|DET 4|1|NMOD 5|4|ADVMOD 6|7|NSUBJ 7|0|ROOT 8|10|NSUBJ 9|10|ADVMOD 10|7|CCOMP 11|10|OBL-UNMARKED 12|15|CC 13|15|NSUBJ 14|15|ADVMOD 15|10|CONJ 16|7|PUNCT
+@Comment:	Time is 5:21
+*INV1:	we were driving down the highway Inv and I were driving down the highway and all of sudden you know I couldn't see very much in front of me there was all this fog and mist (.) and all of a sudden I heard a sound you know like (.) like &-uh &-uh a truck (.) honking and the road all of a sudden got very narrow it went from two lanes to one lane ?
+%mor:	pron|we-Prs-Nom-P1 aux|be-Fin-Ind-Past-P1-irr verb|drive-Part-Pres-S adp|down det|the-Def-Art noun|highway propn|Inv cconj|and pron|I-Prs-Nom-S1 aux|be-Fin-Ind-Past-P1-irr verb|drive-Part-Pres-S adp|down det|the-Def-Art noun|highway cconj|and det|all-Def-Tot adp|of adv|sudden pron|you-Prs-Nom-S2 verb|know-Fin-Ind-Pres-S2 pron|I-Prs-Nom-S1 aux|couldnt-Fin-S verb|see-Inf-S adv|very adv|much adp|in noun|front adp|of pron|I-Prs-Acc-S1 pron|there-Int-S1 aux|be-Fin-Ind-Past-S3-irr det|all-Def-Tot det|this-Def-Dem-Sing noun|fog cconj|and noun|mist cconj|and det|all-Def-Tot adp|of det|a-Ind-Art adv|sudden pron|I-Prs-Nom-S1 verb|hear-Fin-Ind-Past-S1-irr det|a-Ind-Art noun|sound-Acc pron|you-Prs-Nom-S2 verb|know-Fin-Ind-Pres-S2 adp|like adp|like det|a-Ind-Art noun|truck verb|honk-Ger-S cconj|and det|the-Def-Art noun|road det|all-Def-Tot adp|of det|a-Ind-Art adj|sudden-S1 verb|get-Fin-Ind-Past-S3-irr adv|very adj|narrow-S1 pron|it-Prs-Nom-S3 verb|go-Fin-Ind-Past-S3-irr adp|from num|two noun|lane-Plur adp|to num|one noun|lane ?
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|6|CASE 5|6|DET 6|3|OBL 7|3|OBL 8|11|CC 9|11|NSUBJ 10|11|AUX 11|3|CONJ 12|14|CASE 13|14|DET 14|11|OBL 15|20|CC 16|20|OBJ 17|18|CASE 18|16|NMOD 19|20|NSUBJ 20|3|CONJ 21|23|NSUBJ 22|23|AUX 23|20|CCOMP 24|25|ADVMOD 25|23|ADVMOD 26|27|CASE 27|23|OBL 28|29|CASE 29|27|NMOD 30|34|EXPL 31|34|COP 32|34|DET-PREDET 33|34|DET 34|23|PARATAXIS 35|36|CC 36|34|CONJ 37|43|CC 38|43|NSUBJ 39|41|CASE 40|41|DET 41|38|NMOD 42|43|NSUBJ 43|3|CONJ 44|45|DET 45|43|OBJ 46|47|NSUBJ 47|45|ACL-RELCL 48|47|COMPOUND-PRT 49|52|DISCOURSE 50|51|DET 51|52|COMPOUND 52|47|ADVCL 53|60|CC 54|55|DET 55|60|NSUBJ 56|60|NSUBJ 57|59|CASE 58|59|DET 59|56|NMOD 60|43|CONJ 61|62|ADVMOD 62|60|XCOMP 63|64|NSUBJ 64|60|CONJ 65|67|CASE 66|67|NUMMOD 67|64|OBL 68|70|CASE 69|70|NUMMOD 70|64|OBL 71|3|PUNCT
+*INV1:	and I thought there was only enough room for one car↑ and I didn't know whether to [/] I didn't know where to go I couldn't stop I couldn't go backwards so I drove [//] I pulled all the way over to the side of the road and tried to make as much room for the other truck to get by ?
+%mor:	cconj|and pron|I-Prs-Nom-S1 verb|think-Fin-Ind-Past-S1-irr pron|there-Int-S1 verb|be-Fin-Ind-Past-S3-irr adv|only adj|enough-S1 noun|room adp|for num|one noun|car cconj|and pron|I-Prs-Nom-S1 adv|didnt verb|know-Fin-Ind-Pres-S1 sconj|whether pron|I-Prs-Nom-S1 adv|didnt verb|know-Fin-Ind-Pres-S1 adv|where part|to verb|go-Inf-S pron|I-Prs-Nom-S1 aux|couldnt-Fin-S verb|stop-Inf-S pron|I-Prs-Nom-S1 aux|couldnt-Fin-S verb|go-Inf-S adv|backwards adv|so pron|I-Prs-Nom-S1 pron|I-Prs-Nom-S1 verb|pull-Fin-Ind-Past-S1 det|all-Def-Tot det|the-Def-Art noun|way-Acc adv|over adp|to det|the-Def-Art noun|side adp|of det|the-Def-Art noun|road cconj|and verb|try-Fin-Ind-Past-S1 part|to verb|make-Inf-S adv|as adj|much-S1 noun|room-Acc adp|for det|the-Def-Art adj|other-S1 noun|truck part|to verb|get-Inf-S adp|by ?
+%gra:	1|3|CC 2|3|NSUBJ 3|0|ROOT 4|5|EXPL 5|3|CCOMP 6|7|ADVMOD 7|8|AMOD 8|5|NSUBJ 9|11|CASE 10|11|NUMMOD 11|8|NMOD 12|15|CC 13|15|NSUBJ 14|15|ADVMOD 15|3|CONJ 16|19|MARK 17|19|NSUBJ 18|19|ADVMOD 19|15|CCOMP 20|22|ADVMOD 21|22|MARK 22|19|CCOMP 23|25|NSUBJ 24|25|AUX 25|15|CCOMP 26|28|NSUBJ 27|28|AUX 28|25|CCOMP 29|28|ADVMOD 30|33|ADVMOD 31|33|NSUBJ 32|33|NSUBJ 33|25|PARATAXIS 34|36|DET-PREDET 35|36|DET 36|33|OBJ 37|33|ADVMOD 38|40|CASE 39|40|DET 40|33|OBL 41|43|CASE 42|43|DET 43|40|NMOD 44|45|CC 45|33|CONJ 46|47|MARK 47|45|XCOMP 48|49|ADVMOD 49|50|AMOD 50|47|OBJ 51|54|CASE 52|54|DET 53|54|AMOD 54|50|NMOD 55|56|MARK 56|47|ADVCL 57|56|OBL 58|3|PUNCT
+*INV1:	and I started to get scared because I started realizing that there was not enough space for the truck to get by and so we were getting closer and closer and closer and (.) somehow luckily we just barely made it by but I got scared .
+%mor:	cconj|and pron|I-Prs-Nom-S1 verb|start-Fin-Ind-Past-S1 part|to verb|get-Inf-S adj|scared-S1 sconj|because pron|I-Prs-Nom-S1 verb|start-Fin-Ind-Past-S1 verb|realize-Ger-S sconj|that pron|there-Int-S1 verb|be-Fin-Ind-Past-S3-irr part|not adj|enough-S1 noun|space sconj|for det|the-Def-Art noun|truck part|to verb|get-Inf-S adp|by cconj|and adv|so pron|we-Prs-Nom-P1 aux|be-Fin-Ind-Past-P1-irr verb|get-Part-Pres-S adj|close-Cmp-S1 cconj|and adj|close-Cmp-S1 cconj|and adj|close-Cmp-S1 cconj|and adv|somehow adv|luckily pron|we-Prs-Nom-P1 adv|just adv|barely verb|make-Fin-Ind-Past-P1-irr pron|it-Prs-Acc-S3 adp|by cconj|but pron|I-Prs-Nom-S1 verb|get-Fin-Ind-Past-S1-irr adj|scared-S1 .
+%gra:	1|3|CC 2|3|NSUBJ 3|0|ROOT 4|5|MARK 5|3|XCOMP 6|5|XCOMP 7|9|MARK 8|9|NSUBJ 9|3|ADVCL 10|9|XCOMP 11|13|MARK 12|13|EXPL 13|10|CCOMP 14|15|ADVMOD 15|16|AMOD 16|13|NSUBJ 17|21|MARK 18|19|DET 19|21|NSUBJ 20|21|MARK 21|16|ACL 22|21|OBL 23|27|CC 24|27|ADVMOD 25|27|NSUBJ 26|27|AUX 27|3|CONJ 28|27|XCOMP 29|30|CC 30|28|CONJ 31|32|CC 32|28|CONJ 33|39|CC 34|39|ADVMOD 35|39|ADVMOD 36|39|NSUBJ 37|39|ADVMOD 38|39|ADVMOD 39|27|CONJ 40|39|OBJ 41|39|COMPOUND-PRT 42|44|CC 43|44|NSUBJ 44|39|CONJ 45|44|XCOMP 46|3|PUNCT
+*CHI:	is this true ?
+%mor:	aux|be-Fin-Ind-Pres-S3 pron|this-Dem-S1 adj|true-S1 ?
+%gra:	1|3|COP 2|3|NSUBJ 3|0|ROOT 4|3|PUNCT
+*INV1:	yeah .
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*INV1:	anyway I was really scared and Inv was really scared too weren't you Inv ?
+%add:	INV2
+%mor:	intj|anyway pron|I-Prs-Nom-S1 aux|be-Fin-Ind-Past-S1-irr adv|really adj|scared-S1 cconj|and propn|Inv aux|be-Fin-Ind-Past-S3-irr adv|really adj|scared-S1 adv|too adp|werent pron|you-Prs-Nom-S2 noun|inv ?
+%gra:	1|5|DISCOURSE 2|5|NSUBJ 3|5|COP 4|5|ADVMOD 5|0|ROOT 6|10|CC 7|10|NSUBJ 8|10|COP 9|10|ADVMOD 10|5|CONJ 11|10|ADVMOD 12|14|CASE 13|14|COMPOUND 14|10|OBL 15|5|PUNCT
+*INV2:	yeah weally [: really] .
+%par:	spoken in god-like fashion
+%mor:	intj|yeah adv|really .
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|PUNCT
+*INV1:	yeah you were scared that's why &-uh he's so quiet now he's still getting over the shock of it .
+%mor:	intj|yeah pron|you-Prs-Nom-S2 aux|be-Fin-Ind-Past-S2-irr adj|scared-S1 aux|that-Fin-Ind-Pres-S3 adv|why noun|he-Plur adv|so adj|quiet-S1 adv|now aux|he-Fin-Ind-Pres-S3 adv|still verb|get-Part-Pres-S adp|over det|the-Def-Art noun|shock adp|of pron|it-Prs-Acc-S3 .
+%gra:	1|4|DISCOURSE 2|4|NSUBJ 3|4|COP 4|0|ROOT 5|6|COP 6|4|OBL 7|9|NSUBJ 8|9|ADVMOD 9|6|ADVCL-RELCL 10|13|ADVMOD 11|13|AUX 12|13|ADVMOD 13|4|PARATAXIS 14|16|CASE 15|16|DET 16|13|OBL 17|18|CASE 18|16|NMOD 19|4|PUNCT
+*INV1:	can you tell me a story of something that made you scared once ?
+%mor:	aux|can-Fin-S pron|you-Prs-Nom-S2 verb|tell-Inf-S pron|I-Prs-Acc-S1 det|a-Ind-Art noun|story-Acc adp|of pron|something-Ind-S1 pron|that-Rel verb|make-Fin-Ind-Past-S3-irr pron|you-Prs-Acc-S2 adj|scared-S1 adv|once ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|3|IOBJ 5|6|DET 6|3|OBJ 7|8|CASE 8|6|NMOD 9|10|NSUBJ 10|8|ACL-RELCL 11|10|OBJ 12|10|XCOMP 13|12|ADVMOD 14|3|PUNCT
+*CHI:	nothing makes me scared .
+%mor:	pron|nothing-Neg-S1 verb|make-Fin-Ind-Pres-S3 pron|I-Prs-Acc-S1 adj|scared-S1 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|XCOMP 5|2|PUNCT
+*INV1:	nothing ?
+%mor:	pron|nothing-Neg-S1 ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	nothing !
+%mor:	pron|nothing-Neg-S1 !
+%gra:	1|0|ROOT 2|1|PUNCT
+*INV1:	come on .
+%mor:	verb|come-Fin-Imp-S adp|on .
+%gra:	1|0|ROOT 2|1|ADVMOD 3|1|PUNCT
+*CHI:	except a dinosaur roaring .
+%mor:	adp|except det|a-Ind-Art noun|dinosaur noun|roaring-Ger .
+%gra:	1|4|CASE 2|4|DET 3|4|COMPOUND 4|0|ROOT 5|4|PUNCT
+*CHI:	<&=laughs> [>] .
+*INV1:	<a dinosaur> [<] roaring↑ have you ever heard a dinosaur roar ?
+%mor:	det|a-Ind-Art noun|dinosaur verb|roar-Ger-S aux|have-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 adv|ever verb|hear-Part-Past-S-irr det|a-Ind-Art noun|dinosaur noun|roar-Acc ?
+%gra:	1|2|DET 2|7|NSUBJ 3|2|ACL 4|7|AUX 5|7|NSUBJ 6|7|ADVMOD 7|0|ROOT 8|10|DET 9|10|COMPOUND 10|7|OBJ 11|7|PUNCT
+*CHI:	but that makes me scared .
+%mor:	cconj|but pron|that-Dem verb|make-Fin-Ind-Pres-S3 pron|I-Prs-Acc-S1 adj|scared-S1 .
+%gra:	1|3|CC 2|3|NSUBJ 3|0|ROOT 4|3|OBJ 5|3|XCOMP 6|3|PUNCT
+*INV1:	when I was your age I was scared to go in the basement without the lights on .
+%mor:	adv|when pron|I-Prs-Nom-S1 aux|be-Fin-Ind-Past-S1-irr pron|your-Prs-Gen-S2 noun|age pron|I-Prs-Nom-S1 aux|be-Fin-Ind-Past-S1-irr adj|scared-S1 part|to verb|go-Inf-S adp|in det|the-Def-Art noun|basement adp|without det|the-Def-Art noun|light-Plur adp|on .
+%gra:	1|5|ADVMOD 2|5|NSUBJ 3|5|COP 4|5|NMOD-POSS 5|8|ADVCL 6|8|NSUBJ 7|8|COP 8|0|ROOT 9|10|MARK 10|8|XCOMP 11|13|CASE 12|13|DET 13|10|OBL 14|16|CASE 15|16|DET 16|10|OBL 17|8|PUNCT 18|8|PUNCT
+*INV1:	you have a basement ?
+%mor:	pron|you-Prs-Nom-S2 verb|have-Fin-Ind-Pres-S2 det|a-Ind-Art noun|basement-Acc ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|PUNCT
+*MOT:	Chi's afraid to stay in his room huh ?
+%mor:	noun|chi-Plur adj|afraid-S1 part|to verb|stay-Inf-S adp|in pron|his-Prs-Gen-S3 noun|room intj|huh ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|MARK 4|2|XCOMP 5|7|CASE 6|7|NMOD-POSS 7|4|OBL 8|7|APPOS 9|2|PUNCT
+*CHI:	I'm afraid at night .
+%mor:	aux|be-Fin-Ind-Pres-S3 adj|afraid-S1 adp|at noun|night .
+%gra:	1|2|COP 2|0|ROOT 3|4|CASE 4|2|OBL 5|2|PUNCT
+*INV1:	why ?
+%mor:	adv|why ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	because .
+%mor:	adv|because .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	without my sister .
+%mor:	adp|without pron|my-Prs-Gen-S1 noun|sister .
+%gra:	1|3|CASE 2|3|NMOD-POSS 3|0|ROOT 4|3|PUNCT
+*INV1:	why ?
+%mor:	adv|why ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	because .
+%mor:	adv|because .
+%gra:	1|0|ROOT 2|1|PUNCT
+*INV1:	tell me about it .
+%mor:	verb|tell-Fin-Imp-S pron|I-Prs-Acc-S1 adp|about pron|it-Prs-Acc-S3 .
+%gra:	1|0|ROOT 2|1|IOBJ 3|4|CASE 4|1|OBL 5|1|PUNCT
+*CHI:	nope .
+%mor:	intj|nope .
+%gra:	1|0|ROOT 2|1|PUNCT
+*INV1:	<&=laughs> [>] come on .
+%mor:	verb|come-Fin-Imp-S adp|on .
+%gra:	1|0|ROOT 2|1|ADVMOD 3|1|PUNCT
+*MOT:	<&=laughs> [<] .
+*MOT:	that's unusual he usually &=laughs .
+%mor:	aux|that-Fin-Ind-Pres-S3 adj|unusual-S1 pron|he-Prs-Nom-S3 adv|usually .
+%gra:	1|2|COP 2|0|ROOT 3|4|NSUBJ 4|2|ADVMOD 5|2|PUNCT
+*CHI:	what are we doing now ?
+%mor:	pron|what-Int-S1 aux|be-Fin-Ind-Pres-P1 pron|we-Prs-Nom-P1 verb|do-Part-Pres-S adv|now ?
+%gra:	1|4|OBJ 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|4|ADVMOD 6|4|PUNCT
+*INV1:	<I'm waiting for you> [>] to tell me .
+%mor:	aux|be-Fin-Ind-Pres-S1 verb|wait-Part-Pres-S sconj|for pron|you-Prs-Acc-S2 part|to verb|tell-Inf-S pron|I-Prs-Acc-S1 .
+%gra:	1|2|AUX 2|0|ROOT 3|6|MARK 4|6|NSUBJ 5|6|MARK 6|2|ADVCL 7|6|IOBJ 8|2|PUNCT
+*MOT:	<xxx so that's what's on his mind> [<] .
+%mor:	adv|so pron|that-Dem-S1 noun|what-Plur adp|on pron|his-Prs-Gen-S3 noun|mind .
+%gra:	1|3|DISCOURSE 2|3|NSUBJ 3|0|ROOT 4|6|CASE 5|6|NMOD-POSS 6|3|NMOD 7|3|PUNCT
+*CHI:	I told you already !
+%int:	loudly
+%mor:	pron|I-Prs-Nom-S1 verb|tell-Fin-Ind-Past-S1-irr pron|you-Prs-Acc-S2 adv|already !
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|IOBJ 4|2|ADVMOD 5|2|PUNCT
+*INV1:	but you didn't tell me why you were scared .
+%mor:	cconj|but pron|you-Prs-Nom-S2 aux|didnt-Fin-S verb|tell-Inf-S pron|I-Prs-Acc-S1 adv|why pron|you-Prs-Nom-S2 aux|be-Fin-Ind-Past-S2-irr adj|scared-S1 .
+%gra:	1|4|CC 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|4|IOBJ 6|4|OBJ 7|9|NSUBJ 8|9|COP 9|6|ADVCL-RELCL 10|4|PUNCT
+*INV1:	I wanna know why (.) <xxx why I asked you> [>] .
+%mor:	pron|I-Prs-Nom-S1 adv|wanna verb|know-Fin-Ind-Pres-S1 adv|why adv|why pron|I-Prs-Nom-S1 verb|ask-Fin-Ind-Past-S1 pron|you-Prs-Acc-S2 .
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|3|OBJ 5|7|ADVMOD 6|7|NSUBJ 7|3|CCOMP 8|7|IOBJ 9|3|PUNCT
+*CHI:	<I am> [<] (.) (be)cause &-um &-um I'm scared (be)cause I hate being alone that's why .
+%mor:	pron|I-Prs-Nom-S1 aux|be-Fin-Ind-Pres-S1 sconj|because pron|im-Prs-Nom-S1 adj|scared-S1 sconj|because pron|I-Prs-Nom-S1 verb|hate-Fin-Ind-Pres-S1 aux|be-Part-Pres-S adj|alone-S1 pron|that-Prs-S1 adv|why .
+%gra:	1|5|NSUBJ 2|5|COP 3|5|MARK 4|5|NSUBJ 5|0|ROOT 6|8|MARK 7|8|NSUBJ 8|5|ADVCL 9|10|COP 10|8|XCOMP 11|12|PUNCT 12|8|ADVMOD 13|5|PUNCT
+*INV1:	oh (.) and <do you> [//] is it especially (be)cause of the dark↑ or is it just being alone ?
+%mor:	intj|oh cconj|and aux|be-Fin-Ind-Pres-S3 pron|it-Prs-Nom-S3 adv|especially adp|because adp|of det|the-Def-Art adj|dark-S1 cconj|or aux|be-Fin-Ind-Pres-S3 pron|it-Prs-Nom-S3 adv|just aux|be-Part-Pres-S adj|alone-S1 ?
+%gra:	1|9|DISCOURSE 2|9|CC 3|9|COP 4|9|NSUBJ 5|9|ADVMOD 6|9|CASE 7|6|FIXED 8|9|DET 9|0|ROOT 10|15|CC 11|15|COP 12|15|NSUBJ 13|15|ADVMOD 14|15|COP 15|9|CONJ 16|9|PUNCT
+*CHI:	dark .
+%mor:	adj|dark-S1 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*INV1:	or both ?
+%mor:	cconj|or det|both-Def-Tot ?
+%gra:	1|2|CC 2|0|ROOT 3|2|PUNCT
+*CHI:	dark .
+%mor:	adj|dark-S1 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*INV1:	dark ?
+%mor:	adj|dark-S1 ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	both .
+%mor:	det|both-Def-Tot .
+%gra:	1|0|ROOT 2|1|PUNCT
+*INV1:	okay .
+%mor:	intj|okay .
+%gra:	1|0|ROOT 2|1|PUNCT
+@Comment:	Time is 8:15
+@End

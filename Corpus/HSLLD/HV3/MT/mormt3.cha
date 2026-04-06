@@ -1,0 +1,496 @@
+@UTF8
+@PID:	11312/c-00035540-1
+@Begin
+@Languages:	eng
+@Participants:	MOT Mother, CHI Target_Child, BRO Brother
+@ID:	eng|HSLLD|MOT||female|||Mother|12||
+@ID:	eng|HSLLD|CHI|5;08.12|male|||Target_Child|||
+@ID:	eng|HSLLD|BRO|||||Brother|||
+@Birth of CHI:	22-MAY-1985
+@Media:	mormt3, audio
+@Comment:	SES of Mot is lower
+@Date:	06-MAR-1991
+@Location:	Boston , MA USA
+@Activities:	Meal time
+@Transcriber:	Brenda Kurland , Eliza Whitbeck
+@Types:	long, meal, TD
+*MOT:	sit here . 21515_22135
+%mor:	verb|sit-Fin-Imp-S adv|here .
+%gra:	1|0|ROOT 2|1|ADVMOD 3|1|PUNCT
+@Comment:	Time is 0:40
+*MOT:	sit here . 21755_23397
+%mor:	verb|sit-Fin-Imp-S adv|here .
+%gra:	1|0|ROOT 2|1|ADVMOD 3|1|PUNCT
+*MOT:	don't touch it . 23037_24378
+%mor:	intj|dont verb|touch-Fin-S pron|it-Prs-Acc-S3 .
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*CHI:	oh_man .
+%mor:	propn|ohman .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	you want ketchup on your food ? 23978_25860
+%mor:	pron|you-Prs-Nom-S2 verb|want-Fin-Ind-Pres-S2 noun|ketchup-Acc adp|on pron|your-Prs-Gen-S2 noun|food ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|6|CASE 5|6|NMOD-POSS 6|2|OBL 7|2|PUNCT
+*MOT:	<you want ketchup you xxx> [//] you want ketchup ?
+%mor:	pron|you-Prs-Nom-S2 verb|want-Fin-Ind-Pres-S2 noun|ketchup-Acc ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*BRO:	xxx [<] .
+%com:	I think some of the xxx stuff throughout may be Spanish
+*CHI:	yeah ! 28785_29285
+%mor:	intj|yeah !
+%gra:	1|0|ROOT 2|1|PUNCT
+*BRO:	oh !
+%mor:	intj|oh !
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	don't touch my thing . 32470_33551
+%mor:	intj|dont verb|touch-Fin-S pron|my-Prs-Gen-S1 noun|thing-Acc-Ger .
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|4|NMOD-POSS 4|2|OBJ 5|2|PUNCT
+*MOT:	no (.) you leave that alone (.) just leave it there . 33972_35574
+%mor:	intj|no pron|you-Prs-Nom-S2 verb|leave-Fin-Ind-Pres-S2 pron|that-Dem adv|alone adv|just verb|leave-Inf-S pron|it-Prs-Acc-S3 adv|there .
+%gra:	1|3|DISCOURSE 2|3|NSUBJ 3|0|ROOT 4|3|OBJ 5|3|ADVMOD 6|7|ADVMOD 7|3|PARATAXIS 8|7|OBJ 9|7|ADVMOD 10|3|PUNCT
+*MOT:	eat your food . 35194_35934
+%mor:	verb|eat-Fin-Imp-S pron|your-Prs-Gen-S2 noun|food-Acc .
+%gra:	1|0|ROOT 2|3|NMOD-POSS 3|1|OBJ 4|1|PUNCT
+*MOT:	Bro want some too ? 36815_37815
+%mor:	noun|bro verb|want-Fin-Ind-Pres-S det|some-Def-Ind adv|too ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|ADVMOD 5|2|PUNCT
+*MOT:	more ketchup ? 38418_39038
+%mor:	adj|more-Cmp-S1 noun|ketchup ?
+%gra:	1|2|AMOD 2|0|ROOT 3|2|PUNCT
+*MOT:	leave it [= tape player?] there Chi the baby's not going to grab it . 39179_40961
+%mor:	verb|leave-Fin-Imp-S pron|it-Prs-Acc-S3 adv|there propn|Chi det|the-Def-Art noun|baby-Plur part|not verb|go-Part-Pres-S part|to verb|grab-Inf-S pron|it-Prs-Acc-S3 .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|ADVMOD 4|1|VOCATIVE 5|6|DET 6|8|NSUBJ 7|8|ADVMOD 8|1|ADVCL 9|10|MARK 10|8|XCOMP 11|10|OBJ 12|1|PUNCT
+*MOT:	want more ketchup Bro ? 41664_42785
+%par:	speaks very quickly in general and sounds high-strung
+%mor:	verb|want-Fin-Imp-S adj|more-Cmp-S1 noun|ketchup noun|bro-Acc ?
+%gra:	1|0|ROOT 2|4|AMOD 3|4|COMPOUND 4|1|OBJ 5|1|PUNCT
+*MOT:	want salad Chi ? 44309_45089
+%mor:	verb|want-Fin-Imp-S noun|salad noun|chi-Acc ?
+%gra:	1|0|ROOT 2|3|COMPOUND 3|1|OBJ 4|1|PUNCT
+*MOT:	(.) huh ? 44770_45270
+%mor:	intj|huh ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	no ?
+%mor:	intj|no ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	more juice +/.
+%mor:	adj|more-Cmp-S1 noun|juice +/.
+%gra:	1|2|AMOD 2|0|ROOT 3|2|PUNCT
+*CHI:	Mommy know that flower's growing big ? 50085_53807
+%com:	may refer to plant in Little Shop of Horrors , which is playing in the background at the end of the transcript
+%mor:	propn|Mommy verb|know-Fin-Ind-Pres-S3 sconj|that noun|flower-Plur verb|grow-Ger-S adj|big-S1 ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|5|MARK 4|5|NSUBJ 5|2|CCOMP 6|5|XCOMP 7|2|PUNCT
+*MOT:	<oh yeah> [>] .
+%mor:	intj|oh intj|yeah .
+%gra:	1|0|ROOT 2|1|DISCOURSE 3|1|PUNCT
+*CHI:	in school ?
+%mor:	adp|in noun|school ?
+%gra:	1|2|CASE 2|0|ROOT 3|2|PUNCT
+*MOT:	now come and eat first (.) come ! 53908_55029
+%mor:	adv|now verb|come-Fin-Imp-S cconj|and verb|eat-Fin-Imp-S adj|first-S1 verb|come-Inf-S !
+%gra:	1|2|ADVMOD 2|0|ROOT 3|4|CC 4|2|CONJ 5|6|AMOD 6|2|PARATAXIS 7|2|PUNCT
+*MOT:	then you can watch it [= tv] . 55589_56590
+%mor:	adv|then pron|you-Prs-Nom-S2 aux|can-Fin-S verb|watch-Inf-S pron|it-Prs-Acc-S3 .
+%gra:	1|4|ADVMOD 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*MOT:	you want juice Chi ? 56150_61174
+%com:	calls after Chi who has left the table and is about to fiddle with either the television or the tape player .
+%mor:	pron|you-Prs-Nom-S2 verb|want-Fin-Ind-Pres-S2 noun|juice propn|Chi-Acc ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|COMPOUND 4|2|OBJ 5|2|PUNCT
+*BRO:	hello ! 60734_61234
+%mor:	intj|hello !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	Chi <leave it alone> [/] leave it alone ! 65425_66933
+%mor:	propn|Chi verb|leave-Inf-S pron|it-Prs-Acc-S3 adv|alone !
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|ADVMOD 5|2|PUNCT
+*MOT:	Bro come Bro .
+%mor:	noun|bro verb|come-Fin-S propn|bro-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*MOT:	keep it down .
+%mor:	verb|keep-Fin-Imp-S pron|it-Prs-Acc-S3 adp|down .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|COMPOUND-PRT 4|1|PUNCT
+*BRO:	hello [<] !
+%mor:	intj|hello !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	come (.) come here xxx [>] !
+%mor:	verb|come-Fin-Imp-S verb|come-Inf-S adv|here !
+%gra:	1|0|ROOT 2|1|XCOMP 3|2|ADVMOD 4|1|PUNCT
+*BRO:	hello [<] !
+%mor:	intj|hello !
+%gra:	1|0|ROOT 2|1|PUNCT
+*BRO:	hello !
+%mor:	intj|hello !
+%gra:	1|0|ROOT 2|1|PUNCT
+*BRO:	www .
+%com:	baby talk
+*MOT:	xxx you can't see them . 82495_83335
+%mor:	pron|you-Prs-Nom-S2 aux|cant-Fin-S verb|see-Inf-S pron|they-Prs-Acc-P3 .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*MOT:	here the birdies are xxx up . 84277_91627
+%com:	not sure if Chi is in room
+%mor:	adv|here det|the-Def-Art noun|birdy-Plur aux|be-Fin-Ind-Pres-P3 adv|up .
+%gra:	1|0|ROOT 2|3|DET 3|5|NSUBJ 4|5|COP 5|1|ADVCL 6|1|PUNCT
+*MOT:	eat more .
+%mor:	verb|eat-Fin-Imp-S adj|more-Cmp-S1 .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*MOT:	want salad ? 91688_92328
+%mor:	verb|want-Fin-Imp-S noun|salad-Acc ?
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*MOT:	hm: ?
+%mor:	intj|hm ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	hm: ? 91948_92448
+%mor:	intj|hm ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	xxx [>] want some salad ? 91988_96694
+%mor:	verb|want-Fin-Imp-Pres-S det|some-Def-Ind noun|salad-Acc ?
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|1|PUNCT
+*CHI:	mm .
+%mor:	intj|mm .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	(.) where my slippers at ? 103166_113761
+%mor:	adv|where pron|my-Prs-Gen-S1 noun|slipper-Plur adp|at ?
+%gra:	1|0|ROOT 2|3|NMOD-POSS 3|1|NSUBJ 4|1|CASE 5|1|PUNCT
+*MOT:	now I hafta sit down and eat too .
+%mor:	adv|now pron|I-Prs-Nom-S1 aux|hafta-Fin-Ind-Pres-S1 verb|sit-Fin-Ind-Pres-S1 adp|down cconj|and verb|eat-Fin-Ind-Pres-S1 adv|too .
+%gra:	1|4|ADVMOD 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|4|COMPOUND-PRT 6|7|CC 7|4|CONJ 8|7|ADVMOD 9|4|PUNCT
+*MOT:	(..) come sit down (.) eat .
+%mor:	verb|come-Fin-Imp-S verb|sit-Inf-S adp|down noun|eat-Acc .
+%gra:	1|0|ROOT 2|1|XCOMP 3|2|COMPOUND-PRT 4|1|OBJ 5|1|PUNCT
+*MOT:	+^ Chi come and sit down and eat please . 113342_114502
+%mor:	propn|Chi verb|come-Fin-Ind-S cconj|and verb|sit-Fin-Imp-S adp|down cconj|and verb|eat-Fin-Imp-S intj|please .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|CC 4|2|CONJ 5|4|COMPOUND-PRT 6|7|CC 7|4|CONJ 8|2|DISCOURSE 9|2|PUNCT
+*MOT:	watch tv afterwards . 114663_115544
+%mor:	verb|watch-Fin-Imp-S noun|TV-Acc adv|afterwards .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|ADVMOD 4|1|PUNCT
+*MOT:	<oh you good boy your> [//] oh [!] you good boy . 116205_120410
+%mor:	intj|oh pron|you-Prs-Nom-S2 adj|good-S1 noun|boy .
+%gra:	1|4|DISCOURSE 2|4|NSUBJ 3|4|AMOD 4|0|ROOT 5|4|PUNCT
+*MOT:	a little more ? 120991_123474
+%mor:	det|a-Ind-Art adj|little-S1 adj|more-Cmp-S1 ?
+%gra:	1|3|DET 2|3|AMOD 3|0|ROOT 4|3|PUNCT
+*MOT:	more ? 123935_124435
+%mor:	adj|more-Cmp-S1 ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	xxx [>] want some salad ? 124315_125136
+%mor:	verb|want-Fin-Imp-Pres-S det|some-Def-Ind noun|salad-Acc ?
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|1|PUNCT
+*MOT:	www baby . 125657_126157
+%com:	baby talk
+%mor:	noun|baby .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	Chi don't put so much ketchup ! 125777_126818
+%mor:	propn|Chi adv|dont verb|put-Fin-Ind-Past-S3-irr adv|so adj|much-S1 noun|ketchup-Acc !
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|5|ADVMOD 5|6|AMOD 6|3|OBJ 7|3|PUNCT
+*MOT:	you're not even going to eat it . 127400_128500
+%mor:	aux|your-Fin-Ind-Pres-S3 part|not adv|even verb|go-Part-Pres-S part|to verb|eat-Inf-S pron|it-Prs-Acc-S3 .
+%gra:	1|4|AUX 2|4|ADVMOD 3|4|ADVMOD 4|0|ROOT 5|6|MARK 6|4|XCOMP 7|6|OBJ 8|4|PUNCT
+*CHI:	yes I am .
+%mor:	intj|yes pron|I-Prs-Nom-S1 aux|be-Fin-Ind-Pres-S1 .
+%gra:	1|3|DISCOURSE 2|3|NSUBJ 3|0|ROOT 4|3|PUNCT
+*MOT:	want more rice ? 128100_129121
+%mor:	verb|want-Fin-Imp-S adj|more-Cmp-S1 noun|rice-Acc ?
+%gra:	1|0|ROOT 2|3|AMOD 3|1|OBJ 4|1|PUNCT
+*CHI:	no .
+%mor:	intj|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	(..) I give you some sunshine +...
+%par:	singing
+%mor:	pron|I-Prs-Nom-S1 verb|give-Fin-Ind-Pres-S1 pron|you-Prs-Acc-S2 det|some-Def-Ind noun|sunshine-Acc +...
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|IOBJ 4|5|DET 5|2|OBJ 6|2|PUNCT
+*MOT:	xxx .
+*BRO:	hello !
+%com:	silence except for tv
+%mor:	intj|hello !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	(..) I give you some sunshine +...
+%par:	singing
+%mor:	pron|I-Prs-Nom-S1 verb|give-Fin-Ind-Pres-S1 pron|you-Prs-Acc-S2 det|some-Def-Ind noun|sunshine-Acc +...
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|IOBJ 4|5|DET 5|2|OBJ 6|2|PUNCT
+*MOT:	xxx little xxx older today .
+%mor:	adj|little-S1 adj|old-Cmp-S1 noun|today .
+%gra:	1|2|OBL-UNMARKED 2|0|ROOT 3|2|OBL-UNMARKED 4|2|PUNCT
+*BRO:	hm: ?
+%mor:	intj|hm ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	who do you wanna babysit xxx tonight ?
+%mor:	pron|who-Int aux|do-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 part|wana verb|babysit-Inf-S noun|tonight ?
+%gra:	1|5|OBJ 2|5|AUX 3|5|NSUBJ 4|5|ADVMOD 5|0|ROOT 6|5|OBL-UNMARKED 7|5|PUNCT
+*MOT:	eat your food .
+%mor:	verb|eat-Fin-Imp-S pron|your-Prs-Gen-S2 noun|food-Acc .
+%gra:	1|0|ROOT 2|3|NMOD-POSS 3|1|OBJ 4|1|PUNCT
+*CHI:	right now ? 129382_130062
+%mor:	adv|right adv|now ?
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*MOT:	yeah [?] .
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	you look a <little restless [?]> [>] .
+%mor:	pron|you-Prs-Nom-S2 verb|look-Fin-Ind-Pres-S2 det|a-Ind-Art adj|little-S1 adj|restless-S1 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|DET 4|5|OBL-UNMARKED 5|2|XCOMP 6|2|PUNCT
+*BRO:	jacket &~mm .
+%mor:	noun|jacket .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	<you want more &~ketch> [//] rice want more rice ? 172655_181822
+%mor:	noun|rice verb|want-Fin-Ind-Pres-P3 adj|more-Cmp-S1 noun|rice-Acc ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|AMOD 4|2|OBJ 5|2|PUNCT
+*MOT:	to stir it ?
+%mor:	part|to verb|stir-Inf-S pron|it-Prs-Acc-S3 ?
+%gra:	1|2|MARK 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*MOT:	you put too much ketchup in it Chi . 181502_182883
+%mor:	pron|you-Prs-Nom-S2 verb|put-Fin-Ind-Past-S2-irr adv|too adj|much-S1 noun|ketchup-Acc adp|in pron|it-Prs-Acc-S3 propn|Chi .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|ADVMOD 4|5|AMOD 5|2|OBJ 6|7|CASE 7|2|OBL 8|2|OBL 9|2|PUNCT
+*MOT:	hm: ?
+%mor:	intj|hm ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*BRO:	hm: ?
+%mor:	intj|hm ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	xxx like it ? 182603_183223
+%mor:	intj|like pron|it-Prs-Acc-S3 ?
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|PUNCT
+*MOT:	you're almost finished .
+%mor:	pron|your-Prs-Nom-S2 adv|almost verb|finish-Fin-Ind-Past-S1 .
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|3|PUNCT
+*MOT:	almost finished . 182763_183383
+%mor:	adv|almost verb|finish-Part-Past-S .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*MOT:	+^ <Chi's almost> [//] finished almost finished . 183123_184464
+%mor:	verb|finish-Fin-Ind-Past-S3 adv|almost verb|finish-Part-Past-S .
+%gra:	1|0|ROOT 2|3|ADVMOD 3|1|XCOMP 4|1|PUNCT
+*MOT:	you too ? 184184_184764
+%mor:	pron|you-Prs-Nom-S2 adv|too ?
+%gra:	1|0|ROOT 2|1|ADVMOD 3|1|PUNCT
+*CHI:	no ! 184364_184864
+%mor:	intj|no !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	what ? 184404_184904
+%mor:	pron|what-Int-S1 ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	I don't wanna lie down yet <I willn't like it> [/] like that like it like that . 185745_188608
+%mor:	pron|I-Prs-Nom-S1 adv|dont aux|wanna-Fin-Ind-Pres-S verb|lie-Inf-S adp|down adv|yet adp|like pron|that-Dem adp|like pron|it-Prs-Acc-S3 adp|like pron|that-Dem .
+%gra:	1|4|NSUBJ 2|4|ADVMOD 3|4|AUX 4|0|ROOT 5|4|COMPOUND-PRT 6|8|ADVMOD 7|8|CASE 8|4|OBL 9|10|CASE 10|4|OBL 11|12|CASE 12|10|NMOD 13|4|PUNCT
+*MOT:	no (.) &-um this is for me . 188449_189430
+%mor:	intj|no pron|this-Dem-S1 aux|be-Fin-Ind-Pres-S3 adp|for pron|I-Prs-Acc-S1 .
+%gra:	1|5|DISCOURSE 2|5|NSUBJ 3|5|COP 4|5|CASE 5|0|ROOT 6|5|PUNCT
+*BRO:	I love xxx . 188970_189510
+%mor:	pron|I-Prs-Nom-S1 verb|love-Fin-Ind-Pres-S1 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|PUNCT
+*MOT:	<you don't wanna> [<] eat salad . 189250_190992
+%mor:	pron|you-Prs-Nom-S2 aux|dont-Fin-S part|wana verb|eat-Inf-S noun|salad-Acc .
+%gra:	1|4|NSUBJ 2|4|AUX 3|4|ADVMOD 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*CHI:	who [/] eats salad salad ?
+%mor:	verb|eat-Fin-Ind-Pres-S3 noun|salad noun|salad-Acc ?
+%gra:	1|0|ROOT 2|3|COMPOUND 3|1|OBJ 4|1|PUNCT
+*MOT:	you want a little bit of salad ? 192676_197663
+%mor:	pron|you-Prs-Nom-S2 verb|want-Fin-Ind-Pres-S2 det|a-Ind-Art adj|little-S1 noun|bit-Acc adp|of noun|salad ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|5|DET 4|5|AMOD 5|2|OBJ 6|7|CASE 7|5|NMOD 8|2|PUNCT
+*CHI:	Chi sit down and eat [//] your food first first . 201246_205293
+%mor:	propn|Chi verb|sit-Fin-S adp|down cconj|and pron|your-Prs-Gen-S2 noun|food adj|first-S1 adv|first .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|COMPOUND-PRT 4|6|CC 5|6|NMOD-POSS 6|7|NSUBJ 7|8|ADVMOD 8|2|ADVMOD 9|2|PUNCT
+*MOT:	mm Bro you have more food xxx ! 206677_208339
+%mor:	intj|mm intj|bro pron|you-Prs-Nom-S2 verb|have-Fin-Ind-Pres-S2 adj|more-Cmp-S1 noun|food-Acc !
+%gra:	1|4|DISCOURSE 2|4|DISCOURSE 3|4|NSUBJ 4|0|ROOT 5|6|AMOD 6|4|OBJ 7|4|PUNCT
+*CHI:	yeah [!] right there ! 208119_209601
+%mor:	intj|yeah adv|right adv|there !
+%gra:	1|3|DISCOURSE 2|3|ADVMOD 3|0|ROOT 4|3|PUNCT
+*MOT:	oh hurry up and eat Chi (.) cookie .
+%mor:	intj|oh verb|hurry-Fin-Imp-S adp|up cconj|and verb|eat-Fin-Imp-S propn|Chi noun|cookie-Acc .
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|COMPOUND-PRT 4|5|CC 5|2|CONJ 6|7|COMPOUND 7|5|OBJ 8|2|PUNCT
+*MOT:	you'll watch tv afterwards . 210063_211144
+%mor:	intj|youll verb|watch-Fin-Imp-S noun|TV-Acc adv|afterwards .
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|OBJ 4|2|ADVMOD 5|2|PUNCT
+*MOT:	Bro (.) Bro's almost finished .
+%mor:	propn|bro propn|Bros adv|almost verb|finish-Fin-Ind-Past-S3 .
+%gra:	1|4|NSUBJ 2|1|FLAT 3|4|ADVMOD 4|0|ROOT 5|4|PUNCT
+*MOT:	he good boy . 215195_215939
+%mor:	pron|he-Prs-Nom-S3 adj|good-S1 noun|boy .
+%gra:	1|3|NSUBJ 2|3|AMOD 3|0|ROOT 4|3|PUNCT
+*MOT:	what do you want Bro ?
+%mor:	pron|what-Int-S1 aux|do-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 verb|want-Inf-S noun|bro-Acc ?
+%gra:	1|4|OBJ 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*MOT:	now let's eat .
+%com:	I think Chi is watching tv
+%mor:	adv|now intj|let verb|eat-Fin-Imp-S .
+%gra:	1|3|ADVMOD 2|3|DISCOURSE 3|0|ROOT 4|3|PUNCT
+*MOT:	Chi (.) sit down please .
+%mor:	propn|Chi verb|sit-Fin-S adp|down intj|please .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|COMPOUND-PRT 4|2|DISCOURSE 5|2|PUNCT
+*MOT:	fall . 245077_245577
+%mor:	noun|fall .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	Bro come Bro .
+%com:	silence with tv
+%mor:	noun|bro verb|come-Fin-S propn|bro-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*BRO:	(..) xxx .
+*BRO:	(..) xxx .
+*CHI:	look what they did here [>] .
+%mor:	verb|look-Fin-Imp-S pron|what-Rel-S1 pron|they-Prs-Nom-P3 verb|do-Fin-Ind-Past-P3-irr adv|here .
+%gra:	1|0|ROOT 2|1|OBJ 3|4|NSUBJ 4|2|ACL-RELCL 5|4|ADVMOD 6|1|PUNCT
+*MOT:	(..) <come on> [<] Bro . 245200_245843
+%mor:	verb|come-Fin-Imp-S adp|on propn|bro .
+%gra:	1|0|ROOT 2|3|CASE 3|1|OBL 4|1|PUNCT
+*MOT:	you (.) stay up .
+%mor:	pron|you-Prs-Nom-S2 verb|stay-Fin-Ind-Pres-S2 adp|up .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|COMPOUND-PRT 4|2|PUNCT
+*MOT:	Bro you're not finished .
+%mor:	noun|bro aux|your-Fin-Ind-Pres-S3 part|not verb|finish-Part-Past-S .
+%gra:	1|4|NSUBJ 2|4|AUX 3|4|ADVMOD 4|0|ROOT 5|4|PUNCT
+*CHI:	+< I'm finished .
+%mor:	pron|im-Prs-Nom-S1 verb|finish-Fin-Ind-Past-S3 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|PUNCT
+*MOT:	let me see . 285246_285986
+%mor:	verb|let-Fin-Imp-S pron|I-Prs-Acc-S1 verb|see-Inf-S .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|XCOMP 4|1|PUNCT
+*MOT:	one more spoon .
+%mor:	num|one adj|more-Cmp-S1 noun|spoon .
+%gra:	1|3|NUMMOD 2|3|AMOD 3|0|ROOT 4|3|PUNCT
+*MOT:	+< xxx one more .
+%mor:	num|one adj|more-Cmp-S1 .
+%gra:	1|2|NUMMOD 2|0|ROOT 3|2|PUNCT
+*MOT:	drink your juice . 287389_290212
+%mor:	verb|drink-Fin-Imp-S pron|your-Prs-Gen-S2 noun|juice-Acc .
+%gra:	1|0|ROOT 2|3|NMOD-POSS 3|1|OBJ 4|1|PUNCT
+*MOT:	good boy ! 293057_293697
+%mor:	adj|good-S1 noun|boy !
+%gra:	1|2|AMOD 2|0|ROOT 3|2|PUNCT
+*MOT:	Chi's finished Bro .
+%mor:	propn|Chis-Plur verb|finish-Fin-Ind-Past-P3 propn|bro-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*MOT:	Bro has almost finished too [!] lookit mm . 293437_298544
+%mor:	propn|bro aux|have-Fin-Ind-Pres-S3 adv|almost verb|finish-Part-Past-S adv|too adj|lookit-S1 intj|mm .
+%gra:	1|4|NSUBJ 2|4|AUX 3|4|ADVMOD 4|0|ROOT 5|6|ADVMOD 6|4|XCOMP 7|4|DISCOURSE 8|4|PUNCT
+*MOT:	xxx [>] fast .
+%mor:	adj|fast-S1 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	[^ extending his bottle towards Melanie] finised [: finished] .
+%mor:	verb|finish-Fin-Ind-Past-S .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	okay go sit down watch tv . 304175_305356
+%mor:	intj|okay verb|go-Fin-Imp-S verb|sit-Fin-Imp-S adp|down verb|watch-Inf-Imp-S noun|TV-Acc .
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|XCOMP 4|3|COMPOUND-PRT 5|2|XCOMP 6|5|OBJ 7|2|PUNCT
+*MOT:	Bro come and eat xxx . 306958_307938
+%mor:	intj|bro verb|come-Fin-Imp-S cconj|and verb|eat-Fin-Imp-S .
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|4|CC 4|2|CONJ 5|2|PUNCT
+*BRO:	xxx .
+*MOT:	one more spoon ? 307659_310341
+%mor:	num|one adj|more-Cmp-S1 noun|spoon ?
+%gra:	1|3|NUMMOD 2|3|AMOD 3|0|ROOT 4|3|PUNCT
+*BRO:	xxx .
+*MOT:	so get something to drink . 312584_313604
+%mor:	adv|so verb|get-Fin-Imp-S pron|something-Ind-S1 part|to verb|drink-Inf-S .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|OBJ 4|5|MARK 5|3|ACL 6|2|PUNCT
+*BRO:	xxx .
+*MOT:	what ? 319655_320155
+%mor:	pron|what-Int-S1 ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	you want xxx ? 319735_322436
+%mor:	pron|you-Prs-Nom-S2 verb|want-Fin-Ind-Pres-S2 ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|PUNCT
+*MOT:	want a drink ? 325859_326479
+%mor:	verb|want-Fin-Imp-S det|a-Ind-Art noun|drink-Acc ?
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|1|PUNCT
+*BRO:	no . 330863_331363
+%mor:	intj|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	want juice ? 330923_332344
+%mor:	verb|want-Fin-Imp-S noun|juice-Acc ?
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*MOT:	&=coughs .
+*MOT:	Bro look what they're doing to the plant . 332004_333264
+%mor:	noun|bro verb|look-Fin-Imp-S pron|what-Int-S1 aux|their-Fin-Ind-Pres-S3 verb|do-Part-Pres-S adp|to det|the-Def-Art noun|plant .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|5|AUX 5|3|ACL-RELCL 6|8|CASE 7|8|DET 8|5|OBL 9|2|PUNCT
+*MOT:	it says <feed me> [<] [>] . 336027_337268
+%int:	high voice
+%mor:	pron|it-Prs-Nom-S3 verb|say-Fin-Ind-Pres-S3 verb|feed-Inf-S pron|I-Prs-Acc-S1 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|XCOMP 4|3|IOBJ 5|2|PUNCT
+*BRO:	xxx .
+*MOT:	more drink ? 337589_338249
+%mor:	adj|more-Cmp-S1 noun|drink ?
+%gra:	1|2|AMOD 2|0|ROOT 3|2|PUNCT
+*MOT:	no .
+%mor:	intj|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	juice ?
+%mor:	noun|juice ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*BRO:	xxx juice lookit back here ! 339832_343737
+%mor:	noun|juice noun|lookit adv|back adv|here !
+%gra:	1|2|COMPOUND 2|0|ROOT 3|4|ADVMOD 4|2|ADVMOD 5|2|PUNCT
+*MOT:	where ? 346261_346761
+%mor:	adv|where ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*BRO:	xxx back here !
+%mor:	adv|back adv|here !
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*MOT:	take a little bit of juice . 347062_348023
+%mor:	verb|take-Fin-Imp-S det|a-Ind-Art adj|little-S1 noun|bit-Acc adp|of noun|juice .
+%gra:	1|0|ROOT 2|4|DET 3|4|AMOD 4|1|OBJ 5|6|CASE 6|4|NMOD 7|1|PUNCT
+*MOT:	come sit over here let me see . 347623_348744
+%mor:	verb|come-Fin-Imp-S verb|sit-Fin-Imp-S adp|over adv|here verb|let-Fin-Imp-S pron|I-Prs-Acc-S1 verb|see-Inf-S .
+%gra:	1|0|ROOT 2|1|XCOMP 3|2|COMPOUND-PRT 4|1|ADVMOD 5|1|PARATAXIS 6|5|OBJ 7|5|XCOMP 8|1|PUNCT
+*MOT:	give me the cup ! 348324_349044
+%mor:	verb|give-Fin-Imp-S pron|I-Prs-Acc-S1 det|the-Def-Art noun|cup-Acc !
+%gra:	1|0|ROOT 2|1|IOBJ 3|4|DET 4|1|OBJ 5|1|PUNCT
+*MOT:	so you willn't spill it . 349485_359841
+%mor:	adv|so pron|you-Prs-Nom-S2 aux|willnt-Fin-S verb|spill-Inf-S pron|it-Prs-Acc-S3 .
+%gra:	1|4|ADVMOD 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*BRO:	xxx .
+*MOT:	hm: ?
+%mor:	intj|hm ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*BRO:	xxx .
+*MOT:	xxx ?
+*BRO:	no . 360543_361043
+%mor:	intj|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	no ? 360643_361143
+%mor:	intj|no ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	xxx .
+*MOT:	mm . 365345_365845
+%mor:	intj|mm .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	good boy ! 365825_366586
+%sit:	scraping of plate sounds .
+%mor:	adj|good-S1 noun|boy !
+%gra:	1|2|AMOD 2|0|ROOT 3|2|PUNCT
+*MOT:	want more ? 368771_369431
+%mor:	verb|want-Fin-Imp-S adj|more-Cmp-S1 ?
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*MOT:	(.) mhm don't do that . 369172_376504
+%mor:	intj|mhm intj|dont verb|do-Fin-Imp-S pron|that-Dem .
+%gra:	1|3|DISCOURSE 2|3|DISCOURSE 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*MOT:	get down .
+%mor:	verb|get-Fin-Imp-S adv|down .
+%gra:	1|0|ROOT 2|1|ADVMOD 3|1|PUNCT
+*MOT:	good boy . 382095_382715
+%mor:	adj|good-S1 noun|boy .
+%gra:	1|2|AMOD 2|0|ROOT 3|2|PUNCT
+*BRO:	I do that .
+%mor:	pron|I-Prs-Nom-S1 verb|do-Fin-Ind-Pres-S1 pron|that-Dem .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*MOT:	mm finish . 387702_388542
+%mor:	intj|mm noun|finish .
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|PUNCT
+*MOT:	finish .
+%mor:	noun|finish .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	here Bro .
+%mor:	adv|here propn|bro .
+%gra:	1|0|ROOT 2|1|FLAT 3|1|PUNCT
+*MOT:	wait .
+%mor:	verb|wait-Fin-Imp-S .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	finish . 401266_401766
+%com:	silence with Little Shop of Horrors in background
+%mor:	noun|finish .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	Bro .
+%mor:	intj|bro .
+%gra:	1|0|ROOT 2|1|PUNCT
+*BRO:	xxx Daddy xxx .
+%mor:	propn|Daddy .
+%gra:	1|0|ROOT 2|1|PUNCT
+*BRO:	xxx .
+@Comment:	Time is 7:35
+@End

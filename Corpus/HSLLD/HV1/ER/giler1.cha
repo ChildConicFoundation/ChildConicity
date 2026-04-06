@@ -1,0 +1,207 @@
+@UTF8
+@PID:	11312/c-00034881-1
+@Begin
+@Languages:	eng
+@Participants:	MOT Mother, CHI Target_Child
+@ID:	eng|HSLLD|MOT||female|||Mother|14||
+@ID:	eng|HSLLD|CHI|3;10.00|male|||Target_Child|||
+@Birth of CHI:	08-OCT-1984
+@Media:	giler1, audio, missing
+@Comment:	really missing
+@Comment:	SES of Mot is lower
+@Date:	08-AUG-1988
+@Location:	Boston , MA , USA
+@Situation:	Home Visit 1; took place in STE's bedroom; Mot and STE alternately sitting and laying on the floor; early afternoon of a very warm summer day
+@Activities:	Elicited report
+@Types:	long, narrative, TD
+*MOT:	where did you go with Fred yesterday ?
+%cod:	$N:RI:O
+%mor:	adv|where aux|do-Fin-Ind-Past-S2-irr pron|you-Prs-Nom-S2 verb|go-Inf-S adp|with propn|Fred noun|yesterday ?
+%gra:	1|4|ADVMOD 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|6|CASE 6|4|OBL 7|4|OBL-UNMARKED 8|4|PUNCT
+*CHI:	huh ?
+%cod:	$N:RC
+%mor:	intj|huh ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	where did you go with Fred (.) ?
+%cod:	$N:GC
+%mor:	adv|where aux|do-Fin-Ind-Past-S2-irr pron|you-Prs-Nom-S2 verb|go-Inf-S adp|with propn|Fred ?
+%gra:	1|4|ADVMOD 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|6|CASE 6|4|OBL 7|4|PUNCT
+*MOT:	you Ricky (.) and Richard (.) Fred .
+%cod:	$N:RI:S
+%mor:	pron|you-Prs-Nom-S2 propn|Ricky cconj|and propn|Richard propn|Fred .
+%gra:	1|0|ROOT 2|1|FLAT 3|4|CC 4|1|CONJ 5|4|FLAT 6|1|PUNCT
+*MOT:	Nella ?
+%cod:	$N:RI:S
+%mor:	propn|Nella ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	0 .
+%act:	absently moves toy
+*MOT:	huh ?
+%cod:	$N:RI:S:R
+%mor:	intj|huh ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	crab .
+%int:	rising
+%cod:	$N:GI:RS
+%mor:	noun|crab .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	to buy crab .
+%cod:	$N:GI:S
+%mor:	part|to verb|buy-Inf-S noun|crab-Acc .
+%gra:	1|2|MARK 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*MOT:	oh .
+%cod:	$N:FA
+%mor:	intj|oh .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	and it bites [!] <and I> [/] <see a> [/] (.) frog walking see a frog (.) walking .
+%gpx:	laying on his back
+%act:	playing with bus
+%cod:	$N:GI:S $N:GI:S
+%mor:	cconj|and pron|it-Prs-Nom-S3 verb|bite-Fin-Ind-Pres-S3 noun|frog noun|walking-Acc-Ger verb|see-Fin-Imp-S det|a-Ind-Art noun|frog noun|walking-Acc-Ger .
+%gra:	1|3|CC 2|3|NSUBJ 3|0|ROOT 4|5|COMPOUND 5|3|OBJ 6|3|XCOMP 7|9|DET 8|9|COMPOUND 9|6|OBJ 10|3|PUNCT
+*MOT:	now what [/] else did you see see ?
+%cod:	$N:RI:C
+%mor:	adv|now adv|else aux|do-Fin-Ind-Past-S2-irr pron|you-Prs-Nom-S2 verb|see-Inf-S verb|see-Inf-S ?
+%gra:	1|5|ADVMOD 2|5|ADVMOD 3|5|AUX 4|5|NSUBJ 5|0|ROOT 6|5|XCOMP 7|5|PUNCT
+*MOT:	what else ?
+%cod:	$N:RI:C:R
+%mor:	pron|what-Int-S1 adv|else ?
+%gra:	1|0|ROOT 2|1|ADVMOD 3|1|PUNCT
+*CHI:	and they [?] pick up (.) frogs (.) and they [?] pick up (.) crabs +...
+%act:	bef plays with bus
+%alt:	<2 , 7> then
+%cod:	$N:GI:RC $N:GI:S
+%mor:	cconj|and pron|they-Prs-Nom-P3 verb|pick-Fin-Ind-Pres-P3 adp|up noun|frog-Plur-Acc cconj|and pron|they-Prs-Nom-P3 verb|pick-Fin-Ind-Pres-P3 adp|up noun|crab-Plur-Acc +...
+%gra:	1|3|CC 2|3|NSUBJ 3|0|ROOT 4|3|COMPOUND-PRT 5|3|OBJ 6|8|CC 7|8|NSUBJ 8|3|CONJ 9|8|COMPOUND-PRT 10|8|OBJ 11|3|PUNCT
+*MOT:	and what else ?
+%cod:	$N:RI:C
+%mor:	cconj|and pron|what-Int-S1 adj|else-S1 ?
+%gra:	1|2|CC 2|0|ROOT 3|2|AMOD 4|2|PUNCT
+*CHI:	0 .
+%act:	plays with bus without answering
+*MOT:	what else ?
+%cod:	$N:RI:C:R
+%mor:	pron|what-Int-S1 adv|else ?
+%gra:	1|0|ROOT 2|1|ADVMOD 3|1|PUNCT
+*CHI:	and go out .
+%cod:	$N:GI:RC
+%mor:	cconj|and verb|go-Fin-Imp-S adp|out .
+%gra:	1|2|CC 2|0|ROOT 3|2|COMPOUND-PRT 4|2|PUNCT
+*MOT:	out where ?
+%cod:	$N:RI:S
+%mor:	adv|out adv|where ?
+%gra:	1|0|ROOT 2|1|ADVMOD 3|1|PUNCT
+*MOT:	what else did you do with them ?
+%cod:	$N:RI:C
+%mor:	pron|what-Int-S1 adv|else aux|do-Fin-Ind-Past-S2-irr pron|you-Prs-Nom-S2 verb|do-Inf-S adp|with pron|they-Prs-Acc-P3 ?
+%gra:	1|5|OBJ 2|1|ADVMOD 3|5|AUX 4|5|NSUBJ 5|0|ROOT 6|7|CASE 7|5|OBL 8|5|PUNCT
+*CHI:	and [?] go out <to (.) buy> [//] motorcycle buy motorcycle +...
+%cod:	$N:GI:RC
+%mor:	cconj|and verb|go-Fin-Imp-S adp|out noun|motorcycle verb|buy-Inf-S noun|motorcycle-Acc +...
+%gra:	1|2|CC 2|0|ROOT 3|2|COMPOUND-PRT 4|6|COMPOUND 5|6|AMOD 6|2|OBJ 7|2|PUNCT
+*MOT:	oh xxx again .
+%cod:	$O
+%mor:	intj|oh adv|again .
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|PUNCT
+*MOT:	motorcycles in your head .
+%cod:	$O
+%mor:	noun|motorcycle-Plur adp|in pron|your-Prs-Gen-S2 noun|head .
+%gra:	1|0|ROOT 2|4|CASE 3|4|NMOD-POSS 4|1|NMOD 5|1|PUNCT
+*MOT:	you're always talking about motorcycles !
+%cod:	$O
+%mor:	pron|your-Prs-Nom-S2 adv|always verb|talk-Part-Pres-S adp|about noun|motorcycle-Plur !
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|5|CASE 5|3|OBL 6|3|PUNCT
+*MOT:	I don't think !
+%cod:	$O
+%mor:	pron|I-Prs-Nom-S1 adv|dont verb|think-Inf-Pres-S !
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|3|PUNCT
+*MOT:	zzz .
+%par:	laughs
+%mor:	intj|zzz .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	motorcycle in head [?] .
+%cod:	$O
+%mor:	noun|motorcycle adp|in noun|head .
+%gra:	1|0|ROOT 2|3|CASE 3|1|NMOD 4|1|PUNCT
+*CHI:	you had two .
+%cod:	$O
+%par:	sing-song
+%mor:	pron|you-Prs-Nom-S2 verb|have-Fin-Ind-Past-S2-irr num|two .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*MOT:	no .
+%cod:	$O
+%mor:	intj|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	you don't always talk about motorcycles .
+%cod:	$O
+%mor:	pron|you-Prs-Nom-S2 aux|dont-Fin-S adv|always verb|talk-Inf-S adp|about noun|motorcycle-Plur .
+%gra:	1|4|NSUBJ 2|4|AUX 3|4|ADVMOD 4|0|ROOT 5|6|CASE 6|4|OBL 7|4|PUNCT
+*CHI:	haha you [!] do .
+%cod:	$O
+%mor:	intj|haha pron|you-Prs-Nom-S2 aux|do-Fin-Ind-Pres-S2 .
+%gra:	1|3|DISCOURSE 2|3|NSUBJ 3|0|ROOT 4|3|PUNCT
+*MOT:	why don't you tell me everything you and Fred did yesterday (.) .
+%cod:	$N:RI:O
+%mor:	adv|why adv|dont pron|you-Prs-Nom-S2 verb|tell-Fin-Ind-Pres-S2 pron|I-Prs-Acc-S1 pron|everything-Tot-S1 pron|you-Prs-Nom-S2 cconj|and propn|Fred verb|do-Fin-Ind-Past-S3-irr noun|yesterday .
+%gra:	1|4|ADVMOD 2|4|ADVMOD 3|4|NSUBJ 4|0|ROOT 5|4|IOBJ 6|4|OBJ 7|10|NSUBJ 8|9|CC 9|7|CONJ 10|6|ACL-RELCL 11|10|OBL-UNMARKED 12|4|PUNCT
+*MOT:	and Ricky and Richard .
+%cod:	$N:RI:O
+%mor:	cconj|and propn|Ricky cconj|and propn|Richard .
+%gra:	1|2|CC 2|0|ROOT 3|4|CC 4|2|CONJ 5|2|PUNCT
+*CHI:	I go to crab .
+%cod:	$N:GI:RO
+%int:	<4> rising
+%mor:	pron|I-Prs-Nom-S1 verb|go-Fin-Ind-Pres-S1 adp|to noun|crab .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|CASE 4|2|OBL 5|2|PUNCT
+*CHI:	<to see c(rab)> [>] .
+%cod:	$N:GI:S:I
+%mor:	part|to verb|see-Inf-S noun|crab-Acc .
+%gra:	1|2|MARK 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*MOT:	<but you went> [<] .
+%cod:	$N:U
+%mor:	cconj|but pron|you-Prs-Nom-S2 verb|go-Fin-Ind-Past-S2-irr .
+%gra:	1|3|CC 2|3|NSUBJ 3|0|ROOT 4|3|PUNCT
+*CHI:	I see crab and I see (.) crab walking [?] and crab walking +...
+%int:	<8 , 11> rising
+%par:	<8>yells
+%cod:	$N:GI:S $N:GI:S $N:GI:S
+%mor:	pron|I-Prs-Nom-S1 verb|see-Fin-Ind-Pres-S1 noun|crab-Acc cconj|and pron|I-Prs-Nom-S1 verb|see-Fin-Ind-Pres-S1 noun|crab noun|walking-Acc-Ger cconj|and noun|crab noun|walking-Ger +...
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|6|CC 5|6|NSUBJ 6|2|CONJ 7|8|COMPOUND 8|6|OBJ 9|11|CC 10|11|COMPOUND 11|8|CONJ 12|2|PUNCT
+*CHI:	and they bite [!] me (.) and I say ouch@q !
+%par:	yells
+%act:	acts out events rolling on the floor
+%cod:	$N:GI:S $N:GI:S
+%mor:	cconj|and pron|they-Prs-Nom-P3 verb|bite-Fin-Ind-Pres-P3 pron|I-Prs-Acc-S1 cconj|and pron|I-Prs-Nom-S1 verb|say-Fin-Ind-Pres-S1 q|ouch !
+%gra:	1|3|CC 2|3|NSUBJ 3|0|ROOT 4|3|OBJ 5|7|CC 6|7|NSUBJ 7|3|CONJ 8|7|DISCOURSE 9|3|PUNCT
+*CHI:	ah !
+%par:	yells
+%act:	acts out events rolling on the floor
+%cod:	$N:GI:S
+%mor:	intj|ah !
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	haha !
+%par:	yells
+%act:	acts out events rolling on the floor
+%cod:	$N:U
+%mor:	intj|haha !
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	and I laugh !
+%par:	yells
+%act:	acts out events rolling on the floor
+%cod:	$N:GI:S
+%mor:	cconj|and pron|I-Prs-Nom-S1 verb|laugh-Fin-Ind-Pres-S1 !
+%gra:	1|3|CC 2|3|NSUBJ 3|0|ROOT 4|3|PUNCT
+*CHI:	and I laugh !
+%par:	yells
+%act:	acts out events rolling on the floor
+%cod:	$N:GI:S
+%mor:	cconj|and pron|I-Prs-Nom-S1 verb|laugh-Fin-Ind-Pres-S1 !
+%gra:	1|3|CC 2|3|NSUBJ 3|0|ROOT 4|3|PUNCT
+*CHI:	and I laugh !
+%par:	yells
+%act:	acts out events rolling on the floor
+%com:	this is a very dramatic account
+%cod:	$N:GI:S
+%mor:	cconj|and pron|I-Prs-Nom-S1 verb|laugh-Fin-Ind-Pres-S1 !
+%gra:	1|3|CC 2|3|NSUBJ 3|0|ROOT 4|3|PUNCT
+@End

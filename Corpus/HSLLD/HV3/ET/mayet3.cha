@@ -1,0 +1,388 @@
+@UTF8
+@PID:	11312/c-00035476-1
+@Begin
+@Languages:	eng
+@Participants:	INV Investigator, CHI Target_Child, MOT Mother
+@ID:	eng|HSLLD|INV|||||Investigator|||
+@ID:	eng|HSLLD|CHI|5;09.09|female|||Target_Child|||
+@ID:	eng|HSLLD|MOT||female|||Mother|7||
+@Birth of CHI:	21-AUG-1985
+@Media:	mayet3, audio, missing
+@Comment:	SES of Mot is lower
+@Date:	30-MAY-1991
+@Location:	Boston , MA USA
+@Activities:	Explanatory Task (Magnets)
+@Transcriber:	Brenda Kurland , Eliza Whitbeck
+@Types:	long, toyplay, TD
+*INV:	here you take these [= big magnet] .
+%mor:	adv|here pron|you-Prs-Nom-S2 verb|take-Fin-Ind-Pres-S2 pron|this-Dem-P1 .
+%gra:	1|0|ROOT 2|3|NSUBJ 3|1|PARATAXIS 4|3|OBJ 5|1|PUNCT
+@Comment:	Time is 31:15
+*INV:	and I'll give these [= toys] to your mother okay ?
+%mor:	cconj|and aux|be-Fin-S verb|give-Fin-Ind-S pron|this-Dem-P1 adp|to pron|your-Prs-Gen-S2 noun|mother intj|okay ?
+%gra:	1|3|CC 2|3|AUX 3|0|ROOT 4|3|OBJ 5|7|CASE 6|7|NMOD-POSS 7|3|OBL 8|3|DISCOURSE 9|3|PUNCT
+*CHI:	xxx sposta get here ?
+%mor:	noun|sposta verb|get-Fin-Imp-S adv|here ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|ADVMOD 4|2|PUNCT
+*INV:	<well you guys hafta you got> [//] why don't you sit down with your Mom and you can play with toys okay ?
+%mor:	adv|why adv|dont pron|you-Prs-Nom-S2 verb|sit-Fin-Ind-Pres-S2 adp|down adp|with pron|your-Prs-Gen-S2 noun|mom cconj|and pron|you-Prs-Nom-S2 aux|can-Fin-S verb|play-Inf-S adp|with noun|toy-Plur adj|okay-S1 ?
+%gra:	1|4|ADVMOD 2|4|ADVMOD 3|4|NSUBJ 4|0|ROOT 5|4|COMPOUND-PRT 6|8|CASE 7|8|NMOD-POSS 8|4|OBL 9|12|CC 10|12|NSUBJ 11|12|AUX 12|4|CONJ 13|14|CASE 14|12|OBL 15|12|ADVMOD 16|4|PUNCT
+*CHI:	(..) okay .
+%mor:	intj|okay .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	<I I> [/] I saw these in school +/.
+%mor:	pron|I-Prs-Nom-S1 verb|see-Fin-Ind-Past-S1-irr pron|this-Dem-P1 adp|in noun|school +/.
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|5|CASE 5|2|OBL 6|2|PUNCT
+*CHI:	look [!] a nickel !
+%mor:	verb|look-Fin-Imp-S det|a-Ind-Art noun|nickel-Acc !
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|1|PUNCT
+*MOT:	and what's that ?
+%mor:	cconj|and pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 pron|that-Dem ?
+%gra:	1|2|CC 2|0|ROOT 3|4|COP 4|2|NSUBJ 5|2|PUNCT
+*CHI:	a diamond .
+%mor:	det|a-Ind-Art noun|diamond .
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*MOT:	no not a diamond .
+%mor:	intj|no part|not det|a-Ind-Art noun|diamond .
+%gra:	1|4|DISCOURSE 2|4|ADVMOD 3|4|DET 4|0|ROOT 5|4|PUNCT
+*MOT:	a dime .
+%mor:	det|a-Ind-Art noun|dime .
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*CHI:	a dime !
+%mor:	det|a-Ind-Art noun|dime !
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*CHI:	oh !
+%mor:	intj|oh !
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	can we keep these ?
+%add:	EXP
+%mor:	aux|can-Fin-S pron|we-Prs-Nom-P1 verb|keep-Inf-S pron|this-Dem-P1 ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*MOT:	no &=laughs !
+%mor:	intj|no !
+%gra:	1|0|ROOT 2|1|PUNCT
+*INV:	xxx .
+*MOT:	look at these nice things .
+%mor:	verb|look-Fin-Imp-S adp|at det|this-Def-Dem-Plur adj|nice-S1 noun|thing-Plur .
+%gra:	1|0|ROOT 2|5|CASE 3|5|DET 4|5|AMOD 5|1|OBL 6|1|PUNCT
+*CHI:	xxx they catch [=? attach] .
+%mor:	pron|they-Prs-Nom-P3 verb|catch-Fin-Ind-Pres-P3 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|PUNCT
+*CHI:	<I'll I'll> [//] does this (at)tach to there ?
+%mor:	aux|do-Fin-Ind-Pres-S3 pron|this-Dem-S1 verb|attach-Inf-S adp|to adv|there ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|5|CASE 5|3|OBL 6|3|PUNCT
+*CHI:	what is this ?
+%int:	bites rock
+%mor:	pron|what-Int-S1 aux|be-Fin-Ind-Pres-S3 pron|this-Dem-S1 ?
+%gra:	1|0|ROOT 2|3|COP 3|1|NSUBJ 4|1|PUNCT
+*CHI:	is [=? will] it attached to there ?
+%mor:	aux|be-Fin-Ind-Pres-S3 pron|it-Prs-Nom-S3 verb|attach-Part-Past-S adp|to adv|there ?
+%gra:	1|3|AUX-PASS 2|3|NSUBJ-PASS 3|0|ROOT 4|5|CASE 5|3|OBL 6|3|PUNCT
+*CHI:	this oh !
+%mor:	pron|this-Dem-S1 intj|oh !
+%gra:	1|0|ROOT 2|1|DISCOURSE 3|1|PUNCT
+*MOT:	what are you doing ?
+%sit:	Chi holding three donut magnets
+%mor:	pron|what-Int-S1 aux|be-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 verb|do-Part-Pres-S ?
+%gra:	1|4|OBJ 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|4|PUNCT
+*CHI:	I'm (at)tachin(g) together (.) the xxx .
+%mor:	aux|be-Fin-Ind-Pres-S3 verb|attach-Part-Pres-S adv|together det|the-Def-Art .
+%gra:	1|2|AUX 2|0|ROOT 3|2|ADVMOD 4|2|PUNCT 5|2|PUNCT
+*CHI:	oh !
+%mor:	intj|oh !
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	xxx .
+*CHI:	&-um (.) get these off .
+%mor:	verb|get-Fin-Imp-S pron|this-Dem-P1 adp|off .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|COMPOUND-PRT 4|1|PUNCT
+*CHI:	+< what are these &=points ?
+%mor:	pron|what-Int-S1 aux|be-Fin-Ind-Pres-P3 pron|this-Dem-P1 ?
+%gra:	1|0|ROOT 2|3|COP 3|1|NSUBJ 4|1|PUNCT
+*CHI:	can this (at)tach to that ?
+%act:	throws sponge car to side
+%mor:	aux|can-Fin-S pron|this-Dem-S1 verb|attach-Inf-S adp|to pron|that-Dem ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|5|CASE 5|3|OBL 6|3|PUNCT
+*CHI:	(..) Mom do you know if there's any more ?
+%mor:	noun|mom-Acc aux|do-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 verb|know-Inf-S sconj|if verb|there-Fin-Ind-Pres-S3 det|any-Def-Ind adj|more-Cmp-S1 ?
+%gra:	1|4|OBJ 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|6|MARK 6|4|CCOMP 7|8|DET 8|6|OBJ 9|4|PUNCT
+*CHI:	more of these ?
+%mor:	adj|more-Cmp-S1 adp|of pron|this-Dem-P1 ?
+%gra:	1|0|ROOT 2|3|CASE 3|1|OBL 4|1|PUNCT
+*MOT:	you know what that is ?
+%gpx:	points to sponge car
+%mor:	pron|you-Prs-Nom-S2 verb|know-Fin-Ind-Pres-S2 pron|what-Int-S1 pron|that-Dem aux|be-Fin-Ind-Pres-S3 ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|5|NSUBJ 5|3|ACL-RELCL 6|2|PUNCT
+*CHI:	I don't know .
+%mor:	pron|I-Prs-Nom-S1 adv|dont verb|know-Fin-Ind-Pres-S1 .
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|3|PUNCT
+*CHI:	I don't know what it is [=! shakes head] ?
+%mor:	pron|I-Prs-Nom-S1 adv|dont verb|know-Fin-Ind-Pres-S1 pron|what-Int-S1 pron|it-Prs-Nom-S3 aux|be-Fin-Ind-Pres-S3 ?
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|3|OBJ 5|6|NSUBJ 6|4|ACL-RELCL 7|3|PUNCT
+*CHI:	this xxx stay in there .
+%sit:	Chi has donut magnets stacked with metal ball in the middle
+%mor:	det|this-Def-Dem-Sing noun|stay adp|in adv|there .
+%gra:	1|2|DET 2|0|ROOT 3|4|CASE 4|2|NMOD 5|2|PUNCT
+*CHI:	+, and the other one too .
+%mor:	cconj|and det|the-Def-Art adj|other-S1 noun|one adv|too .
+%gra:	1|4|CC 2|4|DET 3|4|AMOD 4|0|ROOT 5|4|ADVMOD 6|4|PUNCT
+*CHI:	where's the other one ?
+%mor:	adv|wheres det|the-Def-Art adj|other-S1 noun|one ?
+%gra:	1|0|ROOT 2|4|DET 3|4|AMOD 4|1|NSUBJ 5|1|PUNCT
+*CHI:	where's the other car ?
+%mor:	adv|wheres det|the-Def-Art adj|other-S1 noun|car ?
+%gra:	1|0|ROOT 2|4|DET 3|4|AMOD 4|1|NSUBJ 5|1|PUNCT
+*MOT:	it's open .
+%mor:	pron|its-Prs-Gen-S3 adj|open-S1 .
+%gra:	1|2|NMOD-POSS 2|0|ROOT 3|2|PUNCT
+*CHI:	does this open ?
+%act:	shaking big magnet
+%mor:	aux|do-Fin-Ind-Pres-S3 det|this-Def-Dem-Sing adj|open-S1 ?
+%gra:	1|3|AUX 2|3|DET 3|0|ROOT 4|3|PUNCT
+*MOT:	nope .
+%mor:	intj|nope .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	does this open ?
+%mor:	aux|do-Fin-Ind-Pres-S3 det|this-Def-Dem-Sing adj|open-S1 ?
+%gra:	1|3|AUX 2|3|DET 3|0|ROOT 4|3|PUNCT
+*MOT:	what is it ?
+%mor:	pron|what-Int-S1 aux|be-Fin-Ind-Pres-S3 pron|it-Prs-Nom-S3 ?
+%gra:	1|0|ROOT 2|1|COP 3|1|NSUBJ 4|1|PUNCT
+*CHI:	I don't know .
+%mor:	pron|I-Prs-Nom-S1 adv|dont verb|know-Fin-Ind-Pres-S1 .
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|3|PUNCT
+*CHI:	what is this ?
+%mor:	pron|what-Int-S1 aux|be-Fin-Ind-Pres-S3 pron|this-Dem-S1 ?
+%gra:	1|0|ROOT 2|3|COP 3|1|NSUBJ 4|1|PUNCT
+*MOT:	<it's the> [//] a box that doesn't open .
+%mor:	det|a-Ind-Art noun|box pron|that-Rel adv|doesnt verb|open-Inf-S .
+%gra:	1|2|DET 2|0|ROOT 3|5|NSUBJ 4|5|ADVMOD 5|2|ACL-RELCL 6|2|PUNCT
+*CHI:	www .
+%int:	sort of humming
+*CHI:	it sticks on there !
+%sit:	realizes that big magnet attracts , starts holding it over other objects
+%mor:	pron|it-Prs-Nom-S3 verb|stick-Fin-Ind-Pres-S3 adp|on adv|there !
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|CASE 4|2|OBL 5|2|PUNCT
+*MOT:	it does ?
+%int:	mock surprise
+%mor:	pron|it-Prs-Nom-S3 aux|do-Fin-Ind-Pres-S3 ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|PUNCT
+*CHI:	www .
+%int:	singing to self quietly
+*CHI:	put [/] (.) put everything xxx .
+%mor:	verb|put-Fin-Imp-S pron|everything-Tot-S1 .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*CHI:	xxx .
+%act:	linking ball magnets in a row on rug .
+%sit:	MOT watching
+*CHI:	a star .
+%int:	sings
+%mor:	det|a-Ind-Art noun|star .
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*CHI:	it's the xxx .
+%int:	singing
+%mor:	pron|its-Prs-Gen-S3 det|the-Def-Art .
+%gra:	1|2|NMOD-POSS 2|0|ROOT 3|2|PUNCT
+*CHI:	[^ returning] guess what ?
+%mor:	verb|guess-Fin-Imp-S pron|what-Int-S1 ?
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*CHI:	&-uh I'm makin(g) a snake !
+%mor:	adv|im verb|make-Part-Pres-S det|a-Ind-Art noun|snake-Acc !
+%gra:	1|2|ADVMOD 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|PUNCT
+*CHI:	<a baby> [<] +... [+ fr]
+%mor:	det|a-Ind-Art noun|baby +...
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*CHI:	there's any more of these ?
+%mor:	verb|there-Fin-Ind-Pres-S3 det|any-Def-Ind adj|more-Cmp-S1 adp|of pron|this-Dem-P1 ?
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|5|CASE 5|3|NMOD 6|1|PUNCT
+*CHI:	www .
+%int:	humming to self
+*CHI:	okay .
+%mor:	intj|okay .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	lemme [: let me] see .
+%mor:	verb|let-Fin-Imp-S pron|I-Prs-Acc-S1 verb|see-Inf-S .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|XCOMP 4|1|PUNCT
+*CHI:	<I'll I'll &~h> [/] I'll have the baby one .
+%mor:	pron|ill-Prs-Nom-S2 verb|have-Fin-Ind-Pres-S3 det|the-Def-Art noun|baby-Acc noun|one-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|5|DET 4|2|OBJ 5|2|OBJ 6|2|PUNCT
+*CHI:	xxx .
+%int:	to self
+*MOT:	do you have those ?
+%mor:	aux|do-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 verb|have-Inf-S pron|that-Dem-P1 ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*MOT:	what are those ?
+%mor:	pron|what-Int-S1 aux|be-Fin-Ind-Pres-P3 pron|that-Dem-P1 ?
+%gra:	1|0|ROOT 2|3|COP 3|1|NSUBJ 4|1|PUNCT
+*CHI:	I don't know .
+%mor:	pron|I-Prs-Nom-S1 adv|dont verb|know-Fin-Ind-Pres-S1 .
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|3|PUNCT
+*CHI:	+< what are these &=points ?
+%mor:	pron|what-Int-S1 aux|be-Fin-Ind-Pres-P3 pron|this-Dem-P1 ?
+%gra:	1|0|ROOT 2|3|COP 3|1|NSUBJ 4|1|PUNCT
+*CHI:	what are those ?
+%mor:	pron|what-Int-S1 aux|be-Fin-Ind-Pres-P3 pron|that-Dem-P1 ?
+%gra:	1|0|ROOT 2|3|COP 3|1|NSUBJ 4|1|PUNCT
+*CHI:	&=laughs .
+*CHI:	ah .
+%act:	starts picking up ball magnets with big magnet
+%mor:	intj|ah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	go find it xxx put it up xxx .
+%mor:	verb|go-Fin-Imp-S verb|find-Fin-Imp-S pron|it-Prs-Acc-S3 verb|put-Fin-Imp-S pron|it-Prs-Acc-S3 adp|up .
+%gra:	1|0|ROOT 2|1|XCOMP 3|2|OBJ 4|2|XCOMP 5|4|OBJ 6|4|COMPOUND-PRT 7|1|PUNCT
+*CHI:	Mom you only hafta take two .
+%mor:	noun|mom pron|you-Prs-Nom-S2 adv|only aux|hafta-Fin-Ind-Pres-S2 verb|take-Fin-Ind-Pres-S num|two .
+%gra:	1|5|VOCATIVE 2|5|NSUBJ 3|5|ADVMOD 4|5|AUX 5|0|ROOT 6|5|OBJ 7|5|PUNCT
+*MOT:	I'm sorry .
+%mor:	adv|im adj|sorry-S1 .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*CHI:	oh !
+%act:	putting objects onto big magnet
+%mor:	intj|oh !
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	xxx do it .
+%mor:	verb|do-Fin-Imp-S pron|it-Prs-Acc-S3 .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*CHI:	oh .
+%mor:	intj|oh .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	www .
+%int:	singing to self for awhile
+%act:	throws donut magnet onto big magnet
+*MOT:	what are you singing ?
+%mor:	pron|what-Int-S1 aux|be-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 verb|sing-Part-Pres-S ?
+%gra:	1|4|OBJ 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|4|PUNCT
+*CHI:	Jungle Book .
+%mor:	propn|Jungle propn|Book .
+%gra:	1|2|COMPOUND 2|0|ROOT 3|2|PUNCT
+*CHI:	oh [!] you hear that noise !
+%mor:	intj|oh pron|you-Prs-Nom-S2 verb|hear-Fin-Ind-Pres-S2 det|that-Def-Dem-Sing noun|noise-Acc !
+%gra:	1|3|DISCOURSE 2|3|NSUBJ 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|PUNCT
+*MOT:	Jungle Book ?
+%mor:	propn|Jungle propn|Book ?
+%gra:	1|2|COMPOUND 2|0|ROOT 3|2|PUNCT
+*CHI:	yeah xxx .
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	www .
+%int:	singing
+*MOT:	she's always gonna sing that .
+%mor:	pron|she-Prs-S1 adv|always part|go verb|sing-Inf-S pron|that-Dem .
+%gra:	1|4|NSUBJ 2|4|ADVMOD 3|4|ADVMOD 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*MOT:	always .
+%add:	EXPs
+%mor:	adv|always .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	www .
+%int:	still singing , she is singing the song the vultures sing about friends
+*CHI:	oh &=laughs !
+%mor:	intj|oh !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	you like that ?
+%mor:	pron|you-Prs-Nom-S2 verb|like-Fin-Ind-Pres-S2 pron|that-Dem ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*CHI:	www .
+%int:	sings
+*MOT:	easy (.) easy !
+%sit:	Chi shaking objects off of big magnet
+%mor:	adj|easy-S1 adj|easy-S1 !
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*CHI:	let's play !
+%mor:	intj|let verb|play-Fin-Imp-S !
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|PUNCT
+*CHI:	(.) <I wanna> [//] &-um can these [= big magnet] break ?
+%mor:	aux|can-Fin-S det|this-Def-Dem-Plur noun|break-Acc ?
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|1|PUNCT
+*MOT:	yes if you're not careful .
+%mor:	intj|yes sconj|if pron|your-Prs-Nom-S2 part|not adj|careful-S1 .
+%gra:	1|5|DISCOURSE 2|5|MARK 3|5|NSUBJ 4|5|ADVMOD 5|0|ROOT 6|5|PUNCT
+*CHI:	&-um what are these ?
+%mor:	pron|what-Int-S1 aux|be-Fin-Ind-Pres-P3 pron|this-Dem-P1 ?
+%gra:	1|0|ROOT 2|3|COP 3|1|NSUBJ 4|1|PUNCT
+*CHI:	+< what are these &=points ?
+%mor:	pron|what-Int-S1 aux|be-Fin-Ind-Pres-P3 pron|this-Dem-P1 ?
+%gra:	1|0|ROOT 2|3|COP 3|1|NSUBJ 4|1|PUNCT
+*MOT:	they look like &~s [//] little sponges .
+%mor:	pron|they-Prs-Nom-P3 verb|look-Fin-Ind-Pres-P3 adp|like adj|little-S1 noun|sponge-Plur .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|5|CASE 4|5|AMOD 5|2|OBL 6|2|PUNCT
+*CHI:	these look [?] little sponges ?
+%gpx:	looking at EXP
+%mor:	pron|this-Dem-P1 verb|look-Fin-Ind-Pres-P3 adj|little-S1 noun|sponge-Plur-Acc ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|AMOD 4|2|OBJ 5|2|PUNCT
+*CHI:	they are !
+%mor:	pron|they-Prs-Nom-P3 aux|be-Fin-Ind-Pres-P3 !
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|PUNCT
+*CHI:	(.) www .
+%int:	singing for a second
+*CHI:	(.) 0 .
+%par:	squeals
+%act:	slams big magnet down
+*MOT:	easy !
+%mor:	adj|easy-S1 !
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	oh !
+%mor:	intj|oh !
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	give me that .
+%mor:	verb|give-Fin-Imp-S pron|I-Prs-Acc-S1 pron|that-Dem .
+%gra:	1|0|ROOT 2|1|IOBJ 3|1|OBJ 4|1|PUNCT
+*CHI:	&=laughs .
+*CHI:	it's like pennies [?] .
+%act:	rotating donut magnet and two donut magnets around each other
+%mor:	pron|its-Prs-Gen-S3 intj|like noun|penny-Plur .
+%gra:	1|3|NMOD-POSS 2|3|DISCOURSE 3|0|ROOT 4|3|PUNCT
+*CHI:	oh .
+%mor:	intj|oh .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	(..) oh .
+%int:	grunt
+%mor:	intj|oh .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	xxx I did another one .
+%mor:	pron|I-Prs-Nom-S1 verb|do-Fin-Ind-Past-S1-irr det|another-Def-Ind noun|one-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|PUNCT
+*CHI:	(..) &-um &-um can't we (.) keep these ?
+%mor:	verb|cant-Fin-Imp-S pron|we-Prs-Nom-P1 verb|keep-Fin-Ind-Pres-P1 pron|this-Dem-P1 ?
+%gra:	1|0|ROOT 2|3|NSUBJ 3|1|CCOMP 4|3|OBJ 5|1|PUNCT
+*MOT:	no !
+%mor:	intj|no !
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	why they're pennies ?
+%mor:	adv|why pron|their-Prs-Gen-S2 noun|penny-Plur ?
+%gra:	1|0|ROOT 2|3|DET 3|1|NSUBJ 4|1|PUNCT
+*MOT:	no .
+%mor:	intj|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	nickels ?
+%mor:	noun|nickel-Plur ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	no dimes .
+%mor:	det|no-Def-Neg noun|dime-Plur .
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*CHI:	can't we keep these [>] ?
+%mor:	verb|cant-Fin-Imp-S pron|we-Prs-Nom-P1 verb|keep-Fin-Ind-Pres-P1 pron|this-Dem-P1 ?
+%gra:	1|0|ROOT 2|3|NSUBJ 3|1|CCOMP 4|3|OBJ 5|1|PUNCT
+*MOT:	no [<] .
+%mor:	intj|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	(be)cause where would they hafta go if you kept them .
+%mor:	sconj|because adv|where aux|would-Fin-S pron|they-Prs-Nom-P3 part|hafta verb|go-Inf-S sconj|if pron|you-Prs-Nom-S2 verb|keep-Fin-Ind-Past-S2-irr pron|they-Prs-Acc-P3 .
+%gra:	1|6|MARK 2|6|ADVMOD 3|6|AUX 4|6|NSUBJ 5|6|ADVMOD 6|0|ROOT 7|9|MARK 8|9|NSUBJ 9|6|ADVCL 10|9|OBJ 11|6|PUNCT
+*CHI:	<I'll I'll I'll I'll I'll> [/] I'll put (th)em someplace in my drawer .
+%com:	starts off sounding like ow and becomes more like I'll
+%mor:	propn|Ill verb|put-Fin-Ind-Past-S3-irr pron|they-Prs-Acc-P3 adv|someplace adp|in pron|my-Prs-Gen-S1 noun|drawer .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|ADVMOD 5|7|CASE 6|7|NMOD-POSS 7|2|OBL 8|2|PUNCT
+*CHI:	where Debbie [= sister] can't <get (th)em> [>] .
+%mor:	adv|where propn|Debbie aux|cant-Fin-S verb|get-Inf-S pron|they-Prs-Acc-P3 .
+%gra:	1|4|ADVMOD 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*MOT:	no [<] .
+%mor:	intj|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	where do they always go ?
+%mor:	adv|where aux|do-Fin-Ind-Pres-P3 pron|they-Prs-Nom-P3 adv|always verb|go-Inf-S ?
+%gra:	1|5|ADVMOD 2|5|AUX 3|5|NSUBJ 4|5|ADVMOD 5|0|ROOT 6|5|PUNCT
+*CHI:	&-um in the xxx .
+%mor:	adp|in det|the-Def-Art .
+%gra:	1|2|CASE 2|0|ROOT 3|2|PUNCT
+@Comment:	Time is 37:55
+@End

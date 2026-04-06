@@ -1,0 +1,613 @@
+@UTF8
+@PID:	11312/c-00034899-1
+@Begin
+@Languages:	eng
+@Participants:	MOT Mother, CHI Target_Child, INV Investigator
+@ID:	eng|HSLLD|MOT||female|||Mother|7||
+@ID:	eng|HSLLD|CHI|3;10.26|female|||Target_Child|||
+@ID:	eng|HSLLD|INV|||||Investigator|||
+@Birth of CHI:	21-AUG-1985
+@Media:	mayer1, audio
+@Date:	17-JUL-1988
+@Location:	Boston , MA USA
+@Situation:	First home visit; elicited report took place in the kitchen with Mot sitting on a chair at the table and Chi sitting in her lap
+@Activities:	Elicited report
+@Comment:	SES of Mot is lower
+@Comment:	Eric tagged
+@Transcriber:	Kennan Abbate
+@Types:	long, narrative, TD
+*MOT:	<&~w what did> [//] &~w we do when we went to your adoption party adoption party ? 6535_10099
+%cod:	$N:RI:O
+%mor:	pron|we-Prs-Nom-P1 verb|do-Fin-Ind-Pres-P1 adv|when pron|we-Prs-Nom-P1 verb|go-Fin-Ind-Past-P1-irr adp|to pron|your-Prs-Gen-S2 noun|adoption noun|party noun|adoption noun|party ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|5|ADVMOD 4|5|NSUBJ 5|2|ADVCL 6|11|CASE 7|11|NMOD-POSS 8|9|COMPOUND 9|11|COMPOUND 10|11|COMPOUND 11|5|OBL 12|2|PUNCT
+*CHI:	we seed@n the wolf . 11503_12883
+%cod:	$N:GI:RO
+%mor:	pron|we-Prs-Nom-P1 n|seed-Fin-Ind-Pres-P1 det|the-Def-Art noun|wolf-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|PUNCT
+*MOT:	we didn't see the wolf . 13625_15285
+%cod:	$N:FC
+%mor:	pron|we-Prs-Nom-P1 adv|didnt verb|see-Inf-S det|the-Def-Art noun|wolf-Acc .
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|PUNCT
+*MOT:	what did we do ? 15866_16986
+%cod:	$N:RI:S
+%mor:	pron|what-Int-S1 aux|do-Fin-Ind-Past-P1 pron|we-Prs-P1 verb|do-Inf-S ?
+%gra:	1|4|OBJ 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|4|PUNCT
+*CHI:	we picked up the (.) cookie . 18728_21409
+%cod:	$N:GI:RO
+%mor:	pron|we-Prs-Nom-P1 verb|pick-Fin-Ind-Past-P1 adp|up det|the-Def-Art noun|cookie-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|COMPOUND-PRT 4|5|DET 5|2|OBJ 6|2|PUNCT
+*MOT:	yeah ?
+%cod:	$N:FA
+%mor:	intj|yeah ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	and what else did you hafta eat ? 23231_25011
+%cod:	$N:RI:C
+%mor:	cconj|and pron|what-Int-S1 adv|else aux|do-Fin-Ind-Past-S2-irr pron|you-Prs-Nom-S2 verb|haft-Inf-S verb|eat-Inf-S ?
+%gra:	1|6|CC 2|6|OBJ 3|2|ADVMOD 4|6|AUX 5|6|NSUBJ 6|0|ROOT 7|6|XCOMP 8|6|PUNCT
+*CHI:	cake . 25973_26392
+%cod:	$N:GI:RC
+%mor:	noun|cake .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	yes what kind of a cake ? 27194_28694
+%cod:	$N:FA $N:RI:S
+%mor:	intj|yes det|what-Def-Int noun|kind adp|of det|a-Ind-Art noun|cake ?
+%gra:	1|3|DISCOURSE 2|3|DET 3|0|ROOT 4|6|CASE 5|6|DET 6|3|NMOD 7|3|PUNCT
+*CHI:	cupcake . 29525_29616
+%cod:	$N:GI:RS
+%mor:	noun|cupcake .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	no it wasn't cupcakes . 30325_31626
+%mor:	intj|no pron|it-Prs-Nom-S3 aux|wasnt-Fin-Ind-Pres-S3 noun|cupcake-Plur .
+%gra:	1|4|DISCOURSE 2|4|NSUBJ 3|4|COP 4|0|ROOT 5|4|PUNCT
+*MOT:	(.) it was her adoption cake . 31860_33507
+%cod:	$N:FC $N:GI:S
+%mor:	pron|it-Prs-Nom-S3 aux|be-Fin-Ind-Past-S3-irr pron|her-Prs-Gen-S3 noun|adoption noun|cake .
+%gra:	1|5|NSUBJ 2|5|COP 3|5|NMOD-POSS 4|5|COMPOUND 5|0|ROOT 6|5|PUNCT
+*CHI:	a adoption cake ! 34063_35909
+%cod:	$N:GI::R
+%mor:	det|a-Ind-Art noun|adoption noun|cake !
+%gra:	1|3|DET 2|3|COMPOUND 3|0|ROOT 4|3|PUNCT
+*MOT:	<what did you dance> [/] to did you dance to ? 35966_38910
+%cod:	$N:RI:S:D
+%mor:	part|to aux|do-Fin-Ind-Past-S2-irr pron|you-Prs-Nom-S2 verb|dance-Inf-S adp|to ?
+%gra:	1|4|MARK 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|4|ADVMOD 6|4|PUNCT
+*CHI:	to the dancing xxx . 39171_39671
+%cod:	$N:U
+%mor:	adp|to det|the-Def-Art noun|dancing-Ger .
+%gra:	1|3|CASE 2|3|DET 3|0|ROOT 4|3|PUNCT
+*MOT:	yeah what was the name of the song ? 43945_45706
+%cod:	$N:FA $N:RI:S
+%mor:	intj|yeah pron|what-Int-S1 aux|be-Fin-Ind-Past-S3-irr det|the-Def-Art noun|name adp|of det|the-Def-Art noun|song ?
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|COP 4|5|DET 5|2|NSUBJ 6|8|CASE 7|8|DET 8|5|NMOD 9|2|PUNCT
+*MOT:	what did you do with your arms and legs ? 47129_49051
+%cod:	$N:RI:S
+%mor:	pron|what-Int-S1 aux|do-Fin-Ind-Past-S2-irr pron|you-Prs-Nom-S2 verb|do-Inf-S adp|with pron|your-Prs-Gen-S2 noun|arm-Plur cconj|and noun|leg-Plur ?
+%gra:	1|4|OBJ 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|7|CASE 6|7|NMOD-POSS 7|4|OBL 8|9|CC 9|7|CONJ 10|4|PUNCT
+*CHI:	like this zzz !
+%par:	makes hissing noise
+%act:	moves arms and legs
+%cod:	$N:GI:RS
+%mor:	adp|like det|this-Def-Dem-Sing noun|zzz !
+%gra:	1|3|CASE 2|3|DET 3|0|ROOT 4|3|PUNCT
+*CHI:	like that ! 51295_53116
+%par:	makes hissing noise
+%act:	moves arms and legs
+%cod:	$N:GI:RS
+%mor:	adp|like pron|that-Dem !
+%gra:	1|2|CASE 2|0|ROOT 3|2|PUNCT
+*MOT:	&~sh tell Mama what did you do ? 53238_54658
+%cod:	$N:RI:S
+%mor:	verb|tell-Fin-Imp-S noun|mama pron|what-Int-S1 aux|do-Fin-Ind-Past-S2-irr pron|you-Prs-Nom-S2 verb|do-Inf-S ?
+%gra:	1|0|ROOT 2|1|IOBJ 3|6|OBJ 4|6|AUX 5|6|NSUBJ 6|1|CCOMP 7|1|PUNCT
+*MOT:	did you put your [/] right foot where where ? 54500_56941
+%cod:	$N:RI:S:D
+%mor:	aux|do-Fin-Ind-Past-S2-irr pron|you-Prs-Nom-S2 verb|put-Inf-S adj|right-S1 noun|foot-Acc adv|where adv|where ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|5|AMOD 5|3|OBJ 6|7|ADVMOD 7|3|ADVMOD 8|3|PUNCT
+*CHI:	right xxx hands and they shake it all about ! 56703_57902
+%cod:	$N:U $N:GI:S $N:GI:S $N:GI:S $N:GI:S
+%mor:	adj|right-S1 noun|hand-Plur cconj|and pron|they-Prs-Nom-P3 verb|shake-Fin-Ind-Pres-P3 pron|it-Prs-Acc-S3 det|all-Def-Tot adp|about !
+%gra:	1|2|AMOD 2|0|ROOT 3|5|CC 4|5|NSUBJ 5|2|CONJ 6|5|OBJ 7|5|ADVMOD 8|5|OBL 9|2|PUNCT
+*CHI:	(.) do the Hokey Pokey and turn yourself around !
+%cod:	$N:U $N:GI:S $N:GI:S $N:GI:S $N:GI:S
+%mor:	verb|do-Fin-Imp-S det|the-Def-Art adj|hokey-S1 propn|Pokey-Acc cconj|and verb|turn-Fin-Imp-S pron|yourself-Prs-Acc-reflx-S2 adv|around !
+%gra:	1|0|ROOT 2|4|DET 3|4|AMOD 4|1|OBJ 5|6|CC 6|1|CONJ 7|6|OBJ 8|6|ADVMOD 9|1|PUNCT
+*CHI:	that what it all about ! 58295_62160
+%cod:	$N:U $N:GI:S $N:GI:S $N:GI:S $N:GI:S
+%exp:	oh !
+%mor:	sconj|that pron|what-Int-S1 pron|it-Prs-Nom-S3 det|all-Def-Tot adp|about !
+%gra:	1|2|MARK 2|0|ROOT 3|2|NSUBJ 4|2|DET 5|2|CASE 6|2|PUNCT
+*MOT:	oh . 62822_63321
+%cod:	$N:FA
+%mor:	intj|oh .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	can you say it again ? 63303_65505
+%cod:	$O:T
+%mor:	aux|can-Fin-S pron|you-Prs-Nom-S2 verb|say-Inf-S pron|it-Prs-Acc-S3 adv|again ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|3|OBJ 5|3|ADVMOD 6|3|PUNCT
+*CHI:	xxx and shake it all about !
+%cod:	$N:U $N:GI:S
+%mor:	cconj|and verb|shake-Fin-Imp-S pron|it-Prs-Acc-S3 det|all-Def-Tot adp|about !
+%gra:	1|2|CC 2|0|ROOT 3|2|OBJ 4|2|ADVMOD 5|2|OBL 6|2|PUNCT
+*CHI:	you do the Hokey Pokey and you turn yourself around !
+%cod:	$N:GI:S $N:GI:S $N:GI:S
+%mor:	pron|you-Prs-Nom-S2 verb|do-Fin-Ind-Pres-S2 det|the-Def-Art adj|hokey-S1 propn|Pokey-Acc cconj|and pron|you-Prs-Nom-S2 verb|turn-Fin-Ind-Pres-S2 pron|yourself-Prs-Acc-reflx-S2 adv|around !
+%gra:	1|2|NSUBJ 2|0|ROOT 3|5|DET 4|5|AMOD 5|2|OBJ 6|8|CC 7|8|NSUBJ 8|2|CONJ 9|8|OBJ 10|8|ADVMOD 11|2|PUNCT
+*CHI:	(.) that it all about !
+%cod:	$N:GI:S $N:GI:S $N:GI:S
+%mor:	sconj|that pron|it-Prs-Nom-S3 det|all-Def-Tot adp|about !
+%gra:	1|2|MARK 2|0|ROOT 3|2|DET 4|2|CASE 5|2|PUNCT
+*INV:	oh &=laughs the Hokey Pokey !
+%cod:	$O
+%mor:	intj|oh det|the-Def-Art adj|hokey-S1 propn|Pokey !
+%gra:	1|4|DISCOURSE 2|4|DET 3|4|AMOD 4|0|ROOT 5|4|PUNCT
+*MOT:	and .
+%cod:	$N:U
+%mor:	cconj|and .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	like that .
+%cod:	$N:GI:S
+%mor:	adp|like pron|that-Dem .
+%gra:	1|2|CASE 2|0|ROOT 3|2|PUNCT
+*MOT:	yeah ! 85865_86345
+%cod:	$N:FA
+%mor:	intj|yeah !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	and what else did you do ? 86245_87725
+%cod:	$N:RI:C:D
+%mor:	cconj|and pron|what-Int-S1 adv|else aux|do-Fin-Ind-Past-S2-irr pron|you-Prs-Nom-S2 verb|do-Inf-S ?
+%gra:	1|6|CC 2|6|OBJ 3|2|ADVMOD 4|6|AUX 5|6|NSUBJ 6|0|ROOT 7|6|PUNCT
+*CHI:	xxx .
+%cod:	$N:U
+*MOT:	and what else did you dance to ? 91869_93610
+%cod:	$N:RI:C
+%mor:	cconj|and pron|what-Int-S1 adv|else aux|do-Fin-Ind-Past-S2-irr pron|you-Prs-Nom-S2 verb|dance-Inf-S adp|to ?
+%gra:	1|6|CC 2|6|OBJ 3|2|ADVMOD 4|6|AUX 5|6|NSUBJ 6|0|ROOT 7|6|PUNCT 8|6|PUNCT
+*CHI:	to Sleeping Beauty dance [?] ! 93210_94391
+%cod:	$N:GI:RC
+%mor:	adp|to noun|sleeping-Ger noun|beauty noun|dance !
+%gra:	1|4|CASE 2|4|COMPOUND 3|4|COMPOUND 4|0|ROOT 5|4|PUNCT
+*MOT:	you didn't do the Sleepin(g) Beauty dance . 100165_102167
+%cod:	$N:FC
+%mor:	pron|you-Prs-Nom-S2 aux|didnt-Fin-S verb|do-Inf-S det|the-Def-Art noun|sleeping-Ger noun|beauty noun|dance-Acc .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|7|DET 5|7|COMPOUND 6|7|COMPOUND 7|3|OBJ 8|3|PUNCT
+*MOT:	what else did you do ? 102108_104530
+%cod:	$N:RI:C
+%mor:	pron|what-Int-S1 adv|else aux|do-Fin-Ind-Past-S2-irr pron|you-Prs-Nom-S2 verb|do-Inf-S ?
+%gra:	1|5|OBJ 2|1|ADVMOD 3|5|AUX 4|5|NSUBJ 5|0|ROOT 6|5|PUNCT
+*MOT:	did you dance with the other kids ? 104070_105451
+%cod:	$N:RI:L
+%mor:	aux|do-Fin-Ind-Past-S2-irr pron|you-Prs-Nom-S2 verb|dance-Inf-S adp|with det|the-Def-Art adj|other-S1 noun|kid-Plur ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|7|CASE 5|7|DET 6|7|AMOD 7|3|OBL 8|3|PUNCT
+*CHI:	yeah . 105953_106433
+%cod:	$N:GI:RL
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	and what else ? 106855_107714
+%cod:	$N:RI:C
+%mor:	cconj|and pron|what-Int-S1 adj|else-S1 ?
+%gra:	1|2|CC 2|0|ROOT 3|2|AMOD 4|2|PUNCT
+*CHI:	a cookie dance be with the kid . 111120_113603
+%cod:	$N:GI:RC
+%mor:	det|a-Ind-Art noun|cookie noun|dance aux|be-Fin-S adp|with det|the-Def-Art noun|kid .
+%gra:	1|3|DET 2|3|COMPOUND 3|7|NSUBJ 4|7|COP 5|7|CASE 6|7|DET 7|0|ROOT 8|7|PUNCT
+*MOT:	you did the what ? 115205_116165
+%cod:	$N:RC
+%mor:	pron|you-Prs-Nom-S2 verb|do-Fin-Ind-Past-S2-irr det|the-Def-Art pron|what-Int-S1 ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|PUNCT
+*CHI:	the [/] cookie kid kid ! 116626_118586
+%cod:	$N:GC
+%mor:	noun|cookie noun|kid noun|kid !
+%gra:	1|2|COMPOUND 2|3|COMPOUND 3|0|ROOT 4|3|PUNCT
+*MOT:	what's the matter ? 120549_121348
+%cod:	$O:R
+%mor:	pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 det|the-Def-Art noun|matter ?
+%gra:	1|0|ROOT 2|4|COP 3|4|DET 4|1|NSUBJ 5|1|PUNCT
+*MOT:	what are you looking at ? 121169_122269
+%cod:	$O:R
+%mor:	pron|what-Int-S1 aux|be-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 verb|look-Part-Pres-S adp|at ?
+%gra:	1|4|OBJ 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|1|CASE 6|4|PUNCT
+*CHI:	that ! 122990_123490
+%cod:	$O:O
+%mor:	pron|that-Dem !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	that's a tape (.) recorder . 123811_125271
+%cod:	$O:W
+%mor:	aux|that-Fin-Ind-Pres-S3 det|a-Ind-Art noun|tape noun|recorder .
+%gra:	1|4|COP 2|4|DET 3|4|COMPOUND 4|0|ROOT 5|4|PUNCT
+*CHI:	no a light ! 125913_127052
+%cod:	$O:R
+%mor:	det|no-Def-Neg det|a-Ind-Art noun|light !
+%gra:	1|3|DET 2|3|DET 3|0|ROOT 4|3|PUNCT
+*MOT:	that's a light on the taperecorder . 127533_128434
+%cod:	$O:R
+%mor:	aux|that-Fin-Ind-Pres-S3 det|a-Ind-Art noun|light adp|on det|the-Def-Art noun|taperecorder .
+%gra:	1|3|COP 2|3|DET 3|0|ROOT 4|6|CASE 5|6|DET 6|3|NMOD 7|3|PUNCT
+*MOT:	what color is it ? 130165_131385
+%cod:	$O
+%mor:	det|what-Def-Int noun|color aux|be-Fin-Ind-Pres-S3 pron|it-Prs-Nom-S3 ?
+%gra:	1|2|DET 2|3|NSUBJ 3|4|COP 4|0|ROOT 5|4|PUNCT
+*CHI:	red .
+%cod:	$O:R
+%mor:	adj|red-S1 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	yeah . 132627_133126
+%cod:	$O:R
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	xxx .
+%cod:	$O
+*MOT:	<don't touch it> [?] ! 135730_136829
+%cod:	$O:R
+%mor:	intj|dont verb|touch-Fin-S pron|it-Prs-Acc-S3 !
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*CHI:	why ?
+%cod:	$O
+%mor:	adv|why ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	(be)cause that's Kenna's . 137210_138991
+%cod:	$O:R
+%mor:	sconj|because aux|that-Fin-Ind-Pres-S3 propn|Kennas .
+%gra:	1|3|MARK 2|3|COP 3|0|ROOT 4|3|PUNCT
+*MOT:	you wanna [=! wanna] break it ? 139293_140472
+%cod:	$O:R
+%mor:	pron|you-Prs-Nom-S2 aux|wanna-Fin-Ind-S verb|break-Inf-S pron|it-Prs-Acc-S3 ?
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*CHI:	no ! 140934_141433
+%cod:	$O:R
+%mor:	intj|no !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	<what did you hafta eat at your adoption> [///] what did you hafta eat ? 142675_145756
+%cod:	$N:RI:S:I $N:RI:S
+%mor:	pron|what-Int-S1 aux|do-Fin-Ind-Past-S2-irr pron|you-Prs-Nom-S2 verb|haft-Inf-S verb|eat-Inf-S ?
+%gra:	1|5|OBJ 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|4|XCOMP 6|4|PUNCT
+*CHI:	cake . 145677_146176
+%cod:	$N:GI:RS
+%mor:	noun|cake .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	yeah . 146737_147237
+%cod:	$N:FA
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	we eat cupcake .
+%cod:	$N:GI:S
+%mor:	pron|we-Prs-Nom-P1 verb|eat-Fin-Ind-Pres-P1 noun|cupcake-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*MOT:	what else were you pickin(g) at ? 151861_153581
+%cod:	$N:RI:C
+%mor:	pron|what-Int-S1 adv|else aux|be-Fin-Ind-Past-S2-irr pron|you-Prs-Nom-S2 verb|pick-Part-Pres-S adp|at ?
+%gra:	1|5|OBJ 2|1|ADVMOD 3|5|AUX 4|5|NSUBJ 5|0|ROOT 6|1|CASE 7|5|PUNCT
+*CHI:	[^ whispering] cookie . 154203_154702
+%cod:	$N:GI:RC
+%mor:	noun|cookie .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	what the ah (.) pickles ? 155343_157083
+%cod:	$N:RI:L
+%mor:	pron|what-Int-S1 det|the-Def-Art intj|ah noun|pickle-Plur ?
+%gra:	1|0|ROOT 2|4|DET 3|4|DISCOURSE 4|1|NSUBJ 5|1|PUNCT
+*CHI:	yeah pickles ! 158315_158936
+%act:	bangs the table with each word
+%cod:	$N:GI:RL
+%mor:	intj|yeah noun|pickle-Plur !
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|PUNCT
+*MOT:	don't bang the table . 159798_161680
+%par:	whispers
+%cod:	$O:C
+%mor:	adv|dont verb|bang-Fin-S det|the-Def-Art noun|table-Acc .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|PUNCT
+*MOT:	and did you have lasagna ? 161702_163263
+%cod:	$N:RI:L
+%mor:	cconj|and aux|do-Fin-Ind-Past-S2-irr pron|you-Prs-Nom-S2 verb|have-Inf-S noun|lasagna-Acc ?
+%gra:	1|4|CC 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*CHI:	yeah yeah yeah yeah yeah [>] yeah yeah [>] +/.
+%cod:	$N:GI:RL
+%mor:	intj|yeah intj|yeah intj|yeah intj|yeah intj|yeah intj|yeah intj|yeah +/.
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|1|DISCOURSE 4|2|DISCOURSE 5|4|DISCOURSE 6|5|DISCOURSE 7|6|DISCOURSE 8|2|PUNCT
+*MOT:	shh !
+%cod:	$O:C
+%mor:	intj|shh !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	<Dawna> [<] you're bein(g) fresh ! 165950_167290
+%cod:	$O:T
+%mor:	propn|Dawna aux|your-Fin-Ind-Pres-S3 aux|be-Part-Pres-S adj|fresh-S1 !
+%gra:	1|4|NSUBJ 2|4|AUX 3|4|COP 4|0|ROOT 5|4|PUNCT
+*MOT:	what did you have ? 167954_168894
+%cod:	$N:RI:S
+%mor:	pron|what-Int-S1 aux|do-Fin-Ind-Past-S2-irr pron|you-Prs-Nom-S2 verb|have-Inf-S ?
+%gra:	1|4|OBJ 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|4|PUNCT
+*CHI:	cookies and bananas [?] !
+%cod:	$N:GI:RS
+%mor:	noun|cookie-Plur cconj|and noun|banana-Plur !
+%gra:	1|0|ROOT 2|3|CC 3|1|CONJ 4|1|PUNCT
+*INV:	bananas ?
+%cod:	$O:O
+%mor:	noun|banana-Plur ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	no we didn't have bananas here . 174745_176345
+%cod:	$N:FC
+%mor:	intj|no pron|we-Prs-Nom-P1 adv|didnt verb|have-Fin-Ind-Pres-P1 noun|banana-Plur-Acc adv|here .
+%gra:	1|4|DISCOURSE 2|4|NSUBJ 3|4|ADVMOD 4|0|ROOT 5|4|OBJ 6|4|ADVMOD 7|4|PUNCT
+*CHI:	we had popcorn . 176466_177606
+%cod:	$N:GI:S
+%mor:	pron|we-Prs-Nom-P1 verb|have-Fin-Ind-Past-P1-irr noun|popcorn-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*MOT:	no we didn't have popcorn . 178287_179487
+%cod:	$N:FC
+%mor:	intj|no pron|we-Prs-Nom-P1 aux|didnt-Fin-S verb|have-Fin-Ind-Pres-P1 noun|popcorn-Acc .
+%gra:	1|4|DISCOURSE 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*CHI:	xxx +/.
+%cod:	$N:U
+*MOT:	<we had> [/] grapes had (.) &-um grapes . 180389_184531
+%cod:	$N:GI:S
+%mor:	noun|grape-Plur verb|have-Fin-Ind-Past-P3-irr noun|grape-Plur-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*CHI:	I had grape ! 184932_186612
+%cod:	$N:GI:S
+%mor:	pron|I-Prs-Nom-S1 verb|have-Fin-Ind-Past-S1-irr noun|grape-Acc !
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*MOT:	and watermelon .
+%cod:	$N:GI:S
+%mor:	cconj|and noun|watermelon .
+%gra:	1|2|CC 2|0|ROOT 3|2|PUNCT
+*CHI:	and watermelon ! 187454_188093
+%cod:	$N:GI::R
+%mor:	cconj|and noun|watermelon !
+%gra:	1|2|CC 2|0|ROOT 3|2|PUNCT
+*MOT:	and cantaloupe . 190615_191215
+%cod:	$N:GI:S
+%mor:	cconj|and noun|cantaloupe .
+%gra:	1|2|CC 2|0|ROOT 3|2|PUNCT
+*CHI:	and cantaloupe . 192277_193278
+%cod:	$N:GI::R
+%mor:	cconj|and noun|cantaloupe .
+%gra:	1|2|CC 2|0|ROOT 3|2|PUNCT
+*MOT:	and cherries . 195662_196302
+%cod:	$N:GI:S
+%mor:	cconj|and noun|cherry-Plur .
+%gra:	1|2|CC 2|0|ROOT 3|2|PUNCT
+*CHI:	and cantaloupe ! 198506_199306
+%cod:	$N:GI:S
+%mor:	cconj|and noun|cantaloupe !
+%gra:	1|2|CC 2|0|ROOT 3|2|PUNCT
+*MOT:	and then we had lasagna . 201170_202450
+%cod:	$N:GI:S
+%mor:	cconj|and adv|then pron|we-Prs-Nom-P1 verb|have-Fin-Ind-Past-P1-irr noun|lasagna-Acc .
+%gra:	1|4|CC 2|4|ADVMOD 3|4|NSUBJ 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*CHI:	and [/] pajama pajama . 202653_203572
+%cod:	$N:GI:S
+%mor:	noun|pajama noun|pajama .
+%gra:	1|2|COMPOUND 2|0|ROOT 3|2|PUNCT
+*MOT:	come on ! 205605_206345
+%cod:	$O:A
+%mor:	verb|come-Fin-Imp-S adp|on !
+%gra:	1|0|ROOT 2|1|ADVMOD 3|1|PUNCT
+*MOT:	<don't &~s> [//] (.) be fresh fresh ! 206685_209127
+%cod:	$O:C
+%mor:	aux|be-Fin-Imp-S adj|fresh-S1 adj|fresh-S1 !
+%gra:	1|3|COP 2|3|AMOD 3|0|ROOT 4|3|PUNCT
+*MOT:	what else did we have ? 209548_210768
+%cod:	$N:RI:C
+%mor:	pron|what-Int-S1 adv|else aux|do-Fin-Ind-Past-P1-irr pron|we-Prs-Nom-P1 verb|have-Inf-S ?
+%gra:	1|5|OBJ 2|1|ADVMOD 3|5|AUX 4|5|NSUBJ 5|0|ROOT 6|5|PUNCT
+*CHI:	++ cookie ! 211229_211728
+%cod:	$N:GI:RC
+%mor:	noun|cookie !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	no . 211969_212469
+%cod:	$N:FC
+%mor:	intj|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	we had chicken wings .
+%cod:	$N:GI:S
+%mor:	pron|we-Prs-Nom-P1 verb|have-Fin-Ind-Past-P1-irr noun|chicken noun|wing-Plur-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|COMPOUND 4|2|OBJ 5|2|PUNCT
+*CHI:	we had chicken wings ! 213110_214370
+%cod:	$N:GI::R
+%mor:	pron|we-Prs-Nom-P1 verb|have-Fin-Ind-Past-P1-irr noun|chicken noun|wing-Plur-Acc !
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|COMPOUND 4|2|OBJ 5|2|PUNCT
+*MOT:	you're bein(g) fresh ! 217974_218814
+%cod:	$O:C
+%mor:	pron|your-Prs-Nom-S2 aux|be-Part-Pres-S adj|fresh-S1 !
+%gra:	1|3|NSUBJ 2|3|COP 3|0|ROOT 4|3|PUNCT
+*MOT:	and what else did you have ? 219985_221286
+%cod:	$N:RI:C
+%mor:	cconj|and pron|what-Int-S1 adv|else aux|do-Fin-Ind-Past-S2-irr pron|you-Prs-Nom-S2 verb|have-Inf-S ?
+%gra:	1|6|CC 2|6|OBJ 3|2|ADVMOD 4|6|AUX 5|6|NSUBJ 6|0|ROOT 7|6|PUNCT
+*CHI:	++ cookie !
+%cod:	$N:GI:RC
+%mor:	noun|cookie !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	you had peetzeela@f cookies . 223410_225111
+%cod:	$N:GI:S
+%mor:	pron|you-Prs-Nom-S2 verb|have-Fin-Ind-Past-S2-irr f|peetzeela noun|cookie-Plur-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|COMPOUND 4|2|OBJ 5|2|PUNCT
+*CHI:	potato cookies [>] .
+%cod:	$N:GI:S
+%mor:	noun|potato noun|cookie-Plur .
+%gra:	1|2|COMPOUND 2|0|ROOT 3|2|PUNCT
+*MOT:	<what are they> [<] ? 227577_228396
+%cod:	$N:RI:S
+%mor:	pron|what-Int-S1 aux|be-Fin-Ind-Pres-P3 pron|they-Prs-Nom-P3 ?
+%gra:	1|0|ROOT 2|1|COP 3|1|NSUBJ 4|1|PUNCT
+*CHI:	potato cookie !
+%cod:	$N:GI:RS
+%mor:	noun|potato noun|cookie !
+%gra:	1|2|COMPOUND 2|0|ROOT 3|2|PUNCT
+*MOT:	you don't do that ! 228058_230820
+%cod:	$O:C
+%mor:	pron|you-Prs-Nom-S2 aux|dont-Fin-S verb|do-Inf-S pron|that-Dem !
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*MOT:	and who was there ? 234055_236416
+%cod:	$N:RI:S
+%mor:	cconj|and pron|who-Int aux|be-Fin-Ind-Past-S3-irr adv|there ?
+%gra:	1|4|CC 2|4|NSUBJ 3|4|COP 4|0|ROOT 5|4|PUNCT
+*CHI:	Pinochio [?] !
+%cod:	$N:GI:RS
+%mor:	propn|Pinochio !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	no (.) Pinochio was not there . 237397_239458
+%cod:	$N:FC
+%mor:	det|no-Def-Neg propn|Pinochio aux|be-Fin-Ind-Past-S3-irr part|not adv|there .
+%gra:	1|2|DET 2|5|NSUBJ 3|5|COP 4|5|ADVMOD 5|0|ROOT 6|5|PUNCT
+*MOT:	who went to your party ? 239438_240658
+%cod:	$N:RI:S
+%mor:	pron|who-Rel verb|go-Fin-Ind-Past-S3-irr adp|to pron|your-Prs-Gen-S2 noun|party ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|5|CASE 4|5|NMOD-POSS 5|2|OBL 6|2|PUNCT
+*CHI:	David . 241440_241939
+%cod:	$N:GI:RS
+%mor:	propn|David .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	David . 242601_243100
+%cod:	$N:FA
+%mor:	propn|David .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	and Derrik . 243802_244541
+%cod:	$N:GI:S
+%mor:	cconj|and propn|Derrik .
+%gra:	1|2|CC 2|0|ROOT 3|2|PUNCT
+*MOT:	and Derrik . 245243_245922
+%cod:	$N:FA
+%mor:	cconj|and propn|Derrik .
+%gra:	1|2|CC 2|0|ROOT 3|2|PUNCT
+*CHI:	yeah . 246464_246962
+%cod:	$N:FR
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	and who else ? 247204_248044
+%cod:	$N:RI:C
+%mor:	cconj|and pron|who-Int adv|else ?
+%gra:	1|2|CC 2|0|ROOT 3|2|ADVMOD 4|2|PUNCT
+*CHI:	and and David and Derrik going to my own house . 250725_254710
+%cod:	$N:GI:RC
+%mor:	cconj|and cconj|and propn|David cconj|and propn|Derrik verb|go-Part-Pres-S adp|to pron|my-Prs-Gen-S1 adj|own-S1 noun|house .
+%gra:	1|6|CC 2|6|CC 3|6|NSUBJ 4|5|CC 5|3|CONJ 6|0|ROOT 7|10|CASE 8|10|NMOD-POSS 9|10|AMOD 10|6|OBL 11|6|PUNCT
+*MOT:	who [/] else went to your party party ? 254430_255851
+%cod:	$N:RI:C
+%mor:	adv|else verb|go-Fin-Ind-Past-S3-irr adp|to pron|your-Prs-Gen-S2 noun|party noun|party ?
+%gra:	1|2|ADVMOD 2|0|ROOT 3|6|CASE 4|6|NMOD-POSS 5|6|COMPOUND 6|2|OBL 7|2|PUNCT
+*CHI:	cupcake <went to my> [>] party . 257374_259175
+%cod:	$N:GI:RC
+%mor:	noun|cupcake verb|go-Fin-Ind-Past-S3-irr adp|to pron|my-Prs-Gen-S1 noun|party .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|5|CASE 4|5|NMOD-POSS 5|2|OBL 6|2|PUNCT
+*MOT:	Dawna !
+%cod:	$O:C
+%mor:	propn|Dawna !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	be nice . 259477_260196
+%cod:	$O:C
+%mor:	aux|be-Fin-Imp-S adj|nice-S1 .
+%gra:	1|2|COP 2|0|ROOT 3|2|PUNCT
+*MOT:	who else went to your &~h [/] party ? 260098_261778
+%cod:	$N:RI:C
+%mor:	pron|who-Int adv|else verb|go-Fin-Ind-Past-S3-irr adp|to pron|your-Prs-Gen-S2 noun|party ?
+%gra:	1|3|NSUBJ 2|1|ADVMOD 3|0|ROOT 4|6|CASE 5|6|NMOD-POSS 6|3|OBL 7|3|PUNCT
+*CHI:	cupcake ! 262441_262940
+%cod:	$N:GI:RC
+%mor:	noun|cupcake !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	Dawna !
+%cod:	$O:C
+%mor:	propn|Dawna !
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	what ? 264123_264622
+%cod:	$O:O
+%mor:	pron|what-Int-S1 ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	now we're being real silly [>] . 268818_269859
+%cod:	$O:O
+%mor:	adv|now sconj|were aux|be-Part-Pres-S adj|real-S1 adj|silly-S1 .
+%gra:	1|5|ADVMOD 2|5|MARK 3|5|COP 4|5|AMOD 5|0|ROOT 6|5|PUNCT
+*INV:	that's okay .
+%cod:	$O:O
+%mor:	aux|that-Fin-Ind-Pres-S3 intj|okay .
+%gra:	1|0|ROOT 2|1|DISCOURSE 3|1|PUNCT
+*CHI:	&=laughs .
+*MOT:	did Mama and Daddy go ? 269480_270440
+%cod:	$N:RI:L
+%mor:	verb|do-Fin-Ind-Past-S1-irr propn|Mama-Acc cconj|and propn|Daddy verb|go-Inf-S ?
+%gra:	1|0|ROOT 2|1|OBJ 3|4|CC 4|2|CONJ 5|1|XCOMP 6|1|PUNCT
+*CHI:	yeah . 270882_271381
+%cod:	$N:GI:RL
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	and who else ? 271883_272763
+%cod:	$N:RI:C
+%mor:	cconj|and pron|who-Int adv|else ?
+%gra:	1|2|CC 2|0|ROOT 3|2|ADVMOD 4|2|PUNCT
+*MOT:	did [/] you have a Coke Coke ? 273806_275246
+%cod:	$N:RI:L
+%mor:	pron|you-Prs-Nom-S2 verb|have-Fin-Ind-Pres-S2 det|a-Ind-Art propn|Coke propn|Coke-Acc ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|5|DET 4|5|COMPOUND 5|2|OBJ 6|2|PUNCT
+*CHI:	no . 275869_276347
+%cod:	$N:GI:RL
+%mor:	intj|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	yes you did . 276710_277669
+%cod:	$N:FC
+%mor:	intj|yes pron|you-Prs-Nom-S2 aux|do-Fin-Ind-Past-S2-irr .
+%gra:	1|3|DISCOURSE 2|3|NSUBJ 3|0|ROOT 4|3|PUNCT
+*CHI:	no ! 278012_278510
+%cod:	$N:FR
+%mor:	intj|no !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	and what did he put in the Coke for you ? 278833_280614
+%cod:	$N:RI:S
+%mor:	cconj|and pron|what-Int-S1 aux|do-Fin-Ind-Past-S3-irr pron|he-Prs-Nom-S3 verb|put-Inf-S adp|in det|the-Def-Art propn|Coke adp|for pron|you-Prs-Acc-S2 ?
+%gra:	1|5|CC 2|5|OBJ 3|5|AUX 4|5|NSUBJ 5|0|ROOT 6|8|CASE 7|8|DET 8|5|OBL 9|10|CASE 10|5|OBL 11|5|PUNCT
+*CHI:	&-uh popcorn .
+%cod:	$N:GI:RS
+%mor:	noun|popcorn .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	no didn't (.) didn't Chuck put a cherry in the +... 283555_286819
+%cod:	$N:FC $N:RI:L:I
+%mor:	intj|no part|didnt part|didnt propn|Chuck verb|put-Inf-S det|a-Ind-Art noun|cherry-Acc adp|in det|the-Def-Art +...
+%gra:	1|5|DISCOURSE 2|5|ADVMOD 3|5|ADVMOD 4|5|NSUBJ 5|0|ROOT 6|7|DET 7|5|OBJ 8|9|CASE 9|5|OBL 10|5|PUNCT
+*MOT:	give Mama ! 289064_289743
+%cod:	$O:R
+%mor:	verb|give-Fin-Imp-S noun|mama-Acc !
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*MOT:	didn't Chuck put cherries in your Coke ? 290807_293229
+%cod:	$N:RI:L
+%mor:	aux|didnt-Fin-Ind-S3 propn|Chuck verb|put-Inf-S noun|cherry-Plur-Acc adp|in pron|your-Prs-Gen-S2 propn|Coke ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|3|OBJ 5|7|CASE 6|7|NMOD-POSS 7|3|OBL 8|3|PUNCT
+*CHI:	yeah . 293511_294010
+%cod:	$N:GI:RL
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	what kind of a dress did you have ? 294112_295954
+%cod:	$N:RI:S
+%mor:	det|what-Def-Int noun|kind-Acc adp|of det|a-Ind-Art noun|dress aux|do-Fin-Ind-Past-S2-irr pron|you-Prs-Nom-S2 verb|have-Inf-S ?
+%gra:	1|2|DET 2|8|OBJ 3|5|CASE 4|5|DET 5|2|NMOD 6|8|AUX 7|8|NSUBJ 8|0|ROOT 9|8|PUNCT
+*CHI:	a cookie dress .
+%cod:	$N:GI:RS
+%mor:	det|a-Ind-Art noun|cookie noun|dress .
+%gra:	1|3|DET 2|3|COMPOUND 3|0|ROOT 4|3|PUNCT
+*MOT:	what kind of a dress did you have ? 298845_300827
+%int:	sounds annoyed
+%cod:	$N:RI:S:R
+%mor:	det|what-Def-Int noun|kind-Acc adp|of det|a-Ind-Art noun|dress aux|do-Fin-Ind-Past-S2-irr pron|you-Prs-Nom-S2 verb|have-Inf-S ?
+%gra:	1|2|DET 2|8|OBJ 3|5|CASE 4|5|DET 5|2|NMOD 6|8|AUX 7|8|NSUBJ 8|0|ROOT 9|8|PUNCT
+*CHI:	a pink one . 301089_302149
+%cod:	$N:GI:RS
+%mor:	det|a-Ind-Art adj|pink-S1 noun|one .
+%gra:	1|3|DET 2|3|AMOD 3|0|ROOT 4|3|PUNCT
+*INV:	oh .
+%cod:	$O
+%mor:	intj|oh .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	and but [/] what [//] (.) was it like Dawna like Dawna ? 302932_305995
+%cod:	$N:RI:S
+%mor:	cconj|and aux|be-Fin-Ind-Past-S3-irr pron|it-Prs-Nom-S3 adp|like propn|Dawna adp|like propn|Dawna ?
+%gra:	1|5|CC 2|5|COP 3|5|NSUBJ 4|5|CASE 5|0|ROOT 6|7|CASE 7|5|NMOD 8|5|PUNCT
+*CHI:	what ? 305977_306476
+%cod:	$N:RC
+%mor:	pron|what-Int-S1 ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	what was your gown like ? 306818_308419
+%cod:	$N:GC
+%mor:	pron|what-Int-S1 aux|be-Fin-Ind-Past-S3-irr pron|your-Prs-Gen-S2 noun|gown adp|like ?
+%gra:	1|0|ROOT 2|1|COP 3|4|NMOD-POSS 4|1|NSUBJ 5|1|CASE 6|1|PUNCT
+*CHI:	cookie gown . 309703_310823
+%cod:	$N:GI:RS
+%mor:	noun|cookie noun|gown .
+%gra:	1|2|COMPOUND 2|0|ROOT 3|2|PUNCT
+@End

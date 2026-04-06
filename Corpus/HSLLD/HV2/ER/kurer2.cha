@@ -1,0 +1,168 @@
+@UTF8
+@PID:	11312/c-00035189-1
+@Begin
+@Languages:	eng
+@Participants:	MOT Mother, CHI Target_Child
+@ID:	eng|HSLLD|MOT||female|||Mother|12||
+@ID:	eng|HSLLD|CHI|4;09.15|male|||Target_Child|||
+@Media:	kurer2, audio
+@Comment:	SES of Mot is lower
+@Date:	17-APR-1989
+@Location:	Boston , MA USA
+@Situation:	Home Visit 2; early afternoon; living room
+@Activities:	Elicited report
+@Transcriber:	Abby Tichnor , Monica Frazier
+@Types:	long, narrative, TD
+*MOT:	we went [//] where did we go for Easter ? 14485_15926
+%add:	Chi
+%mor:	pron|we-Prs-Nom-P1 adv|where aux|do-Fin-Ind-Past-P1-irr pron|we-Prs-Nom-P1 verb|go-Inf-S adp|for propn|Easter ?
+%gra:	1|5|VOCATIVE 2|5|ADVMOD 3|5|AUX 4|5|NSUBJ 5|0|ROOT 6|7|CASE 7|5|OBL 8|5|PUNCT
+*CHI:	I don't know . 16328_17028
+%mor:	pron|I-Prs-Nom-S1 adv|dont verb|know-Fin-Ind-Pres-S1 .
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|3|PUNCT
+*MOT:	where were we at Easter ? 16769_21417
+%mor:	adv|where aux|be-Fin-Ind-Past-P3-irr pron|we-Prs-Nom-P1 adp|at propn|Easter ?
+%gra:	1|0|ROOT 2|1|COP 3|1|NSUBJ 4|5|CASE 5|1|OBL 6|1|PUNCT
+*CHI:	&-um xxx Gloucester .
+%mor:	propn|Gloucester .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	at Gloucester .
+%mor:	adp|at propn|Gloucester .
+%gra:	1|2|CASE 2|0|ROOT 3|2|PUNCT
+*MOT:	who's at Gloucester ?
+%mor:	pron|whose-Int-S1 adp|at propn|Gloucester ?
+%gra:	1|0|ROOT 2|3|CASE 3|1|NMOD 4|1|PUNCT
+*CHI:	great Nana . 32135_32916
+%mor:	adj|great-S1 propn|Nana .
+%gra:	1|2|AMOD 2|0|ROOT 3|2|PUNCT
+*MOT:	great Nana . 32496_33096
+%mor:	adj|great-S1 propn|Nana .
+%gra:	1|2|AMOD 2|0|ROOT 3|2|PUNCT
+*MOT:	please take your feet off of my table . 33036_35158
+%act:	pushes Chi's feet off the coffee table
+%mor:	intj|please verb|take-Fin-Imp-S pron|your-Prs-Gen-S2 noun|foot-Plur-Acc adp|off adp|of pron|my-Prs-Gen-S1 noun|table .
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|4|NMOD-POSS 4|2|OBJ 5|8|CASE 6|8|CASE 7|8|NMOD-POSS 8|2|OBL 9|2|PUNCT
+*MOT:	and what did you do ? 35198_37160
+%mor:	cconj|and pron|what-Int-S1 aux|do-Fin-Ind-Past-S2-irr pron|you-Prs-Nom-S2 verb|do-Inf-S ?
+%gra:	1|5|CC 2|5|OBJ 3|5|AUX 4|5|NSUBJ 5|0|ROOT 6|5|PUNCT
+*CHI:	mm I don't know .
+%par:	<2-4> whining
+%mor:	intj|mm pron|I-Prs-Nom-S1 aux|do-Fin-Ind-Pres-S1~part|not verb|know-Inf-S .
+%gra:	1|5|DISCOURSE 2|5|NSUBJ 3|5|AUX 4|5|ADVMOD 5|0|ROOT 6|5|PUNCT
+*MOT:	well think ! 36820_41043
+%mor:	intj|well verb|think-Fin-Imp-S !
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|PUNCT
+*MOT:	what did you do up there ? 41124_42424
+%mor:	pron|what-Int-S1 aux|do-Fin-Ind-Past-S2-irr pron|you-Prs-Nom-S2 verb|do-Inf-S adp|up adv|there ?
+%gra:	1|4|OBJ 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|4|COMPOUND-PRT 6|4|ADVMOD 7|4|PUNCT
+*CHI:	mm (.) I played . 46565_48507
+%act:	sits on floor and is squirming as he speaks
+%mor:	intj|mm pron|I-Prs-Nom-S1 verb|play-Fin-Ind-Past-S1 .
+%gra:	1|3|DISCOURSE 2|3|NSUBJ 3|0|ROOT 4|3|PUNCT
+*MOT:	played what ? 48327_50169
+%int:	softly
+%mor:	verb|play-Fin-Ind-Past-S1 pron|what-Int-S1 ?
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*CHI:	outside . 49909_50409
+%mor:	adv|outside .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	what else did you do ? 52152_53313
+%mor:	pron|what-Int-S1 adv|else aux|do-Fin-Ind-Past-S2-irr pron|you-Prs-Nom-S2 verb|do-Inf-S ?
+%gra:	1|5|OBJ 2|1|ADVMOD 3|5|AUX 4|5|NSUBJ 5|0|ROOT 6|5|PUNCT
+*CHI:	mm I got a flashlight (.) .
+%mor:	intj|mm pron|I-Prs-Nom-S1 verb|get-Fin-Ind-Past-S1-irr det|a-Ind-Art noun|flashlight-Acc .
+%gra:	1|3|DISCOURSE 2|3|NSUBJ 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|PUNCT
+*MOT:	and the bubbles . 52953_58761
+%mor:	cconj|and det|the-Def-Art noun|bubble-Plur .
+%gra:	1|3|CC 2|3|DET 3|0|ROOT 4|3|PUNCT
+*CHI:	yep . 60383_60883
+%mor:	intj|yep .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	you blew bubbles . 60544_61224
+%mor:	pron|you-Prs-Nom-S2 verb|blow-Fin-Ind-Past-S2-irr noun|bubble-Plur-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*CHI:	yeah I know it I know . 62635_64317
+%mor:	intj|yeah pron|I-Prs-Nom-S1 verb|know-Fin-Ind-Pres-S1 pron|it-Prs-Nom-S3 pron|I-Prs-Nom-S1 verb|know-Fin-Ind-Pres-S1 .
+%gra:	1|3|DISCOURSE 2|3|NSUBJ 3|0|ROOT 4|6|OBJ 5|6|NSUBJ 6|3|CCOMP 7|3|PUNCT
+*MOT:	who was there ? 63957_64657
+%mor:	pron|who-Int aux|be-Fin-Ind-Past-S3-irr adv|there ?
+%gra:	1|3|NSUBJ 2|3|COP 3|0|ROOT 4|3|PUNCT
+*CHI:	Chi .
+%mor:	propn|Chi .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	and who else ? 64357_68062
+%par:	aft laughs
+%mor:	cconj|and pron|who-Int adv|else ?
+%gra:	1|2|CC 2|0|ROOT 3|2|ADVMOD 4|2|PUNCT
+*CHI:	0 .
+%act:	shrugs shoulders
+*MOT:	who else came ? 70766_71587
+%mor:	pron|who-Int adv|else verb|come-Fin-Ind-Past-S3-irr ?
+%gra:	1|3|NSUBJ 2|1|ADVMOD 3|0|ROOT 4|3|PUNCT
+*MOT:	Nana . 71407_71907
+%mor:	propn|Nana .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	Nana . 72989_73489
+%mor:	propn|Nana .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	big Nana . 73109_73689
+%mor:	adj|big-S1 propn|Nana .
+%gra:	1|2|AMOD 2|0|ROOT 3|2|PUNCT
+*CHI:	big Nana . 74772_75512
+%mor:	adj|big-S1 propn|Nana .
+%gra:	1|2|AMOD 2|0|ROOT 3|2|PUNCT
+*MOT:	and who else ? 75132_75752
+%mor:	cconj|and pron|who-Int adv|else ?
+%gra:	1|2|CC 2|0|ROOT 3|2|ADVMOD 4|2|PUNCT
+*CHI:	mm (.) Pat .
+%mor:	intj|mm propn|Pat .
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|PUNCT
+*MOT:	yeah . 83286_83786
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	and I don't know who else (.) .
+%mor:	cconj|and pron|I-Prs-Nom-S1 adv|dont verb|know-Fin-Ind-Pres-S1 pron|who-Int adv|else .
+%gra:	1|4|CC 2|4|NSUBJ 3|4|ADVMOD 4|0|ROOT 5|4|OBJ 6|5|ADVMOD 7|4|PUNCT
+*MOT:	uncle David . 87630_88410
+%mor:	noun|uncle propn|David .
+%gra:	1|0|ROOT 2|1|FLAT 3|1|PUNCT
+*CHI:	David . 89211_89711
+%com:	big truck going by drowned out words
+%mor:	propn|David .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	and who else ? 90232_91292
+%mor:	cconj|and pron|who-Int adv|else ?
+%gra:	1|2|CC 2|0|ROOT 3|2|ADVMOD 4|2|PUNCT
+*CHI:	xxx (.) oh !
+%mor:	intj|oh !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	can you sit up please ? 92574_93774
+%mor:	aux|can-Fin-S pron|you-Prs-Nom-S2 verb|sit-Inf-S adp|up intj|please ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|3|COMPOUND-PRT 5|3|DISCOURSE 6|3|PUNCT
+*CHI:	xxx .
+%act:	sits up on couch
+*MOT:	Janet . 98135_98635
+%mor:	propn|Janet .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	Janet ? 100837_101337
+%mor:	propn|Janet ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	oh who's Janet ? 101417_102098
+%mor:	intj|oh pron|whose-Int-S1 propn|Janet ?
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|FLAT 4|2|PUNCT
+*MOT:	uncle David's Janet . 101818_102638
+%mor:	noun|uncle propn|Davids propn|Janet .
+%gra:	1|0|ROOT 2|1|FLAT 3|1|FLAT 4|1|PUNCT
+*CHI:	yeah (.) . 102278_102778
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	I don't know .
+%mor:	pron|I-Prs-Nom-S1 adv|dont verb|know-Fin-Ind-Pres-S1 .
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|3|PUNCT
+*MOT:	and a couple o(f) babies . 102478_109164
+%mor:	cconj|and det|a-Ind-Art noun|couple adp|of noun|baby-Plur .
+%gra:	1|3|CC 2|3|DET 3|0|ROOT 4|5|CASE 5|3|NMOD 6|3|PUNCT
+*CHI:	yeah (.) .
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+@End

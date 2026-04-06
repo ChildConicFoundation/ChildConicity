@@ -1,0 +1,563 @@
+@UTF8
+@PID:	11312/c-00035280-1
+@Begin
+@Languages:	eng
+@Participants:	CHI Target_Child, SIB Sibling, MOT Mother, INV Investigator, BAB Sibling, MAN Adult
+@ID:	eng|HSLLD|CHI|4;07.12|male|||Target_Child|||
+@ID:	eng|HSLLD|SIB|||||Sibling|||
+@ID:	eng|HSLLD|MOT||female|||Mother|12||
+@ID:	eng|HSLLD|INV|||||Investigator|||
+@ID:	eng|HSLLD|BAB|||||Sibling|||
+@ID:	eng|HSLLD|MAN|||||Adult|||
+@Birth of CHI:	22-AUG-1984
+@Media:	ctrtp2, audio, missing
+@Comment:	SES of Mot is lower
+@Comment:	Chi designation for child speaker when it is impossible to ascertain whether it is Chi or SIB speaking , BAB baby
+@Date:	22-MAR-1989
+@Location:	Boston , MA USA
+@Situation:	Second home visit; Mot and Chi are playing with toys on the kitchen table
+@Activities:	Toy play
+@Transcriber:	Monica Frazier , Mary Fischer
+@Types:	long, toyplay, TD
+*CHI:	hat [% putting hat on Leo's head] .
+%mor:	noun|hat .
+%gra:	1|0|ROOT 2|1|PUNCT
+@Comment:	Time is 17:25
+*CHI:	animals .
+%mor:	noun|animal-Plur .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	I wanna play with no animals .
+%mor:	pron|I-Prs-Nom-S1 aux|wanna-Fin-S verb|play-Inf-S adp|with det|no-Def-Neg noun|animal-Plur .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|6|CASE 5|6|DET 6|3|OBL 7|3|PUNCT
+*SIB:	xxx .
+*CHI:	oh xxx !
+%mor:	intj|oh !
+%gra:	1|0|ROOT 2|1|PUNCT
+*SIB:	xxx .
+*MOT:	xxx .
+*SIB:	no I'm gonna play .
+%mor:	intj|no intj|im part|go verb|play-Inf-S .
+%gra:	1|4|DISCOURSE 2|4|DISCOURSE 3|4|ADVMOD 4|0|ROOT 5|4|PUNCT
+*MOT:	no you're not .
+%mor:	intj|no intj|your part|not .
+%gra:	1|0|ROOT 2|1|DISCOURSE 3|1|ADVMOD 4|1|PUNCT
+*CHI:	hello !
+%mor:	intj|hello !
+%gra:	1|0|ROOT 2|1|PUNCT
+*SIB:	xxx <xxx> [>] .
+*CHI:	oh [<] fire engine !
+%mor:	intj|oh noun|fire noun|engine !
+%gra:	1|3|DISCOURSE 2|3|COMPOUND 3|0|ROOT 4|3|PUNCT
+*CHI:	I'm playing with this mommy .
+%mor:	adv|im verb|play-Part-Pres-S adp|with det|this-Def-Dem-Sing noun|mommy .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|5|CASE 4|5|DET 5|2|OBL 6|2|PUNCT
+*SIB:	<xxx> [>] .
+*CHI:	fire engine !
+%par:	making the noise of a fire engine
+%mor:	noun|fire noun|engine !
+%gra:	1|2|COMPOUND 2|0|ROOT 3|2|PUNCT
+*CHI:	fire engine !
+%mor:	noun|fire noun|engine !
+%gra:	1|2|COMPOUND 2|0|ROOT 3|2|PUNCT
+*SIB:	xxx <xxx> [>] .
+*CHI:	<zzz> [<] .
+%par:	imitating siren
+%com:	impossible to be certain which child is speaking
+%mor:	intj|zzz .
+%gra:	1|0|ROOT 2|1|PUNCT
+*SIB:	xxx .
+*MOT:	xxx .
+*SIB:	Chi look !
+%mor:	propn|Chi verb|look-Fin-Imp-S !
+%gra:	1|2|COMPOUND 2|0|ROOT 3|2|PUNCT
+*SIB:	you have !
+%mor:	pron|you-Prs-Nom-S2 verb|have-Fin-Ind-Pres-S2 !
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|PUNCT
+*CHI:	hey .
+%exp:	presumably SIB but no way to be certain
+%mor:	intj|hey .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	<xxx xxx> [>] .
+*CHI:	<zzz> [<] .
+%par:	siren sounds
+%mor:	intj|zzz .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	hello ?
+%mor:	intj|hello ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	bye bye .
+%exp:	Chi is now playing with the telephone
+%mor:	intj|bye intj|bye .
+%gra:	1|0|ROOT 2|1|FLAT 3|1|PUNCT
+*CHI:	hello ?
+%mor:	intj|hello ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	bye bye !
+%mor:	intj|bye intj|bye !
+%gra:	1|0|ROOT 2|1|FLAT 3|1|PUNCT
+*CHI:	<xxx xxx> [>] .
+%exp:	impossible to tell which child is speaking
+*CHI:	<xxx xxx> [<] .
+*CHI:	huh ?
+%mor:	intj|huh ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	xxx .
+*MOT:	yeah .
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	wait a second .
+%mor:	verb|wait-Fin-Imp-S det|a-Ind-Art noun|second-Acc .
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|1|PUNCT
+*CHI:	yeah all that .
+%mor:	intj|yeah det|all-Def-Tot pron|that-Dem .
+%gra:	1|3|DISCOURSE 2|3|DET-PREDET 3|0|ROOT 4|3|PUNCT
+*CHI:	woo@o !
+%mor:	intj|woo !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	<xxx xxx> [<] .
+*CHI:	zzz .
+%par:	siren noises
+%mor:	intj|zzz .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	I'm having all cars .
+%mor:	aux|be-Fin-Ind-Pres-S3 verb|have-Part-Pres-S det|all-Def-Tot noun|car-Plur-Acc .
+%gra:	1|2|AUX 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|PUNCT
+*SIB:	I know I need xxx dump em out .
+%mor:	pron|I-Prs-Nom-S1 verb|know-Fin-Ind-Pres-S1 pron|I-Prs-Nom-S1 verb|need-Fin-Ind-Pres-S1 verb|dump-Inf-S pron|they-Prs-Acc-P3 adp|out .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|NSUBJ 4|2|CCOMP 5|4|XCOMP 6|5|OBJ 7|5|COMPOUND-PRT 8|2|PUNCT
+*SIB:	wait a second I need something else [?] wait .
+%mor:	verb|wait-Fin-Imp-S det|a-Ind-Art adj|second-S1 pron|I-Prs-Nom-S1 verb|need-Fin-Ind-Pres-S1 pron|something-Ind-S1 adj|else-S1 verb|wait-Inf-S .
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|5|NSUBJ 5|1|PARATAXIS 6|5|OBJ 7|6|AMOD 8|6|ACL 9|1|PUNCT
+*SIB:	dump them out .
+%com:	verifier thinks this is Kristen speaking
+%mor:	verb|dump-Fin-Imp-S pron|they-Prs-Acc-P3 adp|out .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|COMPOUND-PRT 4|1|PUNCT
+*CHI:	no don't xxx !
+%mor:	intj|no noun|dont !
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|PUNCT
+*MOT:	oh_boy .
+%mor:	propn|ohboy .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	mommy that one's yours .
+%mor:	intj|mommy pron|that-Dem verb|one-Fin-Ind-Pres-S3 pron|your-Prs-S2 .
+%gra:	1|3|DISCOURSE 2|3|NSUBJ 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*MOT:	yep .
+%mor:	intj|yep .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	xxx huh ?
+%mor:	intj|huh ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	I'll call you mommy .
+%mor:	pron|ill-Prs-Nom-S1 verb|call-Fin-Ind-Pres-S1 pron|you-Prs-Acc-S2 noun|mommy-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|OBJ 5|2|PUNCT
+*SIB:	excuse me let me see that .
+%mor:	verb|excuse-Fin-Imp-S pron|I-Prs-Acc-S1 verb|let-Fin-Imp-S pron|I-Prs-Acc-S1 verb|see-Inf-S pron|that-Dem .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|CCOMP 4|3|OBJ 5|3|XCOMP 6|5|OBJ 7|1|PUNCT
+*CHI:	hey cars .
+%mor:	intj|hey noun|car-Plur .
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|PUNCT
+*CHI:	I didn't know [?] car .
+%mor:	pron|I-Prs-Nom-S1 adv|didnt verb|know-Inf-S noun|car-Acc .
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*CHI:	no playing Kristen !
+%exp:	Kristen is trying to play with the toys
+%mor:	det|no-Def-Neg noun|playing-Ger propn|Kristen !
+%gra:	1|2|DET 2|0|ROOT 3|2|FLAT 4|2|PUNCT
+*CHI:	another phone's Jessica's .
+%mor:	det|another-Def-Ind noun|phone-Plur propn|Jessicas .
+%gra:	1|2|DET 2|0|ROOT 3|2|APPOS 4|2|PUNCT
+*CHI:	man .
+%mor:	noun|man .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	you guys !
+%mor:	pron|you-Prs-Nom-S2 noun|guy-Plur !
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|PUNCT
+*MOT:	what're you doing ?
+%exp:	MOT wants the other children to go in the other room since they are all trying to play with the toys
+%mor:	aux|whatre-Fin-Ind-Pres-S3 pron|you-Prs-Nom-S2 verb|do-Part-Pres-S ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|3|PUNCT
+*CHI:	hey give !
+%mor:	intj|hey verb|give-Fin-Imp-S !
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|PUNCT
+*SIB:	Chi [?] !
+%int:	shouting
+%mor:	propn|Chi !
+%gra:	1|0|ROOT 2|1|PUNCT
+*SIB:	I was playing that !
+%int:	shouting
+%mor:	pron|I-Prs-Nom-S1 aux|be-Fin-Ind-Past-S1-irr verb|play-Part-Pres-S pron|that-Dem !
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*MOT:	go Kristen go !
+%int:	shouting
+%mor:	verb|go-Fin-Imp-S propn|Kristen-Acc verb|go-Fin-S !
+%gra:	1|0|ROOT 2|1|OBJ 3|1|XCOMP 4|1|PUNCT
+*CHI:	I wanna play with that .
+%mor:	pron|I-Prs-Nom-S1 aux|wanna-Fin-S verb|play-Inf-S adp|with pron|that-Dem .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|5|CASE 5|3|OBL 6|3|PUNCT
+*CHI:	xxx xxx .
+*MOT:	xxx xxx .
+*MOT:	okay go play .
+%mor:	intj|okay verb|go-Fin-Imp-S noun|play-Acc .
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*MOT:	you gotta play in your room Chi's playing here .
+%mor:	pron|you-Prs-Nom-S2 aux|getta-Fin-S verb|play-Inf-S adp|in pron|your-Prs-Gen-S2 noun|room propn|Chis-Acc verb|play-Ger-S adv|here .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|6|CASE 5|6|NMOD-POSS 6|3|OBL 7|3|OBJ 8|3|ADVCL 9|8|ADVMOD 10|3|PUNCT
+*CHI:	<that ain't> [//] this ain't for you Kristen !
+%mor:	pron|this-Dem-S1 noun|aint adp|for pron|you-Prs-Acc-S2 propn|Kristen !
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|CASE 4|2|OBL 5|2|NMOD 6|2|PUNCT
+*SIB:	so ?
+%mor:	adv|so ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	go ahead .
+%mor:	verb|go-Fin-Imp-S adv|ahead .
+%gra:	1|0|ROOT 2|1|ADVMOD 3|1|PUNCT
+*CHI:	so !
+%mor:	adv|so !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	xxx xxx !
+*MOT:	go guys !
+%int:	shouting
+%mor:	verb|go-Fin-Imp-S noun|guy-Plur-Acc !
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*MOT:	hello ?
+%mor:	intj|hello ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	<I got> [/] I <xxx xxx> [>] +/.
+%mor:	pron|I-Prs-Nom-S1 +/.
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	<Justin will you go> [<] .
+%mor:	propn|Justin aux|will-Fin-S pron|you-Prs-Nom-S2 verb|go-Inf-S .
+%gra:	1|4|NSUBJ 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|4|PUNCT
+*SIB:	(.) see you guys .
+%mor:	verb|see-Fin-Imp-S pron|you-Prs-Acc-S2 noun|guy-Plur-Acc .
+%gra:	1|0|ROOT 2|1|IOBJ 3|1|OBJ 4|1|PUNCT
+*CHI:	what we do with these spoons ?
+%mor:	pron|what-Int-S1 pron|we-Prs-Nom-P1 verb|do-Fin-Ind-Pres-P1 adp|with det|this-Def-Dem-Plur noun|spoon-Plur ?
+%gra:	1|0|ROOT 2|3|NSUBJ 3|1|ACL-RELCL 4|6|CASE 5|6|DET 6|3|OBL 7|1|PUNCT
+*MOT:	he knows his colors real well .
+%add:	EX1
+%com:	MOT is not attempting to play with Chi instead she talks to EXP 1
+%mor:	pron|he-Prs-Nom-S3 verb|know-Fin-Ind-Pres-S3 pron|his-Prs-Gen-S3 noun|color-Plur-Acc adv|real adv|well .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|NMOD-POSS 4|2|OBJ 5|6|ADVMOD 6|2|ADVMOD 7|2|PUNCT
+*INV:	oh really ?
+%mor:	intj|oh adv|really ?
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|PUNCT
+*MOT:	xxx xxx .
+*INV:	good !
+%mor:	adj|good-S1 !
+%gra:	1|0|ROOT 2|1|PUNCT
+*INV:	that's great !
+%mor:	aux|that-Fin-Ind-Pres-S3 adj|great-S1 !
+%gra:	1|2|COP 2|0|ROOT 3|2|PUNCT
+*MOT:	xxx xxx .
+*MOT:	xxx xxx .
+*CHI:	I know colors !
+%mor:	pron|I-Prs-Nom-S1 verb|know-Fin-Ind-Pres-S1 noun|color-Plur-Acc !
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*MOT:	yeah .
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	zzz .
+%par:	making cars crashing noises
+%sit:	phone rings
+%mor:	intj|zzz .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	jump over the ramp .
+%mor:	verb|jump-Fin-Imp-S adp|over det|the-Def-Art noun|ramp .
+%gra:	1|0|ROOT 2|4|CASE 3|4|DET 4|1|OBL 5|1|PUNCT
+*CHI:	xxx the ramp [?] .
+%par:	car crashing noises
+%mor:	det|the-Def-Art noun|ramp .
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*CHI:	racing car .
+%mor:	noun|racing-Ger noun|car .
+%gra:	1|2|COMPOUND 2|0|ROOT 3|2|PUNCT
+*MOT:	say hello !
+%exp:	surmise that Mot is trying to get baby to talk on the phone
+%mor:	verb|say-Fin-Imp-S intj|hello !
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*MOT:	say nana .
+%mor:	verb|say-Fin-Imp-S propn|nana-Acc .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*CHI:	I'll call my <nana> [>] .
+%mor:	pron|ill-Prs-Nom-S1 verb|call-Fin-Ind-Pres-S1 pron|my-Prs-Gen-S1 noun|nana-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|NMOD-POSS 4|2|OBJ 5|2|PUNCT
+*MOT:	nana@u !
+%mor:	propn|nana !
+%gra:	1|0|ROOT 2|1|PUNCT
+*BAB:	xxx !
+*CHI:	mommy !
+%mor:	noun|mommy !
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	I rescue [?] !
+%exp:	Chi is playing with the fire hat
+%mor:	pron|I-Prs-Nom-S1 verb|rescue-Fin-Ind-Pres-S1 !
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|PUNCT
+*MOT:	nana@u !
+%mor:	propn|nana !
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	mommy !
+%mor:	noun|mommy !
+%gra:	1|0|ROOT 2|1|PUNCT
+*BAB:	nana@u !
+%mor:	propn|nana !
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	I'm a fireman !
+%mor:	cconj|im det|a-Ind-Art noun|fireman !
+%gra:	1|3|DISCOURSE 2|3|DET 3|0|ROOT 4|3|PUNCT
+*MOT:	hello .
+%mor:	intj|hello .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	nana@u !
+%mor:	propn|nana !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	say hello !
+%mor:	verb|say-Fin-Imp-S intj|hello !
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*MOT:	nana .
+%mor:	propn|nana .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	0 .
+%act:	Chi plays with the toy phone
+*CHI:	nobody answer .
+%mor:	pron|nobody-Neg-S1 verb|answer-Fin-Ind-Pres-S3 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|PUNCT
+*CHI:	ring !
+%mor:	noun|ring-Ger !
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	hafta answer mommy .
+%mor:	intj|hafta noun|answer noun|mommy .
+%gra:	1|3|DISCOURSE 2|3|COMPOUND 3|0|ROOT 4|3|PUNCT
+*CHI:	hello ?
+%mor:	intj|hello ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	who's this ?
+%mor:	pron|who-Int~aux|be-Fin-Ind-Pres-S3 pron|this-Dem-S1 ?
+%gra:	1|3|NSUBJ 2|3|COP 3|0|ROOT 4|3|PUNCT
+*MOT:	say hello Jessica .
+%mor:	verb|say-Fin-Imp-S intj|hello propn|Jessica-Acc .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|OBJ 4|1|PUNCT
+*CHI:	huh ?
+%mor:	intj|huh ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	a fireman .
+%mor:	det|a-Ind-Art noun|fireman .
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*CHI:	who's this ?
+%mor:	pron|who-Int~aux|be-Fin-Ind-Pres-S3 pron|this-Dem-S1 ?
+%gra:	1|3|NSUBJ 2|3|COP 3|0|ROOT 4|3|PUNCT
+*CHI:	the <fireman> [>] !
+%mor:	det|the-Def-Art noun|fireman !
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*MOT:	<hello> [<] !
+%com:	surmise that Mot is encouraging baby to speak on play phone with Chi
+%mor:	intj|hello !
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	there's a fireman .
+%mor:	verb|there-Fin-Ind-Pres-S3 det|a-Ind-Art noun|fireman-Acc .
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|1|PUNCT
+*BAB:	zzz ! [+ ZZ]
+%par:	inarticulate sing song rendition of hello
+%mor:	intj|zzz !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	hello [>] !
+%mor:	intj|hello !
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	<oh fire> [<] !
+%mor:	intj|oh noun|fire !
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|PUNCT
+*CHI:	fire here !
+%mor:	noun|fire adv|here !
+%gra:	1|0|ROOT 2|1|ADVMOD 3|1|PUNCT
+*CHI:	<look at> [>] fire .
+%mor:	verb|look-Fin-Imp-S adp|at noun|fire .
+%gra:	1|0|ROOT 2|3|CASE 3|1|OBL 4|1|PUNCT
+*MOT:	Jessica .
+%mor:	propn|Jessica .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	Jessica .
+%exp:	MOT is talking to the baby
+%mor:	propn|Jessica .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	<0 [=! siren sounds]> [<] [>] .
+*MOT:	say Laura !
+%mor:	verb|say-Fin-Imp-S propn|Laura-Acc !
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*CHI:	<0 [=! siren sounds]> [>] .
+*MOT:	Laura .
+%mor:	propn|Laura .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	somebody's .
+%mor:	noun|somebody-Plur .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	say Laura !
+%mor:	verb|say-Fin-Imp-S propn|Laura-Acc !
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*CHI:	what's this for ?
+%mor:	aux|what-Fin-Ind-Pres-S3 pron|this-Dem-S1 adp|for ?
+%gra:	1|0|ROOT 2|1|NSUBJ 3|1|PUNCT 4|1|PUNCT
+*MOT:	<get in there and go to bed> [<] !
+%mor:	verb|get-Fin-Imp-S adp|in adv|there cconj|and verb|go-Fin-Imp-S adp|to noun|bed !
+%gra:	1|0|ROOT 2|3|CASE 3|1|ADVMOD 4|5|CC 5|1|CONJ 6|7|CASE 7|5|OBL 8|1|PUNCT
+*SIB:	I want a book !
+%mor:	pron|I-Prs-Nom-S1 verb|want-Fin-Ind-Pres-S1 det|a-Ind-Art noun|book-Acc !
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|PUNCT
+*MOT:	get in there and go to bed .
+%mor:	verb|get-Fin-Imp-S adp|in adv|there cconj|and verb|go-Fin-Imp-S adp|to noun|bed .
+%gra:	1|0|ROOT 2|3|CASE 3|1|ADVMOD 4|5|CC 5|1|CONJ 6|7|CASE 7|5|OBL 8|1|PUNCT
+*MOT:	now .
+%mor:	adv|now .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	move .
+%mor:	verb|move-Fin-Imp-S .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	what's this for ?
+%mor:	aux|what-Fin-Ind-Pres-S3 pron|this-Dem-S1 adp|for ?
+%gra:	1|0|ROOT 2|1|NSUBJ 3|1|PUNCT 4|1|PUNCT
+*BAB:	xxx !
+*MOT:	Laura !
+%mor:	propn|Laura !
+%gra:	1|0|ROOT 2|1|PUNCT
+*BAB:	xxx xxx !
+*MOT:	nana@u !
+%mor:	propn|nana !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	hi Laura !
+%mor:	intj|hi propn|Laura !
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|PUNCT
+*BAB:	xxx !
+*CHI:	<whoa> [>] !
+%mor:	intj|whoa !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	<hello> [<] !
+%mor:	intj|hello !
+%gra:	1|0|ROOT 2|1|PUNCT
+*BAB:	xxx xxx .
+*MOT:	hello ?
+%mor:	intj|hello ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	who's this ?
+%mor:	pron|who-Int~aux|be-Fin-Ind-Pres-S3 pron|this-Dem-S1 ?
+%gra:	1|3|NSUBJ 2|3|COP 3|0|ROOT 4|3|PUNCT
+*CHI:	mommy go to get a phone .
+%mor:	noun|mommy verb|go-Fin-Imp-S part|to verb|get-Inf-S det|a-Ind-Art noun|phone-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|MARK 4|2|ADVCL 5|6|DET 6|4|OBJ 7|2|PUNCT
+*MOT:	she's talking xxx Jessica .
+%mor:	noun|she verb|talk-Part-Pres-S propn|Jessica-Acc .
+%gra:	1|0|ROOT 2|1|ACL 3|2|OBJ 4|1|PUNCT
+*CHI:	hello ?
+%mor:	intj|hello ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	who's this ?
+%mor:	pron|who-Int~aux|be-Fin-Ind-Pres-S3 pron|this-Dem-S1 ?
+%gra:	1|3|NSUBJ 2|3|COP 3|0|ROOT 4|3|PUNCT
+*CHI:	the baby ?
+%mor:	det|the-Def-Art noun|baby ?
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*MOT:	Jessica !
+%mor:	propn|Jessica !
+%gra:	1|0|ROOT 2|1|PUNCT
+*BAB:	xxx !
+*CHI:	there's a fire here !
+%mor:	verb|there-Fin-Ind-Pres-S3 det|a-Ind-Art noun|fire-Acc adv|here !
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|1|ADVMOD 5|1|PUNCT
+*CHI:	you <house burned> [>] ?
+%mor:	pron|you-Prs-Gen-S2 noun|house verb|burn-Part-Past-S ?
+%gra:	1|2|NMOD-POSS 2|3|NSUBJ 3|0|ROOT 4|3|PUNCT
+*MOT:	<say Jessica> [<] !
+%mor:	verb|say-Fin-Imp-S propn|Jessica-Acc !
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*CHI:	the house burn up !
+%mor:	det|the-Def-Art noun|house verb|burn-Fin-Ind-Pres-S3 adp|up !
+%gra:	1|2|DET 2|3|NSUBJ 3|0|ROOT 4|3|COMPOUND-PRT 5|3|PUNCT
+*CHI:	house burn up ?
+%mor:	noun|house verb|burn-Inf-S adp|up ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|COMPOUND-PRT 4|2|PUNCT
+*MOT:	whoops !
+%mor:	intj|whoops !
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	how did the house burn ?
+%mor:	adv|how aux|do-Fin-Ind-Past-S3-irr det|the-Def-Art noun|house verb|burn-Inf-S ?
+%gra:	1|5|ADVMOD 2|5|AUX 3|4|DET 4|5|NSUBJ 5|0|ROOT 6|5|PUNCT
+*CHI:	the what ?
+%mor:	det|the-Def-Art pron|what-Int-S1 ?
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*CHI:	the house burn up ?
+%mor:	det|the-Def-Art noun|house verb|burn-Fin-Ind-Pres-S3 adp|up ?
+%gra:	1|2|DET 2|3|NSUBJ 3|0|ROOT 4|3|COMPOUND-PRT 5|3|PUNCT
+*CHI:	yeah .
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	good .
+%mor:	adj|good-S1 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	bye .
+%mor:	intj|bye .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	<call again> [<] .
+%mor:	verb|call-Inf-Imp-S adv|again .
+%gra:	1|0|ROOT 2|1|ADVMOD 3|1|PUNCT
+*MOT:	<call again> [<] .
+%mor:	verb|call-Inf-Imp-S adv|again .
+%gra:	1|0|ROOT 2|1|ADVMOD 3|1|PUNCT
+*MAN:	www .
+%exp:	unidentified adult male speaks to Mot
+*MOT:	www .
+%exp:	responds to MAN
+*CHI:	hire [: fire] !
+%mor:	noun|fire !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	www .
+%exp:	speaking to MAN
+*MOT:	Chi .
+%mor:	propn|Chi .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	can you tell me lookit <whose hat> [//] who wears a hat like this ?
+%mor:	aux|can-Fin-S pron|you-Prs-Nom-S2 verb|tell-Inf-S pron|I-Prs-Acc-S1 noun|lookit-Acc pron|who-Rel verb|wear-Fin-Ind-Pres-S3 det|a-Ind-Art noun|hat-Acc adp|like pron|this-Dem-S1 ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|3|IOBJ 5|3|OBJ 6|7|NSUBJ 7|5|ACL-RELCL 8|9|DET 9|7|OBJ 10|11|CASE 11|9|NMOD 12|3|PUNCT
+*CHI:	big men [=! sung] .
+%mor:	adj|big-S1 noun|man-Plur .
+%gra:	1|2|AMOD 2|0|ROOT 3|2|PUNCT
+*MOT:	no .
+%mor:	intj|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	can you tell me ?
+%mor:	aux|can-Fin-S pron|you-Prs-Nom-S2 verb|tell-Inf-S pron|I-Prs-Acc-S1 ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|3|IOBJ 5|3|PUNCT
+*MOT:	xxx wears a man's hat ?
+%mor:	verb|wear-Fin-Ind-Pres-S3 det|a-Ind-Art noun|man noun|hat-Acc ?
+%gra:	1|0|ROOT 2|4|DET 3|4|COMPOUND 4|1|OBJ 5|1|PUNCT
+*CHI:	women wear them (.) .
+%mor:	noun|woman-Plur verb|wear-Fin-Ind-Pres-P3 pron|they-Prs-Acc-P3 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*CHI:	where's the cup to this ?
+%mor:	verb|where-Fin-Ind-Pres-S3 det|the-Def-Art noun|cup-Acc adp|to pron|this-Dem-S1 ?
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|5|CASE 5|1|OBL 6|1|PUNCT
+*CHI:	where's the cover to this mommy ?
+%mor:	verb|where-Fin-Ind-Pres-S3 det|the-Def-Art noun|cover-Acc adp|to det|this-Def-Dem-Sing noun|mommy ?
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|6|CASE 5|6|DET 6|1|OBL 7|1|PUNCT
+*MOT:	www .
+%exp:	speaking to MAN
+*CHI:	I'm a fireman .
+%mor:	cconj|im det|a-Ind-Art noun|fireman .
+%gra:	1|3|DISCOURSE 2|3|DET 3|0|ROOT 4|3|PUNCT
+*SIB:	why ?
+%mor:	adv|why ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	we hafta get one of them phones .
+%mor:	pron|we-Prs-Nom-P1 aux|hafta-Fin-Ind-Pres-P1 verb|get-Fin-Pres-S1 num|one adp|of pron|they-Prs-Acc-P3 noun|phone-Plur .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|6|CASE 6|4|NMOD 7|4|NMOD 8|3|PUNCT
+*SIB:	huh ?
+%mor:	intj|huh ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	someone [//] that [//] get that one over there .
+%mor:	verb|get-Fin-Imp-S det|that-Def-Dem-Sing noun|one-Acc adp|over adv|there .
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|5|CASE 5|1|OBL 6|1|PUNCT
+*CHI:	ah [: I'm] call [: calling] loo [: you] !
+%mor:	aux|be-Fin-Ind-Pres-S3 verb|call-Part-Pres-S pron|you-Prs-Acc-S2 !
+%gra:	1|2|AUX 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*CHI:	get that phone !
+%mor:	verb|get-Fin-Imp-S det|that-Def-Dem-Sing noun|phone-Acc !
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|1|PUNCT
+@Comment:	Time is 23:35
+@End

@@ -1,0 +1,118 @@
+@UTF8
+@PID:	11312/c-00034853-1
+@Begin
+@Languages:	eng
+@Participants:	MOT Mother, CHI Target_Child, BRO Brother
+@ID:	eng|HSLLD|MOT||female|||Mother|15||
+@ID:	eng|HSLLD|CHI|3;10.16|female|||Target_Child|||
+@ID:	eng|HSLLD|BRO|||||Brother|||
+@Birth of CHI:	22-JUL-1984
+@Media:	aimer1, audio
+@Comment:	SES of Mot is lower
+@Date:	07-JUN-1988
+@Location:	Boston , MA , USA
+@Situation:	Home Visit 1; took place in living room; Mot sat on the couch while Chi stood in front of her; late afternoon
+@Activities:	Elicited Report
+@Types:	long, narrative, TD
+*MOT:	come and tell me about Grace wedding (.) . 42195_43875
+%alt:	<6> Gray's or some other name
+%mor:	verb|come-Fin-Imp-S cconj|and verb|tell-Fin-Imp-S pron|I-Prs-Acc-S1 adp|about propn|Grace noun|wedding-Ger .
+%gra:	1|0|ROOT 2|3|CC 3|1|CONJ 4|3|IOBJ 5|7|CASE 6|7|COMPOUND 7|3|OBL 8|1|PUNCT
+*MOT:	did you enjoy Grace wedding (.) ? 45317_46758
+%alt:	<4> Gray's or some other name
+%mor:	aux|do-Fin-Ind-Past-S2-irr pron|you-Prs-Nom-S2 verb|enjoy-Inf-S propn|Grace noun|wedding-Acc-Ger ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|5|COMPOUND 5|3|OBJ 6|3|PUNCT
+*MOT:	what were you in Grace wedding ? 48100_49520
+%alt:	<5> Gray's or some other name
+%mor:	pron|what-Int-S1 aux|be-Fin-Ind-Past-S2-irr pron|you-Prs-Nom-S2 adp|in propn|Grace noun|wedding-Ger ?
+%gra:	1|6|NSUBJ 2|6|COP 3|6|NSUBJ 4|6|CASE 5|6|COMPOUND 6|0|ROOT 7|6|PUNCT
+*CHI:	<we was> [/] singing was singin(g) .
+%mor:	verb|sing-Part-Pres-S aux|be-Fin-Ind-Past-S3-irr verb|sing-Part-Pres-S .
+%gra:	1|3|CSUBJ 2|3|COP 3|0|ROOT 4|3|PUNCT
+*CHI:	and we [/] was dancing dancin(g) . 49321_52702
+%mor:	cconj|and aux|be-Fin-Ind-Past-S3-irr verb|dance-Part-Pres-S noun|dancing-Acc-Ger .
+%gra:	1|3|CC 2|3|AUX 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*MOT:	you was singing ? 56945_57725
+%mor:	pron|you-Prs-Nom-S2 aux|be-Fin-Ind-Past-S3-irr verb|sing-Part-Pres-S ?
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|PUNCT
+*MOT:	you was dancing ? 57605_58366
+%mor:	pron|you-Prs-Nom-S2 aux|be-Fin-Ind-Past-S3-irr verb|dance-Part-Pres-S ?
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|PUNCT
+*MOT:	and what else did we do at the wedding ? 58387_59487
+%mor:	cconj|and pron|what-Int-S1 adv|else aux|do-Fin-Ind-Past-P1-irr pron|we-Prs-Nom-P1 verb|do-Inf-S adp|at det|the-Def-Art noun|wedding-Ger ?
+%gra:	1|6|CC 2|6|OBJ 3|2|ADVMOD 4|6|AUX 5|6|NSUBJ 6|0|ROOT 7|9|CASE 8|9|DET 9|6|OBL 10|6|PUNCT
+*CHI:	and <y'all@d> [/] <was singing> [/] (.) <y'all@d was> [/] (.) y'all@d was singin(g) . 59288_65495
+%mor:	cconj|and d|yall-Prs-Acc-S2 aux|be-Fin-Ind-Past-S3-irr verb|sing-Part-Pres-S .
+%gra:	1|4|CC 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|4|PUNCT
+*MOT:	yeah ! 66438_66937
+%mor:	intj|yeah !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	but you already told me that . 66679_67960
+%mor:	cconj|but pron|you-Prs-Nom-S2 adv|already verb|tell-Fin-Ind-Past-S2-irr pron|I-Prs-Acc-S1 pron|that-Dem .
+%gra:	1|4|CC 2|4|NSUBJ 3|4|ADVMOD 4|0|ROOT 5|4|IOBJ 6|4|OBJ 7|4|PUNCT
+*CHI:	and [/] and <was> [/] dancing was dancin(g) . 68140_71004
+%mor:	cconj|and noun|dancing-Ger aux|be-Fin-Ind-Past-S3-irr verb|dance-Part-Pres-S .
+%gra:	1|4|CC 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|4|PUNCT
+*CHI:	and &-uh y'all@d was eatin(g) . 72205_73426
+%mor:	cconj|and d|yall-Prs-Acc-S2 aux|be-Fin-Ind-Past-S3-irr verb|eat-Part-Pres-S .
+%gra:	1|4|CC 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|4|PUNCT
+*MOT:	uhhuh +...
+%mor:	intj|uhhuh +...
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	and [/] you know know +... 75892_77373
+%par:	aft embarrassed laugh
+%mor:	pron|you-Prs-Nom-S2 verb|know-Fin-Ind-Pres-S2 verb|know-Inf-S +...
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|CCOMP 4|2|PUNCT
+*CHI:	and (.) know what <Donna> [/] was coming here to (.) to +/. 77675_82001
+%mor:	cconj|and verb|know-Fin-Imp-S pron|what-Int-S1 aux|be-Fin-Ind-Past-S3-irr verb|come-Part-Pres-S adv|here part|to adp|to +/.
+%gra:	1|2|CC 2|0|ROOT 3|5|NSUBJ 4|5|AUX 5|2|CCOMP 6|5|ADVMOD 7|5|ADVCL 8|2|PUNCT 9|2|PUNCT
+*BRO:	with who ?
+%mor:	adp|with pron|who-Int ?
+%gra:	1|2|CASE 2|0|ROOT 3|2|PUNCT
+*CHI:	to wedding . 82482_83444
+%mor:	adp|to noun|wedding-Ger .
+%gra:	1|2|CASE 2|0|ROOT 3|2|PUNCT
+*BRO:	with who ?
+%mor:	adp|with pron|who-Int ?
+%gra:	1|2|CASE 2|0|ROOT 3|2|PUNCT
+*CHI:	<with> [/] with [/] with (.) &-uh [<] (.) +/.
+%mor:	adp|with +/.
+%gra:	1|0|ROOT 2|1|PUNCT
+*BRO:	xxx [>] ?
+*CHI:	with [<] Richie +... 87966_88526
+%mor:	adp|with propn|Richie +...
+%gra:	1|2|CASE 2|0|ROOT 3|2|PUNCT
+*MOT:	with Richie . 88226_88866
+%mor:	adp|with propn|Richie .
+%gra:	1|2|CASE 2|0|ROOT 3|2|PUNCT
+*MOT:	and tell me did you get dressed up ? 89107_91029
+%mor:	cconj|and verb|tell-Fin-Imp-S pron|I-Prs-Acc-S1 aux|do-Fin-Ind-Past-S2-irr pron|you-Prs-Nom-S2 aux|get-Inf-S verb|dress-Part-Past-S adp|up ?
+%gra:	1|2|CC 2|0|ROOT 3|2|IOBJ 4|7|AUX 5|7|NSUBJ-PASS 6|7|AUX-PASS 7|2|CCOMP 8|7|COMPOUND-PRT 9|2|PUNCT
+*MOT:	did you like that part ? 90730_91730
+%mor:	aux|do-Fin-Ind-Past-S2-irr pron|you-Prs-Nom-S2 verb|like-Inf-S det|that-Def-Dem-Sing noun|part-Acc ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|PUNCT
+*CHI:	yeah and I was good . 92492_93652
+%mor:	intj|yeah cconj|and pron|I-Prs-Nom-S1 aux|be-Fin-Ind-Past-S1-irr adj|good-S1 .
+%gra:	1|5|DISCOURSE 2|5|CC 3|5|NSUBJ 4|5|COP 5|0|ROOT 6|5|PUNCT
+*CHI:	and +/. 94534_94755
+%mor:	cconj|and +/.
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	how were you dressed up ? 94996_96257
+%mor:	adv|how aux|be-Fin-Ind-Past-S2-irr pron|you-Prs-Nom-S2 verb|dress-Part-Past-S adp|up ?
+%gra:	1|4|ADVMOD 2|4|AUX-PASS 3|4|NSUBJ-PASS 4|0|ROOT 5|4|COMPOUND-PRT 6|4|PUNCT
+*CHI:	and we was dressed in my favorite clothes for the wedding . 95956_101042
+%mor:	cconj|and pron|we-Prs-Nom-P1 aux|be-Fin-Ind-Past-P1-irr verb|dress-Part-Past-S adp|in pron|my-Prs-Gen-S1 adj|favorite-S1 noun|clothes-Ptan adp|for det|the-Def-Art noun|wedding-Ger .
+%gra:	1|4|CC 2|4|NSUBJ-PASS 3|4|AUX-PASS 4|0|ROOT 5|8|CASE 6|8|NMOD-POSS 7|8|AMOD 8|4|OBL 9|11|CASE 10|11|DET 11|8|NMOD 12|4|PUNCT
+*MOT:	what did I dress you in ? 100784_101864
+%mor:	pron|what-Int-S1 aux|do-Fin-Ind-Past-S1-irr pron|I-Prs-Nom-S1 verb|dress-Inf-S pron|you-Prs-Acc-S2 adp|in ?
+%gra:	1|4|OBJ 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|4|OBJ 6|4|ADVMOD 7|4|PUNCT
+*CHI:	with the white dress and [/] (.) and +... 111321_113483
+%mor:	adp|with det|the-Def-Art adj|white-S1 noun|dress cconj|and +...
+%gra:	1|4|CASE 2|4|DET 3|4|AMOD 4|0|ROOT 5|4|CC 6|4|PUNCT
+*MOT:	and did you have on a (.) xxx on your dress ? 119234_121857
+%mor:	cconj|and aux|do-Fin-Ind-Past-S2-irr pron|you-Prs-Nom-S2 verb|have-Inf-S adp|on det|a-Ind-Art adp|on pron|your-Prs-Gen-S2 noun|dress ?
+%gra:	1|4|CC 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|9|CASE 6|9|DET 7|9|CASE 8|9|NMOD-POSS 9|4|OBL 10|4|PUNCT
+*CHI:	yeah . 137089_137256
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+@End

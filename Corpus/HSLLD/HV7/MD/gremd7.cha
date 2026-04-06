@@ -1,0 +1,79 @@
+@UTF8
+@PID:	11312/c-00035965-1
+@Begin
+@Languages:	eng
+@Participants:	INV Investigator, MOT Mother
+@ID:	eng|HSLLD|INV|||||Investigator|||
+@ID:	eng|HSLLD|MOT||female|||Mother|||
+@Media:	gremd7, audio, missing
+@Date:	05-JAN-1996
+@Activities:	Mother's definitions home visit 7
+*INV:	the first word is bicycle what is a bicycle ?
+%mor:	det|the-Def-Art adj|first-S1 noun|word aux|be-Fin-Ind-Pres-S3 noun|bicycle pron|what-Int-S1 aux|be-Fin-Ind-Pres-S3 det|a-Ind-Art noun|bicycle ?
+%gra:	1|3|DET 2|3|AMOD 3|5|NSUBJ 4|5|COP 5|0|ROOT 6|5|NSUBJ 7|9|COP 8|9|DET 9|5|ACL-RELCL 10|5|PUNCT
+@Comment:	Time is 25:27
+*MOT:	it's a mode of transportation (.) <it's a &~v> [//] <a a a vehicle &-uh> [/] (.) of sorts (.) with two wheels and which you pedal with your (.) feet and you needta have balance to use it needta have balance (.) to use it .
+%mor:	pron|its-Prs-Gen-S3 det|a-Ind-Art noun|mode adp|of noun|transportation adp|of noun|sort-Plur adp|with num|two noun|wheel-Plur cconj|and pron|which-Rel-S1 pron|you-Prs-Nom-S2 verb|pedal-Fin-Ind-Pres-S2 adp|with pron|your-Prs-Gen-S2 noun|foot-Plur cconj|and pron|you-Prs-Nom-S2 aux|needta-Fin-Ind-Pres-S verb|have-Fin-Ind-Pres-S2 noun|balance-Acc part|to verb|use-Inf-S pron|it-Prs-Acc-S3 noun|needta verb|have-Fin-Ind-Pres-P3 noun|balance-Acc part|to verb|use-Inf-S pron|it-Prs-Acc-S3 .
+%gra:	1|3|NSUBJ 2|3|DET 3|0|ROOT 4|5|CASE 5|3|NMOD 6|7|CASE 7|5|NMOD 8|10|CASE 9|10|NUMMOD 10|5|NMOD 11|14|CC 12|14|OBJ 13|14|NSUBJ 14|10|ACL-RELCL 15|17|CASE 16|17|NMOD-POSS 17|14|OBL 18|21|CC 19|21|NSUBJ 20|21|AUX 21|3|CONJ 22|21|OBJ 23|24|MARK 24|22|ACL 25|24|OBJ 26|27|NSUBJ 27|21|PARATAXIS 28|27|OBJ 29|30|MARK 30|27|ADVCL 31|30|OBJ 32|3|PUNCT
+*INV:	okay which you pedal with your feet okay great !
+%mor:	intj|okay pron|which-Rel-S1 pron|you-Prs-Nom-S2 verb|pedal-Fin-Ind-Pres-S2 adp|with pron|your-Prs-Gen-S2 noun|foot-Plur adj|okay-S1 adj|great-S1 !
+%gra:	1|4|DISCOURSE 2|4|OBL 3|4|NSUBJ 4|0|ROOT 5|7|CASE 6|7|NMOD-POSS 7|4|OBL 8|9|AMOD 9|4|XCOMP 10|4|PUNCT
+*INV:	and the next word is bird what's a bird ?
+%mor:	cconj|and det|the-Def-Art adj|next-S1 noun|word aux|be-Fin-Ind-Pres-S3 noun|bird pron|what-Rel-S1 det|a-Ind-Art noun|bird ?
+%gra:	1|9|CC 2|4|DET 3|4|AMOD 4|6|NSUBJ 5|6|COP 6|0|ROOT 7|9|DISCOURSE 8|9|DET 9|6|PARATAXIS 10|6|PUNCT
+*MOT:	it's a creature (.) with wings (.) and that isn't a mammal (.) and that transcends [//] (.) back to dinosaurs and (.) I've had lots of them so I know what they are are .
+%mor:	pron|its-Prs-Gen-S3 det|a-Ind-Art noun|creature adp|with noun|wing-Plur cconj|and pron|that-Rel aux|isnt-Fin-Ind-Pres-S3 det|a-Ind-Art noun|mammal cconj|and pron|that-Dem adv|back adp|to noun|dinosaur-Plur cconj|and pron|ive-Prs-Nom-S1 verb|have-Fin-Ind-Past-S3-irr noun|lot-Plur-Acc adp|of pron|they-Prs-Acc-P3 adv|so pron|I-Prs-Nom-S1 verb|know-Fin-Ind-Pres-S1 pron|what-Rel-S1 pron|they-Prs-Nom-P3 aux|be-Fin-Ind-Pres-P3 aux|be-Fin-Ind-Pres-P3 .
+%gra:	1|3|NSUBJ 2|3|DET 3|0|ROOT 4|5|CASE 5|3|NMOD 6|10|CC 7|10|NSUBJ 8|10|COP 9|10|DET 10|3|CONJ 11|12|CC 12|10|CONJ 13|10|ADVMOD 14|15|CASE 15|10|OBL 16|18|CC 17|18|NSUBJ 18|3|CONJ 19|18|OBJ 20|21|CASE 21|19|NMOD 22|24|ADVMOD 23|24|NSUBJ 24|3|PARATAXIS 25|24|OBJ 26|28|NSUBJ 27|25|COP 28|25|ACL-RELCL 29|3|PUNCT
+*INV:	okay great and the next word is clock what is a clock ?
+%mor:	intj|okay adj|great-S1 cconj|and det|the-Def-Art adj|next-S1 noun|word aux|be-Fin-Ind-Pres-S3 noun|clock pron|what-Int-S1 aux|be-Fin-Ind-Pres-S3 det|a-Ind-Art noun|clock ?
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|8|CC 4|6|DET 5|6|AMOD 6|8|NSUBJ 7|8|COP 8|2|CONJ 9|12|NSUBJ 10|12|COP 11|12|DET 12|8|ACL-RELCL 13|2|PUNCT
+*MOT:	&-um a mode of [/] telling time an (.) object that helps you to record [/] time record time .
+%mor:	det|a-Ind-Art noun|mode verb|tell-Ger-S noun|time det|a-Ind-Art noun|object-Acc pron|that-Rel verb|help-Fin-Ind-Pres-S3 pron|you-Prs-Acc-S2 adp|to noun|time noun|record noun|time .
+%gra:	1|2|DET 2|0|ROOT 3|2|ACL 4|3|IOBJ 5|6|DET 6|3|OBJ 7|8|NSUBJ 8|6|ACL-RELCL 9|8|OBJ 10|13|CASE 11|13|COMPOUND 12|13|COMPOUND 13|8|OBL 14|2|PUNCT
+*INV:	okay and the next word is diamond what is a diamond ?
+%mor:	intj|okay cconj|and det|the-Def-Art adj|next-S1 noun|word aux|be-Fin-Ind-Pres-S3 noun|diamond pron|what-Int-S1 aux|be-Fin-Ind-Pres-S3 det|a-Ind-Art noun|diamond ?
+%gra:	1|7|DISCOURSE 2|7|CC 3|5|DET 4|5|AMOD 5|7|NSUBJ 6|7|COP 7|0|ROOT 8|7|NSUBJ 9|11|COP 10|11|DET 11|8|ACL-RELCL 12|7|PUNCT
+*MOT:	it's sposta be a girl's best friend but (.) &-um it's a carbon (.) <it's> [/] a material made of carbon and (.) it's a stone and often women wear them when (.) <they pledge> [/] to be married and they get engaged it's like a (.) promissory of future bliss but &-uh (.) let me tell you it's not always that way always that way .
+%mor:	pron|its-Prs-Gen-S3 noun|sposta aux|be-Fin-S det|a-Ind-Art adj|girls-S1 adj|good-Sup-S1 noun|friend cconj|but pron|its-Prs-Gen-S3 det|a-Ind-Art noun|carbon det|a-Ind-Art noun|material verb|make-Part-Past-S-irr adp|of noun|carbon cconj|and pron|its-Prs-Gen-S3 det|a-Ind-Art noun|stone cconj|and adv|often noun|woman-Plur verb|wear-Fin-Ind-Pres-P3 pron|they-Prs-Acc-P3 adv|when part|to aux|be-Inf-S adj|married-S1 cconj|and pron|they-Prs-Nom-P3 aux|get-Fin-Ind-Pres-P3 verb|engage-Part-Past-S pron|its-Prs-Gen-S3 adp|like det|a-Ind-Art noun|promissory adp|of adj|future-S1 noun|bliss cconj|but verb|let-Fin-Imp-S pron|I-Prs-Acc-S1 verb|tell-Inf-S pron|you-Prs-Acc-S2 aux|its-Fin-Ind-Pres-S3 part|not adv|always det|that-Def-Dem-Sing noun|way adv|always det|that-Def-Dem-Sing noun|way .
+%gra:	1|2|NMOD-POSS 2|7|NSUBJ 3|7|COP 4|7|DET 5|7|AMOD 6|7|AMOD 7|0|ROOT 8|13|CC 9|13|NMOD-POSS 10|11|DET 11|13|CONJ 12|13|DET 13|7|CONJ 14|13|ACL 15|16|CASE 16|14|OBL 17|24|CC 18|20|NMOD-POSS 19|20|DET 20|13|CONJ 21|24|CC 22|23|ADVMOD 23|24|NSUBJ 24|7|CONJ 25|24|OBJ 26|29|ADVMOD 27|29|MARK 28|29|COP 29|24|ADVCL 30|33|CC 31|33|NSUBJ-PASS 32|33|AUX-PASS 33|24|CONJ 34|37|NMOD-POSS 35|37|CASE 36|37|DET 37|33|OBL 38|40|CASE 39|40|AMOD 40|37|NMOD 41|42|CC 42|33|CONJ 43|42|OBJ 44|42|XCOMP 45|44|IOBJ 46|50|COP 47|50|ADVMOD 48|50|ADVMOD 49|50|DET 50|44|CCOMP 51|53|ADVMOD 52|53|DET 53|50|NMOD-UNMARKED 54|7|PUNCT
+*INV:	okay thanks and donkey what's a donkey .
+%mor:	intj|okay noun|thanks cconj|and noun|donkey verb|what-Fin-Ind-Pres-S3 det|a-Ind-Art noun|donkey-Acc .
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|5|CC 4|5|NSUBJ 5|2|CONJ 6|7|DET 7|5|OBJ 8|2|PUNCT
+*MOT:	it's a (.) mammal that resembles the horse family (.) but it has large ears and democrats (.) are associated with this (.) well they look like a donkey some of them but (.) I'd rather deal with them than the republicans but xxx .
+%mor:	pron|its-Prs-Gen-S3 det|a-Ind-Art noun|mammal pron|that-Rel verb|resemble-Fin-Ind-Pres-S3 det|the-Def-Art noun|horse noun|family-Acc cconj|but pron|it-Prs-Nom-S3 verb|have-Fin-Ind-Pres-S3 adj|large-S1 noun|ear-Plur-Acc cconj|and propn|Democrat-Plur aux|be-Fin-Ind-Pres-P3 verb|associate-Part-Past-S adp|with pron|this-Dem-S1 adv|well pron|they-Prs-Nom-P3 verb|look-Fin-Ind-Pres-P3 adp|like det|a-Ind-Art noun|donkey det|some-Def-Ind adp|of pron|they-Prs-Acc-P3 cconj|but adv|if adv|rather verb|deal-Fin-Ind-Pres-P3 adp|with pron|they-Prs-Acc-P3 adp|than det|the-Def-Art propn|republican-Plur cconj|but .
+%gra:	1|3|NSUBJ 2|3|DET 3|0|ROOT 4|5|NSUBJ 5|3|ACL-RELCL 6|8|DET 7|8|COMPOUND 8|5|OBJ 9|11|CC 10|11|NSUBJ 11|3|CONJ 12|13|AMOD 13|11|OBJ 14|17|CC 15|17|NSUBJ-PASS 16|17|AUX-PASS 17|11|CONJ 18|19|CASE 19|17|OBL 20|17|ADVMOD 21|22|NSUBJ 22|11|PARATAXIS 23|25|CASE 24|25|DET 25|22|OBL 26|22|OBJ 27|28|CASE 28|26|NMOD 29|32|CC 30|32|ADVMOD 31|32|ADVMOD 32|22|CONJ 33|34|CASE 34|32|OBL 35|37|CASE 36|37|DET 37|32|OBL 38|3|PUNCT 39|3|PUNCT
+*INV:	okay and an alphabet what's the alphabet ?
+%mor:	intj|okay cconj|and det|a-Ind-Art noun|alphabet aux|what-Fin-Ind-Pres-S3 det|the-Def-Art noun|alphabet ?
+%gra:	1|4|DISCOURSE 2|4|CC 3|4|DET 4|0|ROOT 5|7|COP 6|7|DET 7|4|APPOS 8|4|PUNCT
+*MOT:	it's a letters [//] &-um ranging [/] from a to a that help distinguish language and words and things like (.) that linguistics I don't know don't know .
+%mor:	pron|its-Prs-Gen-S3 det|a-Ind-Art adp|from det|a-Ind-Art adp|to det|a-Ind-Art pron|that-Rel verb|help-Fin-Ind-Pres-P3 verb|distinguish-Inf-S noun|language-Acc cconj|and noun|word-Plur cconj|and noun|thing-Plur adp|like det|that-Def-Dem-Sing noun|linguistics pron|I-Prs-Nom-S1 adv|dont verb|know-Fin-Ind-Pres-S1 part|dont verb|know-Inf-S .
+%gra:	1|2|NMOD-POSS 2|0|ROOT 3|6|CASE 4|6|DET 5|6|CASE 6|2|NMOD 7|8|NSUBJ 8|6|ACL-RELCL 9|8|XCOMP 10|9|OBJ 11|12|CC 12|10|CONJ 13|14|CC 14|10|CONJ 15|17|CASE 16|17|DET 17|14|NMOD 18|20|NSUBJ 19|20|ADVMOD 20|17|ACL-RELCL 21|22|ADVMOD 22|20|XCOMP 23|2|PUNCT
+*INV:	okay great and the next word is hat what is a hat ?
+%mor:	intj|okay adj|great-S1 cconj|and det|the-Def-Art adj|next-S1 noun|word aux|be-Fin-Ind-Pres-S3 noun|hat pron|what-Int-S1 aux|be-Fin-Ind-Pres-S3 det|a-Ind-Art noun|hat ?
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|8|CC 4|6|DET 5|6|AMOD 6|8|NSUBJ 7|8|COP 8|2|CONJ 9|12|NSUBJ 10|12|COP 11|12|DET 12|8|ACL-RELCL 13|2|PUNCT
+*MOT:	something you put on your head to keep warm .
+%mor:	pron|something-Ind-S1 pron|you-Prs-Nom-S2 verb|put-Fin-Ind-Past-S2-irr adp|on pron|your-Prs-Gen-S2 noun|head part|to verb|keep-Inf-S adj|warm-S1 .
+%gra:	1|0|ROOT 2|3|NSUBJ 3|1|ACL-RELCL 4|6|CASE 5|6|NMOD-POSS 6|3|OBL 7|8|MARK 8|3|ADVCL 9|8|XCOMP 10|1|PUNCT
+*INV:	okay (.) and a knife ?
+%mor:	intj|okay cconj|and det|a-Ind-Art noun|knife ?
+%gra:	1|4|DISCOURSE 2|4|CC 3|4|DET 4|0|ROOT 5|4|PUNCT
+*MOT:	something you cut up meat with and hopefully not [/] your neighbor neighbor !
+%mor:	pron|something-Ind-S1 pron|you-Prs-Nom-S2 verb|cut-Fin-Ind-Pres-S2 adp|up noun|meat-Acc adp|with cconj|and adv|hopefully pron|your-Prs-Gen-S2 noun|neighbor noun|neighbor !
+%gra:	1|0|ROOT 2|3|NSUBJ 3|1|ACL-RELCL 4|3|COMPOUND-PRT 5|3|OBJ 6|3|OBL 7|11|CC 8|11|ADVMOD 9|11|NMOD-POSS 10|11|COMPOUND 11|1|CONJ 12|1|PUNCT
+*INV:	and a nail what is a nail ?
+%mor:	cconj|and det|a-Ind-Art noun|nail pron|what-Int-S1 aux|be-Fin-Ind-Pres-S3 det|a-Ind-Art noun|nail ?
+%gra:	1|3|CC 2|3|DET 3|0|ROOT 4|7|NSUBJ 5|7|COP 6|7|DET 7|3|ACL-RELCL 8|3|PUNCT
+*MOT:	something to help secure wood (.) <it's> [/] something to help secure wood or it's something you needta put on the wall a nail yep yep .
+%mor:	pron|something-Ind-S1 part|to verb|help-Inf-S verb|secure-Inf-S noun|wood-Acc pron|something-Ind-S1 part|to verb|help-Inf-S verb|secure-Inf-S noun|wood-Acc cconj|or pron|its-Prs-Gen-S3 pron|something-Ind-S1 pron|you-Prs-Nom-S2 aux|needta-Fin-Ind-Pres-S2 verb|put-Fin-Ind-Past-S2-irr adp|on det|the-Def-Art noun|wall det|a-Ind-Art noun|nail-Acc intj|yep intj|yep .
+%gra:	1|0|ROOT 2|3|MARK 3|1|ACL 4|3|XCOMP 5|4|OBJ 6|4|OBJ 7|8|MARK 8|4|ADVCL 9|8|XCOMP 10|9|OBJ 11|13|CC 12|13|NMOD-POSS 13|6|CONJ 14|16|NSUBJ 15|16|AUX 16|13|ACL-RELCL 17|19|CASE 18|19|DET 19|16|OBL 20|21|DET 21|16|OBJ 22|1|DISCOURSE 23|1|DISCOURSE 24|1|PUNCT
+*INV:	okay and the last word is thief what is a thief ?
+%mor:	intj|okay cconj|and det|the-Def-Art adj|last-S1 noun|word aux|be-Fin-Ind-Pres-S3 noun|thief pron|what-Int-S1 aux|be-Fin-Ind-Pres-S3 det|a-Ind-Art noun|thief ?
+%gra:	1|7|DISCOURSE 2|7|CC 3|5|DET 4|5|AMOD 5|7|NSUBJ 6|7|COP 7|0|ROOT 8|11|NSUBJ 9|11|COP 10|11|DET 11|7|ACL-RELCL 12|7|PUNCT
+*MOT:	&-uh (.) someone that takes things from others that isn't sposta (.) but doesn't belong to them (.) like you know politicians go on .
+%mor:	pron|someone-Ind-S1 pron|that-Rel verb|take-Fin-Ind-Pres-S3 noun|thing-Plur-Acc adp|from noun|other-Plur pron|that-Rel aux|isnt-Fin-Ind-Pres-P3 noun|sposta cconj|but adv|doesnt verb|belong-Inf-S adp|to pron|they-Prs-Acc-P3 sconj|like pron|you-Prs-Nom-S2 verb|know-Fin-Ind-Pres-S2 noun|politician-Plur verb|go-Fin-Ind-Pres-P3 adp|on .
+%gra:	1|0|ROOT 2|3|NSUBJ 3|1|ACL-RELCL 4|3|OBJ 5|6|CASE 6|3|OBL 7|9|NSUBJ 8|9|COP 9|6|ACL-RELCL 10|12|CC 11|12|ADVMOD 12|3|CONJ 13|14|CASE 14|12|OBL 15|17|MARK 16|17|NSUBJ 17|12|ADVCL 18|19|NSUBJ 19|17|CCOMP 20|19|COMPOUND-PRT 21|1|PUNCT
+*INV:	okay great .
+%mor:	intj|okay adj|great-S1 .
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|PUNCT
+@Comment:	Time is 28:20
+@End

@@ -1,0 +1,309 @@
+@UTF8
+@PID:	11312/c-00038027-1
+@Begin
+@Languages:	eng
+@Participants:	MOT Mother, FAT Father, CHI Target_Child
+@ID:	eng|HSLLD|MOT||female|||Mother|10||
+@ID:	eng|HSLLD|FAT||male|||Father|||
+@ID:	eng|HSLLD|CHI|3;09.14|male|||Target_Child|||
+@Birth of CHI:	25-APR-1984
+@Media:	ethbr1b, audio, missing
+@Comment:	really missing
+@Comment:	SES of Mot is lower
+@Date:	21-APR-1988
+@Activities:	Book Reading 2 , If You Give a Mouse a Cookie
+@Bg:	bookreading
+@Types:	long, book, TD
+*MOT:	you can have some sherbet .
+%mor:	pron|you-Prs-Nom-S2 aux|can-Fin-S verb|have-Inf-S det|some-Def-Ind noun|sherbet-Acc .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|PUNCT
+*MOT:	Than after I read you a story while Daddy moves the thing out of your room .
+%mor:	adv|then sconj|after pron|I-Prs-Nom-S1 verb|read-Fin-Ind-Past-S1-irr pron|you-Prs-Acc-S2 det|a-Ind-Art noun|story-Acc sconj|while propn|Daddy verb|move-Fin-Ind-Pres-S3 det|the-Def-Art noun|thing-Acc-Ger adp|out adp|of pron|your-Prs-Gen-S2 noun|room .
+%gra:	1|4|ADVMOD 2|4|MARK 3|4|NSUBJ 4|0|ROOT 5|4|IOBJ 6|7|DET 7|4|OBJ 8|10|MARK 9|10|NSUBJ 10|4|ADVCL 11|12|DET 12|10|OBJ 13|16|CASE 14|16|CASE 15|16|NMOD-POSS 16|10|OBL 17|4|PUNCT
+*FAT:	xxx .
+*MOT:	if you give a mouse a cookie . [+ read]
+%mor:	sconj|if pron|you-Prs-Nom-S2 verb|give-Fin-Ind-Pres-S2 det|a-Ind-Art noun|mouse-Acc det|a-Ind-Art noun|cookie-Acc .
+%gra:	1|3|MARK 2|3|NSUBJ 3|0|ROOT 4|5|DET 5|3|OBJ 6|7|DET 7|3|OBJ 8|3|PUNCT
+*MOT:	if you give a mouse a cookie +...
+%mor:	sconj|if pron|you-Prs-Nom-S2 verb|give-Fin-Ind-Pres-S2 det|a-Ind-Art noun|mouse-Acc det|a-Ind-Art noun|cookie-Acc +...
+%gra:	1|3|MARK 2|3|NSUBJ 3|0|ROOT 4|5|DET 5|3|OBJ 6|7|DET 7|3|OBJ 8|3|PUNCT
+@Comment:	Time is 43:48
+*MOT:	he's going to ask for a glass of milk . [+ read] [+ nv]
+%mor:	noun|he-Plur verb|go-Part-Pres-S part|to verb|ask-Inf-S adp|for det|a-Ind-Art noun|glass adp|of noun|milk .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|MARK 4|2|XCOMP 5|7|CASE 6|7|DET 7|4|OBL 8|9|CASE 9|7|NMOD 10|2|PUNCT
+*MOT:	when you give him the milk (.) he'll probably ask you for a straw .
+%mor:	adv|when pron|you-Prs-Nom-S2 verb|give-Fin-Ind-Pres-S2 pron|he-Prs-Acc-S3 det|the-Def-Art noun|milk noun|hell-Acc adv|probably verb|ask-Fin-Ind-Pres-S pron|you-Prs-Acc-S2 adp|for det|a-Ind-Art noun|straw .
+%gra:	1|3|ADVMOD 2|3|NSUBJ 3|9|ADVCL 4|3|IOBJ 5|7|DET 6|7|COMPOUND 7|3|OBJ 8|9|ADVMOD 9|0|ROOT 10|9|IOBJ 11|13|CASE 12|13|DET 13|9|OBL 14|9|PUNCT
+*FAT:	xxx .
+%sit:	rustling sounds as though Fat working on something
+*MOT:	when he finished he'll ask for a napkin .
+%mor:	adv|when pron|he-Prs-Nom-S3 verb|finish-Fin-Ind-Past-S3 noun|hell-Acc verb|ask-Inf-S adp|for det|a-Ind-Art noun|napkin .
+%gra:	1|3|ADVMOD 2|3|NSUBJ 3|5|ADVCL 4|3|OBJ 5|0|ROOT 6|8|CASE 7|8|DET 8|5|OBL 9|5|PUNCT
+*MOT:	then he'll wanna look in a mirror to make sure that he doesn't have a milk mustache (.) .
+%mor:	adv|then intj|hell aux|wanna-Fin-S verb|look-Inf-Imp-S adp|in det|a-Ind-Art noun|mirror part|to verb|make-Inf-S adj|sure-S1 sconj|that pron|he-Prs-Nom-S3 adv|doesnt verb|have-Fin-Ind-Pres-S det|a-Ind-Art noun|milk noun|mustache-Acc .
+%gra:	1|4|ADVMOD 2|4|DISCOURSE 3|4|AUX 4|0|ROOT 5|7|CASE 6|7|DET 7|4|OBL 8|9|MARK 9|4|ADVCL 10|9|XCOMP 11|14|MARK 12|14|NSUBJ 13|14|ADVMOD 14|10|CCOMP 15|17|DET 16|17|COMPOUND 17|14|OBJ 18|4|PUNCT
+*MOT:	but I think he does .
+%par:	conspiritorial tone
+%mor:	cconj|but pron|I-Prs-Nom-S1 verb|think-Fin-Ind-Pres-S1 pron|he-Prs-Nom-S3 aux|do-Fin-Ind-Pres-S3 .
+%gra:	1|3|CC 2|3|NSUBJ 3|0|ROOT 4|5|NSUBJ 5|3|CCOMP 6|3|PUNCT
+*MOT:	but when he looks in the mirror (.) he might notice his hair needs a trim .
+%mor:	cconj|but adv|when pron|he-Prs-Nom-S3 verb|look-Fin-Ind-Pres-S3 adp|in det|the-Def-Art noun|mirror pron|he-Prs-Nom-S3 aux|might-Fin-S verb|notice-Inf-S pron|his-Prs-Gen-S3 noun|hair verb|need-Fin-Ind-Pres-S3 det|a-Ind-Art noun|trim-Acc .
+%gra:	1|10|CC 2|4|ADVMOD 3|4|NSUBJ 4|10|ADVCL 5|7|CASE 6|7|DET 7|4|OBL 8|10|NSUBJ 9|10|AUX 10|0|ROOT 11|12|NMOD-POSS 12|13|NSUBJ 13|10|CCOMP 14|15|DET 15|13|OBJ 16|10|PUNCT
+*MOT:	so he'll probably ask for a pair of scissors .
+%int:	<1> lengthened
+%mor:	adv|so adv|hell adv|probably verb|ask-Fin-Ind-Pres-S adp|for det|a-Ind-Art noun|pair adp|of noun|scissors-Plur .
+%gra:	1|4|ADVMOD 2|4|ADVMOD 3|4|ADVMOD 4|0|ROOT 5|7|CASE 6|7|DET 7|4|OBL 8|9|CASE 9|7|NMOD 10|4|PUNCT
+*MOT:	when he's finished giving himself a trim he'll want a broom to sweep up .
+%mor:	adv|when noun|he-Plur verb|finish-Fin-Ind-Past-S3 verb|give-Ger-S pron|himself-Prs-Acc-reflx-S3 det|a-Ind-Art noun|trim noun|hell-Acc verb|want-Inf-Ind-S det|a-Ind-Art noun|broom-Acc part|to verb|sweep-Inf-S adp|up .
+%gra:	1|3|ADVMOD 2|3|NSUBJ 3|9|ADVCL 4|3|XCOMP 5|4|IOBJ 6|8|DET 7|8|COMPOUND 8|4|OBJ 9|0|ROOT 10|11|DET 11|9|OBJ 12|13|MARK 13|11|ACL 14|13|COMPOUND-PRT 15|9|PUNCT
+*MOT:	oh_goodness !
+%mor:	propn|ohgoodness !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	will you look at all that hair !
+%mor:	aux|will-Fin-S pron|you-Prs-Nom-S2 verb|look-Inf-S adp|at det|all-Def-Tot det|that-Def-Dem-Sing noun|hair !
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|7|CASE 5|7|DET-PREDET 6|7|DET 7|3|OBL 8|3|PUNCT
+*MOT:	did you ever think a mouse would have so much hair to trim ?
+%mor:	aux|do-Fin-Ind-Past-S2-irr pron|you-Prs-Nom-S2 adv|ever verb|think-Inf-S det|a-Ind-Art noun|mouse aux|would-Fin-S verb|have-Inf-S adv|so adj|much-S1 noun|hair-Acc part|to verb|trim-Inf-S ?
+%gra:	1|4|AUX 2|4|NSUBJ 3|4|ADVMOD 4|0|ROOT 5|6|DET 6|8|NSUBJ 7|8|AUX 8|4|CCOMP 9|10|ADVMOD 10|11|AMOD 11|8|OBJ 12|13|MARK 13|8|ADVCL 14|4|PUNCT
+*CHI:	no .
+%par:	hiccups at same time
+%mor:	intj|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	no ?
+%mor:	intj|no ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	well he'll start sweeping .
+%mor:	intj|well intj|hell verb|start-Fin-Imp-S verb|sweep-Ger-S .
+%gra:	1|3|DISCOURSE 2|3|DISCOURSE 3|0|ROOT 4|3|XCOMP 5|3|PUNCT
+*MOT:	he might get carried away and sweep every room in the house !
+%mor:	pron|he-Prs-Nom-S3 aux|might-Fin-S aux|get-Inf-S verb|carry-Part-Past-S adv|away cconj|and verb|sweep-Inf-S det|every-Def-Tot noun|room-Acc adp|in det|the-Def-Art noun|house !
+%gra:	1|4|NSUBJ-PASS 2|4|AUX 3|4|AUX-PASS 4|0|ROOT 5|4|ADVMOD 6|7|CC 7|4|CONJ 8|9|DET 9|7|OBJ 10|12|CASE 11|12|DET 12|7|OBL 13|4|PUNCT
+*MOT:	wow !
+%mor:	intj|wow !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	what do you think of that ?
+%mor:	pron|what-Int-S1 aux|do-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 verb|think-Inf-S adp|of pron|that-Dem ?
+%gra:	1|4|OBJ 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|6|CASE 6|4|OBL 7|4|PUNCT
+*CHI:	funny .
+%mor:	adj|funny-S1 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	he might even end up washing the floors as well .
+%mor:	pron|he-Prs-Nom-S3 aux|might-Fin-S adv|even verb|end-Inf-S adp|up verb|wash-Ger-S det|the-Def-Art noun|floor-Plur-Acc adv|as adv|well .
+%gra:	1|4|NSUBJ 2|4|AUX 3|4|ADVMOD 4|0|ROOT 5|4|COMPOUND-PRT 6|4|XCOMP 7|8|DET 8|6|OBJ 9|6|ADVMOD 10|9|FIXED 11|4|PUNCT
+*MOT:	look !
+%par:	laughs
+%mor:	verb|look-Fin-Imp-S !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	he's sliding around on his sponge !
+%mor:	noun|he-Plur verb|slide-Part-Pres-S adv|around adp|on pron|his-Prs-Gen-S3 noun|sponge !
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|ADVMOD 4|6|CASE 5|6|NMOD-POSS 6|2|OBL 7|2|PUNCT
+*MOT:	when he's done (.) he'll probably wanna take a nap (.) <on the cleanser> [>] .
+%mor:	adv|when noun|he-Plur verb|do-Part-Past-S-irr noun|hell-Acc adv|probably aux|wanna-Fin-S verb|take-Inf-S det|a-Ind-Art noun|nap-Acc adp|on det|the-Def-Art noun|cleanser .
+%gra:	1|3|ADVMOD 2|3|NSUBJ 3|7|ADVCL 4|3|OBJ 5|7|ADVMOD 6|7|AUX 7|0|ROOT 8|9|DET 9|7|OBJ 10|12|CASE 11|12|DET 12|7|OBL 13|7|PUNCT
+*CHI:	<and why does he do that> [<] ?
+%mor:	cconj|and adv|why aux|do-Fin-Ind-Pres-S3 pron|he-Prs-Nom-S3 verb|do-Inf-S pron|that-Dem ?
+%gra:	1|5|CC 2|5|ADVMOD 3|5|AUX 4|5|NSUBJ 5|0|ROOT 6|5|OBJ 7|5|PUNCT
+*MOT:	he's so tired he just washed all the floors in the house !
+%mor:	noun|he-Plur adv|so adj|tired-S1 pron|he-Prs-Nom-S3 adv|just verb|wash-Fin-Ind-Past-S3 det|all-Def-Tot det|the-Def-Art noun|floor-Plur-Acc adp|in det|the-Def-Art noun|house !
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|6|NSUBJ 5|6|ADVMOD 6|3|CCOMP 7|9|DET-PREDET 8|9|DET 9|6|OBJ 10|12|CASE 11|12|DET 12|6|OBL 13|3|PUNCT
+*MOT:	just a little mouse !
+%mor:	adv|just det|a-Ind-Art adj|little-S1 noun|mouse !
+%gra:	1|4|ADVMOD 2|4|DET 3|4|AMOD 4|0|ROOT 5|4|PUNCT
+*FAT:	xxx .
+%sit:	offstage
+*CHI:	zzz .
+%par:	small squeak
+%mor:	intj|zzz .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	you'll hafta fix up a little box for him with a blanket and a pillow . [+ read]
+%mor:	intj|youll intj|hafta verb|fix-Fin-Imp-S adp|up det|a-Ind-Art adj|little-S1 noun|box-Acc adp|for pron|he-Prs-Acc-S3 adp|with det|a-Ind-Art noun|blanket cconj|and det|a-Ind-Art noun|pillow .
+%gra:	1|3|DISCOURSE 2|3|DISCOURSE 3|0|ROOT 4|3|COMPOUND-PRT 5|7|DET 6|7|AMOD 7|3|OBJ 8|9|CASE 9|7|NMOD 10|12|CASE 11|12|DET 12|3|OBL 13|15|CC 14|15|DET 15|12|CONJ 16|3|PUNCT
+*MOT:	and see the boy takes his powder out (.) and cleans it up so (.) that (.) the mouse can sleep .
+%mor:	cconj|and verb|see-Fin-Imp-S det|the-Def-Art noun|boy verb|take-Fin-Ind-Pres-S3 pron|his-Prs-Gen-S3 noun|powder-Acc adp|out cconj|and verb|clean-Fin-Ind-Pres-S3 pron|it-Prs-Acc-S3 adp|up sconj|so sconj|that det|the-Def-Art noun|mouse aux|can-Fin-S verb|sleep-Inf-S .
+%gra:	1|2|CC 2|0|ROOT 3|4|DET 4|5|NSUBJ 5|2|CCOMP 6|7|NMOD-POSS 7|5|OBJ 8|5|COMPOUND-PRT 9|10|CC 10|5|CONJ 11|10|OBJ 12|10|COMPOUND-PRT 13|18|MARK 14|13|FIXED 15|16|DET 16|18|NSUBJ 17|18|AUX 18|10|ADVCL 19|2|PUNCT
+*CHI:	uhhuh .
+%mor:	intj|uhhuh .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	he'll crawl in make himself comfortable and fluff the pillow a few times .
+%mor:	intj|hell verb|crawl-Fin-Imp-S adp|in verb|make-Fin-Imp-S pron|himself-Prs-Acc-reflx-S3 adj|comfortable-S1 cconj|and verb|fluff-Fin-Imp-S det|the-Def-Art noun|pillow-Acc det|a-Ind-Art adj|few-S1 noun|time-Plur .
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|ADVMOD 4|2|XCOMP 5|4|OBJ 6|4|XCOMP 7|8|CC 8|4|CONJ 9|10|DET 10|8|OBJ 11|13|DET 12|13|AMOD 13|8|OBL-UNMARKED 14|2|PUNCT
+*MOT:	zzz .
+%par:	sound of surprise
+%mor:	intj|zzz .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	the powderpuff pillow .
+%mor:	det|the-Def-Art noun|powderpuff noun|pillow .
+%gra:	1|3|DET 2|3|COMPOUND 3|0|ROOT 4|3|PUNCT
+*MOT:	then he'll probably ask you to read him a story (.) .
+%mor:	adv|then pron|hell-Prs-Nom-S1 adv|probably verb|ask-Fin-Ind-Pres-S pron|you-Prs-Acc-S2 part|to verb|read-Inf-S pron|he-Prs-Acc-S3 det|a-Ind-Art noun|story-Acc .
+%gra:	1|4|ADVMOD 2|4|NSUBJ 3|4|ADVMOD 4|0|ROOT 5|4|IOBJ 6|7|MARK 7|4|XCOMP 8|7|IOBJ 9|10|DET 10|7|OBJ 11|4|PUNCT
+*MOT:	so you'll read to him from one of your books .
+%mor:	adv|so intj|youll verb|read-Fin-Imp-S adp|to pron|he-Prs-Acc-S3 adp|from num|one adp|of pron|your-Prs-Gen-S2 noun|book-Plur .
+%gra:	1|3|DISCOURSE 2|3|DISCOURSE 3|0|ROOT 4|5|CASE 5|3|OBL 6|7|CASE 7|3|OBL 8|10|CASE 9|10|NMOD-POSS 10|7|NMOD 11|3|PUNCT
+*MOT:	and he'll ask to see the pictures .
+%mor:	cconj|and intj|hell verb|ask-Fin-Imp-S part|to verb|see-Inf-S det|the-Def-Art noun|picture-Plur-Acc .
+%gra:	1|3|CC 2|3|DISCOURSE 3|0|ROOT 4|5|MARK 5|3|XCOMP 6|7|DET 7|5|OBJ 8|3|PUNCT
+*MOT:	zzz .
+%par:	sound of surprise
+%mor:	intj|zzz .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	when he goes to look at the pictures he'll get so excited he'll wanna draw one of his own .
+%mor:	adv|when pron|he-Prs-Nom-S3 verb|go-Fin-Ind-Pres-S3 part|to verb|look-Inf-S adp|at det|the-Def-Art noun|picture-Plur adv|hell verb|get-Fin-Ind-Pres-S3 adv|so adj|excited-S1 intj|hell aux|wanna-Fin-S verb|draw-Inf-S num|one adp|of pron|his-Prs-Gen-S3 adj|own-S1 .
+%gra:	1|3|ADVMOD 2|3|NSUBJ 3|10|ADVCL 4|5|MARK 5|3|XCOMP 6|8|CASE 7|8|DET 8|5|OBL 9|10|ADVMOD 10|0|ROOT 11|12|ADVMOD 12|10|XCOMP 13|15|DISCOURSE 14|15|AUX 15|10|PARATAXIS 16|15|OBJ 17|19|CASE 18|19|NMOD-POSS 19|16|NMOD 20|10|PUNCT
+*MOT:	he'll ask for paper and crayons . [+ reads]
+%mor:	pron|hell-Prs-Nom-S1 verb|ask-Fin-Ind-Pres-S adp|for noun|paper cconj|and noun|crayon-Plur .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|CASE 4|2|OBL 5|6|CC 6|4|CONJ 7|2|PUNCT
+*MOT:	he'll draw a picture . [+ read]
+%mor:	pron|hell-Prs-Nom-S1 verb|draw-Fin-Imp-S det|a-Ind-Art noun|picture-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|PUNCT
+*CHI:	of what ?
+%mor:	adp|of pron|what-Int-S1 ?
+%gra:	1|2|CASE 2|0|ROOT 3|2|PUNCT
+*MOT:	what do you think he would draw a picture of ?
+%mor:	pron|what-Int-S1 aux|do-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 verb|think-Inf-S pron|he-Prs-Nom-S3 aux|would-Fin-S verb|draw-Inf-S det|a-Ind-Art noun|picture-Acc adp|of ?
+%gra:	1|7|OBJ 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|7|NSUBJ 6|7|AUX 7|4|CCOMP 8|9|DET 9|7|OBJ 10|1|CASE 11|4|PUNCT
+*CHI:	a family !
+%mor:	det|a-Ind-Art noun|family !
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*MOT:	a family ?
+%mor:	det|a-Ind-Art noun|family ?
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*MOT:	a person family ?
+%mor:	det|a-Ind-Art noun|person noun|family ?
+%gra:	1|3|DET 2|3|COMPOUND 3|0|ROOT 4|3|PUNCT
+*CHI:	no (.) mouse family .
+%mor:	det|no-Def-Neg noun|mouse noun|family .
+%gra:	1|3|DET 2|3|COMPOUND 3|0|ROOT 4|3|PUNCT
+*MOT:	oh let us see .
+%par:	<1> lengthened
+%mor:	intj|oh verb|let-Fin-Imp-S pron|we-Prs-Acc-P1 verb|see-Inf-S .
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|OBJ 4|2|XCOMP 5|2|PUNCT
+*MOT:	zzz .
+%par:	sharp intake of breath
+%mor:	intj|zzz .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	yeah [>] .
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	<you're> [<] right !
+%mor:	intj|your adj|right-S1 !
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|PUNCT
+*MOT:	when the picture's finished (.) he'll wanna sign his name .
+%mor:	adv|when det|the-Def-Art noun|picture-Plur verb|finish-Fin-Ind-Past-S3 noun|hell-Acc aux|wanna-Fin-S verb|sign-Inf-S pron|his-Prs-Gen-S3 noun|name-Acc .
+%gra:	1|4|ADVMOD 2|3|DET 3|4|NSUBJ 4|7|ADVCL 5|4|OBJ 6|7|AUX 7|0|ROOT 8|9|NMOD-POSS 9|7|OBJ 10|7|PUNCT
+*MOT:	see himself ?
+%mor:	verb|see-Fin-Imp-S pron|himself-Prs-Acc-reflx-S3 ?
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*MOT:	there's himself huh ?
+%mor:	verb|there-Fin-Ind-Pres-S3 pron|himself-Prs-Acc-reflx-S3 intj|huh ?
+%gra:	1|0|ROOT 2|1|OBJ 3|1|OBJ 4|1|PUNCT
+@Comment:	Time is 0:00
+*MOT:	then he'll wanna hang his picture on your refrigerator . [+ read]
+%mor:	adv|then pron|hell-Prs-Nom-S2 aux|wanna-Fin-S verb|hang-Inf-S pron|his-Prs-Gen-S3 noun|picture-Acc adp|on pron|your-Prs-Gen-S2 noun|refrigerator .
+%gra:	1|4|ADVMOD 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|6|NMOD-POSS 6|4|OBJ 7|9|CASE 8|9|NMOD-POSS 9|4|OBL 10|4|PUNCT
+*CHI:	with some tape .
+%mor:	adp|with det|some-Def-Ind noun|tape .
+%gra:	1|3|CASE 2|3|DET 3|0|ROOT 4|3|PUNCT
+*MOT:	which means he'll need +...
+%int:	each word emphasized , anticipated
+%act:	turns page
+%mor:	pron|which-Rel-S1 verb|mean-Fin-Ind-Pres-S3 noun|hell-Acc verb|need-Fin-Ind-Pres-S3 +...
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|XCOMP 5|2|PUNCT
+*CHI:	++ tape .
+%mor:	noun|tape .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	+" that's right !
+%mor:	aux|that-Fin-Ind-Pres-S3 adj|right-S1 !
+%gra:	1|2|COP 2|0|ROOT 3|2|PUNCT
+*MOT:	that's right .
+%mor:	aux|that-Fin-Ind-Pres-S3 adj|right-S1 .
+%gra:	1|2|COP 2|0|ROOT 3|2|PUNCT
+*MOT:	you knew it .
+%mor:	pron|you-Prs-Nom-S2 verb|know-Fin-Ind-Past-S2-irr pron|it-Prs-Acc-S3 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*MOT:	he needs Scotch tape .
+%mor:	pron|he-Prs-Nom-S3 verb|need-Fin-Ind-Pres-S3 propn|Scotch noun|tape-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|COMPOUND 4|2|OBJ 5|2|PUNCT
+*MOT:	see the boy throws it to the mouse .
+%mor:	verb|see-Fin-Imp-S det|the-Def-Art noun|boy verb|throw-Fin-Ind-Pres-S3 pron|it-Prs-Acc-S3 adp|to det|the-Def-Art noun|mouse .
+%gra:	1|0|ROOT 2|3|DET 3|4|NSUBJ 4|1|CCOMP 5|4|OBJ 6|8|CASE 7|8|DET 8|4|OBL 9|1|PUNCT
+*MOT:	hang up his drawing and stand back to look at it .
+%mor:	verb|hang-Fin-Imp-S adp|up pron|his-Prs-Gen-S3 noun|draw-Acc-Ger cconj|and verb|stand-Fin-Imp-S adv|back part|to verb|look-Inf-S adp|at pron|it-Prs-Acc-S3 .
+%gra:	1|0|ROOT 2|1|COMPOUND-PRT 3|4|NMOD-POSS 4|1|OBJ 5|6|CC 6|1|CONJ 7|6|ADVMOD 8|9|MARK 9|6|ADVCL 10|11|CASE 11|9|OBL 12|1|PUNCT
+*MOT:	looking at the refrigerator will remind him +...
+%par:	laughingly
+%mor:	verb|look-Part-Pres-S adp|at det|the-Def-Art noun|refrigerator aux|will-Fin-S verb|remind-Inf-S pron|he-Prs-Acc-S3 +...
+%gra:	1|6|CSUBJ 2|4|CASE 3|4|DET 4|1|OBL 5|6|AUX 6|0|ROOT 7|6|IOBJ 8|6|PUNCT
+*CHI:	a drink .
+%mor:	det|a-Ind-Art noun|drink .
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*MOT:	<that@q> [<] +...
+%act:	aft turns page
+%mor:	pron|that-Dem +...
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	zzz .
+%par:	sharp intake of breath
+%mor:	intj|zzz .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	he's thirsty !
+%mor:	noun|he-Plur adj|thirsty-S1 !
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|PUNCT
+*CHI:	zzz .
+%par:	sound of agreement
+%mor:	intj|zzz .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	so@q +...
+%par:	lengthened
+%mor:	adv|so +...
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	drink .
+%mor:	verb|drink-Fin-Imp-S .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	he'll ask for a glass of milk . [+ read]
+%par:	aft laughs
+%mor:	pron|hell-Prs-Nom-S1 verb|ask-Fin-Ind-Pres-S3 adp|for det|a-Ind-Art noun|glass adp|of noun|milk .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|5|CASE 4|5|DET 5|2|OBL 6|7|CASE 7|5|NMOD 8|2|PUNCT
+*CHI:	again !
+%mor:	adv|again !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	chances are he asks for a glass of milk .
+%par:	laughingly
+%mor:	noun|chance-Plur aux|be-Fin-Ind-Pres-P3 pron|he-Prs-Nom-S3 verb|ask-Fin-Ind-Pres-S3 adp|for det|a-Ind-Art noun|glass adp|of noun|milk .
+%gra:	1|4|NSUBJ-OUTER 2|4|COP 3|4|NSUBJ 4|0|ROOT 5|7|CASE 6|7|DET 7|4|OBL 8|9|CASE 9|7|NMOD 10|4|PUNCT
+*MOT:	xxx .
+*CHI:	I want cookie .
+%mor:	pron|I-Prs-Nom-S1 verb|want-Fin-Ind-Pres-S1 noun|cookie-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*MOT:	yes .
+%mor:	intj|yes .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	oh my !
+%mor:	intj|oh pron|my-Prs-Gen-S1 !
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|PUNCT
+*MOT:	that boy had a long day with the mouse .
+%mor:	sconj|that noun|boy verb|have-Fin-Ind-Past-S3-irr det|a-Ind-Art adj|long-S1 noun|day-Acc adp|with det|the-Def-Art noun|mouse .
+%gra:	1|3|MARK 2|3|NSUBJ 3|0|ROOT 4|6|DET 5|6|AMOD 6|3|OBJ 7|9|CASE 8|9|DET 9|6|NMOD 10|3|PUNCT
+*MOT:	that's xxx the end .
+%mor:	pron|that-Dem~aux|be-Fin-Ind-Pres-S3 det|the-Def-Art noun|end .
+%gra:	1|4|NSUBJ 2|4|COP 3|4|DET 4|0|ROOT 5|4|PUNCT
+*CHI:	Ma gesundheit .
+%mor:	propn|ma x|gesundheit .
+%gra:	1|0|ROOT 2|1|FLAT 3|1|PUNCT
+*MOT:	it says if you give a mouse a cookie he's going to ask for a glass of milk .
+%mor:	pron|it-Prs-Nom-S3 verb|say-Fin-Ind-Pres-S3 sconj|if pron|you-Prs-Nom-S2 verb|give-Fin-Ind-Pres-S2 det|a-Ind-Art noun|mouse det|a-Ind-Art noun|cookie-Acc noun|he-Plur-Acc verb|go-Part-Pres-S part|to verb|ask-Inf-S adp|for det|a-Ind-Art noun|glass adp|of noun|milk .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|5|MARK 4|5|NSUBJ 5|2|CCOMP 6|7|DET 7|5|IOBJ 8|10|DET 9|5|OBJ 10|5|OBJ 11|5|XCOMP 12|13|MARK 13|11|XCOMP 14|16|CASE 15|16|DET 16|13|OBL 17|18|CASE 18|16|NMOD 19|2|PUNCT
+*MOT:	and that's only the beginning .
+%mor:	cconj|and aux|that-Fin-Ind-Pres-S3 adv|only det|the-Def-Art noun|beginning-Ger .
+%gra:	1|5|CC 2|5|COP 3|5|ADVMOD 4|5|DET 5|0|ROOT 6|5|PUNCT
+*MOT:	those are the people that make the book .
+%mor:	pron|that-Dem-P1 aux|be-Fin-Ind-Pres-P3 det|the-Def-Art noun|person-Plur pron|that-Rel verb|make-Fin-Ind-Pres-P3 det|the-Def-Art noun|book-Acc .
+%gra:	1|4|NSUBJ 2|4|COP 3|4|DET 4|0|ROOT 5|6|NSUBJ 6|4|ACL-RELCL 7|8|DET 8|6|OBJ 9|4|PUNCT
+*CHI:	oh yeah .
+%mor:	intj|oh intj|yeah .
+%gra:	1|0|ROOT 2|1|DISCOURSE 3|1|PUNCT
+*CHI:	now sherbet ?
+%mor:	adv|now noun|sherbet ?
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+@Comment:	Time is 1:30
+@Eg:	bookreading
+@End

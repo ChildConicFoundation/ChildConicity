@@ -1,0 +1,85 @@
+@UTF8
+@PID:	11312/c-00035964-1
+@Begin
+@Languages:	eng
+@Participants:	INV Investigator, MOT Mother
+@ID:	eng|HSLLD|INV|||||Investigator|||
+@ID:	eng|HSLLD|MOT||female|||Mother|||
+@Media:	geomd7, audio, missing
+@Date:	23-AUG-1995
+@Activities:	Mother's definitions home visit 7
+*INV:	well the first one's bicycle what's a bicycle ?
+%mor:	intj|well det|the-Def-Art adj|first-S1 noun|one noun|bicycle verb|what-Fin-Ind-Pres-S3 det|a-Ind-Art noun|bicycle-Acc ?
+%gra:	1|6|DISCOURSE 2|5|DET 3|5|AMOD 4|5|COMPOUND 5|6|NSUBJ 6|0|ROOT 7|8|DET 8|6|OBJ 9|6|PUNCT
+@Comment:	Time is 0:26
+*MOT:	what is a bicycle ?
+%mor:	pron|what-Int-S1 aux|be-Fin-Ind-Pres-S3 det|a-Ind-Art noun|bicycle ?
+%gra:	1|0|ROOT 2|4|COP 3|4|DET 4|1|NSUBJ 5|1|PUNCT
+*INV:	mhm .
+%mor:	intj|mhm .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	<a two &-um (.) wheeled vehicle &-um (.) &-um you know to ride> [/] (.) on for fun vehicle &-um <you know it's &-uh (.) for> [//] you know for [/] <for fun> [//] to ride on for fun .
+%mor:	adp|on adp|for noun|fun noun|vehicle pron|you-Prs-Nom-S2 verb|know-Fin-Ind-Pres-S2 part|to verb|ride-Inf-S adp|on adp|for noun|fun .
+%gra:	1|4|CASE 2|4|CASE 3|4|COMPOUND 4|6|OBL 5|6|NSUBJ 6|0|ROOT 7|8|MARK 8|6|XCOMP 9|8|COMPOUND-PRT 10|11|CASE 11|8|OBL 12|6|PUNCT
+*INV:	okay great bird (.) what's a bird ?
+%mor:	intj|okay adj|great-S1 noun|bird noun|what-Plur det|a-Ind-Art noun|bird ?
+%gra:	1|4|DISCOURSE 2|4|AMOD 3|4|COMPOUND 4|0|ROOT 5|6|DET 6|4|APPOS 7|4|PUNCT
+*MOT:	&-um (.) 0 (..) &-um <I can't xxx> [=! laughs embarassedly] (..) it's &-um (..) an &-um (.) an &~an &-um animal that &~gen generally flies (.) sings .
+%mor:	pron|I-Prs-Nom-S1 aux|cant-Fin-S pron|its-Prs-Nom-S3 det|a-Ind-Art det|a-Ind-Art noun|animal pron|that-Rel adv|generally verb|fly-Fin-Ind-Pres-S3 noun|sing-Plur-Acc .
+%gra:	1|6|NSUBJ 2|6|AUX 3|6|NSUBJ 4|6|DET 5|6|DET 6|0|ROOT 7|9|NSUBJ 8|9|ADVMOD 9|6|ACL-RELCL 10|9|OBJ 11|6|PUNCT
+*INV:	uhhuh a clock what's a clock ?
+%mor:	intj|uhhuh det|a-Ind-Art noun|clock pron|what-Rel-S1 det|a-Ind-Art noun|clock ?
+%gra:	1|3|DISCOURSE 2|3|DET 3|0|ROOT 4|3|APPOS 5|6|DET 6|3|APPOS 7|3|PUNCT
+*MOT:	&-um (..) an instrument useta keep time (.) for twenty four hours or twelve hours whatever .
+%mor:	det|a-Ind-Art noun|instrument noun|useta verb|keep-Fin-Ind-S noun|time-Acc adp|for num|twenty num|four noun|hour-Plur cconj|or num|twelve noun|hour-Plur pron|whatever-Int-S1 .
+%gra:	1|3|DET 2|3|COMPOUND 3|4|NSUBJ 4|0|ROOT 5|4|OBJ 6|9|CASE 7|8|COMPOUND 8|9|NUMMOD 9|4|OBL 10|12|CC 11|12|NUMMOD 12|9|CONJ 13|9|APPOS 14|4|PUNCT
+*INV:	uhhuh a diamond (.) a diamond .
+%mor:	intj|uhhuh det|a-Ind-Art noun|diamond det|a-Ind-Art noun|diamond .
+%gra:	1|3|DISCOURSE 2|3|DET 3|0|ROOT 4|5|DET 5|3|APPOS 6|3|PUNCT
+*MOT:	0 [=! clears throat] (..) <it's> [/] one of the hardest (.) gems &-um gems .
+%mor:	num|one adp|of det|the-Def-Art adj|hard-Sup-S1 noun|gem-Plur noun|gem-Plur .
+%gra:	1|0|ROOT 2|6|CASE 3|6|DET 4|6|AMOD 5|6|COMPOUND 6|1|NMOD 7|1|PUNCT
+*INV:	mhm mhm and a donkey what's a donkey ?
+%mor:	intj|mhm intj|mhm cconj|and det|a-Ind-Art noun|donkey pron|what-Rel-S1 det|a-Ind-Art noun|donkey ?
+%gra:	1|5|DISCOURSE 2|0|ROOT 3|5|CC 4|5|DET 5|2|CONJ 6|8|NSUBJ 7|8|DET 8|5|APPOS 9|2|PUNCT
+*MOT:	a mule .
+%mor:	det|a-Ind-Art noun|mule .
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*INV:	uhhuh and the alphabet ?
+%mor:	intj|uhhuh cconj|and det|the-Def-Art noun|alphabet ?
+%gra:	1|0|ROOT 2|4|CC 3|4|DET 4|1|CONJ 5|1|PUNCT
+*MOT:	(..) a [//] group [/] of symbols useta communicate useta communicate .
+%mor:	adp|of noun|symbol-Plur noun|useta verb|communicate-Fin-Ind-Pres-P3 noun|useta-Acc verb|communicate-Fin-Imp-S .
+%gra:	1|3|CASE 2|3|COMPOUND 3|4|NSUBJ 4|0|ROOT 5|4|OBJ 6|4|XCOMP 7|4|PUNCT
+*INV:	mhm and a hat what's a hat ?
+%mor:	intj|mhm cconj|and det|a-Ind-Art noun|hat verb|what-Fin-Ind-Pres-S3 det|a-Ind-Art noun|hat-Acc ?
+%gra:	1|5|DISCOURSE 2|4|CC 3|4|DET 4|5|NSUBJ 5|0|ROOT 6|7|DET 7|5|OBJ 8|5|PUNCT
+*MOT:	(.) &-uh [!] (.) &-um garment worn [/] on the head to protect or for (.) fashion fashion .
+%mor:	noun|garment adp|on det|the-Def-Art noun|head part|to verb|protect-Inf-S cconj|or adp|for noun|fashion noun|fashion .
+%gra:	1|0|ROOT 2|4|CASE 3|4|DET 4|1|NMOD 5|6|MARK 6|1|ACL 7|10|CC 8|10|CASE 9|10|COMPOUND 10|6|CONJ 11|1|PUNCT
+*INV:	to protect you or for fashion .
+%mor:	part|to verb|protect-Inf-S pron|you-Prs-Acc-S2 cconj|or adp|for noun|fashion .
+%gra:	1|2|MARK 2|0|ROOT 3|2|OBJ 4|6|CC 5|6|CASE 6|2|CONJ 7|2|PUNCT
+*INV:	uhhuh and a knife ?
+%mor:	intj|uhhuh cconj|and det|a-Ind-Art noun|knife ?
+%gra:	1|0|ROOT 2|4|CC 3|4|DET 4|1|CONJ 5|1|PUNCT
+*MOT:	(.) &-um (.) <a sharp> [/] &=clears:throat (.) instrument used mostly (.) for cooking and [/] &-um cutting cooking and (.) cutting .
+%mor:	noun|instrument verb|use-Part-Past-S adv|mostly adp|for noun|cooking-Ger noun|cutting-Ger noun|cooking-Ger cconj|and noun|cutting-Ger .
+%gra:	1|0|ROOT 2|1|ACL 3|7|ADVMOD 4|7|CASE 5|7|COMPOUND 6|7|COMPOUND 7|2|OBL 8|9|CC 9|7|CONJ 10|1|PUNCT
+*INV:	mhm for cooking and cutting okay and &-um a nail what's a nail ?
+%mor:	intj|mhm adp|for noun|cooking-Ger cconj|and verb|cut-Part-Pres-S adj|okay-S1 cconj|and det|a-Ind-Art noun|nail pron|what-Rel-S1 det|a-Ind-Art noun|nail ?
+%gra:	1|0|ROOT 2|3|CASE 3|1|OBL 4|5|CC 5|3|CONJ 6|5|XCOMP 7|9|CC 8|9|DET 9|6|CONJ 10|12|NSUBJ 11|12|DET 12|9|ACL-RELCL 13|1|PUNCT
+*MOT:	(.) &-um (..) piece of metal to [/] &-um (.) join two pieces of something together wood or metal metal .
+%mor:	noun|piece adp|of noun|metal verb|join-Fin-Imp-S num|two noun|piece-Plur-Acc adp|of pron|something-Ind-S1 adv|together noun|wood cconj|or noun|metal noun|metal .
+%gra:	1|4|NSUBJ 2|3|CASE 3|1|NMOD 4|0|ROOT 5|6|NUMMOD 6|4|OBJ 7|8|CASE 8|6|NMOD 9|10|ADVMOD 10|8|NMOD 11|13|CC 12|13|COMPOUND 13|10|CONJ 14|4|PUNCT
+*INV:	okay (.) and a thief .
+%mor:	intj|okay cconj|and det|a-Ind-Art noun|thief .
+%gra:	1|4|DISCOURSE 2|4|CC 3|4|DET 4|0|ROOT 5|4|PUNCT
+*MOT:	a thief someone who steals things that are not his own .
+%mor:	det|a-Ind-Art noun|thief pron|someone-Ind-S1 pron|who-Rel verb|steal-Fin-Ind-Pres-S3 noun|thing-Plur-Acc pron|that-Rel aux|be-Fin-Ind-Pres-P3 part|not pron|his-Prs-Gen-S3 adj|own-S1 .
+%gra:	1|2|DET 2|0|ROOT 3|2|APPOS 4|5|NSUBJ 5|3|ACL-RELCL 6|5|OBJ 7|11|NSUBJ 8|11|COP 9|11|ADVMOD 10|11|NMOD-POSS 11|6|ACL-RELCL 12|2|PUNCT
+*INV:	uhhuh great !
+%mor:	intj|uhhuh adj|great-S1 !
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|PUNCT
+@Comment:	Time is 3:48
+@End

@@ -1,0 +1,471 @@
+@UTF8
+@PID:	11312/c-00035900-1
+@Begin
+@Languages:	eng
+@Participants:	INV Investigator, MOT Mother, CHI Target_Child
+@ID:	eng|HSLLD|INV|||||Investigator|||
+@ID:	eng|HSLLD|MOT||female|||Mother|11+||
+@ID:	eng|HSLLD|CHI|10;05.11|female|||Target_Child|||
+@Birth of CHI:	31-MAY-1985
+@Media:	annlw7, audio, missing
+@Comment:	SES of Mot is lower
+@Date:	11-NOV-1995
+@Location:	Boston , MA USA
+@Situation:	Home Visit 7
+@Activities:	Letter writing
+*INV:	xxx I'd like you to do is +//.
+%mor:	intj|if verb|like-Fin-Ind-Pres-S1 pron|you-Prs-Acc-S2 part|to verb|do-Inf-S aux|be-Fin-Ind-Pres-S3 +//.
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|OBJ 4|5|MARK 5|2|XCOMP 6|2|DISCOURSE 7|2|PUNCT
+@Comment:	Time is 1:33
+*INV:	you know sometimes after having read a book people write to the author ?
+%mor:	pron|you-Prs-Nom-S2 verb|know-Fin-Ind-Pres-S2 adv|sometimes sconj|after aux|have-Part-Pres-S verb|read-Part-Past-S-irr det|a-Ind-Art noun|book noun|person-Plur-Acc verb|write-Fin-Ind-Pres-P3 adp|to det|the-Def-Art noun|author ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|ADVMOD 4|6|MARK 5|6|AUX 6|2|ADVCL 7|9|DET 8|9|COMPOUND 9|6|OBJ 10|6|XCOMP 11|13|CASE 12|13|DET 13|10|OBL 14|2|PUNCT
+@Comment:	sometimes Mot seems a little uncomfortable with the task , but overall she and Chi are both competent and confident. Chi reads part of VHC (from Saturday page on) aloud before writing. Both Mot and Chi have ideas that are put into the letter. Chi writes in cursive. Except for confirming that she should start with dear Chi doesn't need help with spelling or form. Short and effortless (9:45 but only a few minutes in which letter is written).
+*INV:	Dear Eric Carle Your book is very nice because it had very nice pictures .
+%mor:	adj|dear-S1 propn|Eric propn|Carle pron|your-Prs-Gen-S2 noun|book aux|be-Fin-Ind-Pres-S3 adv|very adj|nice-S1 sconj|because pron|it-Prs-Nom-S3 verb|have-Fin-Ind-Past-S3-irr adv|very adj|nice-S1 noun|picture-Plur-Acc .
+%gra:	1|2|AMOD 2|8|NSUBJ 3|2|FLAT 4|5|NMOD-POSS 5|8|NSUBJ 6|8|COP 7|8|ADVMOD 8|0|ROOT 9|11|MARK 10|11|NSUBJ 11|8|ADVCL 12|13|ADVMOD 13|14|AMOD 14|11|OBJ 15|8|PUNCT
+*INV:	Also I been reading your book for nine years and I recommend to almost everybody .
+%mor:	adv|also pron|I-Prs-Nom-S1 aux|be-Part-Past-S-irr verb|read-Part-Pres-S pron|your-Prs-Gen-S2 noun|book-Acc adp|for num|nine noun|year-Plur cconj|and pron|I-Prs-Nom-S1 verb|recommend-Fin-Ind-Pres-S1 adp|to adv|almost pron|everybody-Tot-S1 .
+%gra:	1|4|ADVMOD 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|6|NMOD-POSS 6|4|OBJ 7|9|CASE 8|9|NUMMOD 9|4|OBL 10|12|CC 11|12|NSUBJ 12|4|CONJ 13|15|CASE 14|15|ADVMOD 15|12|OBL 16|4|PUNCT
+*INV:	+^ sincerely Chi [= first and last name] .
+%sit:	from 0:04 to 1:33 , discussion between EXP , MOT , and Chi about how Chi now lives with her father on the weekdays in Pelham , MA , and with her mother on weekends . EXP records Chi's new address and phone number .
+%mor:	adv|sincerely propn|Chi .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*INV:	and I know [!] that you've read The Very Hungry Caterpillar by Eric Carle .
+%mor:	cconj|and pron|I-Prs-Nom-S1 verb|know-Fin-Ind-Pres-S1 sconj|that pron|youve-Prs-Nom-S2 verb|read-Fin-Ind-Past-S2-irr det|the-Def-Art adj|very-S1 adj|hungry-S1 propn|Caterpillar-Acc adp|by propn|Eric propn|Carle .
+%gra:	1|3|CC 2|3|NSUBJ 3|0|ROOT 4|6|MARK 5|6|NSUBJ 6|3|CCOMP 7|10|DET 8|10|AMOD 9|10|AMOD 10|6|OBJ 11|12|CASE 12|6|OBL 13|12|FLAT 14|3|PUNCT
+*INV:	and I'd like you and your mom to write a letter to Eric Carle about his book .
+%mor:	cconj|and intj|if verb|like-Fin-Ind-Pres-S3 pron|you-Prs-Acc-S2 cconj|and pron|your-Prs-Gen-S2 noun|mom part|to verb|write-Inf-S det|a-Ind-Art noun|letter-Acc adp|to propn|Eric propn|Carle adp|about pron|his-Prs-Gen-S3 noun|book .
+%gra:	1|3|CC 2|3|DISCOURSE 3|0|ROOT 4|3|OBJ 5|7|CC 6|7|NMOD-POSS 7|4|CONJ 8|9|MARK 9|3|XCOMP 10|11|DET 11|9|OBJ 12|13|CASE 13|11|NMOD 14|13|FLAT 15|17|CASE 16|17|NMOD-POSS 17|9|OBL 18|3|PUNCT
+*INV:	and we have his home address and what we're gonna do is send him your letter along with all the other kids's letters (.) <from the study> [>] ?
+%mor:	cconj|and pron|we-Prs-Nom-P1 verb|have-Fin-Ind-Pres-P1 pron|his-Prs-Gen-S3 noun|home noun|address-Acc cconj|and pron|what-Int-S1 pron|were-Prs-Nom-S2 aux|gonna-Fin-S verb|do-Inf-S aux|be-Fin-Ind-Pres-S3 verb|send-Inf-S pron|he-Prs-Acc-S3 pron|your-Prs-Gen-S2 noun|letter-Acc adv|along adp|with det|all-Def-Tot det|the-Def-Art adj|other-S1 noun|kids noun|letter-Plur adp|from det|the-Def-Art noun|study ?
+%gra:	1|3|CC 2|3|NSUBJ 3|0|ROOT 4|6|NMOD-POSS 5|6|COMPOUND 6|3|OBJ 7|13|CC 8|13|NSUBJ-OUTER 9|11|NSUBJ 10|11|AUX 11|8|ACL-RELCL 12|13|COP 13|3|CONJ 14|13|IOBJ 15|16|NMOD-POSS 16|13|OBJ 17|13|ADVMOD 18|23|CASE 19|23|DET-PREDET 20|23|DET 21|23|AMOD 22|23|COMPOUND 23|13|OBL 24|26|CASE 25|26|DET 26|23|NMOD 27|3|PUNCT
+*MOT:	<she's not doing this> [<] right this second .
+%mor:	aux|she-Fin-Ind-Pres-S3 part|not verb|do-Part-Pres-S pron|this-Dem-S1 adv|right det|this-Def-Dem-Sing adj|second-S1 .
+%gra:	1|3|AUX 2|3|ADVMOD 3|0|ROOT 4|3|OBJ 5|7|ADVMOD 6|7|DET 7|3|OBL-UNMARKED 8|3|PUNCT
+*MOT:	is she ?
+%mor:	aux|be-Fin-Ind-Pres-S3 pron|she-Prs-Nom-S3 ?
+%gra:	1|0|ROOT 2|1|NSUBJ 3|1|PUNCT
+*INV:	huh ?
+%mor:	intj|huh ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	you wanted to write her (.) a note right now ?
+%mor:	pron|you-Prs-Nom-S2 verb|want-Fin-Ind-Past-S2 part|to verb|write-Inf-S pron|her-Prs-Acc-S3 det|a-Ind-Art noun|note-Acc adv|right adv|now ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|MARK 4|2|XCOMP 5|4|IOBJ 6|7|DET 7|4|OBJ 8|9|ADVMOD 9|4|ADVMOD 10|2|PUNCT
+*MOT:	+^ <or just like> [>] +...
+%mor:	cconj|or adv|just intj|like +...
+%gra:	1|3|CC 2|3|ADVMOD 3|0|ROOT 4|3|PUNCT
+*INV:	yeah [<] .
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*INV:	+^ <we have paper and everything> [>] .
+%mor:	pron|we-Prs-Nom-P1 verb|have-Fin-Ind-Pres-P1 noun|paper-Acc cconj|and pron|everything-Tot-S1 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|5|CC 5|3|CONJ 6|2|PUNCT
+*MOT:	alright , okay .
+%mor:	intj|alright cm|cm intj|okay .
+%gra:	1|0|ROOT 2|3|PUNCT 3|1|DISCOURSE 4|1|PUNCT
+*INV:	and &-um (.) here's the paper .
+%mor:	cconj|and verb|here-Fin-Ind-Pres-S3 det|the-Def-Art noun|paper-Acc .
+%gra:	1|2|CC 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|PUNCT
+*INV:	+^ and just take about like ten minutes (.) or however long (.) it takes you .
+%mor:	cconj|and adv|just verb|take-Fin-Imp-S adv|about intj|like num|ten noun|minute-Plur-Acc cconj|or adv|however adv|long pron|it-Prs-Nom-S3 verb|take-Fin-Ind-Pres-S3 pron|you-Prs-Acc-S2 .
+%gra:	1|3|CC 2|3|ADVMOD 3|0|ROOT 4|6|ADVMOD 5|7|DISCOURSE 6|7|NUMMOD 7|3|OBJ 8|12|CC 9|10|ADVMOD 10|12|ADVMOD 11|12|NSUBJ 12|3|CONJ 13|12|OBJ 14|3|PUNCT
+*INV:	do you wanna +...
+%mor:	aux|do-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 intj|wanna +...
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|3|PUNCT
+*CHI:	you only use the .
+%mor:	pron|you-Prs-Nom-S2 adv|only verb|use-Fin-Ind-Pres-S2 det|the-Def-Art .
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*INV:	you wanna use that ?
+%mor:	pron|you-Prs-Nom-S2 aux|wanna-Fin-Ind-Pres-S2 verb|use-Inf-S pron|that-Dem ?
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*CHI:	yep .
+%mor:	intj|yep .
+%gra:	1|0|ROOT 2|1|PUNCT
+*INV:	okay you can use the pencil if <you wanna> [>] .
+%mor:	intj|okay pron|you-Prs-Nom-S2 aux|can-Fin-S verb|use-Inf-S det|the-Def-Art noun|pencil-Acc sconj|if pron|you-Prs-Nom-S2 aux|wanna-Fin-Ind-Pres-S2 .
+%gra:	1|4|DISCOURSE 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|9|MARK 8|9|NSUBJ 9|4|ADVCL 10|4|PUNCT
+*MOT:	<dyou [: do you] know what you're> [//] (.) xxx dyou [: gonna write] know what you're gonna write ?
+%mor:	adv|gonna verb|write-Inf-S verb|know-Inf-S pron|what-Int-S1 pron|your-Prs-Nom-S2 part|go verb|write-Inf-S ?
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|XCOMP 4|7|OBJ 5|7|NSUBJ 6|7|AUX 7|3|CCOMP 8|2|PUNCT
+*CHI:	no .
+%mor:	intj|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	+^ can I read over this [= book] again ?
+%mor:	aux|can-Fin-S pron|I-Prs-Nom-S1 verb|read-Inf-S adp|over pron|this-Dem-S1 adv|again ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|5|CASE 5|3|OBL 6|3|ADVMOD 7|3|PUNCT
+*MOT:	okay have this book .
+%int:	muttered
+%mor:	intj|okay verb|have-Fin-Imp-S det|this-Def-Dem-Sing noun|book-Acc .
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|PUNCT
+*MOT:	so she's writing a letter to the author (.) <just &~a> [/] about his book book .
+%com:	not sure whether she's checking with EXP or recapping for Chi or both
+%mor:	adv|so noun|she verb|write-Part-Pres-S det|a-Ind-Art noun|letter-Acc adp|to det|the-Def-Art noun|author adp|about pron|his-Prs-Gen-S3 noun|book noun|book .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|ACL 4|5|DET 5|3|OBJ 6|8|CASE 7|8|DET 8|5|NMOD 9|12|CASE 10|12|NMOD-POSS 11|12|COMPOUND 12|3|OBL 13|2|PUNCT
+*MOT:	(.) which you've been reading since you've been in preschool [>] +...
+%mor:	pron|which-Rel-S1 aux|youve-Fin-Ind-Pres-S2 aux|be-Part-Past-S-irr verb|read-Part-Pres-S sconj|since pron|youve-Prs-Nom-S2 aux|be-Part-Past-S-irr adp|in noun|preschool +...
+%gra:	1|4|NSUBJ 2|4|AUX 3|4|AUX 4|0|ROOT 5|9|MARK 6|9|NSUBJ 7|9|COP 8|9|CASE 9|4|ADVCL 10|4|PUNCT
+*INV:	&=giggles [<] .
+*MOT:	you could add [!] that to your (.) www &=laughs note www [=! laughs more] [>] .
+%mor:	pron|you-Prs-Nom-S2 aux|could-Fin-S verb|add-Inf-S pron|that-Dem adp|to pron|your-Prs-Gen-S2 noun|note .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|7|CASE 6|7|NMOD-POSS 7|3|OBL 8|3|PUNCT
+*INV:	mhm [<] .
+%mor:	intj|mhm .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	(..) Meg [= half sister] would like this [!] book now Chi [= short form of name] (.) doncha [: don't you] think ?
+%mor:	propn|Meg aux|would-Fin-S verb|like-Inf-S det|this-Def-Dem-Sing noun|book-Acc adv|now propn|Chi intj|dont pron|you-Prs-Nom-S2 verb|think-Fin-Ind-Pres-S2 ?
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|ADVMOD 7|3|VOCATIVE 8|3|DISCOURSE 9|10|NSUBJ 10|3|PARATAXIS 11|3|PUNCT
+*CHI:	doncha [: don't you] think we xxx next time ?
+%mor:	intj|dont pron|you-Prs-Nom-S2 verb|think-Fin-Ind-Pres-S2 pron|we-Prs-Nom-P1 adj|next-S1 noun|time ?
+%gra:	1|3|DISCOURSE 2|3|NSUBJ 3|0|ROOT 4|6|NSUBJ 5|6|AMOD 6|3|OBL-UNMARKED 7|3|PUNCT
+*MOT:	not at one .
+%mor:	part|not adp|at num|one .
+%gra:	1|3|ADVMOD 2|3|CASE 3|0|ROOT 4|3|PUNCT
+*MOT:	(.) she also has a sister which is new .
+%add:	EXP
+%mor:	pron|she-Prs-Nom-S3 adv|also verb|have-Fin-Ind-Pres-S3 det|a-Ind-Art noun|sister-Acc pron|which-Rel-S1 aux|be-Fin-Ind-Pres-S3 adj|new-S1 .
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|5|DET 5|3|OBJ 6|8|NSUBJ 7|8|COP 8|5|ACL-RELCL 9|3|PUNCT
+*INV:	okay [>] .
+%mor:	intj|okay .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	&~w [<] we haven't seen you since she has had a sister .
+%mor:	pron|we-Prs-Nom-P1 aux|havent-Fin-Ind-Pres-P1 verb|see-Part-Past-S-irr pron|you-Prs-Acc-S2 sconj|since pron|she-Prs-Nom-S3 aux|have-Fin-Ind-Pres-S3 verb|have-Part-Past-S-irr det|a-Ind-Art noun|sister-Acc .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|8|MARK 6|8|NSUBJ 7|8|AUX 8|3|ADVCL 9|10|DET 10|8|OBJ 11|3|PUNCT
+*INV:	right .
+%mor:	adj|right-S1 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	(.) you should know this by now +...
+%mor:	pron|you-Prs-Nom-S2 aux|should-Fin-S verb|know-Inf-S pron|this-Dem-S1 adp|by adv|now +...
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|6|CASE 6|3|OBL 7|3|PUNCT
+*INV:	and her name is Meg ?
+%mor:	cconj|and pron|her-Prs-Gen-S3 noun|name aux|be-Fin-Ind-Pres-S3 propn|Meg ?
+%gra:	1|5|CC 2|3|NMOD-POSS 3|5|NSUBJ 4|5|COP 5|0|ROOT 6|5|PUNCT
+*INV:	yep .
+%mor:	intj|yep .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	read it to me so I can (.) xxx [>] .
+%mor:	verb|read-Fin-Imp-S pron|it-Prs-Acc-S3 adp|to pron|I-Prs-Acc-S1 adv|so pron|I-Prs-Nom-S1 aux|can-Fin-S .
+%gra:	1|0|ROOT 2|1|OBJ 3|4|CASE 4|1|OBL 5|7|ADVMOD 6|7|NSUBJ 7|1|PARATAXIS 8|1|PUNCT
+*CHI:	okay [<] .
+%mor:	intj|okay .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	you don't need your finger to read though [>] .
+%mor:	pron|you-Prs-Nom-S2 aux|dont-Fin-S verb|need-Inf-S pron|your-Prs-Gen-S2 noun|finger-Acc part|to verb|read-Inf-S adv|though .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|5|NMOD-POSS 5|3|OBJ 6|7|MARK 7|3|ADVCL 8|7|ADVMOD 9|3|PUNCT
+*CHI:	on [<] Saturday he ate (.) through one piece of chocolate cake (.) one icecream cone (.) one pickle (.) one slice of swiss cheese (.) one slice of salami one lollipop (.) one piece of cherry pie one sausage one cupcake one slice of watermelon .
+%mor:	adp|on propn|Saturday pron|he-Prs-Nom-S3 verb|eat-Fin-Ind-Past-S3-irr adp|through num|one noun|piece adp|of noun|chocolate noun|cake num|one noun|icecream noun|cone num|one noun|pickle num|one noun|slice-Acc adp|of noun|swiss noun|cheese num|one noun|slice adp|of noun|salami num|one noun|lollipop num|one noun|piece adp|of noun|cherry noun|pie num|one noun|sausage num|one noun|cupcake num|one noun|slice adp|of noun|watermelon .
+%gra:	1|2|CASE 2|4|OBL 3|4|NSUBJ 4|0|ROOT 5|7|CASE 6|7|NUMMOD 7|4|OBL 8|10|CASE 9|10|COMPOUND 10|7|NMOD 11|13|NUMMOD 12|13|COMPOUND 13|7|NMOD 14|15|NUMMOD 15|17|NMOD-UNMARKED 16|17|NUMMOD 17|4|OBJ 18|20|CASE 19|20|COMPOUND 20|17|NMOD 21|22|NUMMOD 22|17|CONJ 23|24|CASE 24|22|NMOD 25|26|NUMMOD 26|28|NMOD 27|28|NUMMOD 28|22|CONJ 29|31|CASE 30|31|COMPOUND 31|28|NMOD 32|33|NUMMOD 33|28|NMOD 34|35|NUMMOD 35|37|COMPOUND 36|37|NUMMOD 37|33|APPOS 38|39|CASE 39|37|NMOD 40|4|PUNCT
+*CHI:	that night he had a stomachache [=! read] .
+%mor:	det|that-Def-Dem-Sing noun|night pron|he-Prs-Nom-S3 verb|have-Fin-Ind-Past-S3-irr det|a-Ind-Art noun|stomachache-Acc .
+%gra:	1|2|DET 2|4|OBL-UNMARKED 3|4|NSUBJ 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|PUNCT
+*CHI:	don't you think I would too ?
+%mor:	intj|dont pron|you-Prs-Nom-S2 verb|think-Fin-Ind-Pres-S2 pron|I-Prs-Nom-S1 aux|would-Fin-S adv|too ?
+%gra:	1|3|DISCOURSE 2|3|NSUBJ 3|0|ROOT 4|5|NSUBJ 5|3|CCOMP 6|5|ADVMOD 7|3|PUNCT
+*CHI:	eating [?] xxx all that ?
+%mor:	verb|eat-Part-Pres-S det|all-Def-Tot pron|that-Dem ?
+%gra:	1|0|ROOT 2|3|DET-PREDET 3|1|OBJ 4|1|PUNCT
+*MOT:	yep .
+%sit:	3:49 phone rings . Chi's father is on the phone . Mot , INV , and Chi have a long discussion about Chi's paternal grandfather who has melanoma and was taken to the hospital that morning .
+%mor:	intj|yep .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	the next day was Sunday again [=! read] .
+%mor:	det|the-Def-Art adj|next-S1 noun|day aux|be-Fin-Ind-Past-S3-irr propn|Sunday adv|again .
+%gra:	1|3|DET 2|3|AMOD 3|5|NSUBJ 4|5|COP 5|0|ROOT 6|5|ADVMOD 7|5|PUNCT
+@Comment:	Time is 5:12
+*CHI:	the caterpillar ate through one nice green leaf (.) and after that he felt much better .
+%mor:	det|the-Def-Art noun|caterpillar verb|eat-Fin-Ind-Past-S3-irr adp|through num|one adj|nice-S1 adj|green-S1 noun|leaf cconj|and sconj|after sconj|that pron|he-Prs-Nom-S3 verb|feel-Fin-Ind-Past-S3-irr adv|much adj|good-Cmp-S1 .
+%gra:	1|2|DET 2|3|NSUBJ 3|0|ROOT 4|8|CASE 5|8|NUMMOD 6|8|AMOD 7|8|AMOD 8|3|OBL 9|13|CC 10|13|MARK 11|10|FIXED 12|13|NSUBJ 13|3|CONJ 14|15|ADVMOD 15|13|XCOMP 16|3|PUNCT
+*CHI:	now he wasn't hungry anymore .
+%mor:	adv|now pron|he-Prs-Nom-S3 aux|wasnt-Fin-Ind-Pres-S3 adj|hungry-S1 adv|anymore .
+%gra:	1|4|ADVMOD 2|4|NSUBJ 3|4|COP 4|0|ROOT 5|4|ADVMOD 6|4|PUNCT
+*CHI:	and he wasn't a little caterpillar anymore .
+%mor:	cconj|and pron|he-Prs-Nom-S3 verb|wasnt-Fin-Ind-Past-S3 det|a-Ind-Art adj|little-S1 noun|caterpillar-Acc adv|anymore .
+%gra:	1|3|CC 2|3|NSUBJ 3|0|ROOT 4|6|DET 5|6|AMOD 6|3|OBJ 7|3|ADVMOD 8|3|PUNCT
+*CHI:	he was a big fat caterpillar [=! read] .
+%mor:	pron|he-Prs-Nom-S3 aux|be-Fin-Ind-Past-S3-irr det|a-Ind-Art adj|big-S1 adj|fat-S1 noun|caterpillar .
+%gra:	1|6|NSUBJ 2|6|COP 3|6|DET 4|6|AMOD 5|6|AMOD 6|0|ROOT 7|6|PUNCT
+*CHI:	he built a small house called a cocoon around himself .
+%mor:	pron|he-Prs-Nom-S3 verb|build-Fin-Ind-Past-S3-irr det|a-Ind-Art adj|small-S1 noun|house-Acc verb|call-Fin-Ind-Past-S3 det|a-Ind-Art noun|cocoon-Acc adp|around pron|himself-Prs-Acc-reflx-S3 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|5|DET 4|5|AMOD 5|2|OBJ 6|2|XCOMP 7|8|DET 8|6|OBJ 9|10|CASE 10|6|OBL 11|2|PUNCT
+*CHI:	[^ reading] he stayed inside for more than two weeks .
+%mor:	pron|he-Prs-Nom-S3 verb|stay-Fin-Ind-Past-S3 adv|inside adp|for adj|more-Cmp-S1 adp|than num|two noun|week-Plur .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|ADVMOD 4|8|CASE 5|7|ADVMOD 6|5|FIXED 7|8|NUMMOD 8|2|OBL 9|2|PUNCT
+*CHI:	then he nibbled a hole in the cocoon [=! read] .
+%mor:	adv|then pron|he-Prs-Nom-S3 verb|nibble-Fin-Ind-Past-S3 det|a-Ind-Art noun|hole-Acc adp|in det|the-Def-Art noun|cocoon .
+%gra:	1|3|ADVMOD 2|3|NSUBJ 3|0|ROOT 4|5|DET 5|3|OBJ 6|8|CASE 7|8|DET 8|3|OBL 9|3|PUNCT
+*CHI:	pushed the way out (.) (.) and [>] +/.
+%mor:	verb|push-Fin-Ind-Past-S1 det|the-Def-Art noun|way-Acc adp|out cconj|and +/.
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|1|COMPOUND-PRT 5|1|CONJ 6|1|PUNCT
+*MOT:	<pushed whose [!] way out> [<] ?
+%mor:	verb|push-Fin-Ind-Past-S3 pron|whose-Rel-S1 noun|way-Acc adp|out ?
+%gra:	1|0|ROOT 2|3|NMOD-POSS 3|1|OBJ 4|1|COMPOUND-PRT 5|1|PUNCT
+*MOT:	pushed the [!] way ?
+%mor:	verb|push-Fin-Ind-Past-S1 det|the-Def-Art noun|way-Acc ?
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|1|PUNCT
+*CHI:	mm he pushed his [!] way out and (.) he was a beautiful butterfly [>] .
+%mor:	intj|mm pron|he-Prs-Nom-S3 verb|push-Fin-Ind-Past-S3 pron|his-Prs-Gen-S3 noun|way-Acc adp|out cconj|and pron|he-Prs-Nom-S3 aux|be-Fin-Ind-Past-S3-irr det|a-Ind-Art adj|beautiful-S1 noun|butterfly .
+%gra:	1|3|DISCOURSE 2|3|NSUBJ 3|0|ROOT 4|5|NMOD-POSS 5|3|OBJ 6|3|COMPOUND-PRT 7|12|CC 8|12|NSUBJ 9|12|COP 10|12|DET 11|12|AMOD 12|3|CONJ 13|3|PUNCT
+*MOT:	<beautiful butterfly> [<] .
+%mor:	adj|beautiful-S1 noun|butterfly .
+%gra:	1|2|AMOD 2|0|ROOT 3|2|PUNCT
+*MOT:	the author's name is what Chi ?
+%mor:	det|the-Def-Art noun|author noun|name aux|be-Fin-Ind-Pres-S3 pron|what-Int-S1 propn|Chi ?
+%gra:	1|3|DET 2|3|COMPOUND 3|5|NSUBJ 4|5|COP 5|0|ROOT 6|5|VOCATIVE 7|5|PUNCT
+*CHI:	&-um (.) that one .
+%mor:	det|that-Def-Dem-Sing num|one .
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*CHI:	Eric@q .
+%mor:	q|Eric .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	Eric ?
+%mor:	propn|Eric ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	Carle@q ?
+%mor:	q|Carle ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	yeah .
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	<alright> [>] .
+%mor:	intj|alright .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	okay [<] .
+%mor:	intj|okay .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	do I write dear@q first ?
+%mor:	aux|do-Fin-Ind-Pres-S1 pron|I-Prs-Nom-S1 verb|write-Inf-S q|dear-S1 adj|first-S1 ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|5|AMOD 5|3|OBJ 6|3|PUNCT
+*MOT:	dear@q (.) yes (.) that's how you write a letter .
+%com:	MOT is starting to sound tired
+%mor:	q|dear-S1 intj|yes aux|that-Fin-Ind-Pres-S3 adv|how pron|you-Prs-Nom-S2 verb|write-Fin-Ind-Pres-S2 det|a-Ind-Art noun|letter-Acc .
+%gra:	1|6|ADVMOD 2|6|DISCOURSE 3|6|COP 4|6|ADVMOD 5|6|NSUBJ 6|0|ROOT 7|8|DET 8|6|OBJ 9|6|PUNCT
+*MOT:	what're you gonna write <to him about> [>] ?
+%mor:	aux|whatre-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 adv|gonna verb|write-Inf-S adp|to pron|he-Prs-Acc-S3 adp|about ?
+%gra:	1|4|AUX 2|4|NSUBJ 3|4|ADVMOD 4|0|ROOT 5|6|CASE 6|4|OBL 7|4|OBL 8|4|PUNCT
+*CHI:	<cursive or print> [<] ?
+%mor:	noun|cursive cconj|or noun|print ?
+%gra:	1|0|ROOT 2|3|CC 3|1|CONJ 4|1|PUNCT
+*MOT:	(.) it doesn't matter cursive or print .
+%com:	MOT sounds tired and a little impatient
+%mor:	pron|it-Prs-Nom-S3 adv|doesnt verb|matter-Inf-S noun|cursive-Acc cconj|or noun|print .
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|3|OBJ 5|6|CC 6|4|CONJ 7|3|PUNCT
+*MOT:	she didn't <specify cursive> [>] or print .
+%mor:	pron|she-Prs-Nom-S3 part|didnt verb|specify-Inf-S noun|cursive-Acc cconj|or noun|print .
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|3|OBJ 5|6|CC 6|4|CONJ 7|3|PUNCT
+*INV:	either one .
+%mor:	cconj|either noun|one .
+%gra:	1|2|CC-PRECONJ 2|0|ROOT 3|2|PUNCT
+*MOT:	now that you're ten you could probably write in cursive .
+%mor:	adv|now sconj|that pron|your-Prs-Gen-S2 num|ten pron|you-Prs-Nom-S2 aux|could-Fin-S adv|probably verb|write-Inf-S adp|in noun|cursive .
+%gra:	1|8|ADVMOD 2|8|MARK 3|8|NSUBJ 4|3|NUMMOD 5|8|NSUBJ 6|8|AUX 7|8|ADVMOD 8|0|ROOT 9|10|CASE 10|8|OBL 11|8|PUNCT
+*CHI:	hm: [>] .
+%mor:	intj|hm .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	hm: [<] .
+%int:	gently mimicking Chi
+%mor:	intj|hm .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	you're ten .
+%int:	sing-song
+%mor:	intj|your num|ten .
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|PUNCT
+*CHI:	alright .
+%mor:	intj|alright .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	your book was very nice .
+%mor:	pron|your-Prs-Gen-S2 noun|book aux|be-Fin-Ind-Past-S3-irr adv|very adj|nice-S1 .
+%gra:	1|2|NMOD-POSS 2|5|NSUBJ 3|5|COP 4|5|ADVMOD 5|0|ROOT 6|5|PUNCT
+*MOT:	why was his book very nice ?
+%mor:	adv|why aux|be-Fin-Ind-Past-S3-irr pron|his-Prs-Gen-S3 noun|book adv|very adj|nice-S1 ?
+%gra:	1|0|ROOT 2|1|COP 3|4|NMOD-POSS 4|1|NSUBJ 5|6|ADVMOD 6|1|NSUBJ 7|1|PUNCT
+*MOT:	I have been enjoying your book for the last nine years of my life .
+%mor:	pron|I-Prs-Nom-S1 aux|have-Fin-Ind-Pres-S1 aux|be-Part-Past-S-irr verb|enjoy-Part-Pres-S pron|your-Prs-Gen-S2 noun|book-Acc adp|for det|the-Def-Art adj|last-S1 num|nine noun|year-Plur adp|of pron|my-Prs-Gen-S1 noun|life .
+%gra:	1|4|NSUBJ 2|4|AUX 3|4|AUX 4|0|ROOT 5|6|NMOD-POSS 6|4|OBJ 7|11|CASE 8|11|DET 9|11|AMOD 10|11|NUMMOD 11|4|OBL 12|14|CASE 13|14|NMOD-POSS 14|11|NMOD 15|4|PUNCT
+*CHI:	&=laughs [>] .
+*MOT:	&=laughs [<] [>] .
+*INV:	&=laughs [<] .
+*MOT:	it starts off the same the middle's the same and it still ends exactly the same way .
+%mor:	pron|it-Prs-Nom-S3 verb|start-Fin-Ind-Pres-S3 adp|off det|the-Def-Art adj|same-S1 det|the-Def-Art noun|middle-Plur-Acc det|the-Def-Art adj|same-S1 cconj|and pron|it-Prs-Nom-S3 adv|still verb|end-Fin-Ind-Pres-S3 adv|exactly det|the-Def-Art adj|same-S1 noun|way-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|7|CASE 4|7|DET 5|2|OBL 6|7|DET 7|2|OBJ 8|9|DET 9|2|OBL-UNMARKED 10|13|CC 11|13|NSUBJ 12|13|ADVMOD 13|2|CONJ 14|17|ADVMOD 15|17|DET 16|17|AMOD 17|13|OBJ 18|2|PUNCT
+*INV:	&=laughs .
+*MOT:	you can recommend it to all your fellow (.) readers Chi .
+%mor:	pron|you-Prs-Nom-S2 aux|can-Fin-S verb|recommend-Inf-S pron|it-Prs-Acc-S3 adp|to det|all-Def-Tot pron|your-Prs-Gen-S2 adj|fellow-S1 noun|reader-Plur propn|Chi .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|9|CASE 6|9|DET-PREDET 7|9|NMOD-POSS 8|9|AMOD 9|3|OBL 10|9|APPOS 11|3|PUNCT
+*MOT:	young [!] readers .
+%mor:	adj|young-S1 noun|reader-Plur .
+%gra:	1|2|AMOD 2|0|ROOT 3|2|PUNCT
+*MOT:	www .
+%sit:	6:43 Mot , INV , and Chi discuss Mot's cabinets which she is planning to stain , and one of which is stained already . Chi asks if Mot knows they are being recorded , and Mot laughs about how because Chi is ten years old , Chi and Mot have short attention spans .
+*MOT:	because@q what ?
+%mor:	adp|because pron|what-Int-S1 ?
+%gra:	1|2|CASE 2|0|ROOT 3|2|PUNCT
+@Comment:	Time is 7:25
+*CHI:	it (.) had (.) very +...
+%mor:	pron|it-Prs-Nom-S3 verb|have-Fin-Ind-Past-S3-irr adv|very +...
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|ADVMOD 4|2|PUNCT
+*MOT:	it had very ?
+%mor:	pron|it-Prs-Nom-S3 verb|have-Fin-Ind-Past-S3-irr adv|very ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|ADVMOD 4|2|PUNCT
+*MOT:	how (a)bout a [!] very ?
+%mor:	adv|how adp|about det|a-Ind-Art adv|very ?
+%gra:	1|0|ROOT 2|4|CASE 3|4|DET 4|1|OBL 5|1|PUNCT
+*CHI:	&~a:h (.) nice +...
+%mor:	adj|nice-S1 +...
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	xxx .
+%int:	whispers under breath , probably while writing
+*MOT:	and what else ?
+%mor:	cconj|and pron|what-Int-S1 adj|else-S1 ?
+%gra:	1|2|CC 2|0|ROOT 3|2|AMOD 4|2|PUNCT
+*MOT:	are you gonna tell him that you've been reading it for the last nine years ?
+%mor:	aux|be-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 part|go verb|tell-Inf-S pron|he-Prs-Acc-S3 sconj|that aux|youve-Fin-Ind-Pres-S2 aux|be-Part-Past-S-irr verb|read-Part-Pres-S pron|it-Prs-Acc-S3 adp|for det|the-Def-Art adj|last-S1 num|nine noun|year-Plur ?
+%gra:	1|4|AUX 2|4|NSUBJ 3|4|ADVMOD 4|0|ROOT 5|4|IOBJ 6|9|MARK 7|9|AUX 8|9|AUX 9|4|CCOMP 10|9|OBJ 11|15|CASE 12|15|DET 13|15|AMOD 14|15|NUMMOD 15|9|OBL 16|4|PUNCT
+*MOT:	&~n next paragraph .
+%mor:	adj|next-S1 noun|paragraph .
+%gra:	1|2|AMOD 2|0|ROOT 3|2|PUNCT
+*MOT:	I've also been reading your book for <the last nine> [>] years .
+%mor:	aux|be-Fin-Ind-Pres-S1 adv|also aux|be-Part-Past-S-irr verb|read-Part-Pres-S pron|your-Prs-Gen-S2 noun|book-Acc adp|for det|the-Def-Art adj|last-S1 num|nine noun|year-Plur .
+%gra:	1|4|AUX 2|4|ADVMOD 3|4|AUX 4|0|ROOT 5|6|NMOD-POSS 6|4|OBJ 7|11|CASE 8|11|DET 9|11|AMOD 10|11|NUMMOD 11|4|OBL 12|4|PUNCT
+*CHI:	<also (.) I've> [<] +...
+%mor:	adv|also propn|Ive +...
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*MOT:	and would recommend it +...
+%mor:	cconj|and aux|would-Fin-S verb|recommend-Inf-S pron|it-Prs-Acc-S3 +...
+%gra:	1|3|CC 2|3|AUX 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*MOT:	holey pants !
+%com:	MOT may be pointing out a hole in Chi's pants
+%mor:	adj|holey-S1 noun|pants-Ptan !
+%gra:	1|2|AMOD 2|0|ROOT 3|2|PUNCT
+*CHI:	yeah I know .
+%mor:	intj|yeah pron|I-Prs-Nom-S1 verb|know-Fin-Ind-Pres-S1 .
+%gra:	1|3|DISCOURSE 2|3|NSUBJ 3|0|ROOT 4|3|PUNCT
+*MOT:	&=giggles .
+*CHI:	at least I don't have a crush [?] .
+%mor:	adp|at adj|least-Sup-S1 pron|I-Prs-Nom-S1 aux|dont-Fin-S verb|have-Inf-S det|a-Ind-Art noun|crush-Acc .
+%gra:	1|5|ADVMOD 2|1|FIXED 3|5|NSUBJ 4|5|AUX 5|0|ROOT 6|7|DET 7|5|OBJ 8|5|PUNCT
+*CHI:	I also (.) been +...
+%mor:	pron|I-Prs-Nom-S1 adv|also aux|be-Fin-Ind-Past-S1-irr +...
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|3|PUNCT
+*CHI:	(..) do I hafta write a story to that little bear thing again ?
+%com:	referring to part of the SHELL
+%mor:	aux|do-Fin-Ind-Pres-S1 pron|I-Prs-Nom-S1 part|hafta verb|write-Inf-S det|a-Ind-Art noun|story-Acc adp|to det|that-Def-Dem-Sing adj|little-S1 noun|bear noun|thing-Ger adv|again ?
+%gra:	1|4|AUX 2|4|NSUBJ 3|4|ADVMOD 4|0|ROOT 5|6|DET 6|4|OBJ 7|11|CASE 8|11|DET 9|11|AMOD 10|11|COMPOUND 11|4|OBL 12|4|ADVMOD 13|4|PUNCT
+*CHI:	+^ I did it last year in school .
+%mor:	pron|I-Prs-Nom-S1 verb|do-Fin-Ind-Past-S1-irr pron|it-Prs-Acc-S3 adj|last-S1 noun|year adp|in noun|school .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|5|AMOD 5|2|OBL-UNMARKED 6|7|CASE 7|2|OBL 8|2|PUNCT
+*CHI:	+^ I did it <the year before> [/] the year before [>] .
+%mor:	pron|I-Prs-Nom-S1 verb|do-Fin-Ind-Past-S1-irr pron|it-Prs-Acc-S3 det|the-Def-Art noun|year adv|before .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|5|DET 5|2|OBL-UNMARKED 6|2|ADVMOD 7|2|PUNCT
+*MOT:	you did &~uhn didn't you ?
+%mor:	pron|you-Prs-Nom-S2 aux|do-Fin-Ind-Past-S2-irr part|didnt pron|you-Prs-Acc-S2 ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|ADVMOD 4|2|OBJ 5|2|PUNCT
+*INV:	<no not in> [<] this [!] visit .
+%mor:	intj|no part|not adp|in det|this-Def-Dem-Sing noun|visit .
+%gra:	1|5|DISCOURSE 2|5|ADVMOD 3|5|CASE 4|5|DET 5|0|ROOT 6|5|PUNCT
+*INV:	you don't hafta do that .
+%mor:	pron|you-Prs-Nom-S2 aux|dont-Fin-S part|hafta verb|do-Inf-S pron|that-Dem .
+%gra:	1|4|NSUBJ 2|4|AUX 3|4|ADVMOD 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*CHI:	yeah [=! sighs heavily] .
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*INV:	we're [=? you're] doin(g) this instead .
+%mor:	verb|were-Fin-Imp-S verb|do-Part-Pres-S pron|this-Dem-S1 adv|instead .
+%gra:	1|0|ROOT 2|1|XCOMP 3|2|OBJ 4|1|ADVMOD 5|1|PUNCT
+*INV:	&=chuckles .
+*MOT:	&=laughs .
+*MOT:	(..) and when you read it &~outl [= outloud] +//.
+%mor:	cconj|and adv|when pron|you-Prs-Nom-S2 verb|read-Fin-Ind-Pres-S2 pron|it-Prs-Acc-S3 +//.
+%gra:	1|4|CC 2|4|ADVMOD 3|4|NSUBJ 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*MOT:	+^ I want you to read it to me when you're done .
+%mor:	pron|I-Prs-Nom-S1 verb|want-Fin-Ind-Pres-S1 pron|you-Prs-Acc-S2 part|to verb|read-Inf-S pron|it-Prs-Acc-S3 adp|to pron|I-Prs-Acc-S1 adv|when pron|your-Prs-Nom-S2 verb|do-Part-Past-S-irr .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|5|MARK 5|2|XCOMP 6|5|OBJ 7|8|CASE 8|5|OBL 9|11|ADVMOD 10|11|NSUBJ 11|5|ADVCL 12|2|PUNCT
+*MOT:	does he have any more books out ?
+%sit:	MOT seems to be making conversation as Chi writes the letter independently
+%mor:	aux|do-Fin-Ind-Pres-S3 pron|he-Prs-Nom-S3 verb|have-Inf-S det|any-Def-Ind adj|more-Cmp-S1 noun|book-Plur-Acc adp|out ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|6|DET 5|6|AMOD 6|3|OBJ 7|3|COMPOUND-PRT 8|3|PUNCT
+*INV:	oh +/.
+%mor:	intj|oh +/.
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	that we're familiar with ?
+%mor:	pron|that-Dem verb|were-Fin-Ind-Pres-P3 adj|familiar-S1 adp|with ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|XCOMP 4|2|OBL 5|2|PUNCT
+*MOT:	or is this <his claim to fame> [>] ?
+%mor:	cconj|or aux|be-Fin-Ind-Pres-S3 pron|this-Dem-S1 pron|his-Prs-Gen-S3 noun|claim adp|to noun|fame ?
+%gra:	1|5|CC 2|5|COP 3|5|NSUBJ 4|5|NMOD-POSS 5|0|ROOT 6|7|CASE 7|5|NMOD 8|5|PUNCT
+*INV:	<he no [!] no [!]> [<] he does have other (.) books .
+%mor:	pron|he-Prs-Nom-S3 intj|no intj|no pron|he-Prs-Nom-S3 aux|do-Fin-Ind-Pres-S3 verb|have-Inf-S adj|other-S1 noun|book-Plur-Acc .
+%gra:	1|6|REPARANDUM 2|6|DISCOURSE 3|6|DISCOURSE 4|6|NSUBJ 5|6|AUX 6|0|ROOT 7|8|AMOD 8|6|OBJ 9|6|PUNCT
+*INV:	+^ I'm (.) blanking@wp on the names of them .
+%mor:	adv|im wp|blank-Part-Pres-S adp|on det|the-Def-Art noun|name-Plur adp|of pron|they-Prs-Acc-P3 .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|5|CASE 4|5|DET 5|2|OBL 6|7|CASE 7|5|NMOD 8|2|PUNCT
+*INV:	<yeah he> [//] has written a_lot_of other books other books .
+%mor:	aux|have-Fin-Ind-Pres-S3 verb|write-Part-Past-S-irr noun|alotof adj|other-S1 noun|book-Plur-Acc adj|other-S1 noun|book-Plur-Acc .
+%gra:	1|2|AUX 2|0|ROOT 3|5|COMPOUND 4|5|AMOD 5|2|OBJ 6|7|AMOD 7|2|OBJ 8|2|PUNCT
+*MOT:	(..) Chi and I have been enjoying the dryer box much more than the baby www &=laughs .
+%sit:	MOT and EXP are probably watching Meg play with a dryer box or some other action
+%mor:	propn|Chi cconj|and pron|I-Prs-Nom-S1 aux|have-Fin-Ind-Pres-P3 aux|be-Part-Past-S-irr verb|enjoy-Part-Pres-S det|the-Def-Art noun|dryer noun|box-Acc adv|much adj|more-Cmp-S1 adp|than det|the-Def-Art noun|baby .
+%gra:	1|6|NSUBJ 2|3|CC 3|1|CONJ 4|6|AUX 5|6|AUX 6|0|ROOT 7|9|DET 8|9|COMPOUND 9|6|OBJ 10|11|ADVMOD 11|6|ADVMOD 12|14|CASE 13|14|DET 14|11|OBL 15|6|PUNCT
+*MOT:	doesn't like her little house www &=laughs .
+%mor:	adv|doesnt verb|like-Fin-Imp-S pron|her-Prs-Gen-S3 adj|little-S1 noun|house-Acc .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|5|NMOD-POSS 4|5|AMOD 5|2|OBJ 6|2|PUNCT
+*INV:	oh !
+%mor:	intj|oh !
+%gra:	1|0|ROOT 2|1|PUNCT
+*INV:	<we useta love boxes when we were kids> [>] .
+%mor:	pron|we-Prs-Nom-P1 verb|useta-Fin-Ind-Pres-P1 verb|love-Fin-Ind-Pres-P1 noun|box-Plur-Acc adv|when pron|we-Prs-Nom-P1 aux|be-Fin-Ind-Past-P1-irr noun|kid-Plur .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|8|ADVMOD 6|8|NSUBJ 7|8|COP 8|3|ADVCL 9|3|PUNCT
+*MOT:	<xxx yeah [!] I did too [!]> [<] www !
+%mor:	intj|yeah pron|I-Prs-Nom-S1 aux|do-Fin-Ind-Past-S1-irr adv|too !
+%gra:	1|3|DISCOURSE 2|3|NSUBJ 3|0|ROOT 4|3|ADVMOD 5|3|PUNCT
+*MOT:	I guess I was probably a little bit older than fourteen months www &=laughs .
+%mor:	pron|I-Prs-Nom-S1 verb|guess-Fin-Ind-Pres-S1 pron|I-Prs-Nom-S1 aux|be-Fin-Ind-Past-S1-irr adv|probably det|a-Ind-Art adj|little-S1 noun|bit adj|old-Cmp-S1 adp|than num|fourteen noun|month-Plur .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|9|NSUBJ 4|9|COP 5|9|ADVMOD 6|8|DET 7|8|AMOD 8|9|OBL-UNMARKED 9|2|CCOMP 10|12|CASE 11|12|NUMMOD 12|9|OBL 13|2|PUNCT
+*MOT:	didn't like it at all [= probably referring to Meg not liking the box] .
+%mor:	part|didnt verb|like-Fin-Imp-S pron|it-Prs-Acc-S3 adp|at det|all-Def-Tot .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|OBJ 4|5|CASE 5|2|OBL 6|2|PUNCT
+*INV:	&=laughs .
+*CHI:	dear Eric (.) last name ?
+%mor:	adj|dear-S1 propn|Eric adj|last-S1 noun|name ?
+%gra:	1|4|AMOD 2|4|COMPOUND 3|4|AMOD 4|0|ROOT 5|4|PUNCT
+*CHI:	you@q +/.
+%mor:	pron|you-Prs-Nom-S2 +/.
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	yes [>] .
+%mor:	intj|yes .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	+, <your [<] book> [>] +/.
+%mor:	pron|your-Prs-Gen-S2 noun|book +/.
+%gra:	1|2|NMOD-POSS 2|0|ROOT 3|2|PUNCT
+*MOT:	no [<] .
+%mor:	intj|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	you wrote you@q www &=laughs [>] .
+%mor:	pron|you-Prs-Nom-S2 verb|write-Fin-Ind-Past-S2-irr q|you-Prs-Acc-S2 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*CHI:	<your book> [<] is very nice because it has (.) very nice pictures .
+%mor:	pron|your-Prs-Gen-S2 noun|book aux|be-Fin-Ind-Pres-S3 adv|very adj|nice-S1 sconj|because pron|it-Prs-Nom-S3 verb|have-Fin-Ind-Pres-S3 adv|very adj|nice-S1 noun|picture-Plur-Acc .
+%gra:	1|2|NMOD-POSS 2|5|NSUBJ 3|5|COP 4|5|ADVMOD 5|0|ROOT 6|8|MARK 7|8|NSUBJ 8|5|ADVCL 9|10|ADVMOD 10|11|AMOD 11|8|OBJ 12|5|PUNCT
+*CHI:	+^ also I've been reading your [//] book for nine years and I'd recommend it to almost everybody everybody .
+%mor:	adv|also aux|be-Fin-Ind-Pres-S1 aux|be-Part-Past-S-irr verb|read-Part-Pres-S noun|book-Acc adp|for num|nine noun|year-Plur cconj|and propn|if verb|recommend-Fin-Ind-Pres-S1 pron|it-Prs-Acc-S3 adp|to adv|almost pron|everybody-Tot-S1 pron|everybody-Tot-S1 .
+%gra:	1|4|ADVMOD 2|4|AUX 3|4|AUX 4|0|ROOT 5|4|OBJ 6|8|CASE 7|8|NUMMOD 8|4|OBL 9|11|CC 10|11|NSUBJ 11|4|CONJ 12|11|OBJ 13|15|CASE 14|15|ADVMOD 15|11|OBL 16|15|APPOS 17|4|PUNCT
+*MOT:	but listen (.) because it had very +...
+%sit:	Chi read has instead of had
+%mor:	cconj|but verb|listen-Fin-Imp-S sconj|because pron|it-Prs-Nom-S3 verb|have-Fin-Ind-Past-S3-irr adv|very +...
+%gra:	1|2|CC 2|0|ROOT 3|5|MARK 4|5|NSUBJ 5|2|ADVCL 6|5|ADVMOD 7|2|PUNCT
+*MOT:	<you didn't read it right> [>] .
+%mor:	pron|you-Prs-Nom-S2 aux|didnt-Fin-S verb|read-Inf-S pron|it-Prs-Acc-S3 adv|right .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|3|ADVMOD 6|3|PUNCT
+*CHI:	nice pictures .
+%mor:	adj|nice-S1 noun|picture-Plur .
+%gra:	1|2|AMOD 2|0|ROOT 3|2|PUNCT
+*MOT:	okay .
+%mor:	intj|okay .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	<there you go> [>] .
+%mor:	pron|there-Dem-S1 pron|you-Prs-Nom-S2 verb|go-Fin-Ind-Pres-S2 .
+%gra:	1|3|EXPL 2|3|NSUBJ 3|0|ROOT 4|3|PUNCT
+*INV:	thank you !
+%mor:	verb|thank-Fin-Ind-Pres-S1 pron|you-Prs-Acc-S2 !
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+@Comment:	Time is 9:45
+@End

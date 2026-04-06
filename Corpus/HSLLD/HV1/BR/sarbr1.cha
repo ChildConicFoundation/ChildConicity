@@ -1,0 +1,620 @@
+@UTF8
+@PID:	11312/c-00034835-1
+@Begin
+@Languages:	eng
+@Participants:	INV1 Investigator, INV2 Investigator, MOT Mother, CHI Target_Child
+@ID:	eng|HSLLD|INV1|||||Investigator|||
+@ID:	eng|HSLLD|INV2|||||Investigator|||
+@ID:	eng|HSLLD|MOT||female|||Mother|10||
+@ID:	eng|HSLLD|CHI|3;09.30|female|||Target_Child|||
+@Birth of CHI:	28-OCT-1985
+@Media:	sarbr1, audio
+@Date:	27-JUL-1989
+@Location:	Boston , MA USA
+@Situation:	Home Visit 1
+@Activities:	Book Reading 1
+@Bg:	bookreading
+@Types:	long, book, TD
+*INV1:	All right here we go . 730_1690
+%mor:	det|all-Def-Tot adv|right adv|here pron|we-Prs-Nom-P1 verb|go-Fin-Ind-Pres-P1 .
+%gra:	1|5|OBJ 2|3|ADVMOD 3|1|ADVMOD 4|5|NSUBJ 5|0|ROOT 6|5|PUNCT
+@Comment:	Time is 03:04
+@Comment:	Chi and Mot seated at kitchen table next to each other; Throughout the book reading Chi turns the pages and is intent on the pictures as they are narrated to her
+*INV2:	okay [>] . 1310_1810
+%mor:	intj|okay .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	okay [<] . 1731_2231
+%mor:	intj|okay .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	ready ? 1991_2491
+%add:	Chi
+%mor:	adj|ready-S1 ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	the very hungry caterpillar . 3493_4713
+%mor:	det|the-Def-Art adv|very adj|hungry-S1 noun|caterpillar .
+%gra:	1|4|DET 2|3|ADVMOD 3|4|AMOD 4|0|ROOT 5|4|PUNCT
+*CHI:	the very hungry caterpillar . 5575_7016
+%mor:	det|the-Def-Art adv|very adj|hungry-S1 noun|caterpillar .
+%gra:	1|4|DET 2|3|ADVMOD 3|4|AMOD 4|0|ROOT 5|4|PUNCT
+*MOT:	for my sister Christa . 12763_13943
+%act:	bef turns page
+%mor:	adp|for pron|my-Prs-Gen-S1 noun|sister propn|Christa .
+%gra:	1|3|CASE 2|3|NMOD-POSS 3|0|ROOT 4|3|FLAT 5|3|PUNCT
+*CHI:	xxx .
+*MOT:	in the light of the moon a little egg lay on the leaf . 15745_18808
+%mor:	adp|in det|the-Def-Art noun|light adp|of det|the-Def-Art noun|moon det|a-Ind-Art adj|little-S1 noun|egg verb|lay-Fin-Ind-Past-S3 adp|on det|the-Def-Art noun|leaf .
+%gra:	1|3|CASE 2|3|DET 3|10|OBL 4|6|CASE 5|6|DET 6|3|NMOD 7|9|DET 8|9|AMOD 9|10|NSUBJ 10|0|ROOT 11|13|CASE 12|13|DET 13|10|OBL 14|10|PUNCT
+*MOT:	that's the little egg .
+%add:	Chi
+%act:	points to little egg on leaf
+%mor:	aux|that-Fin-Ind-Pres-S3 det|the-Def-Art adj|little-S1 noun|egg .
+%gra:	1|4|COP 2|4|DET 3|4|AMOD 4|0|ROOT 5|4|PUNCT
+*MOT:	one Sunday morning the warm sun came up and (.) pop (.) out of the egg came a tiny and very hungry caterpillar . 23255_29803
+%mor:	num|one propn|Sunday noun|morning-Ger det|the-Def-Art adj|warm-S1 noun|sun verb|come-Fin-Ind-Past-S3-irr adp|up cconj|and noun|pop adp|out adp|of det|the-Def-Art noun|egg verb|come-Fin-Ind-Past-S3-irr det|a-Ind-Art adj|tiny-S1 cconj|and adv|very adj|hungry-S1 noun|caterpillar-Acc .
+%gra:	1|3|NUMMOD 2|3|COMPOUND 3|7|OBL-UNMARKED 4|6|DET 5|6|AMOD 6|7|NSUBJ 7|0|ROOT 8|7|COMPOUND-PRT 9|15|CC 10|15|NSUBJ 11|14|CASE 12|14|CASE 13|14|DET 14|10|NMOD 15|7|CONJ 16|21|DET 17|21|AMOD 18|20|CC 19|20|ADVMOD 20|17|CONJ 21|15|OBJ 22|7|PUNCT
+*MOT:	on Monday he ate through one apple and he was still hungry . 32985_36527
+%mor:	adp|on propn|Monday pron|he-Prs-Nom-S3 verb|eat-Fin-Ind-Past-S3-irr adp|through num|one noun|apple cconj|and pron|he-Prs-Nom-S3 aux|be-Fin-Ind-Past-S3-irr adv|still adj|hungry-S1 .
+%gra:	1|2|CASE 2|4|OBL 3|4|NSUBJ 4|0|ROOT 5|7|CASE 6|7|NUMMOD 7|4|OBL 8|12|CC 9|12|NSUBJ 10|12|COP 11|12|ADVMOD 12|4|CONJ 13|4|PUNCT
+*MOT:	on Tuesday he ate through two pears and he was still hungry . 38007_41469
+%mor:	adp|on propn|Tuesday pron|he-Prs-Nom-S3 verb|eat-Fin-Ind-Past-S3-irr adp|through num|two noun|pear-Plur cconj|and pron|he-Prs-Nom-S3 aux|be-Fin-Ind-Past-S3-irr adv|still adj|hungry-S1 .
+%gra:	1|2|CASE 2|4|OBL 3|4|NSUBJ 4|0|ROOT 5|7|CASE 6|7|NUMMOD 7|4|OBL 8|12|CC 9|12|NSUBJ 10|12|COP 11|12|ADVMOD 12|4|CONJ 13|4|PUNCT
+*MOT:	on Wednesday he ate through three plums and he was still hungry . 43452_48054
+%mor:	adp|on propn|Wednesday pron|he-Prs-Nom-S3 verb|eat-Fin-Ind-Past-S3-irr adp|through num|three noun|plum-Plur cconj|and pron|he-Prs-Nom-S3 aux|be-Fin-Ind-Past-S3-irr adv|still adj|hungry-S1 .
+%gra:	1|2|CASE 2|4|OBL 3|4|NSUBJ 4|0|ROOT 5|7|CASE 6|7|NUMMOD 7|4|OBL 8|12|CC 9|12|NSUBJ 10|12|COP 11|12|ADVMOD 12|4|CONJ 13|4|PUNCT
+*MOT:	on Thursday he ate through four strawberries but he was still hungry [=! read] . 49275_54038
+%mor:	adp|on propn|Thursday pron|he-Prs-Nom-S3 verb|eat-Fin-Ind-Past-S3-irr adp|through num|four noun|strawberry-Plur cconj|but pron|he-Prs-Nom-S3 aux|be-Fin-Ind-Past-S3-irr adv|still adj|hungry-S1 .
+%gra:	1|2|CASE 2|4|OBL 3|4|NSUBJ 4|0|ROOT 5|7|CASE 6|7|NUMMOD 7|4|OBL 8|12|CC 9|12|NSUBJ 10|12|COP 11|12|ADVMOD 12|4|CONJ 13|4|PUNCT
+*MOT:	on Friday he ate through five oranges but +... 55760_59002
+%mor:	adp|on propn|Friday pron|he-Prs-Nom-S3 verb|eat-Fin-Ind-Past-S3-irr adp|through num|five noun|orange-Plur cconj|but +...
+%gra:	1|2|CASE 2|4|OBL 3|4|NSUBJ 4|0|ROOT 5|7|CASE 6|7|NUMMOD 7|4|OBL 8|4|CONJ 9|4|PUNCT
+*CHI:	<still hungry> [<] !
+%mor:	adv|still adj|hungry-S1 !
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*MOT:	he was still hungry . 60117_61882
+%mor:	pron|he-Prs-Nom-S3 aux|be-Fin-Ind-Past-S3-irr adv|still adj|hungry-S1 .
+%gra:	1|4|NSUBJ 2|4|COP 3|4|ADVMOD 4|0|ROOT 5|4|PUNCT
+*MOT:	on Saturday he ate through one piece of chocolate cake , one ice cream cone one pickle , one slice of , swiss cheese a slice of salami , one lollipop , one piece of cherry pie , one sausage , one cupcake , one slice of watermelon , that night he had a stomach ache . 62525_83825
+%act:	looks at Chi
+%mor:	adp|on propn|Saturday pron|he-Prs-Nom-S3 verb|eat-Fin-Ind-Past-S3-irr adp|through num|one noun|piece adp|of noun|chocolate noun|cake cm|cm num|one noun|ice noun|cream noun|cone num|one noun|pickle cm|cm num|one noun|slice adp|of cm|cm adj|swiss-S1 noun|cheese det|a-Ind-Art noun|slice adp|of noun|salami cm|cm num|one noun|lollipop cm|cm num|one noun|piece adp|of noun|cherry noun|pie cm|cm num|one noun|sausage cm|cm num|one noun|cupcake cm|cm num|one noun|slice adp|of noun|watermelon cm|cm det|that-Def-Dem-Sing noun|night pron|he-Prs-Nom-S3 verb|have-Fin-Ind-Past-S3-irr det|a-Ind-Art noun|stomach noun|ache-Acc .
+%gra:	1|2|CASE 2|4|OBL 3|4|NSUBJ 4|0|ROOT 5|7|CASE 6|7|NUMMOD 7|4|OBL 8|10|CASE 9|10|COMPOUND 10|7|NMOD 11|15|PUNCT 12|15|NUMMOD 13|14|COMPOUND 14|15|COMPOUND 15|7|CONJ 16|17|NUMMOD 17|7|CONJ 18|20|PUNCT 19|20|NUMMOD 20|7|CONJ 21|24|CASE 22|21|PUNCT 23|24|AMOD 24|20|NMOD 25|26|DET 26|20|CONJ 27|28|CASE 28|26|NMOD 29|31|PUNCT 30|31|NUMMOD 31|7|CONJ 32|34|PUNCT 33|34|NUMMOD 34|7|CONJ 35|37|CASE 36|37|COMPOUND 37|34|NMOD 38|40|PUNCT 39|40|NUMMOD 40|7|CONJ 41|43|PUNCT 42|43|NUMMOD 43|7|CONJ 44|46|PUNCT 45|46|NUMMOD 46|10|CONJ 47|48|CASE 48|46|NMOD 49|53|PUNCT 50|51|DET 51|53|OBL-UNMARKED 52|53|NSUBJ 53|17|PARATAXIS 54|56|DET 55|56|COMPOUND 56|53|OBJ 57|4|PUNCT
+*MOT:	the next day was Sunday again [=! read] . 86255_87998
+%mor:	det|the-Def-Art adj|next-S1 noun|day aux|be-Fin-Ind-Past-S3-irr propn|Sunday adv|again .
+%gra:	1|3|DET 2|3|AMOD 3|5|NSUBJ 4|5|COP 5|0|ROOT 6|5|ADVMOD 7|5|PUNCT
+*MOT:	the caterpillar ate through one nice green leaf , and after that he felt much better . 87820_92512
+%mor:	det|the-Def-Art noun|caterpillar verb|eat-Fin-Ind-Past-S3-irr adp|through num|one adj|nice-S1 adj|green-S1 noun|leaf cm|cm cconj|and sconj|after sconj|that pron|he-Prs-Nom-S3 verb|feel-Fin-Ind-Past-S3-irr adv|much adj|good-Cmp-S1 .
+%gra:	1|2|DET 2|3|NSUBJ 3|0|ROOT 4|8|CASE 5|8|NUMMOD 6|8|AMOD 7|8|AMOD 8|3|OBL 9|14|PUNCT 10|14|CC 11|14|MARK 12|11|FIXED 13|14|NSUBJ 14|3|CONJ 15|16|ADVMOD 16|14|XCOMP 17|3|PUNCT
+*MOT:	now he wasn't hungry anymore and he wasn't a little caterpillar anymore he was a big fat caterpillar he [>] built a small house called a cocoon around himself and he stayed inside for more than two weeks . 94295_105154
+%mor:	adv|now pron|he-Prs-Nom-S3 aux|wasnt-Fin-Ind-Pres-S3 adj|hungry-S1 adv|anymore cconj|and pron|he-Prs-Nom-S3 aux|wasnt-Fin-Ind-Past-S3 det|a-Ind-Art adj|little-S1 noun|caterpillar adv|anymore pron|he-Prs-Nom-S3 aux|be-Fin-Ind-Past-S3-irr det|a-Ind-Art adj|big-S1 adj|fat-S1 noun|caterpillar pron|he-Prs-Nom-S3 verb|build-Fin-Ind-Past-S3-irr det|a-Ind-Art adj|small-S1 noun|house-Acc verb|call-Fin-Ind-Past-S3 det|a-Ind-Art noun|cocoon-Acc adp|around pron|himself-Prs-Acc-reflx-S3 cconj|and pron|he-Prs-Nom-S3 verb|stay-Fin-Ind-Past-S3 adv|inside adp|for adj|more-Cmp-S1 adp|than num|two noun|week-Plur .
+%gra:	1|4|ADVMOD 2|4|NSUBJ 3|4|COP 4|0|ROOT 5|4|ADVMOD 6|11|CC 7|11|NSUBJ 8|11|COP 9|11|DET 10|11|AMOD 11|4|CONJ 12|18|ADVMOD 13|18|NSUBJ 14|18|COP 15|18|DET 16|18|AMOD 17|18|AMOD 18|4|PARATAXIS 19|20|NSUBJ 20|18|ACL-RELCL 21|23|DET 22|23|AMOD 23|20|OBJ 24|18|ACL 25|26|DET 26|24|OBJ 27|28|CASE 28|24|OBL 29|31|CC 30|31|NSUBJ 31|18|CONJ 32|31|ADVMOD 33|37|CASE 34|36|ADVMOD 35|34|FIXED 36|37|NUMMOD 37|31|OBL 38|4|PUNCT
+*CHI:	<&=giggles> [<] .
+*MOT:	then he nibbled a hole in the cocoon and pushed his way out and +... 105505_109910
+%act:	looks at Chi
+%mor:	adv|then pron|he-Prs-Nom-S3 verb|nibble-Fin-Ind-Past-S3 det|a-Ind-Art noun|hole-Acc adp|in det|the-Def-Art noun|cocoon cconj|and verb|push-Fin-Ind-Past-S3 pron|his-Prs-Gen-S3 noun|way-Acc adp|out cconj|and +...
+%gra:	1|3|ADVMOD 2|3|NSUBJ 3|0|ROOT 4|5|DET 5|3|OBJ 6|8|CASE 7|8|DET 8|3|OBL 9|10|CC 10|3|CONJ 11|12|NMOD-POSS 12|10|OBJ 13|10|COMPOUND-PRT 14|3|CONJ 15|3|PUNCT
+*MOT:	&=gasps he was a beautiful butterfly ! 112656_114137
+%mor:	pron|he-Prs-Nom-S3 aux|be-Fin-Ind-Past-S3-irr det|a-Ind-Art adj|beautiful-S1 noun|butterfly !
+%gra:	1|5|NSUBJ 2|5|COP 3|5|DET 4|5|AMOD 5|0|ROOT 6|5|PUNCT
+*CHI:	yeah .
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	the end . 117584_118304
+%mor:	det|the-Def-Art noun|end .
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*MOT:	caterpillars , turn into butterflies . 120275_122143
+%mor:	noun|caterpillar-Plur cm|cm verb|turn-Fin-Imp-S adp|into noun|butterfly-Plur .
+%gra:	1|3|NSUBJ 2|1|PUNCT 3|0|ROOT 4|5|CASE 5|3|OBL 6|3|PUNCT
+*CHI:	yeah ! 122573_123069
+%mor:	intj|yeah !
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	(..) xxx that one caterpillar !
+%act:	bef Chi appropriates book for herself
+%mor:	sconj|that num|one noun|caterpillar !
+%gra:	1|3|MARK 2|3|NUMMOD 3|0|ROOT 4|3|PUNCT
+*CHI:	xxx .
+*CHI:	and he has a black black black ! 139733_142156
+%mor:	cconj|and pron|he-Prs-Nom-S3 verb|have-Fin-Ind-Pres-S3 det|a-Ind-Art adj|black-S1 adj|black-S1 noun|black-Acc !
+%gra:	1|3|CC 2|3|NSUBJ 3|0|ROOT 4|7|DET 5|7|AMOD 6|7|AMOD 7|3|OBJ 8|3|PUNCT
+*MOT:	black ? 142057_142457
+%mor:	adj|black-S1 ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	black spots ? 142277_142997
+%mor:	adj|black-S1 noun|spot-Plur ?
+%gra:	1|2|AMOD 2|0|ROOT 3|2|PUNCT
+*CHI:	uhhuh .
+%mor:	intj|uhhuh .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	(.) now you're gonna read to me ? 145463_146684
+%mor:	adv|now pron|your-Prs-Nom-S2 adv|gonna verb|read-Inf-S adp|to pron|I-Prs-Acc-S1 ?
+%gra:	1|4|ADVMOD 2|4|NSUBJ 3|4|ADVMOD 4|0|ROOT 5|6|CASE 6|4|OBL 7|4|PUNCT
+*CHI:	&=gasp .
+*CHI:	yeah .
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	little caterpillar in this [% act=points and looks at Mot] +... 149415_151112
+%mor:	adj|little-S1 noun|caterpillar adp|in pron|this-Dem-S1 +...
+%gra:	1|2|AMOD 2|0|ROOT 3|4|CASE 4|2|NMOD 5|2|PUNCT
+*CHI:	what ?
+%mor:	pron|what-Int-S1 ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	egg . 152676_153157
+%mor:	noun|egg .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	egg .
+%mor:	noun|egg .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	and xxx up . 154598_155278
+%mor:	cconj|and adv|up .
+%gra:	1|2|CC 2|0|ROOT 3|2|PUNCT
+*CHI:	(.) him eat this [/] apple apple &=points . 155059_162544
+%mor:	pron|he-Prs-Acc-S3 verb|eat-Fin-S noun|apple noun|apple-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|COMPOUND 4|2|OBJ 5|2|PUNCT
+*CHI:	this one ! 164035_165033
+%mor:	det|this-Def-Dem-Sing noun|one !
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*CHI:	this ! 165435_165916
+%mor:	pron|this-Dem-S1 !
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	this !
+%mor:	pron|this-Dem-S1 !
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	him eat (.) what [% act=points and looks at Mot] ? 169762_170982
+%mor:	pron|he-Prs-Acc-S3 verb|eat-Inf-S pron|what-Int-S1 ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*MOT:	plums .
+%mor:	noun|plum-Plur .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	plums .
+%mor:	noun|plum-Plur .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	strawberries (.) and &=points +...
+%mor:	noun|strawberry-Plur cconj|and +...
+%gra:	1|0|ROOT 2|1|CC 3|1|PUNCT
+*CHI:	an <&~o> [/] orange <xxx> [>] .
+%mor:	det|a-Ind-Art noun|orange .
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*CHI:	strawberryrawberryrawberry@c [% act=runs finger across line of strawberries] .
+%mor:	c|strawberryrawberryrawberry .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	and then he saw another thing . 172246_178573
+%mor:	cconj|and adv|then pron|he-Prs-Nom-S3 verb|see-Fin-Ind-Past-S3-irr det|another-Def-Ind noun|thing-Acc-Ger .
+%gra:	1|4|CC 2|4|ADVMOD 3|4|NSUBJ 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|PUNCT
+*CHI:	(..) what [% act=looks at Mot] ?
+%mor:	pron|what-Int-S1 ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	you tell me . 194385_195105
+%int:	prompting tone
+%mor:	pron|you-Prs-Nom-S2 verb|tell-Fin-Ind-Pres-S2 pron|I-Prs-Acc-S1 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|IOBJ 4|2|PUNCT
+*CHI:	xxx chocolate cake ?
+%mor:	noun|chocolate noun|cake ?
+%gra:	1|2|COMPOUND 2|0|ROOT 3|2|PUNCT
+*MOT:	yeah . 195185_195685
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	what↑ ice cream [% act=points and looks at Mot] ?
+%mor:	det|what-Def-Int noun|ice noun|cream ?
+%gra:	1|3|DET 2|3|COMPOUND 3|0|ROOT 4|3|PUNCT
+*MOT:	mhm .
+%mor:	intj|mhm .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	pickle . 198247_198747
+%mor:	noun|pickle .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	mhm .
+%mor:	intj|mhm .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	cheese .
+%mor:	noun|cheese .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	yup .
+%mor:	intj|yup .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	what [% act=looks at Mot] ? 199849_200348
+%mor:	pron|what-Int-S1 ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	lunch meat (.) salami . 199989_202930
+%mor:	noun|lunch noun|meat noun|salami .
+%gra:	1|3|COMPOUND 2|3|COMPOUND 3|0|ROOT 4|3|PUNCT
+*CHI:	salami . 203171_203671
+%mor:	noun|salami .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	and piece of lollipop (.) and piece lollipop &=points . 203431_207513
+%mor:	cconj|and noun|piece adp|of noun|lollipop cconj|and noun|piece noun|lollipop .
+%gra:	1|2|CC 2|0|ROOT 3|7|CASE 4|7|COMPOUND 5|6|CC 6|4|CONJ 7|2|NMOD 8|2|PUNCT
+*CHI:	and pizza and hotdog (.) what &=points ? 210295_217483
+%mor:	cconj|and noun|pizza cconj|and noun|hotdog pron|what-Int-S1 ?
+%gra:	1|2|CC 2|0|ROOT 3|4|CC 4|2|CONJ 5|2|CONJ 6|2|PUNCT
+*CHI:	pancake .
+%mor:	noun|pancake .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	<&=laughs> [>] .
+*INV1:	<&=laughs> [<] .
+*CHI:	no ! 217625_218124
+%mor:	intj|no !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	cupcake . 217665_218164
+%mor:	noun|cupcake .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	cupcake . 218866_219366
+%mor:	noun|cupcake .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	and what's this↑ this pizza &=points ? 221390_222750
+%mor:	cconj|and pron|what-Int-S1 pron|this-Dem-S1 det|this-Def-Dem-Sing noun|pizza ?
+%gra:	1|2|CC 2|0|ROOT 3|5|NSUBJ 4|5|DET 5|2|NSUBJ 6|2|PUNCT
+*CHI:	yeah [>] .
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	no [<] that's cherry pie . 223553_224933
+%mor:	det|no-Def-Neg noun|that noun|cherry noun|pie .
+%gra:	1|4|DET 2|4|COMPOUND 3|4|COMPOUND 4|0|ROOT 5|4|PUNCT
+*CHI:	cherry pie . 225656_226296
+%mor:	noun|cherry noun|pie .
+%gra:	1|2|COMPOUND 2|0|ROOT 3|2|PUNCT
+*MOT:	it does look like pizza though . 225856_227337
+%mor:	pron|it-Prs-Nom-S3 aux|do-Fin-Ind-Pres-S3 verb|look-Inf-S adp|like noun|pizza adv|though .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|5|CASE 5|3|OBL 6|3|ADVMOD 7|3|PUNCT
+*MOT:	and this ? 228460_229060
+%mor:	cconj|and pron|this-Dem-S1 ?
+%gra:	1|2|CC 2|0|ROOT 3|2|PUNCT
+*CHI:	(.) what [% act=looks at Mot] ?
+%mor:	pron|what-Int-S1 ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	watermelon .
+%mor:	noun|watermelon .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	watermelon . 230884_231243
+%mor:	noun|watermelon .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	not anymore .
+%mor:	part|not adv|anymore .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*CHI:	him fat . 244025_244845
+%act:	bef turns page
+%mor:	pron|he-Prs-Acc-S3 adj|fat-S1 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|PUNCT
+*MOT:	he's fat and he makes a cocoon +... 244645_246246
+%mor:	noun|he-Plur adj|fat-S1 cconj|and pron|he-Prs-Nom-S3 verb|make-Fin-Ind-Pres-S3 det|a-Ind-Art noun|cocoon-Acc +...
+%gra:	1|2|NSUBJ 2|0|ROOT 3|5|CC 4|5|NSUBJ 5|2|CONJ 6|7|DET 7|5|OBJ 8|2|PUNCT
+*CHI:	him bye bye .
+%mor:	pron|he-Prs-Acc-S3 intj|bye intj|bye .
+%gra:	1|0|ROOT 2|1|FLAT 3|1|FLAT 4|1|PUNCT
+*CHI:	&=gasps him big butterfly ! 247507_251349
+%mor:	pron|he-Prs-Acc-S3 adj|big-S1 noun|butterfly !
+%gra:	1|3|NSUBJ 2|3|AMOD 3|0|ROOT 4|3|PUNCT
+*MOT:	pretty too huh ? 252931_254071
+%mor:	adv|pretty adv|too intj|huh ?
+%gra:	1|3|ADVMOD 2|3|ADVMOD 3|0|ROOT 4|3|PUNCT
+*CHI:	mhm .
+%mor:	intj|mhm .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	all done ! 255953_256613
+%int:	elevated pitch
+%mor:	det|all-Def-Tot verb|do-Part-Past-S-irr !
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*INV1:	great . 256774_256953
+%mor:	adj|great-S1 .
+%gra:	1|0|ROOT 2|1|PUNCT
+@Comment:	Time is 7: 19
+@Activities:	Book Reading number 2 <cat and dog>
+*INV1:	now do you have a favorite book (.) that you want your mom to read to you ? 257995_261118
+%add:	Chi
+%mor:	adv|now aux|do-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 verb|have-Inf-S det|a-Ind-Art adj|favorite-S1 noun|book-Acc pron|that-Rel pron|you-Prs-Nom-S2 verb|want-Fin-Ind-Pres-S2 pron|your-Prs-Gen-S2 noun|mom-Acc part|to verb|read-Inf-S adp|to pron|you-Prs-Acc-S2 ?
+%gra:	1|4|ADVMOD 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|7|DET 6|7|AMOD 7|4|OBJ 8|14|OBJ 9|10|NSUBJ 10|7|ACL-RELCL 11|12|NMOD-POSS 12|10|OBJ 13|14|MARK 14|10|XCOMP 15|16|CASE 16|14|OBL 17|4|PUNCT
+*CHI:	hunhunh@i .
+%mor:	intj|hunhunh .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	<&=laughs> [>] .
+*INV1:	oh [<] yeah ? 262260_262880
+%mor:	intj|oh intj|yeah ?
+%gra:	1|0|ROOT 2|1|DISCOURSE 3|1|PUNCT
+*INV2:	&~aw you showed me many favorite books back there . 263122_266866
+%add:	Chi
+%mor:	pron|you-Prs-Nom-S2 verb|show-Fin-Ind-Past-S2 pron|I-Prs-Acc-S1 adj|many-S1 adj|favorite-S1 noun|book-Plur-Acc adv|back adv|there .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|IOBJ 4|6|AMOD 5|6|AMOD 6|2|OBJ 7|8|ADVMOD 8|2|ADVMOD 9|2|PUNCT
+*INV2:	<why don't you pick out one of them> [>] ?
+%mor:	adv|why intj|dont pron|you-Prs-Nom-S2 verb|pick-Fin-Ind-Pres-S2 adp|out num|one adp|of pron|they-Prs-Acc-P3 ?
+%gra:	1|4|ADVMOD 2|4|DISCOURSE 3|4|NSUBJ 4|0|ROOT 5|4|COMPOUND-PRT 6|4|OBJ 7|8|CASE 8|6|NMOD 9|4|PUNCT
+*CHI:	<you have some more book> [<] . 267587_269609
+%mor:	pron|you-Prs-Nom-S2 verb|have-Fin-Ind-Pres-S2 det|some-Def-Ind adj|more-Cmp-S1 noun|book-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|5|DET 4|5|AMOD 5|2|OBJ 6|2|PUNCT
+*CHI:	you have another book . 269309_270471
+%mor:	pron|you-Prs-Nom-S2 verb|have-Fin-Ind-Pres-S2 det|another-Def-Ind noun|book-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|PUNCT
+*MOT:	she saw your other book . 270312_271511
+%add:	INV1 , INV2
+%mor:	pron|she-Prs-Nom-S3 verb|see-Fin-Ind-Past-S3-irr pron|your-Prs-Gen-S2 adj|other-S1 noun|book-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|5|NMOD-POSS 4|5|AMOD 5|2|OBJ 6|2|PUNCT
+*INV2:	ah .
+%mor:	intj|ah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*INV1:	she saw the other book . 271472_272794
+%mor:	pron|she-Prs-Nom-S3 verb|see-Fin-Ind-Past-S3-irr det|the-Def-Art adj|other-S1 noun|book-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|5|DET 4|5|AMOD 5|2|OBJ 6|2|PUNCT
+*INV1:	curses . 273835_274335
+%act:	passes Cat and Dog to Mot
+%mor:	noun|curse-Plur .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	what's this ? 274776_276819
+%add:	Chi
+%mor:	pron|what-Int-S1 pron|this-Dem-S1 ?
+%gra:	1|0|ROOT 2|1|NSUBJ 3|1|PUNCT
+*CHI:	doggie and kitty .
+%mor:	noun|doggie cconj|and noun|kitty .
+%gra:	1|0|ROOT 2|3|CC 3|1|CONJ 4|1|PUNCT
+*MOT:	0 .
+%act:	flips page and points to picture
+*CHI:	spider . 277180_277680
+%mor:	noun|spider .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	spider↑ what's this &=points ? 281608_283070
+%mor:	noun|spider pron|what-Int-S1 pron|this-Dem-S1 ?
+%gra:	1|0|ROOT 2|1|VOCATIVE 3|1|APPOS 4|1|PUNCT
+*CHI:	xxx .
+*MOT:	what ? 284954_285453
+%mor:	pron|what-Int-S1 ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	xxx .
+*CHI:	xxx .
+*CHI:	ladybug .
+%mor:	noun|ladybug .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	what ?
+%mor:	pron|what-Int-S1 ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	fly . 296578_297078
+%mor:	verb|fly-Inf-S .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	fly . 296658_297138
+%mor:	verb|fly-Inf-S .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	cat and dog . 296738_297619
+%mor:	noun|cat cconj|and noun|dog .
+%gra:	1|0|ROOT 2|3|CC 3|1|CONJ 4|1|PUNCT
+*CHI:	cat and dog . 298039_299100
+%mor:	noun|cat cconj|and noun|dog .
+%gra:	1|0|ROOT 2|3|CC 3|1|CONJ 4|1|PUNCT
+*MOT:	who walks out through the back door ? 299342_302644
+%act:	points
+%mor:	pron|who-Rel verb|walk-Fin-Ind-Pres-S3 adp|out adp|through det|the-Def-Art noun|back noun|door ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|COMPOUND-PRT 4|7|CASE 5|7|DET 6|7|COMPOUND 7|2|OBL 8|2|PUNCT
+*MOT:	who walks pitterpatter@o down the garden ? 303548_305647
+%act:	points
+%mor:	pron|who-Rel verb|walk-Fin-Ind-Pres-S3 o|pitterpatter-Acc adp|down det|the-Def-Art noun|garden ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|6|CASE 5|6|DET 6|2|OBL 7|2|PUNCT
+*MOT:	who walks tiptoe along the wall ? 306512_308834
+%act:	points
+%mor:	pron|who-Rel verb|walk-Fin-Ind-Pres-S3 noun|tiptoe-Acc adp|along det|the-Def-Art noun|wall ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|6|CASE 5|6|DET 6|2|OBL 7|2|PUNCT
+*CHI:	kitty .
+%mor:	noun|kitty .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	cat [<] . 310855_311354
+%mor:	noun|cat .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	cat [<] . 311054_311535
+%mor:	noun|cat .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	who jumps down into the alley ? 312758_314519
+%act:	points
+%mor:	pron|who-Rel verb|jump-Fin-Ind-Pres-S3 adp|down adp|into det|the-Def-Art noun|alley ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|COMPOUND-PRT 4|6|CASE 5|6|DET 6|2|OBL 7|2|PUNCT
+*CHI:	cat [<] .
+%mor:	noun|cat .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	who goes +/. 315462_316142
+%act:	points
+%mor:	pron|who-Rel verb|go-Fin-Ind-Pres-S3 +/.
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|PUNCT
+*CHI:	cat [<] . 316283_316783
+%mor:	noun|cat .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	scratch [//] scratch against &=laughs the fence fence ? 316503_319306
+%mor:	noun|scratch adp|against det|the-Def-Art noun|fence noun|fence ?
+%gra:	1|0|ROOT 2|5|CASE 3|5|DET 4|5|COMPOUND 5|1|NMOD 6|1|PUNCT
+*CHI:	kitty .
+%mor:	noun|kitty .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	who [<] walks tall tail between the bottles ? 320550_323593
+%act:	points
+%mor:	pron|who-Rel verb|walk-Fin-Ind-Pres-S3 adj|tall-S1 noun|tail-Acc adp|between det|the-Def-Art noun|bottle-Plur ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|AMOD 4|2|OBJ 5|7|CASE 6|7|DET 7|4|NMOD 8|2|PUNCT
+*CHI:	kitty .
+%mor:	noun|kitty .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	kitty .
+%mor:	noun|kitty .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	kitty .
+%mor:	noun|kitty .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	who should watch out around the corner ? 327765_329466
+%act:	points
+%mor:	pron|who-Int aux|should-Fin-S verb|watch-Inf-S adp|out adp|around det|the-Def-Art noun|corner ?
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|COMPOUND-PRT 5|7|CASE 6|7|DET 7|3|OBL 8|3|PUNCT
+*MOT:	cat [<] . 329808_330308
+%mor:	noun|cat .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	watch out cat ! 330910_331830
+%int:	animated
+%mor:	verb|watch-Fin-Imp-S adp|out noun|cat-Acc !
+%gra:	1|0|ROOT 2|1|COMPOUND-PRT 3|1|OBJ 4|1|PUNCT
+*MOT:	dog ! 333855_334354
+%int:	same pitch as previous utterance
+%mor:	noun|dog !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	uhoh .
+%int:	warning
+%mor:	intj|uhoh .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	what ? 334496_334995
+%mor:	pron|what-Int-S1 ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	cats [/] (.) and dogs don't get along in this book book . 340595_343636
+%mor:	cconj|and noun|dog-Plur adv|dont verb|get-Inf-S adv|along adp|in det|this-Def-Dem-Sing noun|book noun|book .
+%gra:	1|4|CC 2|4|NSUBJ 3|4|ADVMOD 4|0|ROOT 5|4|ADVMOD 6|9|CASE 7|9|DET 8|9|COMPOUND 9|4|OBL 10|4|PUNCT
+*MOT:	quick cat quick who runs snip snap around the corner ? 344457_347819
+%act:	points
+%mor:	adj|quick-S1 noun|cat noun|quick pron|who-Rel verb|run-Fin-Ind-Pres-S3 noun|snip noun|snap-Acc adp|around det|the-Def-Art noun|corner ?
+%gra:	1|3|AMOD 2|3|COMPOUND 3|0|ROOT 4|5|NSUBJ 5|3|ACL-RELCL 6|7|COMPOUND 7|5|OBJ 8|10|CASE 9|10|DET 10|5|OBL 11|3|PUNCT
+*MOT:	the dog ! 348660_349299
+%mor:	det|the-Def-Art noun|dog !
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*MOT:	quick cat quick who runs snip snap around the corner between the bottles getting closer ? 350882_355483
+%act:	turns page
+%mor:	adj|quick-S1 noun|cat noun|quick pron|who-Rel verb|run-Fin-Ind-Pres-S3 noun|snip noun|snap-Acc adp|around det|the-Def-Art noun|corner adp|between det|the-Def-Art noun|bottle-Plur verb|get-Ger-S adj|close-Cmp-S1 ?
+%gra:	1|3|AMOD 2|3|COMPOUND 3|0|ROOT 4|5|NSUBJ 5|3|ACL-RELCL 6|7|COMPOUND 7|5|OBJ 8|10|CASE 9|10|DET 10|5|OBL 11|13|CASE 12|13|DET 13|10|NMOD 14|13|ACL 15|14|XCOMP 16|3|PUNCT
+*MOT:	dog@q .
+%mor:	noun|dog .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	quick cat quick who runs snip snap down the alley getting closer getting closer ? 359975_365538
+%act:	points
+%mor:	adj|quick-S1 noun|cat noun|quick pron|who-Rel verb|run-Fin-Ind-Pres-S3 noun|snip-Acc verb|snap-Inf-S adp|down det|the-Def-Art noun|alley verb|get-Part-Pres-S adj|close-Cmp-S1 verb|get-Ger-S adj|close-Cmp-S1 ?
+%gra:	1|3|AMOD 2|3|COMPOUND 3|0|ROOT 4|5|NSUBJ 5|3|ACL-RELCL 6|5|OBJ 7|5|XCOMP 8|10|CASE 9|10|DET 10|7|OBL 11|7|ADVCL 12|11|XCOMP 13|11|XCOMP 14|13|XCOMP 15|3|PUNCT
+*CHI:	kitty .
+%mor:	noun|kitty .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	no da [: dog] . 367780_368319
+%mor:	det|no-Def-Neg noun|dog .
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*CHI:	+< dog . 368059_368520
+%mor:	noun|dog .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	+< dog .
+%mor:	noun|dog .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	snip (.) snap (.) jump cat ! 370161_373863
+%mor:	noun|snip noun|snap noun|jump noun|cat !
+%gra:	1|2|COMPOUND 2|4|COMPOUND 3|4|COMPOUND 4|0|ROOT 5|4|PUNCT
+*CHI:	snip snap jump [>] !
+%mor:	noun|snip noun|snap noun|jump !
+%gra:	1|2|COMPOUND 2|3|COMPOUND 3|0|ROOT 4|3|PUNCT
+*MOT:	jump dog ! 373924_374924
+%mor:	verb|jump-Fin-Imp-S noun|dog-Acc !
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*CHI:	jump dog ! 376415_377035
+%mor:	verb|jump-Fin-Imp-S noun|dog-Acc !
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*MOT:	who falls back ? 376615_377755
+%act:	points
+%mor:	pron|who-Rel verb|fall-Fin-Ind-Pres-S3 adv|back ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|ADVMOD 4|2|PUNCT
+*CHI:	(.) dog back kitty .
+%mor:	noun|dog adv|back noun|kitty .
+%gra:	1|3|COMPOUND 2|3|ADVMOD 3|0|ROOT 4|3|PUNCT
+*MOT:	the dog . 381038_381698
+%mor:	det|the-Def-Art noun|dog .
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*CHI:	+< dog .
+%mor:	noun|dog .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	along the wall who walks tiptoe ? 384861_386761
+%mor:	adp|along det|the-Def-Art noun|wall pron|who-Rel verb|walk-Fin-Ind-Pres-S3 noun|tiptoe-Acc ?
+%gra:	1|3|CASE 2|3|DET 3|0|ROOT 4|5|NSUBJ 5|3|ACL-RELCL 6|5|OBJ 7|3|PUNCT
+*CHI:	tiptoe .
+%mor:	noun|tiptoe .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	up the garden who walks pitterpatter@o ?
+%mor:	adp|up det|the-Def-Art noun|garden pron|who-Rel verb|walk-Fin-Ind-Pres-S3 o|pitterpatter-Acc ?
+%gra:	1|3|CASE 2|3|DET 3|0|ROOT 4|5|NSUBJ 5|3|ACL-RELCL 6|5|OBJ 7|3|PUNCT
+*CHI:	pitterpatter@o .
+%mor:	o|pitterpatter .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	through the back door who comes back ? 392225_394267
+%mor:	adp|through det|the-Def-Art noun|back noun|door pron|who-Rel verb|come-Fin-Ind-Pres-S3 adv|back ?
+%gra:	1|4|CASE 2|4|DET 3|4|COMPOUND 4|0|ROOT 5|6|NSUBJ 6|4|ACL-RELCL 7|6|ADVMOD 8|4|PUNCT
+*CHI:	xxx [>] .
+*MOT:	softly (.) safely (.) the cat (.) . 395089_397571
+%mor:	adv|softly adv|safely det|the-Def-Art noun|cat .
+%gra:	1|4|ADVMOD 2|4|ADVMOD 3|4|DET 4|0|ROOT 5|4|PUNCT
+*CHI:	cat [<] . 397132_397631
+%mor:	noun|cat .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	cat [<] . 397432_397932
+%mor:	noun|cat .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	cat [<] . 397492_397992
+%mor:	noun|cat .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	and spider . 397552_398112
+%mor:	cconj|and noun|spider .
+%gra:	1|2|CC 2|0|ROOT 3|2|PUNCT
+*CHI:	and I hate spiders xxx . 397733_398392
+%mor:	cconj|and pron|I-Prs-Nom-S1 verb|hate-Fin-Ind-Pres-S1 noun|spider-Plur-Acc .
+%gra:	1|3|CC 2|3|NSUBJ 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*INV1:	you what ? 398233_398693
+%mor:	pron|you-Prs-Acc-S2 pron|what-Int-S1 ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|PUNCT
+*MOT:	<hate spiders> [<] . 398874_398914
+%mor:	verb|hate-Fin-Imp-S noun|spider-Plur-Acc .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*CHI:	<hate spiders> [<] . 406043_406264
+%mor:	verb|hate-Fin-Imp-S noun|spider-Plur-Acc .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*INV1:	me [//] too too . 409748_410008
+%mor:	adv|too adv|too .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*CHI:	you too Mom ? 410570_411070
+%mor:	pron|you-Prs-Nom-S2 adv|too noun|mom ?
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|3|PUNCT
+*MOT:	well they don't do anything to me . 410810_412312
+%mor:	intj|well pron|they-Prs-Nom-P3 aux|dont-Fin-Ind-Pres-S3 verb|do-Inf-S pron|anything-Ind-S1 adp|to pron|I-Prs-Acc-S1 .
+%gra:	1|4|DISCOURSE 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|7|CASE 7|4|OBL 8|4|PUNCT
+*INV1:	&=laughs .
+*CHI:	do [/] do [/] do [/] do [/] do &~some +/.
+%mor:	verb|do-Fin-Imp-S +/.
+%gra:	1|0|ROOT 2|1|PUNCT
+*INV1:	no .
+%mor:	intj|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	our [/] cats and dogs get along don't they they ? 415037_418501
+%mor:	noun|cat-Plur cconj|and noun|dog-Plur verb|get-Fin-Ind-Pres-P3 adv|along sconj|dont pron|they-Prs-Nom-P3 pron|they-Prs-Nom-P3 ?
+%gra:	1|4|NSUBJ 2|3|CC 3|1|CONJ 4|0|ROOT 5|4|ADVMOD 6|8|MARK 7|8|NSUBJ 8|4|ADVCL 9|4|PUNCT
+*CHI:	yeah . 418622_418662
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	over at Mimi's . 419023_419783
+%mor:	adv|over adp|at propn|Mimis .
+%gra:	1|0|ROOT 2|3|CASE 3|1|OBL 4|1|PUNCT
+*CHI:	me have little kitty outside . 425610_426892
+%mor:	pron|I-Prs-Acc-S1 verb|have-Fin-Ind-Pres-S1 adj|little-S1 noun|kitty-Acc adv|outside .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|AMOD 4|2|OBJ 5|2|ADVMOD 6|2|PUNCT
+*CHI:	&=gasps bluebirds !
+%mor:	noun|bluebird-Plur !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	bluebirds outside yeah . 427413_429114
+%mor:	noun|bluebird-Plur adp|outside intj|yeah .
+%gra:	1|0|ROOT 2|3|CASE 3|1|DISCOURSE 4|1|PUNCT
+*CHI:	me just saw one on [/] nest nest . 429036_431459
+%mor:	pron|I-Prs-Acc-S1 adv|just verb|see-Fin-Ind-Past-S1-irr num|one noun|nest noun|nest-Acc .
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|6|NUMMOD 5|6|COMPOUND 6|3|OBJ 7|3|PUNCT
+*MOT:	you did ? 432179_432760
+%mor:	pron|you-Prs-Nom-S2 aux|do-Fin-Ind-Past-S2-irr ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|PUNCT
+*CHI:	yeah !
+%mor:	intj|yeah !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	&~a:h a blue one ? 433743_434682
+%mor:	det|a-Ind-Art adj|blue-S1 noun|one ?
+%gra:	1|3|DET 2|3|AMOD 3|0|ROOT 4|3|PUNCT
+*CHI:	yeah [!] (.) bluebird [>] . 434603_434964
+%mor:	intj|yeah noun|bluebird .
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|PUNCT
+*MOT:	oh [<] .
+%mor:	intj|oh .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	say bluebird .
+%mor:	verb|say-Fin-Imp-S noun|bluebird-Acc .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*MOT:	bluebird .
+%mor:	noun|bluebird .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	me just saw bluebird on that . 481508_487175
+%mor:	pron|I-Prs-Acc-S1 adv|just verb|see-Fin-Ind-Past-S1-irr noun|bluebird-Acc adp|on pron|that-Dem .
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|3|OBJ 5|6|CASE 6|3|OBL 7|3|PUNCT
+*CHI:	they on xxx .
+%mor:	pron|they-Prs-Nom-P3 adp|on .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|PUNCT
+*MOT:	&=laughs .
+@Comment:	Time is 10: 22
+@Eg:	bookreading
+@End

@@ -1,0 +1,423 @@
+@UTF8
+@PID:	11312/c-00034910-1
+@Begin
+@Languages:	eng
+@Participants:	MOT Mother, CHI Target_Child, INV Investigator
+@ID:	eng|HSLLD|MOT||female|||Mother|13||
+@ID:	eng|HSLLD|CHI|3;08.22|male|||Target_Child|||
+@ID:	eng|HSLLD|INV|||||Investigator|||
+@Birth of CHI:	04-SEP-1984
+@Media:	peter1, audio
+@Comment:	SES of Mot is lower
+@Date:	26-APR-1988
+@Location:	Boston , MA , USA
+@Situation:	Home Visit 1 took place in living room , CHI sat next to Mot on couch , early evening
+@Activities:	Elicited Report
+@Transcriber:	Audrey E. Stephenson , Mary Fischer
+@Types:	long, narrative, TD
+*MOT:	tell the girls where you went .
+%cod:	$N:RI:O
+%mor:	verb|tell-Fin-Imp-S det|the-Def-Art noun|girl-Plur adv|where pron|you-Prs-Nom-S2 verb|go-Fin-Ind-Past-S2-irr .
+%gra:	1|0|ROOT 2|3|DET 3|1|IOBJ 4|6|ADVMOD 5|6|NSUBJ 6|3|ACL-RELCL 7|1|PUNCT
+@Comment:	Time is 26:08
+*CHI:	no . 4766_5266
+%par:	whining
+%cod:	$O:R
+%mor:	intj|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	when you were on a long ride ?
+%cod:	$N:D
+%mor:	adv|when pron|you-Prs-Nom-S2 aux|be-Fin-Ind-Past-S2-irr adp|on det|a-Ind-Art adj|long-S1 noun|ride ?
+%gra:	1|7|ADVMOD 2|7|NSUBJ 3|7|COP 4|7|CASE 5|7|DET 6|7|AMOD 7|0|ROOT 8|7|PUNCT
+*MOT:	where did you go ? 5007_5726
+%cod:	$N:RI:S
+%mor:	adv|where aux|do-Fin-Ind-Past-S2-irr pron|you-Prs-Nom-S2 verb|go-Inf-S ?
+%gra:	1|4|ADVMOD 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|4|PUNCT
+*CHI:	0 .
+%par:	whining
+%cod:	$O
+*MOT:	<where did you> [<] get the button on your jacket ? 5668_7470
+%cod:	$N:RI:S
+%mor:	adv|where aux|do-Fin-Ind-Past-S2-irr pron|you-Prs-Nom-S2 verb|get-Inf-S det|the-Def-Art noun|button-Acc adp|on pron|your-Prs-Gen-S2 noun|jacket ?
+%gra:	1|4|ADVMOD 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|6|DET 6|4|OBJ 7|9|CASE 8|9|NMOD-POSS 9|4|OBL 10|4|PUNCT
+*CHI:	no !
+%int:	lengthened
+%par:	screaming
+%cod:	$O:R
+%mor:	intj|no !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	don't scream .
+%cod:	$O:C
+%mor:	intj|dont verb|scream-Fin-Imp-S .
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|PUNCT
+*MOT:	tell the girls . 8093_8592
+%cod:	$N:RI:O:R
+%mor:	verb|tell-Fin-Imp-S det|the-Def-Art noun|girl-Plur-Acc .
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|1|PUNCT
+*MOT:	did you go to Canada ? 11280_13742
+%cod:	$N:RI:L
+%mor:	aux|do-Fin-Ind-Past-S2-irr pron|you-Prs-Nom-S2 verb|go-Inf-S adp|to propn|Canada ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|5|CASE 5|3|OBL 6|3|PUNCT
+*CHI:	no .
+%int:	lengthened
+%par:	sobs the word in an exaggerated fashion
+%cod:	$N:GI:RL
+%mor:	intj|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	you can still play with the toys they just wanna know where you went . 14825_17688
+%cod:	$O:C $N:RI:S
+%mor:	pron|you-Prs-Nom-S2 aux|can-Fin-S adv|still verb|play-Inf-S adp|with det|the-Def-Art noun|toy-Plur pron|they-Prs-Nom-P3 adv|just aux|wanna-Fin-Ind-Pres-P3 verb|know-Fin-Ind-Pres-P3 adv|where pron|you-Prs-Nom-S2 verb|go-Fin-Ind-Past-S2-irr .
+%gra:	1|4|NSUBJ 2|4|AUX 3|4|ADVMOD 4|0|ROOT 5|7|CASE 6|7|DET 7|4|OBL 8|11|NSUBJ 9|11|ADVMOD 10|11|AUX 11|7|ACL-RELCL 12|14|ADVMOD 13|14|NSUBJ 14|11|CCOMP 15|4|PUNCT
+*CHI:	no . 17669_18168
+%par:	whining
+%int:	lengthened
+%cod:	$O:R
+%mor:	intj|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	did you go to Canada ? 19511_20571
+%cod:	$N:RI:L:R
+%mor:	aux|do-Fin-Ind-Past-S2-irr pron|you-Prs-Nom-S2 verb|go-Inf-S adp|to propn|Canada ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|5|CASE 5|3|OBL 6|3|PUNCT
+*CHI:	I don't want [!] to tell anybody . 20492_23635
+%cod:	$O:R
+%mor:	pron|I-Prs-Nom-S1 adv|dont verb|want-Fin-Ind-Pres-S1 part|to verb|tell-Inf-S pron|anybody-Ind-S1 .
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|5|MARK 5|3|XCOMP 6|5|OBJ 7|3|PUNCT
+*MOT:	why not ? 24938_25998
+%cod:	$O
+%mor:	adv|why part|not ?
+%gra:	1|0|ROOT 2|1|ADVMOD 3|1|PUNCT
+*MOT:	we had so much fun in Canada . 25860_27601
+%cod:	$O:O
+%mor:	pron|we-Prs-Nom-P1 verb|have-Fin-Ind-Past-P1-irr adv|so adj|much-S1 noun|fun-Acc adp|in propn|Canada .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|ADVMOD 4|5|AMOD 5|2|OBJ 6|7|CASE 7|2|OBL 8|2|PUNCT
+*MOT:	you wanna tell them ? 27801_29484
+%cod:	$O:O
+%mor:	pron|you-Prs-Nom-S2 aux|wanna-Fin-S verb|tell-Inf-S pron|they-Prs-Acc-P3 ?
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|IOBJ 5|3|PUNCT
+*MOT:	tell them .
+%cod:	$O:T
+%mor:	verb|tell-Fin-Imp-S pron|they-Prs-Acc-P3 .
+%gra:	1|0|ROOT 2|1|IOBJ 3|1|PUNCT
+*MOT:	<tell the girls> [>] ? 31095_33676
+%cod:	$O:T
+%mor:	verb|tell-Fin-Imp-S det|the-Def-Art noun|girl-Plur-Acc ?
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|1|PUNCT
+*CHI:	<don't> [<] anybody .
+%cod:	$O:R
+%mor:	verb|do-Fin-Imp-S pron|anybody-Ind-S1 .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*MOT:	that you stayed in the hotel ?
+%cod:	$O:T
+%mor:	sconj|that pron|you-Prs-Nom-S2 verb|stay-Fin-Ind-Past-S2 adp|in det|the-Def-Art noun|hotel ?
+%gra:	1|3|MARK 2|3|NSUBJ 3|0|ROOT 4|6|CASE 5|6|DET 6|3|OBL 7|3|PUNCT
+*CHI:	<I> [/] don't wanna tell anybody anybody . 33818_38281
+%cod:	$O:R
+%mor:	adv|dont intj|wanna verb|tell-Inf-S pron|anybody-Ind-S1 pron|anybody-Ind-S1 .
+%gra:	1|3|ADVMOD 2|3|DISCOURSE 3|0|ROOT 4|3|IOBJ 5|3|OBJ 6|3|PUNCT
+*MOT:	well they won't let you play with your toys then . 38782_41383
+%cod:	$O:C
+%mor:	intj|well pron|they-Prs-Nom-P3 aux|won-Fin-S verb|let-Inf-S pron|you-Prs-Acc-S2 verb|play-Inf-S adp|with pron|your-Prs-Gen-S2 noun|toy-Plur adv|then .
+%gra:	1|4|DISCOURSE 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|XCOMP 7|9|CASE 8|9|NMOD-POSS 9|6|OBL 10|6|ADVMOD 11|4|PUNCT
+*MOT:	it's their toys .
+%com:	tape stops and starts again (26.53)
+%cod:	$O:C
+%mor:	pron|its-Prs-Gen-S3 pron|their-Prs-Gen-P3 noun|toy-Plur .
+%gra:	1|3|NMOD-POSS 2|3|NMOD-POSS 3|0|ROOT 4|3|PUNCT
+*CHI:	I went to Can(ada) . 47005_47705
+%cod:	$N:GI:RO
+%mor:	pron|I-Prs-Nom-S1 verb|go-Fin-Ind-Past-S1-irr adp|to propn|Canada .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|CASE 4|2|OBL 5|2|PUNCT
+*MOT:	where did you go ? 49008_50709
+%cod:	$N:RI:S
+%mor:	adv|where aux|do-Fin-Ind-Past-S2-irr pron|you-Prs-Nom-S2 verb|go-Inf-S ?
+%gra:	1|4|ADVMOD 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|4|PUNCT
+*CHI:	Canada . 50429_50849
+%cod:	$N:GI:RS
+%mor:	propn|Canada .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	Canada . 52132_52631
+%cod:	$N:FA
+%mor:	propn|Canada .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	how did you get to Canada (.) ? 54996_57518
+%cod:	$N:RI:S
+%mor:	adv|how aux|do-Fin-Ind-Past-S2-irr pron|you-Prs-Nom-S2 verb|get-Inf-S adp|to propn|Canada ?
+%gra:	1|4|ADVMOD 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|6|CASE 6|4|OBL 7|4|PUNCT
+*MOT:	how did you go to Canada ? 57599_59320
+%cod:	$N:RI:S:R
+%mor:	adv|how aux|do-Fin-Ind-Past-S2-irr pron|you-Prs-Nom-S2 verb|go-Inf-S adp|to propn|Canada ?
+%gra:	1|4|ADVMOD 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|6|CASE 6|4|OBL 7|4|PUNCT
+*CHI:	by fire .
+%cod:	$N:GI:RS
+%mor:	adp|by noun|fire .
+%gra:	1|2|CASE 2|0|ROOT 3|2|PUNCT
+*MOT:	how ?
+%cod:	$N:FC
+%mor:	adv|how ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*INV:	zzz .
+%par:	laughs
+%mor:	intj|zzz .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	how did you go to Canada ? 60083_61143
+%cod:	$N:RI:S
+%mor:	adv|how aux|do-Fin-Ind-Past-S2-irr pron|you-Prs-Nom-S2 verb|go-Inf-S adp|to propn|Canada ?
+%gra:	1|4|ADVMOD 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|6|CASE 6|4|OBL 7|4|PUNCT
+*CHI:	by fire .
+%cod:	$N:GI:RS
+%mor:	adp|by noun|fire .
+%gra:	1|2|CASE 2|0|ROOT 3|2|PUNCT
+*MOT:	<you &~w> [//] didn't fly up [!] up ! 63345_66047
+%cod:	$N:FC
+%mor:	intj|didnt verb|fly-Inf-S adp|up adp|up !
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|COMPOUND-PRT 4|2|COMPOUND-PRT 5|2|PUNCT
+*MOT:	you went in a car [!] . 65588_66608
+%cod:	$N:GI:S
+%mor:	pron|you-Prs-Nom-S2 verb|go-Fin-Ind-Past-S2-irr adp|in det|a-Ind-Art noun|car .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|5|CASE 4|5|DET 5|2|OBL 6|2|PUNCT
+*MOT:	whose car did we use ? 66629_68170
+%cod:	$N:RI:S
+%mor:	pron|whose-Rel-S1 noun|car-Acc aux|do-Fin-Ind-Past-S3-irr pron|we-Prs-Nom-P1 verb|use-Inf-S ?
+%gra:	1|2|NMOD-POSS 2|5|OBJ 3|5|AUX 4|5|NSUBJ 5|0|ROOT 6|5|PUNCT
+*CHI:	ours .
+%cod:	$N:GI:RS
+%mor:	pron|our-Prs-S3 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	our car ?
+%cod:	$N:FC
+%mor:	pron|our-Prs-Gen-P1 noun|car ?
+%gra:	1|2|NMOD-POSS 2|0|ROOT 3|2|PUNCT
+*MOT:	no .
+%cod:	$N:FC
+%mor:	intj|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	whose car did you use ? 70114_71476
+%cod:	$N:RI:S
+%mor:	pron|whose-Rel-S1 noun|car-Acc aux|do-Fin-Ind-Past-S2-irr pron|you-Prs-Nom-S2 verb|use-Inf-S ?
+%gra:	1|2|NMOD-POSS 2|5|OBJ 3|5|AUX 4|5|NSUBJ 5|0|ROOT 6|5|PUNCT
+*CHI:	theirs .
+%cod:	$N:GI:RS
+%mor:	pron|their-Prs-S3 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	whose car ?
+%cod:	$N:FC
+%mor:	pron|whose-Rel-S1 noun|car ?
+%gra:	1|2|NMOD-POSS 2|0|ROOT 3|2|PUNCT
+*INV:	zzz .
+%par:	intake of breath
+%mor:	intj|zzz .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	<<auntie's new> [/] car> [>] new car ? 75301_77323
+%cod:	$N:RI:L
+%mor:	noun|car adj|new-S1 noun|car ?
+%gra:	1|3|COMPOUND 2|3|AMOD 3|0|ROOT 4|3|PUNCT
+*CHI:	<xxx xxx> [<] +...
+%cod:	$N:U
+*MOT:	hold that still . 78355_80656
+%cod:	$O:C
+%mor:	verb|hold-Fin-Imp-S pron|that-Dem adv|still .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|ADVMOD 4|1|PUNCT
+*MOT:	auntie's new car ? 80376_81096
+%cod:	$N:RI:L:R
+%mor:	adj|aunties-S1 adj|new-S1 noun|car ?
+%gra:	1|3|AMOD 2|3|AMOD 3|0|ROOT 4|3|PUNCT
+*CHI:	yeah . 81917_82417
+%cod:	$N:GI:RL
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	yeah ? 82598_83097
+%cod:	$N:FA
+%mor:	intj|yeah ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	auntie .
+%cod:	$N:FR
+%mor:	noun|auntie .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	who [<] came in the car with us ? 82938_84498
+%cod:	$N:RI:S
+%mor:	pron|who-Rel verb|come-Fin-Ind-Past-S3-irr adp|in det|the-Def-Art noun|car adp|with pron|we-Prs-Acc-P1 ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|5|CASE 4|5|DET 5|2|OBL 6|7|CASE 7|2|OBL 8|2|PUNCT
+*MOT:	alright let me put my hand . 84239_85359
+%cod:	$O:C
+%mor:	intj|alright verb|let-Fin-Imp-S pron|I-Prs-Acc-S1 verb|put-Inf-S pron|my-Prs-Gen-S1 noun|hand-Acc .
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|OBJ 4|2|XCOMP 5|6|NMOD-POSS 6|4|OBJ 7|2|PUNCT
+*MOT:	what if I hold it and <you blow the bubbles> [>] . 85180_87000
+%cod:	$O:C
+%mor:	pron|what-Int-S1 sconj|if pron|I-Prs-Nom-S1 verb|hold-Fin-Ind-Pres-S1 pron|it-Prs-Acc-S3 cconj|and pron|you-Prs-Nom-S2 verb|blow-Fin-Ind-Pres-S2 det|the-Def-Art noun|bubble-Plur-Acc .
+%gra:	1|0|ROOT 2|4|MARK 3|4|NSUBJ 4|1|ADVCL 5|4|OBJ 6|8|CC 7|8|NSUBJ 8|4|CONJ 9|10|DET 10|8|OBJ 11|1|PUNCT
+*CHI:	no no no !
+%par:	crying
+%cod:	$O:R
+%mor:	intj|no intj|no intj|no !
+%gra:	1|0|ROOT 2|1|DISCOURSE 3|1|DISCOURSE 4|1|PUNCT
+*MOT:	alright then you &-uh <hold it under> [//] my hand because you're having a hard time holding it time holding it . 87842_92304
+%cod:	$O:C
+%mor:	intj|alright adv|then pron|you-Prs-Acc-S2 pron|my-Prs-Gen-S1 noun|hand sconj|because pron|your-Prs-Nom-S2 verb|have-Part-Pres-S det|a-Ind-Art adj|hard-S1 noun|time-Acc verb|hold-Part-S pron|it-Prs-Acc-S3 noun|time-Acc verb|hold-Part-Pres-S pron|it-Prs-Acc-S3 .
+%gra:	1|5|DISCOURSE 2|5|ADVMOD 3|5|NSUBJ 4|5|NMOD-POSS 5|0|ROOT 6|8|MARK 7|8|NSUBJ 8|5|ADVCL 9|11|DET 10|11|AMOD 11|8|OBJ 12|11|ACL 13|12|OBJ 14|12|OBJ 15|12|ADVCL 16|15|OBJ 17|5|PUNCT
+*MOT:	it's sliding [>] .
+%cod:	$O:C
+%mor:	pron|its-Prs-Gen-S3 noun|slide-Ger .
+%gra:	1|2|NMOD-POSS 2|0|ROOT 3|2|PUNCT
+*CHI:	no [<] !
+%int:	high pitched , lengthened
+%par:	screams
+%cod:	$O:R
+%mor:	intj|no !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	alright listen to me . 95005_97828
+%cod:	$O:C
+%mor:	intj|alright verb|listen-Fin-Imp-S adp|to pron|I-Prs-Acc-S1 .
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|4|CASE 4|2|OBL 5|2|PUNCT
+*MOT:	who went to Canada with us ? 97369_98990
+%cod:	$N:RI:S
+%mor:	pron|who-Rel verb|go-Fin-Ind-Past-S3-irr adp|to propn|Canada adp|with pron|we-Prs-Acc-P1 ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|CASE 4|2|OBL 5|6|CASE 6|2|OBL 7|2|PUNCT
+*CHI:	Damen <and Faith> [>] .
+%cod:	$N:GI:RS
+%mor:	propn|Damen cconj|and propn|Faith .
+%gra:	1|0|ROOT 2|3|CC 3|1|CONJ 4|1|PUNCT
+*MOT:	who else ? 100013_101153
+%cod:	$N:RI:C
+%mor:	pron|who-Int adv|else ?
+%gra:	1|0|ROOT 2|1|ADVMOD 3|1|PUNCT
+*MOT:	and Faith ? 101435_102175
+%cod:	$N:FA
+%mor:	cconj|and noun|faith ?
+%gra:	1|2|CC 2|0|ROOT 3|2|PUNCT
+*MOT:	and who else ? 102898_103717
+%cod:	$N:RI:C
+%mor:	cconj|and pron|who-Int adv|else ?
+%gra:	1|2|CC 2|0|ROOT 3|2|ADVMOD 4|2|PUNCT
+*MOT:	who went in the other car ? 103439_104758
+%cod:	$N:RI:S
+%mor:	pron|who-Rel verb|go-Fin-Ind-Past-S3-irr adp|in det|the-Def-Art adj|other-S1 noun|car ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|6|CASE 4|6|DET 5|6|AMOD 6|2|OBL 7|2|PUNCT
+*CHI:	and (.) aunt +... 104500_105100
+%int:	<1> lengthened
+%cod:	$N:GI:RS:I
+%mor:	cconj|and noun|aunt +...
+%gra:	1|2|CC 2|0|ROOT 3|2|PUNCT
+*MOT:	auntie .
+%par:	whispering
+%cod:	$N:GI:RS:S
+%mor:	noun|auntie .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	auntie . 112205_112645
+%cod:	$N:GI:RS:R
+%mor:	noun|auntie .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	and who else ?
+%cod:	$N:RI:C
+%mor:	cconj|and pron|who-Int adv|else ?
+%gra:	1|2|CC 2|0|ROOT 3|2|ADVMOD 4|2|PUNCT
+*MOT:	auntie Kathleen . 113267_115950
+%int:	softly
+%cod:	$N:GI:RS:S
+%mor:	noun|auntie propn|Kathleen .
+%gra:	1|0|ROOT 2|1|FLAT 3|1|PUNCT
+*CHI:	yeah .
+%cod:	$N:FA
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	and who else ?
+%cod:	$N:RI:C:R
+%mor:	cconj|and pron|who-Int adv|else ?
+%gra:	1|2|CC 2|0|ROOT 3|2|ADVMOD 4|2|PUNCT
+*CHI:	Garret and uncle +... 116211_118333
+%cod:	$N:GI:RC $N:RI:S:B
+%mor:	propn|Garret cconj|and noun|uncle +...
+%gra:	1|0|ROOT 2|3|CC 3|1|CONJ 4|1|PUNCT
+*MOT:	Bill .
+%cod:	$N:GI:RS:B
+%mor:	propn|Bill .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	Bill .
+%cod:	$N:GI:RS:R
+%mor:	propn|Bill .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	and who's the two kids auntie brought (.) ? 122821_124644
+%cod:	$N:RI:S
+%mor:	cconj|and adv|whose det|the-Def-Art num|two noun|kid-Plur noun|auntie verb|bring-Fin-Ind-Past-P3-irr ?
+%gra:	1|2|CC 2|0|ROOT 3|6|DET 4|5|NUMMOD 5|6|COMPOUND 6|7|NSUBJ 7|2|ADVCL-RELCL 8|2|PUNCT
+*MOT:	Reed .
+%cod:	$N:GI:RS:S
+%mor:	propn|Reed .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	Reed .
+%cod:	$N:GI:RS:R
+%mor:	propn|Reed .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	and Michael ? 127545_128145
+%cod:	$N:RI:L
+%mor:	cconj|and propn|Michael ?
+%gra:	1|2|CC 2|0|ROOT 3|2|PUNCT
+*CHI:	Michael . 128186_128685
+%cod:	$N:GI:RL
+%mor:	propn|Michael .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	did you have fun with them ? 128907_130388
+%cod:	$N:RE
+%mor:	aux|do-Fin-Ind-Past-S2-irr pron|you-Prs-Nom-S2 verb|have-Inf-S noun|fun-Acc adp|with pron|they-Prs-Acc-P3 ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|3|OBJ 5|6|CASE 6|3|OBL 7|3|PUNCT
+*CHI:	yup .
+%cod:	$N:GE
+%mor:	intj|yup .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	you had a_lot_of fun huh ? 131109_132351
+%cod:	$N:RE
+%mor:	pron|you-Prs-Nom-S2 verb|have-Fin-Ind-Past-S2-irr propn|alotof noun|fun-Acc intj|huh ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|COMPOUND 4|2|OBJ 5|2|OBJ 6|2|PUNCT
+*MOT:	with Carmen ?
+%cod:	$N:RE
+%mor:	adp|with propn|Carmen ?
+%gra:	1|2|CASE 2|0|ROOT 3|2|PUNCT
+*MOT:	remember Carmen ? 133654_134513
+%cod:	$N:RI:L
+%mor:	verb|remember-Fin-Imp-S propn|Carmen-Acc ?
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*MOT:	taking all the pictures up there with his camera ? 135396_138379
+%cod:	$N:RI:L
+%mor:	verb|take-Part-Pres-S det|all-Def-Tot det|the-Def-Art noun|picture-Plur-Acc adv|up adv|there adp|with pron|his-Prs-Gen-S3 noun|camera ?
+%gra:	1|0|ROOT 2|4|DET-PREDET 3|4|DET 4|1|OBJ 5|6|ADVMOD 6|1|ADVMOD 7|9|CASE 8|9|NMOD-POSS 9|6|OBL 10|1|PUNCT
+*CHI:	yup .
+%cod:	$N:GI:RL
+%mor:	intj|yup .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	what else did we do ? 139062_140163
+%cod:	$N:RI:C
+%mor:	pron|what-Int-S1 adv|else aux|do-Fin-Ind-Past-P1-irr pron|we-Prs-Nom-P1 verb|do-Inf-S ?
+%gra:	1|5|OBJ 2|1|ADVMOD 3|5|AUX 4|5|NSUBJ 5|0|ROOT 6|5|PUNCT
+*MOT:	did we go to the hockey game (.) ? 139823_141263
+%cod:	$N:D
+%mor:	aux|do-Fin-Ind-Past-P1-irr pron|we-Prs-Nom-P1 verb|go-Inf-S adp|to det|the-Def-Art noun|hockey noun|game ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|7|CASE 5|7|DET 6|7|COMPOUND 7|3|OBL 8|3|PUNCT
+*CHI:	yup .
+%cod:	$N:GI:RL
+%mor:	intj|yup .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	while we were there ? 142035_143015
+%cod:	$N:RI:L
+%mor:	sconj|while pron|we-Prs-Nom-P1 aux|be-Fin-Ind-Past-P1-irr adv|there ?
+%gra:	1|4|MARK 2|4|NSUBJ 3|4|COP 4|0|ROOT 5|4|PUNCT
+*MOT:	tell the girls (.) ! 143396_144076
+%cod:	$N:RI:L:R
+%mor:	verb|tell-Fin-Imp-S det|the-Def-Art noun|girl-Plur-Acc !
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|1|PUNCT
+*MOT:	tell the girls where we went while we were there . 145959_148240
+%cod:	$N:RI:L:R
+%mor:	verb|tell-Fin-Imp-S det|the-Def-Art noun|girl-Plur adv|where pron|we-Prs-Nom-P1 verb|go-Fin-Ind-Past-P1-irr sconj|while pron|we-Prs-Nom-P1 aux|be-Fin-Ind-Past-P1-irr adv|there .
+%gra:	1|0|ROOT 2|3|DET 3|1|IOBJ 4|6|ADVMOD 5|6|NSUBJ 6|3|ACL-RELCL 7|10|MARK 8|10|NSUBJ 9|10|COP 10|6|ADVCL 11|1|PUNCT
+*CHI:	no .
+%par:	whiny
+%cod:	$O:R
+%mor:	intj|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	did we go to the hockey game (.) ? 149343_150604
+%cod:	$N:RI:L
+%mor:	aux|do-Fin-Ind-Past-P1-irr pron|we-Prs-Nom-P1 verb|go-Inf-S adp|to det|the-Def-Art noun|hockey noun|game ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|7|CASE 5|7|DET 6|7|COMPOUND 7|3|OBL 8|3|PUNCT
+*MOT:	huh ?
+%cod:	$N:RI:L:R
+%mor:	intj|huh ?
+%gra:	1|0|ROOT 2|1|PUNCT
+@End

@@ -1,0 +1,181 @@
+@UTF8
+@PID:	11312/c-00035157-1
+@Begin
+@Languages:	eng
+@Participants:	INV Investigator, MOT Mother, CHI Target_Child
+@ID:	eng|HSLLD|INV|||||Investigator|||
+@ID:	eng|HSLLD|MOT||female|||Mother|13||
+@ID:	eng|HSLLD|CHI|5;02.27|male|||Target_Child|||
+@Birth of CHI:	31-AUG-1985
+@Media:	bober2, audio
+@Comment:	SES of Mot is lower
+@Date:	27-NOV-1990
+@Location:	Boston , MA USA
+@Situation:	Home Visit 2
+@Activities:	Elicited report
+@Transcriber:	Eliza Whitbeck , Brenda Kurland
+@Types:	long, narrative, TD
+*INV:	if you could just start up a conversation . 7554_9938
+%mor:	sconj|if pron|you-Prs-Nom-S2 aux|could-Fin-S adv|just verb|start-Inf-S adp|up det|a-Ind-Art noun|conversation-Acc .
+%gra:	1|5|MARK 2|5|NSUBJ 3|5|AUX 4|5|ADVMOD 5|0|ROOT 6|5|COMPOUND-PRT 7|8|DET 8|5|OBJ 9|5|PUNCT
+@Comment:	Time is 8:41
+*MOT:	Chi .
+%mor:	propn|Chi .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	match .
+%mor:	noun|match .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	Chi .
+%mor:	propn|Chi .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	match [<] (.) match . 10520_11982
+%mor:	noun|match noun|match .
+%gra:	1|2|COMPOUND 2|0|ROOT 3|2|PUNCT
+*MOT:	Chi .
+%mor:	propn|Chi .
+%gra:	1|0|ROOT 2|1|PUNCT
+*INV:	can I see this book for a minute Chi ? 12023_13224
+%mor:	aux|can-Fin-S pron|I-Prs-Nom-S1 verb|see-Inf-S det|this-Def-Dem-Sing noun|book-Acc adp|for det|a-Ind-Art noun|minute propn|Chi ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|5|DET 5|3|OBJ 6|9|CASE 7|8|DET 8|3|OBL 9|3|OBL 10|3|PUNCT
+*CHI:	mm@i ?
+%mor:	intj|mm ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*INV:	I hafta write some things down (.) thank you . 15387_16849
+%mor:	pron|I-Prs-Nom-S1 aux|hafta-Fin-Ind-Pres-S1 verb|write-Inf-S det|some-Def-Ind noun|thing-Plur-Acc adp|down verb|thank-Fin-Ind-Pres-S1 pron|you-Prs-Acc-S2 .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|COMPOUND-PRT 7|3|PARATAXIS 8|7|OBJ 9|3|PUNCT
+*MOT:	Chi .
+%mor:	propn|Chi .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	what what <Mom Mom> [>] . 16749_18812
+%mor:	pron|what-Int-S1 det|what-Def-Int noun|mom noun|mom .
+%gra:	1|0|ROOT 2|3|DET 3|1|NSUBJ 4|3|FLAT 5|1|PUNCT
+*MOT:	<remember Sunday> [<] ? 18372_19192
+%mor:	verb|remember-Fin-Imp-S propn|Sunday-Acc ?
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*CHI:	Mom (.) no . 19634_21676
+%mor:	noun|mom intj|no .
+%gra:	1|0|ROOT 2|1|DISCOURSE 3|1|PUNCT
+*MOT:	<no actually it was> [//] no it was Saturday . 21276_23179
+%mor:	intj|no pron|it-Prs-Nom-S3 aux|be-Fin-Ind-Past-S3-irr propn|Saturday .
+%gra:	1|4|DISCOURSE 2|4|NSUBJ 3|4|COP 4|0|ROOT 5|4|PUNCT
+*MOT:	what did you do Saturday ? 24041_25182
+%mor:	pron|what-Int-S1 aux|do-Fin-Ind-Past-S2-irr pron|you-Prs-Nom-S2 verb|do-Inf-S propn|Saturday ?
+%gra:	1|4|OBJ 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|4|OBL-UNMARKED 6|4|PUNCT
+*CHI:	I don't know . 25263_26143
+%mor:	pron|I-Prs-Nom-S1 adv|dont verb|know-Fin-Ind-Pres-S1 .
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|3|PUNCT
+*MOT:	&=sigh .
+*MOT:	you don't remember (.) <where you &~w> [//] where did I (.) bring <you and Angela to> [//] your babysitter Angela . 28505_32449
+%mor:	pron|you-Prs-Nom-S2 aux|dont-Fin-S verb|remember-Inf-S adv|where aux|do-Fin-Ind-Past-S1-irr pron|I-Prs-Nom-S1 verb|bring-Inf-S pron|your-Prs-Gen-S2 noun|babysitter-Acc propn|Angela-Acc .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|7|ADVMOD 5|7|AUX 6|7|NSUBJ 7|3|CCOMP 8|9|NMOD-POSS 9|7|OBJ 10|7|OBJ 11|3|PUNCT
+*CHI:	&-um (.) tell me . 32130_32910
+%mor:	verb|tell-Fin-Imp-S pron|I-Prs-Acc-S1 .
+%gra:	1|0|ROOT 2|1|IOBJ 3|1|PUNCT
+*CHI:	(.) Ice Capades !
+%mor:	noun|Ice propn|Capades !
+%gra:	1|2|COMPOUND 2|0|ROOT 3|2|PUNCT
+*MOT:	how did you like it ? 32450_39039
+%mor:	adv|how aux|do-Fin-Ind-Past-S2-irr pron|you-Prs-Nom-S2 verb|like-Inf-S pron|it-Prs-Acc-S3 ?
+%gra:	1|4|ADVMOD 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*CHI:	can you give me my xxx ? 38599_41362
+%int:	high voice , softer
+%mor:	aux|can-Fin-S pron|you-Prs-Nom-S2 verb|give-Inf-S pron|I-Prs-Acc-S1 pron|my-Prs-Gen-S1 ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|3|IOBJ 5|3|OBJ 6|3|PUNCT
+*MOT:	in a minute .
+%mor:	adp|in det|a-Ind-Art noun|minute .
+%gra:	1|3|CASE 2|3|DET 3|0|ROOT 4|3|PUNCT
+*CHI:	I want <to [?] now> [>] .
+%int:	whining
+%mor:	pron|I-Prs-Nom-S1 verb|want-Fin-Ind-Pres-S1 part|to adv|now .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|MARK 4|2|ADVMOD 5|2|PUNCT
+*MOT:	I know you can .
+%mor:	pron|I-Prs-Nom-S1 verb|know-Fin-Ind-Pres-S1 pron|you-Prs-Nom-S2 aux|can-Fin-S .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|NSUBJ 4|2|CCOMP 5|2|PUNCT
+*MOT:	but where did you go (.) you went to the Ice Capades ? 41183_42844
+%mor:	cconj|but adv|where aux|do-Fin-Ind-Past-S2-irr pron|you-Prs-Nom-S2 verb|go-Inf-S pron|you-Prs-Nom-S2 verb|go-Fin-Ind-Past-S2-irr adp|to det|the-Def-Art propn|Ice propn|Capades-Plur ?
+%gra:	1|5|CC 2|5|ADVMOD 3|5|AUX 4|5|NSUBJ 5|0|ROOT 6|7|NSUBJ 7|5|CCOMP 8|11|CASE 9|11|DET 10|11|COMPOUND 11|7|OBL 12|5|PUNCT
+*CHI:	yes .
+%int:	whining
+%mor:	intj|yes .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	where <was that at> [>] ? 44715_45855
+%mor:	adv|where aux|be-Fin-Ind-Past-S3-irr pron|that-Dem adp|at ?
+%gra:	1|0|ROOT 2|1|COP 3|1|NSUBJ 4|1|CASE 5|1|PUNCT
+*CHI:	I want that .
+%mor:	pron|I-Prs-Nom-S1 verb|want-Fin-Ind-Pres-S1 pron|that-Dem .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*MOT:	was it downtown ? 48457_49237
+%mor:	aux|be-Fin-Ind-Past-S3-irr pron|it-Prs-Nom-S3 noun|downtown ?
+%gra:	1|3|COP 2|3|NSUBJ 3|0|ROOT 4|3|PUNCT
+*CHI:	yes . 51579_52079
+%mor:	intj|yes .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	and (.) Mommy <brought you and Angela right> [>] ? 51699_54321
+%mor:	cconj|and propn|Mommy verb|bring-Fin-Ind-Past-S3-irr pron|you-Prs-Acc-S2 cconj|and propn|Angela adv|right ?
+%gra:	1|3|CC 2|3|NSUBJ 3|0|ROOT 4|3|OBJ 5|6|CC 6|4|CONJ 7|3|ADVMOD 8|3|PUNCT
+*CHI:	don't tell me that .
+%mor:	intj|dont verb|tell-Fin-Imp-S pron|I-Prs-Acc-S1 pron|that-Dem .
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|IOBJ 4|2|OBJ 5|2|PUNCT
+*CHI:	+^ I know what we xxx [>] . 54101_55882
+%mor:	pron|I-Prs-Nom-S1 verb|know-Fin-Ind-Pres-S1 pron|what-Int-S1 pron|we-Prs-Nom-P1 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|CCOMP 5|2|PUNCT
+*MOT:	<she [= EXP] wants to hear about it> [<] . 55462_57203
+%mor:	pron|she-Prs-Nom-S3 verb|want-Fin-Ind-Pres-S3 part|to verb|hear-Inf-S adp|about pron|it-Prs-Acc-S3 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|MARK 4|2|XCOMP 5|6|CASE 6|4|OBL 7|2|PUNCT
+*MOT:	she didn't get to go . 58644_59824
+%mor:	pron|she-Prs-Nom-S3 adv|didnt verb|get-Inf-S part|to verb|go-Inf-S .
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|5|MARK 5|3|XCOMP 6|3|PUNCT
+*CHI:	(.) mm xxx .
+%mor:	intj|mm .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	what is this .
+%mor:	pron|what-Int-S1 aux|be-Fin-Ind-Pres-S3 pron|this-Dem-S1 .
+%gra:	1|0|ROOT 2|3|COP 3|1|NSUBJ 4|1|PUNCT
+*MOT:	<he wants you> [<] to see what he bought . 70565_72847
+%mor:	pron|he-Prs-Nom-S3 verb|want-Fin-Ind-Pres-S3 pron|you-Prs-Acc-S2 part|to verb|see-Inf-S pron|what-Rel-S1 pron|he-Prs-Nom-S3 verb|buy-Fin-Ind-Past-S3-irr .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|5|MARK 5|2|XCOMP 6|5|OBJ 7|8|NSUBJ 8|6|ACL-RELCL 9|2|PUNCT
+*INV:	okay . 74430_74930
+%mor:	intj|okay .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	at the Ice Capades .
+%mor:	adp|at det|the-Def-Art propn|Ice propn|Capades-Plur .
+%gra:	1|4|CASE 2|4|DET 3|4|COMPOUND 4|0|ROOT 5|4|PUNCT
+*CHI:	(.) www .
+%par:	whining/humming
+*INV:	what's that ? 83104_83864
+%mor:	pron|what-Int-S1 pron|that-Dem ?
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*CHI:	you know what it is , don't you ? 91052_92513
+%mor:	pron|you-Prs-Nom-S2 verb|know-Fin-Ind-Pres-S2 pron|what-Rel-S1 pron|it-Prs-Nom-S3 aux|be-Fin-Ind-Pres-S3 cm|cm intj|dont pron|you-Prs-Acc-S2 ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|CCOMP 4|5|NSUBJ 5|3|ACL-RELCL 6|8|PUNCT 7|2|DISCOURSE 8|2|PARATAXIS 9|2|PUNCT
+*INV:	no tell me . 92233_93054
+%mor:	intj|no verb|tell-Fin-Imp-S pron|I-Prs-Acc-S1 .
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|IOBJ 4|2|PUNCT
+*CHI:	it's a sword . 92614_93234
+%int:	very cute intonation
+%mor:	pron|its-Prs-Gen-S3 det|a-Ind-Art noun|sword .
+%gra:	1|3|NMOD-POSS 2|3|DET 3|0|ROOT 4|3|PUNCT
+*MOT:	it's a sword huh ? 92914_98401
+%mor:	pron|its-Prs-Gen-S3 det|a-Ind-Art noun|sword intj|huh ?
+%gra:	1|3|NMOD-POSS 2|3|DET 3|0|ROOT 4|3|FLAT 5|3|PUNCT
+*MOT:	(.) what's the favorite thing you've done lately ? 98642_100484
+%mor:	aux|what-Fin-Ind-Pres-S3 det|the-Def-Art adj|favorite-S1 noun|thing-Ger pron|youve-Prs-Nom-S2 verb|do-Part-Past-S-irr adv|lately ?
+%gra:	1|4|COP 2|4|DET 3|4|AMOD 4|0|ROOT 5|6|NSUBJ 6|4|ACL-RELCL 7|6|ADVMOD 8|4|PUNCT
+*CHI:	I got a big comb . 103145_103987
+%act:	Chi runs the sword through his hair .
+%mor:	pron|I-Prs-Nom-S1 verb|get-Fin-Ind-Past-S1-irr det|a-Ind-Art adj|big-S1 noun|comb-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|5|DET 4|5|AMOD 5|2|OBJ 6|2|PUNCT
+*MOT:	was it Ice Capades ? 104491_105533
+%mor:	aux|be-Fin-Ind-Past-S3-irr pron|it-Prs-Nom-S3 propn|Ice propn|Capades ?
+%gra:	1|4|COP 2|4|NSUBJ 3|4|COMPOUND 4|0|ROOT 5|4|PUNCT
+*CHI:	yep .
+%mor:	intj|yep .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	can I go in the other room [= tv is on] ? 105595_107882
+%mor:	aux|can-Fin-S pron|I-Prs-Nom-S1 verb|go-Inf-S adp|in det|the-Def-Art adj|other-S1 noun|room ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|7|CASE 5|7|DET 6|7|AMOD 7|3|OBL 8|3|PUNCT
+*CHI:	+< got it !
+%mor:	verb|get-Fin-Ind-Past-S1-irr pron|it-Prs-Acc-S3 !
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+@Comment:	Time is 10:36
+@End

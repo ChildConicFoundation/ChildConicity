@@ -1,0 +1,371 @@
+@UTF8
+@PID:	11312/c-00034916-1
+@Begin
+@Languages:	eng
+@Participants:	MOT Mother, CHI Target_Child, FAT Father
+@ID:	eng|HSLLD|MOT||female|||Mother|||
+@ID:	eng|HSLLD|CHI|4;11.05|female|||Target_Child|||
+@ID:	eng|HSLLD|FAT||male|||Father|||
+@Birth of CHI:	05-JUL-1985
+@Media:	roser1, audio, missing
+@Comment:	really missing
+@Comment:	SES of Mot is lower
+@Date:	10-JUL-1989
+@Location:	Boston , MA USA
+@Situation:	Home Visit 1
+@Activities:	Elicited report
+@Transcriber:	Monica Frazier , Michelle Porche , Mary Fischer
+@Types:	long, narrative, TD
+*MOT:	you make lunch at day care when you're playing housekeeping (.) sometimes [>] ?
+%mor:	pron|you-Prs-Nom-S2 verb|make-Fin-Ind-Pres-S2 noun|lunch-Acc adp|at noun|day noun|care adv|when pron|your-Prs-Nom-S2 verb|play-Part-Pres-S noun|housekeeping-Acc-Ger adv|sometimes ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|6|CASE 5|6|COMPOUND 6|2|OBL 7|9|ADVMOD 8|9|NSUBJ 9|2|ADVCL 10|9|OBJ 11|9|ADVMOD 12|2|PUNCT
+@Comment:	Time is 31:33
+@Comment:	FAT utterance has been changed to Mot for purposes of this analysis. Check original transcript for Fat's input.
+@Comment:	$N:RI:O:D
+*CHI:	xxx [<] real stuff because it xxx .
+%cod:	$N:U
+%mor:	adj|real-S1 noun|stuff sconj|because pron|it-Prs-Nom-S3 .
+%gra:	1|2|AMOD 2|0|ROOT 3|4|MARK 4|2|ADVCL 5|2|PUNCT
+*MOT:	but you you <pretend you have dishes and> [>] pots and pans don't you ?
+%cod:	$N:RI:L
+%mor:	cconj|but pron|you-Prs-Acc-S2 pron|you-Prs-Nom-S2 verb|pretend-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 verb|have-Fin-Ind-Pres-S2 noun|dish-Plur-Acc cconj|and noun|pot-Plur cconj|and noun|pan-Plur adp|dont pron|you-Prs-Nom-S2 ?
+%gra:	1|4|CC 2|4|NSUBJ 3|4|NSUBJ 4|0|ROOT 5|6|NSUBJ 6|4|CCOMP 7|6|OBJ 8|9|CC 9|7|CONJ 10|11|CC 11|7|CONJ 12|13|CASE 13|6|OBL 14|4|PUNCT
+*CHI:	<we right we pretend> [<] .
+%cod:	$N:GI:RL
+%mor:	pron|we-Prs-Nom-P1 adv|right pron|we-Prs-Nom-P1 verb|pretend-Fin-Ind-Pres-P1 .
+%gra:	1|4|NSUBJ 2|4|ADVMOD 3|4|NSUBJ 4|0|ROOT 5|4|PUNCT
+*CHI:	yeah we yeah we do .
+%cod:	$N:FA
+%mor:	intj|yeah pron|we-Prs-Nom-P1 intj|yeah pron|we-Prs-Nom-P1 aux|do-Fin-Ind-Pres-P1 .
+%gra:	1|5|DISCOURSE 2|5|REPARANDUM 3|5|DISCOURSE 4|5|NSUBJ 5|0|ROOT 6|5|PUNCT
+*CHI:	we pretend <xxx> [<] .
+%cod:	$N:FA
+%mor:	pron|we-Prs-Nom-P1 verb|pretend-Fin-Ind-Pres-P1 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|PUNCT
+*MOT:	yeah ?
+%cod:	$N:FA
+%mor:	intj|yeah ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	xxx you [/] ever the cook cook ?
+%cod:	$N:RI:L
+%mor:	adv|ever det|the-Def-Art noun|cook noun|cook ?
+%gra:	1|4|ADVMOD 2|4|DET 3|4|COMPOUND 4|0|ROOT 5|4|PUNCT
+*CHI:	hm: ?
+%cod:	$N:RC
+%mor:	intj|hm ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	yeah ?
+%cod:	$N:RI:L
+%mor:	intj|yeah ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	no .
+%cod:	$N:GI:RL
+%mor:	intj|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	no ?
+%cod:	$N:FC
+%mor:	intj|no ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	xxx the cooker kid .
+%cod:	$N:U
+%mor:	det|the-Def-Art noun|cooker noun|kid .
+%gra:	1|3|DET 2|3|COMPOUND 3|0|ROOT 4|3|PUNCT
+*MOT:	you're the mom ?
+%cod:	$N:RI:L
+%mor:	verb|your-Fin-Imp-S det|the-Def-Art noun|mom-Acc ?
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|1|PUNCT
+*CHI:	no xxx the mom and then I xxx I xxx cooker kid .
+%cod:	$N:GI:RL $N:U $N:U
+%mor:	intj|no det|the-Def-Art noun|mom cconj|and adv|then pron|I-Prs-Nom-S1 pron|I-Prs-Nom-S1 verb|cooker-Fin-Ind-Pres-S1 noun|kid-Acc .
+%gra:	1|8|DISCOURSE 2|3|DET 3|8|NSUBJ 4|5|CC 5|3|CONJ 6|8|NSUBJ 7|8|NSUBJ 8|0|ROOT 9|8|OBJ 10|8|PUNCT
+*MOT:	a cooker kid okay .
+%cod:	$N:FA
+%mor:	det|a-Ind-Art noun|cooker noun|kid intj|okay .
+%gra:	1|3|DET 2|3|COMPOUND 3|0|ROOT 4|3|DISCOURSE 5|3|PUNCT
+*MOT:	does Danielle cook with you when you play ?
+%cod:	$N:RI:L
+%mor:	aux|do-Fin-Ind-Pres-S3 propn|Danielle verb|cook-Inf-S adp|with pron|you-Prs-Acc-S2 adv|when pron|you-Prs-Nom-S2 verb|play-Fin-Ind-Pres-S2 ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|5|CASE 5|3|OBL 6|8|ADVMOD 7|8|NSUBJ 8|3|ADVCL 9|3|PUNCT
+*CHI:	mhm .
+%cod:	$N:GI:RL
+%mor:	intj|mhm .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	(..) what else do you do in housekeeping ?
+%cod:	$N:RI:S
+%mor:	pron|what-Int-S1 adv|else aux|do-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 verb|do-Inf-S adp|in noun|housekeeping-Ger ?
+%gra:	1|5|OBJ 2|1|ADVMOD 3|5|AUX 4|5|NSUBJ 5|0|ROOT 6|7|CASE 7|5|OBL 8|5|PUNCT
+*MOT:	you clean the house ?
+%cod:	$N:RI:L
+%mor:	pron|you-Prs-Nom-S2 verb|clean-Fin-Ind-Pres-S2 det|the-Def-Art noun|house-Acc ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|PUNCT
+*CHI:	yeah I vacuum .
+%cod:	$N:GI:RL:E
+%mor:	intj|yeah pron|I-Prs-Nom-S1 verb|vacuum-Fin-Ind-Pres-S1 .
+%gra:	1|3|DISCOURSE 2|3|NSUBJ 3|0|ROOT 4|3|PUNCT
+*MOT:	yeah ?
+%cod:	$N:FA
+%mor:	intj|yeah ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	and wash dishes ?
+%cod:	$N:RI:L
+%mor:	cconj|and verb|wash-Fin-Imp-S noun|dish-Plur-Acc ?
+%gra:	1|2|CC 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*CHI:	mhm xxx .
+%cod:	$N:GI:RL $N:U
+%mor:	intj|mhm .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	wash your hands .
+%cod:	$N:GI:S
+%mor:	verb|wash-Fin-Imp-S pron|your-Prs-Gen-S2 noun|hand-Plur-Acc .
+%gra:	1|0|ROOT 2|3|NMOD-POSS 3|1|OBJ 4|1|PUNCT
+*MOT:	yeah .
+%cod:	$N:FA
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	there's a bed in housekeeping too right ?
+%cod:	$N:RI:L
+%mor:	verb|there-Fin-Ind-Pres-S3 det|a-Ind-Art noun|bed-Acc adp|in noun|housekeeping-Ger adv|too adj|right-S1 ?
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|5|CASE 5|3|NMOD 6|7|ADVMOD 7|1|ADVMOD 8|1|PUNCT
+*CHI:	yeah .
+%cod:	$N:GI:RL
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	what's that for ?
+%cod:	$N:RI:S:D
+%mor:	pron|what-Int-S1 pron|that-Dem adp|for ?
+%gra:	1|0|ROOT 2|1|NSUBJ 3|1|CASE 4|1|PUNCT
+*CHI:	want me to .
+%cod:	$N:U
+%mor:	verb|want-Fin-Imp-S pron|I-Prs-Acc-S1 part|to .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|XCOMP 4|1|PUNCT
+*MOT:	take the kids take a rest when you're playing housekeeping ?
+%cod:	$N:RI:L
+%mor:	verb|take-Fin-Imp-S det|the-Def-Art noun|kid-Plur-Acc verb|take-Fin-Imp-S det|a-Ind-Art noun|rest-Acc adv|when noun|your verb|play-Part-Pres-S noun|housekeeping-Acc-Ger ?
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|1|XCOMP 5|6|DET 6|4|OBJ 7|9|ADVMOD 8|9|NSUBJ 9|4|ADVCL 10|9|OBJ 11|1|PUNCT
+*CHI:	sometimes we take it like a car .
+%cod:	$N:GI:RS
+%mor:	adv|sometimes pron|we-Prs-Nom-P1 verb|take-Fin-Ind-Pres-P1 pron|it-Prs-Acc-S3 adp|like det|a-Ind-Art noun|car .
+%gra:	1|3|ADVMOD 2|3|NSUBJ 3|0|ROOT 4|3|OBJ 5|7|CASE 6|7|DET 7|3|OBL 8|3|PUNCT
+*MOT:	like a car ?
+%cod:	$N:RC
+%mor:	adp|like det|a-Ind-Art noun|car ?
+%gra:	1|3|CASE 2|3|DET 3|0|ROOT 4|3|PUNCT
+*CHI:	yeah .
+%cod:	$N:GC
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	oh .
+%cod:	$N:FA
+%mor:	intj|oh .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	do do you put your dollies with that ?
+%cod:	$N:RI:L
+%mor:	aux|do-Fin-Ind-Pres-S2 aux|do-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 verb|put-Inf-S pron|your-Prs-Gen-S2 noun|dolly-Plur-Acc adp|with pron|that-Dem ?
+%gra:	1|4|AUX 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|6|NMOD-POSS 6|4|OBJ 7|8|CASE 8|4|OBL 9|4|PUNCT
+*CHI:	&=laughs yeah .
+%cod:	$N:GI:RL
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	it's not very big for us .
+%cod:	$N:GI:S
+%mor:	pron|its-Prs-Nom-S3 part|not adv|very adj|big-S1 adp|for pron|we-Prs-Acc-P1 .
+%gra:	1|4|NSUBJ 2|4|ADVMOD 3|4|ADVMOD 4|0|ROOT 5|6|CASE 6|4|OBL 7|4|PUNCT
+*MOT:	hm: .
+%cod:	$N:FA
+%mor:	intj|hm .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	we can't fit in it we tried to .
+%cod:	$N:GI:S
+%mor:	pron|we-Prs-Nom-P1 aux|cant-Fin-S verb|fit-Inf-S adp|in pron|it-Prs-Acc-S3 pron|we-Prs-Nom-P1 verb|try-Fin-Ind-Past-P1 part|to .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|5|CASE 5|3|OBL 6|7|NSUBJ 7|3|PARATAXIS 8|7|XCOMP 9|3|PUNCT
+*CHI:	we hadta squish our legs up .
+%cod:	$N:GI:S
+%mor:	pron|we-Prs-Nom-P1 aux|hadt-Fin-Ind-Pres-P1 verb|squish-Inf-S pron|our-Prs-Gen-P1 noun|leg-Plur-Acc adp|up .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|5|NMOD-POSS 5|3|OBJ 6|3|COMPOUND-PRT 7|3|PUNCT
+*MOT:	mhm .
+%cod:	$N:FA
+%mor:	intj|mhm .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	xxx size (.) the dollies .
+%cod:	$N:U
+%mor:	verb|size-Fin-Imp-S det|the-Def-Art noun|dolly-Plur-Acc .
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|1|PUNCT
+*MOT:	you also have dress up clothes in housekeeping right ?
+%cod:	$N:RI:L
+%mor:	pron|you-Prs-Nom-S2 adv|also aux|have-Fin-Ind-Pres-S2 noun|dress adp|up noun|clothes-Ptan-Acc adp|in noun|housekeeping-Ger adv|right ?
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|6|COMPOUND 5|4|COMPOUND-PRT 6|3|OBJ 7|8|CASE 8|3|OBL 9|3|ADVMOD 10|3|PUNCT
+*CHI:	yeah yeah we do .
+%cod:	$N:D
+%mor:	intj|yeah intj|yeah pron|we-Prs-Nom-P1 aux|do-Fin-Ind-Pres-P1 .
+%gra:	1|4|DISCOURSE 2|4|DISCOURSE 3|4|NSUBJ 4|0|ROOT 5|4|PUNCT
+*CHI:	we have coats .
+%cod:	$N:GI:RL:E
+%mor:	pron|we-Prs-Nom-P1 verb|have-Fin-Ind-Pres-P1 noun|coat-Plur-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*MOT:	yeah what's your favorite dress up clothes ?
+%cod:	$N:RI:S:D
+%mor:	intj|yeah aux|what-Fin-Ind-Pres-S3 pron|your-Prs-Gen-S2 adj|favorite-S1 noun|dress adp|up noun|clothes-Ptan ?
+%gra:	1|7|DISCOURSE 2|7|COP 3|7|NMOD-POSS 4|7|AMOD 5|7|COMPOUND 6|7|COMPOUND 7|0|ROOT 8|7|PUNCT
+*CHI:	my favorite clothes xxx housekeeping .
+%cod:	$N:U
+%mor:	pron|my-Prs-Gen-S1 adj|favorite-S1 noun|clothes-Ptan noun|housekeeping-Ger .
+%gra:	1|4|NMOD-POSS 2|4|AMOD 3|4|COMPOUND 4|0|ROOT 5|4|PUNCT
+*FAT:	&=laughs .
+*MOT:	[^ taking the mouse from Leo] I know .
+%cod:	$N:FA
+%mor:	pron|I-Prs-Nom-S1 verb|know-Fin-Ind-Pres-S1 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|PUNCT
+*MOT:	(.) your tutu .
+%cod:	$N:GI:RS:S
+%mor:	pron|your-Prs-Gen-S2 noun|tutu .
+%gra:	1|2|NMOD-POSS 2|0|ROOT 3|2|PUNCT
+*CHI:	mhm .
+%cod:	$N:FA
+%mor:	intj|mhm .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	yes (.) what else ?
+%cod:	$N:FA $N:RI:C:D
+%mor:	intj|yes pron|what-Int-S1 adv|else ?
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|ADVMOD 4|2|PUNCT
+*CHI:	xxx .
+%cod:	$N:U
+*MOT:	your pink tutu like a ballerina .
+%cod:	$N:FA
+%mor:	pron|your-Prs-Gen-S2 adj|pink-S1 noun|tutu adp|like det|a-Ind-Art noun|ballerina .
+%gra:	1|3|NMOD-POSS 2|3|AMOD 3|0|ROOT 4|6|CASE 5|6|DET 6|3|NMOD 7|3|PUNCT
+*CHI:	it's not a tutu !
+%cod:	$N:FC
+%mor:	pron|its-Prs-Nom-S3 part|not det|a-Ind-Art noun|tutu !
+%gra:	1|4|NSUBJ 2|4|ADVMOD 3|4|DET 4|0|ROOT 5|4|PUNCT
+*MOT:	well it's a ballerina costume right ?
+%cod:	$N:RI:L
+%mor:	intj|well pron|its-Prs-Gen-S3 det|a-Ind-Art noun|ballerina noun|costume adv|right ?
+%gra:	1|5|DISCOURSE 2|5|NSUBJ 3|5|DET 4|5|COMPOUND 5|0|ROOT 6|5|ADVMOD 7|5|PUNCT
+*CHI:	right .
+%cod:	$N:D
+%mor:	adj|right-S1 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	it's a costume .
+%cod:	$N:GI:RL
+%mor:	pron|its-Prs-Gen-S3 det|a-Ind-Art noun|costume .
+%gra:	1|3|NSUBJ 2|3|DET 3|0|ROOT 4|3|PUNCT
+*MOT:	and high heels you have .
+%cod:	$N:GI:S
+%mor:	cconj|and adj|high-S1 noun|heel-Plur pron|you-Prs-Nom-S2 verb|have-Fin-Ind-Pres-S2 .
+%gra:	1|3|CC 2|3|AMOD 3|0|ROOT 4|5|NSUBJ 5|3|ACL-RELCL 6|3|PUNCT
+*CHI:	xxx in my dance school xxx .
+%cod:	$N:U
+%mor:	adp|in pron|my-Prs-Gen-S1 noun|dance noun|school .
+%gra:	1|4|CASE 2|4|NMOD-POSS 3|4|COMPOUND 4|0|ROOT 5|4|PUNCT
+*MOT:	not sandals ?
+%cod:	$N:RI:L
+%mor:	part|not noun|sandal-Plur ?
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*CHI:	no .
+%cod:	$N:GI:RL
+%mor:	intj|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	didn't wear sandals at school .
+%cod:	$N:GI:S
+%mor:	part|didnt verb|wear-Fin-Imp-S noun|sandal-Plur-Acc adp|at noun|school .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|OBJ 4|5|CASE 5|2|OBL 6|2|PUNCT
+*MOT:	hm: .
+%cod:	$N:FA
+%mor:	intj|hm .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	(..) what else do you do in housekeeping ?
+%cod:	$N:RI:C
+%mor:	pron|what-Int-S1 adv|else aux|do-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 verb|do-Inf-S adp|in noun|housekeeping-Ger ?
+%gra:	1|5|OBJ 2|1|ADVMOD 3|5|AUX 4|5|NSUBJ 5|0|ROOT 6|7|CASE 7|5|OBL 8|5|PUNCT
+*CHI:	mm (.) we set the table and +...
+%cod:	$N:GI:RC
+%mor:	intj|mm pron|we-Prs-Nom-P1 verb|set-Fin-Ind-Past-P1-irr det|the-Def-Art noun|table-Acc cconj|and +...
+%gra:	1|3|DISCOURSE 2|3|NSUBJ 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|CONJ 7|3|PUNCT
+*MOT:	hm: and somebody be the father and the brother and the sister ?
+%cod:	$N:FA $N:RI:L
+%mor:	intj|hm cconj|and pron|somebody-Ind-S1 aux|be-Inf-S det|the-Def-Art noun|father cconj|and det|the-Def-Art noun|brother cconj|and det|the-Def-Art noun|sister ?
+%gra:	1|6|DISCOURSE 2|3|CC 3|6|NSUBJ 4|6|COP 5|6|DET 6|0|ROOT 7|9|CC 8|9|DET 9|6|CONJ 10|12|CC 11|12|DET 12|9|CONJ 13|6|PUNCT
+*CHI:	mhm .
+%cod:	$N:D
+%mor:	intj|mhm .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	the boys be the father and the brother .
+%cod:	$N:GI:RL:E
+%mor:	det|the-Def-Art noun|boy-Plur aux|be-Fin-Ind-Pres-P3 det|the-Def-Art noun|father cconj|and det|the-Def-Art noun|brother .
+%gra:	1|2|DET 2|5|NSUBJ 3|5|COP 4|5|DET 5|0|ROOT 6|8|CC 7|8|DET 8|5|CONJ 9|5|PUNCT
+*MOT:	mhm .
+%cod:	$N:FA
+%mor:	intj|mhm .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	and the girls be the sisters and the mothers .
+%cod:	$N:GI:S
+%mor:	cconj|and det|the-Def-Art noun|girl-Plur aux|be-Inf-S det|the-Def-Art noun|sister-Plur cconj|and det|the-Def-Art noun|mother-Plur .
+%gra:	1|6|CC 2|3|DET 3|6|NSUBJ 4|6|COP 5|6|DET 6|0|ROOT 7|9|CC 8|9|DET 9|6|CONJ 10|6|PUNCT
+*CHI:	sometimes the boys like to be the mother .
+%cod:	$N:GI:S
+%mor:	adv|sometimes det|the-Def-Art noun|boy-Plur verb|like-Fin-Ind-Pres-P3 part|to aux|be-Inf-S det|the-Def-Art noun|mother .
+%gra:	1|4|ADVMOD 2|3|DET 3|4|NSUBJ 4|0|ROOT 5|8|MARK 6|8|COP 7|8|DET 8|4|XCOMP 9|4|PUNCT
+*MOT:	yeah .
+%cod:	$N:FA
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	and Davy keeps putting on mother's shoes .
+%cod:	$N:GI:S
+%mor:	cconj|and propn|Davy verb|keep-Fin-Ind-Pres-S3 verb|put-Ger-S adp|on noun|mother noun|shoe-Plur-Acc .
+%gra:	1|3|CC 2|3|NSUBJ 3|0|ROOT 4|3|XCOMP 5|4|COMPOUND-PRT 6|7|COMPOUND 7|4|OBJ 8|3|PUNCT
+*MOT:	does he ?
+%cod:	$N:FA
+%mor:	aux|do-Fin-Ind-Pres-S3 pron|he-Prs-Nom-S3 ?
+%gra:	1|0|ROOT 2|1|NSUBJ 3|1|PUNCT
+*FAT:	&=laughs .
+*CHI:	yeah .
+%cod:	$N:FR
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	xxx girls ever like to be the father ?
+%cod:	$N:RI:L
+%mor:	noun|girl-Plur adv|ever verb|like-Fin-Ind-Pres-P3 part|to aux|be-Inf-S det|the-Def-Art noun|father ?
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|7|MARK 5|7|COP 6|7|DET 7|3|XCOMP 8|3|PUNCT
+*CHI:	sometimes .
+%cod:	$N:GI:RL
+%mor:	adv|sometimes .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	yeah ?
+%cod:	$N:FA
+%mor:	intj|yeah ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	xxx .
+*MOT:	would you ever be the father ?
+%cod:	$N:RI:L
+%mor:	aux|would-Fin-S pron|you-Prs-Nom-S2 adv|ever aux|be-Inf-S det|the-Def-Art noun|father ?
+%gra:	1|6|AUX 2|6|NSUBJ 3|6|ADVMOD 4|6|COP 5|6|DET 6|0|ROOT 7|6|PUNCT
+*CHI:	just be a mother .
+%cod:	$N:GI:RL:E
+%mor:	adv|just aux|be-Fin-Imp-S det|a-Ind-Art noun|mother .
+%gra:	1|4|ADVMOD 2|4|COP 3|4|DET 4|0|ROOT 5|4|PUNCT
+*MOT:	do you ever be a sister ?
+%cod:	$N:RI:L
+%mor:	aux|do-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 adv|ever aux|be-Inf-S det|a-Ind-Art noun|sister ?
+%gra:	1|6|AUX 2|6|NSUBJ 3|6|ADVMOD 4|6|COP 5|6|DET 6|0|ROOT 7|6|PUNCT
+*CHI:	I be sister mhm .
+%cod:	$N:GI:RL $N:FA
+%sit:	something has fallen
+%mor:	pron|I-Prs-Nom-S1 aux|be-Fin-Ind-Pres-S1 noun|sister intj|mhm .
+%gra:	1|3|NSUBJ 2|3|COP 3|0|ROOT 4|3|DISCOURSE 5|3|PUNCT
+*MOT:	oh !
+%mor:	intj|oh !
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	&=laughs .
+*CHI:	0 [=! sing song] .
+*FAT:	yeah that's good .
+%mor:	intj|yeah pron|that-Dem-S1 adj|good-S1 .
+%gra:	1|3|DISCOURSE 2|3|NSUBJ 3|0|ROOT 4|3|PUNCT
+*CHI:	0 [=! unintelligible noise] .
+*FAT:	that's [<] really .
+%mor:	aux|that-Fin-Ind-Pres-S3 adv|really .
+%gra:	1|2|COP 2|0|ROOT 3|2|PUNCT
+*CHI:	xxx (.) .
+*FAT:	www .
+%exp:	FAT makes comment about the toys
+@Comment:	Time is 35:10
+@End

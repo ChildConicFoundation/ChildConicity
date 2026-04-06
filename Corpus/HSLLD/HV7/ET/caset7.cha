@@ -1,0 +1,215 @@
+@UTF8
+@PID:	11312/c-00035852-1
+@Begin
+@Languages:	eng
+@Participants:	INV Investigator, BRO Brother, MOT Mother, CHI Target_Child
+@ID:	eng|HSLLD|INV|||||Investigator|||
+@ID:	eng|HSLLD|BRO|||||Brother|||
+@ID:	eng|HSLLD|MOT||female|||Mother|12||
+@ID:	eng|HSLLD|CHI|9;05.23|male|||Target_Child|||
+@Birth of CHI:	17-JUN-1984
+@Media:	caset7, audio, missing
+@Comment:	SES of Mot is lower
+@Date:	10-DEC-1993
+@Location:	Boston , MA USA
+@Situation:	Home Visit 7
+@Activities:	Magnet activity
+@Types:	long, toyplay, TD
+*INV:	now the last thing we have for you to do together <is (.)> [>] <you may> [>] remember these things which we brought when you had your (.) I don't know it was like our third visit to your house .
+%mor:	adv|now det|the-Def-Art adj|last-S1 noun|thing-Ger pron|we-Prs-Nom-P1 verb|have-Fin-Ind-Pres-P1 adp|for pron|you-Prs-Acc-S2 part|to verb|do-Inf-S adv|together aux|be-Fin-Ind-Pres-S3 pron|you-Prs-Nom-S2 aux|may-Fin-S verb|remember-Inf-S det|this-Def-Dem-Plur noun|thing-Plur-Acc pron|which-Rel-S1 pron|we-Prs-Nom-P1 verb|bring-Fin-Ind-Past-P1-irr adv|when pron|you-Prs-Nom-S2 verb|have-Fin-Ind-Past-S2-irr pron|your-Prs-Gen-S2 pron|I-Prs-Nom-S1 adv|dont verb|know-Inf-S pron|it-Prs-Nom-S3 aux|be-Fin-Ind-Past-S3-irr adp|like pron|our-Prs-Gen-P1 adj|third-S1 noun|visit adp|to pron|your-Prs-Gen-S2 noun|house .
+%gra:	1|15|ADVMOD 2|4|DET 3|4|AMOD 4|15|NSUBJ-OUTER 5|6|NSUBJ 6|4|ACL-RELCL 7|8|CASE 8|6|OBL 9|10|MARK 10|6|XCOMP 11|10|ADVMOD 12|15|COP 13|15|NSUBJ 14|15|AUX 15|0|ROOT 16|17|DET 17|15|OBJ 18|20|OBJ 19|20|NSUBJ 20|17|ACL-RELCL 21|23|ADVMOD 22|23|NSUBJ 23|20|ADVCL 24|25|NMOD-POSS 25|27|NSUBJ 26|27|ADVMOD 27|23|XCOMP 28|33|NSUBJ 29|33|COP 30|33|CASE 31|33|NMOD-POSS 32|33|AMOD 33|27|CCOMP 34|36|CASE 35|36|NMOD-POSS 36|33|NMOD 37|15|PUNCT
+@Comment:	Time is 11:47, video tape doesn't start until later; transcription is solely from audio tape until then
+@Comment:	There is very little talk during this activity. Throughout , MOT and Chi engage in parallel play , independently piling and removing magnets from the base magnet. They do not cooperate at all , except once when Chi asks Mot to pick up the purple star from the base which he is having trouble with. The only talk seems to be about whether a certain piece will stick or not. Chi's younger Bro is present during this activity. For the most part he watches Chi and Mot play , and sometimes sings or talks to himself.
+*BRO:	<now we go through that> [<] .
+%mor:	adv|now pron|we-Prs-Nom-P1 verb|go-Fin-Ind-Pres-P1 adp|through pron|that-Dem .
+%gra:	1|3|ADVMOD 2|3|NSUBJ 3|0|ROOT 4|5|CASE 5|3|OBL 6|3|PUNCT
+*MOT:	shh quiet .
+%mor:	intj|shh adj|quiet-S1 .
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|PUNCT
+*INV:	&-um (.) so I brought them again for you to play with .
+%mor:	adv|so pron|I-Prs-Nom-S1 verb|bring-Fin-Ind-Past-S1-irr pron|they-Prs-Acc-P3 adv|again sconj|for pron|you-Prs-Acc-S2 part|to verb|play-Inf-S adp|with .
+%gra:	1|3|ADVMOD 2|3|NSUBJ 3|0|ROOT 4|3|OBJ 5|3|ADVMOD 6|9|MARK 7|9|NSUBJ 8|9|MARK 9|3|ADVCL 10|9|OBL 11|3|PUNCT
+*BRO:	<don't touch it> [?] !
+%mor:	intj|dont verb|touch-Fin-S pron|it-Prs-Acc-S3 !
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*INV:	and we would like the two of you to &-um (.) play with them and feel free to discuss them (.) as you play .
+%mor:	cconj|and pron|we-Prs-Nom-P1 aux|would-Fin-S verb|like-Inf-S det|the-Def-Art num|two adp|of pron|you-Prs-Acc-S2 part|to verb|play-Inf-S adp|with pron|they-Prs-Acc-P3 cconj|and verb|feel-Inf-S adj|free-S1 part|to verb|discuss-Inf-S pron|they-Prs-Acc-P3 sconj|as pron|you-Prs-Nom-S2 verb|play-Fin-Ind-Pres-S2 .
+%gra:	1|4|CC 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|8|CASE 8|6|NMOD 9|10|MARK 10|4|XCOMP 11|12|CASE 12|10|OBL 13|14|CC 14|10|CONJ 15|14|XCOMP 16|17|MARK 17|15|XCOMP 18|17|OBJ 19|21|MARK 20|21|NSUBJ 21|17|ADVCL 22|4|PUNCT
+*INV:	&-um you can take all this stuff out .
+%mor:	pron|you-Prs-Nom-S2 aux|can-Fin-S verb|take-Inf-S det|all-Def-Tot det|this-Def-Dem-Sing noun|stuff-Acc adp|out .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|6|DET-PREDET 5|6|DET 6|3|OBJ 7|3|COMPOUND-PRT 8|3|PUNCT
+*INV:	and that is my favorite item .
+%mor:	cconj|and pron|that-Dem aux|be-Fin-Ind-Pres-S3 pron|my-Prs-Gen-S1 adj|favorite-S1 noun|item .
+%gra:	1|6|CC 2|6|NSUBJ 3|6|COP 4|6|NMOD-POSS 5|6|AMOD 6|0|ROOT 7|6|PUNCT
+*INV:	and [!] if you don't mind we're <going to be video taping> [>] your hands .
+%mor:	cconj|and sconj|if pron|you-Prs-Nom-S2 aux|dont-Fin-Ind-Pres-S2 verb|mind-Inf-S sconj|were verb|go-Part-Pres-S part|to aux|be-Inf-S noun|video verb|tape-Part-Pres-S pron|your-Prs-Gen-S2 noun|hand-Plur-Acc .
+%gra:	1|5|CC 2|5|MARK 3|5|NSUBJ 4|5|AUX 5|0|ROOT 6|7|MARK 7|5|ADVCL 8|11|MARK 9|11|AUX 10|7|XCOMP 11|10|ACL 12|13|NMOD-POSS 13|11|OBJ 14|5|PUNCT
+*BRO:	xxx [<] .
+*MOT:	okay .
+%mor:	intj|okay .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	www .
+@Comment:	Time is 12:28
+*BRO:	www .
+*INV:	www .
+%exp:	MOT and EXP try to pursuade Bro not to play with the magnets , even though he wants to , until 12:49
+*CHI:	doesn't stick .
+%com:	video starts here
+%sit:	Chi and Mot are piling things onto the black base magnet independently; in this utterance Chi is unsuccessfully trying to get a penny to stick to other magnets
+%mor:	intj|doesnt verb|stick-Fin-S .
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|PUNCT
+*MOT:	it doesn't ?
+%mor:	pron|it-Prs-Nom-S3 adv|doesnt ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|PUNCT
+*INV:	(.) &=laughs .
+*MOT:	Chi .
+%mor:	propn|Chi .
+%gra:	1|0|ROOT 2|1|PUNCT
+*BRO:	xxx .
+*INV:	you can dump that stuff [= magnets in their box] out .
+%mor:	pron|you-Prs-Nom-S2 aux|can-Fin-S verb|dump-Inf-S det|that-Def-Dem-Sing noun|stuff-Acc adp|out .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|COMPOUND-PRT 7|3|PUNCT
+*INV:	I mean you don't hafta keep it in the little +...
+%mor:	pron|I-Prs-Nom-S1 verb|mean-Fin-Ind-Pres-S1 pron|you-Prs-Nom-S2 aux|dont-Fin-S part|hafta verb|keep-Inf-S pron|it-Prs-Acc-S3 adp|in det|the-Def-Art adj|little-S1 +...
+%gra:	1|2|NSUBJ 2|6|PARATAXIS 3|6|NSUBJ 4|6|AUX 5|6|ADVMOD 6|0|ROOT 7|6|OBJ 8|10|CASE 9|10|DET 10|6|OBL 11|6|PUNCT
+*MOT:	0 .
+%act:	dumps out the box of magnets
+*INV:	if you want .
+%mor:	sconj|if pron|you-Prs-Nom-S2 verb|want-Fin-Ind-Pres-S2 .
+%gra:	1|3|MARK 2|3|NSUBJ 3|0|ROOT 4|3|PUNCT
+*INV:	makes it easier to grab .
+%mor:	verb|make-Fin-Ind-Pres-S3 pron|it-Prs-Acc-S3 adj|easy-Cmp-S1 part|to verb|grab-Inf-S .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|XCOMP 4|5|MARK 5|3|XCOMP 6|1|PUNCT
+*MOT:	(..) easy way to clean everything up ?
+%sit:	MOT uses the yellow wand to remove some of the magnets from the base
+%mor:	adj|easy-S1 noun|way part|to verb|clean-Inf-S pron|everything-Tot-S1 adp|up ?
+%gra:	1|2|AMOD 2|0|ROOT 3|4|MARK 4|2|ACL 5|4|OBJ 6|4|COMPOUND-PRT 7|2|PUNCT
+*MOT:	don't you wish you had one of those [= yellow wand] to clean your room ?
+%mor:	intj|dont pron|you-Prs-Nom-S2 verb|wish-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 verb|have-Fin-Ind-Past-S2-irr num|one adp|of pron|that-Dem-P1 part|to verb|clean-Inf-S pron|your-Prs-Gen-S2 noun|room-Acc ?
+%gra:	1|3|DISCOURSE 2|3|NSUBJ 3|0|ROOT 4|5|NSUBJ 5|3|CCOMP 6|5|OBJ 7|8|CASE 8|6|NMOD 9|10|MARK 10|5|ADVCL 11|12|NMOD-POSS 12|10|OBJ 13|3|PUNCT
+*MOT:	&=laughs .
+*CHI:	yeah .
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	what is this sposta be ?
+%act:	picks up yellow wand , which has a lot of magnets stuck to it
+%mor:	pron|what-Int-S1 aux|be-Fin-Ind-Pres-S3 det|this-Def-Dem-Sing noun|sposta aux|be-Inf-S ?
+%gra:	1|0|ROOT 2|1|COP 3|4|DET 4|1|NSUBJ 5|1|COP 6|1|PUNCT
+*MOT:	that's [= yellow wand] just a wand I think .
+%mor:	aux|that-Fin-Ind-Pres-S3 adv|just det|a-Ind-Art noun|wand pron|I-Prs-Nom-S1 verb|think-Fin-Ind-Pres-S1 .
+%gra:	1|4|COP 2|4|ADVMOD 3|4|DET 4|0|ROOT 5|6|NSUBJ 6|4|ACL-RELCL 7|4|PUNCT
+*MOT:	it [= yellow wand] picks up the magnets .
+%mor:	pron|it-Prs-Nom-S3 verb|pick-Fin-Ind-Pres-S3 adp|up det|the-Def-Art noun|magnet-Plur-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|COMPOUND-PRT 4|5|DET 5|2|OBJ 6|2|PUNCT
+*CHI:	(.) Mom pick that one [= purple star] up .
+%act:	tries unsuccessfully to pick up the purple star from the base using the yellow wand
+%mor:	noun|mom verb|pick-Fin-S det|that-Def-Dem-Sing noun|one-Acc adp|up .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|COMPOUND-PRT 6|2|PUNCT
+*MOT:	the star ?
+%mor:	det|the-Def-Art noun|star ?
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*CHI:	yeah .
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	I think .
+%sit:	aft Bro talks a bit in the background
+%mor:	pron|I-Prs-Nom-S1 verb|think-Fin-Ind-Pres-S1 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|PUNCT
+*CHI:	(..) doesn't stick to it .
+%act:	tries unsuccessfully to get a yellow triangle (which has metal on one side and yellow plastic on the other) to stick to other magnets on the base
+%mor:	adv|doesnt verb|stick-Fin-Imp-S adp|to pron|it-Prs-Acc-S3 .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|4|CASE 4|2|OBL 5|2|PUNCT
+*MOT:	what doesn't ?
+%mor:	pron|what-Int-S1 aux|doesnt-Fin-Ind-Pres-S3 ?
+%gra:	1|0|ROOT 2|1|COP 3|1|PUNCT
+*CHI:	0 .
+%act:	lifts up yellow triangle to show Mot
+*MOT:	yeah these [= metal balls] look like gum balls don't they ?
+%mor:	intj|yeah pron|this-Dem-P1 verb|look-Fin-Ind-Pres-P3 adp|like noun|gum noun|ball-Plur verb|do-Fin-Ind-Pres-P3 pron|they-Prs-Nom-P3 ?
+%gra:	1|3|DISCOURSE 2|3|NSUBJ 3|0|ROOT 4|6|CASE 5|6|COMPOUND 6|3|OBL 7|3|PARATAXIS 8|7|OBJ 9|3|PUNCT
+*CHI:	mhm .
+%mor:	intj|mhm .
+%gra:	1|0|ROOT 2|1|PUNCT
+*INV:	careful Bro .
+%sit:	BRO had moved over so that he was in between the camera and the magnets
+%mor:	adj|careful-S1 noun|bro .
+%gra:	1|2|AMOD 2|0|ROOT 3|2|PUNCT
+*INV:	can you scoot back ?
+%mor:	aux|can-Fin-S pron|you-Prs-Nom-S2 verb|sceak-Inf-S adv|back ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|3|ADVMOD 5|3|PUNCT
+*INV:	+^ thanks Bro .
+%mor:	noun|thanks propn|bro .
+%gra:	1|0|ROOT 2|1|VOCATIVE 3|1|PUNCT
+*INV:	now try it .
+%sit:	Chi holds the yellow wand over some magnets and moves it around a little , with no real effect
+%mor:	adv|now verb|try-Fin-Imp-S pron|it-Prs-Acc-S3 .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*INV:	+^ yeah .
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	0 .
+%act:	<$=4> continues to move the yellow wand over the magnets , at one point picking up a red ball with it
+*MOT:	(..) &=laughs .
+*INV:	(..) &=laughs .
+*INV:	can make him [= silver man] dance .
+%sit:	in moving the yellow wand quickly back and forth over some of the magnets , Chi was able to make a silver man move in synch with the yellow wand
+%mor:	aux|can-Fin-S verb|make-Inf-S pron|he-Prs-Acc-S3 verb|dance-Inf-S .
+%gra:	1|2|AUX 2|0|ROOT 3|2|OBJ 4|2|XCOMP 5|2|PUNCT
+*CHI:	he keeps falling down .
+%sit:	bef Chi used the yellow wand to pick up some of the magnets from the base , knocking off the plastic orange man; Mot then put the orange man back on the base; then Chi hit him with the wand , making him fall down
+%mor:	pron|he-Prs-Nom-S3 verb|keep-Fin-Ind-Pres-S3 verb|fall-Ger-S adp|down .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|XCOMP 4|3|COMPOUND-PRT 5|2|PUNCT
+*BRO:	what ?
+%mor:	pron|what-Int-S1 ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*INV:	(..) the amazing flying object .
+%sit:	could be referring to the two silver sticks Mot was trying to stack , which then fell onto the yellow wand Chi was holding and stuck to it
+%mor:	det|the-Def-Art adj|amazing-S1 noun|fly-Ger noun|object .
+%gra:	1|4|DET 2|4|AMOD 3|4|COMPOUND 4|0|ROOT 5|4|PUNCT
+*CHI:	(..) one [= silver man] of (th)em stand up .
+%act:	aft pulls a silver man off the yellow wand and puts it on the base
+%mor:	num|one adp|of pron|they-Prs-Acc-P3 verb|stand-Fin-Ind-Pres-P3 adp|up .
+%gra:	1|4|NSUBJ 2|3|CASE 3|1|NMOD 4|0|ROOT 5|4|COMPOUND-PRT 6|4|PUNCT
+*BRO:	(..) xxx [=! unintelligible vocalizations] !
+*CHI:	(.) xxx &=mumbles .
+*MOT:	(..) you're using it [= referent unclear] .
+%sit:	Chi is holding the yellow wand and repeatedly touches it to some magnets , with no effect
+%mor:	pron|your-Prs-Nom-S2 verb|use-Part-Pres-S pron|it-Prs-Acc-S3 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*BRO:	uhoh uhoh .
+%mor:	intj|uhoh intj|uhoh .
+%gra:	1|0|ROOT 2|1|DISCOURSE 3|1|PUNCT
+*BRO:	(..) xxx .
+%int:	mutters to himself
+*CHI:	0 .
+%act:	touches the yellow wand to several of the magnets , making some of them fall down
+*INV:	what are you trying to do ?
+%mor:	pron|what-Int-S1 aux|be-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 verb|try-Part-Pres-S part|to verb|do-Inf-S ?
+%gra:	1|6|OBJ 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|6|MARK 6|4|XCOMP 7|4|PUNCT
+*CHI:	<lay them [= magnets]> [//] all down all down .
+%act:	pushes down a silver man so that they're lying flat on the base
+%mor:	det|all-Def-Tot adv|down det|all-Def-Tot adv|down .
+%gra:	1|2|DET 2|0|ROOT 3|4|DET 4|2|ADVMOD 5|2|PUNCT
+*INV:	oh you're gonna xxx (th)em [= magnets] all down ?
+%mor:	intj|oh intj|your adp|gonna pron|they-Prs-Acc-P3 det|all-Def-Tot adv|down ?
+%gra:	1|4|DISCOURSE 2|4|DISCOURSE 3|4|CASE 4|0|ROOT 5|6|DET 6|4|ADVMOD 7|4|PUNCT
+*CHI:	this [= silver man] one .
+%act:	picks up a silver man and puts it on the base and tries to make it and some other silver men lie down using the wand
+%mor:	det|this-Def-Dem-Sing noun|one .
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*CHI:	(.) xxx [>] .
+*MOT:	tadah .
+%mor:	propn|tadah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*INV:	tadah .
+%mor:	propn|tadah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	okay you wanna play with them Bro ?
+%mor:	intj|okay pron|you-Prs-Nom-S2 aux|wanna-Fin-S verb|play-Inf-S adp|with pron|they-Prs-Acc-P3 propn|bro ?
+%gra:	1|4|DISCOURSE 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|6|CASE 6|4|OBL 7|4|OBL 8|4|PUNCT
+*INV:	ah .
+%sit:	timer goes off
+%mor:	intj|ah .
+%gra:	1|0|ROOT 2|1|PUNCT
+@Comment:	Time is 21:23
+@End

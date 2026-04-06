@@ -1,0 +1,164 @@
+@UTF8
+@PID:	11312/c-00035160-1
+@Begin
+@Languages:	eng
+@Participants:	INV Investigator, MOT Mother, CHI Target_Child
+@ID:	eng|HSLLD|INV|||||Investigator|||
+@ID:	eng|HSLLD|MOT||female|||Mother|13||
+@ID:	eng|HSLLD|CHI|4;10.24|female|||Target_Child|||
+@Media:	brner2, audio
+@Comment:	SES of Mot is lower
+@Date:	27-AUG-1990
+@Location:	Boston , MA USA
+@Situation:	Home Visit 2
+@Activities:	Elicited report
+@Transcriber:	Eliza Whitbeck , Brenda Kurland Dernis
+@Types:	long, narrative, TD
+*INV:	now if you could just have Chi tell me about something the two of you did together maybe it was going to the park or if it was (.) going out to do something oh don't worry about that . 1945_11924
+%mor:	adv|now sconj|if pron|you-Prs-Nom-S2 aux|could-Fin-S adv|just verb|have-Inf-S propn|Chi-Acc verb|tell-Inf-S pron|I-Prs-Acc-S1 adp|about pron|something-Ind-S1 det|the-Def-Art num|two adp|of pron|you-Prs-Acc-S2 verb|do-Fin-Ind-Past-S3-irr adv|together adv|maybe pron|it-Prs-Nom-S3 aux|be-Fin-Ind-Past-S3-irr verb|go-Part-Pres-S adp|to det|the-Def-Art noun|park cconj|or sconj|if pron|it-Prs-Nom-S3 aux|be-Fin-Ind-Past-S3-irr verb|go-Part-Pres-S adp|out part|to verb|do-Inf-S pron|something-Ind-S1 intj|oh part|dont verb|worry-Inf-S adp|about pron|that-Dem .
+%gra:	1|21|ADVMOD 2|6|MARK 3|6|NSUBJ 4|6|AUX 5|6|ADVMOD 6|21|ADVCL 7|6|OBJ 8|6|XCOMP 9|8|IOBJ 10|11|CASE 11|8|OBL 12|13|DET 13|16|NSUBJ 14|15|CASE 15|13|NMOD 16|11|ACL-RELCL 17|16|ADVMOD 18|21|ADVMOD 19|21|NSUBJ 20|21|AUX 21|0|ROOT 22|24|CASE 23|24|DET 24|21|OBL 25|29|CC 26|29|MARK 27|29|NSUBJ 28|29|AUX 29|21|CONJ 30|29|COMPOUND-PRT 31|32|MARK 32|29|ADVCL 33|32|OBJ 34|36|DISCOURSE 35|36|MARK 36|32|ADVCL 37|38|CASE 38|36|OBL 39|21|PUNCT
+@Comment:	Time is 18:13
+*INV:	&-um you know anything that you know she enjoyed that maybe the three of you did together or something [>] . 13547_18519
+%mor:	pron|you-Prs-Nom-S2 verb|know-Fin-Ind-Pres-S2 pron|anything-Ind-S1 pron|that-Rel pron|you-Prs-Nom-S2 verb|know-Fin-Ind-Pres-S2 pron|she-Prs-Nom-S3 verb|enjoy-Fin-Ind-Past-S3 sconj|that adv|maybe det|the-Def-Art num|three adp|of pron|you-Prs-Acc-S2 verb|do-Fin-Ind-Past-S3-irr adv|together cconj|or pron|something-Ind-S1 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|6|OBJ 5|6|NSUBJ 6|3|ACL-RELCL 7|8|NSUBJ 8|3|ACL-RELCL 9|15|MARK 10|15|ADVMOD 11|12|DET 12|15|NSUBJ 13|14|CASE 14|12|NMOD 15|8|CCOMP 16|15|ADVMOD 17|18|CC 18|16|CONJ 19|2|PUNCT
+*MOT:	your [<] name is again . 18259_19882
+%mor:	pron|your-Prs-Gen-S2 noun|name aux|be-Fin-Ind-Pres-S3 adv|again .
+%gra:	1|2|NMOD-POSS 2|4|NSUBJ 3|4|COP 4|0|ROOT 5|4|PUNCT
+*MOT:	your name is xxx ? 19783_20704
+%mor:	pron|your-Prs-Gen-S2 noun|name aux|be-Fin-Ind-Pres-S3 ?
+%gra:	1|2|NMOD-POSS 2|3|NSUBJ 3|0|ROOT 4|3|PUNCT
+*INV:	Inv .
+%mor:	propn|Inv .
+%gra:	1|0|ROOT 2|1|PUNCT
+*INV:	Inv ?
+%mor:	propn|Inv ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	Inv ?
+%mor:	propn|Inv ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*INV:	mhm .
+%mor:	intj|mhm .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	okay .
+%mor:	intj|okay .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	Chi do you wanna tell Inv about (.) something that we did together ? 23875_27899
+%mor:	propn|Chi aux|do-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 part|wana verb|tell-Inf-S propn|Inv-Acc adp|about pron|something-Ind-S1 pron|that-Rel pron|we-Prs-Nom-P1 verb|do-Fin-Ind-Past-P1-irr adv|together ?
+%gra:	1|5|VOCATIVE 2|5|AUX 3|5|NSUBJ 4|5|ADVMOD 5|0|ROOT 6|5|OBJ 7|8|CASE 8|5|OBL 9|11|OBJ 10|11|NSUBJ 11|8|ACL-RELCL 12|11|ADVMOD 13|5|PUNCT
+*CHI:	www &=noise .
+*MOT:	don't be shy . 28341_29301
+%mor:	adv|dont aux|be-Fin-Imp-S adj|shy-S1 .
+%gra:	1|3|ADVMOD 2|3|COP 3|0|ROOT 4|3|PUNCT
+*CHI:	www &=noises .
+*MOT:	tell her about maybe [//] something we did . 30263_32646
+%mor:	verb|tell-Fin-Imp-S pron|her-Prs-Acc-S3 adp|about pron|something-Ind-S1 pron|we-Prs-Nom-P1 verb|do-Fin-Ind-Past-P1-irr .
+%gra:	1|0|ROOT 2|1|IOBJ 3|4|CASE 4|1|OBL 5|6|NSUBJ 6|4|ACL-RELCL 7|1|PUNCT
+*CHI:	no . 33828_34328
+%int:	whining
+%mor:	intj|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	why not ? 33929_34529
+%mor:	adv|why part|not ?
+%gra:	1|0|ROOT 2|1|ADVMOD 3|1|PUNCT
+*CHI:	I want the backpack [= used in school visits for taperecorder] .
+%mor:	pron|I-Prs-Nom-S1 verb|want-Fin-Ind-Pres-S1 det|the-Def-Art noun|backpack-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|PUNCT
+*MOT:	I can't hear you . 37574_38574
+%mor:	pron|I-Prs-Nom-S1 aux|cant-Fin-S verb|hear-Inf-S pron|you-Prs-Acc-S2 .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*CHI:	I want a backpack . 40297_41377
+%mor:	pron|I-Prs-Nom-S1 verb|want-Fin-Ind-Pres-S1 det|a-Ind-Art noun|backpack-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|PUNCT
+*MOT:	a backpack ? 41318_41838
+%mor:	det|a-Ind-Art noun|backpack ?
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*MOT:	you [//] not today . 41558_42579
+%mor:	part|not noun|today .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*MOT:	how_about (.) maybe when they come visit you in school ? 43061_45844
+%mor:	noun|howabout adv|maybe adv|when pron|they-Prs-Nom-P3 verb|come-Fin-Ind-Pres-P3 verb|visit-Inf-S pron|you-Prs-Acc-S2 adp|in noun|school ?
+%gra:	1|0|ROOT 2|6|ADVMOD 3|5|ADVMOD 4|5|NSUBJ 5|6|ADVCL 6|1|PARATAXIS 7|6|OBJ 8|9|CASE 9|6|OBL 10|1|PUNCT
+*CHI:	uhuh .
+%mor:	intj|uhuh .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	mhm .
+%mor:	intj|mhm .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	tell her about (.) what we did yesterday maybe . 48769_51512
+%mor:	verb|tell-Fin-Imp-S pron|her-Prs-Acc-S3 adp|about pron|what-Rel-S1 pron|we-Prs-Nom-P1 verb|do-Fin-Ind-Past-P1-irr noun|yesterday adv|maybe .
+%gra:	1|0|ROOT 2|1|IOBJ 3|4|CASE 4|1|OBL 5|6|NSUBJ 6|4|ACL-RELCL 7|6|OBL-UNMARKED 8|1|ADVMOD 9|1|PUNCT
+*MOT:	where did we go yesterday ? 51372_52433
+%mor:	adv|where aux|do-Fin-Ind-Past-P1-irr pron|we-Prs-Nom-P1 verb|go-Inf-S noun|yesterday ?
+%gra:	1|4|ADVMOD 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|4|OBL-UNMARKED 6|4|PUNCT
+*MOT:	you wanna (.) tell about (.) yesterday ? 52354_53334
+%mor:	pron|you-Prs-Nom-S2 aux|wanna-Fin-S verb|tell-Inf-S adp|about noun|yesterday ?
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|5|CASE 5|3|OBL 6|3|PUNCT
+*CHI:	I'm tired ! 56206_56786
+%mor:	adv|im adj|tired-S1 !
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*MOT:	you're tired ! 56467_57287
+%mor:	adv|your adj|tired-S1 !
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*MOT:	you just woke up . 57348_58689
+%mor:	pron|you-Prs-Nom-S2 adv|just verb|wake-Fin-Ind-Past-S2-irr adp|up .
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|3|COMPOUND-PRT 5|3|PUNCT
+*MOT:	and she did . 60772_61572
+%mor:	cconj|and pron|she-Prs-Nom-S3 aux|do-Fin-Ind-Past-S3-irr .
+%gra:	1|3|CC 2|3|NSUBJ 3|0|ROOT 4|3|PUNCT
+*MOT:	ten o@l clock . 61192_61812
+%mor:	num|ten l|of noun|clock .
+%gra:	1|0|ROOT 2|3|CASE 3|1|NMOD 4|1|PUNCT
+*MOT:	you wanna tell Inv about (.) something we did together that was fun ? 66125_70555
+%mor:	pron|you-Prs-Nom-S2 aux|wanna-Fin-S verb|tell-Inf-S propn|Inv adp|about pron|something-Ind-S1 pron|we-Prs-Nom-P1 verb|do-Fin-Ind-Past-P1-irr adv|together pron|that-Rel aux|be-Fin-Ind-Past-S3-irr adj|fun-S1 ?
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|IOBJ 5|6|CASE 6|3|OBL 7|8|NSUBJ 8|6|ACL-RELCL 9|8|ADVMOD 10|12|NSUBJ 11|12|COP 12|6|ACL-RELCL 13|3|PUNCT
+*MOT:	no ? 70336_70836
+%mor:	intj|no ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	nothing . 71840_72340
+%mor:	pron|nothing-Neg-S1 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*INV:	you know what on the way here Chi there was a_lot_of traffic and I (.) went over a big bump and I almost got a flat tire but I didn't I was really lucky . 73805_82944
+%mor:	pron|you-Prs-Nom-S2 verb|know-Fin-Ind-Pres-S2 pron|what-Int-S1 adp|on det|the-Def-Art noun|way adv|here propn|Chi pron|there-Int-S1 verb|be-Fin-Ind-Past-S3-irr noun|alotof noun|traffic cconj|and pron|I-Prs-Nom-S1 verb|go-Fin-Ind-Past-S1-irr adp|over det|a-Ind-Art adj|big-S1 noun|bump cconj|and pron|I-Prs-Nom-S1 adv|almost verb|get-Fin-Ind-Past-S1-irr det|a-Ind-Art adj|flat-S1 noun|tire-Acc cconj|but pron|I-Prs-Nom-S1 adv|didnt pron|I-Prs-Nom-S1 aux|be-Fin-Ind-Past-S1-irr adv|really adj|lucky-S1 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|6|CASE 5|6|DET 6|2|OBL 7|6|ADVMOD 8|10|NSUBJ 9|10|EXPL 10|2|CCOMP 11|12|COMPOUND 12|10|NSUBJ 13|15|CC 14|15|NSUBJ 15|2|CONJ 16|19|CASE 17|19|DET 18|19|AMOD 19|15|OBL 20|23|CC 21|23|NSUBJ 22|23|ADVMOD 23|2|CONJ 24|26|DET 25|26|AMOD 26|23|OBJ 27|33|CC 28|33|NSUBJ 29|33|ADVMOD 30|33|NSUBJ 31|33|COP 32|33|ADVMOD 33|23|CONJ 34|2|PUNCT
+*INV:	because I was coming over to visit you and if I had gotten a flat tire I would've [//] wouldn't have been able to come . 83135_89199
+%mor:	sconj|because pron|I-Prs-Nom-S1 aux|be-Fin-Ind-Past-S1-irr verb|come-Part-Pres-S adv|over part|to verb|visit-Inf-S pron|you-Prs-Acc-S2 cconj|and sconj|if pron|I-Prs-Nom-S1 aux|have-Fin-Ind-Past-S1-irr verb|get-Part-Past-S-irr det|a-Ind-Art adj|flat-S1 noun|tire-Acc pron|I-Prs-Nom-S1 aux|wouldnt-Fin-S aux|have-Inf-S aux|be-Part-Past-S-irr adj|able-S1 part|to verb|come-Inf-S .
+%gra:	1|4|MARK 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|4|ADVMOD 6|7|MARK 7|4|ADVCL 8|7|OBJ 9|21|CC 10|13|MARK 11|13|NSUBJ 12|13|AUX 13|21|ADVCL 14|16|DET 15|16|AMOD 16|13|OBJ 17|21|NSUBJ 18|21|AUX 19|21|AUX 20|21|COP 21|4|CONJ 22|23|MARK 23|21|XCOMP 24|4|PUNCT
+*INV:	so_that was my [!] story . 89820_91100
+%mor:	noun|sothat aux|be-Fin-Ind-Past-S3-irr pron|my-Prs-Gen-S1 noun|story .
+%gra:	1|4|NSUBJ 2|4|COP 3|4|NMOD-POSS 4|0|ROOT 5|4|PUNCT
+*INV:	<do you> [/] do you have something you could tell me ? 91601_93702
+%mor:	aux|do-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 verb|have-Inf-S pron|something-Ind-S1 pron|you-Prs-Nom-S2 aux|could-Fin-S verb|tell-Inf-S pron|I-Prs-Acc-S1 ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|3|OBJ 5|7|NSUBJ 6|7|AUX 7|4|ACL-RELCL 8|7|IOBJ 9|3|PUNCT
+*INV:	maybe you and you mom did something no ? 93402_95403
+%mor:	adv|maybe pron|you-Prs-Nom-S2 cconj|and pron|you-Prs-Gen-S2 noun|mom verb|do-Fin-Ind-Past-S2-irr pron|something-Ind-S1 intj|no ?
+%gra:	1|6|ADVMOD 2|6|NSUBJ 3|5|CC 4|5|NMOD-POSS 5|2|CONJ 6|0|ROOT 7|6|OBJ 8|6|DISCOURSE 9|6|PUNCT
+*MOT:	no ?
+%mor:	intj|no ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	how_about (.) yesterday . 97895_98595
+%mor:	noun|howabout noun|yesterday .
+%gra:	1|0|ROOT 2|1|NMOD-UNMARKED 3|1|PUNCT
+*MOT:	did we do something yesterday ? 98975_100516
+%mor:	aux|do-Fin-Ind-Past-P1-irr pron|we-Prs-Nom-P1 verb|do-Inf-S pron|something-Ind-S1 noun|yesterday ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|3|OBJ 5|3|OBL-UNMARKED 6|3|PUNCT
+*MOT:	you don't remember ? 102519_103259
+%mor:	pron|you-Prs-Nom-S2 aux|dont-Fin-S verb|remember-Inf-S ?
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|PUNCT
+*MOT:	you hafta think ! 104761_105861
+%mor:	pron|you-Prs-Nom-S2 aux|hafta-Fin-Ind-Pres-S2 verb|think-Inf-S !
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|PUNCT
+*MOT:	it was dark [!] when we came back . 107003_108944
+%mor:	pron|it-Prs-Nom-S3 aux|be-Fin-Ind-Past-S3-irr adj|dark-S1 adv|when pron|we-Prs-Nom-P1 verb|come-Fin-Ind-Past-P1-irr adv|back .
+%gra:	1|3|NSUBJ 2|3|COP 3|0|ROOT 4|6|ADVMOD 5|6|NSUBJ 6|3|ADVCL 7|6|ADVMOD 8|3|PUNCT
+*MOT:	where did we go ? 108644_109364
+%mor:	adv|where aux|do-Fin-Ind-Past-P1-irr pron|we-Prs-Nom-P1 verb|go-Inf-S ?
+%gra:	1|4|ADVMOD 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|4|PUNCT
+*CHI:	xxx to go very far [?] .
+%mor:	part|to verb|go-Inf-S adv|very adv|far .
+%gra:	1|2|MARK 2|0|ROOT 3|4|ADVMOD 4|2|ADVMOD 5|2|PUNCT
+*INV:	okay .
+%com:	MOT tries to elicit talk from Chi during toy play
+%mor:	intj|okay .
+%gra:	1|0|ROOT 2|1|PUNCT
+@Comment:	Time is 20:07
+@End

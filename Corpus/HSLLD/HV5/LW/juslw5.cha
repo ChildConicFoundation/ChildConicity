@@ -1,0 +1,268 @@
+@UTF8
+@PID:	11312/c-00035762-1
+@Begin
+@Languages:	eng
+@Participants:	INV Investigator, CHI Target_Child, MOT Mother
+@ID:	eng|HSLLD|INV|||||Investigator|||
+@ID:	eng|HSLLD|CHI|7;06.13|male|||Target_Child|||
+@ID:	eng|HSLLD|MOT||female|||Mother|12||
+@Birth of CHI:	24-APR-1984
+@Media:	juslw5, audio, missing
+@Comment:	SES of Mot is lower
+@Date:	06-JAN-1991
+@Location:	Boston , MA USA
+@Situation:	Home Visit 4
+@Activities:	Letter writing with mother
+@Transcriber:	Patrice Oppliger , Brenda Kurland
+*INV:	write a short letter to anybody you want .
+%mor:	verb|write-Fin-Imp-S det|a-Ind-Art adj|short-S1 noun|letter-Acc adp|to pron|anybody-Ind-S1 pron|you-Prs-Nom-S2 verb|want-Fin-Ind-Pres-S2 .
+%gra:	1|0|ROOT 2|4|DET 3|4|AMOD 4|1|OBJ 5|6|CASE 6|1|OBL 7|8|NSUBJ 8|6|ACL-RELCL 9|1|PUNCT
+@Comment:	Time is 5:53
+@Comment:	Chi sits at his desk as Mot stands behind him; Chi sort of resists the task; Mot suggests a few openings (Dear Mom , Dear Sheenan); the actual writing takes only a minute , and the rest of the time is spent in negotiations; except for the opening , it seems Chi decides on the text himself; Mot suggest more text but it isn't written
+@Comment:	Dear mom i love you and care for you.
+*CHI:	<I just wanna write> [>] my abcs like you let the other kids .
+%exp:	the writing pad has the alphabet written on it
+%mor:	pron|I-Prs-Nom-S1 adv|just aux|wanna-Fin-Ind-Pres-S1 verb|write-Fin-Ind-Pres-S1 pron|my-Prs-Gen-S1 noun|abc-Plur-Acc sconj|like pron|you-Prs-Nom-S2 verb|let-Fin-Ind-Past-S2-irr det|the-Def-Art adj|other-S1 noun|kid-Plur-Acc .
+%gra:	1|4|NSUBJ 2|4|ADVMOD 3|4|AUX 4|0|ROOT 5|6|NMOD-POSS 6|4|OBJ 7|9|MARK 8|9|NSUBJ 9|4|ADVCL 10|12|DET 11|12|AMOD 12|9|OBJ 13|4|PUNCT
+*INV:	<and &-um> [<] +...
+%mor:	cconj|and +...
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	okay you [//] write your letter Chi .
+%mor:	intj|okay verb|write-Fin-Imp-S pron|your-Prs-Gen-S2 noun|letter-Acc propn|Chi-Acc .
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|4|NMOD-POSS 4|2|OBJ 5|2|OBJ 6|2|PUNCT
+*MOT:	you hafta <do what xxx> [>] .
+%mor:	pron|you-Prs-Nom-S2 aux|hafta-Fin-Ind-Pres-S2 verb|do-Fin-Ind-Pres-S2 pron|what-Int-S1 .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*CHI:	<I wanna do> [<] my abcs !
+%mor:	pron|I-Prs-Nom-S1 aux|wanna-Fin-S1 verb|do-Fin-Ind-Pres-S1 pron|my-Prs-Gen-S1 noun|abc-Acc !
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|5|NMOD-POSS 5|3|OBJ 6|3|PUNCT
+*MOT:	you cannot do abc Chi .
+%mor:	pron|you-Prs-Nom-S2 aux|cannot-Fin-S verb|do-Inf-S propn|abc propn|Chi-Acc .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|5|COMPOUND 5|3|OBJ 6|3|PUNCT
+*MOT:	you hafta write a short letter .
+%mor:	pron|you-Prs-Nom-S2 aux|hafta-Fin-Ind-Pres-S2 verb|write-Inf-S det|a-Ind-Art adj|short-S1 noun|letter-Acc .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|6|DET 5|6|AMOD 6|3|OBJ 7|3|PUNCT
+*CHI:	&=whining .
+*MOT:	say dear Mom .
+%mor:	verb|say-Fin-Imp-S adj|dear-S1 noun|mom-Acc .
+%gra:	1|0|ROOT 2|3|AMOD 3|1|OBJ 4|1|PUNCT
+*CHI:	no &=whining .
+%mor:	intj|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	come on .
+%mor:	verb|come-Fin-Imp-S adp|on .
+%gra:	1|0|ROOT 2|1|ADVMOD 3|1|PUNCT
+*MOT:	+^ sit down write me a letter .
+%mor:	verb|sit-Fin-Imp-S adp|down verb|write-Inf-S pron|I-Prs-Acc-S1 det|a-Ind-Art noun|letter-Acc .
+%gra:	1|0|ROOT 2|1|COMPOUND-PRT 3|1|XCOMP 4|3|IOBJ 5|6|DET 6|3|OBJ 7|1|PUNCT
+*CHI:	no &=whining .
+%mor:	intj|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	I'm gonna copy this !
+%act:	picks up another letter
+%mor:	aux|be-Fin-S part|go verb|copy-Inf-S pron|this-Dem-S1 !
+%gra:	1|3|AUX 2|3|ADVMOD 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*MOT:	Chi [?] !
+%mor:	propn|Chi !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	+^ you hafta do what he tell you to do !
+%mor:	pron|you-Prs-Nom-S2 aux|hafta-Fin-Ind-Pres-S2 verb|do-Fin-Ind-Pres-S2 pron|what-Int-S1 pron|he-Prs-Nom-S3 verb|tell-Fin-Ind-Pres-S3 pron|you-Prs-Acc-S2 part|to verb|do-Inf-S !
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|6|NSUBJ 6|4|ACL-RELCL 7|6|IOBJ 8|9|MARK 9|6|XCOMP 10|3|PUNCT
+*MOT:	and that's that .
+%mor:	cconj|and aux|that-Fin-Ind-Pres-S3 pron|that-Dem .
+%gra:	1|3|CC 2|3|DET 3|0|ROOT 4|3|PUNCT
+*CHI:	he said write a letter .
+%mor:	pron|he-Prs-Nom-S3 verb|say-Fin-Ind-Past-S3-irr verb|write-Inf-S det|a-Ind-Art noun|letter-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|XCOMP 4|5|DET 5|3|OBJ 6|2|PUNCT
+*CHI:	+^ <he didn't say> [/] he didn't say if I (.) copy it or not !
+%mor:	pron|he-Prs-Nom-S3 adv|didnt verb|say-Inf-S sconj|if pron|I-Prs-Nom-S1 verb|copy-Fin-Ind-Pres-S1 pron|it-Prs-Acc-S3 cconj|or part|not !
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|6|MARK 5|6|NSUBJ 6|3|CCOMP 7|6|OBJ 8|9|CC 9|6|CONJ 10|3|PUNCT
+*CHI:	+^ <so I can copy it> [>] .
+%mor:	adv|so pron|I-Prs-Nom-S1 aux|can-Fin-S verb|copy-Inf-S pron|it-Prs-Acc-S3 .
+%gra:	1|4|ADVMOD 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*MOT:	<well you cannot copy this> [<] .
+%mor:	intj|well pron|you-Prs-Nom-S2 aux|cannot-Fin-S verb|copy-Inf-S pron|this-Dem-S1 .
+%gra:	1|4|DISCOURSE 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*CHI:	can I copy ?
+%add:	to EXP
+%int:	in a high pitched voice
+%mor:	aux|can-Fin-S pron|I-Prs-Nom-S1 verb|copy-Inf-S ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|3|PUNCT
+*MOT:	no .
+%mor:	intj|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*INV:	no just <write a> [/] write a short letter to your friend or relative or somebody .
+%mor:	intj|no adv|just verb|write-Fin-Imp-S det|a-Ind-Art adj|short-S1 noun|letter-Acc adp|to pron|your-Prs-Gen-S2 noun|friend cconj|or noun|relative cconj|or pron|somebody-Ind-S1 .
+%gra:	1|3|DISCOURSE 2|3|ADVMOD 3|0|ROOT 4|6|DET 5|6|AMOD 6|3|OBJ 7|9|CASE 8|9|NMOD-POSS 9|3|OBL 10|11|CC 11|9|CONJ 12|13|CC 13|9|CONJ 14|3|PUNCT
+*CHI:	(.) a short letter ?
+%mor:	det|a-Ind-Art adj|short-S1 noun|letter ?
+%gra:	1|3|DET 2|3|AMOD 3|0|ROOT 4|3|PUNCT
+*INV:	that's fine .
+%mor:	aux|that-Fin-Ind-Pres-S3 adj|fine-S1 .
+%gra:	1|2|COP 2|0|ROOT 3|2|PUNCT
+*INV:	it's up to you .
+%mor:	pron|its-Prs-Gen-S3 adv|up adp|to pron|you-Prs-Acc-S2 .
+%gra:	1|2|NMOD-POSS 2|0|ROOT 3|4|CASE 4|2|OBL 5|2|PUNCT
+*CHI:	o:kay .
+%int:	sing-song
+%mor:	intj|okay .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	hm: .
+%mor:	intj|hm .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	who will I write ?
+%mor:	pron|who-Int aux|will-Fin-S pron|I-Prs-Nom-S1 verb|write-Inf-S ?
+%gra:	1|4|OBJ 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|4|PUNCT
+*CHI:	hm: hm: (.) hm: hm: .
+%mor:	intj|hm intj|hm intj|hm intj|hm .
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|DISCOURSE 4|2|DISCOURSE 5|2|PUNCT
+*MOT:	what_about dear Mom ?
+%mor:	intj|whatabout adj|dear-S1 noun|mom ?
+%gra:	1|3|DISCOURSE 2|3|AMOD 3|0|ROOT 4|3|PUNCT
+*CHI:	no way !
+%mor:	det|no-Def-Neg noun|way !
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*MOT:	O .
+%mor:	noun|O .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	<I want> [<] you to xxx the letters .
+%mor:	pron|I-Prs-Nom-S1 verb|want-Fin-Ind-Pres-S1 pron|you-Prs-Acc-S2 adp|to det|the-Def-Art noun|letter-Plur .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|6|CASE 5|6|DET 6|2|OBL 7|2|PUNCT
+*CHI:	I need some time to xxx with my pen .
+%mor:	pron|I-Prs-Nom-S1 verb|need-Fin-Ind-Pres-S1 det|some-Def-Ind noun|time-Acc part|to adp|with pron|my-Prs-Gen-S1 noun|pen .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|8|CASE 6|8|CASE 7|8|NMOD-POSS 8|2|OBL 9|2|PUNCT
+*CHI:	hm: (.) I don't know what to write &=whining .
+%mor:	intj|hm pron|I-Prs-Nom-S1 adv|dont verb|know-Fin-Ind-Pres-S1 pron|what-Int-S1 part|to verb|write-Inf-S .
+%gra:	1|4|DISCOURSE 2|4|NSUBJ 3|4|ADVMOD 4|0|ROOT 5|4|OBJ 6|7|MARK 7|5|ACL 8|4|PUNCT
+*CHI:	hm: .
+%mor:	intj|hm .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	(.) you wanna write dear Sheenan or dear Tommy [?] .
+%mor:	pron|you-Prs-Nom-S2 aux|wanna-Fin-Ind-Pres-S2 verb|write-Inf-Pres-S adj|dear-S1 propn|Sheenan-Acc cconj|or adj|dear-S1 propn|Tommy .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|5|AMOD 5|3|OBJ 6|8|CC 7|8|AMOD 8|5|CONJ 9|3|PUNCT
+*MOT:	whatever +//.
+%mor:	pron|whatever-Int-S1 +//.
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	mm .
+%mor:	intj|mm .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	(.) I'm taking a risk .
+%int:	dramatically
+%mor:	adv|im verb|take-Part-Pres-S det|a-Ind-Art noun|risk-Acc .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|PUNCT
+*MOT:	www .
+%exp:	talks with the EXP quietly while Chi writes
+*CHI:	(..) you said short !
+%mor:	pron|you-Prs-Nom-S2 verb|say-Fin-Ind-Past-S2-irr adj|short-S1 !
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|XCOMP 4|2|PUNCT
+*CHI:	+^ so I wrote short !
+%int:	yelling
+%mor:	adv|so pron|I-Prs-Nom-S1 verb|write-Fin-Ind-Past-S1-irr adj|short-S1 !
+%gra:	1|3|ADVMOD 2|3|NSUBJ 3|0|ROOT 4|3|XCOMP 5|3|PUNCT
+*MOT:	that's not a letter Chi my goodness .
+%mor:	aux|that-Fin-Ind-Pres-S3 part|not det|a-Ind-Art noun|letter propn|Chi pron|my-Prs-Gen-S1 noun|goodness .
+%gra:	1|4|COP 2|4|ADVMOD 3|4|DET 4|0|ROOT 5|4|VOCATIVE 6|7|NMOD-POSS 7|4|APPOS 8|4|PUNCT
+*CHI:	it's short !
+%mor:	pron|its-Prs-Gen-S3 adj|short-S1 !
+%gra:	1|2|NMOD-POSS 2|0|ROOT 3|2|PUNCT
+*INV:	maybe a little bit longer .
+%mor:	adv|maybe det|a-Ind-Art adj|little-S1 noun|bit adv|long .
+%gra:	1|5|ADVMOD 2|4|DET 3|4|AMOD 4|5|OBL-UNMARKED 5|0|ROOT 6|5|PUNCT
+*CHI:	oh no !
+%mor:	intj|oh intj|no !
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|PUNCT
+*INV:	a little bit longer .
+%int:	mimicks Chi's tone .
+%mor:	det|a-Ind-Art adj|little-S1 noun|bit adv|long .
+%gra:	1|3|DET 2|3|AMOD 3|4|OBL-UNMARKED 4|0|ROOT 5|4|PUNCT
+*CHI:	oh no !
+%mor:	intj|oh intj|no !
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|PUNCT
+*INV:	<just to show (.) xxx> [//] so you can show people how well you write .
+%mor:	adv|so pron|you-Prs-Nom-S2 aux|can-Fin-S verb|show-Inf-S noun|person-Plur adv|how adv|well pron|you-Prs-Nom-S2 verb|write-Fin-Ind-Pres-S2 .
+%gra:	1|4|ADVMOD 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|4|IOBJ 6|7|ADVMOD 7|4|OBJ 8|9|NSUBJ 9|7|ADVCL-RELCL 10|4|PUNCT
+*CHI:	I love you blah blah blah ?
+%mor:	pron|I-Prs-Nom-S1 verb|love-Fin-Ind-Pres-S1 pron|you-Prs-Acc-S2 intj|blah intj|blah intj|blah ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|DISCOURSE 5|2|DISCOURSE 6|2|DISCOURSE 7|2|PUNCT
+*INV:	&-uh it's up to you .
+%mor:	pron|its-Prs-Gen-S3 adv|up adp|to pron|you-Prs-Acc-S2 .
+%gra:	1|2|NMOD-POSS 2|0|ROOT 3|4|CASE 4|2|OBL 5|2|PUNCT
+*CHI:	I can write <blah blah blah> [>] ?
+%mor:	pron|I-Prs-Nom-S1 aux|can-Fin-S verb|write-Inf-S intj|blah intj|blah intj|blah ?
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|DISCOURSE 5|3|DISCOURSE 6|3|DISCOURSE 7|3|PUNCT
+*MOT:	xxx [<] <and and> [/] and write +...
+%mor:	cconj|and verb|write-Fin-Imp-S +...
+%gra:	1|2|CC 2|0|ROOT 3|2|PUNCT
+*CHI:	(..) can I write two more letters &=whining ?
+%mor:	aux|can-Fin-S pron|I-Prs-Nom-S1 verb|write-Inf-S num|two adj|more-Cmp-S1 noun|letter-Plur-Acc ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|6|NUMMOD 5|6|AMOD 6|3|OBJ 7|3|PUNCT
+*INV:	www [>] .
+%exp:	talks with Mot
+*CHI:	words ?
+%mor:	noun|word-Plur ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	(..) I don't have a good enough pencil to write cursive .
+%mor:	pron|I-Prs-Nom-S1 aux|dont-Fin-S verb|have-Inf-S det|a-Ind-Art adj|good-S1 adj|enough-S1 noun|pencil-Acc part|to verb|write-Inf-S noun|cursive-Acc .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|7|DET 5|7|AMOD 6|7|AMOD 7|3|OBJ 8|9|MARK 9|3|ADVCL 10|9|OBJ 11|3|PUNCT
+*MOT:	(.) okay .
+%mor:	intj|okay .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	how_about if you write dear mom I love you and I promise I will behave myself xxx [>] .
+%mor:	intj|howabout sconj|if pron|you-Prs-Nom-S2 verb|write-Fin-Ind-Pres-S2 adj|dear-S1 noun|mom-Acc pron|I-Prs-Nom-S1 verb|love-Fin-Ind-Pres-S1 pron|you-Prs-Acc-S2 cconj|and pron|I-Prs-Nom-S1 verb|promise-Fin-Ind-Pres-S1 pron|I-Prs-Nom-S1 aux|will-Fin-S verb|behave-Inf-S pron|myself-Prs-Acc-reflx-S1 .
+%gra:	1|8|DISCOURSE 2|4|MARK 3|4|NSUBJ 4|8|ADVCL 5|6|AMOD 6|4|OBJ 7|8|NSUBJ 8|0|ROOT 9|8|OBJ 10|12|CC 11|12|NSUBJ 12|8|CONJ 13|15|NSUBJ 14|15|AUX 15|12|CCOMP 16|15|OBJ 17|8|PUNCT
+*CHI:	hunhunh !
+%int:	loudly .
+%mor:	intj|hunhunh !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	yeah .
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	go ahead and write that .
+%mor:	verb|go-Fin-Imp-S adv|ahead cconj|and verb|write-Fin-Imp-S pron|that-Dem .
+%gra:	1|0|ROOT 2|1|ADVMOD 3|4|CC 4|1|CONJ 5|4|OBJ 6|1|PUNCT
+*CHI:	I already behave [!] myself .
+%mor:	pron|I-Prs-Nom-S1 adv|already verb|behave-Fin-Ind-Pres-S1 pron|myself-Prs-Acc-reflx-S1 .
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*CHI:	(..) are you gonna play that tape ?
+%com:	refers to the EXP's tape recorder
+%mor:	aux|be-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 part|go verb|play-Inf-S det|that-Def-Dem-Sing noun|tape-Acc ?
+%gra:	1|4|AUX 2|4|NSUBJ 3|4|ADVMOD 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|PUNCT
+*CHI:	don't xxx please .
+%mor:	intj|dont intj|please .
+%gra:	1|0|ROOT 2|1|DISCOURSE 3|1|PUNCT
+*INV:	it's okay .
+%mor:	pron|its-Prs-Gen-S3 intj|okay .
+%gra:	1|2|NMOD-POSS 2|0|ROOT 3|2|PUNCT
+*CHI:	oh can I take a picture ?
+%com:	refers to EXP's camara
+%mor:	intj|oh aux|can-Fin-S pron|I-Prs-Nom-S1 verb|take-Inf-S det|a-Ind-Art noun|picture-Acc ?
+%gra:	1|4|DISCOURSE 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|PUNCT
+*INV:	well <we're gonna take a picture of you in a minute> [>] .
+%mor:	intj|well intj|were adv|gonna verb|take-Fin-Imp-S det|a-Ind-Art noun|picture-Acc adp|of pron|you-Prs-Acc-S2 adp|in det|a-Ind-Art noun|minute .
+%gra:	1|4|DISCOURSE 2|4|DISCOURSE 3|4|ADVMOD 4|0|ROOT 5|6|DET 6|4|OBJ 7|8|CASE 8|6|NMOD 9|11|CASE 10|11|DET 11|4|OBL 12|4|PUNCT
+*MOT:	<Chi you've gotta finish> [<] the letter .
+%mor:	propn|Chi pron|youve-Prs-Acc-S2 aux|getta-Fin-S verb|finish-Inf-S det|the-Def-Art noun|letter-Acc .
+%gra:	1|4|NSUBJ 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|PUNCT
+*CHI:	(..) all done .
+%com:	not sure which part was written here (maybe and care for you)
+%mor:	det|all-Def-Tot verb|do-Part-Past-S-irr .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*INV:	alright why don't you read it to us (.) out loud ?
+%mor:	intj|alright adv|why intj|dont pron|you-Prs-Nom-S2 verb|read-Fin-Ind-Pres-S2 pron|it-Prs-Acc-S3 adp|to pron|we-Prs-Acc-P1 adp|out adv|loud ?
+%gra:	1|5|DISCOURSE 2|5|ADVMOD 3|5|DISCOURSE 4|5|NSUBJ 5|0|ROOT 6|5|OBJ 7|8|CASE 8|5|OBL 9|5|COMPOUND-PRT 10|5|ADVMOD 11|5|PUNCT
+*CHI:	dear Mom [>] I love you and care for you (.) period .
+%mor:	adj|dear-S1 noun|mom pron|I-Prs-Nom-S1 verb|love-Fin-Ind-Pres-S1 pron|you-Prs-Acc-S2 cconj|and verb|care-Fin-Ind-Pres-S1 adp|for pron|you-Prs-Gen-S2 noun|period .
+%gra:	1|2|AMOD 2|4|VOCATIVE 3|4|NSUBJ 4|0|ROOT 5|4|OBJ 6|7|CC 7|4|CONJ 8|10|CASE 9|10|NMOD-POSS 10|7|OBL 11|4|PUNCT
+*MOT:	xxx [<] .
+*MOT:	what_about something else and I promise I will be good in school ?
+%mor:	verb|whatabout-Fin-Imp-S pron|something-Ind-S1 adj|else-S1 cconj|and pron|I-Prs-Nom-S1 verb|promise-Fin-Ind-Pres-S1 pron|I-Prs-Nom-S1 aux|will-Fin-S aux|be-Inf-S adj|good-S1 adp|in noun|school ?
+%gra:	1|0|ROOT 2|1|OBJ 3|2|AMOD 4|6|CC 5|6|NSUBJ 6|1|CONJ 7|10|NSUBJ 8|10|AUX 9|10|COP 10|6|CCOMP 11|12|CASE 12|10|OBL 13|1|PUNCT
+*CHI:	&=sighs .
+*CHI:	mm .
+%mor:	intj|mm .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	mm no thanks .
+%mor:	intj|mm det|no-Def-Neg noun|thanks .
+%gra:	1|3|DISCOURSE 2|3|DET 3|0|ROOT 4|3|PUNCT
+@Comment:	Time is 10:44
+@End

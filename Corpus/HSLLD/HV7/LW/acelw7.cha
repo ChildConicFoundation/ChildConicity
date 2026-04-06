@@ -1,0 +1,194 @@
+@UTF8
+@PID:	11312/c-00035894-1
+@Begin
+@Languages:	eng
+@Participants:	INV Investigator, CHI Target_Child, FAT Father
+@ID:	eng|HSLLD|INV|||||Investigator|||
+@ID:	eng|HSLLD|CHI|9;02.06|female|||Target_Child|||
+@ID:	eng|HSLLD|FAT||male|||Father|||
+@Birth of CHI:	11-DEC-1984
+@Media:	acelw7, audio, missing
+@Comment:	SES of Mot is lower
+@Date:	17-FEB-1994
+@Location:	Boston , MA USA
+@Situation:	Home Visit 7
+@Activities:	Letter writing with father
+*INV:	there we go .
+%mor:	pron|there-Int-S1 pron|we-Prs-Nom-P1 verb|go-Fin-Ind-Pres-P1 .
+%gra:	1|3|EXPL 2|3|NSUBJ 3|0|ROOT 4|3|PUNCT
+@Comment:	Time is 0:05 , Text is Hi Eric Carle , The book is good. I like it very much. Oh nice buterfly at the end. That's a_lot_of stuff to eat. Don't caterpillar's drink? What kind of caterpillar eat's that much when it's a baby to grow that big in a week? Thank's for writing the book. from , Talitha G.Chi writes a letter with her Father , but does not appear to interact with him much. Although there is music playing in the background , there is much silence in terms of verbal interaction. She asks EXP what the top line on the stationary is for. She is a little concerned that her letter might be too short , but she seems pleased with it , and she happily giggles when EXP praises her efforts.
+*INV:	ready guys ?
+%mor:	adj|ready-S1 noun|guy-Plur ?
+%gra:	1|2|AMOD 2|0|ROOT 3|2|PUNCT
+*INV:	(.) I'll get it [= book] .
+%int:	very quietly
+%mor:	pron|I-Prs-Nom-S1~aux|will-Fin-S verb|get-Inf-S pron|it-Prs-Acc-S3 .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*INV:	(.) oh .
+%mor:	intj|oh .
+%gra:	1|0|ROOT 2|1|PUNCT
+*INV:	hm: &=sighs .
+%sit:	EXP probably brought out The Very Hungry Caterpillar book for Chi and is getting supplies ready . Chi most likely is flipping through and reading the book .
+%mor:	intj|hm .
+%gra:	1|0|ROOT 2|1|PUNCT
+*INV:	alright good job .
+%com:	there is music playing faintly in the background .
+%mor:	intj|alright adj|good-S1 noun|job .
+%gra:	1|3|DISCOURSE 2|3|AMOD 3|0|ROOT 4|3|PUNCT
+*CHI:	&=sighs .
+@Comment:	Time is 1:14 , silence follows , except for the music in the background. Chi is probably still reading through the book.
+*INV:	(..) right there .
+%mor:	adv|right adv|there .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+@Comment:	Time is 2:55
+*INV:	you can write your name if you want .
+%int:	barely audible
+%mor:	pron|you-Prs-Nom-S2 aux|can-Fin-S verb|write-Inf-S pron|your-Prs-Gen-S2 noun|name-Acc sconj|if pron|you-Prs-Nom-S2 verb|want-Fin-Ind-Pres-S2 .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|5|NMOD-POSS 5|3|OBJ 6|8|MARK 7|8|NSUBJ 8|3|ADVCL 9|3|PUNCT
+*CHI:	write to him ?
+%mor:	verb|write-Fin-Imp-S adp|to pron|he-Prs-Acc-S3 ?
+%gra:	1|0|ROOT 2|3|CASE 3|1|OBL 4|1|PUNCT
+*INV:	yeah [>] .
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*FAT:	&=sighs [<] .
+*INV:	<write to him> [<] .
+%mor:	verb|write-Fin-Imp-S adp|to pron|he-Prs-Acc-S3 .
+%gra:	1|0|ROOT 2|3|CASE 3|1|OBL 4|1|PUNCT
+*CHI:	what should I say ?
+%mor:	pron|what-Int-S1 aux|should-Fin-S pron|I-Prs-S1 verb|say-Inf-S ?
+%gra:	1|4|OBJ 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|4|PUNCT
+*FAT:	doesn't matter .
+%mor:	part|doesnt verb|matter-Fin-Imp-S .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*INV:	<what you like> [<] .
+%mor:	pron|what-Int-S1 pron|you-Prs-Nom-S2 verb|like-Fin-Ind-Pres-S2 .
+%gra:	1|0|ROOT 2|3|NSUBJ 3|1|ACL-RELCL 4|1|PUNCT
+*INV:	whatever you want .
+%mor:	pron|whatever-Int-S1 pron|you-Prs-Nom-S2 verb|want-Fin-Ind-Pres-S2 .
+%gra:	1|0|ROOT 2|3|NSUBJ 3|1|ACL-RELCL 4|1|PUNCT
+*CHI:	something about the caterpillar ?
+%mor:	pron|something-Ind-S1 adp|about det|the-Def-Art noun|caterpillar ?
+%gra:	1|0|ROOT 2|4|CASE 3|4|DET 4|1|NMOD 5|1|PUNCT
+*INV:	if that's what you feel like sayin(g) .
+%mor:	sconj|if aux|that-Fin-Ind-Pres-S3 pron|what-Rel-S1 pron|you-Prs-Nom-S2 verb|feel-Fin-Ind-Pres-S2 sconj|like verb|say-Part-Pres-S .
+%gra:	1|3|MARK 2|3|COP 3|0|ROOT 4|5|NSUBJ 5|3|ACL-RELCL 6|7|MARK 7|5|ADVCL 8|3|PUNCT
+*CHI:	okay .
+%mor:	intj|okay .
+%gra:	1|0|ROOT 2|1|PUNCT
+*INV:	&=giggles .
+*CHI:	what's the top line for ?
+%mor:	aux|what-Fin-Ind-Pres-S3 det|the-Def-Art adj|top-S1 noun|line adp|for ?
+%gra:	1|4|COP 2|4|DET 3|4|AMOD 4|0|ROOT 5|4|NMOD 6|4|PUNCT
+*INV:	if you like you can put xxx put the xxx there .
+%mor:	sconj|if pron|you-Prs-Nom-S2 verb|like-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 aux|can-Fin-S verb|put-Inf-S verb|put-Inf-S det|the-Def-Art adv|there .
+%gra:	1|3|MARK 2|3|NSUBJ 3|6|ADVCL 4|6|NSUBJ 5|6|AUX 6|0|ROOT 7|6|XCOMP 8|9|DET 9|7|ADVMOD 10|6|PUNCT
+*INV:	however you want .
+%mor:	adv|however pron|you-Prs-Nom-S2 verb|want-Fin-Ind-Pres-S2 .
+%gra:	1|3|ADVMOD 2|3|NSUBJ 3|0|ROOT 4|3|PUNCT
+*INV:	however you want it .
+%mor:	adv|however pron|you-Prs-Nom-S2 verb|want-Fin-Ind-Pres-S2 pron|it-Prs-Acc-S3 .
+%gra:	1|3|ADVMOD 2|3|NSUBJ 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*INV:	it's the greeting .
+%mor:	pron|its-Prs-Gen-S3 det|the-Def-Art noun|greeting-Ger .
+%gra:	1|3|NMOD-POSS 2|3|DET 3|0|ROOT 4|3|PUNCT
+*INV:	(..) that's it .
+%mor:	aux|that-Fin-Ind-Pres-S3 pron|it-Prs-Nom-S3 .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+@Comment:	Time is 4:59 , music in the background again.
+*CHI:	okay .
+%mor:	intj|okay .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	0 [=! clears throat] .
+*INV:	(.) the title here .
+%mor:	det|the-Def-Art noun|title adv|here .
+%gra:	1|2|DET 2|0|ROOT 3|2|ADVMOD 4|2|PUNCT
+*CHI:	(..) &=whistles .
+@Comment:	Time is 7:46 , Chi whistles and hums to the music in the background
+*INV:	(..) whoa !
+%mor:	intj|whoa !
+%gra:	1|0|ROOT 2|1|PUNCT
+@Comment:	Time is 9:09
+*INV:	you wrote a nice long letter .
+%mor:	pron|you-Prs-Nom-S2 verb|write-Fin-Ind-Past-S2-irr det|a-Ind-Art adj|nice-S1 adj|long-S1 noun|letter-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|6|DET 4|6|AMOD 5|6|AMOD 6|2|OBJ 7|2|PUNCT
+*INV:	what did you say ?
+%mor:	pron|what-Int-S1 aux|do-Fin-Ind-Past-S2-irr pron|you-Prs-Nom-S2 verb|say-Inf-S ?
+%gra:	1|4|OBJ 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|4|PUNCT
+*INV:	okay .
+%mor:	intj|okay .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	well just read [!] it !
+%mor:	intj|well adv|just verb|read-Fin-Imp-S pron|it-Prs-Acc-S3 !
+%gra:	1|3|DISCOURSE 2|3|ADVMOD 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*CHI:	I was just (.) writing .
+%mor:	pron|I-Prs-Nom-S1 aux|be-Fin-Ind-Past-S1-irr adv|just verb|write-Part-Pres-S .
+%gra:	1|4|NSUBJ 2|4|AUX 3|4|ADVMOD 4|0|ROOT 5|4|PUNCT
+*INV:	what did you write ?
+%mor:	pron|what-Int-S1 aux|do-Fin-Ind-Past-S2-irr pron|you-Prs-Nom-S2 verb|write-Inf-S ?
+%gra:	1|4|OBJ 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|4|PUNCT
+*CHI:	the book is good I like it very much oh (.) nice butterfly at the end that's a_lot_of stuff to eat .
+%int:	deliberate monotone
+%mor:	det|the-Def-Art noun|book aux|be-Fin-Ind-Pres-S3 adj|good-S1 pron|I-Prs-Nom-S1 verb|like-Fin-Ind-Pres-S1 pron|it-Prs-Acc-S3 adv|very adv|much intj|oh adj|nice-S1 noun|butterfly-Acc adp|at det|the-Def-Art noun|end noun|that noun|alotof noun|stuff part|to verb|eat-Inf-S .
+%gra:	1|2|DET 2|4|NSUBJ 3|4|COP 4|0|ROOT 5|6|NSUBJ 6|4|ADVCL-RELCL 7|6|OBJ 8|9|ADVMOD 9|6|ADVMOD 10|12|DISCOURSE 11|12|AMOD 12|6|OBJ 13|15|CASE 14|15|DET 15|12|NMOD 16|18|COMPOUND 17|18|COMPOUND 18|12|NMOD 19|20|MARK 20|18|ACL 21|4|PUNCT
+*INV:	&=giggles .
+*CHI:	don't yyy <caterpillars drink> [>] ?
+%mor:	adj|dont-S1 noun|caterpillar-Plur verb|drink-Fin-Ind-Pres-P3 ?
+%gra:	1|2|AMOD 2|3|NSUBJ 3|0|ROOT 4|3|PUNCT
+*INV:	&=laughs [>] .
+*INV:	that's a good question .
+%mor:	aux|that-Fin-Ind-Pres-S3 det|a-Ind-Art adj|good-S1 noun|question .
+%gra:	1|4|COP 2|4|DET 3|4|AMOD 4|0|ROOT 5|4|PUNCT
+*CHI:	what kind of +...
+%mor:	det|what-Def-Int noun|kind adp|of +...
+%gra:	1|2|DET 2|0|ROOT 3|2|NMOD 4|2|PUNCT
+*INV:	can't get that word huh ?
+%mor:	aux|cant-Fin-S verb|get-Fin-Imp-S det|that-Def-Dem-Sing noun|word-Acc intj|huh ?
+%gra:	1|2|AUX 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|OBJ 6|2|PUNCT
+*CHI:	+, caterpillar eats that much when it's a baby to grow that big in a week ?
+%mor:	noun|caterpillar verb|eat-Fin-Ind-Pres-S3 adv|that adj|much-S1 adv|when pron|its-Prs-Gen-S3 det|a-Ind-Art noun|baby part|to verb|grow-Inf-S det|that-Def-Dem-Sing adj|big-S1 adp|in det|a-Ind-Art noun|week ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|ADVMOD 4|2|OBJ 5|10|ADVMOD 6|8|NMOD-POSS 7|8|DET 8|10|NSUBJ 9|10|MARK 10|2|ADVCL 11|12|DET 12|10|OBJ 13|15|CASE 14|15|DET 15|10|OBL 16|2|PUNCT
+*INV:	xxx .
+*CHI:	&=giggles .
+*INV:	I don't know .
+%mor:	pron|I-Prs-Nom-S1 adv|dont verb|know-Fin-Ind-Pres-S1 .
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|3|PUNCT
+*CHI:	thanks for &~wri (.) writing the book .
+%mor:	noun|thanks sconj|for verb|write-Ger-S det|the-Def-Art noun|book-Acc .
+%gra:	1|0|ROOT 2|3|MARK 3|1|ACL 4|5|DET 5|3|OBJ 6|1|PUNCT
+*CHI:	from Talitha (.) G .
+%mor:	adp|from propn|Talitha propn|G .
+%gra:	1|2|CASE 2|0|ROOT 3|2|FLAT 4|2|PUNCT
+*INV:	great !
+%mor:	adj|great-S1 !
+%gra:	1|0|ROOT 2|1|PUNCT
+*INV:	that was a good letter .
+%mor:	pron|that-Dem aux|be-Fin-Ind-Past-S3-irr det|a-Ind-Art adj|good-S1 noun|letter .
+%gra:	1|5|NSUBJ 2|5|COP 3|5|DET 4|5|AMOD 5|0|ROOT 6|5|PUNCT
+*INV:	nice job xxx .
+%mor:	adj|nice-S1 noun|job .
+%gra:	1|2|AMOD 2|0|ROOT 3|2|PUNCT
+*CHI:	thanks [<] .
+%mor:	noun|thanks .
+%gra:	1|0|ROOT 2|1|PUNCT
+*INV:	thank you .
+%mor:	verb|thank-Fin-Ind-Pres-S1 pron|you-Prs-Acc-S2 .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*CHI:	I didn't need the extra lines .
+%mor:	pron|I-Prs-Nom-S1 adv|didnt verb|need-Inf-S det|the-Def-Art adj|extra-S1 noun|line-Plur-Acc .
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|6|DET 5|6|AMOD 6|3|OBJ 7|3|PUNCT
+*INV:	no .
+%mor:	intj|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*INV:	you don't need the extra lines .
+%mor:	pron|you-Prs-Nom-S2 aux|dont-Fin-S verb|need-Inf-S det|the-Def-Art adj|extra-S1 noun|line-Plur-Acc .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|6|DET 5|6|AMOD 6|3|OBJ 7|3|PUNCT
+*INV:	well you crammed a lot in in a (.) short space .
+%mor:	intj|well pron|you-Prs-Nom-S2 verb|cramm-Fin-Ind-Past-S2 det|a-Ind-Art noun|lot-Acc adp|in adp|in det|a-Ind-Art adj|short-S1 noun|space .
+%gra:	1|3|DISCOURSE 2|3|NSUBJ 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|ADVMOD 7|10|CASE 8|10|DET 9|10|AMOD 10|3|OBL 11|3|PUNCT
+*CHI:	&=giggles .
+*INV:	&-um thanks .
+%mor:	noun|thanks .
+%gra:	1|0|ROOT 2|1|PUNCT
+@Comment:	Time is 10:08
+@End

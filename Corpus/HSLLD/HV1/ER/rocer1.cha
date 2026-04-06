@@ -1,0 +1,412 @@
+@UTF8
+@PID:	11312/c-00034915-1
+@Begin
+@Languages:	eng
+@Participants:	MOT Mother, CHI Target_Child, BRO Brother, INV Investigator
+@ID:	eng|HSLLD|MOT||female|||Mother|12||
+@ID:	eng|HSLLD|CHI|4;04.14|female|||Target_Child|||
+@ID:	eng|HSLLD|BRO|||||Brother|||
+@ID:	eng|HSLLD|INV|||||Investigator|||
+@Birth of CHI:	05-APR-1984
+@Media:	rocer1, audio
+@Comment:	SES of Mot is lower
+@Date:	05-JUL-1988
+@Location:	Boston , MA USA
+@Situation:	Home Visit 1 took place in living room and play room , CHI sat on Mot's lap , late afternoon
+@Activities:	Elicted Report
+@Transcriber:	Anne Brady , Mary Fischer
+@Types:	long, narrative, TD
+*MOT:	did you have fun when you went to Wayland Park ? 214205_218410
+%cod:	$N:RE
+%mor:	aux|do-Fin-Ind-Past-S2-irr pron|you-Prs-Nom-S2 verb|have-Inf-S noun|fun-Acc adv|when pron|you-Prs-Nom-S2 verb|go-Fin-Ind-Past-S2-irr adp|to propn|Wayland propn|Park ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|3|OBJ 5|7|ADVMOD 6|7|NSUBJ 7|3|ADVCL 8|10|CASE 9|10|COMPOUND 10|7|OBL 11|3|PUNCT
+*CHI:	yes . 218570_218870
+%cod:	$N:GE
+%mor:	intj|yes .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	what did you do at Wayland Park ? 218650_219991
+%cod:	$N:RI:S
+%mor:	pron|what-Int-S1 aux|do-Fin-Ind-Past-S2-irr pron|you-Prs-Nom-S2 verb|do-Inf-S adp|at propn|Wayland propn|Park ?
+%gra:	1|4|OBJ 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|7|CASE 6|7|COMPOUND 7|4|OBL 8|4|PUNCT
+*CHI:	we went on [/] on [/] on [/] on the rides . 219752_221073
+%int:	<8> lengthened
+%cod:	$N:GI:RS
+%mor:	pron|we-Prs-Nom-P1 verb|go-Fin-Ind-Past-P1-irr adp|on det|the-Def-Art noun|ride-Plur .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|5|CASE 4|5|DET 5|2|OBL 6|2|PUNCT
+*MOT:	what <kind of rides> [>] ? 221735_223136
+%cod:	$N:RI:S
+%mor:	det|what-Def-Int noun|kind adp|of noun|ride-Plur ?
+%gra:	1|2|DET 2|0|ROOT 3|4|CASE 4|2|NMOD 5|2|PUNCT
+*CHI:	<and we had> [<] fun .
+%cod:	$N:GE
+%mor:	cconj|and pron|we-Prs-Nom-P1 verb|have-Fin-Ind-Past-P1-irr noun|fun-Acc .
+%gra:	1|3|CC 2|3|NSUBJ 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*CHI:	&-um a rollercoaster . 223498_224477
+%cod:	$N:GI:RS
+%mor:	det|a-Ind-Art noun|rollercoaster .
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*MOT:	you went on a rollercoaster ? 225481_227823
+%cod:	$N:RI:L
+%mor:	pron|you-Prs-Nom-S2 verb|go-Fin-Ind-Past-S2-irr adp|on det|a-Ind-Art noun|rollercoaster ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|5|CASE 4|5|DET 5|2|OBL 6|2|PUNCT
+*CHI:	yes .
+%cod:	$N:GI:RL
+%mor:	intj|yes .
+%gra:	1|0|ROOT 2|1|PUNCT
+*BRO:	a little one . 228163_228724
+%cod:	$N:GI:S
+%mor:	det|a-Ind-Art adj|little-S1 noun|one .
+%gra:	1|3|DET 2|3|AMOD 3|0|ROOT 4|3|PUNCT
+*MOT:	and what else ?
+%cod:	$N:RI:C
+%mor:	cconj|and pron|what-Int-S1 adj|else-S1 ?
+%gra:	1|2|CC 2|0|ROOT 3|2|AMOD 4|2|PUNCT
+*MOT:	what else you do ? 229195_230117
+%cod:	$N:RI:C:R
+%mor:	pron|what-Int-S1 adv|else pron|you-Prs-Nom-S2 verb|do-Fin-Ind-Pres-S2 ?
+%gra:	1|0|ROOT 2|1|ADVMOD 3|4|NSUBJ 4|1|ACL-RELCL 5|1|PUNCT
+*CHI:	&-uh &-um . 230318_230358
+%cod:	$N:O
+*MOT:	who went with you to Wayland Park ? 230399_231523
+%cod:	$N:RI:S
+%mor:	pron|who-Rel verb|go-Fin-Ind-Past-S3-irr adp|with pron|you-Prs-Acc-S2 adp|to propn|Wayland propn|Park ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|CASE 4|2|OBL 5|7|CASE 6|7|COMPOUND 7|2|OBL 8|2|PUNCT
+*CHI:	Carmen and Greg and xxx and Mommy and Daddy and [/] Teddy &-um (.) and Earl and and &-um +... 235425_245543
+%cod:	$N:GI:RS
+%mor:	propn|Carmen cconj|and propn|Greg cconj|and cconj|and propn|Mommy cconj|and propn|Daddy propn|Teddy cconj|and propn|Earl cconj|and cconj|and +...
+%gra:	1|0|ROOT 2|3|CC 3|1|CONJ 4|6|CC 5|6|CC 6|1|CONJ 7|8|CC 8|1|CONJ 9|8|FLAT 10|11|CC 11|8|CONJ 12|11|CC 13|11|CONJ 14|1|PUNCT
+*MOT:	your arm .
+%cod:	$O:U
+%mor:	pron|your-Prs-Gen-S2 noun|arm .
+%gra:	1|2|NMOD-POSS 2|0|ROOT 3|2|PUNCT
+*MOT:	who went ?
+%cod:	$N:RI:S
+%mor:	pron|who-Rel verb|go-Fin-Ind-Past-S3 ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|PUNCT
+*MOT:	somebody ?
+%cod:	$N:U
+%mor:	pron|somebody-Ind-S1 ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	Tasha xxx . 256993_257173
+%cod:	$N:GI:RS
+%mor:	propn|Tasha .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	oh Tala went ?
+%cod:	$N:FC
+%mor:	intj|oh propn|Tala verb|go-Fin-Ind-Past-S3-irr ?
+%gra:	1|3|DISCOURSE 2|3|NSUBJ 3|0|ROOT 4|3|PUNCT
+*CHI:	Tala .
+%cod:	$N:FR
+%mor:	propn|Tala .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	who else ?
+%cod:	$N:RI:C
+%mor:	pron|who-Int adv|else ?
+%gra:	1|0|ROOT 2|1|ADVMOD 3|1|PUNCT
+*CHI:	and &-um Mommy and Daddy +/. 257874_259036
+%cod:	$N:GI:RC
+%mor:	cconj|and propn|Mommy cconj|and propn|Daddy +/.
+%gra:	1|2|CC 2|0|ROOT 3|4|CC 4|2|CONJ 5|2|PUNCT
+*MOT:	wait a minute you already said them did Renelle go ? 259556_261799
+%cod:	$O:A $N:RI:L
+%mor:	verb|wait-Fin-Imp-S det|a-Ind-Art noun|minute pron|you-Prs-Nom-S2 adv|already verb|say-Fin-Ind-Past-S2-irr pron|they-Prs-Acc-P3 aux|do-Fin-Ind-Past-S3-irr propn|Renelle verb|go-Inf-S ?
+%gra:	1|0|ROOT 2|3|DET 3|1|OBL-UNMARKED 4|6|NSUBJ 5|6|ADVMOD 6|1|PARATAXIS 7|6|IOBJ 8|10|AUX 9|10|COMPOUND 10|6|CCOMP 11|1|PUNCT
+*CHI:	and <Renelle> [>] .
+%cod:	$N:GI:RL
+%mor:	cconj|and propn|Renelle .
+%gra:	1|2|CC 2|0|ROOT 3|2|PUNCT
+*MOT:	how did you get there ? 261440_262219
+%cod:	$N:RI:S
+%mor:	adv|how aux|do-Fin-Ind-Past-S2-irr pron|you-Prs-Nom-S2 verb|get-Inf-S adv|there ?
+%gra:	1|4|ADVMOD 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|4|ADVMOD 6|4|PUNCT
+*MOT:	did you walk (.) take the bus take the train ? 262722_263320
+%cod:	$N:RI:L $N:RI:L $N:RI:L
+%mor:	aux|do-Fin-Ind-Past-S2-irr pron|you-Prs-Nom-S2 verb|walk-Inf-S verb|take-Inf-S det|the-Def-Art noun|bus-Acc verb|take-Inf-S det|the-Def-Art noun|train-Acc ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|3|XCOMP 5|6|DET 6|4|OBJ 7|4|XCOMP 8|9|DET 9|7|OBJ 10|3|PUNCT
+*CHI:	no <some people took> [//] a people took a xxx .
+%cod:	$N:GI:RL $N:U
+%mor:	det|no-Def-Neg det|a-Ind-Art noun|person-Plur verb|take-Fin-Ind-Past-P3-irr det|a-Ind-Art .
+%gra:	1|3|DET 2|3|DET 3|4|NSUBJ 4|0|ROOT 5|4|PUNCT 6|4|PUNCT
+*CHI:	some people went in <my> [//] daddy's van van . 267628_267846
+%cod:	$N:GI:RL:E
+%mor:	det|some-Def-Ind noun|person-Plur verb|go-Fin-Ind-Past-P3-irr adp|in propn|daddys propn|van propn|van .
+%gra:	1|2|DET 2|3|NSUBJ 3|0|ROOT 4|5|CASE 5|3|OBL 6|3|OBL 7|3|OBL 8|3|PUNCT
+*CHI:	some people went in Carmen's car . 269170_270731
+%cod:	$N:GI:RL:E
+%mor:	det|some-Def-Ind noun|person-Plur verb|go-Fin-Ind-Past-P3-irr adp|in propn|Carmens noun|car .
+%gra:	1|2|DET 2|3|NSUBJ 3|0|ROOT 4|6|CASE 5|6|COMPOUND 6|3|OBL 7|3|PUNCT
+*MOT:	oh ! 270911_271292
+%cod:	$N:FA
+%mor:	intj|oh !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	<what did> [/] you have when you got there got there ? 271852_273074
+%cod:	$N:RI:S
+%mor:	pron|you-Prs-Nom-S2 verb|have-Fin-Ind-Pres-S2 adv|when pron|you-Prs-Nom-S2 verb|get-Fin-Ind-Past-S2-irr adv|there verb|get-Part-Past-S-irr adv|there ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|5|ADVMOD 4|5|NSUBJ 5|2|ADVCL 6|5|ADVMOD 7|2|PARATAXIS 8|7|ADVMOD 9|2|PUNCT
+*MOT:	did you eat anything ?
+%cod:	$N:RI:L
+%mor:	aux|do-Fin-Ind-Past-S2-irr pron|you-Prs-Nom-S2 verb|eat-Inf-S pron|anything-Ind-S1 ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*CHI:	no [>] .
+%cod:	$N:GI:RL
+%mor:	intj|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	did you see anybody ?
+%cod:	$N:RI:L
+%mor:	aux|do-Fin-Ind-Past-S2-irr pron|you-Prs-Nom-S2 verb|see-Inf-S pron|anybody-Ind-S1 ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*MOT:	did you eat anything when you got there ? 282366_283187
+%cod:	$N:RI:L
+%mor:	aux|do-Fin-Ind-Past-S2-irr pron|you-Prs-Nom-S2 verb|eat-Inf-S pron|anything-Ind-S1 adv|when pron|you-Prs-Nom-S2 verb|get-Fin-Ind-Past-S2-irr adv|there ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|3|OBJ 5|7|ADVMOD 6|7|NSUBJ 7|3|ADVCL 8|7|ADVMOD 9|3|PUNCT
+*CHI:	mm (...) yes .
+%cod:	$N:GI:RL
+%mor:	intj|mm intj|yes .
+%gra:	1|0|ROOT 2|1|DISCOURSE 3|1|PUNCT
+*MOT:	what you eat ? 283608_284329
+%cod:	$N:RI:S
+%mor:	pron|what-Int-S1 pron|you-Prs-Nom-S2 verb|eat-Fin-Ind-Pres-S2 ?
+%gra:	1|0|ROOT 2|3|NSUBJ 3|1|ACL-RELCL 4|1|PUNCT
+*CHI:	&-um (.) we had cotton candy . 286674_288316
+%cod:	$N:GI:RS
+%mor:	pron|we-Prs-Nom-P1 verb|have-Fin-Ind-Past-P1-irr noun|cotton noun|candy-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|COMPOUND 4|2|OBJ 5|2|PUNCT
+*MOT:	you did !
+%cod:	$N:FA
+%mor:	pron|you-Prs-Nom-S2 aux|do-Fin-Ind-Past-S2-irr !
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|PUNCT
+*MOT:	what else ? 289298_289880
+%cod:	$N:RI:C
+%mor:	pron|what-Int-S1 adv|else ?
+%gra:	1|0|ROOT 2|1|ADVMOD 3|1|PUNCT
+*CHI:	and &-uh +... 291142_292263
+%cod:	$N:O
+%mor:	cconj|and +...
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	what did you have for lunch when you got there ?
+%cod:	$N:RI:S
+%mor:	pron|what-Int-S1 aux|do-Fin-Ind-Past-S2-irr pron|you-Prs-Nom-S2 verb|have-Inf-S adp|for noun|lunch adv|when pron|you-Prs-Nom-S2 verb|get-Fin-Ind-Past-S2-irr adv|there ?
+%gra:	1|4|OBJ 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|6|CASE 6|4|OBL 7|9|ADVMOD 8|9|NSUBJ 9|4|ADVCL 10|9|ADVMOD 11|4|PUNCT
+*CHI:	&-um +...
+%cod:	$N:O
+*MOT:	what is Bro's favorite (.) ? 303251_304372
+%cod:	$N:RI:S
+%mor:	pron|what-Int-S1 aux|be-Fin-Ind-Pres-S3 propn|Bros adj|favorite-S1 ?
+%gra:	1|0|ROOT 2|4|COP 3|4|NSUBJ 4|1|ACL-RELCL 5|1|PUNCT
+*CHI:	hot dog .
+%int:	softly
+%cod:	$N:GI:RS
+%mor:	adj|hot-S1 noun|dog .
+%gra:	1|2|AMOD 2|0|ROOT 3|2|PUNCT
+*MOT:	xxx .
+%cod:	$N:U
+*BRO:	pizza .
+%cod:	$N:GI::D
+%mor:	noun|pizza .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	pizza . 308258_308578
+%cod:	$N:GI::D
+%mor:	noun|pizza .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	<you had> [<] pizza ? 309120_309839
+%cod:	$N:RI:L
+%mor:	pron|you-Prs-Nom-S2 verb|have-Fin-Ind-Past-S2-irr noun|pizza-Acc ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*CHI:	yes (.) <and &-uh> [//] after that and <we had flush> [//] and we had flush ! 314246_317492
+%cod:	$N:GI:RL $N:GI:S $N:GI:S
+%mor:	intj|yes adp|after pron|that-Dem cconj|and cconj|and pron|we-Prs-Nom-P1 verb|have-Fin-Ind-Past-P1-irr noun|flush-Acc !
+%gra:	1|3|DISCOURSE 2|3|CASE 3|0|ROOT 4|7|CC 5|7|CC 6|7|NSUBJ 7|3|CONJ 8|7|OBJ 9|3|PUNCT
+*MOT:	(.) slush (.) .
+%cod:	$N:FC
+%mor:	adj|slush-S1 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	you wan(t) (t)a say it ?
+%cod:	$O
+%mor:	pron|you-Prs-Nom-S2 verb|want-Fin-Ind-Pres-S2 part|to verb|say-Inf-S pron|it-Prs-Acc-S3 ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|MARK 4|2|XCOMP 5|4|OBJ 6|2|PUNCT
+*CHI:	shuh@c (.) lush . 317154_317993
+%cod:	$O
+%mor:	c|shuh adj|lush-S1 .
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|PUNCT
+*MOT:	no not flush say slush .
+%cod:	$O
+%mor:	intj|no part|not verb|flush-Fin-Imp-S verb|say-Fin-Imp-S adj|slush-S1 .
+%gra:	1|3|DISCOURSE 2|3|ADVMOD 3|0|ROOT 4|3|XCOMP 5|4|XCOMP 6|3|PUNCT
+*CHI:	sflush@c .
+%cod:	$O
+%mor:	c|sflush .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	(.) slush (.) .
+%cod:	$O
+%mor:	adj|slush-S1 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	shush@c !
+%int:	loudly
+%cod:	$O
+%mor:	c|shush !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	okay and what <what else did> [//] <you do> [//] besides ride rides and eat besides ride rides and eat ? 326715_333859
+%int:	<2> lengthened
+%cod:	$N:RI:C
+%mor:	intj|okay cconj|and pron|what-Int-S1 adp|besides noun|ride noun|ride-Plur cconj|and verb|eat-Fin-Imp-S adp|besides noun|ride noun|ride-Plur cconj|and verb|eat-Fin-Imp-S ?
+%gra:	1|3|DISCOURSE 2|3|CC 3|0|ROOT 4|6|CASE 5|6|COMPOUND 6|3|NMOD 7|8|CC 8|3|CONJ 9|11|CASE 10|11|COMPOUND 11|8|OBL 12|13|CC 13|11|CONJ 14|3|PUNCT
+*CHI:	&-um (.) we went on another <&~w> [//] one more ride and it is time to go . 333600_336261
+%cod:	$N:GI:RC $N:GI:S
+%mor:	pron|we-Prs-Nom-P1 verb|go-Fin-Ind-Past-P1-irr adp|on det|another-Def-Ind num|one adj|more-Cmp-S1 noun|ride cconj|and pron|it-Prs-Nom-S3 aux|be-Fin-Ind-Pres-S3 noun|time part|to verb|go-Inf-S .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|7|CASE 4|7|DET 5|7|NUMMOD 6|7|AMOD 7|2|OBL 8|11|CC 9|11|NSUBJ 10|11|COP 11|2|CONJ 12|13|MARK 13|11|ACL 14|2|PUNCT
+*MOT:	well wait a minute . 336342_336681
+%cod:	$O
+%mor:	intj|well verb|wait-Fin-Imp-S det|a-Ind-Art noun|minute .
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|4|DET 4|2|OBL-UNMARKED 5|2|PUNCT
+*MOT:	did you do anything else other than eat and ride rides ? 337662_340304
+%cod:	$N:RI:L
+%mor:	aux|do-Fin-Ind-Past-S2-irr pron|you-Prs-Nom-S2 verb|do-Inf-S pron|anything-Ind-S1 adj|else-S1 adj|other-S1 adp|than verb|eat-Inf-S cconj|and verb|ride-Inf-S noun|ride-Plur-Acc ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|3|OBJ 5|4|AMOD 6|4|AMOD 7|8|MARK 8|6|ADVCL 9|10|CC 10|8|CONJ 11|8|OBJ 12|3|PUNCT
+*MOT:	did you do anything else ? 340805_342670
+%cod:	$N:RI:L:R
+%mor:	aux|do-Fin-Ind-Past-S2-irr pron|you-Prs-Nom-S2 verb|do-Inf-S pron|anything-Ind-S1 adj|else-S1 ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|3|OBJ 5|4|AMOD 6|3|PUNCT
+*CHI:	no . 342391_342852
+%cod:	$N:GI:RL
+%mor:	intj|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	did you play games ? 342613_343593
+%cod:	$N:RI:L
+%mor:	aux|do-Fin-Ind-Past-S2-irr pron|you-Prs-Nom-S2 verb|play-Inf-S noun|game-Plur-Acc ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*CHI:	yes .
+%cod:	$N:GI:RL
+%mor:	intj|yes .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	you played skee@d ball remember you <throw the ball> [>] ? 344077_345844
+%cod:	$N:GI:S $N:RI:L
+%mor:	pron|you-Prs-Nom-S2 verb|play-Fin-Ind-Past-S2 d|skee noun|ball-Acc verb|remember-Inf-S pron|you-Prs-Nom-S2 verb|throw-Fin-Ind-Pres-S2 det|the-Def-Art noun|ball-Acc ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|COMPOUND 4|2|OBJ 5|2|XCOMP 6|7|NSUBJ 7|5|CCOMP 8|9|DET 9|7|OBJ 10|2|PUNCT
+*CHI:	<skee@d ball> [<] .
+%cod:	$N:GI:RL
+%mor:	d|skee noun|ball .
+%gra:	1|2|COMPOUND 2|0|ROOT 3|2|PUNCT
+*MOT:	you played skee@d ball .
+%cod:	$N:FA
+%mor:	pron|you-Prs-Nom-S2 verb|play-Fin-Ind-Past-S2 d|skee noun|ball-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|COMPOUND 4|2|OBJ 5|2|PUNCT
+*CHI:	then [/] you said we can go on one more ride and <we went &~w> [//] on the the one that &~oc inside it it goes up and down up and down . 349695_357142
+%cod:	$N:GI:S $N:GI:S
+%mor:	pron|you-Prs-Nom-S2 verb|say-Fin-Ind-Past-S2-irr pron|we-Prs-Nom-P1 aux|can-Fin-S verb|go-Inf-S adp|on num|one adj|more-Cmp-S1 noun|ride cconj|and adp|on det|the-Def-Art det|the-Def-Art noun|one pron|that-Rel adp|inside pron|it-Prs-Acc-S3 pron|it-Prs-Nom-S3 verb|go-Fin-Ind-Pres-S3 adp|up cconj|and adv|down adv|up cconj|and adv|down .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|5|NSUBJ 4|5|AUX 5|2|CCOMP 6|9|CASE 7|9|NUMMOD 8|9|AMOD 9|5|OBL 10|14|CC 11|14|CASE 12|14|DET 13|14|DET 14|9|CONJ 15|19|NSUBJ 16|17|CASE 17|14|NMOD 18|19|NSUBJ 19|14|ACL-RELCL 20|19|COMPOUND-PRT 21|22|CC 22|23|CONJ 23|19|ADVMOD 24|25|CC 25|23|CONJ 26|2|PUNCT
+*MOT:	mhm the bubble boat . 357502_358123
+%cod:	$N:FA $N:GI:S
+%mor:	intj|mhm det|the-Def-Art noun|bubble noun|boat .
+%gra:	1|4|DISCOURSE 2|4|DET 3|4|COMPOUND 4|0|ROOT 5|4|PUNCT
+*CHI:	yep and we had fun and [/] Carmen [/] said Carmen said +/. 359845_364750
+%mor:	intj|yep cconj|and pron|we-Prs-Nom-P1 verb|have-Fin-Ind-Past-P1-irr noun|fun-Acc verb|say-Fin-Ind-Past-S3-irr propn|Carmen verb|say-Fin-Ind-Past-S3-irr +/.
+%gra:	1|4|DISCOURSE 2|4|CC 3|4|NSUBJ 4|6|CCOMP 5|4|OBJ 6|0|ROOT 7|8|NSUBJ 8|6|CCOMP 9|6|PUNCT
+*CHI:	le(t) me get off this thing . 364491_366653
+%cod:	$N:FA $N:GE $N:GI:S
+%mor:	verb|let-Fin-Imp-S pron|I-Prs-Acc-S1 verb|get-Inf-S adp|off det|this-Def-Dem-Sing noun|thing-Ger .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|XCOMP 4|6|CASE 5|6|DET 6|3|OBL 7|1|PUNCT
+*INV:	zzz [<] .
+%par:	laughs
+%mor:	intj|zzz .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	she looked scared ? 368236_369076
+%cod:	$N:RI:L
+%mor:	pron|she-Prs-Nom-S3 verb|look-Fin-Ind-Past-S3 adj|scared-S1 ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|XCOMP 4|2|PUNCT
+*CHI:	yep .
+%cod:	$N:GI:RL
+%mor:	intj|yep .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	big ol(d) Carmen was scared of that ride ? 369839_372241
+%cod:	$N:RI:L
+%mor:	adj|big-S1 adj|old-S1 propn|Carmen aux|be-Fin-Ind-Past-S3-irr adj|scared-S1 adp|of det|that-Def-Dem-Sing noun|ride ?
+%gra:	1|3|AMOD 2|3|AMOD 3|5|NSUBJ 4|5|COP 5|0|ROOT 6|8|CASE 7|8|DET 8|5|OBL 9|5|PUNCT
+*MOT:	was you scared ? 372242_373082
+%cod:	$N:RE
+%mor:	aux|be-Fin-Ind-Past-S3-irr pron|you-Prs-Nom-S2 adj|scared-S1 ?
+%gra:	1|3|COP 2|3|NSUBJ 3|0|ROOT 4|3|PUNCT
+*CHI:	no . 373324_373823
+%cod:	$N:GE
+%mor:	intj|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	no ? 373464_373963
+%cod:	$N:FC
+%mor:	intj|no ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	I don't know what happened . 375775_376795
+%cod:	$O
+%mor:	pron|I-Prs-Nom-S1 adv|dont verb|know-Fin-Ind-Pres-S1 pron|what-Int-S1 verb|happen-Fin-Ind-Past-S3 .
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|5|NSUBJ 5|3|CCOMP 6|3|PUNCT
+*CHI:	Curtis was saying Mommy [!] Mommy ! 377536_378477
+%int:	<3-4> whiny , lengthened
+%cod:	$N:GI:S
+%mor:	propn|Curtis aux|be-Fin-Ind-Past-S3-irr verb|say-Part-Pres-S propn|Mommy-Acc propn|Mommy !
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|4|FLAT 6|3|PUNCT
+*MOT:	he was ?
+%cod:	$N:FA
+%mor:	pron|he-Prs-Nom-S3 aux|be-Fin-Ind-Past-S3-irr ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|PUNCT
+*CHI:	yep [>] .
+%cod:	$N:FR
+%mor:	intj|yep .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	<Curtis> [<] was crying ?
+%cod:	$N:RI:L
+%mor:	propn|Curtis aux|be-Fin-Ind-Past-S3-irr verb|cry-Part-Pres-S ?
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|PUNCT
+*CHI:	no [//] crying [//] no <xxx xxx crying> [>] .
+%cod:	$N:GI:RL $N:U
+%mor:	det|no-Def-Neg noun|cry-Ger .
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*MOT:	<Curtis wasn't crying> [<] .
+%cod:	$N:FC
+%mor:	propn|Curtis aux|wasnt-Fin-Ind-Pres-S3 verb|cry-Part-Pres-S .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|PUNCT
+*CHI:	<he wasn't crying> [//] for me crying for me . 381279_383361
+%mor:	adp|for pron|I-Prs-Acc-S1 verb|cry-Part-Pres-S adp|for pron|I-Prs-Acc-S1 .
+%gra:	1|2|CASE 2|3|OBL 3|0|ROOT 4|5|CASE 5|3|OBL 6|3|PUNCT
+*CHI:	he he [/] was saying Mommy Mommy [!] Mommy ! 384784_385824
+%int:	<14-15> lengthened , whiny
+%cod:	$N:FR $N:GI:S $N:GI:S
+%mor:	pron|he-Prs-Nom-S3 aux|be-Fin-Ind-Past-S3-irr verb|say-Part-Pres-S propn|Mommy-Acc propn|Mommy propn|Mommy !
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|4|FLAT 6|4|FLAT 7|3|PUNCT
+*MOT:	zzz .
+%par:	laughs
+%mor:	intj|zzz .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	I didn't know that .
+%cod:	$O
+%mor:	pron|I-Prs-Nom-S1 adv|didnt verb|know-Inf-S pron|that-Dem .
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*MOT:	zzz .
+%par:	laughs
+%mor:	intj|zzz .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	what did you bring home with you from the park ? 394375_397297
+%cod:	$N:RI:S
+%mor:	pron|what-Int-S1 aux|do-Fin-Ind-Past-S2-irr pron|you-Prs-Nom-S2 verb|bring-Inf-S adv|home adp|with pron|you-Prs-Acc-S2 adp|from det|the-Def-Art noun|park ?
+%gra:	1|4|OBJ 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|4|ADVMOD 6|7|CASE 7|4|OBL 8|10|CASE 9|10|DET 10|4|OBL 11|4|PUNCT
+*CHI:	cotton candy .
+%cod:	$N:GI:RS
+%mor:	noun|cotton noun|candy .
+%gra:	1|2|COMPOUND 2|0|ROOT 3|2|PUNCT
+*MOT:	what else ?
+%cod:	$N:RI:C
+%mor:	pron|what-Int-S1 adv|else ?
+%gra:	1|0|ROOT 2|1|ADVMOD 3|1|PUNCT
+*CHI:	&-um (.) toys .
+%cod:	$N:GI:RC
+%mor:	noun|toy-Plur .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	xxx .
+%cod:	$N:U
+*MOT:	did you have fun ? 402021_402502
+%int:	all softly
+%cod:	$N:RE
+%mor:	aux|do-Fin-Ind-Past-S2-irr pron|you-Prs-Nom-S2 verb|have-Inf-S noun|fun-Acc ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*CHI:	yeah . 445938_446376
+%cod:	$N:GE
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+@End

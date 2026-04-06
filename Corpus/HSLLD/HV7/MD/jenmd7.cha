@@ -1,0 +1,89 @@
+@UTF8
+@PID:	11312/c-00035970-1
+@Begin
+@Languages:	eng
+@Participants:	INV Investigator, MOT Mother
+@ID:	eng|HSLLD|INV|||||Investigator|||
+@ID:	eng|HSLLD|MOT||female|||Mother|||
+@Media:	jenmd7, audio, missing
+@Date:	02-DEC-1995
+@Activities:	Mother's definitions home visit 7
+*INV:	the first one's bicycle what's a bicycle ?
+%mor:	det|the-Def-Art adj|first-S1 noun|one noun|bicycle verb|what-Fin-Ind-Pres-S3 det|a-Ind-Art noun|bicycle-Acc ?
+%gra:	1|4|DET 2|4|AMOD 3|4|COMPOUND 4|5|NSUBJ 5|0|ROOT 6|7|DET 7|5|OBJ 8|5|PUNCT
+@Comment:	Time is 0:54
+*MOT:	a two wheeled vehicle .
+%mor:	det|a-Ind-Art num|two verb|wheel-Part-Past-S noun|vehicle .
+%gra:	1|4|DET 2|4|NUMMOD 3|4|AMOD 4|0|ROOT 5|4|PUNCT
+*INV:	two wheeled vehicle .
+%mor:	num|two verb|wheel-Part-Past-S noun|vehicle .
+%gra:	1|3|NUMMOD 2|3|AMOD 3|0|ROOT 4|3|PUNCT
+*MOT:	to me that's what it is &=laughs .
+%mor:	adp|to pron|I-Prs-Acc-S1 aux|that-Fin-Ind-Pres-S3 pron|what-Rel-S1 pron|it-Prs-Nom-S3 aux|be-Fin-Ind-Pres-S3 .
+%gra:	1|2|CASE 2|4|OBL 3|4|COP 4|0|ROOT 5|6|NSUBJ 6|4|ACL-RELCL 7|4|PUNCT
+*INV:	uhhuh (.) that's great .
+%mor:	intj|uhhuh aux|that-Fin-Ind-Pres-S3 adj|great-S1 .
+%gra:	1|3|DISCOURSE 2|3|COP 3|0|ROOT 4|3|PUNCT
+*MOT:	as long as you don't make me get on one we'll be alright .
+%mor:	adv|as adv|long sconj|as pron|you-Prs-Nom-S2 aux|dont-Fin-Ind-Pres-S2 verb|make-Inf-S pron|I-Prs-Acc-S1 verb|get-Inf-S adp|on num|one noun|well aux|be-Fin-S adj|alright-S1 .
+%gra:	1|2|ADVMOD 2|13|ADVMOD 3|6|MARK 4|6|NSUBJ 5|6|AUX 6|2|ADVCL 7|6|OBJ 8|6|XCOMP 9|11|CASE 10|11|NUMMOD 11|8|OBL 12|13|COP 13|0|ROOT 14|13|PUNCT
+*INV:	www .
+*INV:	&-um bird .
+%mor:	noun|bird .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	bird &-um (.) I didn't know I hadta think this morning &-um (.) an animal that flies .
+%mor:	noun|bird pron|I-Prs-Nom-S1 aux|didnt-Fin-S verb|know-Inf-S pron|I-Prs-Nom-S1 aux|hadt-Fin-Ind-Pres-S1 verb|think-Inf-S det|this-Def-Dem-Sing noun|morning-Ger det|a-Ind-Art noun|animal-Acc pron|that-Rel verb|fly-Fin-Ind-Pres-S3 .
+%gra:	1|4|VOCATIVE 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|7|NSUBJ 6|7|AUX 7|4|CCOMP 8|9|DET 9|7|OBL-UNMARKED 10|11|DET 11|7|OBJ 12|13|NSUBJ 13|11|ACL-RELCL 14|4|PUNCT
+*INV:	uhhuh and a clock what's a clock ?
+%mor:	intj|uhhuh cconj|and det|a-Ind-Art noun|clock verb|what-Fin-Ind-Pres-S3 det|a-Ind-Art noun|clock-Acc ?
+%gra:	1|5|DISCOURSE 2|4|CC 3|4|DET 4|5|NSUBJ 5|0|ROOT 6|7|DET 7|5|OBJ 8|5|PUNCT
+*MOT:	something that ticks and tells time .
+%mor:	pron|something-Ind-S1 pron|that-Rel verb|tick-Fin-Ind-Pres-S3 cconj|and verb|tell-Fin-Ind-Pres-S3 noun|time-Acc .
+%gra:	1|0|ROOT 2|3|NSUBJ 3|1|ACL-RELCL 4|5|CC 5|3|CONJ 6|5|OBJ 7|1|PUNCT
+*INV:	mhm and a diamond .
+%mor:	intj|mhm cconj|and det|a-Ind-Art noun|diamond .
+%gra:	1|0|ROOT 2|4|CC 3|4|DET 4|1|CONJ 5|1|PUNCT
+*MOT:	&=laughs a gem it's a gem stone .
+%mor:	det|a-Ind-Art noun|gem pron|its-Prs-Nom-S3 det|a-Ind-Art noun|gem noun|stone .
+%gra:	1|2|DET 2|0|ROOT 3|6|NSUBJ 4|6|DET 5|6|COMPOUND 6|2|APPOS 7|2|PUNCT
+*INV:	and what is a donkey ?
+%mor:	cconj|and pron|what-Int-S1 aux|be-Fin-Ind-Pres-S3 det|a-Ind-Art noun|donkey ?
+%gra:	1|2|CC 2|0|ROOT 3|5|COP 4|5|DET 5|2|NSUBJ 6|2|PUNCT
+*MOT:	<four legged> [//] animal legged animal .
+%mor:	noun|animal adj|legged-S1 noun|animal .
+%gra:	1|3|COMPOUND 2|3|AMOD 3|0|ROOT 4|3|PUNCT
+*INV:	mhm and the alphabet .
+%mor:	intj|mhm cconj|and det|the-Def-Art noun|alphabet .
+%gra:	1|0|ROOT 2|4|CC 3|4|DET 4|1|CONJ 5|1|PUNCT
+*MOT:	(.) &-um letters .
+%mor:	noun|letter-Plur .
+%gra:	1|0|ROOT 2|1|PUNCT
+*INV:	and what is a hat ?
+%mor:	cconj|and pron|what-Int-S1 aux|be-Fin-Ind-Pres-S3 det|a-Ind-Art noun|hat ?
+%gra:	1|2|CC 2|0|ROOT 3|5|COP 4|5|DET 5|2|NSUBJ 6|2|PUNCT
+*MOT:	something you wear on your head to keep warm .
+%mor:	pron|something-Ind-S1 pron|you-Prs-Nom-S2 verb|wear-Fin-Ind-Pres-S2 adp|on pron|your-Prs-Gen-S2 noun|head part|to verb|keep-Inf-S adj|warm-S1 .
+%gra:	1|0|ROOT 2|3|NSUBJ 3|1|ACL-RELCL 4|6|CASE 5|6|NMOD-POSS 6|3|OBL 7|8|MARK 8|3|ADVCL 9|8|XCOMP 10|1|PUNCT
+*INV:	and a knife ?
+%mor:	cconj|and det|a-Ind-Art noun|knife ?
+%gra:	1|3|CC 2|3|DET 3|0|ROOT 4|3|PUNCT
+*MOT:	something you cut with .
+%mor:	pron|something-Ind-S1 pron|you-Prs-Nom-S2 verb|cut-Fin-Ind-Past-S2-irr adp|with .
+%gra:	1|0|ROOT 2|3|NSUBJ 3|1|ACL-RELCL 4|3|OBL 5|1|PUNCT
+*INV:	and a nail .
+%mor:	cconj|and det|a-Ind-Art noun|nail .
+%gra:	1|3|CC 2|3|DET 3|0|ROOT 4|3|PUNCT
+*MOT:	something you bang in .
+%mor:	pron|something-Ind-S1 pron|you-Prs-Nom-S2 verb|bang-Fin-Ind-Pres-S2 adp|in .
+%gra:	1|0|ROOT 2|3|NSUBJ 3|1|ACL-RELCL 4|3|OBL 5|1|PUNCT
+*INV:	and a thief .
+%mor:	cconj|and det|a-Ind-Art noun|thief .
+%gra:	1|3|CC 2|3|DET 3|0|ROOT 4|3|PUNCT
+*MOT:	someone who steals .
+%mor:	pron|someone-Ind-S1 pron|who-Rel verb|steal-Fin-Ind-Pres-S3 .
+%gra:	1|0|ROOT 2|3|NSUBJ 3|1|ACL-RELCL 4|1|PUNCT
+*INV:	okay great !
+%mor:	intj|okay adj|great-S1 !
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|PUNCT
+@Comment:	Time is 2:03
+@End

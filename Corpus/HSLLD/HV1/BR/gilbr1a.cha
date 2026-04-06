@@ -1,0 +1,758 @@
+@UTF8
+@PID:	11312/c-00034798-1
+@Begin
+@Languages:	eng
+@Participants:	EX1 Investigator, CHI Target_Child, MOT Mother, EX2 Investigator, BAB Brother
+@ID:	eng|HSLLD|EX1|||||Investigator|||
+@ID:	eng|HSLLD|CHI|3;09.24|male|||Target_Child|||
+@ID:	eng|HSLLD|MOT||female|||Mother|14||
+@ID:	eng|HSLLD|EX2|||||Investigator|||
+@ID:	eng|HSLLD|BAB|||||Brother|||
+@Birth of CHI:	08-OCT-1984
+@Media:	gilbr1a, audio, missing
+@Comment:	really missing
+@Comment:	SES of Mot is lower
+@Date:	01-AUG-1988
+@Location:	Boston , MA , USA
+@Situation:	Home Visit 1; took place in living room; Mot seated on couch , Chi standing/sitting next to her; evening of a warm summer day
+@Activities:	Book Reading 1 (The Very Hungry Caterpillar)
+@Bg:	bookreading
+@Types:	long, book, TD
+*EX1:	&-um (.) we'll finish the rest of this later but I brought a book (.) that [>] if you can look at it with Chi +...
+%mor:	intj|well verb|finish-Fin-Imp-S det|the-Def-Art noun|rest-Acc adp|of pron|this-Dem-S1 adj|late-Cmp-S1 cconj|but pron|I-Prs-Nom-S1 verb|bring-Fin-Ind-Past-S1-irr det|a-Ind-Art noun|book-Acc pron|that-Rel sconj|if pron|you-Prs-Nom-S2 aux|can-Fin-S verb|look-Inf-S adp|at pron|it-Prs-Acc-S3 adp|with propn|Chi +...
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|4|DET 4|2|OBJ 5|6|CASE 6|4|NMOD 7|2|ADVMOD 8|10|CC 9|10|NSUBJ 10|2|CONJ 11|12|DET 12|10|OBJ 13|17|OBJ 14|17|MARK 15|17|NSUBJ 16|17|AUX 17|10|ADVCL 18|19|CASE 19|17|OBL 20|21|CASE 21|17|OBL 22|2|PUNCT
+@Comment:	Time is 025:38 , caregiver interview
+*CHI:	ouch !
+%par:	shouts
+%exp:	has been bouncing around on couch
+%mor:	intj|ouch !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	alright .
+%mor:	intj|alright .
+%gra:	1|0|ROOT 2|1|PUNCT
+*EX1:	&-um (.) just [/] look at it like you normally would together for ten (.) fifteen (.) minutes minutes .
+%mor:	verb|look-Fin-Imp-S adp|at pron|it-Prs-Acc-S3 sconj|like pron|you-Prs-Nom-S2 adv|normally aux|would-Fin-S adv|together adp|for num|ten num|fifteen noun|minute-Plur noun|minute-Plur .
+%gra:	1|0|ROOT 2|3|CASE 3|1|OBL 4|7|MARK 5|7|NSUBJ 6|7|ADVMOD 7|1|ADVCL 8|7|ADVMOD 9|13|CASE 10|12|NUMMOD 11|12|NUMMOD 12|13|NMOD-UNMARKED 13|7|OBL-UNMARKED 14|1|PUNCT
+*MOT:	okay .
+%mor:	intj|okay .
+%gra:	1|0|ROOT 2|1|PUNCT
+*EX1:	Chi you wan(t) (t)a look at this book with your mom ?
+%mor:	propn|Chi pron|you-Prs-Nom-S2 verb|want-Fin-Ind-Pres-S2 part|to verb|look-Inf-S adp|at det|this-Def-Dem-Sing noun|book adp|with pron|your-Prs-Gen-S2 noun|mom ?
+%gra:	1|3|NSUBJ 2|3|NSUBJ 3|0|ROOT 4|5|MARK 5|3|XCOMP 6|8|CASE 7|8|DET 8|5|OBL 9|11|CASE 10|11|NMOD-POSS 11|5|OBL 12|3|PUNCT
+*CHI:	yeah .
+%gpx:	standing in adjoining dining room
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*EX1:	please ?
+%mor:	intj|please ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	yeah .
+%par:	whispered
+%act:	comes and stands next to Mot
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	look at that .
+%mor:	verb|look-Fin-Imp-S adp|at pron|that-Dem .
+%gra:	1|0|ROOT 2|3|CASE 3|1|OBL 4|1|PUNCT
+*MOT:	do you know what it is ?
+%gpx:	points at book cover
+%mor:	aux|do-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 verb|know-Inf-S pron|what-Int-S1 pron|it-Prs-Nom-S3 aux|be-Fin-Ind-Pres-S3 ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|3|OBJ 5|6|NSUBJ 6|4|ACL-RELCL 7|3|PUNCT
+*CHI:	uhhuh .
+%par:	very softly
+%mor:	intj|uhhuh .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	what (.) ?
+%mor:	pron|what-Int-S1 ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	what is it ?
+%mor:	pron|what-Int-S1 aux|be-Fin-Ind-Pres-S3 pron|it-Prs-Nom-S3 ?
+%gra:	1|0|ROOT 2|1|COP 3|1|NSUBJ 4|1|PUNCT
+*MOT:	do you know ?
+%mor:	aux|do-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 verb|know-Inf-S ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|3|PUNCT
+*CHI:	0 .
+%gpx:	shakes head
+*MOT:	caterpillar .
+%mor:	noun|caterpillar .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	the book called The_Very_Hungry_Caterpillar .
+%act:	bef turns page
+%mor:	det|the-Def-Art noun|book verb|call-Part-Past-S propn|TheVeryHungryCaterpillar .
+%gra:	1|2|DET 2|0|ROOT 3|2|ACL 4|3|XCOMP 5|2|PUNCT
+*CHI:	0 .
+%act:	turns pages
+*MOT:	you [?] skip one .
+%act:	turns one page back
+%mor:	pron|you-Prs-Nom-S2 verb|skip-Fin-Ind-Pres-S2 num|one .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*MOT:	what's that ?
+%gpx:	points at page
+%mor:	pron|what-Int-S1 pron|that-Dem ?
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*CHI:	sun .
+%mor:	noun|sun .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	yeah it is .
+%mor:	intj|yeah pron|it-Prs-Nom-S3 aux|be-Fin-Ind-Pres-S3 .
+%gra:	1|3|DISCOURSE 2|3|NSUBJ 3|0|ROOT 4|3|PUNCT
+*MOT:	in the light of the moon (.) a little egg lay on a leaf .
+%act:	bef turns page
+%mor:	adp|in det|the-Def-Art noun|light adp|of det|the-Def-Art noun|moon det|a-Ind-Art adj|little-S1 noun|egg verb|lay-Fin-Ind-Past-S3 adp|on det|a-Ind-Art noun|leaf .
+%gra:	1|3|CASE 2|3|DET 3|10|OBL 4|6|CASE 5|6|DET 6|3|NMOD 7|9|DET 8|9|AMOD 9|10|NSUBJ 10|0|ROOT 11|13|CASE 12|13|DET 13|10|OBL 14|10|PUNCT
+*CHI:	0 .
+%act:	starts inspecting dollar bill given to him by his father
+*MOT:	you're not looking !
+%mor:	aux|your-Fin-Ind-Pres-S3 part|not verb|look-Part-Pres-S !
+%gra:	1|3|AUX 2|3|ADVMOD 3|0|ROOT 4|3|PUNCT
+*MOT:	come on .
+%mor:	verb|come-Fin-Imp-S adp|on .
+%gra:	1|0|ROOT 2|1|ADVMOD 3|1|PUNCT
+*MOT:	zzz .
+%par:	laughs
+%mor:	intj|zzz .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	zzz .
+%par:	laughs
+%mor:	intj|zzz .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	let me have that .
+%act:	aft takes dollar bill away and turns page
+%mor:	verb|let-Fin-Imp-S pron|I-Prs-Acc-S1 verb|have-Inf-S pron|that-Dem .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|XCOMP 4|3|OBJ 5|1|PUNCT
+*MOT:	what's that ?
+%gpx:	points at page
+%com:	pause for several seconds follows
+%mor:	pron|what-Int-S1 pron|that-Dem ?
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*CHI:	a big sun .
+%mor:	det|a-Ind-Art adj|big-S1 noun|sun .
+%gra:	1|3|DET 2|3|AMOD 3|0|ROOT 4|3|PUNCT
+*MOT:	yes .
+%mor:	intj|yes .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	one Sunday .
+%mor:	num|one propn|Sunday .
+%gra:	1|2|NUMMOD 2|0|ROOT 3|2|PUNCT
+*CHI:	<it [?] have a> [<] .
+%mor:	pron|it-Prs-Nom-S3 verb|have-Fin-Ind-Pres-P3 det|a-Ind-Art .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|PUNCT 4|2|PUNCT
+*MOT:	huh ?
+%mor:	intj|huh ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	eyes and nose and mouth .
+%mor:	noun|eye-Plur cconj|and noun|nose cconj|and noun|mouth .
+%gra:	1|0|ROOT 2|3|CC 3|1|CONJ 4|5|CC 5|1|CONJ 6|1|PUNCT
+*MOT:	that's right yeah .
+%mor:	aux|that-Fin-Ind-Pres-S3 adj|right-S1 intj|yeah .
+%gra:	1|2|COP 2|0|ROOT 3|2|DISCOURSE 4|2|PUNCT
+*MOT:	and this is a little caterpillar ?
+%gpx:	points at page
+%mor:	cconj|and pron|this-Dem-S1 aux|be-Fin-Ind-Pres-S3 det|a-Ind-Art adj|little-S1 noun|caterpillar ?
+%gra:	1|6|CC 2|6|NSUBJ 3|6|COP 4|6|DET 5|6|AMOD 6|0|ROOT 7|6|PUNCT
+*CHI:	yeah .
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	yeah and one Sunday morning the warm sun came up (.) and pop out of the egg (.) came a tiny and very hungry caterpillar .
+%mor:	intj|yeah cconj|and num|one propn|Sunday noun|morning-Ger det|the-Def-Art adj|warm-S1 noun|sun verb|come-Fin-Ind-Past-S3-irr adp|up cconj|and noun|pop adp|out adp|of det|the-Def-Art noun|egg verb|come-Fin-Ind-Past-S3-irr det|a-Ind-Art adj|tiny-S1 cconj|and adv|very adj|hungry-S1 noun|caterpillar-Acc .
+%gra:	1|9|DISCOURSE 2|9|CC 3|5|NUMMOD 4|5|COMPOUND 5|9|OBL-UNMARKED 6|8|DET 7|8|AMOD 8|9|NSUBJ 9|0|ROOT 10|9|COMPOUND-PRT 11|17|CC 12|17|NSUBJ 13|16|CASE 14|16|CASE 15|16|DET 16|12|NMOD 17|9|CONJ 18|23|DET 19|23|AMOD 20|22|CC 21|22|ADVMOD 22|19|CONJ 23|17|OBJ 24|9|PUNCT
+*CHI:	0 .
+%act:	starts climbing couch
+*MOT:	Chi ?
+%mor:	propn|Chi ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	what's the matter with you today ?
+%mor:	aux|what-Fin-Ind-Pres-S3 det|the-Def-Art noun|matter adp|with pron|you-Prs-Acc-S2 noun|today ?
+%gra:	1|0|ROOT 2|3|DET 3|1|NSUBJ 4|5|CASE 5|3|NMOD 6|1|OBL-UNMARKED 7|1|PUNCT
+*MOT:	you're so hyper .
+%mor:	intj|your adv|so noun|hyper .
+%gra:	1|3|DISCOURSE 2|3|ADVMOD 3|0|ROOT 4|3|PUNCT
+*MOT:	zzz .
+%par:	laughs
+%mor:	intj|zzz .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	zzz (.) .
+%par:	laughs
+%mor:	intj|zzz .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	zzz .
+%par:	burps
+%mor:	intj|zzz .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	xxx excuse yourself .
+%mor:	verb|excuse-Fin-Imp-S pron|yourself-Prs-Acc-reflx-S2 .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*CHI:	[^ to Simon] excuse me .
+%mor:	verb|excuse-Fin-Imp-S pron|I-Prs-Acc-S1 .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*MOT:	yeah .
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	what ?
+%act:	bef turns page
+%mor:	pron|what-Int-S1 ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	what's that ?
+%gpx:	points at page
+%mor:	pron|what-Int-S1 pron|that-Dem ?
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*CHI:	a apples .
+%mor:	det|a-Ind-Art noun|apple-Plur .
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*MOT:	yeah .
+%gpx:	aft points at page
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	huh ?
+%mor:	intj|huh ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	pear [>] !
+%mor:	noun|pear !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	<xxx> [<] .
+*MOT:	yes .
+%mor:	intj|yes .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	and this one &=points .
+%mor:	cconj|and det|this-Def-Dem-Sing noun|one .
+%gra:	1|3|CC 2|3|DET 3|0|ROOT 4|3|PUNCT
+*CHI:	pear .
+%mor:	noun|pear .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	what's this ?
+%gpx:	points at page
+%mor:	pron|what-Int-S1 pron|this-Dem-S1 ?
+%gra:	1|0|ROOT 2|1|NSUBJ 3|1|PUNCT
+*MOT:	looks like a [?] apple .
+%mor:	verb|look-Fin-Ind-Pres-S3 adp|like det|a-Ind-Art noun|apple .
+%gra:	1|0|ROOT 2|4|CASE 3|4|DET 4|1|OBL 5|1|PUNCT
+*CHI:	apple .
+%mor:	noun|apple .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	how about this one ?
+%mor:	adv|how adp|about det|this-Def-Dem-Sing noun|one ?
+%gra:	1|0|ROOT 2|4|CASE 3|4|DET 4|1|OBL 5|1|PUNCT
+*CHI:	strawberry xxx .
+%mor:	noun|strawberry .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	yeah .
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	strawberry and [>] strawberry and strawberry .
+%act:	turns pages
+%mor:	noun|strawberry cconj|and noun|strawberry cconj|and noun|strawberry .
+%gra:	1|0|ROOT 2|3|CC 3|1|CONJ 4|5|CC 5|1|CONJ 6|1|PUNCT
+*MOT:	yeah [<] +...
+%mor:	intj|yeah +...
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	one two three four five .
+%gpx:	points
+%mor:	num|one num|two num|three num|four num|five .
+%gra:	1|3|COMPOUND 2|3|COMPOUND 3|5|NUMMOD 4|5|NUMMOD 5|0|ROOT 6|5|PUNCT
+*MOT:	no four .
+%mor:	det|no-Def-Neg num|four .
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*MOT:	one two three four strawberries .
+%mor:	num|one num|two num|three num|four noun|strawberry-Plur .
+%gra:	1|5|NUMMOD 2|5|NUMMOD 3|5|NUMMOD 4|5|NUMMOD 5|0|ROOT 6|5|PUNCT
+*CHI:	mm [<] .
+%mor:	intj|mm .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	okay look at this small caterpillar is gonna .
+%mor:	intj|okay noun|look adp|at det|this-Def-Dem-Sing adj|small-S1 noun|caterpillar aux|be-Fin-Ind-Pres-S3 adj|gonna-S1 .
+%gra:	1|8|DISCOURSE 2|8|NSUBJ 3|6|CASE 4|6|DET 5|6|AMOD 6|2|NMOD 7|8|COP 8|0|ROOT 9|8|PUNCT
+*CHI:	orange !
+%mor:	adj|orange-S1 !
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	orange .
+%mor:	adj|orange-S1 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	xxx [>] .
+*MOT:	<no that's> [<] peaches .
+%mor:	det|no-Def-Neg noun|that noun|peach-Plur .
+%gra:	1|3|DET 2|3|COMPOUND 3|0|ROOT 4|3|PUNCT
+*MOT:	look .
+%act:	reads text on page silently
+%mor:	verb|look-Fin-Imp-S .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	oh (.) .
+%mor:	intj|oh .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	no .
+%mor:	intj|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	one (.) two (.) three (.) four (.) five !
+%mor:	num|one num|two num|three num|four num|five !
+%gra:	1|3|COMPOUND 2|3|COMPOUND 3|5|NUMMOD 4|5|NUMMOD 5|0|ROOT 6|5|PUNCT
+*MOT:	it is orange .
+%mor:	pron|it-Prs-Nom-S3 aux|be-Fin-Ind-Pres-S3 adj|orange-S1 .
+%gra:	1|3|NSUBJ 2|3|COP 3|0|ROOT 4|3|PUNCT
+*CHI:	what is xxx .
+%mor:	pron|what-Int-S1 aux|be-Fin-Ind-Pres-S3 .
+%gra:	1|0|ROOT 2|1|COP 3|1|PUNCT
+*MOT:	it [<] looked like peaches yeah !
+%par:	<1u> laughing
+%mor:	pron|it-Prs-Nom-S3 verb|look-Fin-Ind-Past-S3 adp|like noun|peach-Plur intj|yeah !
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|CASE 4|2|OBL 5|2|DISCOURSE 6|2|PUNCT
+*CHI:	it look like orange !
+%par:	shouts <4> laughs
+%mor:	pron|it-Prs-Nom-S3 verb|look-Fin-Ind-Pres-S3 adp|like adj|orange-S1 !
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|CASE 4|2|OBL 5|2|PUNCT
+*MOT:	it is .
+%mor:	pron|it-Prs-Nom-S3 aux|be-Fin-Ind-Pres-S3 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|PUNCT
+*MOT:	yeah .
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	+< what is xxx ?
+%act:	turns page
+%mor:	pron|what-Int-S1 aux|be-Fin-Ind-Pres-S3 ?
+%gra:	1|0|ROOT 2|1|COP 3|1|PUNCT
+*CHI:	watermelon !
+%gpx:	points (far right side of page)
+%mor:	noun|watermelon !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	that's right [>] .
+%mor:	aux|that-Fin-Ind-Pres-S3 adj|right-S1 .
+%gra:	1|2|COP 2|0|ROOT 3|2|PUNCT
+*CHI:	hotdog !
+%gpx:	points (middle of right hand page)
+%mor:	noun|hotdog !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	yeah .
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	and a cake .
+%gpx:	points
+%com:	CHI has named three items starting from the right side of the right hand page and progressing to the left
+%mor:	cconj|and det|a-Ind-Art noun|cake .
+%gra:	1|3|CC 2|3|DET 3|0|ROOT 4|3|PUNCT
+*MOT:	yeah +...
+%mor:	intj|yeah +...
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	think that's a pie .
+%act:	reading text
+%par:	very softly , to herself
+%mor:	verb|think-Fin-Imp-S aux|that-Fin-Ind-Pres-S3 det|a-Ind-Art noun|pie .
+%gra:	1|0|ROOT 2|4|COP 3|4|DET 4|1|CCOMP 5|1|PUNCT
+*CHI:	what's this ?
+%gpx:	points
+%mor:	pron|what-Int-S1 pron|this-Dem-S1 ?
+%gra:	1|0|ROOT 2|1|NSUBJ 3|1|PUNCT
+*MOT:	it's a candy .
+%mor:	pron|its-Prs-Gen-S3 det|a-Ind-Art noun|candy .
+%gra:	1|3|NMOD-POSS 2|3|DET 3|0|ROOT 4|3|PUNCT
+*CHI:	candy .
+%mor:	noun|candy .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	uhhuh .
+%mor:	intj|uhhuh .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	cake .
+%gpx:	points
+%mor:	noun|cake .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	no (.) .
+%mor:	intj|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	that's a sausage .
+%com:	sausage is surrounded by pie on the left and cupcake on the right
+%mor:	aux|that-Fin-Ind-Pres-S3 det|a-Ind-Art noun|sausage .
+%gra:	1|3|COP 2|3|DET 3|0|ROOT 4|3|PUNCT
+*CHI:	dassa [: sausage] .
+%mor:	noun|sausage .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	yeah salami .
+%mor:	intj|yeah noun|salami .
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|PUNCT
+*CHI:	there's my baby I'm talking about [?] .
+%exp:	his baby brother has just come in
+%par:	<6> whispered (if said)
+%mor:	verb|there-Fin-Ind-Pres-S3 pron|my-Prs-Gen-S1 noun|baby noun|im-Acc verb|talk-Part-Pres-S adp|about .
+%gra:	1|0|ROOT 2|4|NMOD-POSS 3|4|COMPOUND 4|1|OBJ 5|1|XCOMP 6|1|OBL 7|1|PUNCT
+*EX1:	well hello .
+%mor:	intj|well intj|hello .
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|PUNCT
+*EX1:	how are you ?
+%mor:	adv|how aux|be-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 ?
+%gra:	1|0|ROOT 2|1|COP 3|1|NSUBJ 4|1|PUNCT
+*EX1:	xxx .
+%add:	BAB
+*EX2:	zzz .
+%par:	laughs
+%mor:	intj|zzz .
+%gra:	1|0|ROOT 2|1|PUNCT
+*EX2:	where you come from ?
+%mor:	adv|where pron|you-Prs-Nom-S2 verb|come-Fin-Ind-Pres-S2 adp|from ?
+%gra:	1|3|ADVMOD 2|3|NSUBJ 3|0|ROOT 4|3|OBL 5|3|PUNCT
+*BAB:	zzz [<] .
+%par:	makes baby sound
+%mor:	intj|zzz .
+%gra:	1|0|ROOT 2|1|PUNCT
+*EX2:	zzz .
+%par:	laughs
+%mor:	intj|zzz .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	hi !
+%add:	BAB
+%mor:	intj|hi !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	zzz .
+%par:	laughs
+%mor:	intj|zzz .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	okay sit down . [+ nr:moveon]
+%par:	CHI
+%mor:	intj|okay verb|sit-Fin-Imp-S adp|down .
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|COMPOUND-PRT 4|2|PUNCT
+*CHI:	<I come> [/] in my (.) mother house mother house .
+%com:	short pause follows this statement
+%mor:	adp|in pron|my-Prs-Gen-S1 noun|mother noun|house noun|mother noun|house .
+%gra:	1|6|CASE 2|6|NMOD-POSS 3|6|COMPOUND 4|6|COMPOUND 5|6|COMPOUND 6|0|ROOT 7|6|PUNCT
+*MOT:	okay +...
+%gpx:	turns her attention back to book
+%mor:	intj|okay +...
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	look (.) !
+%mor:	verb|look-Fin-Imp-S !
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	watermelon .
+%gpx:	points at page
+%mor:	noun|watermelon .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	that's a cupcake .
+%mor:	aux|that-Fin-Ind-Pres-S3 det|a-Ind-Art noun|cupcake .
+%gra:	1|3|COP 2|3|DET 3|0|ROOT 4|3|PUNCT
+*MOT:	this one watermelon [?] .
+%com:	cupcake is just to the left of watermelon
+%mor:	det|this-Def-Dem-Sing noun|one noun|watermelon .
+%gra:	1|3|DET 2|3|COMPOUND 3|0|ROOT 4|3|PUNCT
+*CHI:	cupcake [>] ?
+%mor:	noun|cupcake ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	uhhuh .
+%mor:	intj|uhhuh .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	look .
+%act:	bef turns page
+%gpx:	points at page
+%mor:	verb|look-Fin-Imp-S .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	yeah +...
+%mor:	intj|yeah +...
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	&-uh (.) that's a tree !
+%exp:	points
+%mor:	aux|that-Fin-Ind-Pres-S3 det|a-Ind-Art noun|tree !
+%gra:	1|3|COP 2|3|DET 3|0|ROOT 4|3|PUNCT
+*MOT:	this .
+%mor:	pron|this-Dem-S1 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	and look .
+%mor:	cconj|and verb|look-Fin-Imp-S .
+%gra:	1|2|CC 2|0|ROOT 3|2|PUNCT
+*MOT:	the caterpillar over there .
+%gpx:	points
+%mor:	det|the-Def-Art noun|caterpillar adp|over adv|there .
+%gra:	1|2|DET 2|0|ROOT 3|4|CASE 4|2|NMOD 5|2|PUNCT
+*CHI:	yeah .
+%act:	turns page
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	and a big [!] callerpillar@c .
+%mor:	cconj|and det|a-Ind-Art adj|big-S1 c|callerpillar .
+%gra:	1|4|CC 2|4|DET 3|4|AMOD 4|0|ROOT 5|4|PUNCT
+*MOT:	caterpillar .
+%mor:	noun|caterpillar .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	not callerpillar@c .
+%mor:	part|not c|callerpillar .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*CHI:	yes [?] .
+%act:	turns page
+%mor:	intj|yes .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	<how_about> [?] this one ?
+%gpx:	points
+%mor:	intj|howabout det|this-Def-Dem-Sing noun|one ?
+%gra:	1|0|ROOT 2|3|DET 3|1|NMOD-UNMARKED 4|1|PUNCT
+*MOT:	what is it ?
+%mor:	pron|what-Int-S1 aux|be-Fin-Ind-Pres-S3 pron|it-Prs-Nom-S3 ?
+%gra:	1|0|ROOT 2|1|COP 3|1|NSUBJ 4|1|PUNCT
+*CHI:	a fly [=! gestures] .
+%mor:	det|a-Ind-Art noun|fly .
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*MOT:	a butterfly .
+%mor:	det|a-Ind-Art noun|butterfly .
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*CHI:	a butterfly .
+%mor:	det|a-Ind-Art noun|butterfly .
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*CHI:	look like a butterfly .
+%com:	<4> pause separates 'butter' and 'fly' and stress is on 'fly' as though 'butter' were an adjective
+%mor:	verb|look-Fin-Imp-S adp|like det|a-Ind-Art noun|butterfly .
+%gra:	1|0|ROOT 2|4|CASE 3|4|DET 4|1|OBL 5|1|PUNCT
+*MOT:	it is !
+%mor:	pron|it-Prs-Nom-S3 aux|be-Fin-Ind-Pres-S3 !
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|PUNCT
+*MOT:	it is a butterfly .
+%mor:	pron|it-Prs-Nom-S3 aux|be-Fin-Ind-Pres-S3 det|a-Ind-Art noun|butterfly .
+%gra:	1|4|NSUBJ 2|4|COP 3|4|DET 4|0|ROOT 5|4|PUNCT
+*CHI:	and it [/] looks like a fly fly [!] .
+%com:	short pause follows this comment
+%mor:	cconj|and verb|look-Fin-Ind-Pres-S3 adp|like det|a-Ind-Art noun|fly noun|fly .
+%gra:	1|2|CC 2|0|ROOT 3|6|CASE 4|6|DET 5|6|COMPOUND 6|2|OBL 7|2|PUNCT
+*MOT:	and that's the end !
+%act:	bef turns page
+%mor:	cconj|and aux|that-Fin-Ind-Pres-S3 det|the-Def-Art noun|end !
+%gra:	1|4|CC 2|4|COP 3|4|DET 4|0|ROOT 5|4|PUNCT
+*MOT:	colors .
+%mor:	noun|color-Plur .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	a_lot_of colors .
+%exp:	inside back of book is very colorful
+%mor:	propn|alotof noun|color-Plur .
+%gra:	1|2|COMPOUND 2|0|ROOT 3|2|PUNCT
+*CHI:	huh ?
+%mor:	intj|huh ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	the end .
+%com:	short pause follows
+%mor:	det|the-Def-Art noun|end .
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*CHI:	read it again .
+%mor:	verb|read-Fin-Imp-S pron|it-Prs-Acc-S3 adv|again .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|ADVMOD 4|1|PUNCT
+*MOT:	<I read &~m> [//] half of it of it .
+%mor:	noun|half adp|of pron|it-Prs-Acc-S3 adp|of pron|it-Prs-Acc-S3 .
+%gra:	1|0|ROOT 2|3|CASE 3|1|NMOD 4|5|CASE 5|1|NMOD 6|1|PUNCT
+*MOT:	I willn't [?] read the whole thing .
+%mor:	pron|I-Prs-Nom-S1 aux|willnt-Fin-S verb|read-Inf-S det|the-Def-Art adj|whole-S1 noun|thing-Acc-Ger .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|6|DET 5|6|AMOD 6|3|OBJ 7|3|PUNCT
+*MOT:	zzz .
+%par:	laughs
+%mor:	intj|zzz .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	read it again !
+%mor:	verb|read-Fin-Imp-S pron|it-Prs-Acc-S3 adv|again !
+%gra:	1|0|ROOT 2|1|OBJ 3|1|ADVMOD 4|1|PUNCT
+*MOT:	okay .
+%mor:	intj|okay .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	now I'm gonna read the whole thing .
+%mor:	adv|now pron|im-Prs-Nom-S2 adv|gonna verb|read-Inf-S det|the-Def-Art adj|whole-S1 noun|thing-Acc-Ger .
+%gra:	1|4|ADVMOD 2|4|NSUBJ 3|4|ADVMOD 4|0|ROOT 5|7|DET 6|7|AMOD 7|4|OBJ 8|4|PUNCT
+*MOT:	alright ?
+%mor:	intj|alright ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	can we do it over ?
+%add:	EX1
+%mor:	aux|can-Fin-S pron|we-Prs-Nom-P1 verb|do-Inf-S pron|it-Prs-Acc-S3 adp|over ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|3|OBJ 5|3|COMPOUND-PRT 6|3|PUNCT
+*EX1:	oh sure !
+%mor:	intj|oh adj|sure-S1 !
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|PUNCT
+*MOT:	okay .
+%mor:	intj|okay .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	zzz .
+%par:	laughs
+%mor:	intj|zzz .
+%gra:	1|0|ROOT 2|1|PUNCT
+*EX1:	hello .
+%add:	BAB
+%mor:	intj|hello .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	you said don't read this [!] one .
+%act:	bef turns page back
+%exp:	<6> title page
+%mor:	pron|you-Prs-Nom-S2 verb|say-Fin-Ind-Past-S2-irr part|dont verb|read-Inf-S det|this-Def-Dem-Sing noun|one-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|MARK 4|2|XCOMP 5|6|DET 6|4|OBJ 7|2|PUNCT
+*MOT:	yeah it's the very hungry caterpillar .
+%act:	turns page
+%mor:	intj|yeah pron|its-Prs-Nom-S3 det|the-Def-Art adv|very adj|hungry-S1 noun|caterpillar .
+%gra:	1|6|DISCOURSE 2|6|NSUBJ 3|6|DET 4|5|ADVMOD 5|6|AMOD 6|0|ROOT 7|6|PUNCT
+*MOT:	it's for xxx .
+%act:	turns page
+%mor:	pron|its-Prs-Gen-S3 adp|for .
+%gra:	1|0|ROOT 2|1|CASE 3|1|PUNCT
+*MOT:	the book is for my sister Christa .
+%mor:	det|the-Def-Art noun|book aux|be-Fin-Ind-Pres-S3 adp|for pron|my-Prs-Gen-S1 noun|sister propn|Christa .
+%gra:	1|2|DET 2|6|NSUBJ 3|6|COP 4|6|CASE 5|6|NMOD-POSS 6|0|ROOT 7|6|VOCATIVE 8|6|PUNCT
+*MOT:	in the light of the moon (.) a little egg lay on a leaf .
+%act:	turns page
+%mor:	adp|in det|the-Def-Art noun|light adp|of det|the-Def-Art noun|moon det|a-Ind-Art adj|little-S1 noun|egg verb|lay-Fin-Ind-Past-S3 adp|on det|a-Ind-Art noun|leaf .
+%gra:	1|3|CASE 2|3|DET 3|10|OBL 4|6|CASE 5|6|DET 6|3|NMOD 7|9|DET 8|9|AMOD 9|10|NSUBJ 10|0|ROOT 11|13|CASE 12|13|DET 13|10|OBL 14|10|PUNCT
+*CHI:	and sun and the [?] little .
+%mor:	cconj|and noun|sun cconj|and det|the-Def-Art adj|little-S1 .
+%gra:	1|2|CC 2|0|ROOT 3|5|CC 4|5|DET 5|2|CONJ 6|2|PUNCT
+*MOT:	yeah .
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	one Sunday morning .
+%mor:	num|one propn|Sunday noun|morning-Ger .
+%gra:	1|3|NUMMOD 2|3|COMPOUND 3|0|ROOT 4|3|PUNCT
+*CHI:	caterpillar .
+%act:	turns around and climbs up couch
+%mor:	noun|caterpillar .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	come on Chi [!] !
+%mor:	verb|come-Fin-Imp-S adp|on propn|Chi !
+%gra:	1|0|ROOT 2|3|CASE 3|1|OBL 4|1|PUNCT
+*MOT:	come on !
+%mor:	verb|come-Fin-Imp-S adp|on !
+%gra:	1|0|ROOT 2|1|ADVMOD 3|1|PUNCT
+*MOT:	you .
+%mor:	pron|you-Prs-Nom-S2 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	if you want me to read it you hafta listen .
+%mor:	sconj|if pron|you-Prs-Nom-S2 verb|want-Fin-Ind-Pres-S2 pron|I-Prs-Acc-S1 part|to verb|read-Inf-S pron|it-Prs-Acc-S3 pron|you-Prs-Nom-S2 aux|hafta-Fin-Ind-Pres-S2 verb|listen-Inf-S .
+%gra:	1|3|MARK 2|3|NSUBJ 3|10|ADVCL 4|3|OBJ 5|6|MARK 6|3|XCOMP 7|6|OBJ 8|10|NSUBJ 9|10|AUX 10|0|ROOT 11|10|PUNCT
+*MOT:	you hafta look and listen what I'm saying .
+%mor:	pron|you-Prs-Nom-S2 aux|hafta-Fin-Ind-Pres-S2 verb|look-Inf-S cconj|and verb|listen-Inf-S pron|what-Int-S1 propn|Im verb|say-Part-Pres-S .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|5|CC 5|3|CONJ 6|5|OBJ 7|8|NSUBJ 8|6|ACL-RELCL 9|3|PUNCT
+*MOT:	okay ?
+%mor:	intj|okay ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	0 .
+%act:	sits back down
+*MOT:	are you looking ?
+%mor:	aux|be-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 verb|look-Part-Pres-S ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|3|PUNCT
+*CHI:	xxx look .
+%mor:	verb|look-Fin-Imp-S .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	yes .
+%mor:	intj|yes .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	okay .
+%mor:	intj|okay .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	0 .
+%act:	stands up on couch
+*MOT:	no sit down and look (.) what I'm doing .
+%mor:	intj|no verb|sit-Fin-Imp-S adp|down cconj|and verb|look-Fin-Imp-S pron|what-Int-S1 noun|im verb|do-Part-Pres-S .
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|COMPOUND-PRT 4|5|CC 5|2|CONJ 6|5|OBJ 7|8|NSUBJ 8|6|ACL-RELCL 9|2|PUNCT
+*CHI:	0 .
+%act:	sits back down
+*MOT:	okay one Sunday morning (.) the warm sun came up and pop (.) out of the egg (.) came a tiny and very hungry caterpillar .
+%mor:	intj|okay num|one propn|Sunday noun|morning-Ger det|the-Def-Art adj|warm-S1 noun|sun verb|come-Fin-Ind-Past-S3-irr adp|up cconj|and noun|pop adp|out adp|of det|the-Def-Art noun|egg verb|come-Fin-Ind-Past-S3-irr det|a-Ind-Art adj|tiny-S1 cconj|and adv|very adj|hungry-S1 noun|caterpillar-Acc .
+%gra:	1|8|DISCOURSE 2|4|NUMMOD 3|4|COMPOUND 4|8|OBL-UNMARKED 5|7|DET 6|7|AMOD 7|8|NSUBJ 8|0|ROOT 9|8|COMPOUND-PRT 10|16|CC 11|16|NSUBJ 12|15|CASE 13|15|CASE 14|15|DET 15|11|OBL 16|8|CONJ 17|22|DET 18|22|AMOD 19|21|CC 20|21|ADVMOD 21|18|CONJ 22|16|OBJ 23|8|PUNCT
+*CHI:	0 .
+%act:	turns several pages
+*MOT:	you said you want me to read it for you .
+%mor:	pron|you-Prs-Nom-S2 verb|say-Fin-Ind-Past-S2-irr pron|you-Prs-Nom-S2 verb|want-Fin-Ind-Pres-S2 pron|I-Prs-Acc-S1 part|to verb|read-Inf-S pron|it-Prs-Acc-S3 adp|for pron|you-Prs-Acc-S2 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|NSUBJ 4|2|CCOMP 5|4|OBJ 6|7|MARK 7|4|XCOMP 8|7|OBJ 9|10|CASE 10|7|OBL 11|2|PUNCT
+*MOT:	you're going so fast .
+%mor:	intj|your verb|go-Part-Pres-S adv|so adv|fast .
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|4|ADVMOD 4|2|ADVMOD 5|2|PUNCT
+*MOT:	you're choosing [?] the pages (.) .
+%mor:	pron|your-Prs-Nom-S2 verb|choose-Part-Pres-S det|the-Def-Art noun|page-Plur-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|PUNCT
+*MOT:	can't read it if you do that .
+%mor:	intj|cant verb|read-Fin-Imp-S pron|it-Prs-Acc-S3 sconj|if pron|you-Prs-Nom-S2 verb|do-Fin-Ind-Pres-S2 pron|that-Dem .
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|OBJ 4|6|MARK 5|6|NSUBJ 6|2|ADVCL 7|6|OBJ 8|2|PUNCT
+*MOT:	xxx .
+*CHI:	and lookit !
+%gpx:	points at page
+%mor:	cconj|and noun|lookit !
+%gra:	1|2|CC 2|0|ROOT 3|2|PUNCT
+*MOT:	yeah +...
+%mor:	intj|yeah +...
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	that's pears .
+%mor:	verb|that-Fin-Ind-Pres-S3 noun|pear-Plur-Acc .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*CHI:	pear .
+%mor:	noun|pear .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	pear .
+%act:	bef turns (partial) page
+%mor:	noun|pear .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	uhhuh .
+%mor:	intj|uhhuh .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	orange .
+%act:	bef turns pages
+%mor:	adj|orange-S1 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	yeah +...
+%mor:	intj|yeah +...
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	&-um (.) <watermelon> [>] .
+%act:	bef turns page
+%mor:	noun|watermelon .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	<what's that> [<] ?
+%gpx:	points
+%mor:	pron|what-Int-S1 pron|that-Dem ?
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*CHI:	&-um (.) huh ?
+%mor:	intj|huh ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	that's chocolate cake .
+%mor:	punct|that noun|chocolate noun|cake .
+%gra:	1|3|PUNCT 2|3|COMPOUND 3|0|ROOT 4|3|PUNCT
+*CHI:	<chocola(te)> [//] cake cake .
+%par:	tentatively
+%mor:	noun|cake noun|cake .
+%gra:	1|2|COMPOUND 2|0|ROOT 3|2|PUNCT
+*MOT:	you learn so fast Chi .
+%com:	short pause
+%mor:	pron|you-Prs-Nom-S2 verb|learn-Fin-Ind-Pres-S2 adv|so adj|fast-S1 propn|Chi-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|ADVMOD 4|5|AMOD 5|2|OBJ 6|2|PUNCT
+*CHI:	and there +...
+%mor:	cconj|and adv|there +...
+%gra:	1|2|CC 2|0|ROOT 3|2|PUNCT
+*CHI:	look !
+%par:	shouts
+%act:	<bef , aft> keeps turning pages
+%exp:	has reached last page
+%mor:	verb|look-Fin-Imp-S !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	that's it .
+%mor:	aux|that-Fin-Ind-Pres-S3 pron|it-Prs-Nom-S3 .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*MOT:	that's xxx the end .
+%mor:	pron|that-Dem~aux|be-Fin-Ind-Pres-S3 det|the-Def-Art noun|end .
+%gra:	1|4|NSUBJ 2|4|COP 3|4|DET 4|0|ROOT 5|4|PUNCT
+*MOT:	no more .
+%mor:	intj|no adj|more-Cmp-S1 .
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|PUNCT
+*MOT:	okay ?
+%mor:	intj|okay ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*EX1:	thank you .
+%mor:	verb|thank-Fin-Ind-Pres-S1 pron|you-Prs-Acc-S2 .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*CHI:	<sure (.) read it again> [<] !
+%mor:	adj|sure-S1 verb|read-Fin-Imp-S pron|it-Prs-Acc-S3 adv|again !
+%gra:	1|0|ROOT 2|1|XCOMP 3|2|OBJ 4|2|ADVMOD 5|1|PUNCT
+*MOT:	okay [<] .
+%mor:	intj|okay .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	no .
+%mor:	intj|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	zzz [>] .
+%par:	laughs
+%mor:	intj|zzz .
+%gra:	1|0|ROOT 2|1|PUNCT
+*EX1:	zzz [<] .
+%par:	laughs
+%mor:	intj|zzz .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	do another book !
+%par:	shouts
+%mor:	verb|do-Fin-Imp-S det|another-Def-Ind noun|book-Acc !
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|1|PUNCT
+*EX1:	we'll bring another book back with us .
+%mor:	intj|well verb|bring-Fin-Imp-S det|another-Def-Ind noun|book-Acc adv|back adp|with pron|we-Prs-Acc-P1 .
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|ADVMOD 6|7|CASE 7|2|OBL 8|2|PUNCT
+*EX2:	next time we'll bring another book .
+%mor:	adj|next-S1 noun|time aux|we-Fin-S verb|bring-Inf-S det|another-Def-Ind noun|book-Acc .
+%gra:	1|2|AMOD 2|4|OBL-UNMARKED 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|PUNCT
+@Comment:	Time is 031:54
+@Eg:	bookreading
+@End

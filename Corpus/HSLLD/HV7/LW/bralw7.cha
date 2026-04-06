@@ -1,0 +1,201 @@
+@UTF8
+@PID:	11312/c-00035903-1
+@Begin
+@Languages:	eng
+@Participants:	CHI Target_Child, INV Investigator, MOT Mother
+@ID:	eng|HSLLD|CHI|10;01.10|male|||Target_Child|||
+@ID:	eng|HSLLD|INV|||||Investigator|||
+@ID:	eng|HSLLD|MOT||female|||Mother|12||
+@Birth of CHI:	22-NOV-1984
+@Media:	bralw7, audio, missing
+@Comment:	SES of Mot is lower
+@Date:	02-JAN-1995
+@Location:	Boston , MA USA
+@Situation:	Home Visit 7
+@Activities:	Letter writing with mother
+*CHI:	do you have a pencil eraser ?
+%mor:	aux|do-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 verb|have-Inf-S det|a-Ind-Art noun|pencil noun|eraser-Acc ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|6|DET 5|6|COMPOUND 6|3|OBJ 7|3|PUNCT
+@Comment:	Time is 1:44
+*INV:	Dear Eric Carle [!] .
+%mor:	adj|dear-S1 propn|Eric propn|Carle .
+%gra:	1|2|AMOD 2|0|ROOT 3|2|FLAT 4|2|PUNCT
+*INV:	I would like to thank you for your writing The_Very_Hungry_Caterpiller .
+%mor:	pron|I-Prs-Nom-S1 aux|would-Fin-S verb|like-Inf-S part|to verb|thank-Inf-S pron|you-Prs-Acc-S2 adp|for pron|your-Prs-Gen-S2 noun|writing-Ger propn|TheVeryHungryCaterpiller .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|5|MARK 5|3|XCOMP 6|5|OBJ 7|9|CASE 8|9|NMOD-POSS 9|5|OBL 10|5|OBL 11|3|PUNCT
+*INV:	The reason for this is because you have made lots of children very happy .
+%mor:	det|the-Def-Art noun|reason adp|for pron|this-Dem-S1 aux|be-Fin-Ind-Pres-S3 sconj|because pron|you-Prs-Nom-S2 aux|have-Fin-Ind-Pres-S2 verb|make-Part-Past-S-irr noun|lot-Plur-Acc adp|of noun|child-Plur adv|very adj|happy-S1 .
+%gra:	1|2|DET 2|9|NSUBJ-OUTER 3|4|CASE 4|2|NMOD 5|9|COP 6|9|MARK 7|9|NSUBJ 8|9|AUX 9|0|ROOT 10|9|OBJ 11|12|CASE 12|10|NMOD 13|14|ADVMOD 14|9|XCOMP 15|9|PUNCT
+*INV:	So again I would like to thank you .
+%mor:	adv|so adv|again pron|I-Prs-Nom-S1 aux|would-Fin-S verb|like-Inf-S part|to verb|thank-Inf-S pron|you-Prs-Acc-S2 .
+%gra:	1|5|ADVMOD 2|5|ADVMOD 3|5|NSUBJ 4|5|AUX 5|0|ROOT 6|7|MARK 7|5|XCOMP 8|7|OBJ 9|5|PUNCT
+*INV:	Sincerely , Chi .
+%mor:	adv|sincerely cm|cm propn|Chi .
+%gra:	1|3|ADVMOD 2|1|PUNCT 3|0|ROOT 4|3|PUNCT
+@Comment:	Chi writes the letter independently while the Mot and EXP converse; EXP's instructions were not recorded; Chi asks Mot a few questions relating to the the letter and also periodically interjects comments into their conversation. Chi complains that he can't write c@ls very well. Mot says <do the best you can. Don't expect to be perfect>. The c@ls looked fine , though Chi had erased and tried again. The beginning of the the tape is background conversation
+*INV:	I dunno [: don't know] .
+%mor:	pron|I-Prs-Nom-S1 adv|dont verb|know-Fin-Ind-Pres-S1 .
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|3|PUNCT
+*CHI:	xxx that's all worn out .
+%mor:	aux|that-Fin-Ind-Pres-S3 det|all-Def-Tot verb|wear-Part-Past-S-irr adp|out .
+%gra:	1|3|AUX-PASS 2|3|NSUBJ-PASS 3|0|ROOT 4|3|COMPOUND-PRT 5|3|PUNCT
+*INV:	hold on a minute .
+%act:	looking
+%mor:	verb|hold-Fin-Imp-S adp|on det|a-Ind-Art noun|minute .
+%gra:	1|0|ROOT 2|1|COMPOUND-PRT 3|4|DET 4|1|OBL-UNMARKED 5|1|PUNCT
+*MOT:	sposta .
+%mor:	noun|sposta .
+%gra:	1|0|ROOT 2|1|PUNCT
+*INV:	oh dear .
+%int:	disappointed
+%mor:	intj|oh adj|dear-S1 .
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|PUNCT
+*CHI:	that's okay .
+%mor:	aux|that-Fin-Ind-Pres-S3 intj|okay .
+%gra:	1|0|ROOT 2|1|DISCOURSE 3|1|PUNCT
+*INV:	I lied Chi .
+%mor:	pron|I-Prs-Nom-S1 verb|lie-Fin-Ind-Past-S1 propn|Chi-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*INV:	sorry .
+%mor:	adj|sorry-S1 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*INV:	thanks &=laughs .
+%sit:	MOT gave Chi eraser
+%mor:	noun|thanks .
+%gra:	1|0|ROOT 2|1|PUNCT
+*INV:	fine (.) researcher .
+%mor:	adj|fine-S1 noun|researcher .
+%gra:	1|2|AMOD 2|0|ROOT 3|2|PUNCT
+*CHI:	do you know how to spell xxx ?
+%int:	whispers
+%mor:	aux|do-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 verb|know-Inf-S adv|how part|to verb|spell-Inf-S ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|3|OBJ 5|6|MARK 6|4|ACL 7|3|PUNCT
+*INV:	www .
+*MOT:	www .
+%com:	small talk , softly , about New Years; someone else is in apartment , maybe Chi's grandfather
+*MOT:	(..) www .
+%com:	small talk with EXP
+*INV:	www .
+*CHI:	Mama !
+%sit:	MOT continues to talk (probably with EXP) and Chi tries to get her attention
+%mor:	noun|mama !
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	look [<] 0at [*] what I got ! [+ SR]
+%mor:	verb|look-Fin-Imp-S pron|what-Rel-S1 pron|I-Prs-Nom-S1 verb|get-Fin-Ind-Past-S1-irr !
+%gra:	1|0|ROOT 2|1|OBJ 3|4|NSUBJ 4|2|ACL-RELCL 5|1|PUNCT
+*CHI:	two .
+%mor:	num|two .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	don't you know what it means ?
+%sit:	MOT still talking with EXP
+%mor:	intj|dont pron|you-Prs-Nom-S2 verb|know-Fin-Ind-Pres-S2 pron|what-Rel-S1 pron|it-Prs-Nom-S3 verb|mean-Fin-Ind-Pres-S3 ?
+%gra:	1|3|DISCOURSE 2|3|NSUBJ 3|0|ROOT 4|3|OBJ 5|6|NSUBJ 6|4|ACL-RELCL 7|3|PUNCT
+*CHI:	Mama .
+%mor:	noun|mama .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	&=coughs .
+*CHI:	Mama don't you know two pencils to me means ?
+%mor:	noun|mama intj|dont pron|you-Prs-Nom-S2 verb|know-Fin-Ind-Pres-S2 num|two noun|pencil-Plur-Acc adp|to pron|I-Prs-Acc-S1 verb|mean-Fin-Ind-Pres-S3 ?
+%gra:	1|4|VOCATIVE 2|4|DISCOURSE 3|4|NSUBJ 4|0|ROOT 5|6|NUMMOD 6|4|OBJ 7|8|CASE 8|4|OBL 9|4|PARATAXIS 10|4|PUNCT
+*MOT:	(.) okay .
+%mor:	intj|okay .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	here take two .
+%mor:	adv|here verb|take-Fin-Imp-S num|two .
+%gra:	1|0|ROOT 2|1|COP 3|2|OBJ 4|1|PUNCT
+*CHI:	alright .
+%mor:	intj|alright .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	so silly !
+%mor:	adv|so adj|silly-S1 !
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*INV:	(..) www .
+%sit:	talks with Mot
+*MOT:	www .
+%sit:	recorder is perhaps turned off and back on
+*CHI:	xxx Mama ?
+%mor:	noun|mama ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	can I show Petra <the &~mo> [//] part on (.) No Holds Barred Barred ?
+%mor:	aux|can-Fin-S pron|I-Prs-Nom-S1 verb|show-Inf-S propn|Petra noun|part-Acc adp|on det|no-Def-Neg propn|Holds-Plur adj|Barred-S1 verb|barr-Part-Past-S ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|5|COMPOUND 5|3|OBJ 6|10|CASE 7|8|DET 8|10|COMPOUND 9|10|AMOD 10|3|OBL 11|3|PUNCT
+*MOT:	yeah after .
+%mor:	intj|yeah adv|after .
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|PUNCT
+*CHI:	okay &=giggles .
+%mor:	intj|okay .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	what's the matter ?
+%mor:	pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 det|the-Def-Art noun|matter ?
+%gra:	1|0|ROOT 2|4|COP 3|4|DET 4|1|NSUBJ 5|1|PUNCT
+*CHI:	I can't make c@ls !
+%com:	probably the c in children; caterpillar was also erased and written over
+%mor:	pron|I-Prs-Nom-S1 aux|cant-Fin-S verb|make-Inf-S ls|c-Acc !
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*MOT:	well just do the best you can .
+%mor:	intj|well adv|just verb|do-Fin-Imp-S det|the-Def-Art adj|good-Sup-S1 pron|you-Prs-Nom-S2 aux|can-Fin-S .
+%gra:	1|3|DISCOURSE 2|3|ADVMOD 3|0|ROOT 4|5|DET 5|3|OBJ 6|7|NSUBJ 7|5|ACL-RELCL 8|3|PUNCT
+*MOT:	+^ that c@q looked just fine .
+%mor:	sconj|that q|c verb|look-Fin-Ind-Past-S3 adv|just adj|fine-S1 .
+%gra:	1|3|MARK 2|3|NSUBJ 3|0|ROOT 4|5|ADVMOD 5|3|XCOMP 6|3|PUNCT
+*MOT:	don't expect yourself to be perfect .
+%mor:	intj|dont verb|expect-Fin-Imp-S pron|yourself-Prs-Acc-reflx-S2 part|to aux|be-Inf-S adj|perfect-S1 .
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|OBJ 4|6|MARK 5|6|COP 6|2|XCOMP 7|2|PUNCT
+*CHI:	there we go .
+%act:	probably redoing c
+%mor:	pron|there-Int-S1 pron|we-Prs-Nom-P1 verb|go-Fin-Ind-Pres-P1 .
+%gra:	1|3|EXPL 2|3|NSUBJ 3|0|ROOT 4|3|PUNCT
+*INV:	www .
+%com:	speaks in background
+*CHI:	&=coughs .
+*INV:	www .
+*MOT:	www .
+*CHI:	[^ pointing up to a top shelf] there !
+%mor:	adv|there !
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	mhm .
+%mor:	intj|mhm .
+%gra:	1|0|ROOT 2|1|PUNCT
+*INV:	www .
+%sit:	talks with Mot; can hear dishes being moved , and Chi sniffles; see BREHV7EX .TXT for discussion of schools and college
+*MOT:	www .
+*CHI:	www .
+*INV:	xxx [>] .
+*CHI:	oh shoot !
+%mor:	intj|oh verb|shoot-Fin-Imp-S !
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|PUNCT
+*CHI:	<hold &~for> [//] on I'll be right back back .
+%mor:	adp|on propn|Ill aux|be-Fin-S adv|right adv|back adv|back .
+%gra:	1|2|CASE 2|6|NSUBJ 3|6|COP 4|6|ADVMOD 5|6|ADVMOD 6|0|ROOT 7|6|PUNCT
+*MOT:	xxx .
+*CHI:	I forgot the tape (.) dub [?] .
+%sit:	tape recorder is turned off and on again
+%mor:	pron|I-Prs-Nom-S1 verb|forget-Fin-Ind-Past-S1-irr det|the-Def-Art noun|tape noun|dub-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|5|DET 4|5|COMPOUND 5|2|OBJ 6|2|PUNCT
+*INV:	alright .
+%mor:	intj|alright .
+%gra:	1|0|ROOT 2|1|PUNCT
+@Comment:	Time is 6:51
+*INV:	why don't you read me what you wrote then ?
+%mor:	adv|why adv|dont pron|you-Prs-Nom-S2 verb|read-Fin-Ind-Pres-S2 pron|I-Prs-Acc-S1 pron|what-Rel-S1 pron|you-Prs-Nom-S2 verb|write-Fin-Ind-Past-S2-irr adv|then ?
+%gra:	1|4|ADVMOD 2|4|ADVMOD 3|4|NSUBJ 4|0|ROOT 5|4|IOBJ 6|4|OBJ 7|8|NSUBJ 8|6|ACL-RELCL 9|8|ADVMOD 10|4|PUNCT
+*CHI:	dear Eric Carle (.) I would like to thank you <for &~wr> [//] your writing The Very Hungry Caterpillar Caterpillar .
+%mor:	adj|dear-S1 propn|Eric propn|Carle pron|I-Prs-Nom-S1 aux|would-Fin-S verb|like-Inf-S part|to verb|thank-Inf-S pron|you-Prs-Acc-S2 pron|your-Prs-Gen-S2 noun|writing-Acc-Ger det|the-Def-Art adv|very adj|hungry-S1 propn|Caterpillar propn|Caterpillar .
+%gra:	1|2|AMOD 2|6|NSUBJ 3|2|FLAT 4|6|NSUBJ 5|6|AUX 6|0|ROOT 7|8|MARK 8|6|XCOMP 9|8|IOBJ 10|11|NMOD-POSS 11|8|OBJ 12|16|DET 13|14|ADVMOD 14|16|AMOD 15|16|COMPOUND 16|11|APPOS 17|6|PUNCT
+*CHI:	the reason for this is because you have made lots of children very happy .
+%mor:	det|the-Def-Art noun|reason adp|for pron|this-Dem-S1 aux|be-Fin-Ind-Pres-S3 sconj|because pron|you-Prs-Nom-S2 aux|have-Fin-Ind-Pres-S2 verb|make-Part-Past-S-irr noun|lot-Plur-Acc adp|of noun|child-Plur adv|very adj|happy-S1 .
+%gra:	1|2|DET 2|9|NSUBJ-OUTER 3|4|CASE 4|2|NMOD 5|9|COP 6|9|MARK 7|9|NSUBJ 8|9|AUX 9|0|ROOT 10|9|OBJ 11|12|CASE 12|10|NMOD 13|14|ADVMOD 14|9|XCOMP 15|9|PUNCT
+*CHI:	so again I would like to thank you .
+%mor:	adv|so adv|again pron|I-Prs-Nom-S1 aux|would-Fin-S verb|like-Inf-S part|to verb|thank-Inf-S pron|you-Prs-Acc-S2 .
+%gra:	1|5|ADVMOD 2|5|ADVMOD 3|5|NSUBJ 4|5|AUX 5|0|ROOT 6|7|MARK 7|5|XCOMP 8|7|OBJ 9|5|PUNCT
+*CHI:	+^ sincerely Chi [= first and last name] .
+%mor:	adv|sincerely propn|Chi .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*INV:	nice letter !
+%mor:	adj|nice-S1 noun|letter !
+%gra:	1|2|AMOD 2|0|ROOT 3|2|PUNCT
+*INV:	very nice !
+%mor:	adv|very adj|nice-S1 !
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+@Comment:	Time is 7:08
+@End

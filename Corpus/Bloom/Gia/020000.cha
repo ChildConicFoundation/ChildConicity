@@ -1,0 +1,292 @@
+@UTF8
+@PID:	11312/c-00015398-1
+@Begin
+@Languages:	eng
+@Participants:	CHI Target_Child, MOT Mother, LOI Investigator
+@ID:	eng|Bloom|CHI|2;00.00|female|||Target_Child|||
+@ID:	eng|Bloom|MOT||female|||Mother|||
+@ID:	eng|Bloom|LOI|||||Investigator|||
+@G:	Action
+@Types:	long, toyplay, TD
+*CHI:	Lois (.) fix it .
+%sit:	Gia tries to put slide together , can't , giving it to Lois
+%mor:	propn|Lois verb|fix-Fin-S pron|it-Prs-Acc-S3 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*CHI:	Mommy change sheets .
+%sit:	Gia and Lois go into bed+room , Mommy is taking sheets off bed
+%mor:	noun|mommy verb|change-Fin-Imp-S noun|sheet-Plur .
+%gra:	1|2|COMPOUND 2|3|AMOD 3|0|ROOT 4|3|PUNCT
+*CHI:	tear it .
+%sit:	Gia scribbles on paper , it tears
+%mor:	verb|tear-Fin-Imp-S pron|it-Prs-Acc-S3 .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*CHI:	Gia play Lois .
+%sit:	Gia plays with slide , Mommy comes into room , Gia going to Mommy
+%mor:	propn|Gia verb|play-Fin-Imp-S propn|Lois-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*CHI:	Gia writing .
+%sit:	scribbling on paper
+%mor:	propn|Gia noun|writing-Ger .
+%gra:	1|2|COMPOUND 2|0|ROOT 3|2|PUNCT
+*CHI:	Gia push .
+%sit:	pushes cart
+%mor:	propn|Gia verb|push-Fin-Imp-S .
+%gra:	1|2|COMPOUND 2|0|ROOT 3|2|PUNCT
+*CHI:	Lois help .
+%sit:	Gia having trouble nesting blocks
+%mor:	propn|Lois verb|help-Fin-Imp-S .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|PUNCT
+*CHI:	build [* 0ing] 0a house .
+%sit:	Lois builds house of blocks , Gia knocks it down , starts to build it up
+%mor:	verb|build-Fin-Imp-S noun|house-Acc .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*CHI:	push a button .
+%sit:	Gia reaching for tape+recorder button , Lois stops her
+%mor:	verb|push-Fin-Imp-S det|a-Ind-Art noun|button-Acc .
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|1|PUNCT
+*CHI:	blidge [: bridge] .
+%mor:	noun|bridge .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	build a bridge .
+%sit:	Gia pushes truck into bridge , bridge falls , Gia trying to build bridge again
+%mor:	verb|build-Fin-Imp-S det|a-Ind-Art noun|bridge-Acc .
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|1|PUNCT
+@G:	Action and Place
+*CHI:	draw paper .
+%sit:	scribbling on paper
+%mor:	verb|draw-Fin-Imp-S noun|paper-Acc .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*CHI:	write a paper Mommy .
+%sit:	going to desk , Gia reaches for paper , Mommy gives it to her .
+%mor:	verb|write-Fin-Imp-S det|a-Ind-Art noun|paper noun|mommy-Acc .
+%gra:	1|0|ROOT 2|4|DET 3|4|COMPOUND 4|1|OBJ 5|1|PUNCT
+*CHI:	Gia write finger .
+%sit:	holding out her finger which hads pen marks on it .
+%mor:	propn|Gia verb|write-Inf-S noun|finger-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*CHI:	read orange chair .
+%sit:	Gia climbs on orange chair holding book in her hand
+%mor:	verb|read-Fin-Imp-S adj|orange-S1 noun|chair-Acc .
+%gra:	1|0|ROOT 2|3|AMOD 3|1|OBJ 4|1|PUNCT
+@G:	Attribution
+*MOT:	what's that ?
+%sit:	Gia comes out of kitchen with box of birthday candles
+%mor:	pron|what-Int-S1 pron|that-Dem ?
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*CHI:	cake candle .
+%sit:	response
+%mor:	noun|cake noun|candle .
+%gra:	1|2|COMPOUND 2|0|ROOT 3|2|PUNCT
+*CHI:	baby elephant .
+%sit:	Lois pointing to picture of baby elephant
+%mor:	noun|baby noun|elephant .
+%gra:	1|2|COMPOUND 2|0|ROOT 3|2|PUNCT
+*CHI:	big bottle .
+%sit:	carrying empty wine botle to desk
+%mor:	adj|big-S1 noun|bottle .
+%gra:	1|2|AMOD 2|0|ROOT 3|2|PUNCT
+*CHI:	one two blanket .
+%sit:	points to her blankets at bottom of laundry cart
+%mor:	num|one num|two noun|blanket .
+%gra:	1|3|NUMMOD 2|3|NUMMOD 3|0|ROOT 4|3|PUNCT
+*CHI:	Lois little box .
+%sit:	giving smallest nesting block to Lois
+%mor:	propn|Lois adj|little-S1 noun|box .
+%gra:	1|3|COMPOUND 2|3|AMOD 3|0|ROOT 4|3|PUNCT
+*CHI:	little boy .
+%sit:	fitting boy figure on form board
+%mor:	adj|little-S1 noun|boy .
+%gra:	1|2|AMOD 2|0|ROOT 3|2|PUNCT
+*CHI:	little baby .
+%sit:	pointing to baby in picture of a family
+%mor:	adj|little-S1 noun|baby .
+%gra:	1|2|AMOD 2|0|ROOT 3|2|PUNCT
+*LOI:	which one ?
+%sit:	Gia holds one book , Lois holds another
+%mor:	det|which-Def-Int noun|one ?
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*CHI:	this book .
+%sit:	hitting one Lois has
+%mor:	det|this-Def-Dem-Sing noun|book .
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*CHI:	this a nice book .
+%sit:	picks up "Toys" after looking through magazines
+%mor:	pron|this-Dem-S1 det|a-Ind-Art adj|nice-S1 noun|book .
+%gra:	1|4|NSUBJ 2|4|DET 3|4|AMOD 4|0|ROOT 5|4|PUNCT
+*CHI:	push a new button .
+%sit:	trying to snap tape+recorder buttoncover closed
+%mor:	verb|push-Fin-Imp-S det|a-Ind-Art adj|new-S1 noun|button-Acc .
+%gra:	1|0|ROOT 2|4|DET 3|4|AMOD 4|1|OBJ 5|1|PUNCT
+*LOI:	that's right .
+%mor:	aux|that-Fin-Ind-Pres-S3 adj|right-S1 .
+%gra:	1|2|COP 2|0|ROOT 3|2|PUNCT
+*LOI:	you never pushed that one before .
+%mor:	pron|you-Prs-Nom-S2 adv|never verb|push-Fin-Ind-Past-S2 det|that-Def-Dem-Sing noun|one-Acc adv|before .
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|ADVMOD 7|3|PUNCT
+@G:	Existence
+*CHI:	here key [?] .
+%sit:	picking up Lois's keys
+%mor:	adv|here noun|key .
+%gra:	1|0|ROOT 2|1|NSUBJ 3|1|PUNCT
+*LOI:	what's that ?
+%sit:	Gia and Lois looking at picture of dog in book
+%mor:	pron|what-Int-S1 pron|that-Dem ?
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*CHI:	a bowwow .
+%sit:	response
+%mor:	det|a-Ind-Art noun|bowwow .
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*CHI:	a record .
+%sit:	pointing to a record
+%mor:	det|a-Ind-Art noun|record .
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*CHI:	here Daddy .
+%sit:	pointing to picture of a Daddy
+%mor:	adv|here propn|Daddy .
+%gra:	1|0|ROOT 2|1|VOCATIVE 3|1|PUNCT
+*CHI:	a map .
+%sit:	looking through magazine , stops at page with a map
+%mor:	det|a-Ind-Art noun|map .
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+@G:	Locative
+*CHI:	lamb a go car .
+%sit:	Gia putting lamb in toy car
+%mor:	noun|lamb det|a-Ind-Art noun|go noun|car-Acc .
+%gra:	1|0|ROOT 2|4|DET 3|4|COMPOUND 4|1|OBJ 5|1|PUNCT
+*CHI:	Gia away .
+%sit:	Gia reaches for tape box Lois has , closes box and puts it on table
+%mor:	propn|Gia adv|away .
+%gra:	1|0|ROOT 2|1|ADVMOD 3|1|PUNCT
+*CHI:	sit the chair .
+%mor:	verb|sit-Fin-Imp-S det|the-Def-Art noun|chair-Acc .
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|1|PUNCT
+*CHI:	sit orange chair .
+%sit:	Gia sitting on orange chair , Lois standing up , then Lois sits on chair with Gia
+%mor:	verb|sit-Fin-Imp-S adj|orange-S1 noun|chair-Acc .
+%gra:	1|0|ROOT 2|3|AMOD 3|1|OBJ 4|1|PUNCT
+*CHI:	xxx me come .
+%sit:	Mommy is getting ready to go out , Gia goes to closet
+%mor:	pron|I-Prs-Acc-S1 verb|come-Fin-Ind-Pres-S1 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|PUNCT
+*CHI:	Gia get down .
+%sit:	Gia climbing off chair
+%mor:	propn|Gia verb|get-Fin-Imp-S adp|down .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|COMPOUND-PRT 4|2|PUNCT
+*CHI:	Gia away a lamb .
+%sit:	Gia bringing lambs to toy bag , drops them into bag
+%mor:	propn|Gia adv|away det|a-Ind-Art noun|lamb .
+%gra:	1|0|ROOT 2|1|ADVMOD 3|4|DET 4|1|APPOS 5|1|PUNCT
+*CHI:	away key .
+%sit:	Gia picks up keys , bringing them to bag , drops them into bag
+%mor:	adv|away noun|key .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*MOT:	where does that go ?
+%sit:	Gia holds block
+%mor:	adv|where aux|do-Fin-Ind-Pres-S3 pron|that-Dem verb|go-Inf-S ?
+%gra:	1|4|ADVMOD 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|4|PUNCT
+*CHI:	here block a go .
+%sit:	Gia putting block in box
+%mor:	adv|here verb|block-Fin-Imp-S det|a-Ind-Art noun|go-Acc .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|PUNCT
+*CHI:	here a man go in .
+%sit:	putting boy figure on form board
+%mor:	adv|here det|a-Ind-Art noun|man verb|go-Fin-Imp-S adv|in .
+%gra:	1|0|ROOT 2|3|DET 3|1|NSUBJ 4|1|XCOMP 5|4|ADVMOD 6|1|PUNCT
+*CHI:	Mommy go .
+%sit:	Momy leaves the house
+%mor:	propn|Mommy verb|go-Fin-Imp-S .
+%gra:	1|2|COMPOUND 2|0|ROOT 3|2|PUNCT
+@G:	Locative State
+*MOT:	what did we see on the wall ?
+%sit:	referring to trip to the library
+%mor:	pron|what-Int-S1 aux|do-Fin-Ind-Past-P1-irr pron|we-Prs-Nom-P1 verb|see-Inf-S adp|on det|the-Def-Art noun|wall ?
+%gra:	1|4|OBJ 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|7|CASE 6|7|DET 7|4|OBL 8|4|PUNCT
+*CHI:	picture the wall .
+%mor:	verb|picture-Fin-Imp-S det|the-Def-Art noun|wall-Acc .
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|1|PUNCT
+*LOI:	where's Mommy ?
+%sit:	Mommy is in bath+room
+%mor:	adv|wheres propn|Mommy ?
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*CHI:	mommy bathroom .
+%mor:	noun|mommy noun|bathroom .
+%gra:	1|2|COMPOUND 2|0|ROOT 3|2|PUNCT
+*CHI:	tape on .
+%sit:	Gia pointing to piece of mending tape on page of book
+%mor:	noun|tape adp|on .
+%gra:	1|0|ROOT 2|1|ADVMOD 3|1|PUNCT
+*CHI:	Lois chair .
+%sit:	while Gia looked in toy box Lois sat on Gia's chair , Gia returns to Lois and chair
+%mor:	propn|Lois noun|chair .
+%gra:	1|2|COMPOUND 2|0|ROOT 3|2|PUNCT
+@G:	Location
+*CHI:	out here .
+%sit:	taking shoes into living room
+%mor:	adv|out adv|here .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*CHI:	in here ?
+%sit:	nesting block
+%mor:	adp|in adv|here ?
+%gra:	1|2|CASE 2|0|ROOT 3|2|PUNCT
+@G:	Possession
+*CHI:	Gia blanket .
+%sit:	pointing to her blankets on floor
+%mor:	propn|Gia noun|blanket .
+%gra:	1|2|COMPOUND 2|0|ROOT 3|2|PUNCT
+*CHI:	Gia telephone .
+%sit:	picking up her toy telephone
+%mor:	propn|Gia noun|telephone .
+%gra:	1|2|COMPOUND 2|0|ROOT 3|2|PUNCT
+*CHI:	&+um &+um my blanket .
+%sit:	runs into bed+room and lies down on her blanket
+%mor:	pron|my-Prs-Gen-S1 noun|blanket .
+%gra:	1|2|NMOD-POSS 2|0|ROOT 3|2|PUNCT
+*CHI:	my library book .
+%sit:	gets off her chair , gesturing toward bed+room , then goes to bed+room and returns with "Curious George" , a library book
+%mor:	pron|my-Prs-Gen-S1 noun|library noun|book .
+%gra:	1|3|NMOD-POSS 2|3|COMPOUND 3|0|ROOT 4|3|PUNCT
+*LOI:	whose book is that ?
+%mor:	pron|whose-Rel-S1 noun|book aux|be-Fin-Ind-Pres-S3 pron|that-Dem ?
+%gra:	1|2|NMOD-POSS 2|4|NSUBJ 3|4|COP 4|0|ROOT 5|4|PUNCT
+*CHI:	Gia library book .
+%sit:	response
+%mor:	propn|Gia noun|library noun|book .
+%gra:	1|3|COMPOUND 2|3|COMPOUND 3|0|ROOT 4|3|PUNCT
+*CHI:	Mommy key .
+%sit:	<bef> Gia holding Lois's keys , looking around for Mommy's keys <aft> sees them and picks them up
+%mor:	propn|Mommy noun|key .
+%gra:	1|2|COMPOUND 2|0|ROOT 3|2|PUNCT
+*CHI:	Mommy glasses .
+%sit:	runs out of bed+room with Mommy's glasses
+%mor:	noun|mommy noun|glasses-Ptan .
+%gra:	1|2|COMPOUND 2|0|ROOT 3|2|PUNCT
+*CHI:	Gia on Mommy glasses .
+%sit:	tries to put Mommy's glasses on .
+%mor:	propn|Gia adp|on propn|Mommy noun|glasses-Ptan .
+%gra:	1|0|ROOT 2|4|CASE 3|4|COMPOUND 4|1|NMOD 5|1|PUNCT
+*CHI:	Mommy book .
+%sit:	pointing to book shelves filled with her parents' books
+%mor:	noun|mommy noun|book .
+%gra:	1|2|COMPOUND 2|0|ROOT 3|2|PUNCT
+*CHI:	play Lois keys ?
+%sit:	gia picking up Lois's keys
+%mor:	verb|play-Fin-Imp-S propn|Lois noun|key-Plur-Acc ?
+%gra:	1|0|ROOT 2|3|COMPOUND 3|1|OBJ 4|1|PUNCT
+@G:	Recurrence
+*CHI:	more read dat [: that] .
+%sit:	Gia and Lois had been reading book a few minutes before , Gia holding book
+%mor:	adj|more-Cmp-S1 verb|read-Fin-S pron|that-Dem .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*CHI:	here another box .
+%sit:	Gia picking up second block
+%mor:	adv|here det|another-Def-Ind noun|box .
+%gra:	1|0|ROOT 2|3|DET 3|1|NSUBJ 4|1|PUNCT
+*CHI:	more lamb .
+%sit:	holding one lamb picks up second one
+%mor:	adj|more-Cmp-S1 noun|lamb .
+%gra:	1|2|AMOD 2|0|ROOT 3|2|PUNCT
+*CHI:	Gia more block .
+%sit:	fits blocks together , picking up another one
+%mor:	propn|Gia adj|more-Cmp-S1 noun|block .
+%gra:	1|3|COMPOUND 2|3|AMOD 3|0|ROOT 4|3|PUNCT
+@End

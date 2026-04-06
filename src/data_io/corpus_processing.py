@@ -8,7 +8,7 @@ def process_data_with_formatter(corpus_data):
     """
     result = {"Corpus_modified": {}}
 
-    for corpus_name in ["Brent", "NewEngland", "Post", "Bloom", "VanKleeck"]:
+    for corpus_name in ["Brent", "NewEngland", "Post", "Bloom", "Brown", "VanKleeck"]:
         if corpus_name not in corpus_data["Corpus_modified"]:
             continue
 

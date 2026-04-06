@@ -1,6 +1,6 @@
 from src.data_io.grammatical_formatter import GrammaticalDataFormatter
 
-TARGET_CORPORA = ("Brent", "NewEngland", "Post", "Bloom", "VanKleeck")
+TARGET_CORPORA = ("Brent", "NewEngland", "Post", "Bloom", "Brown", "VanKleeck")
 
 
 def process_grammatical_data_with_formatter(

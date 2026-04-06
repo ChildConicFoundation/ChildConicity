@@ -1,0 +1,238 @@
+@UTF8
+@PID:	11312/c-00017341-1
+@Begin
+@Languages:	eng
+@Participants:	MOT Mother, CHI Target_Child
+@ID:	eng|Sachs|MOT||female|||Mother|||
+@ID:	eng|Sachs|CHI|1;11.12|female|||Target_Child|||
+@Media:	011112, audio
+@Date:	20-MAY-1970
+@Types:	long, toyplay, TD
+*MOT:	what's the kitty doing ? 4000_5933
+%mor:	aux|what-Fin-Ind-Pres-S3 det|the-Def-Art noun|kitty verb|do-Ger-S ?
+%gra:	1|4|COP 2|4|DET 3|4|COMPOUND 4|0|ROOT 5|4|PUNCT
+*CHI:	kitty . 5933_7552
+%spa:	$IMIT
+%mor:	noun|kitty .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	kitty meow@o . 7552_10154
+%mor:	noun|kitty noun|meow .
+%gra:	1|2|COMPOUND 2|0|ROOT 3|2|PUNCT
+*CHI:	kitty . 10154_12939
+%mor:	noun|kitty .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	a black kitty . 17324_18824
+%mor:	det|a-Ind-Art adj|black-S1 noun|kitty .
+%gra:	1|3|DET 2|3|AMOD 3|0|ROOT 4|3|PUNCT
+*CHI:	black kitty . 18824_22126
+%spa:	$IMIT
+%mor:	adj|black-S1 noun|kitty .
+%gra:	1|2|AMOD 2|0|ROOT 3|2|PUNCT
+*CHI:	boy [?] . 54828_56094
+%mor:	intj|boy .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	it's a balloon . 56094_58046
+%mor:	pron|its-Prs-Gen-S3 det|a-Ind-Art noun|balloon .
+%gra:	1|3|NMOD-POSS 2|3|DET 3|0|ROOT 4|3|PUNCT
+*CHI:	it's a balloon . 58046_59346
+%mor:	pron|its-Prs-Gen-S3 det|a-Ind-Art noun|balloon .
+%gra:	1|3|NMOD-POSS 2|3|DET 3|0|ROOT 4|3|PUNCT
+*CHI:	red balloon &=points . 59346_61982
+%mor:	adj|red-S1 noun|balloon .
+%gra:	1|2|AMOD 2|0|ROOT 3|2|PUNCT
+*MOT:	red balloon and a blue balloon . 61982_65534
+%mor:	adj|red-S1 noun|balloon cconj|and det|a-Ind-Art adj|blue-S1 noun|balloon .
+%gra:	1|2|AMOD 2|0|ROOT 3|6|CC 4|6|DET 5|6|AMOD 6|2|CONJ 7|2|PUNCT
+*CHI:	is it white ? 69986_70836
+%mor:	aux|be-Fin-Ind-Pres-S3 pron|it-Prs-Nom-S3 adj|white-S1 ?
+%gra:	1|3|COP 2|3|NSUBJ 3|0|ROOT 4|3|PUNCT
+*MOT:	yes (.) it's white . 70836_72169
+%mor:	intj|yes pron|its-Prs-Gen-S3 adj|white-S1 .
+%gra:	1|3|DISCOURSE 2|3|NMOD-POSS 3|0|ROOT 4|3|PUNCT
+*CHI:	is it red ? 72169_73538
+%mor:	aux|be-Fin-Ind-Pres-S3 pron|it-Prs-Nom-S3 adj|red-S1 ?
+%gra:	1|3|COP 2|3|NSUBJ 3|0|ROOT 4|3|PUNCT
+*MOT:	yes (.) it's red . 73538_74804
+%mor:	intj|yes pron|its-Prs-Gen-S3 adj|red-S1 .
+%gra:	1|3|DISCOURSE 2|3|NMOD-POSS 3|0|ROOT 4|3|PUNCT
+*CHI:	is it red ? 74804_76573
+%mor:	aux|be-Fin-Ind-Pres-S3 pron|it-Prs-Nom-S3 adj|red-S1 ?
+%gra:	1|3|COP 2|3|NSUBJ 3|0|ROOT 4|3|PUNCT
+*MOT:	yes (.) it's red . 76573_77756
+%mor:	intj|yes pron|its-Prs-Gen-S3 adj|red-S1 .
+%gra:	1|3|DISCOURSE 2|3|NMOD-POSS 3|0|ROOT 4|3|PUNCT
+*CHI:	is black . 77756_79342
+%mor:	aux|be-Fin-Ind-Pres-S3 adj|black-S1 .
+%gra:	1|2|COP 2|0|ROOT 3|2|PUNCT
+*MOT:	yes (.) sure it is . 79342_82710
+%mor:	intj|yes adj|sure-S1 pron|it-Prs-Nom-S3 aux|be-Fin-Ind-Pres-S3 .
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|4|NSUBJ 4|2|CCOMP 5|2|PUNCT
+*MOT:	this one's blue . 82710_86346
+%mor:	det|this-Def-Dem-Sing noun|one noun|blue .
+%gra:	1|3|DET 2|3|COMPOUND 3|0|ROOT 4|3|PUNCT
+*CHI:	blue . 86346_87781
+%spa:	$IMIT
+%mor:	adj|blue-S1 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	and this one's yellow . 87781_88614
+%mor:	cconj|and det|this-Def-Dem-Sing noun|one adj|yellow-S1 .
+%gra:	1|4|CC 2|4|DET 3|4|COMPOUND 4|0|ROOT 5|4|PUNCT
+*CHI:	there go horsie . 88614_95201
+%mor:	pron|there-Int-S1 verb|go-Fin-Ind-Pres-P3 noun|horsie-Acc .
+%gra:	1|2|EXPL 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*CHI:	there go horsie . 95201_96819
+%mor:	pron|there-Int-S1 verb|go-Fin-Ind-Pres-P3 noun|horsie-Acc .
+%gra:	1|2|EXPL 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*CHI:	there go horsie . 96819_98236
+%mor:	pron|there-Int-S1 verb|go-Fin-Ind-Pres-P3 noun|horsie-Acc .
+%gra:	1|2|EXPL 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*CHI:	there go horsie . 98236_100855
+%mor:	pron|there-Int-S1 verb|go-Fin-Ind-Pres-P3 noun|horsie-Acc .
+%gra:	1|2|EXPL 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*CHI:	xxx . 121121_127025
+*CHI:	xxx . 127025_131243
+*CHI:	xxx . 131243_133845
+*MOT:	yes (.) the children are swimming . 133845_135964
+%mor:	intj|yes det|the-Def-Art noun|child-Plur aux|be-Fin-Ind-Pres-P3 verb|swim-Part-Pres-S .
+%gra:	1|5|DISCOURSE 2|3|DET 3|5|NSUBJ 4|5|AUX 5|0|ROOT 6|5|PUNCT
+*CHI:	boots on . 135964_137581
+%mor:	noun|boot-Plur adp|on .
+%gra:	1|0|ROOT 2|1|ADVMOD 3|1|PUNCT
+*CHI:	boots on . 137581_141199
+%mor:	noun|boot-Plur adp|on .
+%gra:	1|0|ROOT 2|1|ADVMOD 3|1|PUNCT
+*MOT:	yes (.) boot . 141199_143467
+%mor:	intj|yes noun|boot .
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|PUNCT
+*CHI:	boys girls boots on . 143467_147771
+%mor:	noun|boy-Plur noun|girl-Plur noun|boot-Plur adp|on .
+%gra:	1|3|COMPOUND 2|3|COMPOUND 3|0|ROOT 4|3|CASE 5|3|PUNCT
+*MOT:	yes (.) boy and girl have boots on . 147771_150021
+%mor:	intj|yes noun|boy cconj|and noun|girl verb|have-Fin-Ind-Pres-P3 noun|boot-Plur-Acc adp|on .
+%gra:	1|5|DISCOURSE 2|5|NSUBJ 3|4|CC 4|2|CONJ 5|0|ROOT 6|5|OBJ 7|5|ADVMOD 8|5|PUNCT
+*CHI:	what's this ? 150021_151656
+%mor:	pron|what-Int-S1 pron|this-Dem-S1 ?
+%gra:	1|0|ROOT 2|1|NSUBJ 3|1|PUNCT
+*MOT:	what's this ? 156656_158856
+%mor:	pron|what-Int-S1 pron|this-Dem-S1 ?
+%gra:	1|0|ROOT 2|1|NSUBJ 3|1|PUNCT
+*CHI:	is running . 158856_161541
+%mor:	aux|be-Fin-Ind-Pres-S3 verb|run-Part-Pres-S .
+%gra:	1|2|AUX 2|0|ROOT 3|2|PUNCT
+*MOT:	what's this ? 161541_163060
+%mor:	pron|what-Int-S1 pron|this-Dem-S1 ?
+%gra:	1|0|ROOT 2|1|NSUBJ 3|1|PUNCT
+*CHI:	is running . 163060_164226
+%mor:	aux|be-Fin-Ind-Pres-S3 verb|run-Part-Pres-S .
+%gra:	1|2|AUX 2|0|ROOT 3|2|PUNCT
+*MOT:	what is this honey ? 164226_165678
+%mor:	pron|what-Int-S1 aux|be-Fin-Ind-Pres-S3 det|this-Def-Dem-Sing noun|honey ?
+%gra:	1|0|ROOT 2|1|COP 3|4|DET 4|1|NSUBJ 5|1|PUNCT
+*CHI:	what's this ? 165678_166562
+%spa:	$IMIT
+%mor:	pron|what-Int-S1 pron|this-Dem-S1 ?
+%gra:	1|0|ROOT 2|1|NSUBJ 3|1|PUNCT
+*MOT:	you know what this is ? 166562_167512
+%mor:	pron|you-Prs-Nom-S2 verb|know-Fin-Ind-Pres-S2 pron|what-Int-S1 pron|this-Dem-S1 aux|be-Fin-Ind-Pres-S3 ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|5|NSUBJ 5|3|ACL-RELCL 6|2|PUNCT
+*MOT:	+^ what you throw ? 167512_169297
+%mor:	pron|what-Int-S1 pron|you-Prs-Nom-S2 verb|throw-Fin-Ind-Pres-S2 ?
+%gra:	1|0|ROOT 2|3|NSUBJ 3|1|ACL-RELCL 4|1|PUNCT
+*CHI:	throw it . 169297_171582
+%spa:	$IMIT
+%mor:	verb|throw-Fin-Imp-S pron|it-Prs-Acc-S3 .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*MOT:	what do you throw ? 171582_173166
+%mor:	pron|what-Int-S1 aux|do-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 verb|throw-Inf-S ?
+%gra:	1|4|OBJ 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|4|PUNCT
+*CHI:	I throw it . 173166_174701
+%spa:	$IMIT
+%mor:	pron|I-Prs-Nom-S1 verb|throw-Fin-Ind-Pres-S1 pron|it-Prs-Acc-S3 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*MOT:	you throw a ball . 174701_175668
+%mor:	pron|you-Prs-Nom-S2 verb|throw-Fin-Ind-Pres-S2 det|a-Ind-Art noun|ball-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|PUNCT
+*CHI:	what's this ? 175668_177920
+%mor:	pron|what-Int-S1 pron|this-Dem-S1 ?
+%gra:	1|0|ROOT 2|1|NSUBJ 3|1|PUNCT
+*MOT:	it's a ball . 177920_178770
+%mor:	pron|its-Prs-Gen-S3 det|a-Ind-Art noun|ball .
+%gra:	1|3|NMOD-POSS 2|3|DET 3|0|ROOT 4|3|PUNCT
+*MOT:	what are these people doing ? 178769_181037
+%mor:	pron|what-Int-S1 aux|be-Fin-Ind-Pres-P3 det|this-Def-Dem-Plur noun|person-Plur verb|do-Part-Pres-S ?
+%gra:	1|5|OBJ 2|5|AUX 3|4|DET 4|5|NSUBJ 5|0|ROOT 6|5|PUNCT
+*CHI:	what's this ? 181037_181904
+%mor:	pron|what-Int-S1 pron|this-Dem-S1 ?
+%gra:	1|0|ROOT 2|1|NSUBJ 3|1|PUNCT
+*MOT:	what are they doing honey ? 181904_183989
+%mor:	pron|what-Int-S1 aux|be-Fin-Ind-Pres-P3 pron|they-Prs-Nom-P3 verb|do-Part-Pres-S noun|honey-Acc ?
+%gra:	1|4|OBJ 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*CHI:	what's this ? 183989_184639
+%mor:	pron|what-Int-S1 pron|this-Dem-S1 ?
+%gra:	1|0|ROOT 2|1|NSUBJ 3|1|PUNCT
+*MOT:	what are they doing ? 184639_187091
+%mor:	pron|what-Int-S1 aux|be-Fin-Ind-Pres-P3 pron|they-Prs-Nom-P3 verb|do-Part-Pres-S ?
+%gra:	1|4|OBJ 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|4|PUNCT
+*CHI:	what's this ? 187091_187858
+%mor:	pron|what-Int-S1 pron|this-Dem-S1 ?
+%gra:	1|0|ROOT 2|1|NSUBJ 3|1|PUNCT
+*MOT:	they're throwing a ball . 187858_189393
+%mor:	sconj|their verb|throw-Part-Pres-S det|a-Ind-Art noun|ball-Acc .
+%gra:	1|2|MARK 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|PUNCT
+*CHI:	throwing ball . 189393_190293
+%spa:	$IMIT
+%mor:	verb|throw-Part-Pres-S noun|ball-Acc .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*MOT:	you knew that (.) throwing a ball . 190293_196814
+%mor:	pron|you-Prs-Nom-S2 verb|know-Fin-Ind-Past-S2-irr sconj|that verb|throw-Ger-S det|a-Ind-Art noun|ball-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|MARK 4|2|CCOMP 5|6|DET 6|4|OBJ 7|2|PUNCT
+*CHI:	throwing ball . 196814_198149
+%spa:	$IMIT
+%mor:	verb|throw-Part-Pres-S noun|ball-Acc .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*MOT:	what are they doing ? 198149_202785
+%mor:	pron|what-Int-S1 aux|be-Fin-Ind-Pres-P3 pron|they-Prs-Nom-P3 verb|do-Part-Pres-S ?
+%gra:	1|4|OBJ 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|4|PUNCT
+*CHI:	what's this ? 202785_204320
+%mor:	pron|what-Int-S1 pron|this-Dem-S1 ?
+%gra:	1|0|ROOT 2|1|NSUBJ 3|1|PUNCT
+*CHI:	what's this ? 204320_205803
+%mor:	pron|what-Int-S1 pron|this-Dem-S1 ?
+%gra:	1|0|ROOT 2|1|NSUBJ 3|1|PUNCT
+*MOT:	what are they doing (.) these people ? 205803_207772
+%mor:	pron|what-Int-S1 aux|be-Fin-Ind-Pres-P3 pron|they-Prs-Nom-P3 verb|do-Part-Pres-S det|this-Def-Dem-Plur noun|person-Plur-Acc ?
+%gra:	1|4|OBJ 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|PUNCT
+*CHI:	xxx people . 207772_209172
+%spa:	$IMIT
+%mor:	noun|person-Plur .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	what are they doing ? 209172_210624
+%mor:	pron|what-Int-S1 aux|be-Fin-Ind-Pres-P3 pron|they-Prs-Nom-P3 verb|do-Part-Pres-S ?
+%gra:	1|4|OBJ 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|4|PUNCT
+*CHI:	xxx people . 210624_211307
+%mor:	noun|person-Plur .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	they're carrying xxx . 211307_213826
+%mor:	pron|their-Prs-Nom-S2 verb|carry-Part-Pres-S .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|PUNCT
+*CHI:	they carrying . 213826_215695
+%spa:	$IMIT
+%mor:	pron|they-Prs-Nom-P3 verb|carry-Part-Pres-S .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|PUNCT
+*MOT:	a pail . 215695_216361
+%mor:	det|a-Ind-Art noun|pail .
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*CHI:	pail . 216361_217861
+%spa:	$IMIT
+%mor:	noun|pail .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	okay (.) say it (.) +"/. 217861_219396
+%mor:	intj|okay verb|say-Fin-Imp-S pron|it-Prs-Acc-S3 +"/.
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*MOT:	+" they're carrying a pail . 219396_220146
+%mor:	adv|their verb|carry-Part-Pres-S det|a-Ind-Art noun|pail-Acc .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|PUNCT
+*CHI:	look at the cow . 244146_246730
+%mor:	verb|look-Fin-Imp-S adp|at det|the-Def-Art noun|cow .
+%gra:	1|0|ROOT 2|4|CASE 3|4|DET 4|1|OBL 5|1|PUNCT
+@End

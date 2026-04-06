@@ -1,0 +1,529 @@
+@UTF8
+@PID:	11312/c-00017345-1
+@Begin
+@Languages:	eng
+@Participants:	MOT Mother, CHI Target_Child, FAT Father
+@ID:	eng|Sachs|MOT||female|||Mother|||
+@ID:	eng|Sachs|CHI|1;11.20|female|||Target_Child|||
+@ID:	eng|Sachs|FAT||male|||Father|||
+@Media:	011120, audio, missing
+@Types:	long, toyplay, TD
+*MOT:	oh no (.) I'm not drawing honey .
+%mor:	intj|oh intj|no intj|im part|not verb|draw-Part-Pres-S noun|honey-Acc .
+%gra:	1|5|DISCOURSE 2|5|DISCOURSE 3|5|DISCOURSE 4|5|ADVMOD 5|0|ROOT 6|5|OBJ 7|5|PUNCT
+*MOT:	I'm just writing something down .
+%mor:	aux|be-Fin-Ind-Pres-S3 adv|just verb|write-Part-Pres-S pron|something-Ind-S1 adv|down .
+%gra:	1|3|AUX 2|3|ADVMOD 3|0|ROOT 4|3|OBJ 5|3|ADVMOD 6|3|PUNCT
+*CHI:	writing down .
+%spa:	$IMIT
+%mor:	verb|write-Part-Pres-S adp|down .
+%gra:	1|0|ROOT 2|1|COMPOUND-PRT 3|1|PUNCT
+*MOT:	I'm finished now .
+%mor:	pron|im-Prs-Nom-S1 verb|finish-Fin-Ind-Past-S3 adv|now .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|ADVMOD 4|2|PUNCT
+*MOT:	I'm done .
+%mor:	pron|im-Prs-Nom-S1 verb|do-Part-Past-S-irr .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|PUNCT
+*CHI:	Daddy's done ?
+%mor:	propn|Daddys verb|do-Fin-Ind-Past-S3-irr ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|PUNCT
+*CHI:	Daddy's done ?
+%mor:	propn|Daddys verb|do-Fin-Ind-Past-S3-irr ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|PUNCT
+*FAT:	no (.) I'm not done (.) nope .
+%mor:	intj|no pron|im-Prs-Nom-S3 part|not verb|do-Part-Past-S-irr intj|nope .
+%gra:	1|4|DISCOURSE 2|4|NSUBJ-PASS 3|4|ADVMOD 4|0|ROOT 5|4|DISCOURSE 6|4|PUNCT
+*FAT:	Mommy's done .
+%mor:	propn|Mommys verb|do-Part-Past-S-irr .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|PUNCT
+*CHI:	Mommy's done .
+%spa:	$IMIT
+%mor:	propn|Mommys verb|do-Part-Past-S-irr .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|PUNCT
+*FAT:	Daddy's still toasting .
+%mor:	propn|Daddys adv|still verb|toast-Part-Pres-S .
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|3|PUNCT
+*FAT:	you're not eating any toast this morning (.) Nomi .
+%com:	break in recording
+%mor:	aux|your-Fin-Ind-Pres-S2 part|not verb|eat-Part-Pres-S det|any-Def-Ind noun|toast-Acc det|this-Def-Dem-Sing noun|morning-Ger propn|Nomi .
+%gra:	1|3|AUX 2|3|ADVMOD 3|0|ROOT 4|5|DET 5|3|OBJ 6|7|DET 7|3|OBL-UNMARKED 8|3|PARATAXIS 9|3|PUNCT
+*CHI:	want more .
+%mor:	verb|want-Fin-Imp-S adj|more-Cmp-S1 .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*MOT:	oh no sweetheart .
+%mor:	intj|oh det|no-Def-Neg noun|sweetheart .
+%gra:	1|3|DISCOURSE 2|3|DET 3|0|ROOT 4|3|PUNCT
+*MOT:	oh (.) that might be a little bit much .
+%mor:	intj|oh pron|that-Dem aux|might-Fin-S aux|be-Inf-S det|a-Ind-Art adj|little-S1 noun|bit adv|much .
+%gra:	1|8|DISCOURSE 2|8|NSUBJ 3|8|AUX 4|8|COP 5|7|DET 6|7|AMOD 7|8|OBL-UNMARKED 8|0|ROOT 9|8|PUNCT
+*MOT:	eat some toast first .
+%mor:	verb|eat-Fin-Imp-S det|some-Def-Ind noun|toast-Acc adv|first .
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|1|ADVMOD 5|1|PUNCT
+*MOT:	Nomi (.) put the truck on the purse .
+%mor:	propn|Nomi verb|put-Fin-Ind-Past-S3-irr det|the-Def-Art noun|truck-Acc adp|on det|the-Def-Art noun|purse .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|7|CASE 6|7|DET 7|2|OBL 8|2|PUNCT
+*CHI:	where's fish going ?
+%mor:	adv|wheres noun|fish-Plur verb|go-Part-Pres-S ?
+%gra:	1|3|ADVMOD 2|3|NSUBJ 3|0|ROOT 4|3|PUNCT
+*MOT:	where's fish going ?
+%mor:	adv|wheres noun|fish-Plur verb|go-Part-Pres-S ?
+%gra:	1|3|ADVMOD 2|3|NSUBJ 3|0|ROOT 4|3|PUNCT
+*CHI:	where's fish going ?
+%mor:	adv|wheres noun|fish-Plur verb|go-Part-Pres-S ?
+%gra:	1|3|ADVMOD 2|3|NSUBJ 3|0|ROOT 4|3|PUNCT
+*MOT:	fish is going under the truck .
+%mor:	noun|fish aux|be-Fin-Ind-Pres-S3 verb|go-Part-Pres-S adp|under det|the-Def-Art noun|truck .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|6|CASE 5|6|DET 6|3|OBL 7|3|PUNCT
+*CHI:	<fish up> [?] ?
+%mor:	noun|fish adp|up ?
+%gra:	1|0|ROOT 2|1|ADVMOD 3|1|PUNCT
+*MOT:	the fish is out .
+%mor:	det|the-Def-Art noun|fish aux|be-Fin-Ind-Pres-S3 adv|out .
+%gra:	1|2|DET 2|4|NSUBJ 3|4|COP 4|0|ROOT 5|4|PUNCT
+*CHI:	is fish under this ?
+%mor:	aux|be-Fin-Ind-Pres-S3 noun|fish-Plur adp|under pron|this-Dem-S1 ?
+%gra:	1|2|COP 2|0|ROOT 3|4|CASE 4|2|NMOD 5|2|PUNCT
+*CHI:	is fish under this ?
+%mor:	aux|be-Fin-Ind-Pres-S3 noun|fish-Plur adp|under pron|this-Dem-S1 ?
+%gra:	1|2|COP 2|0|ROOT 3|4|CASE 4|2|NMOD 5|2|PUNCT
+*MOT:	yes (.) going under that .
+%mor:	intj|yes verb|go-Part-Pres-S adp|under pron|that-Dem .
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|4|CASE 4|2|OBL 5|2|PUNCT
+*CHI:	xxx .
+*MOT:	Nomi (.) put the truck under the fish .
+%mor:	propn|Nomi verb|put-Fin-Ind-Past-S3-irr det|the-Def-Art noun|truck-Acc adp|under det|the-Def-Art noun|fish .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|7|CASE 6|7|DET 7|2|OBL 8|2|PUNCT
+*CHI:	where fish going ?
+%mor:	adv|where noun|fish-Plur verb|go-Part-Pres-S ?
+%gra:	1|3|ADVMOD 2|3|NSUBJ 3|0|ROOT 4|3|PUNCT
+*MOT:	the fish is under the truck .
+%mor:	det|the-Def-Art noun|fish aux|be-Fin-Ind-Pres-S3 adp|under det|the-Def-Art noun|truck .
+%gra:	1|2|DET 2|6|NSUBJ 3|6|COP 4|6|CASE 5|6|DET 6|0|ROOT 7|6|PUNCT
+*FAT:	now can you put the truck under the fish ?
+%mor:	adv|now aux|can-Fin-S pron|you-Prs-Nom-S2 verb|put-Inf-S det|the-Def-Art noun|truck-Acc adp|under det|the-Def-Art noun|fish ?
+%gra:	1|4|ADVMOD 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|6|DET 6|4|OBJ 7|9|CASE 8|9|DET 9|4|OBL 10|4|PUNCT
+*FAT:	put the fish on top of the truck .
+%mor:	verb|put-Fin-Imp-S det|the-Def-Art noun|fish-Acc adp|on noun|top adp|of det|the-Def-Art noun|truck .
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|5|CASE 5|1|OBL 6|8|CASE 7|8|DET 8|5|NMOD 9|1|PUNCT
+*MOT:	Nomi (.) put the tea strainer on top of the truck .
+%mor:	propn|Nomi verb|put-Fin-Ind-Past-S3-irr det|the-Def-Art noun|tea noun|strainer-Acc adp|on noun|top adp|of det|the-Def-Art noun|truck .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|5|DET 4|5|COMPOUND 5|2|OBJ 6|7|CASE 7|2|OBL 8|10|CASE 9|10|DET 10|7|NMOD 11|2|PUNCT
+*CHI:	what's this ?
+%mor:	pron|what-Int-S1 pron|this-Dem-S1 ?
+%gra:	1|0|ROOT 2|1|NSUBJ 3|1|PUNCT
+*MOT:	tea strainer .
+%mor:	noun|tea noun|strainer .
+%gra:	1|2|COMPOUND 2|0|ROOT 3|2|PUNCT
+*CHI:	tea strainer .
+%spa:	$IMIT
+%mor:	noun|tea noun|strainer .
+%gra:	1|2|COMPOUND 2|0|ROOT 3|2|PUNCT
+*MOT:	put it on top of the truck .
+%mor:	verb|put-Fin-Imp-S pron|it-Prs-Acc-S3 adp|on noun|top adp|of det|the-Def-Art noun|truck .
+%gra:	1|0|ROOT 2|1|OBJ 3|4|CASE 4|1|OBL 5|7|CASE 6|7|DET 7|4|NMOD 8|1|PUNCT
+*CHI:	put on top ?
+%mor:	verb|put-Fin-Imp-S adp|on noun|top-Acc ?
+%gra:	1|0|ROOT 2|3|CASE 3|1|OBJ 4|1|PUNCT
+*MOT:	on the truck .
+%mor:	adp|on det|the-Def-Art noun|truck .
+%gra:	1|3|CASE 2|3|DET 3|0|ROOT 4|3|PUNCT
+*MOT:	mhm .
+%mor:	intj|mhm .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	put on truck .
+%mor:	verb|put-Fin-S adp|on noun|truck-Acc .
+%gra:	1|0|ROOT 2|3|CASE 3|1|OBJ 4|1|PUNCT
+*MOT:	no (.) not under [!!] the truck (.) Nomi (.) on [!!] the truck .
+%mor:	intj|no part|not adp|under det|the-Def-Art noun|truck propn|Nomi adp|on det|the-Def-Art noun|truck .
+%gra:	1|5|DISCOURSE 2|5|ADVMOD 3|5|CASE 4|5|DET 5|0|ROOT 6|5|VOCATIVE 7|9|CASE 8|9|DET 9|5|NMOD 10|5|PUNCT
+*MOT:	no (.) that's under [!!] (.) Nomi .
+%mor:	det|no-Def-Neg noun|that adp|under propn|Nomi .
+%gra:	1|2|DET 2|0|ROOT 3|4|CASE 4|2|NMOD 5|2|PUNCT
+*CHI:	there it goes .
+%mor:	pron|there-Int-S1 pron|it-Prs-Nom-S3 verb|go-Fin-Ind-Pres-S3 .
+%gra:	1|3|EXPL 2|3|NSUBJ 3|0|ROOT 4|3|PUNCT
+*CHI:	under this ?
+%mor:	adp|under pron|this-Dem-S1 ?
+%gra:	1|2|CASE 2|0|ROOT 3|2|PUNCT
+*MOT:	yes (.) it's under Nomi (.) but we asked you to put it on [!!] top [!!] (.) on [!!] .
+%com:	NAO really knows what "under" or "on" are because if you tell her something is under or on , she doesn't make a mistake looking for it , maybe this is too artificial .
+%mor:	intj|yes pron|its-Prs-Nom-S3 adp|under propn|Nomi cconj|but pron|we-Prs-Nom-P1 verb|ask-Fin-Ind-Past-P1 pron|you-Prs-Acc-S2 part|to verb|put-Inf-S pron|it-Prs-Acc-S3 adp|on noun|top adp|on .
+%gra:	1|4|DISCOURSE 2|4|NSUBJ 3|4|CASE 4|0|ROOT 5|7|CC 6|7|NSUBJ 7|4|CONJ 8|7|IOBJ 9|10|MARK 10|7|XCOMP 11|10|OBJ 12|13|CASE 13|10|OBL 14|10|OBL 15|4|PUNCT
+*CHI:	is fish going to work ?
+%mor:	aux|be-Fin-Ind-Pres-S3 noun|fish verb|go-Part-Pres-S adp|to noun|work ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|5|CASE 5|3|OBL 6|3|PUNCT
+*CHI:	is fish going to work ?
+%mor:	aux|be-Fin-Ind-Pres-S3 noun|fish verb|go-Part-Pres-S adp|to noun|work ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|5|CASE 5|3|OBL 6|3|PUNCT
+*CHI:	is fish going to work ?
+%mor:	aux|be-Fin-Ind-Pres-S3 noun|fish verb|go-Part-Pres-S adp|to noun|work ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|5|CASE 5|3|OBL 6|3|PUNCT
+*CHI:	is fish going to work ?
+%mor:	aux|be-Fin-Ind-Pres-S3 noun|fish verb|go-Part-Pres-S adp|to noun|work ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|5|CASE 5|3|OBL 6|3|PUNCT
+*CHI:	is fish going to work ?
+%mor:	aux|be-Fin-Ind-Pres-S3 noun|fish verb|go-Part-Pres-S adp|to noun|work ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|5|CASE 5|3|OBL 6|3|PUNCT
+*MOT:	that's up to you (.) Nomi .
+%mor:	verb|that-Fin-Ind-Pres-S3 adv|up adp|to pron|you-Prs-Acc-S2 propn|Nomi .
+%gra:	1|0|ROOT 2|1|ADVMOD 3|4|CASE 4|1|OBL 5|1|OBL 6|1|PUNCT
+*MOT:	if you wanna make believe it's going to work (.) it's going to work .
+%mor:	sconj|if pron|you-Prs-Nom-S2 aux|wanna-Fin-S2 verb|make-Inf-S verb|believe-Inf-S pron|its-Prs-Gen-S3 verb|go-Ger-S part|to verb|work-Inf-S pron|its-Prs-Nom-S3 verb|go-Part-Pres-S part|to verb|work-Inf-S .
+%gra:	1|4|MARK 2|4|NSUBJ 3|4|AUX 4|11|ADVCL 5|4|XCOMP 6|7|NSUBJ 7|5|CCOMP 8|9|MARK 9|7|XCOMP 10|11|NSUBJ 11|0|ROOT 12|13|MARK 13|11|XCOMP 14|11|PUNCT
+*CHI:	I'm taking two off .
+%mor:	adv|im verb|take-Part-Pres-S num|two adp|off .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|OBJ 4|2|COMPOUND-PRT 5|2|PUNCT
+*CHI:	I'm taking two off .
+%mor:	adv|im verb|take-Part-Pres-S num|two adp|off .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|OBJ 4|2|COMPOUND-PRT 5|2|PUNCT
+*MOT:	Nomi (.) don't you want your toast ?
+%mor:	propn|Nomi intj|dont pron|you-Prs-Nom-S2 verb|want-Fin-Ind-Pres-S2 pron|your-Prs-Gen-S2 noun|toast-Acc ?
+%gra:	1|4|VOCATIVE 2|4|DISCOURSE 3|4|NSUBJ 4|0|ROOT 5|6|NMOD-POSS 6|4|OBJ 7|4|PUNCT
+*CHI:	toast [/] (.) toast fall down .
+%mor:	verb|toast-Fin-Imp-S noun|fall-Acc adv|down .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|ADVMOD 4|1|PUNCT
+*MOT:	here .
+%mor:	adv|here .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	can use this ?
+%mor:	aux|can-Fin-S verb|use-Inf-S pron|this-Dem-S1 ?
+%gra:	1|2|AUX 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*CHI:	can use this ?
+%mor:	aux|can-Fin-S verb|use-Inf-S pron|this-Dem-S1 ?
+%gra:	1|2|AUX 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*MOT:	yes (.) you can use that .
+%com:	never heard NAO say "use" before - new word "use" said first about her passy@c now about her toast
+%mor:	intj|yes pron|you-Prs-Nom-S2 aux|can-Fin-S verb|use-Inf-S pron|that-Dem .
+%gra:	1|4|DISCOURSE 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*CHI:	what's this ?
+%mor:	pron|what-Int-S1 pron|this-Dem-S1 ?
+%gra:	1|0|ROOT 2|1|NSUBJ 3|1|PUNCT
+*MOT:	passy@c .
+%mor:	c|passy .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	what's +...
+%mor:	pron|what-Int-S1 +...
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	toast .
+%mor:	noun|toast .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	passy@c .
+%mor:	c|passy .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	passy@c and toast .
+%mor:	c|passy cconj|and noun|toast .
+%gra:	1|0|ROOT 2|3|CC 3|1|CONJ 4|1|PUNCT
+*MOT:	you've got passy@c and toast in your hand .
+%mor:	pron|youve-Prs-Nom-S2 verb|get-Fin-Ind-Past-S1-irr c|passy-Acc cconj|and noun|toast adp|in pron|your-Prs-Gen-S2 noun|hand .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|5|CC 5|3|CONJ 6|8|CASE 7|8|NMOD-POSS 8|2|OBL 9|2|PUNCT
+*CHI:	Mommy's tired ?
+%mor:	noun|mommy-Plur adj|tired-S1 ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|PUNCT
+*MOT:	mhm .
+%mor:	intj|mhm .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	Daddy's tired too .
+%mor:	propn|Daddys adj|tired-S1 adv|too .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|ADVMOD 4|2|PUNCT
+*CHI:	Nomi's tired ?
+%mor:	noun|nomi-Plur adj|tired-S1 ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|PUNCT
+*MOT:	is Nomi tired ?
+%mor:	aux|be-Fin-Ind-Pres-S3 propn|Nomi adj|tired-S1 ?
+%gra:	1|3|COP 2|3|NSUBJ 3|0|ROOT 4|3|PUNCT
+*CHI:	Nomi tired .
+%mor:	propn|Nomi adj|tired-S1 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|PUNCT
+*CHI:	is fish tired ?
+%mor:	aux|be-Fin-Ind-Pres-S3 noun|fish adj|tired-S1 ?
+%gra:	1|3|COP 2|3|COMPOUND 3|0|ROOT 4|3|PUNCT
+*MOT:	fish is lying down .
+%mor:	noun|fish aux|be-Fin-Ind-Pres-S3 verb|lie-Part-Pres-S adp|down .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|COMPOUND-PRT 5|3|PUNCT
+*CHI:	lie down .
+%spa:	$IMIT
+%mor:	verb|lie-Fin-Imp-S adp|down .
+%gra:	1|0|ROOT 2|1|COMPOUND-PRT 3|1|PUNCT
+*MOT:	Nomi (.) do you think the truck is tired ?
+%mor:	propn|Nomi-Acc aux|do-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 verb|think-Inf-S det|the-Def-Art noun|truck aux|be-Fin-Ind-Pres-S3 adj|tired-S1 ?
+%gra:	1|4|OBJ 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|6|DET 6|8|NSUBJ 7|8|COP 8|4|CCOMP 9|4|PUNCT
+*CHI:	truck tired .
+%spa:	$IMIT
+%mor:	noun|truck adj|tired-S1 .
+%gra:	1|2|COMPOUND 2|0|ROOT 3|2|PUNCT
+*CHI:	truck lying down .
+%mor:	noun|truck verb|lie-Ger-S adv|down .
+%gra:	1|0|ROOT 2|1|ACL 3|2|ADVMOD 4|1|PUNCT
+*MOT:	the truck is lying down on its side .
+%mor:	det|the-Def-Art noun|truck aux|be-Fin-Ind-Pres-S3 verb|lie-Part-Pres-S adp|down adp|on pron|its-Prs-Gen-S3 noun|side .
+%gra:	1|2|DET 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|4|COMPOUND-PRT 6|8|CASE 7|8|NMOD-POSS 8|4|OBL 9|4|PUNCT
+*MOT:	what part of the truck are you touching (.) Nomi ?
+%mor:	det|what-Def-Int noun|part-Acc adp|of det|the-Def-Art noun|truck aux|be-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 verb|touch-Part-Pres-S propn|Nomi-Acc ?
+%gra:	1|2|DET 2|8|OBJ 3|5|CASE 4|5|DET 5|2|NMOD 6|8|AUX 7|8|NSUBJ 8|0|ROOT 9|8|OBJ 10|8|PUNCT
+*MOT:	what are you touching ?
+%mor:	pron|what-Int-S1 aux|be-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 verb|touch-Part-Pres-S ?
+%gra:	1|4|OBJ 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|4|PUNCT
+*CHI:	what's this ?
+%mor:	pron|what-Int-S1 pron|this-Dem-S1 ?
+%gra:	1|0|ROOT 2|1|NSUBJ 3|1|PUNCT
+*MOT:	is that [= drawing] the tire ?
+%mor:	aux|be-Fin-Ind-Pres-S3 sconj|that det|the-Def-Art noun|tire ?
+%gra:	1|4|COP 2|4|MARK 3|4|DET 4|0|ROOT 5|4|PUNCT
+*CHI:	(7.) tire [?] xxx xxx .
+%spa:	$IMIT
+%mor:	noun|tire .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	that's tire .
+%mor:	pron|that-Prs-S1 noun|tire .
+%gra:	1|2|NMOD-POSS 2|0|ROOT 3|2|PUNCT
+*MOT:	now we know the truck is tired <&~ha (.) &~ha> [?] .
+%mor:	adv|now pron|we-Prs-Nom-P1 verb|know-Fin-Ind-Pres-P1 det|the-Def-Art noun|truck aux|be-Fin-Ind-Pres-S3 adj|tired-S1 .
+%gra:	1|3|ADVMOD 2|3|NSUBJ 3|0|ROOT 4|5|DET 5|7|NSUBJ 6|7|COP 7|3|CCOMP 8|3|PUNCT
+*CHI:	it's another tire .
+%mor:	pron|its-Prs-Gen-S3 det|another-Def-Ind noun|tire .
+%gra:	1|3|NMOD-POSS 2|3|DET 3|0|ROOT 4|3|PUNCT
+*MOT:	how many tires are there ?
+%mor:	adv|how adj|many-S1 noun|tire-Plur aux|be-Fin-Ind-Pres-P3 adv|there ?
+%gra:	1|2|ADVMOD 2|3|AMOD 3|5|NSUBJ 4|5|COP 5|0|ROOT 6|5|PUNCT
+*MOT:	count the tires .
+%mor:	verb|count-Fin-Imp-S det|the-Def-Art noun|tire-Plur-Acc .
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|1|PUNCT
+*CHI:	four (.) six (.) seven (.) eight (.) nine (.) ten (.) eight (.) nine (.) four (.) six (.) seven (.) eight +... [+ bch]
+%mor:	num|four num|six num|seven num|eight num|nine num|ten num|eight num|nine num|four num|six num|seven num|eight +...
+%gra:	1|2|COMPOUND 2|3|COMPOUND 3|4|COMPOUND 4|6|COMPOUND 5|6|COMPOUND 6|7|COMPOUND 7|8|COMPOUND 8|9|COMPOUND 9|12|NUMMOD 10|12|NUMMOD 11|12|NUMMOD 12|0|ROOT 13|12|PUNCT
+*MOT:	start with one (.) honey .
+%mor:	verb|start-Fin-Imp-S adp|with num|one noun|honey .
+%gra:	1|0|ROOT 2|4|CASE 3|4|NUMMOD 4|1|OBL 5|1|PUNCT
+*CHI:	one (.) two (.) three (.) four (.) eight (.) seven (.) eight (.) nine (.) ten . [+ bch]
+%mor:	num|one num|two num|three num|four num|eight num|seven num|eight num|nine num|ten .
+%gra:	1|3|COMPOUND 2|3|COMPOUND 3|4|COMPOUND 4|5|COMPOUND 5|7|COMPOUND 6|7|COMPOUND 7|8|COMPOUND 8|0|ROOT 9|8|NMOD-UNMARKED 10|8|PUNCT
+*MOT:	how_about five@q (.) Nomi .
+%mor:	noun|howabout q|five propn|Nomi .
+%gra:	1|0|ROOT 2|3|NUMMOD 3|1|APPOS 4|1|PUNCT
+*CHI:	stop pushing me .
+%mor:	verb|stop-Fin-Imp-S verb|push-Ger-S pron|I-Prs-Acc-S1 .
+%gra:	1|0|ROOT 2|1|XCOMP 3|2|OBJ 4|1|PUNCT
+*CHI:	four .
+%mor:	num|four .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	five .
+%mor:	num|five .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	four six seven . [+ bch]
+%mor:	num|four num|six num|seven .
+%gra:	1|3|NUMMOD 2|3|NUMMOD 3|0|ROOT 4|3|PUNCT
+*MOT:	how_about a@l b@l c@l Nomi ?
+%mor:	noun|howabout l|a-Ind-Art l|benefit l|c propn|Nomi ?
+%gra:	1|0|ROOT 2|3|DET 3|1|APPOS 4|5|COMPOUND 5|1|APPOS 6|1|PUNCT
+*MOT:	do you know your abcs ?
+%mor:	aux|do-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 verb|know-Inf-S pron|your-Prs-Gen-S2 noun|abc-Plur-Acc ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|5|NMOD-POSS 5|3|OBJ 6|3|PUNCT
+*CHI:	<a@l b@l c@l (.) a@l b@l c@l (.) a@l b@l c@l> [/] (.) a@l b@l c@l . [+ bch]
+%mor:	l|a-Ind-Art l|benefit l|c .
+%gra:	1|2|DET 2|0|ROOT 3|2|NMOD-UNMARKED 4|2|PUNCT
+*MOT:	d@l e@l f@l . [+ IMIT]
+%mor:	l|d l|e l|for .
+%gra:	1|0|ROOT 2|1|FLAT 3|1|FLAT 4|1|PUNCT
+*CHI:	<d@l e@l> [<] .
+%mor:	l|d l|e .
+%gra:	1|0|ROOT 2|1|PUNCT 3|1|PUNCT
+*MOT:	it's the fifth thing she always leaves out !
+%mor:	pron|its-Prs-Gen-S3 det|the-Def-Art adj|fifth-S1 noun|thing-Ger pron|she-Prs-Nom-S3 adv|always verb|leave-Fin-Ind-Pres-S3 adp|out !
+%gra:	1|4|NMOD-POSS 2|4|DET 3|4|AMOD 4|0|ROOT 5|7|NSUBJ 6|7|ADVMOD 7|4|ACL-RELCL 8|7|COMPOUND-PRT 9|4|PUNCT
+*MOT:	d@l e@l f@l (.) d@l e@l f@l .
+%mor:	l|d l|e l|for l|d l|e l|for .
+%gra:	1|0|ROOT 2|1|FLAT 3|1|FLAT 4|1|FLAT 5|1|FLAT 6|1|FLAT 7|1|PUNCT
+*CHI:	can make fish ?
+%mor:	aux|can-Fin-S verb|make-Inf-S noun|fish-Acc ?
+%gra:	1|2|AUX 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*CHI:	can make fish ?
+%mor:	aux|can-Fin-S verb|make-Inf-S noun|fish-Acc ?
+%gra:	1|2|AUX 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*CHI:	can make fish ?
+%mor:	aux|can-Fin-S verb|make-Inf-S noun|fish-Acc ?
+%gra:	1|2|AUX 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*MOT:	can you make fish do what (.) Nomi ?
+%mor:	aux|can-Fin-S pron|you-Prs-Nom-S2 verb|make-Inf-S noun|fish-Acc verb|do-Inf-S pron|what-Int-S1 propn|Nomi-Acc ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|3|OBJ 5|3|XCOMP 6|5|OBJ 7|5|OBJ 8|3|PUNCT
+*CHI:	can make fish ?
+%mor:	aux|can-Fin-S verb|make-Inf-S noun|fish-Acc ?
+%gra:	1|2|AUX 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*CHI:	bite [/] (.) bite .
+%mor:	noun|bite .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	show me the fish biting the truck .
+%mor:	verb|show-Fin-Imp-S pron|I-Prs-Acc-S1 det|the-Def-Art noun|fish-Acc verb|bite-Ger-S det|the-Def-Art noun|truck-Acc .
+%gra:	1|0|ROOT 2|1|IOBJ 3|4|DET 4|1|OBJ 5|4|ACL 6|7|DET 7|5|OBJ 8|1|PUNCT
+*MOT:	make the fish bite the truck .
+%mor:	verb|make-Fin-Imp-S det|the-Def-Art noun|fish-Acc verb|bite-Inf-S det|the-Def-Art noun|truck-Acc .
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|1|XCOMP 5|6|DET 6|4|OBJ 7|1|PUNCT
+*MOT:	show me how the fish bites the truck .
+%mor:	verb|show-Fin-Imp-S pron|I-Prs-Acc-S1 adv|how det|the-Def-Art noun|fish verb|bite-Fin-Ind-Pres-S3 det|the-Def-Art noun|truck-Acc .
+%gra:	1|0|ROOT 2|1|IOBJ 3|6|ADVMOD 4|5|DET 5|6|NSUBJ 6|1|CCOMP 7|8|DET 8|6|OBJ 9|1|PUNCT
+*CHI:	what's this ?
+%mor:	pron|what-Int-S1 pron|this-Dem-S1 ?
+%gra:	1|0|ROOT 2|1|NSUBJ 3|1|PUNCT
+*MOT:	the fish .
+%mor:	det|the-Def-Art noun|fish .
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*MOT:	make the fish bite the truck .
+%mor:	verb|make-Fin-Imp-S det|the-Def-Art noun|fish-Acc verb|bite-Inf-S det|the-Def-Art noun|truck-Acc .
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|1|XCOMP 5|6|DET 6|4|OBJ 7|1|PUNCT
+*CHI:	what's this ?
+%mor:	pron|what-Int-S1 pron|this-Dem-S1 ?
+%gra:	1|0|ROOT 2|1|NSUBJ 3|1|PUNCT
+*MOT:	that's the tail .
+%mor:	aux|that-Fin-Ind-Pres-S3 det|the-Def-Art noun|tail .
+%gra:	1|3|COP 2|3|DET 3|0|ROOT 4|3|PUNCT
+*MOT:	that's the fish's tail .
+%mor:	aux|that-Fin-Ind-Pres-S3 det|the-Def-Art noun|fish noun|tail .
+%gra:	1|4|COP 2|4|DET 3|4|COMPOUND 4|0|ROOT 5|4|PUNCT
+*CHI:	fish tail [?] .
+%spa:	$IMIT
+%mor:	noun|fish noun|tail .
+%gra:	1|2|COMPOUND 2|0|ROOT 3|2|PUNCT
+*CHI:	fish tail [?] .
+%mor:	noun|fish noun|tail .
+%gra:	1|2|COMPOUND 2|0|ROOT 3|2|PUNCT
+*MOT:	fish tail [?] .
+%mor:	noun|fish noun|tail .
+%gra:	1|2|COMPOUND 2|0|ROOT 3|2|PUNCT
+@Tape Location:	57
+*CHI:	can make that .
+%mor:	aux|can-Fin-S verb|make-Inf-S pron|that-Dem .
+%gra:	1|2|AUX 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*CHI:	can make it .
+%mor:	aux|can-Fin-S verb|make-Inf-S pron|it-Prs-Acc-S3 .
+%gra:	1|2|AUX 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*CHI:	can make that .
+%mor:	aux|can-Fin-S verb|make-Inf-S pron|that-Dem .
+%gra:	1|2|AUX 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*CHI:	can make tail .
+%mor:	aux|can-Fin-S verb|make-Inf-S noun|tail-Acc .
+%gra:	1|2|AUX 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*CHI:	can make tail .
+%mor:	aux|can-Fin-S verb|make-Inf-S noun|tail-Acc .
+%gra:	1|2|AUX 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*CHI:	can make tail .
+%act:	NAO is touching the tail to the spoke of the wheel .
+%mor:	aux|can-Fin-S verb|make-Inf-S noun|tail-Acc .
+%gra:	1|2|AUX 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*MOT:	yes (.) you can make the tail .
+%mor:	intj|yes pron|you-Prs-Nom-S2 aux|can-Fin-S verb|make-Inf-S det|the-Def-Art noun|tail-Acc .
+%gra:	1|4|DISCOURSE 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|PUNCT
+*CHI:	+^ eight nine ten !
+%mor:	num|eight num|nine num|ten !
+%gra:	1|3|NUMMOD 2|3|NUMMOD 3|0|ROOT 4|3|PUNCT
+*CHI:	eight nine .
+%mor:	num|eight num|nine .
+%gra:	1|2|NUMMOD 2|0|ROOT 3|2|PUNCT
+*MOT:	Nomi (.) could you make the fish kiss the truck ?
+%mor:	propn|Nomi aux|could-Fin-S pron|you-Prs-Nom-S2 verb|make-Inf-S det|the-Def-Art noun|fish-Acc verb|kiss-Inf-S det|the-Def-Art noun|truck-Acc ?
+%gra:	1|4|VOCATIVE 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|XCOMP 8|9|DET 9|7|OBJ 10|4|PUNCT
+*CHI:	kiss it !
+%mor:	verb|kiss-Fin-Imp-S pron|it-Prs-Acc-S3 !
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*CHI:	six (.) seven (.) eight (.) nine (.) ten ! [+ bch]
+%mor:	num|six num|seven num|eight num|nine num|ten !
+%gra:	1|3|COMPOUND 2|3|COMPOUND 3|4|COMPOUND 4|5|NUMMOD 5|0|ROOT 6|5|PUNCT
+*MOT:	where are the fish's eyes ?
+%mor:	adv|where aux|be-Fin-Ind-Pres-P3 det|the-Def-Art noun|fish noun|eye-Plur ?
+%gra:	1|0|ROOT 2|1|COP 3|5|DET 4|5|COMPOUND 5|1|NSUBJ 6|1|PUNCT
+*CHI:	here eyes .
+%mor:	adv|here noun|eye-Plur .
+%gra:	1|0|ROOT 2|1|NSUBJ 3|1|PUNCT
+*MOT:	where is the fish's mouth ?
+%mor:	adv|where aux|be-Fin-Ind-Pres-S3 det|the-Def-Art noun|fish noun|mouth ?
+%gra:	1|0|ROOT 2|1|COP 3|5|DET 4|5|COMPOUND 5|1|NSUBJ 6|1|PUNCT
+@Tape Location:	19
+*CHI:	here's the mouth .
+%mor:	verb|here-Fin-Ind-Pres-S3 det|the-Def-Art noun|mouth-Acc .
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|1|PUNCT
+*MOT:	where do you kiss (.) Nomi ?
+%mor:	adv|where aux|do-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 verb|kiss-Inf-S propn|Nomi-Acc ?
+%gra:	1|4|ADVMOD 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*CHI:	mouth .
+%mor:	noun|mouth .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	yes (.) the fish kisses with its mouth .
+%mor:	intj|yes det|the-Def-Art noun|fish noun|kisse-Plur adp|with pron|its-Prs-Gen-S3 noun|mouth .
+%gra:	1|4|DISCOURSE 2|4|DET 3|4|COMPOUND 4|0|ROOT 5|7|CASE 6|7|NMOD-POSS 7|4|NMOD 8|4|PUNCT
+*CHI:	here's mouth .
+%mor:	noun|here noun|mouth .
+%gra:	1|2|COMPOUND 2|0|ROOT 3|2|PUNCT
+*MOT:	yes (.) that's the mouth .
+%mor:	intj|yes aux|that-Fin-Ind-Pres-S3 det|the-Def-Art noun|mouth .
+%gra:	1|4|DISCOURSE 2|4|COP 3|4|DET 4|0|ROOT 5|4|PUNCT
+@Tape Location:	88
+*CHI:	did Daddy fall down ?
+%mor:	aux|do-Fin-Ind-Past-S3-irr propn|Daddy verb|fall-Inf-S adp|down ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|3|COMPOUND-PRT 5|3|PUNCT
+*MOT:	he's sitting down (.) honey .
+%mor:	noun|he-Plur verb|sit-Part-Pres-S adp|down noun|honey-Acc .
+%gra:	1|0|ROOT 2|1|ACL 3|2|COMPOUND-PRT 4|2|OBJ 5|1|PUNCT
+*CHI:	did Daddy fall down ?
+%mor:	aux|do-Fin-Ind-Past-S3-irr propn|Daddy verb|fall-Inf-S adp|down ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|3|COMPOUND-PRT 5|3|PUNCT
+*MOT:	Daddy knocked something down .
+%mor:	propn|Daddy verb|knock-Fin-Ind-Past-S3 pron|something-Ind-S1 adp|down .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|COMPOUND-PRT 5|2|PUNCT
+*CHI:	six (.) seven (.) eight (.) nine (.) ten ! [+ bch]
+%com:	break in recording
+%mor:	num|six num|seven num|eight num|nine num|ten !
+%gra:	1|3|COMPOUND 2|3|COMPOUND 3|4|COMPOUND 4|5|NUMMOD 5|0|ROOT 6|5|PUNCT
+*CHI:	he dropped it .
+%mor:	pron|he-Prs-Nom-S3 verb|drop-Fin-Ind-Past-S3 pron|it-Prs-Acc-S3 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*CHI:	he dropped it .
+%mor:	pron|he-Prs-Nom-S3 verb|drop-Fin-Ind-Past-S3 pron|it-Prs-Acc-S3 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*CHI:	he dropped it .
+%mor:	pron|he-Prs-Nom-S3 verb|drop-Fin-Ind-Past-S3 pron|it-Prs-Acc-S3 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*CHI:	he dropped it .
+%mor:	pron|he-Prs-Nom-S3 verb|drop-Fin-Ind-Past-S3 pron|it-Prs-Acc-S3 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*CHI:	he dropped it .
+%mor:	pron|he-Prs-Nom-S3 verb|drop-Fin-Ind-Past-S3 pron|it-Prs-Acc-S3 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*CHI:	he dropped it .
+%mor:	pron|he-Prs-Nom-S3 verb|drop-Fin-Ind-Past-S3 pron|it-Prs-Acc-S3 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*CHI:	he dropped it .
+%mor:	pron|he-Prs-Nom-S3 verb|drop-Fin-Ind-Past-S3 pron|it-Prs-Acc-S3 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*CHI:	he dropped it .
+%mor:	pron|he-Prs-Nom-S3 verb|drop-Fin-Ind-Past-S3 pron|it-Prs-Acc-S3 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*CHI:	he dropped it .
+%mor:	pron|he-Prs-Nom-S3 verb|drop-Fin-Ind-Past-S3 pron|it-Prs-Acc-S3 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*CHI:	he dropped it .
+%mor:	pron|he-Prs-Nom-S3 verb|drop-Fin-Ind-Past-S3 pron|it-Prs-Acc-S3 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*CHI:	get up truck .
+%mor:	verb|get-Fin-Imp-S adp|up noun|truck-Acc .
+%gra:	1|0|ROOT 2|1|COMPOUND-PRT 3|1|OBJ 4|1|PUNCT
+*CHI:	get up .
+%mor:	verb|get-Fin-Imp-S adp|up .
+%gra:	1|0|ROOT 2|1|COMPOUND-PRT 3|1|PUNCT
+*CHI:	lie down .
+%mor:	verb|lie-Fin-Imp-S adp|down .
+%gra:	1|0|ROOT 2|1|COMPOUND-PRT 3|1|PUNCT
+*CHI:	truck .
+%mor:	noun|truck .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	lie down .
+%mor:	verb|lie-Fin-Imp-S adp|down .
+%gra:	1|0|ROOT 2|1|COMPOUND-PRT 3|1|PUNCT
+*CHI:	get it .
+%mor:	verb|get-Fin-Imp-S pron|it-Prs-Acc-S3 .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*MOT:	do you wanna get down (.) Nomi ?
+%mor:	aux|do-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 part|wana verb|get-Inf-S adp|down propn|Nomi ?
+%gra:	1|4|AUX 2|4|NSUBJ 3|4|ADVMOD 4|0|ROOT 5|6|CASE 6|4|OBL 7|4|PUNCT
+@Tape Location:	316
+*CHI:	get up .
+%mor:	verb|get-Fin-Imp-S adp|up .
+%gra:	1|0|ROOT 2|1|COMPOUND-PRT 3|1|PUNCT
+@End

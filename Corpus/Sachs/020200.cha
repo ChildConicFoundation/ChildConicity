@@ -1,0 +1,344 @@
+@UTF8
+@PID:	11312/c-00017365-1
+@Begin
+@Languages:	eng
+@Participants:	CHI Target_Child, MOT Mother
+@ID:	eng|Sachs|CHI|2;02.|female|||Target_Child|||
+@ID:	eng|Sachs|MOT||female|||Mother|||
+@Media:	020200, audio
+@Tape Location:	623
+@Date:	08-AUG-1970
+@Types:	long, toyplay, TD
+*CHI:	it too tight ? 28000_29850
+%mor:	pron|it-Prs-Nom-S3 adv|too adj|tight-S1 ?
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|3|PUNCT
+*CHI:	no: . 29850_31535
+%mor:	intj|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	you standing in there . 31535_35170
+%mor:	pron|you-Prs-Nom-S2 verb|stand-Part-S adp|in adv|there .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|CASE 4|2|OBL 5|2|PUNCT
+*CHI:	lie down . 40574_41574
+%mor:	verb|lie-Fin-Imp-S adp|down .
+%gra:	1|0|ROOT 2|1|COMPOUND-PRT 3|1|PUNCT
+*CHI:	lie down . 41574_42340
+%mor:	verb|lie-Fin-Imp-S adp|down .
+%gra:	1|0|ROOT 2|1|COMPOUND-PRT 3|1|PUNCT
+*CHI:	lie down . 42340_44709
+%mor:	verb|lie-Fin-Imp-S adp|down .
+%gra:	1|0|ROOT 2|1|COMPOUND-PRT 3|1|PUNCT
+*MOT:	what are you doing ? 86709_87875
+%mor:	pron|what-Int-S1 aux|be-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 verb|do-Part-Pres-S ?
+%gra:	1|4|OBJ 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|4|PUNCT
+*MOT:	what are you doing ? 87875_94479
+%mor:	pron|what-Int-S1 aux|be-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 verb|do-Part-Pres-S ?
+%gra:	1|4|OBJ 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|4|PUNCT
+*CHI:	I playing Coco . 99479_100912
+%mor:	pron|I-Prs-Nom-S1 verb|play-Part-Pres-S propn|Coco-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+@Tape Location:	642
+*MOT:	you're what ? 100912_101345
+%mor:	intj|your pron|what-Int-S1 ?
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|PUNCT
+*CHI:	playing Coco . 101345_103181
+%mor:	verb|play-Part-Pres-S propn|Coco-Acc .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*CHI:	playing Coco . 103181_105883
+%mor:	verb|play-Part-Pres-S propn|Coco-Acc .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*CHI:	playing Coco . 105883_107349
+%mor:	verb|play-Part-Pres-S propn|Coco-Acc .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*MOT:	playing with Coco . 107349_109018
+%mor:	verb|play-Part-Pres-S adp|with propn|Coco .
+%gra:	1|0|ROOT 2|3|CASE 3|1|OBL 4|1|PUNCT
+*CHI:	yeah . 109018_109785
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	playing Coco . 109785_111370
+%mor:	verb|play-Part-Pres-S propn|Coco-Acc .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*MOT:	oh . 111370_112320
+%mor:	intj|oh .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	bring Coco to . 112320_117457
+%mor:	verb|bring-Fin-Imp-S propn|Coco-Acc adp|to .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|ADVMOD 4|1|PUNCT
+*MOT:	you taste good ? 124457_126557
+%mor:	pron|you-Prs-Nom-S2 verb|taste-Fin-Ind-Pres-S2 adj|good-S1 ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|XCOMP 4|2|PUNCT
+*CHI:	xxx . 126557_131127
+*MOT:	xxx . 131127_132344
+*CHI:	I want it . 132344_137281
+%mor:	pron|I-Prs-Nom-S1 verb|want-Fin-Ind-Pres-S1 pron|it-Prs-Acc-S3 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*MOT:	what's Nomi doing ? 137281_138148
+%mor:	aux|what-Fin-Ind-Pres-S3 propn|Nomi verb|do-Part-Pres-S ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|3|PUNCT
+*MOT:	what's Nomi doing ? 138148_140400
+%mor:	aux|what-Fin-Ind-Pres-S3 propn|Nomi verb|do-Part-Pres-S ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|3|PUNCT
+@Tape Location:	659
+*CHI:	I want it . 156400_158683
+%par:	<bef> giggling
+%mor:	pron|I-Prs-Nom-S1 verb|want-Fin-Ind-Pres-S1 pron|it-Prs-Acc-S3 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*CHI:	you . 158683_164420
+%mor:	pron|you-Prs-Nom-S2 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	Nomi (.) what's that down on the floor there ? 164420_166856
+%mor:	propn|Nomi verb|what-Fin-Ind-Pres-S3 pron|that-Dem adv|down adp|on det|the-Def-Art noun|floor adv|there ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|ADVMOD 5|7|CASE 6|7|DET 7|2|OBL 8|2|ADVMOD 9|2|PUNCT
+*MOT:	what's that ? 166856_169124
+%mor:	pron|what-Int-S1 pron|that-Dem ?
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*CHI:	paper toilet . 169124_171493
+%mor:	noun|paper noun|toilet .
+%gra:	1|2|COMPOUND 2|0|ROOT 3|2|PUNCT
+*MOT:	paper toilet ? 171493_172276
+%mor:	noun|paper noun|toilet ?
+%gra:	1|2|COMPOUND 2|0|ROOT 3|2|PUNCT
+*CHI:	yup . 172276_173360
+%mor:	intj|yup .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	say +"/. 173360_174278
+%mor:	verb|say-Fin-Imp-S +"/.
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	toilet paper . 174278_174862
+%mor:	noun|toilet noun|paper .
+%gra:	1|2|COMPOUND 2|0|ROOT 3|2|PUNCT
+*CHI:	toilet paper . 174862_175878
+%spa:	$EIMIT
+%mor:	noun|toilet noun|paper .
+%gra:	1|2|COMPOUND 2|0|ROOT 3|2|PUNCT
+*MOT:	uhhuh . 175878_177146
+%mor:	intj|uhhuh .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	I turning Coco . 177146_180348
+%mor:	pron|I-Prs-Nom-S1 verb|turn-Part-Pres-S propn|Coco-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*MOT:	Nomi (.) why are you turning Coco's head ? 180348_181698
+%mor:	propn|Nomi adv|why aux|be-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 verb|turn-Part-Pres-S propn|Cocos noun|head-Acc ?
+%gra:	1|5|VOCATIVE 2|5|ADVMOD 3|5|AUX 4|5|NSUBJ 5|0|ROOT 6|7|COMPOUND 7|5|OBJ 8|5|PUNCT
+*CHI:	round and +/. 181698_184233
+%mor:	adv|round cconj|and +/.
+%gra:	1|0|ROOT 2|1|CC 3|1|PUNCT
+*MOT:	why are you turning it ? 184233_187935
+%mor:	adv|why aux|be-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 verb|turn-Part-Pres-S pron|it-Prs-Acc-S3 ?
+%gra:	1|4|ADVMOD 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+@Tape Location:	670
+*CHI:	xxx . 194935_196451
+*MOT:	yeah . 196451_197970
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	her you . 197970_201005
+%mor:	pron|her-Prs-Acc-S3 pron|you-Prs-Acc-S2 .
+%gra:	1|0|ROOT 2|1|FLAT 3|1|PUNCT
+*CHI:	you . 201005_201772
+%mor:	pron|you-Prs-Nom-S2 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	is Coco looking around ? 201772_205641
+%mor:	aux|be-Fin-Ind-Pres-S3 propn|Coco verb|look-Part-Pres-S adv|around ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|3|ADVMOD 5|3|PUNCT
+*CHI:	xxx . 212641_216026
+*MOT:	Nomi (.) why are we in here ? 216026_216826
+%mor:	propn|Nomi adv|why aux|be-Fin-Ind-Pres-P1 pron|we-Prs-Nom-P1 adp|in adv|here ?
+%gra:	1|0|ROOT 2|6|ADVMOD 3|6|COP 4|6|NSUBJ 5|6|CASE 6|1|NMOD 7|1|PUNCT
+@Tape Location:	677
+*CHI:	why in here ? 216826_219961
+%spa:	$IMIT
+%com:	she often says , "why are we in here ?" or"why are we here ?" I don't think she knows what "why" means . She doesn't use it in other situations .
+%mor:	adv|why adp|in adv|here ?
+%gra:	1|0|ROOT 2|3|CASE 3|1|OBL 4|1|PUNCT
+*CHI:	playing . 219961_222663
+%mor:	verb|play-Part-Pres-S .
+%gra:	1|0|ROOT 2|1|PUNCT
+@Tape Location:	681
+*CHI:	penguin . 232663_235613
+%mor:	noun|penguin .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	penguin . 235613_236465
+%mor:	noun|penguin .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	penguin . 236465_237281
+%mor:	noun|penguin .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	penguin . 237281_238650
+%mor:	noun|penguin .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	penguin . 238650_239683
+%mor:	noun|penguin .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	penguin . 239683_240800
+%mor:	noun|penguin .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	penguin . 240800_243269
+%mor:	noun|penguin .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	mhm (.) a penguin . 243269_245554
+%mor:	intj|mhm det|a-Ind-Art noun|penguin .
+%gra:	1|3|DISCOURSE 2|3|DET 3|0|ROOT 4|3|PUNCT
+*CHI:	he's lying down . 257554_259420
+%mor:	noun|he-Plur verb|lie-Part-Pres-S adp|down .
+%gra:	1|0|ROOT 2|1|ACL 3|2|COMPOUND-PRT 4|1|PUNCT
+*MOT:	the penguin's lying down ? 259420_261172
+%mor:	det|the-Def-Art noun|penguin-Plur verb|lie-Ger-S adp|down ?
+%gra:	1|2|DET 2|0|ROOT 3|2|ACL 4|3|COMPOUND-PRT 5|2|PUNCT
+*CHI:	yup . 261172_261706
+%mor:	intj|yup .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	mhm . 261706_262739
+%mor:	intj|mhm .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	why is he lying down ? 262739_264308
+%mor:	adv|why aux|be-Fin-Ind-Pres-S3 pron|he-Prs-Nom-S3 verb|lie-Part-Pres-S adp|down ?
+%gra:	1|4|ADVMOD 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|4|COMPOUND-PRT 6|4|PUNCT
+*CHI:	he's tired . 264308_266826
+%mor:	noun|he-Plur adj|tired-S1 .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*MOT:	&=crying oh he's tired . 266826_268326
+%mor:	intj|oh adv|hes adj|tired-S1 .
+%gra:	1|3|DISCOURSE 2|3|ADVMOD 3|0|ROOT 4|3|PUNCT
+*CHI:	wee@b . 268326_273664
+%mor:	intj|wee .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	is Nomi duck [?] . 273664_279133
+%mor:	aux|be-Fin-Ind-Pres-S3 propn|Nomi noun|duck .
+%gra:	1|3|COP 2|3|COMPOUND 3|0|ROOT 4|3|PUNCT
+*MOT:	Nomi's got a penguin . 279133_282002
+%mor:	propn|Nomis-Plur verb|get-Fin-Ind-Past-S3-irr det|a-Ind-Art noun|penguin-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|PUNCT
+*CHI:	penguin sleep ? 282002_284304
+%mor:	noun|penguin noun|sleep ?
+%gra:	1|2|COMPOUND 2|0|ROOT 3|2|PUNCT
+*MOT:	a penguin . 284304_284704
+%mor:	det|a-Ind-Art noun|penguin .
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*CHI:	penguin sleeping ? 284704_287906
+%mor:	noun|penguin noun|sleeping-Ger ?
+%gra:	1|2|COMPOUND 2|0|ROOT 3|2|PUNCT
+*MOT:	sleeping (.) yeah . 287906_288856
+%mor:	verb|sleep-Part-Pres-S intj|yeah .
+%gra:	1|0|ROOT 2|1|DISCOURSE 3|1|PUNCT
+*CHI:	xxx is sleeping . 288856_294310
+%mor:	aux|be-Fin-Ind-Pres-S3 verb|sleep-Part-Pres-S .
+%gra:	1|2|AUX 2|0|ROOT 3|2|PUNCT
+*CHI:	xxx . 294310_297195
+*MOT:	does he sleep on his tummy or on his back ? 297195_299964
+%mor:	aux|do-Fin-Ind-Pres-S3 pron|he-Prs-Nom-S3 verb|sleep-Inf-S adp|on pron|his-Prs-Gen-S3 noun|tummy cconj|or adp|on pron|his-Prs-Gen-S3 noun|back ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|6|CASE 5|6|NMOD-POSS 6|3|OBL 7|10|CC 8|10|CASE 9|10|NMOD-POSS 10|6|CONJ 11|3|PUNCT
+*CHI:	on his back . 299964_302416
+%mor:	adp|on pron|his-Prs-Gen-S3 noun|back .
+%gra:	1|3|CASE 2|3|NMOD-POSS 3|0|ROOT 4|3|PUNCT
+*MOT:	oh his back ? 302416_303149
+%mor:	intj|oh pron|his-Prs-Gen-S3 noun|back ?
+%gra:	1|3|DISCOURSE 2|3|NMOD-POSS 3|0|ROOT 4|3|PUNCT
+*CHI:	yup . 303149_303849
+%mor:	intj|yup .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	does he like fish ? 310849_312532
+%mor:	aux|do-Fin-Ind-Pres-S3 pron|he-Prs-Nom-S3 verb|like-Inf-S noun|fish-Acc ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*MOT:	or does he like milk ? 312532_315917
+%mor:	cconj|or aux|do-Fin-Ind-Pres-S3 pron|he-Prs-Nom-S3 verb|like-Inf-S noun|milk-Acc ?
+%gra:	1|4|CC 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*CHI:	nope . 315917_317753
+%mor:	intj|nope .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	he likes fish ? 317753_318703
+%mor:	pron|he-Prs-Nom-S3 verb|like-Fin-Ind-Pres-S3 noun|fish-Acc ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+@Tape Location:	706
+*CHI:	nope . 318703_320038
+%mor:	intj|nope .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	+< what does he like to eat ? 320038_321871
+%mor:	pron|what-Int-S1 aux|do-Fin-Ind-Pres-S3 pron|he-Prs-Nom-S3 verb|like-Inf-S part|to verb|eat-Inf-S ?
+%gra:	1|6|OBJ 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|6|MARK 6|4|XCOMP 7|4|PUNCT
+*MOT:	what do penguins like to eat ? 321871_324257
+%mor:	pron|what-Int-S1 aux|do-Fin-Ind-Pres-P3 noun|penguin-Plur verb|like-Inf-S part|to verb|eat-Inf-S ?
+%gra:	1|6|OBJ 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|6|MARK 6|4|XCOMP 7|4|PUNCT
+*CHI:	sit up . 324257_327542
+%mor:	verb|sit-Fin-Imp-S adp|up .
+%gra:	1|0|ROOT 2|1|COMPOUND-PRT 3|1|PUNCT
+*MOT:	what do penguins like to eat (.) Nomi ? 327542_329475
+%mor:	pron|what-Int-S1 aux|do-Fin-Ind-Pres-P3 noun|penguin-Plur verb|like-Inf-S part|to verb|eat-Inf-S propn|Nomi-Acc ?
+%gra:	1|6|OBJ 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|6|MARK 6|4|XCOMP 7|6|OBJ 8|4|PUNCT
+*CHI:	cookies . 329475_334046
+%mor:	noun|cookie-Plur .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	what ? 334046_334696
+%mor:	pron|what-Int-S1 ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	cookies . 334696_337415
+%mor:	noun|cookie-Plur .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	cookies ? 337415_338081
+%mor:	noun|cookie-Plur ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	penguins like to eat cookies ? 338081_340700
+%mor:	noun|penguin-Plur verb|like-Fin-Ind-Pres-P3 part|to verb|eat-Inf-S noun|cookie-Plur-Acc ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|MARK 4|2|XCOMP 5|4|OBJ 6|2|PUNCT
+*CHI:	yup . 340700_341150
+%mor:	intj|yup .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	no (.) they like to eat fish ? 341150_343902
+%mor:	intj|no pron|they-Prs-Nom-P3 verb|like-Fin-Ind-Pres-P3 part|to verb|eat-Inf-S noun|fish-Acc ?
+%gra:	1|3|DISCOURSE 2|3|NSUBJ 3|0|ROOT 4|5|MARK 5|3|XCOMP 6|5|OBJ 7|3|PUNCT
+*CHI:	no . 343902_346353
+%mor:	intj|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	no ? 346353_346903
+%mor:	intj|no ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	penguin +/. 346903_348538
+%mor:	noun|penguin +/.
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	this penguin doesn't like to eat fish ? 348538_351990
+%mor:	det|this-Def-Dem-Sing noun|penguin adv|doesnt verb|like-Inf-S part|to verb|eat-Inf-S noun|fish-Acc ?
+%gra:	1|2|DET 2|4|NSUBJ 3|4|ADVMOD 4|0|ROOT 5|6|MARK 6|4|XCOMP 7|6|OBJ 8|4|PUNCT
+*CHI:	yeah . 351990_353840
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	like this [=! gestures] . 353840_355775
+%mor:	adp|like pron|this-Dem-S1 .
+%gra:	1|2|CASE 2|0|ROOT 3|2|PUNCT
+*CHI:	like this [=! gestures] . 355775_358410
+%mor:	adp|like pron|this-Dem-S1 .
+%gra:	1|2|CASE 2|0|ROOT 3|2|PUNCT
+*MOT:	like what honey ? 358410_359327
+%mor:	adp|like det|what-Def-Int noun|honey ?
+%gra:	1|3|DISCOURSE 2|3|DET 3|0|ROOT 4|3|PUNCT
+*CHI:	like this [=! gestures] . 359327_359894
+%mor:	adp|like pron|this-Dem-S1 .
+%gra:	1|2|CASE 2|0|ROOT 3|2|PUNCT
+*MOT:	he likes to eat fish like this ? 359894_364048
+%mor:	pron|he-Prs-Nom-S3 verb|like-Fin-Ind-Pres-S3 part|to verb|eat-Inf-S noun|fish-Acc adp|like pron|this-Dem-S1 ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|MARK 4|2|XCOMP 5|4|OBJ 6|7|CASE 7|4|OBL 8|2|PUNCT
+*MOT:	maybe you could find a fish for him to eat . 364048_371552
+%mor:	adv|maybe pron|you-Prs-Nom-S2 aux|could-Fin-S verb|find-Inf-S det|a-Ind-Art noun|fish-Acc sconj|for pron|he-Prs-Acc-S3 part|to verb|eat-Inf-S .
+%gra:	1|4|ADVMOD 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|10|MARK 8|10|NSUBJ 9|10|MARK 10|4|ADVCL 11|4|PUNCT
+*CHI:	does him fish ? 371552_374769
+%mor:	verb|do-Fin-Ind-Pres-S3 pron|he-Prs-Acc-S3 noun|fish-Acc ?
+%gra:	1|0|ROOT 2|1|IOBJ 3|1|OBJ 4|1|PUNCT
+*CHI:	okay . 374769_376121
+%act:	reaching over and pretending to get some fish and give them to him .
+%mor:	intj|okay .
+%gra:	1|0|ROOT 2|1|PUNCT
+@Tape Location:	725
+*CHI:	penguin . 381121_384156
+%mor:	noun|penguin .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	is he eating his fish ? 384156_385389
+%mor:	aux|be-Fin-Ind-Pres-S3 pron|he-Prs-Nom-S3 verb|eat-Part-Pres-S pron|his-Prs-Gen-S3 noun|fish-Acc ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|5|NMOD-POSS 5|3|OBJ 6|3|PUNCT
+*CHI:	yup . 385389_386039
+%mor:	intj|yup .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	what color fish is he eating ? 386039_388975
+%mor:	det|what-Def-Int noun|color noun|fish-Acc aux|be-Fin-Ind-Pres-S3 pron|he-Prs-Nom-S3 verb|eat-Part-Pres-S ?
+%gra:	1|3|DET 2|3|COMPOUND 3|6|OBJ 4|6|AUX 5|6|NSUBJ 6|0|ROOT 7|6|PUNCT
+*MOT:	oh baby . 397975_401510
+%mor:	intj|oh noun|baby .
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|PUNCT
+@End

@@ -1,0 +1,390 @@
+@UTF8
+@PID:	11312/c-00017369-1
+@Begin
+@Languages:	eng
+@Participants:	CHI Target_Child, MOT Mother
+@ID:	eng|Sachs|CHI|2;03.19|female|||Target_Child|||
+@ID:	eng|Sachs|MOT||female|||Mother|||
+@Media:	020319, audio
+@Tape Location:	522
+@Date:	27-SEP-1971
+@Types:	long, toyplay, TD
+*CHI:	two (.) three four five six . 4000_11808
+%mor:	num|two num|three num|four num|five num|six .
+%gra:	1|5|NUMMOD 2|5|NUMMOD 3|5|NUMMOD 4|5|NUMMOD 5|0|ROOT 6|5|PUNCT
+*CHI:	seven eight nine . 11808_15860
+%mor:	num|seven num|eight num|nine .
+%gra:	1|3|NUMMOD 2|3|NUMMOD 3|0|ROOT 4|3|PUNCT
+*CHI:	seven eight nine eight ten twelve ten eight nine ten . [+ bch] 15860_29520
+%mor:	num|seven num|eight num|nine num|eight num|ten num|twelve num|ten num|eight num|nine num|ten .
+%gra:	1|2|COMPOUND 2|3|COMPOUND 3|4|COMPOUND 4|5|COMPOUND 5|6|COMPOUND 6|7|COMPOUND 7|8|COMPOUND 8|9|COMPOUND 9|0|ROOT 10|9|NMOD-UNMARKED 11|9|PUNCT
+*CHI:	xxx . 29520_30970
+*MOT:	what are you counting (.) Nomi ? 30970_32721
+%mor:	pron|what-Int-S1 aux|be-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 verb|count-Part-Pres-S propn|Nomi-Acc ?
+%gra:	1|4|OBJ 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*CHI:	eight (.) nine (.) ten . 32721_37273
+%mor:	num|eight num|nine num|ten .
+%gra:	1|3|NUMMOD 2|3|NUMMOD 3|0|ROOT 4|3|PUNCT
+*CHI:	eight (.) nine (.) ten . 37273_40408
+%mor:	num|eight num|nine num|ten .
+%gra:	1|3|NUMMOD 2|3|NUMMOD 3|0|ROOT 4|3|PUNCT
+*MOT:	uhhuh . 40408_41743
+%mor:	intj|uhhuh .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	let's do yours . 41743_44962
+%mor:	pron|let-Prs-S2 verb|do-Fin-Ind-Pres-S3 pron|your-Prs-S2 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*CHI:	ten four six seven eight nine . [+ bch] 44962_54068
+%mor:	num|ten num|four num|six num|seven num|eight num|nine .
+%gra:	1|2|COMPOUND 2|6|NUMMOD 3|6|NUMMOD 4|6|NUMMOD 5|6|NUMMOD 6|0|ROOT 7|6|PUNCT
+*CHI:	eight (.) nine (.) ten . 54068_58370
+%mor:	num|eight num|nine num|ten .
+%gra:	1|3|NUMMOD 2|3|NUMMOD 3|0|ROOT 4|3|PUNCT
+*CHI:	I'm putting this back here . 71370_74405
+%mor:	aux|be-Fin-Ind-Pres-S3 verb|put-Part-Pres-S pron|this-Dem-S1 adv|back adv|here .
+%gra:	1|2|AUX 2|0|ROOT 3|2|OBJ 4|2|ADVMOD 5|2|ADVMOD 6|2|PUNCT
+*CHI:	I'm putting this back here . 74405_78790
+%mor:	aux|be-Fin-Ind-Pres-S3 verb|put-Part-Pres-S pron|this-Dem-S1 adv|back adv|here .
+%gra:	1|2|AUX 2|0|ROOT 3|2|OBJ 4|2|ADVMOD 5|2|ADVMOD 6|2|PUNCT
+*CHI:	xxx six seven eight nine eight . 78790_107543
+%com:	shouted into microphone
+%mor:	num|six num|seven num|eight num|nine num|eight .
+%gra:	1|3|COMPOUND 2|3|COMPOUND 3|5|NUMMOD 4|5|NUMMOD 5|0|ROOT 6|5|PUNCT
+*MOT:	Nomi (.) why don't you say s@l ? 107543_109911
+%mor:	propn|Nomi adv|why intj|dont pron|you-Prs-Nom-S2 verb|say-Fin-Ind-Pres-S2 l|s ?
+%gra:	1|5|VOCATIVE 2|5|ADVMOD 3|5|DISCOURSE 4|5|NSUBJ 5|0|ROOT 6|5|CASE 7|5|PUNCT
+*CHI:	five seven eight seven . [+ bch] 109911_116232
+%mor:	num|five num|seven num|eight num|seven .
+%gra:	1|4|NUMMOD 2|4|NUMMOD 3|4|NUMMOD 4|0|ROOT 5|4|PUNCT
+*CHI:	I count [% pushes MOT's hand away] . 116232_119267
+%mor:	pron|I-Prs-Nom-S1 verb|count-Fin-Ind-Pres-S1 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|PUNCT
+*CHI:	I'm going read this catalogue . 119267_122553
+%mor:	aux|be-Fin-Ind-Pres-S3 verb|go-Part-Pres-S verb|read-Inf-S det|this-Def-Dem-Sing noun|catalogue-Acc .
+%gra:	1|2|AUX 2|0|ROOT 3|2|XCOMP 4|5|DET 5|3|OBJ 6|2|PUNCT
+*MOT:	you go ahead . 122553_123253
+%mor:	pron|you-Prs-Nom-S2 verb|go-Fin-Ind-Pres-S2 adv|ahead .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|ADVMOD 4|2|PUNCT
+*CHI:	<pink catalogue> [/] pink catalogue . 123253_129057
+%mor:	adj|pink-S1 noun|catalogue .
+%gra:	1|2|AMOD 2|0|ROOT 3|2|PUNCT
+*CHI:	&~a:h catalogue . 129057_132092
+%par:	sing song
+%com:	break in recording
+%mor:	noun|catalogue .
+%gra:	1|0|ROOT 2|1|PUNCT
+@Tape Location:	622
+*CHI:	my hands are [!] dirty . 192092_196144
+%mor:	pron|my-Prs-Gen-S1 noun|hand-Plur aux|be-Fin-Ind-Pres-P3 adj|dirty-S1 .
+%gra:	1|2|NMOD-POSS 2|4|NSUBJ 3|4|COP 4|0|ROOT 5|4|PUNCT
+*CHI:	xxx . 196144_202464
+%par:	sing song
+*CHI:	what's that doing ? 215464_217230
+%mor:	pron|what-Int-S1 pron|that-Dem verb|do-Part-Pres-S ?
+%gra:	1|0|ROOT 2|3|NSUBJ 3|1|ACL-RELCL 4|1|PUNCT
+*MOT:	I'm recording Nomi . 217230_219849
+%mor:	intj|im verb|record-Part-Pres-S propn|Nomi-Acc .
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+@Tape Location:	637
+*CHI:	don't record it . 219849_222801
+%mor:	adv|dont verb|record-Fin-S pron|it-Prs-Acc-S3 .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*MOT:	why not ? 222801_224753
+%mor:	adv|why part|not ?
+%gra:	1|0|ROOT 2|1|ADVMOD 3|1|PUNCT
+*CHI:	(be)cause don't turn recorder on . 224753_230224
+%mor:	sconj|because noun|dont verb|turn-Fin-S noun|recorder-Acc adp|on .
+%gra:	1|3|MARK 2|3|NSUBJ 3|0|ROOT 4|3|OBJ 5|3|ADVMOD 6|3|PUNCT
+*MOT:	don't you wanna be recorded ? 230224_234192
+%mor:	adv|dont pron|you-Prs-Nom-S2 aux|wanna-Fin-S aux|be-Inf-S verb|record-Part-Past-S ?
+%gra:	1|5|ADVMOD 2|5|NSUBJ-PASS 3|5|AUX 4|5|AUX-PASS 5|0|ROOT 6|5|PUNCT
+*CHI:	yeah . 234192_235026
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	oh . 235026_240012
+%mor:	intj|oh .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	maybe find the babies . 240012_242447
+%mor:	adv|maybe verb|find-Fin-Imp-S det|the-Def-Art noun|baby-Plur-Acc .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|PUNCT
+*CHI:	maybe find the babies . 242447_245483
+%act:	looking in catalogue
+%mor:	adv|maybe verb|find-Fin-Imp-S det|the-Def-Art noun|baby-Plur-Acc .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|PUNCT
+*CHI:	toilet dripping . 245483_250970
+%mor:	noun|toilet noun|drip-Ger .
+%gra:	1|2|COMPOUND 2|0|ROOT 3|2|PUNCT
+*CHI:	toilet dripping . 250970_253153
+%mor:	noun|toilet noun|drip-Ger .
+%gra:	1|2|COMPOUND 2|0|ROOT 3|2|PUNCT
+*MOT:	yes . 253153_254489
+%mor:	intj|yes .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	I find the swing is . 254489_262778
+%mor:	pron|I-Prs-Nom-S1 verb|find-Fin-Ind-Pres-S1 det|the-Def-Art noun|swing-Acc-Ger aux|be-Fin-Ind-Pres-S3 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|CCOMP 6|2|PUNCT
+*CHI:	I find the swing is . 262778_265897
+%mor:	pron|I-Prs-Nom-S1 verb|find-Fin-Ind-Pres-S1 det|the-Def-Art noun|swing-Acc-Ger aux|be-Fin-Ind-Pres-S3 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|CCOMP 6|2|PUNCT
+*CHI:	xxx . 265897_270532
+*CHI:	Mary had a little lamb . 295532_299234
+%mor:	propn|Mary verb|have-Fin-Ind-Past-S3-irr det|a-Ind-Art adj|little-S1 noun|lamb-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|5|DET 4|5|AMOD 5|2|OBJ 6|2|PUNCT
+*CHI:	fleece was white as snow . 299234_300550
+%mor:	noun|fleece aux|be-Fin-Ind-Past-S3-irr adj|white-S1 adp|as noun|snow .
+%gra:	1|3|NSUBJ 2|3|COP 3|0|ROOT 4|5|CASE 5|3|OBL 6|3|PUNCT
+*CHI:	f(l)eece was white . 300550_302952
+%mor:	noun|fleece aux|be-Fin-Ind-Past-S3-irr adj|white-S1 .
+%gra:	1|3|NSUBJ 2|3|COP 3|0|ROOT 4|3|PUNCT
+*CHI:	f(l)eece was white . 302952_304388
+%mor:	noun|fleece aux|be-Fin-Ind-Past-S3-irr adj|white-S1 .
+%gra:	1|3|NSUBJ 2|3|COP 3|0|ROOT 4|3|PUNCT
+*CHI:	I finded where the swing is . 317388_320673
+%mor:	pron|I-Prs-Nom-S1 verb|find-Fin-Ind-Past-S1 adv|where det|the-Def-Art noun|swing-Ger aux|be-Fin-Ind-Pres-S3 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|5|DET 5|3|NSUBJ 6|3|COP 7|2|PUNCT
+*CHI:	I finded where the swing is . 320673_325058
+%mor:	pron|I-Prs-Nom-S1 verb|find-Fin-Ind-Past-S1 adv|where det|the-Def-Art noun|swing-Ger aux|be-Fin-Ind-Pres-S3 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|5|DET 5|3|NSUBJ 6|3|COP 7|2|PUNCT
+*CHI:	I finded where the swing is . 325058_327927
+%mor:	pron|I-Prs-Nom-S1 verb|find-Fin-Ind-Past-S1 adv|where det|the-Def-Art noun|swing-Ger aux|be-Fin-Ind-Pres-S3 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|5|DET 5|3|NSUBJ 6|3|COP 7|2|PUNCT
+*CHI:	little lamb [/] lamb [/] lamb [/] lamb [/] lamb [/] lamb [/] lamb [/] lamb [/] lamb . [+ bch] 330927_348722
+%par:	sing song
+%mor:	adj|little-S1 noun|lamb .
+%gra:	1|2|AMOD 2|0|ROOT 3|2|PUNCT
+*CHI:	little cares . 360722_363674
+%mor:	adj|little-S1 noun|care-Plur .
+%gra:	1|2|AMOD 2|0|ROOT 3|2|PUNCT
+*CHI:	little cares . 363674_365774
+%mor:	adj|little-S1 noun|care-Plur .
+%gra:	1|2|AMOD 2|0|ROOT 3|2|PUNCT
+*CHI:	little baby cares . 365774_370411
+%mor:	adj|little-S1 noun|baby noun|care-Plur .
+%gra:	1|3|AMOD 2|3|COMPOUND 3|0|ROOT 4|3|PUNCT
+*CHI:	look at baby cares . 370411_372863
+%mor:	verb|look-Fin-Imp-S adp|at noun|baby noun|care-Plur .
+%gra:	1|0|ROOT 2|4|CASE 3|4|COMPOUND 4|1|OBL 5|1|PUNCT
+*CHI:	look at baby carry a little box . 372863_377348
+%mor:	verb|look-Fin-Imp-S adp|at noun|baby verb|carry-Fin-Imp-S det|a-Ind-Art adj|little-S1 noun|box-Acc .
+%gra:	1|0|ROOT 2|3|CASE 3|1|OBL 4|1|ADVCL 5|7|DET 6|7|AMOD 7|4|OBJ 8|1|PUNCT
+@Tape Location:	730
+*CHI:	a little box . 377348_380034
+%mor:	det|a-Ind-Art adj|little-S1 noun|box .
+%gra:	1|3|DET 2|3|AMOD 3|0|ROOT 4|3|PUNCT
+*CHI:	xxx . 380034_383318
+*CHI:	I'm turning it . 407318_410453
+%mor:	aux|be-Fin-Ind-Pres-S3 verb|turn-Part-Pres-S pron|it-Prs-Acc-S3 .
+%gra:	1|2|AUX 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*CHI:	I don't like my Cornflakes . 418453_422005
+%mor:	pron|I-Prs-Nom-S1 adv|dont verb|like-Fin-Ind-Pres-S1 pron|my-Prs-Gen-S1 noun|cornflake-Plur-Acc .
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|5|NMOD-POSS 5|3|OBJ 6|3|PUNCT
+*CHI:	I don't like my Cornflakes . 422005_425440
+%mor:	pron|I-Prs-Nom-S1 adv|dont verb|like-Fin-Ind-Pres-S1 pron|my-Prs-Gen-S1 noun|cornflake-Plur-Acc .
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|5|NMOD-POSS 5|3|OBJ 6|3|PUNCT
+*CHI:	my Cornflakes . 425440_428742
+%mor:	pron|my-Prs-Gen-S1 noun|cornflake-Plur .
+%gra:	1|2|NMOD-POSS 2|0|ROOT 3|2|PUNCT
+*CHI:	my Cornflakes . 428742_431777
+%mor:	pron|my-Prs-Gen-S1 noun|cornflake-Plur .
+%gra:	1|2|NMOD-POSS 2|0|ROOT 3|2|PUNCT
+*CHI:	my don't .
+%mor:	pron|my-Prs-Gen-S1 noun|dont .
+%gra:	1|2|NMOD-POSS 2|0|ROOT 3|2|PUNCT
+*CHI:	my bumped it . 445460_447060
+%mor:	pron|my-Prs-Gen-S1 verb|bump-Fin-Ind-Past-S3 pron|it-Prs-Acc-S3 .
+%gra:	1|2|NMOD-POSS 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*CHI:	who's that ? 447060_450262
+%mor:	pron|whose-Int-S1 pron|that-Dem ?
+%gra:	1|0|ROOT 2|1|NMOD-UNMARKED 3|1|PUNCT
+*CHI:	xxx . 450262_452697
+@Tape Location:	793
+*CHI:	I got lollipop . 466097_468263
+%mor:	pron|I-Prs-Nom-S1 verb|get-Fin-Ind-Past-S1-irr noun|lollipop-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*CHI:	I get lollipop for you . 468263_472981
+%mor:	pron|I-Prs-Nom-S1 verb|get-Fin-Ind-Pres-S1 noun|lollipop-Acc adp|for pron|you-Prs-Acc-S2 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|5|CASE 5|2|OBL 6|2|PUNCT
+*CHI:	get lollipop . 472981_475183
+%mor:	verb|get-Fin-Imp-S noun|lollipop-Acc .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*CHI:	xxx . 475183_477719
+*CHI:	I broke the lollipop . 477719_481337
+%mor:	pron|I-Prs-Nom-S1 verb|break-Fin-Ind-Past-S1-irr det|the-Def-Art noun|lollipop-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|PUNCT
+*CHI:	I broke the lollipop . 481337_484373
+%mor:	pron|I-Prs-Nom-S1 verb|break-Fin-Ind-Past-S1-irr det|the-Def-Art noun|lollipop-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|PUNCT
+*CHI:	look at the lollipop . 484373_487741
+%mor:	verb|look-Fin-Imp-S adp|at det|the-Def-Art noun|lollipop .
+%gra:	1|0|ROOT 2|4|CASE 3|4|DET 4|1|OBL 5|1|PUNCT
+*CHI:	look at lollipop . 487741_490776
+%mor:	verb|look-Fin-Imp-S adp|at noun|lollipop .
+%gra:	1|0|ROOT 2|3|CASE 3|1|OBL 4|1|PUNCT
+*CHI:	look at . 490776_492378
+%mor:	verb|look-Fin-Imp-S adp|at .
+%gra:	1|0|ROOT 2|1|ADVMOD 3|1|PUNCT
+@Tape Location:	814
+*CHI:	Nomi eating the lolli(pop) . 492378_500984
+%mor:	propn|Nomi verb|eat-Part-Pres-S det|the-Def-Art noun|lollipop-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|PUNCT
+*CHI:	num_num .
+%mor:	noun|numnum .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	num_num .
+%mor:	noun|numnum .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	I'm licking the +... 510619_514671
+%mor:	aux|be-Fin-Ind-Pres-S3 verb|lick-Part-Pres-S det|the-Def-Art +...
+%gra:	1|2|AUX 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*CHI:	I get lollipop for you . 514671_517189
+%mor:	pron|I-Prs-Nom-S1 verb|get-Fin-Ind-Pres-S1 noun|lollipop-Acc adp|for pron|you-Prs-Acc-S2 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|5|CASE 5|2|OBL 6|2|PUNCT
+*CHI:	I get lollipop for you . 517189_520725
+%mor:	pron|I-Prs-Nom-S1 verb|get-Fin-Ind-Pres-S1 noun|lollipop-Acc adp|for pron|you-Prs-Acc-S2 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|5|CASE 5|2|OBL 6|2|PUNCT
+*CHI:	I get lollipop for you . 520725_527312
+%mor:	pron|I-Prs-Nom-S1 verb|get-Fin-Ind-Pres-S1 noun|lollipop-Acc adp|for pron|you-Prs-Acc-S2 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|5|CASE 5|2|OBL 6|2|PUNCT
+*CHI:	it happen the page . 527312_529581
+%mor:	pron|it-Prs-Nom-S3 verb|happen-Fin-Ind-Pres-S3 det|the-Def-Art noun|page-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|PUNCT
+@Tape Location:	839
+*CHI:	what happen the page ? 529581_531597
+%mor:	pron|what-Int-S1 verb|happen-Fin-S det|the-Def-Art noun|page-Acc ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|PUNCT
+*CHI:	what happen the page ? 531597_535568
+%mor:	pron|what-Int-S1 verb|happen-Fin-S det|the-Def-Art noun|page-Acc ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|PUNCT
+*MOT:	oh (.) this page got all wrinkled at the top . 535568_539453
+%mor:	intj|oh det|this-Def-Dem-Sing noun|page verb|get-Fin-Ind-Past-S3-irr det|all-Def-Tot verb|wrinkle-Part-Past-S adp|at det|the-Def-Art noun|top .
+%gra:	1|4|DISCOURSE 2|3|DET 3|4|NSUBJ 4|0|ROOT 5|4|OBJ 6|4|XCOMP 7|9|CASE 8|9|DET 9|6|OBL 10|4|PUNCT
+*CHI:	I got lollipop for you . 539453_543238
+%mor:	pron|I-Prs-Nom-S1 verb|get-Fin-Ind-Past-S1-irr noun|lollipop-Acc adp|for pron|you-Prs-Acc-S2 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|5|CASE 5|2|OBL 6|2|PUNCT
+*MOT:	you got a lollipop for me ? 543238_544940
+%mor:	pron|you-Prs-Nom-S2 verb|get-Fin-Ind-Past-S2-irr det|a-Ind-Art noun|lollipop-Acc adp|for pron|I-Prs-Acc-S1 ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|6|CASE 6|2|OBL 7|2|PUNCT
+*CHI:	yeah . 544940_545640
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	oh what a nice girl . 545640_547808
+%mor:	intj|oh det|what-Def-Int det|a-Ind-Art adj|nice-S1 noun|girl .
+%gra:	1|5|DISCOURSE 2|5|DET-PREDET 3|5|DET 4|5|AMOD 5|0|ROOT 6|5|PUNCT
+*CHI:	change me again . 547808_550494
+%mor:	verb|change-Fin-Imp-S pron|I-Prs-Acc-S1 adv|again .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|ADVMOD 4|1|PUNCT
+*MOT:	you needta be changed again honey ? 550494_553529
+%mor:	pron|you-Prs-Nom-S2 aux|needta-Fin-S aux|be-Inf-S verb|change-Part-Past-S adv|again noun|honey ?
+%gra:	1|4|NSUBJ-PASS 2|4|AUX 3|4|AUX-PASS 4|0|ROOT 5|6|ADVMOD 6|4|OBL-UNMARKED 7|4|PUNCT
+@Tape Location:	856
+*CHI:	yeah . 553529_554112
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	why ? 554112_557414
+%mor:	adv|why ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	hm: . 557414_561116
+%mor:	intj|hm .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	are you wet ? 561116_562235
+%mor:	aux|be-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 adj|wet-S1 ?
+%gra:	1|3|COP 2|3|NSUBJ 3|0|ROOT 4|3|PUNCT
+*CHI:	no . 562235_563018
+%mor:	intj|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	are you dirty ? 563018_564002
+%mor:	aux|be-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 adj|dirty-S1 ?
+%gra:	1|3|COP 2|3|NSUBJ 3|0|ROOT 4|3|PUNCT
+*CHI:	no . 564002_565087
+%mor:	intj|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	wet . 565087_565904
+%mor:	adj|wet-S1 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	wet . 565904_566454
+%mor:	adj|wet-S1 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	okay (.) well I don't needta change you then right you then right away . 566454_571408
+%mor:	intj|okay intj|well pron|I-Prs-Nom-S1 aux|dont-Fin-S verb|needta-Inf-S verb|change-Inf-S pron|you-Prs-Acc-S2 adv|then adj|right-S1 pron|you-Prs-Nom-S2 adv|then adv|right adv|away .
+%gra:	1|6|DISCOURSE 2|6|DISCOURSE 3|6|NSUBJ 4|6|AUX 5|6|DISCOURSE 6|0|ROOT 7|6|OBJ 8|9|ADVMOD 9|6|PARATAXIS 10|13|NSUBJ 11|13|ADVMOD 12|13|ADVMOD 13|6|PARATAXIS 14|6|PUNCT
+*MOT:	I'll change you in a little while . 571408_572658
+%mor:	intj|ill verb|change-Fin-Imp-S pron|you-Prs-Acc-S2 adp|in det|a-Ind-Art adj|little-S1 noun|while .
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|OBJ 4|7|CASE 5|7|DET 6|7|AMOD 7|2|OBL 8|2|PUNCT
+*CHI:	could I sit down in chair ? 572658_576895
+%mor:	aux|could-Fin-S pron|I-Prs-Nom-S1 verb|sit-Inf-S adp|down adp|in noun|chair ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|3|COMPOUND-PRT 5|6|CASE 6|3|OBL 7|3|PUNCT
+*CHI:	and read the catalogue ? 576895_579847
+%mor:	cconj|and verb|read-Fin-Imp-S det|the-Def-Art noun|catalogue-Acc ?
+%gra:	1|2|CC 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|PUNCT
+*MOT:	yeah (.) you can sit in the chair and read +/. 579847_581197
+%mor:	intj|yeah pron|you-Prs-Nom-S2 aux|can-Fin-S verb|sit-Inf-S adp|in det|the-Def-Art noun|chair cconj|and verb|read-Inf-S +/.
+%gra:	1|4|DISCOURSE 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|7|CASE 6|7|DET 7|4|OBL 8|9|CC 9|4|CONJ 10|4|PUNCT
+@Tape Location:	877
+*CHI:	this is not broken one . 581197_582881
+%mor:	pron|this-Dem-S1 aux|be-Fin-Ind-Pres-S3 part|not verb|break-Part-Past-S-irr num|one .
+%gra:	1|4|NSUBJ-PASS 2|4|AUX-PASS 3|4|ADVMOD 4|0|ROOT 5|4|OBL-UNMARKED 6|4|PUNCT
+*CHI:	this not broken . 582881_584765
+%mor:	pron|this-Dem-S1 part|not verb|break-Part-Past-S-irr .
+%gra:	1|3|NSUBJ-PASS 2|3|ADVMOD 3|0|ROOT 4|3|PUNCT
+*MOT:	oh . 584765_586183
+%mor:	intj|oh .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	this not broken . 586183_590235
+%mor:	pron|this-Dem-S1 part|not verb|break-Part-Past-S-irr .
+%gra:	1|3|NSUBJ-PASS 2|3|ADVMOD 3|0|ROOT 4|3|PUNCT
+*CHI:	this not broken . 590235_596123
+%mor:	pron|this-Dem-S1 part|not verb|break-Part-Past-S-irr .
+%gra:	1|3|NSUBJ-PASS 2|3|ADVMOD 3|0|ROOT 4|3|PUNCT
+*CHI:	there the boy . 596123_600091
+%par:	<$=1> sing song
+%mor:	pron|there-Dem-S1 det|the-Def-Art noun|boy .
+%gra:	1|0|ROOT 2|3|DET 3|1|NSUBJ 4|1|PUNCT
+*CHI:	there the boy . 600091_602210
+%mor:	pron|there-Dem-S1 det|the-Def-Art noun|boy .
+%gra:	1|0|ROOT 2|3|DET 3|1|NSUBJ 4|1|PUNCT
+*CHI:	see the boy . 602210_604177
+%mor:	verb|see-Fin-Imp-S det|the-Def-Art noun|boy-Acc .
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|1|PUNCT
+*CHI:	xxx . 604177_611899
+*MOT:	no (.) I just really don't wanna change you right now Nomi . 616899_620201
+%mor:	intj|no pron|I-Prs-Nom-S1 adv|just adv|really aux|dont-Fin-S part|wana verb|change-Inf-S pron|you-Prs-Acc-S2 adv|right adv|now propn|Nomi .
+%gra:	1|7|DISCOURSE 2|7|NSUBJ 3|7|ADVMOD 4|7|ADVMOD 5|7|AUX 6|7|ADVMOD 7|0|ROOT 8|7|OBJ 9|10|ADVMOD 10|7|ADVMOD 11|7|PARATAXIS 12|7|PUNCT
+*MOT:	you know (.) you're asking to be changed an awful lot . 620201_627355
+%mor:	pron|you-Prs-Nom-S2 verb|know-Fin-Ind-Pres-S2 pron|your-Prs-Acc-S2 verb|ask-Part-Pres-S part|to aux|be-Inf-S verb|change-Part-Past-S det|a-Ind-Art adj|awful-S1 noun|lot .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|XCOMP 5|7|MARK 6|7|AUX-PASS 7|4|XCOMP 8|10|DET 9|10|AMOD 10|7|OBL-UNMARKED 11|2|PUNCT
+@Tape Location:	915
+*CHI:	changing awful lot ? 627355_630473
+%mor:	verb|change-Part-Pres-S adj|awful-S1 noun|lot-Acc ?
+%gra:	1|0|ROOT 2|3|AMOD 3|1|OBJ 4|1|PUNCT
+*MOT:	I'm changing you an awful lot (.) yeah . 630473_633009
+%mor:	adv|im verb|change-Part-Pres-S pron|you-Prs-Acc-S2 det|a-Ind-Art adj|awful-S1 noun|lot intj|yeah .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|IOBJ 4|6|DET 5|6|AMOD 6|2|OBL-UNMARKED 7|2|DISCOURSE 8|2|PUNCT
+*CHI:	a lot . 633009_635211
+%mor:	det|a-Ind-Art noun|lot .
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*MOT:	it gets very boring Nomi . 635211_637979
+%mor:	pron|it-Prs-Nom-S3 verb|get-Fin-Ind-Pres-S3 adv|very adj|boring-S1 propn|Nomi .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|ADVMOD 4|5|AMOD 5|2|XCOMP 6|2|PUNCT
+*CHI:	I got lollipop for you . 637979_644149
+%mor:	pron|I-Prs-Nom-S1 verb|get-Fin-Ind-Past-S1-irr noun|lollipop-Acc adp|for pron|you-Prs-Acc-S2 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|5|CASE 5|2|OBL 6|2|PUNCT
+*MOT:	you gonna give it to me ? 644149_647334
+%mor:	pron|you-Prs-Nom-S2 adv|gonna verb|give-Inf-S pron|it-Prs-Acc-S3 adp|to pron|I-Prs-Acc-S1 ?
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|3|OBJ 5|6|CASE 6|3|OBL 7|3|PUNCT
+*MOT:	oh (.) yum (.) thank you . 647334_650470
+%mor:	intj|oh intj|yum verb|thank-Fin-Ind-Pres-S1 pron|you-Prs-Acc-S2 .
+%gra:	1|3|DISCOURSE 2|3|DISCOURSE 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*CHI:	xxx . 650470_653422
+*CHI:	I see it broken . 653422_656040
+%mor:	pron|I-Prs-Nom-S1 verb|see-Fin-Ind-Pres-S1 pron|it-Prs-Acc-S3 verb|break-Part-Past-S-irr .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|XCOMP 5|2|PUNCT
+*CHI:	xxx I can't see . 656040_658476
+%mor:	pron|I-Prs-Nom-S1 aux|cant-Fin-S verb|see-Inf-S .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|PUNCT
+*CHI:	xxx I can't see . 658476_661178
+%mor:	pron|I-Prs-Nom-S1 aux|cant-Fin-S verb|see-Inf-S .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|PUNCT
+*CHI:	what happen that tea ? 661178_669198
+%mor:	pron|what-Int-S1 verb|happen-Fin-Ind-S det|that-Def-Dem-Sing noun|tea-Acc ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|PUNCT
+@End

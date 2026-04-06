@@ -5,6 +5,7 @@ from src.corpus_normalizers.bloom_normalizer import process_directory as process
 from src.corpus_normalizers.brown_normalizer import process_directory as process_brown
 from src.corpus_normalizers.brent_normalizer import BrendManipulator
 from src.corpus_normalizers.hslld_normalizer import process_directory as process_hslld
+from src.corpus_normalizers.kuczaj_normalizer import process_directory as process_kuczaj
 from src.corpus_normalizers.newengland_normalizer import (
     process_directory as process_newengland,
 )
@@ -72,6 +73,15 @@ class CorpusInitializer:
         )
         print("¡Corpus de HSLLD inicializado!")
 
+    def initialize_kuczaj(self):
+        """Inicializa el corpus de Kuczaj."""
+        print("\nInicializando corpus de Kuczaj...")
+        process_kuczaj(
+            self._source_dir("Kuczaj"),
+            self._output_dir("Kuczaj"),
+        )
+        print("¡Corpus de Kuczaj inicializado!")
+
     def initialize_van_kleeck(self):
         """Inicializa el corpus de VanKleeck."""
         print("\nInicializando corpus de VanKleeck...")
@@ -87,6 +97,7 @@ class CorpusInitializer:
         self.initialize_bloom()
         self.initialize_brown()
         self.initialize_hslld()
+        self.initialize_kuczaj()
         self.initialize_van_kleeck()
         print("\n¡Inicialización de corpus completada!")
 

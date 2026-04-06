@@ -34,6 +34,9 @@ def test_group_data_by_age_groups_children_and_adults():
                             "children_data": {
                                 1: {"text": "more juice", "speaker": "CHI", "timestamp": None},
                             },
+                            "other_children_data": {
+                                1: {"text": "mine too", "speaker": "JEN", "timestamp": None},
+                            },
                             "adults_data": {
                                 1: {"text": "do you want more", "speaker": "MOT", "timestamp": None},
                             },
@@ -48,6 +51,7 @@ def test_group_data_by_age_groups_children_and_adults():
 
     assert "02Y02Q" in grouped_data
     assert grouped_data["02Y02Q"]["children_data"]["1"]["text"] == "more juice"
+    assert grouped_data["02Y02Q"]["other_children_data"]["1"]["text"] == "mine too"
     assert grouped_data["02Y02Q"]["adults_data"]["1"]["text"] == "do you want more"
 
 
@@ -57,6 +61,9 @@ def test_quarterly_sample_exporter_creates_quarter_files(tmp_path):
             "children_data": {
                 "1": {"text": "more juice"},
                 "2": {"text": "want cookie"},
+            },
+            "other_children_data": {
+                "1": {"text": "me too"},
             },
             "adults_data": {
                 "1": {"text": "do you want more"},
@@ -70,11 +77,14 @@ def test_quarterly_sample_exporter_creates_quarter_files(tmp_path):
 
     adults_path = Path(exported_files["adults"]["02Y02Q"])
     children_path = Path(exported_files["children"]["02Y02Q"])
+    other_children_path = Path(exported_files["other_children"]["02Y02Q"])
 
     assert adults_path.exists()
     assert children_path.exists()
+    assert other_children_path.exists()
     assert adults_path.read_text(encoding="utf-8") == "do you want more\n"
     assert children_path.read_text(encoding="utf-8") == "more juice\nwant cookie\n"
+    assert other_children_path.read_text(encoding="utf-8") == "me too\n"
 
 
 def test_quarterly_sample_transformer_creates_json_and_csv(tmp_path):
@@ -83,6 +93,9 @@ def test_quarterly_sample_transformer_creates_json_and_csv(tmp_path):
             "children_data": {
                 "1": {"text": "more juice"},
                 "2": {"text": "want cookie"},
+            },
+            "other_children_data": {
+                "1": {"text": "me too"},
             },
             "adults_data": {
                 "1": {"text": "do you want more"},

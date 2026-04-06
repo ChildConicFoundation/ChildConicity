@@ -50,13 +50,48 @@ def test_grammatical_formatter_splits_children_and_adults(tmp_path):
     )
 
     formatter = GrammaticalDataFormatter()
-    children_data, adults_data = formatter.format_cha_data_from(str(file_path))
+    children_data, other_children_data, adults_data = formatter.format_cha_data_from(
+        str(file_path)
+    )
 
     assert children_data[1]["category"] == "noun"
     assert children_data[1]["lemma"] == "ball"
+    assert len(other_children_data) == 0
     assert adults_data[1]["category"] == "verb"
     assert adults_data[1]["lemma"] == "pull"
     assert adults_data[2]["lemma"] == "it"
+
+
+def test_grammatical_formatter_separates_non_target_children(tmp_path):
+    file_path = tmp_path / "sample_sibling.cha"
+    file_path.write_text(
+        """
+@UTF8
+@Languages:\teng
+@Participants:\tCHI Target_Child, JEN Sister, MOT Mother
+@ID:\teng|Bloom|CHI|2;00.10|male|TD||Target_Child|||
+@ID:\teng|Bloom|JEN|||||Sister|||
+@ID:\teng|Bloom|MOT||female|||Mother|||
+@ChildAge: 2 years 00 months 10 days
+@ChildName: Peter
+*JEN:\tball . \x15131_1537\x15
+%mor:\tnoun|ball .
+*MOT:\tpull it up ! \x15131_1537\x15
+%mor:\tverb|pull-Fin-Imp-S pron|it-Prs-Acc-S3 adp|up !
+""".strip(),
+        encoding="utf-8",
+    )
+
+    formatter = GrammaticalDataFormatter()
+    children_data, other_children_data, adults_data = formatter.format_cha_data_from(
+        str(file_path)
+    )
+
+    assert len(children_data) == 0
+    assert len(other_children_data) == 1
+    assert other_children_data[1]["speaker"] == "JEN"
+    assert len(adults_data) == 3
+    assert adults_data[1]["speaker"] == "MOT"
 
 
 def test_grammatical_formatter_filters_selected_categories(tmp_path):
@@ -76,11 +111,14 @@ def test_grammatical_formatter_filters_selected_categories(tmp_path):
     )
 
     formatter = GrammaticalDataFormatter(grammatical_categories=["noun"])
-    children_data, adults_data = formatter.format_cha_data_from(str(file_path))
+    children_data, other_children_data, adults_data = formatter.format_cha_data_from(
+        str(file_path)
+    )
 
     assert len(children_data) == 1
     assert children_data[1]["category"] == "noun"
     assert children_data[1]["lemma"] == "ball"
+    assert len(other_children_data) == 0
     assert len(adults_data) == 1
     assert adults_data[1]["category"] == "noun"
     assert adults_data[1]["lemma"] == "ball"
@@ -158,6 +196,7 @@ def test_process_grammatical_data_with_formatter_filters_categories(tmp_path):
     assert len(processed_file["children_data"]) == 1
     assert processed_file["children_data"][1]["category"] == "noun"
     assert processed_file["children_data"][1]["lemma"] == "ball"
+    assert len(processed_file["other_children_data"]) == 0
     assert len(processed_file["adults_data"]) == 1
     assert processed_file["adults_data"][1]["category"] == "noun"
     assert processed_file["adults_data"][1]["lemma"] == "ball"
@@ -205,6 +244,7 @@ def test_run_grammatical_pipeline_exports_filtered_data(tmp_path):
 
     processed_file = result["processed_data"]["Corpus_modified"]["Post"]["Lew"]["files"][0]
     assert len(processed_file["children_data"]) == 1
+    assert len(processed_file["other_children_data"]) == 0
     assert len(processed_file["adults_data"]) == 1
     assert "01Y02Q" in result["grouped_data"]
     assert "Raw" in result["outputs"]["children"]
@@ -230,6 +270,7 @@ def test_grammatical_exporter_exports_grouped_rows(tmp_path):
                                     "raw_token": "noun|ball",
                                 }
                             },
+                            "other_children_data": {},
                             "adults_data": {
                                 "1": {
                                     "category": "verb",

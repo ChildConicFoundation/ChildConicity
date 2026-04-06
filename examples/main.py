@@ -81,7 +81,7 @@ def process_cha_files(data, current_path=""):
                     file_path = file['metadata']['file_path']
                     print(f"Procesando archivo: {file_path}")
                     file_formatter = DataFormatter()
-                    children_data, adults_data = file_formatter.format_cha_data_from(file_path)
+                    children_data, _, adults_data = file_formatter.format_cha_data_from(file_path)
                     
                     if new_path not in result_dict:
                         result_dict[new_path] = {}
@@ -138,7 +138,7 @@ if __name__ == "__main__":
     
     # Procesar archivo .cha
     print("Procesando archivo .cha:")
-    children_data, adults_data = formatter.format_cha_data_from('record.cha')
+    children_data, _, adults_data = formatter.format_cha_data_from('record.cha')
     
     print("\nPrimeras 10 expresiones de niños:")
     for id, entry in list(children_data.items())[:10]:
@@ -313,7 +313,7 @@ if __name__ == "__main__":
         # Procesar el archivo usando DataFormatter
         print("\nProcesando archivo con DataFormatter:")
         file_path = first_file['metadata']['file_path']
-        children_data, adults_data = formatter.format_cha_data_from(file_path)
+        children_data, _, adults_data = formatter.format_cha_data_from(file_path)
         
         print("\nPrimeras 10 expresiones de niños:")
         for id, entry in list(children_data.items())[:10]:
@@ -356,7 +356,7 @@ if __name__ == "__main__":
                         print(f"Procesando archivo: {file_path}")
                         # Crear un nuevo formatter para cada archivo
                         file_formatter = DataFormatter()
-                        children_data, adults_data = file_formatter.format_cha_data_from(file_path)
+                        children_data, _, adults_data = file_formatter.format_cha_data_from(file_path)
                         
                         # Crear entrada en el diccionario
                         if new_path not in result_dict:

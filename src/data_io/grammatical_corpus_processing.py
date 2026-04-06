@@ -1,6 +1,6 @@
 from src.data_io.grammatical_formatter import GrammaticalDataFormatter
 
-TARGET_CORPORA = ("Brent", "NewEngland", "Post", "VanKleeck")
+TARGET_CORPORA = ("Brent", "NewEngland", "Post", "Bloom", "VanKleeck")
 
 
 def process_grammatical_data_with_formatter(
@@ -107,10 +107,13 @@ def _process_file(file, formatter):
     if not file_path.endswith(".cha"):
         return None
 
-    children_data, adults_data = formatter.format_cha_data_from(file_path)
+    children_data, other_children_data, adults_data = formatter.format_cha_data_from(
+        file_path
+    )
 
     return {
         "metadata": file["metadata"].copy(),
         "children_data": children_data,
+        "other_children_data": other_children_data,
         "adults_data": adults_data,
     }

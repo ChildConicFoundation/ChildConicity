@@ -22,9 +22,10 @@ class QuarterlySampleTransformer:
         outputs = {
             "adults": {},
             "children": {},
+            "other_children": {},
         }
 
-        for speaker_group in ("adults", "children"):
+        for speaker_group in ("adults", "children", "other_children"):
             group_dir = self.base_dir / speaker_group
             if not group_dir.exists():
                 continue

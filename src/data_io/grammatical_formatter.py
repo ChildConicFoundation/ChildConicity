@@ -32,8 +32,22 @@ class GrammaticalDataFormatter:
 
         return category.casefold() in self.grammatical_categories
 
-    def is_children(self, speaker_code):
-        return speaker_code == "CHI"
+    def classify_speaker(
+        self,
+        speaker_code,
+        target_child_speakers=None,
+        other_child_speakers=None,
+    ):
+        if target_child_speakers is None:
+            target_child_speakers = {"CHI"}
+        if other_child_speakers is None:
+            other_child_speakers = set()
+
+        if speaker_code in target_child_speakers:
+            return "target_child"
+        if speaker_code in other_child_speakers:
+            return "other_child"
+        return "adult"
 
     def format_cha_data_from(self, file_path):
         """
@@ -45,13 +59,22 @@ class GrammaticalDataFormatter:
             return None, None
 
         return self.format_morphological_utterances(
-            data["metadata"]["morphological_utterances"]
+            data["metadata"]["morphological_utterances"],
+            set(data["metadata"].get("target_child_speakers", ["CHI"])),
+            set(data["metadata"].get("other_child_speakers", [])),
         )
 
-    def format_morphological_utterances(self, morphological_utterances):
+    def format_morphological_utterances(
+        self,
+        morphological_utterances,
+        target_child_speakers=None,
+        other_child_speakers=None,
+    ):
         children_data = {}
+        other_children_data = {}
         adults_data = {}
         child_counter = 1
+        other_child_counter = 1
         adult_counter = 1
 
         for utterance in morphological_utterances:
@@ -61,14 +84,22 @@ class GrammaticalDataFormatter:
 
                 entry = self._build_entry(utterance, token)
 
-                if self.is_children(utterance["speaker"]):
+                speaker_group = self.classify_speaker(
+                    utterance["speaker"],
+                    target_child_speakers,
+                    other_child_speakers,
+                )
+                if speaker_group == "target_child":
                     children_data[child_counter] = entry
                     child_counter += 1
+                elif speaker_group == "other_child":
+                    other_children_data[other_child_counter] = entry
+                    other_child_counter += 1
                 else:
                     adults_data[adult_counter] = entry
                     adult_counter += 1
 
-        return children_data, adults_data
+        return children_data, other_children_data, adults_data
 
     def _build_entry(self, utterance, token):
         return {

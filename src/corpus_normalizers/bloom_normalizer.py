@@ -6,7 +6,7 @@ from src.corpus_normalizers.child_subdir_normalizer import (
     process_directory as _process_directory,
 )
 
-CORPUS_NAME = "Post"
+CORPUS_NAME = "Bloom"
 
 
 def extract_age(file_path):

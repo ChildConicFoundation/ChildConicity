@@ -16,9 +16,10 @@ class GrammaticalCategoriesExporter:
         outputs = {
             "adults": {"Raw": {}, "WordCount": {}},
             "children": {"Raw": {}, "WordCount": {}},
+            "other_children": {"Raw": {}, "WordCount": {}},
         }
 
-        for speaker_group in ("adults", "children"):
+        for speaker_group in ("adults", "children", "other_children"):
             group_dir = self.output_dir / speaker_group
             group_dir.mkdir(parents=True, exist_ok=True)
             self._clear_previous_exports(group_dir)
@@ -31,7 +32,11 @@ class GrammaticalCategoriesExporter:
 
             for quarter, quarter_data in sorted(grouped_data.items()):
                 data_key = f"{speaker_group}_data"
-                rows = self._build_rows(quarter, speaker_group, quarter_data[data_key])
+                rows = self._build_rows(
+                    quarter,
+                    speaker_group,
+                    quarter_data.get(data_key, {}),
+                )
                 payload = {
                     "quarter": quarter,
                     "speaker_group": speaker_group,

@@ -1,6 +1,17 @@
 import re
 import os
 
+TARGET_CHILD_PARTICIPANT_ROLES = {
+    "target_child",
+}
+
+OTHER_CHILD_PARTICIPANT_ROLES = {
+    "child",
+    "sibling",
+    "sister",
+    "brother",
+}
+
 
 class Reader:
     def __init__(self):
@@ -60,6 +71,10 @@ class Reader:
                 'date': self._extract_date(content),
                 'child_age': self._extract_child_age(content),
                 'child_name': self._extract_child_name(content),
+                'participant_roles': self._extract_participant_roles(content),
+                'target_child_speakers': self._extract_target_child_speakers(content),
+                'other_child_speakers': self._extract_other_child_speakers(content),
+                'child_speakers': self._extract_child_speakers(content),
                 'types': self._extract_types(content),
                 'utterances': self._extract_utterances(content),
                 'morphological_utterances': self._extract_morphological_utterances(content),
@@ -142,6 +157,56 @@ class Reader:
             if 'CHI' in code:
                 return name.split()[0]  # Tomamos solo el primer nombre
         return None
+
+    def _extract_participant_roles(self, content):
+        """Extrae los roles semánticos de cada participante a partir de @ID."""
+        participant_roles = {}
+
+        for line in content.split('\n'):
+            if not line.startswith('@ID:'):
+                continue
+
+            fields = [field.strip() for field in line.split(':', 1)[1].split('|')]
+            if len(fields) < 8:
+                continue
+
+            speaker_code = fields[2]
+            participant_role = fields[7]
+            if speaker_code:
+                participant_roles[speaker_code] = participant_role
+
+        return participant_roles
+
+    def _extract_target_child_speakers(self, content):
+        """Obtiene los códigos de hablantes del niño bajo estudio."""
+        target_child_speakers = {"CHI"}
+
+        for speaker_code, participant_role in self._extract_participant_roles(
+            content
+        ).items():
+            if participant_role.casefold() in TARGET_CHILD_PARTICIPANT_ROLES:
+                target_child_speakers.add(speaker_code)
+
+        return sorted(target_child_speakers)
+
+    def _extract_other_child_speakers(self, content):
+        """Obtiene los códigos de otros hablantes infantiles distintos del objetivo."""
+        other_child_speakers = set()
+
+        for speaker_code, participant_role in self._extract_participant_roles(
+            content
+        ).items():
+            if participant_role.casefold() in OTHER_CHILD_PARTICIPANT_ROLES:
+                other_child_speakers.add(speaker_code)
+
+        other_child_speakers.discard("CHI")
+        return sorted(other_child_speakers)
+
+    def _extract_child_speakers(self, content):
+        """Obtiene todos los códigos de hablantes infantiles."""
+        child_speakers = set(self._extract_target_child_speakers(content))
+        child_speakers.update(self._extract_other_child_speakers(content))
+        return sorted(child_speakers)
 
     def _extract_types(self, content):
         """Extrae los tipos del archivo."""

@@ -1,6 +1,7 @@
 import os
 from dataclasses import dataclass
 
+from src.corpus_normalizers.bloom_normalizer import process_directory as process_bloom
 from src.corpus_normalizers.brent_normalizer import BrendManipulator
 from src.corpus_normalizers.newengland_normalizer import (
     process_directory as process_newengland,
@@ -42,6 +43,15 @@ class CorpusInitializer:
         process_post(self._source_dir("Post"), self._output_dir("Post"))
         print("¡Corpus de Post inicializado!")
 
+    def initialize_bloom(self):
+        """Inicializa el corpus de Bloom."""
+        print("\nInicializando corpus de Bloom...")
+        process_bloom(
+            self._source_dir("Bloom"),
+            self._output_dir("Bloom"),
+        )
+        print("¡Corpus de Bloom inicializado!")
+
     def initialize_van_kleeck(self):
         """Inicializa el corpus de VanKleeck."""
         print("\nInicializando corpus de VanKleeck...")
@@ -54,6 +64,7 @@ class CorpusInitializer:
         self.initialize_brent()
         self.initialize_new_england()
         self.initialize_post()
+        self.initialize_bloom()
         self.initialize_van_kleeck()
         print("\n¡Inicialización de corpus completada!")
 

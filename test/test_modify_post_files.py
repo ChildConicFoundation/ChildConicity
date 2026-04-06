@@ -1,7 +1,11 @@
 import os
 import pytest
 import shutil
-from src.corpus_normalizers.post_normalizer import extract_age, modify_cha_file, process_directory
+from src.corpus_normalizers.post_normalizer import (
+    extract_age,
+    modify_cha_file,
+    process_directory,
+)
 
 @pytest.fixture
 def test_files():
@@ -64,15 +68,23 @@ def test_extract_age():
     
     expected_age = "1 years 06 months 26 days"
     assert extract_age(test_file) == expected_age
+
+    # Caso 2: Edad sin día explícito
+    test_content = "@ID: eng|Post|CHI|1;06.|male|TD||Target_Child|||"
+    with open(test_file, 'w', encoding='utf-8') as f:
+        f.write(test_content)
+
+    expected_age = "1 years 06 months 00 days"
+    assert extract_age(test_file) == expected_age
     
-    # Caso 2: Archivo sin edad
+    # Caso 3: Archivo sin edad
     test_content = "@ID: eng|Post|CHI||male|TD||Target_Child|||"
     with open(test_file, 'w', encoding='utf-8') as f:
         f.write(test_content)
     
     assert extract_age(test_file) is None
     
-    # Caso 3: Archivo vacío
+    # Caso 4: Archivo vacío
     with open(test_file, 'w', encoding='utf-8') as f:
         f.write("")
     

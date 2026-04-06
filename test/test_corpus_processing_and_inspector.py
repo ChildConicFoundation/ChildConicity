@@ -24,12 +24,17 @@ def test_process_data_with_formatter_preserves_structure_and_splits_speakers():
     }
 
     with patch("src.data_io.corpus_processing.DataFormatter.format_cha_data_from") as mock_format:
-        mock_format.return_value = ({"1": {"text": "ball"}}, {"1": {"text": "look"}})
+        mock_format.return_value = (
+            {"1": {"text": "ball"}},
+            {},
+            {"1": {"text": "look"}},
+        )
         result = process_data_with_formatter(corpus_data)
 
     files = result["Corpus_modified"]["Post"]["Lew"]["files"]
     assert len(files) == 1
     assert files[0]["children_data"]["1"]["text"] == "ball"
+    assert files[0]["other_children_data"] == {}
     assert files[0]["adults_data"]["1"]["text"] == "look"
     assert files[0]["metadata"]["file_path"].endswith(".cha")
 

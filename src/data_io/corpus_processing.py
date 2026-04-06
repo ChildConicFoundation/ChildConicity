@@ -8,7 +8,7 @@ def process_data_with_formatter(corpus_data):
     """
     result = {"Corpus_modified": {}}
 
-    for corpus_name in ["Brent", "NewEngland", "Post", "VanKleeck"]:
+    for corpus_name in ["Brent", "NewEngland", "Post", "Bloom", "VanKleeck"]:
         if corpus_name not in corpus_data["Corpus_modified"]:
             continue
 
@@ -27,11 +27,16 @@ def process_data_with_formatter(corpus_data):
                     continue
 
                 formatter = DataFormatter()
-                children_data, adults_data = formatter.format_cha_data_from(file_path)
+                (
+                    children_data,
+                    other_children_data,
+                    adults_data,
+                ) = formatter.format_cha_data_from(file_path)
 
                 processed_file = {
                     "metadata": file["metadata"].copy(),
                     "children_data": children_data,
+                    "other_children_data": other_children_data,
                     "adults_data": adults_data,
                 }
                 result["Corpus_modified"][corpus_name][dir_name]["files"].append(

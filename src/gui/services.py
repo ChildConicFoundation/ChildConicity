@@ -1,6 +1,12 @@
+import os
+
 from src.analysis.age_group_analysis import (
     create_age_group_statistics,
     process_valid_words_by_age_group,
+)
+from src.analysis.grammatical_type_analysis import (
+    create_grammatical_type_stats,
+    create_grammatical_type_stats_by_category,
 )
 from src.analysis.iconicity_model import IconicityModel
 from src.data_io.corpus_processing import process_data_with_formatter
@@ -11,6 +17,7 @@ from src.data_io.corpus_selection import (
 from src.data_io.data_formatter import DataFormatter
 from src.data_io.grammatical_corpus_processing import (
     collect_grammatical_categories,
+    process_grammatical_data_with_formatter,
     run_grammatical_pipeline,
 )
 from src.data_io.reader import Reader
@@ -22,12 +29,27 @@ DEFAULT_TYPES_OUTPUT_DIR = "quarterly_grammatical_categories"
 DEFAULT_ICONICITY_CSV = "iconicity_ratings_cleaned.csv"
 DEFAULT_PLOTS_DIR = "iconic_vs_noniconic"
 DEFAULT_DISTRIBUTION_DIR = "pruebas"
+DEFAULT_PLOT_COUNT_CRITERIA = ("adults", "children")
 
 
 def load_corpus_data(processed_root, selected_corpora=None):
     reader = Reader()
-    corpus_data = reader.read_directory(processed_root)
-    return filter_corpus_data(corpus_data, selected_corpora)
+    if selected_corpora is None:
+        corpus_data = reader.read_directory(processed_root)
+        return filter_corpus_data(corpus_data, selected_corpora)
+
+    root_name = os.path.basename(os.path.normpath(processed_root))
+    filtered_root = {}
+    for corpus_name in selected_corpora:
+        corpus_path = os.path.join(processed_root, corpus_name)
+        if not os.path.isdir(corpus_path):
+            continue
+
+        corpus_data = reader.read_directory(corpus_path)
+        if corpus_name in corpus_data:
+            filtered_root[corpus_name] = corpus_data[corpus_name]
+
+    return {root_name: filtered_root}
 
 
 def get_available_corpora(processed_root):
@@ -44,13 +66,53 @@ def run_types_analysis(
     selected_corpora=None,
     categories=None,
     output_dir=DEFAULT_TYPES_OUTPUT_DIR,
+    iconicity_csv=DEFAULT_ICONICITY_CSV,
+    generate_plots=False,
+    plots_dir=None,
+    plot_count_criteria=DEFAULT_PLOT_COUNT_CRITERIA,
 ):
+    corpora_to_load = selected_corpora or get_available_corpora(processed_root)
+    print(f"Cargando corpus procesado desde {processed_root}...")
+    print(
+        "Corpus a cargar "
+        f"({len(corpora_to_load)}): {', '.join(corpora_to_load) if corpora_to_load else '(ninguno)'}"
+    )
     corpus_data = load_corpus_data(processed_root, selected_corpora)
-    return run_grammatical_pipeline(
+    print("Corpus cargados.")
+    print("Procesando datos gramaticales y exportando resultados...")
+    result = run_grammatical_pipeline(
         corpus_data,
         output_dir=output_dir,
         grammatical_categories=categories,
     )
+    print("Exportación gramatical completada.")
+
+    if not generate_plots:
+        return result
+
+    print("Cargando ratings de iconicidad...")
+    formatter = DataFormatter()
+    csv_data = formatter.format_csv_data_from(iconicity_csv)
+    iconicity_model = IconicityModel(csv_data)
+
+    grouped_data_for_plots = result["grouped_data"]
+    if categories is not None:
+        print(
+            "Reprocesando datos sin filtro para mantener el total global de las gráficas..."
+        )
+        processed_data_for_plots = process_grammatical_data_with_formatter(corpus_data)
+        grouped_data_for_plots = group_data_by_age(processed_data_for_plots)
+
+    print("Generando gráficas de types...")
+    result = result.copy()
+    result["plot_outputs"] = _generate_type_plots(
+        grouped_data_for_plots,
+        iconicity_model,
+        categories_to_plot=categories,
+        plot_count_criteria=plot_count_criteria,
+        plots_dir=plots_dir or _default_types_plots_dir(output_dir, categories),
+    )
+    return result
 
 
 def run_tokens_analysis(
@@ -62,22 +124,34 @@ def run_tokens_analysis(
     plots_dir=DEFAULT_PLOTS_DIR,
     distribution_dir=DEFAULT_DISTRIBUTION_DIR,
 ):
+    corpora_to_load = selected_corpora or get_available_corpora(processed_root)
+    print(f"Cargando corpus procesado desde {processed_root}...")
+    print(
+        "Corpus a cargar "
+        f"({len(corpora_to_load)}): {', '.join(corpora_to_load) if corpora_to_load else '(ninguno)'}"
+    )
     corpus_data = load_corpus_data(processed_root, selected_corpora)
+    print("Corpus cargados.")
+    print("Procesando corpus por tokens...")
     processed_data = process_data_with_formatter(corpus_data)
     grouped_data = group_data_by_age(processed_data)
 
+    print("Cargando ratings de iconicidad...")
     formatter = DataFormatter()
     csv_data = formatter.format_csv_data_from(iconicity_csv)
     iconicity_model = IconicityModel(csv_data)
 
+    print("Calculando estadísticas por grupo de edad...")
     age_group_stats = create_age_group_statistics(grouped_data, iconicity_model)
     valid_words_stats = process_valid_words_by_age_group(
         age_group_stats, iconicity_model
     )
+    print("Exportando estadísticas de palabras válidas...")
     outputs = ValidWordsStatsExporter(output_dir).export(valid_words_stats)
 
     plot_outputs = None
     if generate_plots:
+        print("Generando gráficas de tokens...")
         plot_outputs = _generate_token_plots(
             valid_words_stats,
             plots_dir=plots_dir,
@@ -131,3 +205,104 @@ def _generate_token_plots(valid_words_stats, plots_dir, distribution_dir):
             "all_children_distribution": all_children_path,
         },
     }
+
+
+def _generate_type_plots(
+    grouped_data,
+    iconicity_model,
+    plots_dir,
+    categories_to_plot=None,
+    plot_count_criteria=DEFAULT_PLOT_COUNT_CRITERIA,
+):
+    import os
+
+    from src.visualization.data_analysis_plotter import DataAnalysisPlotter
+
+    os.makedirs(plots_dir, exist_ok=True)
+
+    print("Preparando estadísticas globales para las gráficas...")
+    total_stats = create_grammatical_type_stats(grouped_data, iconicity_model)
+    stats_by_scope = {"total": total_stats}
+    print("Preparando estadísticas por categoría...")
+    category_stats = create_grammatical_type_stats_by_category(
+        grouped_data,
+        iconicity_model,
+    )
+    selected_category_stats = _select_type_plot_categories(
+        category_stats,
+        categories_to_plot,
+    )
+    stats_by_scope.update(selected_category_stats)
+    print(
+        "Categorías incluidas en las gráficas: "
+        f"{len(selected_category_stats)}"
+    )
+    print(
+        "Renderizando imágenes por grupo de edad: "
+        f"{len(total_stats)}"
+    )
+
+    files = DataAnalysisPlotter(total_stats).plot_iconicity_distribution_scopes_by_age_group(
+        stats_by_scope,
+        save_dir=plots_dir,
+        filename_prefix="distribucion_iconicidad_types",
+        title_suffix=" - Types",
+        speaker_groups_to_plot=plot_count_criteria,
+        print_progress=True,
+        print_warnings=False,
+    )
+
+    return {
+        "plots_dir": plots_dir,
+        "files": files,
+    }
+
+
+def _select_type_plot_categories(category_stats, categories_to_plot):
+    if categories_to_plot is None:
+        return category_stats
+
+    selected_categories = {
+        category.casefold()
+        for category in categories_to_plot
+    }
+    return {
+        category: stats
+        for category, stats in category_stats.items()
+        if category.casefold() in selected_categories
+    }
+
+
+def _default_types_plots_dir(output_dir, categories_to_plot=None):
+    import os
+
+    return os.path.join(
+        output_dir or DEFAULT_TYPES_OUTPUT_DIR,
+        _types_plots_dir_name(categories_to_plot),
+    )
+
+
+def _types_plots_dir_name(categories_to_plot=None):
+    if categories_to_plot is None:
+        return "plots_count_criteria_all"
+
+    categories = [
+        _safe_plot_dir_part(category)
+        for category in categories_to_plot
+        if _safe_plot_dir_part(category)
+    ]
+    if not categories:
+        return "plots_count_criteria_all"
+
+    return "plots_count_criteria_" + "_".join(categories)
+
+
+def _safe_plot_dir_part(value):
+    safe_chars = []
+    for char in str(value).casefold():
+        if char.isalnum():
+            safe_chars.append(char)
+        else:
+            safe_chars.append("_")
+
+    return "_".join("".join(safe_chars).split("_"))

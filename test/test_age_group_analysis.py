@@ -4,6 +4,11 @@ from src.analysis.age_group_analysis import (
     print_valid_words_statistics,
     process_valid_words_by_age_group,
 )
+from src.analysis.grammatical_type_analysis import (
+    collect_grouped_grammatical_categories,
+    create_grammatical_type_stats,
+    create_grammatical_type_stats_by_category,
+)
 
 
 class FakeIconicityModel:
@@ -56,6 +61,63 @@ def test_process_valid_words_by_age_group_splits_iconic_and_non_iconic():
     assert valid_stats["01Y01Q"]["children"]["non_iconic_words"]["xxx"] == 1
     assert valid_stats["01Y01Q"]["adults"]["iconic_words"]["look"]["rating"] == 5.6
     assert valid_stats["01Y01Q"]["adults"]["non_iconic_words"]["yeah"] == 2
+
+
+def test_create_grammatical_type_stats_adapts_grouped_mor_lemmas_for_plotter():
+    grouped_data = {
+        "01Y01Q": {
+            "children_data": {
+                "1": {"category": "noun", "lemma": "Ball"},
+                "2": {"category": "noun", "lemma": "ball"},
+                "3": {"category": "verb", "lemma": "look"},
+                "4": {"category": "intj", "lemma": "zzz"},
+            },
+            "adults_data": {
+                "1": {"category": "verb", "lemma": "Look"},
+                "2": {"category": "noun", "lemma": "shoe"},
+            },
+        }
+    }
+    model = FakeIconicityModel(
+        {
+            "ball": {"rating": 3.3},
+            "look": {"rating": 5.6},
+            float("nan"): {"rating": 1.0},
+        }
+    )
+
+    stats = create_grammatical_type_stats(grouped_data, model)
+
+    assert stats["01Y01Q"]["children"]["total_words"] == 4
+    assert stats["01Y01Q"]["children"]["iconic_words"]["ball"] == {
+        "count": 2,
+        "rating": 3.3,
+    }
+    assert stats["01Y01Q"]["children"]["iconic_words"]["look"]["count"] == 1
+    assert stats["01Y01Q"]["children"]["non_iconic_words"]["zzz"] == 1
+    assert stats["01Y01Q"]["adults"]["iconic_words"]["look"]["count"] == 1
+    assert stats["01Y01Q"]["adults"]["non_iconic_words"]["shoe"] == 1
+
+
+def test_create_grammatical_type_stats_by_category_keeps_category_cuts_separate():
+    grouped_data = {
+        "01Y01Q": {
+            "children_data": {
+                "1": {"category": "noun", "lemma": "ball"},
+                "2": {"category": "verb", "lemma": "ball"},
+            },
+            "adults_data": {},
+        }
+    }
+    model = FakeIconicityModel({"ball": {"rating": 3.3}})
+
+    by_category = create_grammatical_type_stats_by_category(grouped_data, model)
+
+    assert collect_grouped_grammatical_categories(grouped_data) == ["noun", "verb"]
+    assert by_category["noun"]["01Y01Q"]["children"]["total_words"] == 1
+    assert by_category["verb"]["01Y01Q"]["children"]["total_words"] == 1
+    assert by_category["noun"]["01Y01Q"]["children"]["iconic_words"]["ball"]["count"] == 1
+    assert by_category["verb"]["01Y01Q"]["children"]["iconic_words"]["ball"]["count"] == 1
 
 
 def test_print_functions_emit_summary(capsys):

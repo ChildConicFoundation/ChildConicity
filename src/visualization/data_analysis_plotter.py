@@ -249,7 +249,14 @@ class DataAnalysisPlotter:
             plt.show()
         plt.close()
 
-    def plot_iconicity_distribution_by_age_group(self, save_dir: str = None):
+    def plot_iconicity_distribution_by_age_group(
+        self,
+        save_dir: str = None,
+        filename_prefix: str = "distribucion_iconicidad",
+        title_suffix: str = "",
+        print_statistics: bool = True,
+        print_warnings: bool = True,
+    ):
         """
         Genera gráficas de distribución acumulativa de iconicidad para cada grupo de edad,
         comparando niños y adultos. El eje Y representa el porcentaje acumulativo de ocurrencias
@@ -257,8 +264,15 @@ class DataAnalysisPlotter:
         
         Args:
             save_dir (str, optional): Directorio donde guardar las gráficas. Si es None, las gráficas se muestran en pantalla.
+            filename_prefix (str, optional): Prefijo de los archivos generados.
+            title_suffix (str, optional): Texto para distinguir el conjunto de datos graficado.
+            print_statistics (bool, optional): Si es True, imprime el resumen usado por las graficas.
+            print_warnings (bool, optional): Si es True, avisa cuando un grupo no tiene datos.
         """
-        print_valid_words_statistics(self.data)
+        if print_statistics:
+            print_valid_words_statistics(self.data)
+
+        generated_paths = []
 
         for age_group, stats in sorted(self.data.items()):
             # Obtener las palabras con rating para adultos y niños
@@ -270,7 +284,8 @@ class DataAnalysisPlotter:
             has_children_data = len(children_words_with_rating) > 0
 
             if not has_adult_data and not has_children_data:
-                print(f"\nNo hay datos de iconicidad para el grupo de edad {age_group}")
+                if print_warnings:
+                    print(f"\nNo hay datos de iconicidad para el grupo de edad {age_group}")
                 continue
 
             # Crear listas de (rating, count) para adultos y niños
@@ -296,7 +311,8 @@ class DataAnalysisPlotter:
                 max_rating = max(max_rating, max(r for r, _ in children_ratings_counts))
 
             if min_rating == float('inf') or max_rating == float('-inf'):
-                print(f"\nNo se pudieron calcular los rangos de iconicidad para el grupo de edad {age_group}")
+                if print_warnings:
+                    print(f"\nNo se pudieron calcular los rangos de iconicidad para el grupo de edad {age_group}")
                 continue
 
             # Crear bins para la iconicidad
@@ -351,19 +367,213 @@ class DataAnalysisPlotter:
             
             plt.xlabel('Iconicidad')
             plt.ylabel('Porcentaje acumulado de palabras (%)')
-            plt.title(f'Distribución acumulativa de iconicidad - Grupo {age_group}')
+            plt.title(f'Distribución acumulativa de iconicidad{title_suffix} - Grupo {age_group}')
             plt.legend()
             plt.grid(True)
             
             # Guardar o mostrar la gráfica
             if save_dir:
                 os.makedirs(save_dir, exist_ok=True)
-                plt.savefig(os.path.join(save_dir, f'distribucion_iconicidad_{age_group}.png'), 
-                           bbox_inches='tight', dpi=300)
+                save_path = os.path.join(save_dir, f'{filename_prefix}_{age_group}.png')
+                plt.savefig(save_path, bbox_inches='tight', dpi=300)
+                generated_paths.append(save_path)
                 plt.close()
             else:
                 plt.show()
                 plt.close()
+
+        return generated_paths
+
+    def plot_iconicity_distribution_scopes_by_age_group(
+        self,
+        stats_by_scope: Dict[str, Dict[str, Dict[str, Any]]],
+        save_dir: str = None,
+        filename_prefix: str = "distribucion_iconicidad",
+        title_suffix: str = "",
+        speaker_groups_to_plot=None,
+        print_progress: bool = False,
+        print_warnings: bool = True,
+    ):
+        """
+        Genera una imagen por edad con varias curvas superpuestas.
+
+        Args:
+            stats_by_scope (dict): Mapa de etiqueta a datos con el mismo formato
+                que consume DataAnalysisPlotter.
+            save_dir (str, optional): Directorio donde guardar las graficas.
+            filename_prefix (str, optional): Prefijo de los archivos generados.
+            title_suffix (str, optional): Texto para distinguir el conjunto de datos.
+            speaker_groups_to_plot (iterable, optional): Grupos de hablantes que
+                se deben dibujar. Por defecto dibuja adultos y ninos.
+            print_warnings (bool, optional): Si es True, avisa cuando un grupo no tiene datos.
+        """
+        generated_paths = []
+        age_groups = sorted(
+            {
+                age_group
+                for scoped_stats in stats_by_scope.values()
+                for age_group in scoped_stats
+            }
+        )
+
+        for index, age_group in enumerate(age_groups, start=1):
+            if print_progress:
+                print(
+                    "Renderizando gráfica "
+                    f"{index}/{len(age_groups)}: {age_group}"
+                )
+            series = self._build_iconicity_distribution_series_for_age_group(
+                stats_by_scope,
+                age_group,
+                speaker_groups_to_plot=speaker_groups_to_plot,
+            )
+
+            if not series:
+                if print_warnings:
+                    print(f"\nNo hay datos de iconicidad para el grupo de edad {age_group}")
+                continue
+
+            min_rating = min(
+                rating
+                for serie in series
+                for rating, _ in serie["ratings_counts"]
+            )
+            max_rating = max(
+                rating
+                for serie in series
+                for rating, _ in serie["ratings_counts"]
+            )
+            x_axis = np.arange(min_rating, max_rating + 0.25, 0.25)
+
+            plt.figure(figsize=(12, 8))
+            for serie in series:
+                cumulative = self._calculate_cumulative_counts(
+                    serie["ratings_counts"],
+                    x_axis,
+                )
+                plt.plot(
+                    x_axis,
+                    cumulative / serie["denominator"] * 100,
+                    label=serie["label"],
+                    marker=serie["marker"],
+                    markersize=3,
+                    linewidth=serie["linewidth"],
+                    alpha=serie["alpha"],
+                )
+
+            plt.xlabel('Iconicidad')
+            plt.ylabel('Porcentaje acumulado de palabras (%)')
+            plt.title(f'Distribución acumulativa de iconicidad{title_suffix} - Grupo {age_group}')
+            plt.legend(bbox_to_anchor=(1.05, 1), loc='upper left')
+            plt.grid(True)
+            plt.tight_layout()
+
+            if save_dir:
+                os.makedirs(save_dir, exist_ok=True)
+                save_path = os.path.join(save_dir, f'{filename_prefix}_{age_group}.png')
+                plt.savefig(save_path, bbox_inches='tight', dpi=300)
+                generated_paths.append(save_path)
+                plt.close()
+            else:
+                plt.show()
+                plt.close()
+
+        return generated_paths
+
+    def _build_iconicity_distribution_series_for_age_group(
+        self,
+        stats_by_scope,
+        age_group,
+        speaker_groups_to_plot=None,
+    ):
+        series = []
+        denominators = self._get_total_scope_denominators(stats_by_scope, age_group)
+        speaker_groups = self._get_speaker_groups_to_plot(speaker_groups_to_plot)
+
+        for scope_name, scoped_stats in stats_by_scope.items():
+            age_stats = scoped_stats.get(age_group)
+            if not age_stats:
+                continue
+
+            for speaker_group, speaker_label, marker in speaker_groups:
+                group_stats = age_stats.get(speaker_group)
+                if not group_stats or not group_stats["iconic_words"]:
+                    continue
+
+                ratings_counts = [
+                    (word_data["rating"], word_data["count"])
+                    for word_data in group_stats["iconic_words"].values()
+                ]
+                total_words = sum(count for _, count in ratings_counts)
+                if total_words <= 0:
+                    continue
+
+                is_total = scope_name == "total"
+                denominator = denominators.get(speaker_group, total_words)
+                if denominator <= 0:
+                    continue
+
+                series.append(
+                    {
+                        "label": f"{speaker_label} - {scope_name}",
+                        "ratings_counts": ratings_counts,
+                        "total_words": total_words,
+                        "denominator": denominator,
+                        "marker": marker,
+                        "linewidth": 2.4 if is_total else 1.3,
+                        "alpha": 0.95 if is_total else 0.65,
+                    }
+                )
+
+        return series
+
+    def _get_speaker_groups_to_plot(self, speaker_groups_to_plot):
+        all_speaker_groups = {
+            "adults": ("adults", "Adultos", "o"),
+            "children": ("children", "Niños", "s"),
+        }
+
+        if speaker_groups_to_plot is None:
+            return [
+                all_speaker_groups["adults"],
+                all_speaker_groups["children"],
+            ]
+
+        return [
+            all_speaker_groups[speaker_group]
+            for speaker_group in speaker_groups_to_plot
+            if speaker_group in all_speaker_groups
+        ]
+
+    def _get_total_scope_denominators(self, stats_by_scope, age_group):
+        total_age_stats = stats_by_scope.get("total", {}).get(age_group, {})
+        denominators = {}
+
+        for speaker_group in ("adults", "children"):
+            group_stats = total_age_stats.get(speaker_group, {})
+            denominators[speaker_group] = group_stats.get(
+                "total_iconic_occurrences",
+                0,
+            )
+
+        return denominators
+
+    def _calculate_cumulative_counts(self, ratings_counts, x_axis):
+        sorted_ratings = sorted(ratings_counts, key=lambda x: x[0])
+        cumulative = np.zeros(len(x_axis))
+        current_count = 0
+        current_bin = 0
+
+        for rating, count in sorted_ratings:
+            while current_bin < len(x_axis) and rating > x_axis[current_bin]:
+                cumulative[current_bin] = current_count
+                current_bin += 1
+            current_count += count
+
+        for index in range(current_bin, len(x_axis)):
+            cumulative[index] = current_count
+
+        return cumulative
 
     def plot_all_adults_iconicity_distribution(self, save_path: str = None):
         """

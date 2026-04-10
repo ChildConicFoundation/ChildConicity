@@ -7,7 +7,13 @@ PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 if PROJECT_ROOT not in sys.path:
     sys.path.insert(0, PROJECT_ROOT)
 
-from src.gui.services import run_tokens_analysis, run_types_analysis
+from src.gui.services import (
+    DEFAULT_TYPE_COUNT_MODE,
+    TYPE_COUNT_ONLY_ONCE,
+    TYPE_COUNT_WITH_REPETITIONS,
+    run_tokens_analysis,
+    run_types_analysis,
+)
 
 
 def main(argv=None):
@@ -28,6 +34,11 @@ def main(argv=None):
         action="append",
         dest="plot_count_criteria",
     )
+    parser.add_argument(
+        "--type-count-mode",
+        choices=(TYPE_COUNT_WITH_REPETITIONS, TYPE_COUNT_ONLY_ONCE),
+        default=DEFAULT_TYPE_COUNT_MODE,
+    )
     parser.add_argument("--result-file", required=True)
     args = parser.parse_args(argv)
 
@@ -38,7 +49,8 @@ def main(argv=None):
         f" mode={args.mode},"
         f" corpora={selected_corpora if selected_corpora else 'todos'},"
         f" plots={'si' if args.generate_plots else 'no'},"
-        f" categories={categories if categories else 'todas'}"
+        f" categories={categories if categories else 'todas'},"
+        f" type_count_mode={args.type_count_mode}"
     )
     sys.stdout.flush()
 
@@ -54,6 +66,7 @@ def main(argv=None):
             plot_count_criteria=tuple(args.plot_count_criteria)
             if args.plot_count_criteria
             else None,
+            type_count_mode=args.type_count_mode,
         )
     else:
         result = run_tokens_analysis(

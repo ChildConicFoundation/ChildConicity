@@ -16,7 +16,10 @@ from src.gui.services import (
     DEFAULT_DISTRIBUTION_DIR,
     DEFAULT_PLOTS_DIR,
     DEFAULT_TOKENS_OUTPUT_DIR,
+    DEFAULT_TYPE_COUNT_MODE,
     DEFAULT_TYPES_OUTPUT_DIR,
+    TYPE_COUNT_ONLY_ONCE,
+    TYPE_COUNT_WITH_REPETITIONS,
     get_available_categories,
     get_available_corpora,
 )
@@ -117,6 +120,7 @@ class ChildConicityApp(tk.Tk):
         self.output_dir = tk.StringVar(value=DEFAULT_TOKENS_OUTPUT_DIR)
         self.mode = tk.StringVar(value="tokens")
         self.all_categories = tk.BooleanVar(value=True)
+        self.type_count_mode = tk.StringVar(value=DEFAULT_TYPE_COUNT_MODE)
         self.status_text = tk.StringVar(value="Listo.")
 
         self._log_queue = queue.Queue()
@@ -147,13 +151,19 @@ class ChildConicityApp(tk.Tk):
         self.types_frame.pack(fill="both", expand=False, pady=(12, 0))
         self._build_types_ui(self.types_frame)
 
-        actions_frame = ttk.Frame(main_frame)
-        actions_frame.pack(fill="x", pady=(12, 0))
-        self._build_actions_ui(actions_frame)
+        self.type_count_frame = ttk.LabelFrame(
+            main_frame, text="Cómo contar en las gráficas de types", padding=10
+        )
+        self.type_count_frame.pack(fill="x", pady=(12, 0))
+        self._build_type_count_ui(self.type_count_frame)
 
-        log_frame = ttk.LabelFrame(main_frame, text="Registro", padding=10)
-        log_frame.pack(fill="both", expand=True, pady=(12, 0))
-        self.log_text = ScrolledText(log_frame, height=18, wrap="word")
+        self.actions_frame = ttk.Frame(main_frame)
+        self.actions_frame.pack(fill="x", pady=(12, 0))
+        self._build_actions_ui(self.actions_frame)
+
+        self.log_frame = ttk.LabelFrame(main_frame, text="Registro", padding=10)
+        self.log_frame.pack(fill="both", expand=True, pady=(12, 0))
+        self.log_text = ScrolledText(self.log_frame, height=18, wrap="word")
         self.log_text.pack(fill="both", expand=True)
 
         self._sync_mode_ui()
@@ -268,6 +278,32 @@ class ChildConicityApp(tk.Tk):
         )
         self.categories_listbox.pack(fill="x", pady=(8, 0))
 
+    def _build_type_count_ui(self, parent):
+        ttk.Label(
+            parent,
+            text="Elige si las gráficas deben usar las repeticiones reales o contar cada forma solo una vez.",
+            wraplength=860,
+            justify="left",
+        ).pack(anchor="w")
+
+        with_repetitions_radio = ttk.Radiobutton(
+            parent,
+            text="Con repeticiones",
+            value=TYPE_COUNT_WITH_REPETITIONS,
+            variable=self.type_count_mode,
+        )
+        with_repetitions_radio.pack(anchor="w", pady=(8, 0))
+        self._busy_widgets.append(with_repetitions_radio)
+
+        only_once_radio = ttk.Radiobutton(
+            parent,
+            text="Una vez por forma",
+            value=TYPE_COUNT_ONLY_ONCE,
+            variable=self.type_count_mode,
+        )
+        only_once_radio.pack(anchor="w", pady=(4, 0))
+        self._busy_widgets.append(only_once_radio)
+
     def _build_actions_ui(self, parent):
         self.run_analysis_button = ttk.Button(
             parent,
@@ -308,14 +344,22 @@ class ChildConicityApp(tk.Tk):
         self._refresh_categories()
 
     def _sync_mode_ui(self):
+        self.types_frame.pack_forget()
+        self.type_count_frame.pack_forget()
+        self.actions_frame.pack_forget()
+        self.log_frame.pack_forget()
+
         if self.mode.get() == "types":
             self.types_frame.pack(fill="both", expand=False, pady=(12, 0))
+            self.type_count_frame.pack(fill="x", pady=(12, 0))
             if self.output_dir.get() == DEFAULT_TOKENS_OUTPUT_DIR:
                 self.output_dir.set(DEFAULT_TYPES_OUTPUT_DIR)
         else:
-            self.types_frame.pack_forget()
             if self.output_dir.get() == DEFAULT_TYPES_OUTPUT_DIR:
                 self.output_dir.set(DEFAULT_TOKENS_OUTPUT_DIR)
+
+        self.actions_frame.pack(fill="x", pady=(12, 0))
+        self.log_frame.pack(fill="both", expand=True, pady=(12, 0))
 
         self._sync_categories_ui()
 
@@ -404,6 +448,7 @@ class ChildConicityApp(tk.Tk):
         output_dir = self.output_dir.get().strip()
         selected_corpora = self._get_selected_corpora()
         selected_categories = self._get_selected_categories()
+        type_count_mode = self.type_count_mode.get()
 
         validation_error = self._validate_analysis_inputs(
             processed_root,
@@ -438,6 +483,7 @@ class ChildConicityApp(tk.Tk):
                 generate_plots=generate_plots,
                 selected_corpora=selected_corpora,
                 selected_categories=selected_categories,
+                type_count_mode=type_count_mode,
             )
         )
 
@@ -526,6 +572,7 @@ class ChildConicityApp(tk.Tk):
         generate_plots,
         selected_corpora,
         selected_categories,
+        type_count_mode,
     ):
         writer = _QueueWriter(self._enqueue_log)
 
@@ -538,6 +585,7 @@ class ChildConicityApp(tk.Tk):
                     generate_plots=generate_plots,
                     selected_corpora=selected_corpora,
                     selected_categories=selected_categories,
+                    type_count_mode=type_count_mode,
                 )
                 self._report_analysis_result(
                     mode,
@@ -560,6 +608,7 @@ class ChildConicityApp(tk.Tk):
         generate_plots,
         selected_corpora,
         selected_categories,
+        type_count_mode,
     ):
         analysis_interpreter = _get_analysis_interpreter(mode, generate_plots)
         if analysis_interpreter is not None:
@@ -575,6 +624,7 @@ class ChildConicityApp(tk.Tk):
                 generate_plots=generate_plots,
                 selected_corpora=selected_corpora,
                 selected_categories=selected_categories,
+                type_count_mode=type_count_mode,
             )
 
         raise RuntimeError(
@@ -590,6 +640,7 @@ class ChildConicityApp(tk.Tk):
         generate_plots,
         selected_corpora,
         selected_categories,
+        type_count_mode,
     ):
         with tempfile.NamedTemporaryFile(
             delete=False,
@@ -623,6 +674,7 @@ class ChildConicityApp(tk.Tk):
                 command.extend(["--corpus", corpus_name])
 
         if mode == "types":
+            command.extend(["--type-count-mode", type_count_mode])
             if selected_categories:
                 for category in selected_categories:
                     command.extend(["--category", category])

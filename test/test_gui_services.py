@@ -1,6 +1,7 @@
 from unittest.mock import patch
 
 from src.gui.services import (
+    TYPE_COUNT_ONLY_ONCE,
     get_available_categories,
     get_available_corpora,
     load_corpus_data,
@@ -97,6 +98,7 @@ def test_run_types_analysis_can_generate_type_plots():
         mock_model.return_value,
         categories_to_plot=None,
         plot_count_criteria=("adults", "children"),
+        type_count_mode="with_repetitions",
         plots_dir="plots_types",
     )
 
@@ -138,7 +140,41 @@ def test_run_types_analysis_uses_category_named_plots_dir_by_default():
         mock_model.return_value,
         categories_to_plot=["adj", "noun"],
         plot_count_criteria=("adults", "children"),
+        type_count_mode="with_repetitions",
         plots_dir="salida_types/plots_count_criteria_adj_noun",
+    )
+
+
+def test_run_types_analysis_uses_only_once_plots_dir_suffix_by_default():
+    with patch("src.gui.services.load_corpus_data") as mock_load_corpus_data:
+        with patch("src.gui.services.run_grammatical_pipeline") as mock_run_pipeline:
+            with patch("src.gui.services.DataFormatter.format_csv_data_from"):
+                with patch("src.gui.services.IconicityModel") as mock_model:
+                    with patch("src.gui.services._generate_type_plots") as mock_plots:
+                        mock_load_corpus_data.return_value = {
+                            "Corpus_modified": {"Post": {}}
+                        }
+                        mock_run_pipeline.return_value = {
+                            "grouped_data": {"01Y01Q": {}},
+                            "outputs": {"children": {}},
+                        }
+                        mock_model.return_value = object()
+                        mock_plots.return_value = {"plots_dir": "ignored"}
+
+                        run_types_analysis(
+                            "Corpus_modified",
+                            output_dir="salida_types",
+                            generate_plots=True,
+                            type_count_mode=TYPE_COUNT_ONLY_ONCE,
+                        )
+
+    mock_plots.assert_called_once_with(
+        {"01Y01Q": {}},
+        mock_model.return_value,
+        categories_to_plot=None,
+        plot_count_criteria=("adults", "children"),
+        type_count_mode=TYPE_COUNT_ONLY_ONCE,
+        plots_dir="salida_types/plots_count_criteria_all_only_once",
     )
 
 

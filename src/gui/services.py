@@ -5,8 +5,12 @@ from src.analysis.age_group_analysis import (
     process_valid_words_by_age_group,
 )
 from src.analysis.grammatical_type_analysis import (
+    DEFAULT_TYPE_COUNT_MODE,
+    TYPE_COUNT_ONLY_ONCE,
+    TYPE_COUNT_WITH_REPETITIONS,
     create_grammatical_type_stats,
     create_grammatical_type_stats_by_category,
+    normalize_type_count_mode,
 )
 from src.analysis.iconicity_model import IconicityModel
 from src.data_io.corpus_processing import process_data_with_formatter
@@ -70,6 +74,7 @@ def run_types_analysis(
     generate_plots=False,
     plots_dir=None,
     plot_count_criteria=DEFAULT_PLOT_COUNT_CRITERIA,
+    type_count_mode=DEFAULT_TYPE_COUNT_MODE,
 ):
     corpora_to_load = selected_corpora or get_available_corpora(processed_root)
     print(f"Cargando corpus procesado desde {processed_root}...")
@@ -105,12 +110,19 @@ def run_types_analysis(
 
     print("Generando gráficas de types...")
     result = result.copy()
+    selected_type_count_mode = normalize_type_count_mode(type_count_mode)
     result["plot_outputs"] = _generate_type_plots(
         grouped_data_for_plots,
         iconicity_model,
         categories_to_plot=categories,
         plot_count_criteria=plot_count_criteria,
-        plots_dir=plots_dir or _default_types_plots_dir(output_dir, categories),
+        type_count_mode=selected_type_count_mode,
+        plots_dir=plots_dir
+        or _default_types_plots_dir(
+            output_dir,
+            categories,
+            type_count_mode=selected_type_count_mode,
+        ),
     )
     return result
 
@@ -213,20 +225,27 @@ def _generate_type_plots(
     plots_dir,
     categories_to_plot=None,
     plot_count_criteria=DEFAULT_PLOT_COUNT_CRITERIA,
+    type_count_mode=DEFAULT_TYPE_COUNT_MODE,
 ):
     import os
 
     from src.visualization.data_analysis_plotter import DataAnalysisPlotter
 
+    selected_type_count_mode = normalize_type_count_mode(type_count_mode)
     os.makedirs(plots_dir, exist_ok=True)
 
     print("Preparando estadísticas globales para las gráficas...")
-    total_stats = create_grammatical_type_stats(grouped_data, iconicity_model)
+    total_stats = create_grammatical_type_stats(
+        grouped_data,
+        iconicity_model,
+        count_mode=selected_type_count_mode,
+    )
     stats_by_scope = {"total": total_stats}
     print("Preparando estadísticas por categoría...")
     category_stats = create_grammatical_type_stats_by_category(
         grouped_data,
         iconicity_model,
+        count_mode=selected_type_count_mode,
     )
     selected_category_stats = _select_type_plot_categories(
         category_stats,
@@ -246,7 +265,7 @@ def _generate_type_plots(
         stats_by_scope,
         save_dir=plots_dir,
         filename_prefix="distribucion_iconicidad_types",
-        title_suffix=" - Types",
+        title_suffix=f" - Types ({_type_count_mode_label(selected_type_count_mode)})",
         speaker_groups_to_plot=plot_count_criteria,
         print_progress=True,
         print_warnings=False,
@@ -273,28 +292,53 @@ def _select_type_plot_categories(category_stats, categories_to_plot):
     }
 
 
-def _default_types_plots_dir(output_dir, categories_to_plot=None):
+def _default_types_plots_dir(
+    output_dir,
+    categories_to_plot=None,
+    type_count_mode=DEFAULT_TYPE_COUNT_MODE,
+):
     import os
 
     return os.path.join(
         output_dir or DEFAULT_TYPES_OUTPUT_DIR,
-        _types_plots_dir_name(categories_to_plot),
+        _types_plots_dir_name(
+            categories_to_plot,
+            type_count_mode=type_count_mode,
+        ),
     )
 
 
-def _types_plots_dir_name(categories_to_plot=None):
+def _types_plots_dir_name(
+    categories_to_plot=None,
+    type_count_mode=DEFAULT_TYPE_COUNT_MODE,
+):
     if categories_to_plot is None:
-        return "plots_count_criteria_all"
+        base_name = "plots_count_criteria_all"
+    else:
+        categories = [
+            _safe_plot_dir_part(category)
+            for category in categories_to_plot
+            if _safe_plot_dir_part(category)
+        ]
+        if not categories:
+            base_name = "plots_count_criteria_all"
+        else:
+            base_name = "plots_count_criteria_" + "_".join(categories)
 
-    categories = [
-        _safe_plot_dir_part(category)
-        for category in categories_to_plot
-        if _safe_plot_dir_part(category)
-    ]
-    if not categories:
-        return "plots_count_criteria_all"
+    if normalize_type_count_mode(type_count_mode) == TYPE_COUNT_ONLY_ONCE:
+        return f"{base_name}_only_once"
 
-    return "plots_count_criteria_" + "_".join(categories)
+    return base_name
+
+
+def _type_count_mode_label(type_count_mode):
+    if type_count_mode == TYPE_COUNT_ONLY_ONCE:
+        return "Only once"
+
+    if type_count_mode == TYPE_COUNT_WITH_REPETITIONS:
+        return "With repetitions"
+
+    return "With repetitions"
 
 
 def _safe_plot_dir_part(value):

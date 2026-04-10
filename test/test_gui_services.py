@@ -1,6 +1,7 @@
 from unittest.mock import patch
 
 from src.gui.services import (
+    DEFAULT_GRAMMATICAL_CATEGORIES,
     TYPE_COUNT_ONLY_ONCE,
     get_available_categories,
     get_available_corpora,
@@ -29,20 +30,12 @@ def test_load_corpus_data_reads_and_filters_selected_corpora():
     mock_read_directory.assert_called_once_with("Corpus_modified/Post")
 
 
-def test_get_available_categories_uses_filtered_corpus_data():
-    with patch("src.gui.services.load_corpus_data") as mock_load_corpus_data:
-        with patch(
-            "src.gui.services.collect_grammatical_categories"
-        ) as mock_collect_categories:
-            mock_load_corpus_data.return_value = {"Corpus_modified": {"Post": {}}}
-            mock_collect_categories.return_value = ["noun", "verb"]
+def test_get_available_categories_returns_static_categories():
+    result = get_available_categories(
+        "Corpus_modified", selected_corpora=["Post"]
+    )
 
-            result = get_available_categories(
-                "Corpus_modified", selected_corpora=["Post"]
-            )
-
-    assert result == ["noun", "verb"]
-    mock_load_corpus_data.assert_called_once_with("Corpus_modified", ["Post"])
+    assert result == list(DEFAULT_GRAMMATICAL_CATEGORIES)
 
 
 def test_run_types_analysis_delegates_to_grammatical_pipeline():

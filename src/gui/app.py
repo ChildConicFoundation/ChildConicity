@@ -109,11 +109,14 @@ def _get_analysis_interpreter(mode, generate_plots):
     return None
 
 
+CATEGORY_COLUMN_COUNT = 3
+
+
 class ChildConicityApp(tk.Tk):
     def __init__(self):
         super().__init__()
         self.title("ChildConicity")
-        self.geometry("980x760")
+        self.geometry("980x720")
 
         self.source_root = tk.StringVar(value="Corpus")
         self.processed_root = tk.StringVar(value="Corpus_modified")
@@ -122,16 +125,42 @@ class ChildConicityApp(tk.Tk):
         self.all_categories = tk.BooleanVar(value=True)
         self.type_count_mode = tk.StringVar(value=DEFAULT_TYPE_COUNT_MODE)
         self.status_text = tk.StringVar(value="Listo.")
+        self.category_vars = {}
+        self.category_checkbuttons = []
+        self._is_closing = False
 
         self._log_queue = queue.Queue()
         self._busy = False
         self._busy_widgets = []
+        self.protocol("WM_DELETE_WINDOW", self._handle_close)
         self._build_ui()
         self._poll_log_queue()
+        self.after(0, self._initialize_available_data)
 
     def _build_ui(self):
-        main_frame = ttk.Frame(self, padding=12)
-        main_frame.pack(fill="both", expand=True)
+        outer_frame = ttk.Frame(self)
+        outer_frame.pack(fill="both", expand=True)
+
+        self.main_canvas = tk.Canvas(outer_frame, highlightthickness=0)
+        self.main_canvas.pack(side="left", fill="both", expand=True)
+
+        self.main_scrollbar = ttk.Scrollbar(
+            outer_frame,
+            orient="vertical",
+            command=self.main_canvas.yview,
+        )
+        self.main_scrollbar.pack(side="right", fill="y")
+
+        self.main_canvas.configure(yscrollcommand=self.main_scrollbar.set)
+
+        main_frame = ttk.Frame(self.main_canvas, padding=12)
+        self.main_canvas_window = self.main_canvas.create_window(
+            (0, 0),
+            window=main_frame,
+            anchor="nw",
+        )
+        main_frame.bind("<Configure>", self._on_main_frame_configure)
+        self.main_canvas.bind("<Configure>", self._on_main_canvas_configure)
 
         paths_frame = ttk.LabelFrame(main_frame, text="Rutas", padding=10)
         paths_frame.pack(fill="x")
@@ -163,7 +192,7 @@ class ChildConicityApp(tk.Tk):
 
         self.log_frame = ttk.LabelFrame(main_frame, text="Registro", padding=10)
         self.log_frame.pack(fill="both", expand=True, pady=(12, 0))
-        self.log_text = ScrolledText(self.log_frame, height=18, wrap="word")
+        self.log_text = ScrolledText(self.log_frame, height=12, wrap="word")
         self.log_text.pack(fill="both", expand=True)
 
         self._sync_mode_ui()
@@ -273,15 +302,71 @@ class ChildConicityApp(tk.Tk):
         all_categories_check.pack(anchor="w")
         self._busy_widgets.append(all_categories_check)
 
-        self.categories_listbox = tk.Listbox(
-            parent, selectmode=tk.MULTIPLE, exportselection=False, height=8
+        ttk.Label(
+            parent,
+            text="Selecciona una o varias categorías con casillas:",
+        ).pack(anchor="w", pady=(8, 4))
+
+        categories_container = ttk.Frame(parent)
+        categories_container.pack(fill="both", expand=False)
+
+        self.categories_canvas = tk.Canvas(
+            categories_container,
+            height=130,
+            highlightthickness=0,
         )
-        self.categories_listbox.pack(fill="x", pady=(8, 0))
+        self.categories_canvas.pack(side="left", fill="both", expand=True)
+
+        self.categories_scrollbar = ttk.Scrollbar(
+            categories_container,
+            orient="vertical",
+            command=self.categories_canvas.yview,
+        )
+        self.categories_scrollbar.pack(side="right", fill="y")
+
+        self.categories_canvas.configure(
+            yscrollcommand=self.categories_scrollbar.set
+        )
+
+        self.categories_inner_frame = ttk.Frame(self.categories_canvas)
+        self.categories_canvas_window = self.categories_canvas.create_window(
+            (0, 0),
+            window=self.categories_inner_frame,
+            anchor="nw",
+        )
+        self.categories_inner_frame.bind(
+            "<Configure>",
+            self._on_categories_frame_configure,
+        )
+        self.categories_canvas.bind(
+            "<Configure>",
+            self._on_categories_canvas_configure,
+        )
+        self._rebuild_category_checkboxes(
+            [],
+            selected_categories=set(),
+            empty_message="Pulsa 'Refrescar corpus' o espera a que se carguen las categorías.",
+        )
+
+        self.types_actions_frame = ttk.Frame(parent)
+        self.types_actions_frame.pack(fill="x", pady=(10, 0))
+
+        self.types_run_analysis_button = ttk.Button(
+            self.types_actions_frame,
+            text="Ejecutar análisis",
+            command=self._start_run_analysis,
+        )
+        self.types_run_analysis_button.pack(anchor="w")
+        self._busy_widgets.append(self.types_run_analysis_button)
 
     def _build_type_count_ui(self, parent):
         ttk.Label(
             parent,
-            text="Elige si las gráficas deben usar las repeticiones reales o contar cada forma solo una vez.",
+            text=(
+                "Elige si las gráficas deben usar las repeticiones reales o contar "
+                "cada forma solo una vez. Esto solo afecta a las gráficas de Types; "
+                "los JSON exportados siguen en formato estándar."
+            ),
             wraplength=860,
             justify="left",
         ).pack(anchor="w")
@@ -343,18 +428,63 @@ class ChildConicityApp(tk.Tk):
         self.corpora_listbox.select_set(0, tk.END)
         self._refresh_categories()
 
+    def _handle_close(self):
+        self._is_closing = True
+        self.destroy()
+
+    def _initialize_available_data(self):
+        processed_root = self.processed_root.get().strip()
+        if not processed_root or not os.path.isdir(processed_root):
+            self._rebuild_category_checkboxes(
+                [],
+                selected_categories=set(),
+                empty_message="No se encuentra la carpeta de corpus procesado.",
+            )
+            return
+
+        self._refresh_corpora()
+
+    def _on_categories_frame_configure(self, _event):
+        self.categories_canvas.configure(
+            scrollregion=self.categories_canvas.bbox("all")
+        )
+
+    def _on_main_frame_configure(self, _event):
+        self.main_canvas.configure(
+            scrollregion=self.main_canvas.bbox("all")
+        )
+
+    def _on_main_canvas_configure(self, event):
+        self.main_canvas.itemconfigure(
+            self.main_canvas_window,
+            width=event.width,
+        )
+
+    def _on_categories_canvas_configure(self, event):
+        self.categories_canvas.itemconfigure(
+            self.categories_canvas_window,
+            width=event.width,
+        )
+
     def _sync_mode_ui(self):
         self.types_frame.pack_forget()
         self.type_count_frame.pack_forget()
         self.actions_frame.pack_forget()
         self.log_frame.pack_forget()
 
+        self.run_analysis_button.pack_forget()
+        self.generate_plots_button.pack_forget()
+
         if self.mode.get() == "types":
+            self._refresh_categories()
             self.types_frame.pack(fill="both", expand=False, pady=(12, 0))
             self.type_count_frame.pack(fill="x", pady=(12, 0))
+            self.generate_plots_button.pack(side="left")
             if self.output_dir.get() == DEFAULT_TOKENS_OUTPUT_DIR:
                 self.output_dir.set(DEFAULT_TYPES_OUTPUT_DIR)
         else:
+            self.run_analysis_button.pack(side="left")
+            self.generate_plots_button.pack(side="left", padx=(8, 0))
             if self.output_dir.get() == DEFAULT_TYPES_OUTPUT_DIR:
                 self.output_dir.set(DEFAULT_TOKENS_OUTPUT_DIR)
 
@@ -364,8 +494,9 @@ class ChildConicityApp(tk.Tk):
         self._sync_categories_ui()
 
     def _sync_categories_ui(self):
-        state = tk.DISABLED if self.all_categories.get() else tk.NORMAL
-        self.categories_listbox.configure(state=state)
+        self._set_category_checkbuttons_state(
+            tk.DISABLED if self.all_categories.get() else tk.NORMAL
+        )
 
     def _refresh_corpora(self):
         processed_root = self.processed_root.get().strip()
@@ -393,16 +524,24 @@ class ChildConicityApp(tk.Tk):
         if not processed_root:
             return
 
+        selected_categories = {
+            category
+            for category, variable in self.category_vars.items()
+            if variable.get()
+        }
+
         try:
             categories = get_available_categories(
-                processed_root, self._get_selected_corpora()
+                processed_root,
+                self._get_selected_corpora(),
             )
-        except Exception:
-            categories = []
-
-        self.categories_listbox.delete(0, tk.END)
-        for category in categories:
-            self.categories_listbox.insert(tk.END, category)
+            self._rebuild_category_checkboxes(categories, selected_categories)
+        except Exception as exc:
+            self._rebuild_category_checkboxes(
+                [],
+                selected_categories=set(),
+                empty_message=f"No se pudieron cargar las categorías: {exc}",
+            )
 
     def _get_selected_corpora(self):
         selected_indices = self.corpora_listbox.curselection()
@@ -415,11 +554,66 @@ class ChildConicityApp(tk.Tk):
         if self.all_categories.get():
             return None
 
-        selected_indices = self.categories_listbox.curselection()
-        if not selected_indices:
-            return []
+        return [
+            category
+            for category, variable in self.category_vars.items()
+            if variable.get()
+        ]
 
-        return [self.categories_listbox.get(index) for index in selected_indices]
+    def _rebuild_category_checkboxes(
+        self,
+        categories,
+        selected_categories,
+        empty_message="No hay categorías disponibles.",
+    ):
+        for child in self.categories_inner_frame.winfo_children():
+            child.destroy()
+
+        self.category_vars = {}
+        self.category_checkbuttons = []
+
+        if not categories:
+            empty_label = ttk.Label(
+                self.categories_inner_frame,
+                text=empty_message,
+            )
+            empty_label.pack(anchor="w")
+            self.categories_canvas.configure(scrollregion=(0, 0, 0, 0))
+            return
+
+        total_categories = len(categories)
+        column_size = (
+            total_categories + CATEGORY_COLUMN_COUNT - 1
+        ) // CATEGORY_COLUMN_COUNT
+
+        for column in range(CATEGORY_COLUMN_COUNT):
+            self.categories_inner_frame.columnconfigure(column, weight=1)
+
+        for index, category in enumerate(categories):
+            column = min(index // column_size, CATEGORY_COLUMN_COUNT - 1)
+            row = index % column_size
+
+            variable = tk.BooleanVar(value=category in selected_categories)
+            checkbutton = ttk.Checkbutton(
+                self.categories_inner_frame,
+                text=category,
+                variable=variable,
+            )
+            checkbutton.grid(
+                row=row,
+                column=column,
+                sticky="w",
+                padx=(0, 16) if column < CATEGORY_COLUMN_COUNT - 1 else (0, 0),
+                pady=(0, 2),
+            )
+            self.category_vars[category] = variable
+            self.category_checkbuttons.append(checkbutton)
+
+        self._sync_categories_ui()
+
+    def _set_category_checkbuttons_state(self, state):
+        for checkbutton in self.category_checkbuttons:
+            checkbutton.configure(state=state)
 
     def _start_initialize_corpora(self):
         if self._busy:
@@ -503,10 +697,8 @@ class ChildConicityApp(tk.Tk):
             widget.configure(state=widget_state)
 
         self.corpora_listbox.configure(state=widget_state)
-        self.categories_listbox.configure(
-            state=tk.DISABLED
-            if busy or self.all_categories.get()
-            else tk.NORMAL
+        self._set_category_checkbuttons_state(
+            tk.DISABLED if busy or self.all_categories.get() else tk.NORMAL
         )
         self.status_text.set(status_text)
 
@@ -730,6 +922,10 @@ class ChildConicityApp(tk.Tk):
                     "\nGeneración de gráficas de types completada.\n"
                 )
                 self._enqueue_log(
+                    "El criterio de conteo elegido solo se ha aplicado a las "
+                    "gráficas; los JSON exportados no cambian.\n"
+                )
+                self._enqueue_log(
                     "Gráficas de types guardadas en: "
                     f"{result['plot_outputs']['plots_dir']}\n"
                 )
@@ -763,6 +959,9 @@ class ChildConicityApp(tk.Tk):
         self._log_queue.put(("callback", callback))
 
     def _poll_log_queue(self):
+        if self._is_closing:
+            return
+
         while True:
             try:
                 item_type, payload = self._log_queue.get_nowait()
@@ -774,7 +973,8 @@ class ChildConicityApp(tk.Tk):
             elif item_type == "callback":
                 payload()
 
-        self.after(100, self._poll_log_queue)
+        if not self._is_closing:
+            self.after(100, self._poll_log_queue)
 
     def _append_log(self, text):
         self.log_text.insert(tk.END, text)

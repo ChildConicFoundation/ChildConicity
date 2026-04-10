@@ -20,7 +20,6 @@ from src.data_io.corpus_selection import (
 )
 from src.data_io.data_formatter import DataFormatter
 from src.data_io.grammatical_corpus_processing import (
-    collect_grammatical_categories,
     process_grammatical_data_with_formatter,
     run_grammatical_pipeline,
 )
@@ -34,6 +33,43 @@ DEFAULT_ICONICITY_CSV = "iconicity_ratings_cleaned.csv"
 DEFAULT_PLOTS_DIR = "iconic_vs_noniconic"
 DEFAULT_DISTRIBUTION_DIR = "pruebas"
 DEFAULT_PLOT_COUNT_CRITERIA = ("adults", "children")
+DEFAULT_GRAMMATICAL_CATEGORIES = (
+    "noun",
+    "verb",
+    "adj",
+    "adv",
+    "pron",
+    "det",
+    "propn",
+    "num",
+    "adp",
+    "aux",
+    "part",
+    "cconj",
+    "sconj",
+    "intj",
+    "punct",
+    "ls",
+    "L2",
+    "b",
+    "c",
+    "cm",
+    "d",
+    "f",
+    "g",
+    "i",
+    "k",
+    "l",
+    "n",
+    "o",
+    "p",
+    "q",
+    "si",
+    "t",
+    "u",
+    "wp",
+    "x",
+)
 
 
 def load_corpus_data(processed_root, selected_corpora=None):
@@ -61,8 +97,7 @@ def get_available_corpora(processed_root):
 
 
 def get_available_categories(processed_root, selected_corpora=None):
-    corpus_data = load_corpus_data(processed_root, selected_corpora)
-    return collect_grammatical_categories(corpus_data)
+    return list(DEFAULT_GRAMMATICAL_CATEGORIES)
 
 
 def run_types_analysis(
@@ -84,13 +119,22 @@ def run_types_analysis(
     )
     corpus_data = load_corpus_data(processed_root, selected_corpora)
     print("Corpus cargados.")
-    print("Procesando datos gramaticales y exportando resultados...")
+    if generate_plots:
+        print("Exportando datos gramaticales estándar para types...")
+    else:
+        print("Procesando datos gramaticales y exportando resultados...")
     result = run_grammatical_pipeline(
         corpus_data,
         output_dir=output_dir,
         grammatical_categories=categories,
     )
-    print("Exportación gramatical completada.")
+    if generate_plots:
+        print(
+            "Exportación gramatical estándar completada. "
+            "El modo de conteo seleccionado solo afecta a las gráficas."
+        )
+    else:
+        print("Exportación gramatical completada.")
 
     if not generate_plots:
         return result
@@ -108,9 +152,12 @@ def run_types_analysis(
         processed_data_for_plots = process_grammatical_data_with_formatter(corpus_data)
         grouped_data_for_plots = group_data_by_age(processed_data_for_plots)
 
-    print("Generando gráficas de types...")
     result = result.copy()
     selected_type_count_mode = normalize_type_count_mode(type_count_mode)
+    print(
+        "Generando gráficas de types "
+        f"con criterio de conteo: {_type_count_mode_label(selected_type_count_mode)}..."
+    )
     result["plot_outputs"] = _generate_type_plots(
         grouped_data_for_plots,
         iconicity_model,

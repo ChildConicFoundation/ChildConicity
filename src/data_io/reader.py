@@ -257,8 +257,6 @@ class Reader:
                     r'[+-]',     # Signos + y -
                     r'[0-9]',    # Números
                     r'[#@]',     # Caracteres especiales
-                    r'\b[A-Z]\b',  # Letras mayúsculas sueltas (solo si son palabras de una letra)
-                    r'^[A-Z](?=\s|$)',  # Letras mayúsculas al inicio de línea seguidas de espacio o fin
                 ]
                 for pattern in vocalizations:
                     clean_text = re.sub(pattern, '', clean_text)

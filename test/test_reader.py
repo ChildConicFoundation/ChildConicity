@@ -59,3 +59,15 @@ def test_read_cha(reader, test_files):
 def test_file_not_found(reader):
     assert reader.read_csv('nonexistent.csv') is None
     assert reader.read_cha('nonexistent.cha') is None
+
+
+def test_extract_utterances_keeps_valid_single_letter_words(reader):
+    content = """@UTF8
+@Participants: CHI Target_Child, MOT Mother
+*MOT: I want it .
+"""
+
+    utterances = reader._extract_utterances(content)
+
+    assert len(utterances) == 1
+    assert utterances[0]["text"] == "I want it"

@@ -287,6 +287,27 @@ def test_grammatical_exporter_exports_grouped_rows(tmp_path):
                             },
                         }
                     ]
+                },
+                "Juan": {
+                    "files": [
+                        {
+                            "metadata": {
+                                "file_path": "Corpus_modified/Post/Juan/b.cha",
+                                "child_age": "1 years 06 months 15 days",
+                                "child_name": "Juan",
+                            },
+                            "children_data": {},
+                            "other_children_data": {},
+                            "adults_data": {
+                                "1": {
+                                    "category": "verb",
+                                    "lemma": "pull",
+                                    "attributes": ["Fin", "Imp", "S"],
+                                    "raw_token": "verb|pull-Fin-Imp-S",
+                                }
+                            },
+                        }
+                    ]
                 }
             }
         }
@@ -313,21 +334,33 @@ def test_grammatical_exporter_exports_grouped_rows(tmp_path):
         csv.DictReader(word_count_summary_csv.open(encoding="utf-8"))
     )
 
-    assert payload["total_rows"] == 2
+    assert payload["total_rows"] == 3
     assert payload["rows"][0]["id"] == 1
     assert payload["rows"][0]["category"] == "verb"
     assert payload["rows"][0]["lemma"] == "pull"
     assert payload["rows"][0]["attributes"] == ["Fin", "Imp", "S"]
+    assert payload["rows"][0]["child_name"] == "Lew"
+    assert payload["rows"][0]["file_path"] == "Corpus_modified/Post/Lew/a.cha"
     assert rows[0]["id"] == "1"
     assert rows[0]["raw_token"] == "verb|pull-Fin-Imp-S"
     assert rows[0]["attributes"] == "Fin|Imp|S"
+    assert rows[0]["child_name"] == "Lew"
+    assert rows[0]["file_path"] == "Corpus_modified/Post/Lew/a.cha"
     assert raw_summary[0]["quarter"] == "01Y02Q"
     assert word_count_payload["total_lemma_entries"] == 1
-    assert word_count_payload["total_occurrences"] == 2
+    assert word_count_payload["total_occurrences"] == 3
     assert word_count_payload["lemma_entries"][0]["id"] == 1
-    assert word_count_payload["lemma_entries"][0]["count"] == 2
+    assert word_count_payload["lemma_entries"][0]["count"] == 3
+    assert word_count_payload["lemma_entries"][0]["counts_by_child"] == {
+        "Lew": 2,
+        "Juan": 1,
+    }
     assert word_count_rows[0]["id"] == "1"
-    assert word_count_rows[0]["count"] == "2"
+    assert word_count_rows[0]["count"] == "3"
     assert word_count_rows[0]["attributes"] == "Fin|Imp|S"
+    assert json.loads(word_count_rows[0]["counts_by_child"]) == {
+        "Lew": 2,
+        "Juan": 1,
+    }
     assert word_count_summary[0]["unique_lemma_entries"] == "1"
-    assert word_count_summary[0]["total_occurrences"] == "2"
+    assert word_count_summary[0]["total_occurrences"] == "3"

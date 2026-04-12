@@ -1,7 +1,7 @@
 import csv
 import json
+from collections import Counter, defaultdict
 from pathlib import Path
-from collections import Counter
 
 
 class GrammaticalCategoriesExporter:
@@ -47,7 +47,7 @@ class GrammaticalCategoriesExporter:
                 json_path = raw_dir / f"{quarter}.json"
                 csv_path = raw_dir / f"{quarter}.csv"
                 self._write_json(json_path, payload)
-                self._write_csv(csv_path, self._build_csv_rows(rows))
+                self._write_csv(csv_path, rows)
 
                 outputs[speaker_group]["Raw"][quarter] = {
                     "json": str(json_path),
@@ -110,15 +110,23 @@ class GrammaticalCategoriesExporter:
                     "lemma": entry.get("lemma", ""),
                     "attributes": entry.get("attributes", []),
                     "raw_token": entry.get("raw_token", ""),
+                    "child_name": entry.get("child_name", "N/A"),
+                    "file_path": entry.get("file_path", ""),
                 }
             )
         return rows
 
-    def _build_csv_rows(self, rows):
+    def _build_csv_rows(self, rows, fieldnames):
         csv_rows = []
         for row in rows:
-            csv_row = row.copy()
-            csv_row["attributes"] = "|".join(row.get("attributes", []))
+            csv_row = {}
+            for fieldname in fieldnames:
+                value = row.get(fieldname, "")
+                if fieldname == "attributes":
+                    value = "|".join(value)
+                elif isinstance(value, (dict, list)):
+                    value = json.dumps(value, ensure_ascii=False)
+                csv_row[fieldname] = value
             csv_rows.append(csv_row)
         return csv_rows
 
@@ -127,22 +135,33 @@ class GrammaticalCategoriesExporter:
             payload = json.load(file)
 
         counter = Counter()
+        child_counters = defaultdict(Counter)
         for row in payload.get("rows", []):
             attributes = tuple(row.get("attributes", []))
-            counter[
-                (
-                    row.get("category", ""),
-                    row.get("lemma", ""),
-                    attributes,
-                    row.get("raw_token", ""),
-                )
-            ] += 1
+            counter_key = (
+                row.get("category", ""),
+                row.get("lemma", ""),
+                attributes,
+                row.get("raw_token", ""),
+            )
+            counter[counter_key] += 1
+
+            child_name = row.get("child_name", "").strip()
+            if child_name:
+                child_counters[counter_key][child_name] += 1
 
         counted_rows = []
         for index, ((category, lemma, attributes, raw_token), count) in enumerate(
             sorted(counter.items(), key=lambda item: (-item[1], item[0][0], item[0][1])),
             start=1,
         ):
+            counts_by_child = {
+                child_name: child_count
+                for child_name, child_count in sorted(
+                    child_counters[(category, lemma, attributes, raw_token)].items(),
+                    key=lambda item: (-item[1], item[0]),
+                )
+            }
             counted_rows.append(
                 {
                     "quarter": payload.get("quarter", ""),
@@ -153,6 +172,7 @@ class GrammaticalCategoriesExporter:
                     "attributes": list(attributes),
                     "raw_token": raw_token,
                     "count": count,
+                    "counts_by_child": counts_by_child,
                 }
             )
 
@@ -177,11 +197,14 @@ class GrammaticalCategoriesExporter:
             "lemma",
             "attributes",
             "raw_token",
+            "child_name",
+            "file_path",
         ]
+        csv_rows = self._build_csv_rows(rows, fieldnames)
         with open(file_path, "w", encoding="utf-8", newline="") as file:
             writer = csv.DictWriter(file, fieldnames=fieldnames)
             writer.writeheader()
-            writer.writerows(rows)
+            writer.writerows(csv_rows)
 
     def _write_summary_csv(self, file_path, rows):
         fieldnames = ["quarter", "speaker_group", "total_rows"]
@@ -200,8 +223,9 @@ class GrammaticalCategoriesExporter:
             "attributes",
             "raw_token",
             "count",
+            "counts_by_child",
         ]
-        csv_rows = self._build_csv_rows(rows)
+        csv_rows = self._build_csv_rows(rows, fieldnames)
         with open(file_path, "w", encoding="utf-8", newline="") as file:
             writer = csv.DictWriter(file, fieldnames=fieldnames)
             writer.writeheader()

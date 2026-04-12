@@ -73,7 +73,9 @@ def group_data_by_age(processed_data):
 
                 for i, (_, utterance) in enumerate(file["children_data"].items()):
                     key = f"{child_base + i + 1}"
-                    data_grouped_by_age[age_quarter]["children_data"][key] = utterance
+                    data_grouped_by_age[age_quarter]["children_data"][key] = (
+                        _attach_file_metadata_to_entry(utterance, file["metadata"])
+                    )
 
                 for i, (_, utterance) in enumerate(
                     file.get("other_children_data", {}).items()
@@ -81,11 +83,13 @@ def group_data_by_age(processed_data):
                     key = f"{other_child_base + i + 1}"
                     data_grouped_by_age[age_quarter]["other_children_data"][
                         key
-                    ] = utterance
+                    ] = _attach_file_metadata_to_entry(utterance, file["metadata"])
 
                 for i, (_, utterance) in enumerate(file["adults_data"].items()):
                     key = f"{adult_base + i + 1}"
-                    data_grouped_by_age[age_quarter]["adults_data"][key] = utterance
+                    data_grouped_by_age[age_quarter]["adults_data"][key] = (
+                        _attach_file_metadata_to_entry(utterance, file["metadata"])
+                    )
 
                 child_example = _build_entry_example(
                     file["children_data"], "No hay expresiones de niños"
@@ -128,3 +132,10 @@ def _build_entry_example(entries, default_text):
     if attributes:
         return f"{category}|{lemma}-{attributes}"
     return f"{category}|{lemma}"
+
+
+def _attach_file_metadata_to_entry(entry, metadata):
+    enriched_entry = entry.copy()
+    enriched_entry["child_name"] = metadata.get("child_name", "N/A")
+    enriched_entry["file_path"] = metadata.get("file_path", "")
+    return enriched_entry

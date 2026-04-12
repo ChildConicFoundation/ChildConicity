@@ -1,9 +1,17 @@
-import matplotlib.pyplot as plt
-import seaborn as sns
-import pandas as pd
-import numpy as np
 import os
 from typing import Dict, List, Union, Any
+
+import numpy as np
+
+try:
+    import matplotlib.pyplot as plt
+except ModuleNotFoundError:
+    plt = None
+
+try:
+    import seaborn as sns
+except ModuleNotFoundError:
+    sns = None
 
 class DataAnalysisPlotter:
     """
@@ -36,9 +44,15 @@ class DataAnalysisPlotter:
                 }
         """
         self.data = data
-        # Configurar el estilo de las gráficas
-        sns.set_theme(style="whitegrid")
-        sns.set_palette("husl")
+        if sns is not None:
+            sns.set_theme(style="whitegrid")
+            sns.set_palette("husl")
+
+    def _require_plotting_backend(self):
+        if plt is None:
+            raise ModuleNotFoundError(
+                "matplotlib no está instalado y es necesario para generar gráficas."
+            )
         
     def _validate_data(self) -> bool:
         """
@@ -76,6 +90,7 @@ class DataAnalysisPlotter:
         Args:
             save_path (str, optional): Ruta donde guardar la gráfica. Si es None, la gráfica se muestra en pantalla.
         """
+        self._require_plotting_backend()
         age_groups = []
         iconic_children = []
         non_iconic_children = []
@@ -135,6 +150,7 @@ class DataAnalysisPlotter:
         Args:
             save_path (str, optional): Ruta donde guardar la gráfica. Si es None, la gráfica se muestra en pantalla.
         """
+        self._require_plotting_backend()
         age_groups = []
         iconic_adults = []
         non_iconic_adults = []
@@ -196,6 +212,7 @@ class DataAnalysisPlotter:
         Args:
             save_path (str, optional): Ruta donde guardar la gráfica. Si es None, la gráfica se muestra en pantalla.
         """
+        self._require_plotting_backend()
         age_groups = []
         iconic_children = []
         non_iconic_children = []
@@ -269,6 +286,7 @@ class DataAnalysisPlotter:
             print_statistics (bool, optional): Si es True, imprime el resumen usado por las graficas.
             print_warnings (bool, optional): Si es True, avisa cuando un grupo no tiene datos.
         """
+        self._require_plotting_backend()
         if print_statistics:
             print_valid_words_statistics(self.data)
 
@@ -322,37 +340,14 @@ class DataAnalysisPlotter:
             sorted_adults = sorted(adults_ratings_counts, key=lambda x: x[0])
             sorted_children = sorted(children_ratings_counts, key=lambda x: x[0])
 
-            # Crear listas para acumular ocurrencias
-            adults_cumulative = np.zeros(len(x_axis))
-            children_cumulative = np.zeros(len(x_axis))
-
-            # Acumular ocurrencias para adultos
-            if has_adult_data:
-                current_count = 0
-                current_bin = 0
-                for rating, count in sorted_adults:
-                    if current_bin < len(x_axis) and rating > x_axis[current_bin]:
-                        adults_cumulative[current_bin] = current_count
-                        current_bin += 1
-                    current_count += count
-
-                # Actualizar el último bin y los restantes
-                for i in range(current_bin, len(x_axis)):
-                    adults_cumulative[i] = current_count
-
-            # Acumular ocurrencias para niños
-            if has_children_data:
-                current_count = 0
-                current_bin = 0
-                for rating, count in sorted_children:
-                    if current_bin < len(x_axis) and rating > x_axis[current_bin]:
-                        children_cumulative[current_bin] = current_count
-                        current_bin += 1
-                    current_count += count
-
-                # Actualizar el último bin y los restantes
-                for i in range(current_bin, len(x_axis)):
-                    children_cumulative[i] = current_count
+            adults_cumulative = self._calculate_cumulative_counts(
+                sorted_adults,
+                x_axis,
+            )
+            children_cumulative = self._calculate_cumulative_counts(
+                sorted_children,
+                x_axis,
+            )
 
             # Crear la gráfica
             plt.figure(figsize=(10, 6))
@@ -407,6 +402,7 @@ class DataAnalysisPlotter:
                 se deben dibujar. Por defecto dibuja adultos y ninos.
             print_warnings (bool, optional): Si es True, avisa cuando un grupo no tiene datos.
         """
+        self._require_plotting_backend()
         generated_paths = []
         age_groups = sorted(
             {
@@ -583,6 +579,7 @@ class DataAnalysisPlotter:
         Args:
             save_path (str, optional): Ruta donde guardar la gráfica. Si es None, la gráfica se muestra en pantalla.
         """
+        self._require_plotting_backend()
         plt.figure(figsize=(12, 8))
         
         # Obtener el rango global de iconicidad
@@ -614,22 +611,9 @@ class DataAnalysisPlotter:
             ratings_counts = [(word_data['rating'], word_data['count']) 
                             for word_data in adults_words_with_rating.values()]
             sorted_ratings = sorted(ratings_counts, key=lambda x: x[0])
-            
-            # Calcular distribución acumulativa
+
             total_words = sum(count for _, count in sorted_ratings)
-            cumulative = np.zeros(len(x_axis))
-            
-            current_count = 0
-            current_bin = 0
-            for rating, count in sorted_ratings:
-                while current_bin < len(x_axis) and rating > x_axis[current_bin]:
-                    cumulative[current_bin] = current_count
-                    current_bin += 1
-                current_count += count
-            
-            # Actualizar el último bin y los restantes
-            for i in range(current_bin, len(x_axis)):
-                cumulative[i] = current_count
+            cumulative = self._calculate_cumulative_counts(sorted_ratings, x_axis)
             
             # Plotear la línea para este grupo de edad
             plt.plot(x_axis, cumulative/total_words * 100, 
@@ -659,6 +643,7 @@ class DataAnalysisPlotter:
         Args:
             save_path (str, optional): Ruta donde guardar la gráfica. Si es None, la gráfica se muestra en pantalla.
         """
+        self._require_plotting_backend()
         plt.figure(figsize=(12, 8))
         
         # Obtener el rango global de iconicidad
@@ -690,22 +675,9 @@ class DataAnalysisPlotter:
             ratings_counts = [(word_data['rating'], word_data['count']) 
                             for word_data in children_words_with_rating.values()]
             sorted_ratings = sorted(ratings_counts, key=lambda x: x[0])
-            
-            # Calcular distribución acumulativa
+
             total_words = sum(count for _, count in sorted_ratings)
-            cumulative = np.zeros(len(x_axis))
-            
-            current_count = 0
-            current_bin = 0
-            for rating, count in sorted_ratings:
-                while current_bin < len(x_axis) and rating > x_axis[current_bin]:
-                    cumulative[current_bin] = current_count
-                    current_bin += 1
-                current_count += count
-            
-            # Actualizar el último bin y los restantes
-            for i in range(current_bin, len(x_axis)):
-                cumulative[i] = current_count
+            cumulative = self._calculate_cumulative_counts(sorted_ratings, x_axis)
             
             # Plotear la línea para este grupo de edad
             plt.plot(x_axis, cumulative/total_words * 100, 

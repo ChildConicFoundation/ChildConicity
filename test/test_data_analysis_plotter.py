@@ -90,3 +90,15 @@ def test_type_distribution_series_can_be_limited_to_adults():
     )
 
     assert [serie["label"] for serie in series] == ["Adultos - total"]
+
+
+def test_calculate_cumulative_counts_keeps_intermediate_bins():
+    plotter = DataAnalysisPlotter({})
+    x_axis = [3.0, 3.25, 3.5, 3.75, 4.0, 4.25, 4.5, 4.75, 5.0]
+
+    cumulative = plotter._calculate_cumulative_counts(
+        [(3.0, 1), (5.0, 1)],
+        x_axis,
+    )
+
+    assert cumulative.tolist() == [1, 1, 1, 1, 1, 1, 1, 1, 2]

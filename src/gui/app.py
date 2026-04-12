@@ -72,6 +72,14 @@ def _venv_python_path():
     return os.path.join(_project_root(), ".venv", "bin", "python")
 
 
+def _token_plot_directories(output_dir):
+    base_output_dir = output_dir or DEFAULT_TOKENS_OUTPUT_DIR
+    return (
+        os.path.join(base_output_dir, DEFAULT_PLOTS_DIR),
+        os.path.join(base_output_dir, DEFAULT_DISTRIBUTION_DIR),
+    )
+
+
 def _interpreter_supports_modules(python_executable, module_names):
     if not module_names:
         return True
@@ -995,13 +1003,14 @@ class ChildConicityApp(tk.Tk):
             if selected_categories:
                 for category in selected_categories:
                     command.extend(["--category", category])
-        else:
+        elif generate_plots:
+            plots_dir, distribution_dir = _token_plot_directories(output_dir)
             command.extend(
                 [
                     "--plots-dir",
-                    DEFAULT_PLOTS_DIR,
+                    plots_dir,
                     "--distribution-dir",
-                    DEFAULT_DISTRIBUTION_DIR,
+                    distribution_dir,
                 ]
             )
 

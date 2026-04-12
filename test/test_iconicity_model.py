@@ -167,3 +167,22 @@ def test_get_all_word_data(model):
     assert gato_data['prop_known'] == 0.7
     assert gato_data['rating'] == 4.2
     assert gato_data['rating_sd'] == 1.1 
+
+
+def test_iconicity_model_normalizes_word_lookup_case_insensitively():
+    model = IconicityModel(
+        {
+            1: {
+                "word": "Christmas",
+                "n_ratings": 10,
+                "n": 10,
+                "prop_known": 1.0,
+                "rating": 4.8,
+                "rating_sd": 0.5,
+            }
+        }
+    )
+
+    assert "christmas" in model.get_all_words()
+    assert model.get_word_data("christmas")["rating"] == 4.8
+    assert model.get_word_data("CHRISTMAS")["rating"] == 4.8

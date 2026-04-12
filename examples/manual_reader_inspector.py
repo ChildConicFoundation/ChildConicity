@@ -1,7 +1,9 @@
-from src.data_io.reader import Reader
 import os
 
-def test_reader():
+from src.data_io.reader import Reader
+
+
+def inspect_reader_output():
     # Crear instancia del Reader
     reader = Reader()
     
@@ -27,4 +29,4 @@ def test_reader():
     print("-" * 50)
 
 if __name__ == "__main__":
-    test_reader() 
+    inspect_reader_output()

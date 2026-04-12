@@ -7,6 +7,11 @@ class DataFormatter:
         self.other_children_data = {}
         self.adults_data = {}
         self.data_dict = {}
+
+    def _reset_cha_state(self):
+        self.children_data = {}
+        self.other_children_data = {}
+        self.adults_data = {}
     
     def classify_speaker(
         self,
@@ -65,6 +70,7 @@ class DataFormatter:
         Returns:
             tuple: (children_data, other_children_data, adults_data)
         """
+        self._reset_cha_state()
         data = self.reader.read_cha(file_path)
         if data is not None:
             utterances = data['metadata']['utterances']

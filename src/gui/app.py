@@ -109,6 +109,7 @@ def _get_analysis_interpreter(mode, generate_plots):
     return None
 
 
+CORPUS_COLUMN_COUNT = 3
 CATEGORY_COLUMN_COUNT = 3
 
 
@@ -122,9 +123,12 @@ class ChildConicityApp(tk.Tk):
         self.processed_root = tk.StringVar(value="Corpus_modified")
         self.output_dir = tk.StringVar(value=DEFAULT_TOKENS_OUTPUT_DIR)
         self.mode = tk.StringVar(value="tokens")
+        self.all_corpora = tk.BooleanVar(value=True)
         self.all_categories = tk.BooleanVar(value=True)
         self.type_count_mode = tk.StringVar(value=DEFAULT_TYPE_COUNT_MODE)
         self.status_text = tk.StringVar(value="Listo.")
+        self.corpora_vars = {}
+        self.corpus_checkbuttons = []
         self.category_vars = {}
         self.category_checkbuttons = []
         self._is_closing = False
@@ -223,12 +227,69 @@ class ChildConicityApp(tk.Tk):
         parent.columnconfigure(1, weight=1)
 
     def _build_corpus_ui(self, parent):
+        all_corpora_check = ttk.Checkbutton(
+            parent,
+            text="Todos los corpus",
+            variable=self.all_corpora,
+            command=self._sync_corpora_ui,
+        )
+        all_corpora_check.pack(anchor="w")
+        self._busy_widgets.append(all_corpora_check)
+
+        ttk.Label(
+            parent,
+            text="Selecciona uno o varios corpus con casillas:",
+        ).pack(anchor="w", pady=(8, 4))
+
+        corpora_container = ttk.Frame(parent)
+        corpora_container.pack(fill="both", expand=False)
+
+        self.corpora_canvas = tk.Canvas(
+            corpora_container,
+            height=120,
+            highlightthickness=0,
+        )
+        self.corpora_canvas.pack(side="left", fill="both", expand=True)
+
+        self.corpora_scrollbar = ttk.Scrollbar(
+            corpora_container,
+            orient="vertical",
+            command=self.corpora_canvas.yview,
+        )
+        self.corpora_scrollbar.pack(side="right", fill="y")
+
+        self.corpora_canvas.configure(
+            yscrollcommand=self.corpora_scrollbar.set
+        )
+
+        self.corpora_inner_frame = ttk.Frame(self.corpora_canvas)
+        self.corpora_canvas_window = self.corpora_canvas.create_window(
+            (0, 0),
+            window=self.corpora_inner_frame,
+            anchor="nw",
+        )
+        self.corpora_inner_frame.bind(
+            "<Configure>",
+            self._on_corpora_frame_configure,
+        )
+        self.corpora_canvas.bind(
+            "<Configure>",
+            self._on_corpora_canvas_configure,
+        )
+        self._rebuild_corpora_checkboxes(
+            [],
+            selected_corpora=set(),
+            empty_message=(
+                "Pulsa 'Mostrar corpus inicializados' para cargar los corpus disponibles."
+            ),
+        )
+
         buttons_frame = ttk.Frame(parent)
-        buttons_frame.pack(fill="x")
+        buttons_frame.pack(fill="x", pady=(10, 0))
 
         initialize_button = ttk.Button(
             buttons_frame,
-            text="Initialize Corpora",
+            text="Inicializar corpus",
             command=self._start_initialize_corpora,
         )
         initialize_button.pack(side="left")
@@ -236,30 +297,11 @@ class ChildConicityApp(tk.Tk):
 
         refresh_button = ttk.Button(
             buttons_frame,
-            text="Refrescar corpus",
+            text="Mostrar corpus inicializados",
             command=self._refresh_corpora,
         )
         refresh_button.pack(side="left", padx=(8, 0))
         self._busy_widgets.append(refresh_button)
-
-        select_all_button = ttk.Button(
-            buttons_frame,
-            text="Seleccionar todos",
-            command=self._select_all_corpora,
-        )
-        select_all_button.pack(side="left", padx=(8, 0))
-        self._busy_widgets.append(select_all_button)
-
-        ttk.Label(
-            parent,
-            text="Si no seleccionas ninguno, se usarán todos los corpus disponibles.",
-        ).pack(anchor="w", pady=(8, 6))
-
-        self.corpora_listbox = tk.Listbox(
-            parent, selectmode=tk.MULTIPLE, exportselection=False, height=6
-        )
-        self.corpora_listbox.pack(fill="x")
-        self.corpora_listbox.bind("<<ListboxSelect>>", lambda _event: self._refresh_categories())
 
     def _build_mode_ui(self, parent):
         radio_frame = ttk.Frame(parent)
@@ -345,7 +387,9 @@ class ChildConicityApp(tk.Tk):
         self._rebuild_category_checkboxes(
             [],
             selected_categories=set(),
-            empty_message="Pulsa 'Refrescar corpus' o espera a que se carguen las categorías.",
+            empty_message=(
+                "Pulsa 'Mostrar corpus inicializados' o espera a que se carguen las categorías."
+            ),
         )
 
         self.types_actions_frame = ttk.Frame(parent)
@@ -424,10 +468,6 @@ class ChildConicityApp(tk.Tk):
             self.processed_root.set(selected_dir)
             self._refresh_corpora()
 
-    def _select_all_corpora(self):
-        self.corpora_listbox.select_set(0, tk.END)
-        self._refresh_categories()
-
     def _handle_close(self):
         self._is_closing = True
         self.destroy()
@@ -435,6 +475,11 @@ class ChildConicityApp(tk.Tk):
     def _initialize_available_data(self):
         processed_root = self.processed_root.get().strip()
         if not processed_root or not os.path.isdir(processed_root):
+            self._rebuild_corpora_checkboxes(
+                [],
+                selected_corpora=set(),
+                empty_message="No se encuentra la carpeta de corpus procesado.",
+            )
             self._rebuild_category_checkboxes(
                 [],
                 selected_categories=set(),
@@ -447,6 +492,11 @@ class ChildConicityApp(tk.Tk):
     def _on_categories_frame_configure(self, _event):
         self.categories_canvas.configure(
             scrollregion=self.categories_canvas.bbox("all")
+        )
+
+    def _on_corpora_frame_configure(self, _event):
+        self.corpora_canvas.configure(
+            scrollregion=self.corpora_canvas.bbox("all")
         )
 
     def _on_main_frame_configure(self, _event):
@@ -463,6 +513,12 @@ class ChildConicityApp(tk.Tk):
     def _on_categories_canvas_configure(self, event):
         self.categories_canvas.itemconfigure(
             self.categories_canvas_window,
+            width=event.width,
+        )
+
+    def _on_corpora_canvas_configure(self, event):
+        self.corpora_canvas.itemconfigure(
+            self.corpora_canvas_window,
             width=event.width,
         )
 
@@ -491,7 +547,14 @@ class ChildConicityApp(tk.Tk):
         self.actions_frame.pack(fill="x", pady=(12, 0))
         self.log_frame.pack(fill="both", expand=True, pady=(12, 0))
 
+        self._sync_corpora_ui()
         self._sync_categories_ui()
+
+    def _sync_corpora_ui(self):
+        self._set_corpus_checkbuttons_state(
+            tk.DISABLED if self._busy or self.all_corpora.get() else tk.NORMAL
+        )
+        self._refresh_categories()
 
     def _sync_categories_ui(self):
         self._set_category_checkbuttons_state(
@@ -505,13 +568,12 @@ class ChildConicityApp(tk.Tk):
             return
 
         available_corpora = get_available_corpora(processed_root)
-        self.corpora_listbox.delete(0, tk.END)
-        for corpus_name in available_corpora:
-            self.corpora_listbox.insert(tk.END, corpus_name)
+        selected_corpora = set(self._get_selected_corpora() or [])
+        self._rebuild_corpora_checkboxes(available_corpora, selected_corpora)
 
         self._refresh_categories()
         self._append_log(
-            f"Corpus disponibles en {processed_root}: "
+            f"Corpus inicializados en {processed_root}: "
             + (", ".join(available_corpora) if available_corpora else "(ninguno)")
             + "\n"
         )
@@ -544,11 +606,18 @@ class ChildConicityApp(tk.Tk):
             )
 
     def _get_selected_corpora(self):
-        selected_indices = self.corpora_listbox.curselection()
-        if not selected_indices:
+        if self.all_corpora.get():
             return None
 
-        return [self.corpora_listbox.get(index) for index in selected_indices]
+        selected_corpora = [
+            corpus_name
+            for corpus_name, variable in self.corpora_vars.items()
+            if variable.get()
+        ]
+        if not selected_corpora:
+            return None
+
+        return selected_corpora
 
     def _get_selected_categories(self):
         if self.all_categories.get():
@@ -610,6 +679,62 @@ class ChildConicityApp(tk.Tk):
             self.category_checkbuttons.append(checkbutton)
 
         self._sync_categories_ui()
+
+    def _rebuild_corpora_checkboxes(
+        self,
+        corpora,
+        selected_corpora,
+        empty_message="No hay corpus disponibles.",
+    ):
+        for child in self.corpora_inner_frame.winfo_children():
+            child.destroy()
+
+        self.corpora_vars = {}
+        self.corpus_checkbuttons = []
+
+        if not corpora:
+            empty_label = ttk.Label(
+                self.corpora_inner_frame,
+                text=empty_message,
+            )
+            empty_label.pack(anchor="w")
+            self.corpora_canvas.configure(scrollregion=(0, 0, 0, 0))
+            return
+
+        total_corpora = len(corpora)
+        column_size = (
+            total_corpora + CORPUS_COLUMN_COUNT - 1
+        ) // CORPUS_COLUMN_COUNT
+
+        for column in range(CORPUS_COLUMN_COUNT):
+            self.corpora_inner_frame.columnconfigure(column, weight=1)
+
+        for index, corpus_name in enumerate(corpora):
+            column = min(index // column_size, CORPUS_COLUMN_COUNT - 1)
+            row = index % column_size
+
+            variable = tk.BooleanVar(value=corpus_name in selected_corpora)
+            checkbutton = ttk.Checkbutton(
+                self.corpora_inner_frame,
+                text=corpus_name,
+                variable=variable,
+                command=self._refresh_categories,
+            )
+            checkbutton.grid(
+                row=row,
+                column=column,
+                sticky="w",
+                padx=(0, 16) if column < CORPUS_COLUMN_COUNT - 1 else (0, 0),
+                pady=(0, 2),
+            )
+            self.corpora_vars[corpus_name] = variable
+            self.corpus_checkbuttons.append(checkbutton)
+
+        self._sync_corpora_ui()
+
+    def _set_corpus_checkbuttons_state(self, state):
+        for checkbutton in self.corpus_checkbuttons:
+            checkbutton.configure(state=state)
 
     def _set_category_checkbuttons_state(self, state):
         for checkbutton in self.category_checkbuttons:
@@ -696,7 +821,7 @@ class ChildConicityApp(tk.Tk):
         for widget in self._busy_widgets:
             widget.configure(state=widget_state)
 
-        self.corpora_listbox.configure(state=widget_state)
+        self._sync_corpora_ui()
         self._set_category_checkbuttons_state(
             tk.DISABLED if busy or self.all_categories.get() else tk.NORMAL
         )

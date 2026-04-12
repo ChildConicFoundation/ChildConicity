@@ -124,6 +124,12 @@ def test_grammatical_formatter_filters_selected_categories(tmp_path):
     assert adults_data[1]["lemma"] == "ball"
 
 
+def test_grammatical_formatter_returns_three_nones_for_missing_file():
+    formatter = GrammaticalDataFormatter()
+
+    assert formatter.format_cha_data_from("missing_file.cha") == (None, None, None)
+
+
 def test_collect_grammatical_categories_returns_sorted_categories():
     corpus_data = {
         "Corpus_modified": {
@@ -200,6 +206,30 @@ def test_process_grammatical_data_with_formatter_filters_categories(tmp_path):
     assert len(processed_file["adults_data"]) == 1
     assert processed_file["adults_data"][1]["category"] == "noun"
     assert processed_file["adults_data"][1]["lemma"] == "ball"
+
+
+def test_process_grammatical_data_skips_unreadable_files():
+    corpus_data = {
+        "Corpus_modified": {
+            "Post": {
+                "Lew": {
+                    "files": [
+                        {
+                            "metadata": {
+                                "file_path": "missing_file.cha",
+                                "child_age": "1 years 06 months 00 days",
+                                "child_name": "Kid",
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    }
+
+    processed_data = process_grammatical_data_with_formatter(corpus_data)
+
+    assert processed_data["Corpus_modified"]["Post"]["Lew"]["files"] == []
 
 
 def test_run_grammatical_pipeline_exports_filtered_data(tmp_path):

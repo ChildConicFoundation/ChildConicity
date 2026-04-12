@@ -110,6 +110,8 @@ def _process_file(file, formatter):
     children_data, other_children_data, adults_data = formatter.format_cha_data_from(
         file_path
     )
+    if children_data is None:
+        return None
 
     return {
         "metadata": file["metadata"].copy(),

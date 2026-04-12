@@ -56,7 +56,7 @@ class GrammaticalDataFormatter:
         """
         data = self.reader.read_cha(file_path)
         if data is None:
-            return None, None
+            return None, None, None
 
         return self.format_morphological_utterances(
             data["metadata"]["morphological_utterances"],

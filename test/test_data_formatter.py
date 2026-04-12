@@ -134,3 +134,35 @@ def test_format_cha_data_separates_playmates_as_other_children(tmp_path):
     assert other_children_data[1]["speaker"] == "JEN"
     assert len(adults_data) == 1
     assert adults_data[1]["speaker"] == "MOT"
+
+
+def test_format_cha_data_resets_previous_state_between_calls(tmp_path):
+    first_file = tmp_path / "first.cha"
+    second_file = tmp_path / "second.cha"
+
+    first_file.write_text(
+        """@UTF8
+@Participants: CHI Target_Child, MOT Mother
+*CHI: hola .
+*MOT: adiós .
+""",
+        encoding="utf-8",
+    )
+    second_file.write_text(
+        """@UTF8
+@Participants: CHI Target_Child
+*CHI: uno .
+""",
+        encoding="utf-8",
+    )
+
+    formatter = DataFormatter()
+    formatter.format_cha_data_from(str(first_file))
+    children_data, other_children_data, adults_data = formatter.format_cha_data_from(
+        str(second_file)
+    )
+
+    assert len(children_data) == 1
+    assert len(other_children_data) == 0
+    assert len(adults_data) == 0
+    assert children_data[1]["text"] == "uno"

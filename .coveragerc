@@ -2,6 +2,9 @@
 source = src/
 omit =
     src/visualization/*
+    src/gui/__init__.py
+    src/gui/app.py
+    src/gui_analysis_runner.py
 
 [report]
 exclude_lines =

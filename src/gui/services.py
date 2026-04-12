@@ -82,10 +82,11 @@ def load_corpus_data(processed_root, selected_corpora=None):
     filtered_root = {}
     for corpus_name in selected_corpora:
         corpus_path = os.path.join(processed_root, corpus_name)
-        if not os.path.isdir(corpus_path):
+        try:
+            corpus_data = reader.read_directory(corpus_path)
+        except FileNotFoundError:
             continue
 
-        corpus_data = reader.read_directory(corpus_path)
         if corpus_name in corpus_data:
             filtered_root[corpus_name] = corpus_data[corpus_name]
 

@@ -30,6 +30,16 @@ def test_load_corpus_data_reads_and_filters_selected_corpora():
     mock_read_directory.assert_called_once_with("Corpus_modified/Post")
 
 
+def test_load_corpus_data_skips_missing_selected_corpora():
+    with patch("src.gui.services.Reader.read_directory") as mock_read_directory:
+        mock_read_directory.side_effect = FileNotFoundError
+
+        result = load_corpus_data("Corpus_modified", selected_corpora=["Missing"])
+
+    assert result == {"Corpus_modified": {}}
+    mock_read_directory.assert_called_once_with("Corpus_modified/Missing")
+
+
 def test_get_available_categories_returns_static_categories():
     result = get_available_categories(
         "Corpus_modified", selected_corpora=["Post"]

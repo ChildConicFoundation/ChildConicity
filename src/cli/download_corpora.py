@@ -150,7 +150,14 @@ def download_corpus(session, corpus_name, output_dir, force):
 
     zip_bytes = b"".join(chunks)
     with zipfile.ZipFile(io.BytesIO(zip_bytes)) as zf:
-        zf.extractall(output_dir)
+        top_entries = {n.split("/")[0] for n in zf.namelist() if n}
+        if len(top_entries) == 1 and top_entries.pop().casefold() == corpus_name.casefold():
+            # ZIP already has CorpusName/ as top-level folder → extract to parent
+            zf.extractall(output_dir)
+        else:
+            # ZIP has no top-level corpus folder → extract into Corpora/CorpusName/
+            os.makedirs(corpus_dir, exist_ok=True)
+            zf.extractall(corpus_dir)
 
     print(f"  [{corpus_name}] Extraído en {corpus_dir}")
     return True

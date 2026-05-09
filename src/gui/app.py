@@ -524,7 +524,7 @@ class ChildConicityApp(tk.Tk):
             self._enqueue_callback(self._refresh_corpora)
         except Exception as exc:
             self._enqueue_callback(
-                lambda: messagebox.showerror("Error al descargar corpus", str(exc))
+                lambda e=exc: messagebox.showerror("Error al descargar corpus", str(e))
             )
         finally:
             self._enqueue_callback(lambda: self._set_busy_state(False, "Listo."))
@@ -948,8 +948,8 @@ class ChildConicityApp(tk.Tk):
             self._enqueue_callback(self._refresh_corpora)
         except Exception as exc:
             self._enqueue_callback(
-                lambda: messagebox.showerror(
-                    "Error al inicializar corpus", str(exc)
+                lambda e=exc: messagebox.showerror(
+                    "Error al inicializar corpus", str(e)
                 )
             )
         finally:
@@ -986,7 +986,7 @@ class ChildConicityApp(tk.Tk):
                 )
         except Exception as exc:
             self._enqueue_callback(
-                lambda: messagebox.showerror("Error al ejecutar el análisis", str(exc))
+                lambda e=exc: messagebox.showerror("Error al ejecutar el análisis", str(e))
             )
         finally:
             self._enqueue_callback(lambda: self._set_busy_state(False, "Listo."))

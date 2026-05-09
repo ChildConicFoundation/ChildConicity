@@ -11,6 +11,9 @@ from src.corpus_normalizers.newengland_normalizer import (
 )
 from src.corpus_normalizers.post_normalizer import process_directory as process_post
 from src.corpus_normalizers.sachs_normalizer import process_directory as process_sachs
+from src.corpus_normalizers.providence_normalizer import (
+    process_directory as process_providence,
+)
 from src.corpus_normalizers.vankleeck_normalizer import (
     process_directory as process_vankleeck,
 )
@@ -98,6 +101,12 @@ class CorpusInitializer:
         process_vankleeck(self._source_dir("VanKleeck"), self._output_dir("VanKleeck"))
         print("¡Corpus de VanKleeck inicializado!")
 
+    def initialize_providence(self):
+        """Inicializa el corpus de Providence."""
+        print("\nInicializando corpus de Providence...")
+        process_providence(self._source_dir("Providence"), self._output_dir("Providence"))
+        print("¡Corpus de Providence inicializado!")
+
     def initialize_all(self):
         """Inicializa todos los corpus."""
         print("Iniciando inicialización de corpus...")
@@ -110,6 +119,7 @@ class CorpusInitializer:
         self.initialize_kuczaj()
         self.initialize_sachs()
         self.initialize_van_kleeck()
+        self.initialize_providence()
         print("\n¡Inicialización de corpus completada!")
 
     def _source_dir(self, corpus_name):

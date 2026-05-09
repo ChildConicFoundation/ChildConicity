@@ -27,7 +27,9 @@ def test_corpus_initializer_initialize_all_uses_source_and_output_roots():
         "src.corpus_initialization.initializer.process_sachs"
     ) as mock_sachs, patch(
         "src.corpus_initialization.initializer.process_vankleeck"
-    ) as mock_vankleeck:
+    ) as mock_vankleeck, patch(
+        "src.corpus_initialization.initializer.process_providence"
+    ) as mock_providence:
         manipulator_instance = mock_brend_manipulator.return_value
 
         initializer.initialize_all()
@@ -66,4 +68,8 @@ def test_corpus_initializer_initialize_all_uses_source_and_output_roots():
     mock_vankleeck.assert_called_once_with(
         "/tmp/source/VanKleeck",
         "/tmp/output/VanKleeck",
+    )
+    mock_providence.assert_called_once_with(
+        "/tmp/source/Providence",
+        "/tmp/output/Providence",
     )

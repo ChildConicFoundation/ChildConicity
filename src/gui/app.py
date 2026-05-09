@@ -127,13 +127,15 @@ class ChildConicityApp(tk.Tk):
         self.title("ChildConicity")
         self.geometry("980x720")
 
-        self.source_root = tk.StringVar(value="Corpus")
+        self.source_root = tk.StringVar(value="Corpora")
         self.processed_root = tk.StringVar(value="Corpus_modified")
         self.output_dir = tk.StringVar(value=DEFAULT_TOKENS_OUTPUT_DIR)
         self.mode = tk.StringVar(value="tokens")
         self.all_corpora = tk.BooleanVar(value=True)
         self.all_categories = tk.BooleanVar(value=True)
         self.type_count_mode = tk.StringVar(value=DEFAULT_TYPE_COUNT_MODE)
+        self.talkbank_email = tk.StringVar(value="")
+        self.talkbank_password = tk.StringVar(value="")
         self.status_text = tk.StringVar(value="Listo.")
         self.corpora_vars = {}
         self.corpus_checkbuttons = []
@@ -174,8 +176,12 @@ class ChildConicityApp(tk.Tk):
         main_frame.bind("<Configure>", self._on_main_frame_configure)
         self.main_canvas.bind("<Configure>", self._on_main_canvas_configure)
 
+        download_frame = ttk.LabelFrame(main_frame, text="Descarga de corpus (TalkBank)", padding=10)
+        download_frame.pack(fill="x")
+        self._build_download_ui(download_frame)
+
         paths_frame = ttk.LabelFrame(main_frame, text="Rutas", padding=10)
-        paths_frame.pack(fill="x")
+        paths_frame.pack(fill="x", pady=(12, 0))
         self._build_paths_ui(paths_frame)
 
         corpus_frame = ttk.LabelFrame(main_frame, text="Corpus", padding=10)
@@ -208,6 +214,27 @@ class ChildConicityApp(tk.Tk):
         self.log_text.pack(fill="both", expand=True)
 
         self._sync_mode_ui()
+
+    def _build_download_ui(self, parent):
+        ttk.Label(parent, text="Email TalkBank").grid(row=0, column=0, sticky="w")
+        ttk.Entry(parent, textvariable=self.talkbank_email, width=50).grid(
+            row=0, column=1, sticky="ew", padx=8
+        )
+
+        ttk.Label(parent, text="Contraseña").grid(row=1, column=0, sticky="w", pady=(8, 0))
+        ttk.Entry(parent, textvariable=self.talkbank_password, show="*", width=50).grid(
+            row=1, column=1, sticky="ew", padx=8, pady=(8, 0)
+        )
+
+        download_btn = ttk.Button(
+            parent,
+            text="Descargar corpus",
+            command=self._start_download_corpora,
+        )
+        download_btn.grid(row=2, column=0, columnspan=2, sticky="w", pady=(10, 0))
+        self._busy_widgets.append(download_btn)
+
+        parent.columnconfigure(1, weight=1)
 
     def _build_paths_ui(self, parent):
         ttk.Label(parent, text="Corpus origen").grid(row=0, column=0, sticky="w")
@@ -462,6 +489,45 @@ class ChildConicityApp(tk.Tk):
             parent,
             textvariable=self.status_text,
         ).pack(side="right")
+
+    def _start_download_corpora(self):
+        if self._busy:
+            self._notify_busy("Ya hay otra tarea en curso.")
+            return
+
+        email = self.talkbank_email.get().strip()
+        password = self.talkbank_password.get()
+        output_dir = self.source_root.get().strip() or "Corpora"
+
+        if not email or not password:
+            messagebox.showerror("Error", "Introduce el email y la contraseña de TalkBank.")
+            return
+
+        self._append_log("\nIniciando descarga de corpus de TalkBank...\n")
+        self._run_in_background(
+            lambda: self._download_corpora_worker(email, password, output_dir)
+        )
+
+    def _download_corpora_worker(self, email, password, output_dir):
+        from src.cli.download_corpora import run as download_run
+        writer = _QueueWriter(self._enqueue_log)
+        try:
+            with redirect_stdout(writer), redirect_stderr(writer):
+                download_run(
+                    email=email,
+                    password=password,
+                    corpora_filter=None,
+                    output_dir=output_dir,
+                    force=False,
+                )
+            self._enqueue_log("\nDescarga completada.\n")
+            self._enqueue_callback(self._refresh_corpora)
+        except Exception as exc:
+            self._enqueue_callback(
+                lambda: messagebox.showerror("Error al descargar corpus", str(exc))
+            )
+        finally:
+            self._enqueue_callback(lambda: self._set_busy_state(False, "Listo."))
 
     def _browse_source_root(self):
         selected_dir = filedialog.askdirectory(initialdir=self.source_root.get() or ".")

@@ -30,8 +30,8 @@ def main(argv=None):
     namespace = parser.parse_args(argv)
     options = GrammaticalCLIOptions.from_namespace(namespace)
     corpus_options = CorpusCLIOptions.from_namespace(namespace)
-    source_root = "Corpus"
-    output_root = "Corpus_modified"
+    source_root = "Corpora"
+    output_root = "Corpora_modified"
 
     print("Inicializando corpus...")
     initialize_corpuses(source_root=source_root, output_root=output_root)

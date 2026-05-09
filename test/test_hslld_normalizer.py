@@ -24,7 +24,7 @@ def test_extract_age_accepts_missing_day(tmp_path):
 
 def test_process_directory_groups_by_child_and_filters_non_target_files(tmp_path):
     source_dir = tmp_path / "Corpus" / "HSLLD"
-    target_dir = tmp_path / "Corpus_modified" / "HSLLD"
+    target_dir = tmp_path / "Corpora_modified" / "HSLLD"
 
     valid_br_dir = source_dir / "HV1" / "BR"
     valid_mt_dir = source_dir / "HV1" / "MT"

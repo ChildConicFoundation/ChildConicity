@@ -5,7 +5,7 @@ from src.data_io.corpus_selection import (
 
 
 def test_discover_available_corpora_lists_only_directories(tmp_path):
-    processed_root = tmp_path / "Corpus_modified"
+    processed_root = tmp_path / "Corpora_modified"
     processed_root.mkdir()
     (processed_root / "Brent").mkdir()
     (processed_root / "Post").mkdir()
@@ -16,7 +16,7 @@ def test_discover_available_corpora_lists_only_directories(tmp_path):
 
 def test_filter_corpus_data_keeps_only_selected_corpora():
     corpus_data = {
-        "Corpus_modified": {
+        "Corpora_modified": {
             "Brent": {"a": {}},
             "Post": {"b": {}},
             "VanKleeck": {"c": {}},
@@ -26,7 +26,7 @@ def test_filter_corpus_data_keeps_only_selected_corpora():
     filtered_data = filter_corpus_data(corpus_data, ["Post", "VanKleeck"])
 
     assert filtered_data == {
-        "Corpus_modified": {
+        "Corpora_modified": {
             "Post": {"b": {}},
             "VanKleeck": {"c": {}},
         }
@@ -34,6 +34,6 @@ def test_filter_corpus_data_keeps_only_selected_corpora():
 
 
 def test_filter_corpus_data_returns_original_data_for_all():
-    corpus_data = {"Corpus_modified": {"Brent": {"a": {}}}}
+    corpus_data = {"Corpora_modified": {"Brent": {"a": {}}}}
 
     assert filter_corpus_data(corpus_data, None) == corpus_data

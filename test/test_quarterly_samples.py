@@ -21,13 +21,13 @@ def test_get_age_quarter_from_compact_age():
 
 def test_group_data_by_age_groups_children_and_adults():
     processed_data = {
-        "Corpus_modified": {
+        "Corpora_modified": {
             "Post": {
                 "Lew": {
                     "files": [
                         {
                             "metadata": {
-                                "file_path": "Corpus_modified/Post/Lew/020508.cha",
+                                "file_path": "Corpora_modified/Post/Lew/020508.cha",
                                 "child_age": "2 years 05 months 08 days",
                                 "child_name": "Lew",
                             },

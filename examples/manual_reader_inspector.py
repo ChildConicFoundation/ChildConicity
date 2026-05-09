@@ -8,7 +8,7 @@ def inspect_reader_output():
     reader = Reader()
     
     # Leer un archivo .cha de prueba
-    test_file = "Corpus_modified/VanKleeck/walter/walter1.cha"
+    test_file = "Corpora_modified/VanKleeck/walter/walter1.cha"
     
     if not os.path.exists(test_file):
         print(f"Error: No se encontró el archivo de prueba {test_file}")

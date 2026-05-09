@@ -132,7 +132,7 @@ def test_grammatical_formatter_returns_three_nones_for_missing_file():
 
 def test_collect_grammatical_categories_returns_sorted_categories():
     corpus_data = {
-        "Corpus_modified": {
+        "Corpora_modified": {
             "Post": {
                 "Lew": {
                     "files": [
@@ -177,7 +177,7 @@ def test_process_grammatical_data_with_formatter_filters_categories(tmp_path):
     )
 
     corpus_data = {
-        "Corpus_modified": {
+        "Corpora_modified": {
             "Post": {
                 "Lew": {
                     "files": [
@@ -197,7 +197,7 @@ def test_process_grammatical_data_with_formatter_filters_categories(tmp_path):
     processed_data = process_grammatical_data_with_formatter(
         corpus_data, grammatical_categories=["noun"]
     )
-    processed_file = processed_data["Corpus_modified"]["Post"]["Lew"]["files"][0]
+    processed_file = processed_data["Corpora_modified"]["Post"]["Lew"]["files"][0]
 
     assert len(processed_file["children_data"]) == 1
     assert processed_file["children_data"][1]["category"] == "noun"
@@ -210,7 +210,7 @@ def test_process_grammatical_data_with_formatter_filters_categories(tmp_path):
 
 def test_process_grammatical_data_skips_unreadable_files():
     corpus_data = {
-        "Corpus_modified": {
+        "Corpora_modified": {
             "Post": {
                 "Lew": {
                     "files": [
@@ -229,7 +229,7 @@ def test_process_grammatical_data_skips_unreadable_files():
 
     processed_data = process_grammatical_data_with_formatter(corpus_data)
 
-    assert processed_data["Corpus_modified"]["Post"]["Lew"]["files"] == []
+    assert processed_data["Corpora_modified"]["Post"]["Lew"]["files"] == []
 
 
 def test_run_grammatical_pipeline_exports_filtered_data(tmp_path):
@@ -249,7 +249,7 @@ def test_run_grammatical_pipeline_exports_filtered_data(tmp_path):
     )
 
     corpus_data = {
-        "Corpus_modified": {
+        "Corpora_modified": {
             "Post": {
                 "Lew": {
                     "files": [
@@ -272,7 +272,7 @@ def test_run_grammatical_pipeline_exports_filtered_data(tmp_path):
         grammatical_categories=["noun"],
     )
 
-    processed_file = result["processed_data"]["Corpus_modified"]["Post"]["Lew"]["files"][0]
+    processed_file = result["processed_data"]["Corpora_modified"]["Post"]["Lew"]["files"][0]
     assert len(processed_file["children_data"]) == 1
     assert len(processed_file["other_children_data"]) == 0
     assert len(processed_file["adults_data"]) == 1
@@ -282,13 +282,13 @@ def test_run_grammatical_pipeline_exports_filtered_data(tmp_path):
 
 def test_grammatical_exporter_exports_grouped_rows(tmp_path):
     processed_data = {
-        "Corpus_modified": {
+        "Corpora_modified": {
             "Post": {
                 "Lew": {
                     "files": [
                         {
                             "metadata": {
-                                "file_path": "Corpus_modified/Post/Lew/a.cha",
+                                "file_path": "Corpora_modified/Post/Lew/a.cha",
                                 "child_age": "1 years 06 months 00 days",
                                 "child_name": "Lew",
                             },
@@ -322,7 +322,7 @@ def test_grammatical_exporter_exports_grouped_rows(tmp_path):
                     "files": [
                         {
                             "metadata": {
-                                "file_path": "Corpus_modified/Post/Juan/b.cha",
+                                "file_path": "Corpora_modified/Post/Juan/b.cha",
                                 "child_age": "1 years 06 months 15 days",
                                 "child_name": "Juan",
                             },
@@ -370,12 +370,12 @@ def test_grammatical_exporter_exports_grouped_rows(tmp_path):
     assert payload["rows"][0]["lemma"] == "pull"
     assert payload["rows"][0]["attributes"] == ["Fin", "Imp", "S"]
     assert payload["rows"][0]["child_name"] == "Lew"
-    assert payload["rows"][0]["file_path"] == "Corpus_modified/Post/Lew/a.cha"
+    assert payload["rows"][0]["file_path"] == "Corpora_modified/Post/Lew/a.cha"
     assert rows[0]["id"] == "1"
     assert rows[0]["raw_token"] == "verb|pull-Fin-Imp-S"
     assert rows[0]["attributes"] == "Fin|Imp|S"
     assert rows[0]["child_name"] == "Lew"
-    assert rows[0]["file_path"] == "Corpus_modified/Post/Lew/a.cha"
+    assert rows[0]["file_path"] == "Corpora_modified/Post/Lew/a.cha"
     assert raw_summary[0]["quarter"] == "01Y02Q"
     assert word_count_payload["total_lemma_entries"] == 1
     assert word_count_payload["total_occurrences"] == 3

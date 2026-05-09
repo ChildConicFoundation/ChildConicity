@@ -128,7 +128,7 @@ class ChildConicityApp(tk.Tk):
         self.geometry("980x720")
 
         self.source_root = tk.StringVar(value="Corpora")
-        self.processed_root = tk.StringVar(value="Corpus_modified")
+        self.processed_root = tk.StringVar(value="Corpora_modified")
         self.output_dir = tk.StringVar(value=DEFAULT_TOKENS_OUTPUT_DIR)
         self.mode = tk.StringVar(value="tokens")
         self.all_corpora = tk.BooleanVar(value=True)

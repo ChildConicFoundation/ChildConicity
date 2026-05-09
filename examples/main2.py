@@ -41,8 +41,8 @@ def main(argv=None):
     namespace = parser.parse_args(argv)
     corpus_options = CorpusCLIOptions.from_namespace(namespace)
 
-    source_root = "Corpus"
-    output_root = "Corpus_modified"
+    source_root = "Corpora"
+    output_root = "Corpora_modified"
 
     # Inicializar los corpus
     print("Inicializando corpus...")

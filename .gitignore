@@ -29,6 +29,7 @@ MANIFEST
 # Project Created files
 Corpus_processed/
 Corpus_modified/
+Corpora_modified/
 Corpus/NotUploadedYet/*
 Corpora/
 coverage_report/

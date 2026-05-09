@@ -10,13 +10,13 @@ def process_grammatical_data_with_formatter(
     Procesa los datos morfológicos usando GrammaticalDataFormatter,
     manteniendo la estructura jerárquica del corpus.
     """
-    result = {"Corpus_modified": {}}
+    result = {"Corpora_modified": {}}
     formatter = GrammaticalDataFormatter(grammatical_categories=grammatical_categories)
 
     for corpus_name, corpus_data_current in _iter_target_corpora(corpus_data):
         processed_corpus = _process_corpus_directories(corpus_data_current, formatter)
         if processed_corpus:
-            result["Corpus_modified"][corpus_name] = processed_corpus
+            result["Corpora_modified"][corpus_name] = processed_corpus
 
     return result
 
@@ -49,7 +49,7 @@ def run_grammatical_pipeline(
 def collect_grammatical_categories(corpus_data):
     categories = set()
 
-    for file in _iter_corpus_files(corpus_data.get("Corpus_modified", {})):
+    for file in _iter_corpus_files(corpus_data.get("Corpora_modified", {})):
         utterances = file.get("metadata", {}).get("morphological_utterances", [])
         for utterance in utterances:
             for token in utterance.get("tokens", []):
@@ -72,7 +72,7 @@ def _iter_corpus_files(content):
 
 
 def _iter_target_corpora(corpus_data):
-    corpus_root = corpus_data.get("Corpus_modified", {})
+    corpus_root = corpus_data.get("Corpora_modified", {})
     for corpus_name in TARGET_CORPORA:
         if corpus_name in corpus_root:
             yield corpus_name, corpus_root[corpus_name]

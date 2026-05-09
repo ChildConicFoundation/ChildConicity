@@ -15,8 +15,8 @@ from src.corpus_normalizers.vankleeck_normalizer import (
     process_directory as process_vankleeck,
 )
 
-DEFAULT_SOURCE_ROOT = "Corpus"
-DEFAULT_OUTPUT_ROOT = "Corpus_modified"
+DEFAULT_SOURCE_ROOT = "Corpora"
+DEFAULT_OUTPUT_ROOT = "Corpora_modified"
 
 
 @dataclass

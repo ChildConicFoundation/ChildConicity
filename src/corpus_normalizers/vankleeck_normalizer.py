@@ -84,10 +84,10 @@ def main():
     project_root = Path(__file__).parent.parent
     
     # Directorios de origen y destino
-    source_dir = project_root / "Corpus" / "VanKleeck"
-    corpus_modified_dir = project_root / "Corpus_modified"
+    source_dir = project_root / "Corpora" / "VanKleeck"
+    corpus_modified_dir = project_root / "Corpora_modified"
     
-    # Crear el directorio Corpus_modified si no existe
+    # Crear el directorio Corpora_modified si no existe
     if not corpus_modified_dir.exists():
         corpus_modified_dir.mkdir()
     

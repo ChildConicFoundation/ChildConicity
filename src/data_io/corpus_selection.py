@@ -16,11 +16,11 @@ def filter_corpus_data(corpus_data, selected_corpora=None):
     if selected_corpora is None:
         return corpus_data
 
-    corpus_root = corpus_data.get("Corpus_modified", {})
+    corpus_root = corpus_data.get("Corpora_modified", {})
     filtered_root = {
         corpus_name: corpus_root[corpus_name]
         for corpus_name in selected_corpora
         if corpus_name in corpus_root
     }
 
-    return {"Corpus_modified": filtered_root}
+    return {"Corpora_modified": filtered_root}

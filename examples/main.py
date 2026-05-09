@@ -7,8 +7,8 @@ from src.corpus_normalizers.brent_normalizer import BrendManipulator
 def main():
     """Función principal para procesar el corpus de Brend"""
     # Configurar rutas
-    base_dir = os.path.join("Corpus", "Brent")
-    output_dir = os.path.join("Corpus", "Brent_modified")
+    base_dir = os.path.join("Corpora", "Brent")
+    output_dir = os.path.join("Corpora", "Brent_modified")
     
     # Crear el manipulador
     manipulator = BrendManipulator()
@@ -111,10 +111,10 @@ def main():
     
     # Procesar cada corpus
     corpora = {
-        'Brent': 'Corpus_modified/Brent',
-        'VanKleeck': 'Corpus_modified/VanKleeck',
-        'Post': 'Corpus_modified/Post',
-        'NewEngland': 'Corpus_modified/NewEngland'
+        'Brent': 'Corpora_modified/Brent',
+        'VanKleeck': 'Corpora_modified/VanKleeck',
+        'Post': 'Corpora_modified/Post',
+        'NewEngland': 'Corpora_modified/NewEngland'
     }
     
     for corpus_name, corpus_path in corpora.items():

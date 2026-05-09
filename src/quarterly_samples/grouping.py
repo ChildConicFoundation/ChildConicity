@@ -39,7 +39,7 @@ def group_data_by_age(processed_data):
     data_grouped_by_age = {}
     processed_files = set()
 
-    for _, corpus_data in processed_data["Corpus_modified"].items():
+    for _, corpus_data in processed_data["Corpora_modified"].items():
         for _, child_data in corpus_data.items():
             if "files" not in child_data:
                 continue

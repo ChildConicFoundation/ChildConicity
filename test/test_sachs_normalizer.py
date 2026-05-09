@@ -13,7 +13,7 @@ def test_extract_age_supports_missing_day_for_sachs(tmp_path):
 
 def test_process_directory_groups_flat_sachs_files_under_naomi(tmp_path):
     source_dir = tmp_path / "Corpus" / "Sachs"
-    target_dir = tmp_path / "Corpus_modified" / "Sachs"
+    target_dir = tmp_path / "Corpora_modified" / "Sachs"
     source_dir.mkdir(parents=True)
 
     (source_dir / "010229.cha").write_text(

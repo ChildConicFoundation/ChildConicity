@@ -42,15 +42,15 @@ def print_sampled_metadata(data):
 
     for corpus in main_dirs:
         print(f"\n=== Corpus {corpus} ===")
-        if corpus not in data["Corpus_modified"]:
+        if corpus not in data["Corpora_modified"]:
             continue
 
-        subdirs = list(data["Corpus_modified"][corpus].keys())
+        subdirs = list(data["Corpora_modified"][corpus].keys())
         if not subdirs:
             continue
 
         first_subdir = subdirs[0]
-        corpus_branch = data["Corpus_modified"][corpus][first_subdir]
+        corpus_branch = data["Corpora_modified"][corpus][first_subdir]
         if "files" not in corpus_branch:
             continue
 
@@ -71,12 +71,12 @@ def show_lew_early_expressions(processed_data):
     """
     print("\n=== Expresiones tempranas de Lew ===")
 
-    if "Post" not in processed_data["Corpus_modified"]:
+    if "Post" not in processed_data["Corpora_modified"]:
         return
-    if "Lew" not in processed_data["Corpus_modified"]["Post"]:
+    if "Lew" not in processed_data["Corpora_modified"]["Post"]:
         return
 
-    lew_files = processed_data["Corpus_modified"]["Post"]["Lew"]["files"]
+    lew_files = processed_data["Corpora_modified"]["Post"]["Lew"]["files"]
     sorted_files = sorted(lew_files, key=lambda x: x["metadata"].get("child_age", ""))
 
     if not sorted_files:

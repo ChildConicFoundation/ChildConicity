@@ -61,7 +61,7 @@ class CorpusCLIOptions:
             available_corpora_text = ", ".join(available_corpora)
             missing_corpora_text = ", ".join(missing_corpora)
             raise ValueError(
-                "Los siguientes corpus no existen en Corpus_modified: "
+                "Los siguientes corpus no existen en Corpora_modified: "
                 f"{missing_corpora_text}. "
                 f"Corpus disponibles: {available_corpora_text}"
             )
@@ -85,7 +85,7 @@ def add_corpus_options(parser):
     parser.add_argument(
         "--list-corpora",
         action="store_true",
-        help="Muestra los corpus disponibles en Corpus_modified y termina.",
+        help="Muestra los corpus disponibles en Corpora_modified y termina.",
     )
     return parser
 

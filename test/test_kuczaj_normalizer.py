@@ -13,7 +13,7 @@ def test_extract_age_supports_missing_day_for_kuczaj(tmp_path):
 
 def test_process_directory_groups_flat_kuczaj_files_under_abe(tmp_path):
     source_dir = tmp_path / "Corpus" / "Kuczaj"
-    target_dir = tmp_path / "Corpus_modified" / "Kuczaj"
+    target_dir = tmp_path / "Corpora_modified" / "Kuczaj"
     source_dir.mkdir(parents=True)
 
     (source_dir / "020424.cha").write_text(

@@ -1,6 +1,7 @@
 import os
 from dataclasses import dataclass
 
+from src.corpus_normalizers.bates_normalizer import process_directory as process_bates
 from src.corpus_normalizers.bloom_normalizer import process_directory as process_bloom
 from src.corpus_normalizers.brown_normalizer import process_directory as process_brown
 from src.corpus_normalizers.brent_normalizer import BrendManipulator
@@ -26,6 +27,12 @@ DEFAULT_OUTPUT_ROOT = "Corpora_modified"
 class CorpusInitializer:
     source_root: str = DEFAULT_SOURCE_ROOT
     output_root: str = DEFAULT_OUTPUT_ROOT
+
+    def initialize_bates(self):
+        """Inicializa el corpus de Bates."""
+        print("\nInicializando corpus de Bates...")
+        process_bates(self._source_dir("Bates"), self._output_dir("Bates"))
+        print("¡Corpus de Bates inicializado!")
 
     def initialize_brent(self):
         """Inicializa el corpus de Brent."""
@@ -110,6 +117,7 @@ class CorpusInitializer:
     def initialize_all(self):
         """Inicializa todos los corpus."""
         print("Iniciando inicialización de corpus...")
+        self.initialize_bates()
         self.initialize_brent()
         self.initialize_new_england()
         self.initialize_post()

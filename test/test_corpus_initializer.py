@@ -10,6 +10,8 @@ def test_corpus_initializer_initialize_all_uses_source_and_output_roots():
     )
 
     with patch(
+        "src.corpus_initialization.initializer.process_bates"
+    ) as mock_bates, patch(
         "src.corpus_initialization.initializer.BrendManipulator"
     ) as mock_brend_manipulator, patch(
         "src.corpus_initialization.initializer.process_newengland"
@@ -72,4 +74,8 @@ def test_corpus_initializer_initialize_all_uses_source_and_output_roots():
     mock_providence.assert_called_once_with(
         "/tmp/source/Providence",
         "/tmp/output/Providence",
+    )
+    mock_bates.assert_called_once_with(
+        "/tmp/source/Bates",
+        "/tmp/output/Bates",
     )

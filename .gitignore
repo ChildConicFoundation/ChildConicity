@@ -29,6 +29,8 @@ MANIFEST
 # Project Created files
 Corpus_processed/
 Corpus_modified/
+Corpus/NotUploadedYet/*
+Corpora/
 coverage_report/
 pruebas/
 iconic_vs_noniconic/

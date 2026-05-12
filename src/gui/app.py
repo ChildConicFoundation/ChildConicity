@@ -14,7 +14,9 @@ from tkinter.scrolledtext import ScrolledText
 from src.corpus_initialization import CorpusInitializer
 from src.gui.services import (
     DEFAULT_DISTRIBUTION_DIR,
+    DEFAULT_ICONICITY_CSV,
     DEFAULT_PLOTS_DIR,
+    DEFAULT_RATED_OUTPUT_DIR,
     DEFAULT_TOKENS_OUTPUT_DIR,
     DEFAULT_TYPE_COUNT_MODE,
     DEFAULT_TYPES_OUTPUT_DIR,
@@ -130,6 +132,8 @@ class ChildConicityApp(tk.Tk):
         self.source_root = tk.StringVar(value="Corpora")
         self.processed_root = tk.StringVar(value="Corpora_modified")
         self.output_dir = tk.StringVar(value=DEFAULT_TOKENS_OUTPUT_DIR)
+        self.rated_source_dir = tk.StringVar(value=DEFAULT_TYPES_OUTPUT_DIR)
+        self.rated_output_dir = tk.StringVar(value=DEFAULT_RATED_OUTPUT_DIR)
         self.mode = tk.StringVar(value="tokens")
         self.all_corpora = tk.BooleanVar(value=True)
         self.all_categories = tk.BooleanVar(value=True)
@@ -207,6 +211,12 @@ class ChildConicityApp(tk.Tk):
         self.actions_frame = ttk.Frame(main_frame)
         self.actions_frame.pack(fill="x", pady=(12, 0))
         self._build_actions_ui(self.actions_frame)
+
+        self.rated_frame = ttk.LabelFrame(
+            main_frame, text="Exportación con iconicidad (requiere Types)", padding=10
+        )
+        self.rated_frame.pack(fill="x", pady=(12, 0))
+        self._build_rated_ui(self.rated_frame)
 
         self.log_frame = ttk.LabelFrame(main_frame, text="Registro", padding=10)
         self.log_frame.pack(fill="both", expand=True, pady=(12, 0))
@@ -362,12 +372,57 @@ class ChildConicityApp(tk.Tk):
         types_radio.pack(side="left", padx=(12, 0))
         self._busy_widgets.append(types_radio)
 
+
         output_frame = ttk.Frame(parent)
         output_frame.pack(fill="x", pady=(10, 0))
         ttk.Label(output_frame, text="Directorio de salida").pack(side="left")
         ttk.Entry(output_frame, textvariable=self.output_dir, width=55).pack(
             side="left", fill="x", expand=True, padx=(8, 0)
         )
+
+    def _build_rated_ui(self, parent):
+        ttk.Label(
+            parent,
+            text=(
+                "Enriquece los datos trimestrales con ratings de iconicidad y genera "
+                "WordCount (con rating) y LemaCount (lemas colapsados). "
+                "Requiere haber ejecutado el análisis de Types previamente."
+            ),
+            wraplength=860,
+            justify="left",
+        ).pack(anchor="w")
+
+        source_frame = ttk.Frame(parent)
+        source_frame.pack(fill="x", pady=(10, 0))
+        ttk.Label(source_frame, text="Datos trimestrales").pack(side="left")
+        ttk.Entry(source_frame, textvariable=self.rated_source_dir, width=55).pack(
+            side="left", fill="x", expand=True, padx=(8, 0)
+        )
+        browse_btn = ttk.Button(
+            source_frame,
+            text="Buscar...",
+            command=self._browse_rated_source_dir_and_refresh,
+        )
+        browse_btn.pack(side="left", padx=(8, 0))
+        self._busy_widgets.append(browse_btn)
+
+        output_frame = ttk.Frame(parent)
+        output_frame.pack(fill="x", pady=(8, 0))
+        ttk.Label(output_frame, text="Directorio de salida").pack(side="left")
+        ttk.Entry(output_frame, textvariable=self.rated_output_dir, width=55).pack(
+            side="left", fill="x", expand=True, padx=(8, 0)
+        )
+
+        self.rated_status_label = ttk.Label(parent, text="", foreground="gray")
+        self.rated_status_label.pack(anchor="w", pady=(4, 0))
+
+        self.rated_run_button = ttk.Button(
+            parent,
+            text="Ejecutar exportación",
+            command=self._start_rated_export,
+            state=tk.DISABLED,
+        )
+        self.rated_run_button.pack(anchor="w", pady=(8, 0))
 
     def _build_types_ui(self, parent):
         all_categories_check = ttk.Checkbutton(
@@ -542,6 +597,60 @@ class ChildConicityApp(tk.Tk):
             self.processed_root.set(selected_dir)
             self._refresh_corpora()
 
+    def _browse_rated_source_dir_and_refresh(self):
+        selected_dir = filedialog.askdirectory(
+            initialdir=self.rated_source_dir.get() or "."
+        )
+        if selected_dir:
+            self.rated_source_dir.set(selected_dir)
+            self._check_rated_availability()
+
+    def _check_rated_availability(self):
+        source = self.rated_source_dir.get().strip()
+        has_data = (
+            bool(source)
+            and os.path.isdir(source)
+            and any(
+                (p / "WordCount").is_dir()
+                for p in __import__("pathlib").Path(source).iterdir()
+                if p.is_dir()
+            )
+        )
+        if has_data:
+            self.rated_status_label.configure(
+                text=f"Datos encontrados en: {source}",
+                foreground="green",
+            )
+            if not self._busy:
+                self.rated_run_button.configure(state=tk.NORMAL)
+        else:
+            self.rated_status_label.configure(
+                text="No se encuentran datos trimestrales. Ejecuta primero el análisis de Types.",
+                foreground="red",
+            )
+            self.rated_run_button.configure(state=tk.DISABLED)
+
+    def _start_rated_export(self):
+        if self._busy:
+            self._notify_busy("Ya hay otra tarea en curso.")
+            return
+
+        rated_source = self.rated_source_dir.get().strip()
+        output_dir = self.rated_output_dir.get().strip() or DEFAULT_RATED_OUTPUT_DIR
+
+        self._append_log("\nLanzando exportación con iconicidad...\n")
+        self._run_in_background(
+            lambda: self._run_analysis_worker(
+                mode="rated",
+                processed_root=rated_source,
+                output_dir=output_dir,
+                generate_plots=False,
+                selected_corpora=None,
+                selected_categories=None,
+                type_count_mode=DEFAULT_TYPE_COUNT_MODE,
+            )
+        )
+
     def _handle_close(self):
         self._is_closing = True
         self.destroy()
@@ -562,6 +671,7 @@ class ChildConicityApp(tk.Tk):
             return
 
         self._refresh_corpora()
+        self._check_rated_availability()
 
     def _on_categories_frame_configure(self, _event):
         self.categories_canvas.configure(
@@ -601,11 +711,14 @@ class ChildConicityApp(tk.Tk):
         self.type_count_frame.pack_forget()
         self.actions_frame.pack_forget()
         self.log_frame.pack_forget()
+        self.rated_frame.pack_forget()
 
         self.run_analysis_button.pack_forget()
         self.generate_plots_button.pack_forget()
 
-        if self.mode.get() == "types":
+        mode = self.mode.get()
+
+        if mode == "types":
             self._refresh_categories()
             self.types_frame.pack(fill="both", expand=False, pady=(12, 0))
             self.type_count_frame.pack(fill="x", pady=(12, 0))
@@ -619,6 +732,7 @@ class ChildConicityApp(tk.Tk):
                 self.output_dir.set(DEFAULT_TOKENS_OUTPUT_DIR)
 
         self.actions_frame.pack(fill="x", pady=(12, 0))
+        self.rated_frame.pack(fill="x", pady=(12, 0))
         self.log_frame.pack(fill="both", expand=True, pady=(12, 0))
 
         self._sync_corpora_ui()
@@ -843,13 +957,22 @@ class ChildConicityApp(tk.Tk):
         selected_categories = self._get_selected_categories()
         type_count_mode = self.type_count_mode.get()
 
-        validation_error = self._validate_analysis_inputs(
-            processed_root,
-            selected_corpora,
-        )
-        if validation_error is not None:
-            messagebox.showerror("Error", validation_error)
-            return
+        if mode == "rated":
+            rated_source = self.rated_source_dir.get().strip()
+            if not rated_source or not os.path.isdir(rated_source):
+                messagebox.showerror(
+                    "Error",
+                    f"La carpeta de datos trimestrales no existe: {rated_source}",
+                )
+                return
+        else:
+            validation_error = self._validate_analysis_inputs(
+                processed_root,
+                selected_corpora,
+            )
+            if validation_error is not None:
+                messagebox.showerror("Error", validation_error)
+                return
 
         if mode == "types" and selected_categories == []:
             messagebox.showerror(
@@ -899,6 +1022,10 @@ class ChildConicityApp(tk.Tk):
         self._set_category_checkbuttons_state(
             tk.DISABLED if busy or self.all_categories.get() else tk.NORMAL
         )
+        if busy:
+            self.rated_run_button.configure(state=tk.DISABLED)
+        else:
+            self._check_rated_availability()
         self.status_text.set(status_text)
 
     def _validate_analysis_inputs(self, processed_root, selected_corpora):
@@ -990,6 +1117,7 @@ class ChildConicityApp(tk.Tk):
             )
         finally:
             self._enqueue_callback(lambda: self._set_busy_state(False, "Listo."))
+            self._enqueue_callback(self._check_rated_availability)
 
     def _run_analysis(
         self,
@@ -1039,20 +1167,29 @@ class ChildConicityApp(tk.Tk):
         ) as result_file:
             result_path = result_file.name
 
+        if mode == "rated":
+            effective_source = self.rated_source_dir.get().strip() or DEFAULT_TYPES_OUTPUT_DIR
+        else:
+            effective_source = processed_root
+
         command = [
             analysis_interpreter,
             "-u",
             _analysis_runner_path(),
             mode,
             "--processed-root",
-            processed_root,
+            effective_source,
             "--output-dir",
             output_dir
             or (
-                DEFAULT_TYPES_OUTPUT_DIR
+                DEFAULT_RATED_OUTPUT_DIR
+                if mode == "rated"
+                else DEFAULT_TYPES_OUTPUT_DIR
                 if mode == "types"
                 else DEFAULT_TOKENS_OUTPUT_DIR
             ),
+            "--iconicity-csv",
+            DEFAULT_ICONICITY_CSV,
             "--result-file",
             result_path,
         ]
@@ -1069,7 +1206,7 @@ class ChildConicityApp(tk.Tk):
             if selected_categories:
                 for category in selected_categories:
                     command.extend(["--category", category])
-        elif generate_plots:
+        elif mode != "rated" and generate_plots:
             plots_dir, distribution_dir = _token_plot_directories(output_dir)
             command.extend(
                 [
@@ -1116,6 +1253,13 @@ class ChildConicityApp(tk.Tk):
                 os.unlink(result_path)
 
     def _report_analysis_result(self, mode, output_dir, result, generate_plots):
+        if mode == "rated":
+            self._enqueue_log(
+                "\nExportación con iconicidad completada. Resultados en: "
+                f"{output_dir or DEFAULT_RATED_OUTPUT_DIR}\n"
+            )
+            return
+
         if mode == "types":
             if generate_plots:
                 self._enqueue_log(

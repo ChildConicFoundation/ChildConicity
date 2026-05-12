@@ -37,6 +37,7 @@ pruebas/
 iconic_vs_noniconic/
 quarterly_valid_words/
 quarterly_grammatical_categories/
+quarterly_lema_count/
 
 # PyInstaller
 #  Usually these files are written by a python script from a template

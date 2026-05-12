@@ -8,22 +8,45 @@ if PROJECT_ROOT not in sys.path:
     sys.path.insert(0, PROJECT_ROOT)
 
 from src.gui.services import (
+    DEFAULT_ICONICITY_CSV,
+    DEFAULT_RATED_OUTPUT_DIR,
+    DEFAULT_TOKENS_OUTPUT_DIR,
     DEFAULT_TYPE_COUNT_MODE,
+    DEFAULT_TYPES_OUTPUT_DIR,
     TYPE_COUNT_ONLY_ONCE,
     TYPE_COUNT_WITH_REPETITIONS,
+    run_rated_export,
     run_tokens_analysis,
     run_types_analysis,
 )
+
+_DEFAULT_PROCESSED_ROOT = {
+    "tokens": "Corpora_modified",
+    "types": "Corpora_modified",
+    "rated": DEFAULT_TYPES_OUTPUT_DIR,
+}
+
+_DEFAULT_OUTPUT_DIR = {
+    "tokens": DEFAULT_TOKENS_OUTPUT_DIR,
+    "types": DEFAULT_TYPES_OUTPUT_DIR,
+    "rated": DEFAULT_RATED_OUTPUT_DIR,
+}
+
+_DEFAULT_RESULT_FILE = {
+    "tokens": "tokens_result.json",
+    "types": "types_result.json",
+    "rated": "rated_result.json",
+}
 
 
 def main(argv=None):
     parser = argparse.ArgumentParser(
         description="Ejecuta analisis de la GUI con un interprete alternativo."
     )
-    parser.add_argument("mode", choices=("tokens", "types"))
-    parser.add_argument("--processed-root", required=True)
-    parser.add_argument("--output-dir", required=True)
-    parser.add_argument("--iconicity-csv", default="iconicity_ratings_cleaned.csv")
+    parser.add_argument("mode", choices=("tokens", "types", "rated"))
+    parser.add_argument("--processed-root", default=None)
+    parser.add_argument("--output-dir", default=None)
+    parser.add_argument("--iconicity-csv", default=DEFAULT_ICONICITY_CSV)
     parser.add_argument("--plots-dir")
     parser.add_argument("--distribution-dir")
     parser.add_argument("--generate-plots", action="store_true")
@@ -39,8 +62,12 @@ def main(argv=None):
         choices=(TYPE_COUNT_WITH_REPETITIONS, TYPE_COUNT_ONLY_ONCE),
         default=DEFAULT_TYPE_COUNT_MODE,
     )
-    parser.add_argument("--result-file", required=True)
+    parser.add_argument("--result-file", default=None)
     args = parser.parse_args(argv)
+
+    processed_root = args.processed_root or _DEFAULT_PROCESSED_ROOT[args.mode]
+    output_dir = args.output_dir or _DEFAULT_OUTPUT_DIR[args.mode]
+    result_file = args.result_file or _DEFAULT_RESULT_FILE[args.mode]
 
     selected_corpora = args.selected_corpora or []
     categories = args.categories or []
@@ -54,12 +81,18 @@ def main(argv=None):
     )
     sys.stdout.flush()
 
-    if args.mode == "types":
+    if args.mode == "rated":
+        result = run_rated_export(
+            source_dir=processed_root,
+            output_dir=output_dir,
+            iconicity_csv=args.iconicity_csv,
+        )
+    elif args.mode == "types":
         result = run_types_analysis(
-            args.processed_root,
+            processed_root,
             selected_corpora=args.selected_corpora,
             categories=args.categories,
-            output_dir=args.output_dir,
+            output_dir=output_dir,
             iconicity_csv=args.iconicity_csv,
             generate_plots=args.generate_plots,
             plots_dir=args.plots_dir,
@@ -70,9 +103,9 @@ def main(argv=None):
         )
     else:
         result = run_tokens_analysis(
-            args.processed_root,
+            processed_root,
             selected_corpora=args.selected_corpora,
-            output_dir=args.output_dir,
+            output_dir=output_dir,
             iconicity_csv=args.iconicity_csv,
             generate_plots=args.generate_plots,
             plots_dir=args.plots_dir,
@@ -83,7 +116,7 @@ def main(argv=None):
         "outputs": result.get("outputs"),
         "plot_outputs": result.get("plot_outputs"),
     }
-    with open(args.result_file, "w", encoding="utf-8") as file:
+    with open(result_file, "w", encoding="utf-8") as file:
         json.dump(payload, file, ensure_ascii=False, indent=2)
 
     return 0

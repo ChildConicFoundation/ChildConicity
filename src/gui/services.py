@@ -25,10 +25,12 @@ from src.data_io.grammatical_corpus_processing import (
 )
 from src.data_io.reader import Reader
 from src.quarterly_samples import ValidWordsStatsExporter, group_data_by_age
+from src.quarterly_samples.rated_exporter import export_rated
 
 
 DEFAULT_TOKENS_OUTPUT_DIR = "quarterly_valid_words"
 DEFAULT_TYPES_OUTPUT_DIR = "quarterly_grammatical_categories"
+DEFAULT_RATED_OUTPUT_DIR = "rated_quarterly_grammatical_categories"
 DEFAULT_ICONICITY_CSV = "iconicity_ratings_cleaned.csv"
 DEFAULT_PLOTS_DIR = "iconic_vs_noniconic"
 DEFAULT_DISTRIBUTION_DIR = "pruebas"
@@ -377,6 +379,26 @@ def _types_plots_dir_name(
         return f"{base_name}_only_once"
 
     return base_name
+
+
+def run_rated_export(
+    source_dir=DEFAULT_TYPES_OUTPUT_DIR,
+    output_dir=DEFAULT_RATED_OUTPUT_DIR,
+    iconicity_csv=DEFAULT_ICONICITY_CSV,
+):
+    print(f"Enriqueciendo WordCount desde {source_dir}...")
+    export_rated(
+        source_root=source_dir,
+        output_root=output_dir,
+        iconicity_csv=iconicity_csv,
+    )
+    print("Exportación con ratings completada.")
+    return {
+        "outputs": {
+            "source_dir": source_dir,
+            "output_dir": output_dir,
+        }
+    }
 
 
 def _type_count_mode_label(type_count_mode):

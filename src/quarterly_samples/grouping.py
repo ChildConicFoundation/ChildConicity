@@ -62,6 +62,7 @@ def group_data_by_age(processed_data):
                         "children_data": {},
                         "other_children_data": {},
                         "adults_data": {},
+                        "mlu_stats": _empty_mlu_stats(),
                         "files": [],
                     }
 
@@ -90,6 +91,11 @@ def group_data_by_age(processed_data):
                     data_grouped_by_age[age_quarter]["adults_data"][key] = (
                         _attach_file_metadata_to_entry(utterance, file["metadata"])
                     )
+
+                _add_mlu_stats(
+                    data_grouped_by_age[age_quarter]["mlu_stats"],
+                    file["metadata"].get("mlu_stats", {}),
+                )
 
                 child_example = _build_entry_example(
                     file["children_data"], "No hay expresiones de niños"
@@ -139,3 +145,24 @@ def _attach_file_metadata_to_entry(entry, metadata):
     enriched_entry["child_name"] = metadata.get("child_name", "N/A")
     enriched_entry["file_path"] = metadata.get("file_path", "")
     return enriched_entry
+
+
+def _empty_mlu_stats():
+    return {
+        "children": {"morpheme_count": 0, "utterance_count": 0},
+        "other_children": {"morpheme_count": 0, "utterance_count": 0},
+        "adults": {"morpheme_count": 0, "utterance_count": 0},
+    }
+
+
+def _add_mlu_stats(target, source):
+    for speaker_group, group_stats in source.items():
+        if speaker_group not in target:
+            continue
+
+        target[speaker_group]["morpheme_count"] += group_stats.get(
+            "morpheme_count", 0
+        )
+        target[speaker_group]["utterance_count"] += group_stats.get(
+            "utterance_count", 0
+        )

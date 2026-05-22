@@ -7,6 +7,7 @@ class GrammaticalDataFormatter:
         self.grammatical_categories = self._normalize_categories(
             grammatical_categories
         )
+        self.last_mlu_stats = self._empty_mlu_stats()
 
     def _normalize_categories(self, grammatical_categories):
         if grammatical_categories is None:
@@ -58,10 +59,16 @@ class GrammaticalDataFormatter:
         if data is None:
             return None, None, None
 
+        morphological_utterances = data["metadata"]["morphological_utterances"]
+        target_child_speakers = set(
+            data["metadata"].get("target_child_speakers", ["CHI"])
+        )
+        other_child_speakers = set(data["metadata"].get("other_child_speakers", []))
+
         return self.format_morphological_utterances(
-            data["metadata"]["morphological_utterances"],
-            set(data["metadata"].get("target_child_speakers", ["CHI"])),
-            set(data["metadata"].get("other_child_speakers", [])),
+            morphological_utterances,
+            target_child_speakers,
+            other_child_speakers,
         )
 
     def format_morphological_utterances(
@@ -77,12 +84,18 @@ class GrammaticalDataFormatter:
         other_child_counter = 1
         adult_counter = 1
 
-        for utterance in morphological_utterances:
+        self.last_mlu_stats = self._calculate_mlu_stats(
+            morphological_utterances,
+            target_child_speakers,
+            other_child_speakers,
+        )
+
+        for utterance_index, utterance in enumerate(morphological_utterances, start=1):
             for token in utterance["tokens"]:
                 if not self._should_include_category(token["category"]):
                     continue
 
-                entry = self._build_entry(utterance, token)
+                entry = self._build_entry(utterance, token, utterance_index)
 
                 speaker_group = self.classify_speaker(
                     utterance["speaker"],
@@ -101,12 +114,55 @@ class GrammaticalDataFormatter:
 
         return children_data, other_children_data, adults_data
 
-    def _build_entry(self, utterance, token):
+    def _build_entry(self, utterance, token, utterance_index):
         return {
             "speaker": utterance["speaker"],
+            "utterance_id": utterance_index,
+            "utterance_morpheme_count": self._count_utterance_morphemes(utterance),
             "category": token["category"],
             "lemma": token["lemma"],
             "attributes": token["attributes"],
             "raw_token": token["raw_token"],
             "timestamp": utterance["timestamp"],
+        }
+
+    def _calculate_mlu_stats(
+        self,
+        morphological_utterances,
+        target_child_speakers=None,
+        other_child_speakers=None,
+    ):
+        stats = self._empty_mlu_stats()
+
+        for utterance in morphological_utterances:
+            morpheme_count = self._count_utterance_morphemes(utterance)
+            if morpheme_count == 0:
+                continue
+
+            speaker_group = self.classify_speaker(
+                utterance["speaker"],
+                target_child_speakers,
+                other_child_speakers,
+            )
+            output_group = self._speaker_group_to_output_group(speaker_group)
+            stats[output_group]["morpheme_count"] += morpheme_count
+            stats[output_group]["utterance_count"] += 1
+
+        return stats
+
+    def _count_utterance_morphemes(self, utterance):
+        return len(utterance.get("tokens", []))
+
+    def _speaker_group_to_output_group(self, speaker_group):
+        if speaker_group == "target_child":
+            return "children"
+        if speaker_group == "other_child":
+            return "other_children"
+        return "adults"
+
+    def _empty_mlu_stats(self):
+        return {
+            "children": {"morpheme_count": 0, "utterance_count": 0},
+            "other_children": {"morpheme_count": 0, "utterance_count": 0},
+            "adults": {"morpheme_count": 0, "utterance_count": 0},
         }

@@ -79,6 +79,17 @@ _LC_FIELDS = [
     "iconicity_rating", "iconicity_sd", "iconicity_prop_known", "iconicity_n_ratings",
 ]
 
+_ADDITIONAL_DATA_FIELDS = [
+    "quarter",
+    "speaker_group",
+    "total_rows",
+    "total_lemma_entries",
+    "total_occurrences",
+    "MLU_index",
+    "mlu_morpheme_count",
+    "mlu_utterance_count",
+]
+
 
 def _to_csv_row(entry, fieldnames):
     row = {}
@@ -101,6 +112,14 @@ def _write_csv(path, entries, fieldnames):
         writer.writerows(_to_csv_row(e, fieldnames) for e in entries)
 
 
+def _write_additional_data_csv(path, payload):
+    row = _to_csv_row(payload, _ADDITIONAL_DATA_FIELDS)
+    with open(path, "w", encoding="utf-8", newline="") as f:
+        writer = csv.DictWriter(f, fieldnames=_ADDITIONAL_DATA_FIELDS)
+        writer.writeheader()
+        writer.writerow(row)
+
+
 def enrich_word_count(source, ratings):
     return {
         **source,
@@ -115,6 +134,9 @@ def build_lema_count(source, ratings):
         "speaker_group": source["speaker_group"],
         "total_lemma_entries": len(merged),
         "total_occurrences": sum(e["count"] for e in merged),
+        "MLU_index": source.get("MLU_index"),
+        "mlu_morpheme_count": source.get("mlu_morpheme_count", 0),
+        "mlu_utterance_count": source.get("mlu_utterance_count", 0),
         "lemma_entries": merged,
     }
 
@@ -152,9 +174,15 @@ def export_rated(
             with open(out_wc_dir / f"{stem}.json", "w", encoding="utf-8") as f:
                 json.dump(wc, f, ensure_ascii=False, indent=2)
             _write_csv(out_wc_dir / f"{stem}.csv", wc["lemma_entries"], _WC_FIELDS)
+            _write_additional_data_csv(
+                out_wc_dir / f"{stem}_additional_data.csv", wc
+            )
 
             with open(out_lc_dir / f"{stem}.json", "w", encoding="utf-8") as f:
                 json.dump(lc, f, ensure_ascii=False, indent=2)
             _write_csv(out_lc_dir / f"{stem}.csv", lc["lemma_entries"], _LC_FIELDS)
+            _write_additional_data_csv(
+                out_lc_dir / f"{stem}_additional_data.csv", lc
+            )
 
         print(f"[{group}] {len(files)} trimestres procesados")

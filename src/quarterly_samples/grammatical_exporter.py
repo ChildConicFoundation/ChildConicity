@@ -37,41 +37,54 @@ class GrammaticalCategoriesExporter:
                     speaker_group,
                     quarter_data.get(data_key, {}),
                 )
+                mlu_payload = self._build_mlu_payload(quarter_data, speaker_group)
                 payload = {
                     "quarter": quarter,
                     "speaker_group": speaker_group,
                     "total_rows": len(rows),
+                    **mlu_payload,
                     "rows": rows,
                 }
 
                 json_path = raw_dir / f"{quarter}.json"
                 csv_path = raw_dir / f"{quarter}.csv"
+                additional_data_path = raw_dir / f"{quarter}_additional_data.csv"
                 self._write_json(json_path, payload)
                 self._write_csv(csv_path, rows)
+                self._write_additional_data_csv(additional_data_path, payload)
 
                 outputs[speaker_group]["Raw"][quarter] = {
                     "json": str(json_path),
                     "csv": str(csv_path),
+                    "additional_data_csv": str(additional_data_path),
                 }
                 raw_summary_rows.append(
                     {
                         "quarter": quarter,
                         "speaker_group": speaker_group,
                         "total_rows": len(rows),
+                        **mlu_payload,
                     }
                 )
 
                 word_count_payload = self.build_word_count_payload_from_json(json_path)
                 word_count_json_path = word_count_dir / f"{quarter}.json"
                 word_count_csv_path = word_count_dir / f"{quarter}.csv"
+                word_count_additional_data_path = (
+                    word_count_dir / f"{quarter}_additional_data.csv"
+                )
                 self._write_json(word_count_json_path, word_count_payload)
                 self._write_word_count_csv(
                     word_count_csv_path, word_count_payload["lemma_entries"]
+                )
+                self._write_additional_data_csv(
+                    word_count_additional_data_path, word_count_payload
                 )
 
                 outputs[speaker_group]["WordCount"][quarter] = {
                     "json": str(word_count_json_path),
                     "csv": str(word_count_csv_path),
+                    "additional_data_csv": str(word_count_additional_data_path),
                 }
                 word_count_summary_rows.append(
                     {
@@ -81,6 +94,13 @@ class GrammaticalCategoriesExporter:
                             "total_lemma_entries"
                         ],
                         "total_occurrences": word_count_payload["total_occurrences"],
+                        "MLU_index": word_count_payload["MLU_index"],
+                        "mlu_morpheme_count": word_count_payload[
+                            "mlu_morpheme_count"
+                        ],
+                        "mlu_utterance_count": word_count_payload[
+                            "mlu_utterance_count"
+                        ],
                     }
                 )
 
@@ -110,6 +130,10 @@ class GrammaticalCategoriesExporter:
                     "lemma": entry.get("lemma", ""),
                     "attributes": entry.get("attributes", []),
                     "raw_token": entry.get("raw_token", ""),
+                    "utterance_id": entry.get("utterance_id", ""),
+                    "utterance_morpheme_count": entry.get(
+                        "utterance_morpheme_count", ""
+                    ),
                     "child_name": entry.get("child_name", "N/A"),
                     "file_path": entry.get("file_path", ""),
                 }
@@ -181,7 +205,24 @@ class GrammaticalCategoriesExporter:
             "speaker_group": payload.get("speaker_group", ""),
             "total_lemma_entries": len(counted_rows),
             "total_occurrences": sum(counter.values()),
+            "MLU_index": payload.get("MLU_index"),
+            "mlu_morpheme_count": payload.get("mlu_morpheme_count", 0),
+            "mlu_utterance_count": payload.get("mlu_utterance_count", 0),
             "lemma_entries": counted_rows,
+        }
+
+    def _build_mlu_payload(self, quarter_data, speaker_group):
+        group_stats = quarter_data.get("mlu_stats", {}).get(speaker_group, {})
+        morpheme_count = group_stats.get("morpheme_count", 0)
+        utterance_count = group_stats.get("utterance_count", 0)
+        mlu_index = None
+        if utterance_count:
+            mlu_index = round(morpheme_count / utterance_count, 4)
+
+        return {
+            "MLU_index": mlu_index,
+            "mlu_morpheme_count": morpheme_count,
+            "mlu_utterance_count": utterance_count,
         }
 
     def _write_json(self, file_path, payload):
@@ -197,6 +238,8 @@ class GrammaticalCategoriesExporter:
             "lemma",
             "attributes",
             "raw_token",
+            "utterance_id",
+            "utterance_morpheme_count",
             "child_name",
             "file_path",
         ]
@@ -207,7 +250,14 @@ class GrammaticalCategoriesExporter:
             writer.writerows(csv_rows)
 
     def _write_summary_csv(self, file_path, rows):
-        fieldnames = ["quarter", "speaker_group", "total_rows"]
+        fieldnames = [
+            "quarter",
+            "speaker_group",
+            "total_rows",
+            "MLU_index",
+            "mlu_morpheme_count",
+            "mlu_utterance_count",
+        ]
         with open(file_path, "w", encoding="utf-8", newline="") as file:
             writer = csv.DictWriter(file, fieldnames=fieldnames)
             writer.writeheader()
@@ -231,12 +281,32 @@ class GrammaticalCategoriesExporter:
             writer.writeheader()
             writer.writerows(csv_rows)
 
+    def _write_additional_data_csv(self, file_path, payload):
+        fieldnames = [
+            "quarter",
+            "speaker_group",
+            "total_rows",
+            "total_lemma_entries",
+            "total_occurrences",
+            "MLU_index",
+            "mlu_morpheme_count",
+            "mlu_utterance_count",
+        ]
+        row = {fieldname: payload.get(fieldname, "") for fieldname in fieldnames}
+        with open(file_path, "w", encoding="utf-8", newline="") as file:
+            writer = csv.DictWriter(file, fieldnames=fieldnames)
+            writer.writeheader()
+            writer.writerow(row)
+
     def _write_word_count_summary_csv(self, file_path, rows):
         fieldnames = [
             "quarter",
             "speaker_group",
             "unique_lemma_entries",
             "total_occurrences",
+            "MLU_index",
+            "mlu_morpheme_count",
+            "mlu_utterance_count",
         ]
         with open(file_path, "w", encoding="utf-8", newline="") as file:
             writer = csv.DictWriter(file, fieldnames=fieldnames)

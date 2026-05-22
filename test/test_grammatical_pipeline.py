@@ -10,6 +10,7 @@ from src.data_io.grammatical_corpus_processing import (
 )
 from src.data_io.reader import Reader
 from src.quarterly_samples import GrammaticalCategoriesExporter, group_data_by_age
+from src.quarterly_samples.rated_exporter import build_lema_count
 
 
 def test_reader_extracts_morphological_utterances():
@@ -60,6 +61,14 @@ def test_grammatical_formatter_splits_children_and_adults(tmp_path):
     assert adults_data[1]["category"] == "verb"
     assert adults_data[1]["lemma"] == "pull"
     assert adults_data[2]["lemma"] == "it"
+    assert formatter.last_mlu_stats["children"] == {
+        "morpheme_count": 1,
+        "utterance_count": 1,
+    }
+    assert formatter.last_mlu_stats["adults"] == {
+        "morpheme_count": 3,
+        "utterance_count": 1,
+    }
 
 
 def test_grammatical_formatter_separates_non_target_children(tmp_path):
@@ -272,12 +281,22 @@ def test_run_grammatical_pipeline_exports_filtered_data(tmp_path):
         grammatical_categories=["noun"],
     )
 
-    processed_file = result["processed_data"]["Corpora_modified"]["Post"]["Lew"]["files"][0]
+    processed_file = result["processed_data"]["Corpora_modified"]["Post"]["Lew"][
+        "files"
+    ][0]
+    word_count_json = Path(
+        result["outputs"]["children"]["WordCount"]["01Y02Q"]["json"]
+    )
+    word_count_payload = json.loads(word_count_json.read_text(encoding="utf-8"))
+
     assert len(processed_file["children_data"]) == 1
     assert len(processed_file["other_children_data"]) == 0
     assert len(processed_file["adults_data"]) == 1
     assert "01Y02Q" in result["grouped_data"]
     assert "Raw" in result["outputs"]["children"]
+    assert word_count_payload["MLU_index"] == 2.0
+    assert word_count_payload["mlu_morpheme_count"] == 2
+    assert word_count_payload["mlu_utterance_count"] == 1
 
 
 def test_grammatical_exporter_exports_grouped_rows(tmp_path):
@@ -350,16 +369,28 @@ def test_grammatical_exporter_exports_grouped_rows(tmp_path):
 
     adults_json = Path(outputs["adults"]["Raw"]["01Y02Q"]["json"])
     adults_csv = Path(outputs["adults"]["Raw"]["01Y02Q"]["csv"])
+    adults_additional_data_csv = Path(
+        outputs["adults"]["Raw"]["01Y02Q"]["additional_data_csv"]
+    )
     raw_summary_csv = Path(outputs["adults"]["Raw"]["summary"])
     word_count_json = Path(outputs["adults"]["WordCount"]["01Y02Q"]["json"])
     word_count_csv = Path(outputs["adults"]["WordCount"]["01Y02Q"]["csv"])
+    word_count_additional_data_csv = Path(
+        outputs["adults"]["WordCount"]["01Y02Q"]["additional_data_csv"]
+    )
     word_count_summary_csv = Path(outputs["adults"]["WordCount"]["summary"])
 
     payload = json.loads(adults_json.read_text(encoding="utf-8"))
     rows = list(csv.DictReader(adults_csv.open(encoding="utf-8")))
+    additional_data = list(
+        csv.DictReader(adults_additional_data_csv.open(encoding="utf-8"))
+    )
     raw_summary = list(csv.DictReader(raw_summary_csv.open(encoding="utf-8")))
     word_count_payload = json.loads(word_count_json.read_text(encoding="utf-8"))
     word_count_rows = list(csv.DictReader(word_count_csv.open(encoding="utf-8")))
+    word_count_additional_data = list(
+        csv.DictReader(word_count_additional_data_csv.open(encoding="utf-8"))
+    )
     word_count_summary = list(
         csv.DictReader(word_count_summary_csv.open(encoding="utf-8"))
     )
@@ -376,6 +407,9 @@ def test_grammatical_exporter_exports_grouped_rows(tmp_path):
     assert rows[0]["attributes"] == "Fin|Imp|S"
     assert rows[0]["child_name"] == "Lew"
     assert rows[0]["file_path"] == "Corpora_modified/Post/Lew/a.cha"
+    assert additional_data[0]["quarter"] == "01Y02Q"
+    assert additional_data[0]["speaker_group"] == "adults"
+    assert additional_data[0]["total_rows"] == "3"
     assert raw_summary[0]["quarter"] == "01Y02Q"
     assert word_count_payload["total_lemma_entries"] == 1
     assert word_count_payload["total_occurrences"] == 3
@@ -392,5 +426,39 @@ def test_grammatical_exporter_exports_grouped_rows(tmp_path):
         "Lew": 2,
         "Juan": 1,
     }
+    assert word_count_additional_data[0]["quarter"] == "01Y02Q"
+    assert word_count_additional_data[0]["speaker_group"] == "adults"
+    assert word_count_additional_data[0]["total_lemma_entries"] == "1"
+    assert word_count_additional_data[0]["total_occurrences"] == "3"
     assert word_count_summary[0]["unique_lemma_entries"] == "1"
     assert word_count_summary[0]["total_occurrences"] == "3"
+
+
+def test_lema_count_preserves_mlu_metadata():
+    source = {
+        "quarter": "01Y02Q",
+        "speaker_group": "children",
+        "total_lemma_entries": 1,
+        "total_occurrences": 2,
+        "MLU_index": 2.5,
+        "mlu_morpheme_count": 5,
+        "mlu_utterance_count": 2,
+        "lemma_entries": [
+            {
+                "quarter": "01Y02Q",
+                "speaker_group": "children",
+                "category": "noun",
+                "lemma": "ball",
+                "attributes": [],
+                "raw_token": "noun|ball",
+                "count": 2,
+                "counts_by_child": {"Kid": 2},
+            }
+        ],
+    }
+
+    payload = build_lema_count(source, ratings={})
+
+    assert payload["MLU_index"] == 2.5
+    assert payload["mlu_morpheme_count"] == 5
+    assert payload["mlu_utterance_count"] == 2

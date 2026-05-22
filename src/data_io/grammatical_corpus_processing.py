@@ -113,8 +113,11 @@ def _process_file(file, formatter):
     if children_data is None:
         return None
 
+    metadata = file["metadata"].copy()
+    metadata["mlu_stats"] = formatter.last_mlu_stats
+
     return {
-        "metadata": file["metadata"].copy(),
+        "metadata": metadata,
         "children_data": children_data,
         "other_children_data": other_children_data,
         "adults_data": adults_data,

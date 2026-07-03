@@ -1,6 +1,6 @@
 def print_directory_structure(data, level=0):
     """
-    Imprime la estructura del directorio de forma visual.
+    Prints the directory structure visually.
     """
     for dir_name, content in data.items():
         print("  " * level + "📁 " + dir_name)
@@ -36,7 +36,7 @@ def print_metadata(data, level=0):
 
 def print_sampled_metadata(data):
     """
-    Imprime los metadatos de 4 archivos de cada corpus.
+    Prints metadata from 4 files for each corpus.
     """
     main_dirs = ["Brent", "NewEngland", "Post", "Bloom", "Brown", "HSLLD", "Kuczaj", "Sachs", "VanKleeck"]
 
@@ -67,7 +67,7 @@ def print_sampled_metadata(data):
 
 def show_lew_early_expressions(processed_data):
     """
-    Muestra las expresiones de Lew cuando era más joven.
+    Shows Lew utterances when he was younger.
     """
     print("\n=== Expresiones tempranas de Lew ===")
 

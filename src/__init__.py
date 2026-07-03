@@ -1,3 +1,3 @@
 """
-Paquete src para el proyecto ChildConicity
+src package for the ChildConicity project
 """ 

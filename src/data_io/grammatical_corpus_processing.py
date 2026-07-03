@@ -7,8 +7,8 @@ def process_grammatical_data_with_formatter(
     corpus_data, grammatical_categories=None
 ):
     """
-    Procesa los datos morfológicos usando GrammaticalDataFormatter,
-    manteniendo la estructura jerárquica del corpus.
+    Processes morphological data using GrammaticalDataFormatter,
+    preserving the corpus hierarchy.
     """
     result = {"Corpora_modified": {}}
     formatter = GrammaticalDataFormatter(grammatical_categories=grammatical_categories)

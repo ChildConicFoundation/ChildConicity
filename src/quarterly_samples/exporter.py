@@ -3,8 +3,8 @@ import os
 
 class QuarterlySampleExporter:
     """
-    Exporta las expresiones agrupadas por quarter a ficheros de texto
-    separados para adultos y niños.
+    Exports utterances grouped by quarter to text files
+    separated for adults and children.
     """
 
     def __init__(self, output_dir="quarterly_samples"):
@@ -12,7 +12,7 @@ class QuarterlySampleExporter:
 
     def export(self, grouped_data):
         """
-        Crea una estructura:
+        Creates a structure:
         output_dir/
             adults/
                 00Y01Q.txt
@@ -22,13 +22,13 @@ class QuarterlySampleExporter:
                 00Y01Q.txt
                 ...
 
-        Cada fichero contiene una expresión por línea.
+        Each file contains one utterance per line.
 
         Args:
-            grouped_data (dict): Datos agrupados por quarter
+            grouped_data (dict): Data grouped by quarter
 
         Returns:
-            dict: Rutas de salida por grupo y quarter
+            dict: Output paths by group and quarter
         """
         adults_dir = os.path.join(self.output_dir, "adults")
         children_dir = os.path.join(self.output_dir, "children")

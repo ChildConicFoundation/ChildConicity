@@ -9,7 +9,7 @@ from src.corpus_initialization import (
 )
 
 def main(source_root=DEFAULT_SOURCE_ROOT, output_root=DEFAULT_OUTPUT_ROOT):
-    """Wrapper de compatibilidad para inicializar todos los corpus."""
+    """Compatibility wrapper for initializing all corpora."""
     initializer = CorpusInitializer(
         source_root=source_root,
         output_root=output_root,

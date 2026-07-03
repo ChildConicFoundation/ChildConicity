@@ -13,11 +13,11 @@ class QuarterlySampleTransformer:
 
     def transform(self):
         """
-        Recorre los .txt de adults y children y genera .json y .csv
-        en el mismo directorio.
+        Walks adult and child .txt files and generates .json and .csv files
+        in the same directory.
 
         Returns:
-            dict: Rutas de salida por grupo, quarter y formato
+            dict: Output paths by group, quarter, and format
         """
         outputs = {
             "adults": {},

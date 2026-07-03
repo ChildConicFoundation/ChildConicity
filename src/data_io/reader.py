@@ -20,13 +20,13 @@ class Reader:
     
     def read_csv(self, file_path):
         """
-        Lee un archivo CSV y lo almacena en el atributo data.
+        Reads a CSV file and stores it in the data attribute.
         
         Args:
-            file_path (str): Ruta del archivo CSV a leer
+            file_path (str): Path to the CSV file to read
             
         Returns:
-            pandas.DataFrame: Los datos leídos del archivo CSV
+            pandas.DataFrame: The data read from the CSV file
         """
         try:
             import pandas as pd
@@ -47,19 +47,19 @@ class Reader:
 
     def read_cha(self, file_path):
         """
-        Lee un archivo .cha y lo convierte a un formato estructurado.
+        Reads a .cha file and converts it to a structured format.
         
         Args:
-            file_path (str): Ruta del archivo .cha a leer
+            file_path (str): Path to the .cha file to read
             
         Returns:
-            dict: Diccionario con los datos estructurados del archivo .cha
+            dict: Dictionary with structured data from the .cha file
         """
         try:
             with open(file_path, 'r', encoding='utf-8') as file:
                 content = file.read()
             
-            # Extraer metadatos del archivo
+            # Extract file metadata
             metadata = {
                 'file_path': file_path,
                 'file_type': 'cha',
@@ -94,22 +94,22 @@ class Reader:
             return None
 
     def _extract_encoding(self, content):
-        """Extrae la codificación del archivo."""
+        """Extracts the file encoding."""
         match = re.search(r'@UTF8', content)
         return 'UTF8' if match else None
 
     def _extract_pid(self, content):
-        """Extrae el PID del archivo."""
+        """Extracts the file PID."""
         match = re.search(r'@PID:\s*(.*)', content)
         return match.group(1).strip() if match else None
 
     def _extract_languages(self, content):
-        """Extrae los idiomas del archivo."""
+        """Extracts the file languages."""
         match = re.search(r'@Languages:\s*(.*)', content)
         return match.group(1).strip().split(',') if match else []
 
     def _extract_participants(self, content):
-        """Extrae los participantes del archivo."""
+        """Extracts the file participants."""
         match = re.search(r'@Participants:\s*(.*)', content)
         if match:
             participants = {}
@@ -120,12 +120,12 @@ class Reader:
         return {}
 
     def _extract_options(self, content):
-        """Extrae las opciones del archivo."""
+        """Extracts the file options."""
         match = re.search(r'@Options:\s*(.*)', content)
         return match.group(1).strip().split(',') if match else []
 
     def _extract_media(self, content):
-        """Extrae la información de medios del archivo."""
+        """Extracts the file media information."""
         match = re.search(r'@Media:\s*(.*)', content)
         if match:
             media_info = match.group(1).strip().split(',')
@@ -136,31 +136,31 @@ class Reader:
         return None
 
     def _extract_date(self, content):
-        """Extrae la fecha del archivo."""
+        """Extracts the file date."""
         match = re.search(r'@Date:\s*(.*)', content)
         return match.group(1).strip() if match else None
 
     def _extract_child_age(self, content):
-        """Extrae la edad del niño del archivo."""
+        """Extracts the child age from the file."""
         match = re.search(r'@ChildAge:\s*(.*)', content)
         return match.group(1).strip() if match else None
 
     def _extract_child_name(self, content):
-        """Extrae el nombre del niño del archivo."""
-        # Primero buscamos en @ChildName
+        """Extracts the child name from the file."""
+        # First search in @ChildName
         match = re.search(r'@ChildName:\s*(.*)', content)
         if match:
             return match.group(1).strip()
         
-        # Si no lo encontramos, buscamos en los participantes
+        # If it is not found, search participants
         participants = self._extract_participants(content)
         for code, name in participants.items():
             if 'CHI' in code:
-                return name.split()[0]  # Tomamos solo el primer nombre
+                return name.split()[0]  # Take only the first name
         return None
 
     def _extract_participant_roles(self, content):
-        """Extrae los roles semánticos de cada participante a partir de @ID."""
+        """Extracts each participant semantic roles from @ID."""
         participant_roles = {}
 
         for line in content.split('\n'):
@@ -179,7 +179,7 @@ class Reader:
         return participant_roles
 
     def _extract_target_child_speakers(self, content):
-        """Obtiene los códigos de hablantes del niño bajo estudio."""
+        """Gets the speaker codes for the target child."""
         target_child_speakers = {"CHI"}
 
         for speaker_code, participant_role in self._extract_participant_roles(
@@ -191,7 +191,7 @@ class Reader:
         return sorted(target_child_speakers)
 
     def _extract_other_child_speakers(self, content):
-        """Obtiene los códigos de otros hablantes infantiles distintos del objetivo."""
+        """Gets speaker codes for non-target child speakers."""
         other_child_speakers = set()
 
         for speaker_code, participant_role in self._extract_participant_roles(
@@ -204,19 +204,19 @@ class Reader:
         return sorted(other_child_speakers)
 
     def _extract_child_speakers(self, content):
-        """Obtiene todos los códigos de hablantes infantiles."""
+        """Gets all child speaker codes."""
         child_speakers = set(self._extract_target_child_speakers(content))
         child_speakers.update(self._extract_other_child_speakers(content))
         return sorted(child_speakers)
 
     def _extract_types(self, content):
-        """Extrae los tipos del archivo."""
+        """Extracts the file types."""
         match = re.search(r'@Types:\s*(.*)', content)
         return match.group(1).strip().split(',') if match else []
 
     def _extract_utterances(self, content):
         """
-        Extrae las expresiones del archivo.
+        Extracts utterances from the file.
         Limpia las notaciones especiales como:
         - [= babble], (.), etc.
         - &=babble, &=laugh, etc.
@@ -226,45 +226,45 @@ class Reader:
         for line in content.split('\n'):
             if line.startswith('*'):
                 speaker, text = line.split(':', 1)
-                speaker = speaker[1:].strip()  # Eliminar el asterisco
+                speaker = speaker[1:].strip()  # Remove the asterisk
                 
-                # Extraer la marca de tiempo
+                # Extract the timestamp
                 timestamp = self._extract_timestamp(text)
                 
-                # Limpiar el texto:
-                # 1. Eliminar marcas de tiempo
+                # Clean the text:
+                # 1. Remove timestamps
                 clean_text = re.sub(r'\d+_\d+', '', text)
                 
-                # 2. Eliminar notaciones entre corchetes [= xxx]
+                # 2. Remove bracketed notations [= xxx]
                 clean_text = re.sub(r'\[=.*?\]', '', clean_text)
                 
-                # 3. Eliminar notaciones entre paréntesis (xxx)
+                # 3. Remove parenthesized notations (xxx)
                 clean_text = re.sub(r'\(.*?\)', '', clean_text)
                 
-                # 4. Eliminar notaciones que empiezan con &= (vocalizaciones, sonidos, etc.)
+                # 4. Remove notations that start with &= (vocalizations, sounds, etc.)
                 clean_text = re.sub(r'&=\w+', '', clean_text)
                 
-                # 5. Eliminar notaciones de puntuación (., ?, !)
+                # 5. Remove punctuation notations (., ?, !)
                 clean_text = re.sub(r'[.?!]', '', clean_text)
                 
-                # 6. Eliminar notaciones de vocalizaciones comunes
+                # 6. Remove common vocalization notations
                 vocalizations = [
-                    r'&[a-z]+',  # Notaciones que empiezan con & (&=xxx)
-                    r'[<>]',     # Notaciones de entonación
-                    r'[()]',     # Paréntesis sueltos
-                    r'[\[\]]',   # Corchetes sueltos
-                    r'[{}]',     # Llaves
-                    r'[+-]',     # Signos + y -
-                    r'[0-9]',    # Números
-                    r'[#@]',     # Caracteres especiales
+                    r'&[a-z]+',  # Notations that start with & (&=xxx)
+                    r'[<>]',     # Intonation notations
+                    r'[()]',     # Standalone parentheses
+                    r'[\[\]]',   # Standalone brackets
+                    r'[{}]',     # Braces
+                    r'[+-]',     # + and - signs
+                    r'[0-9]',    # Numbers
+                    r'[#@]',     # Special characters
                 ]
                 for pattern in vocalizations:
                     clean_text = re.sub(pattern, '', clean_text)
                 
-                # 7. Eliminar espacios múltiples y espacios al inicio/final
+                # 7. Remove repeated spaces and leading/trailing spaces
                 clean_text = re.sub(r'\s+', ' ', clean_text).strip()
                 
-                # Solo añadir la expresión si después de la limpieza queda texto
+                # Only add the utterance if text remains after cleaning
                 if clean_text:
                     utterances.append({
                         'speaker': speaker,
@@ -275,8 +275,8 @@ class Reader:
 
     def _extract_morphological_utterances(self, content):
         """
-        Extrae las expresiones morfológicas del archivo y las vincula
-        al hablante de la línea * inmediatamente anterior.
+        Extracts morphological utterances from the file and links them
+        to the speaker from the immediately preceding * line.
         """
         morphological_utterances = []
         current_speaker = None
@@ -301,14 +301,14 @@ class Reader:
 
     def _parse_morphological_tokens(self, mor_text):
         """
-        Parsea una línea %mor: a tokens estructurados con:
+        Parses a %mor: line into structured tokens with:
         - category
         - lemma
         - attributes
         """
         tokens = []
 
-        # Separar por espacios y después por ~ para dividir contracciones/clíticos.
+        # Split by spaces and then by ~ to divide contractions/clitics.
         for raw_chunk in mor_text.split():
             for raw_token in raw_chunk.split('~'):
                 parsed = self._parse_morphological_token(raw_token.strip())
@@ -328,7 +328,7 @@ class Reader:
         if not category or not remainder:
             return None
 
-        # Ignorar restos de puntuación u otros tokens sin lema.
+        # Ignore punctuation remnants or other tokens without a lemma.
         if remainder in {'.', ',', '!', '?'}:
             return None
 
@@ -351,7 +351,7 @@ class Reader:
         }
 
     def _extract_timestamp(self, text):
-        """Extrae la marca de tiempo de una expresión."""
+        """Extracts the timestamp from an utterance."""
         match = re.search(r'(\d+)_(\d+)', text)
         if match:
             return {
@@ -362,36 +362,36 @@ class Reader:
 
     def read_directory(self, directory_path):
         """
-        Lee recursivamente todos los archivos .cha en un directorio y sus subdirectorios.
-        Crea un diccionario anidado que refleja la estructura de directorios.
+        Recursively reads all .cha files in a directory and its subdirectories.
+        Creates a nested dictionary that reflects the directory structure.
 
 
         Args:
-            directory_path (str): Ruta al directorio a leer
+            directory_path (str): Path to the directory to read
             
         Returns:
-            dict: Diccionario anidado con la estructura de directorios y archivos
+            dict: Nested dictionary with the directory and file structure
         """
-        # Obtener el nombre del directorio base
+        # Get the base directory name
         base_dir = os.path.basename(directory_path)
         
-        # Crear el diccionario para este directorio
+        # Create the dictionary for this directory
         result = {base_dir: {}}
         
-        # Recorrer el directorio
+        # Walk the directory
         for item in os.listdir(directory_path):
             item_path = os.path.join(directory_path, item)
             
             if os.path.isdir(item_path):
-                # Si es un directorio, leerlo recursivamente
+                # If it is a directory, read it recursively
                 subdir_content = self.read_directory(item_path)
-                # Añadir el contenido del subdirectorio al diccionario actual
+                # Add the subdirectory contents to the current dictionary
                 result[base_dir][item] = subdir_content[item]
             elif item.endswith('.cha'):
-                # Si es un archivo .cha, leerlo usando read_cha
+                # If it is a .cha file, read it using read_cha
                 cha_content = self.read_cha(item_path)
                 if cha_content:
-                    # Si no existe la clave 'files', crearla
+                    # If the 'files' key does not exist, create it
                     if 'files' not in result[base_dir]:
                         result[base_dir]['files'] = []
                     result[base_dir]['files'].append(cha_content)

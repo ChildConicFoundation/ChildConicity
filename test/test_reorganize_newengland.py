@@ -3,7 +3,7 @@ import pytest
 from src.corpus_normalizers.newengland_normalizer import extract_age, modify_cha_file, process_directory
 
 def test_extract_age():
-    # Caso 1: Edad válida
+    # Case 1: Valid age
     test_content = "@ID: eng|NewEngland|CHI|1;06.26|male|TD||Target_Child|||"
     test_file = "test_age.cha"
     with open(test_file, 'w', encoding='utf-8') as f:
@@ -12,24 +12,24 @@ def test_extract_age():
     expected_age = "1 years 06 months 26 days"
     assert extract_age(test_file) == expected_age
     
-    # Caso 2: Archivo sin edad
+    # Case 2: File without an age
     test_content = "@ID: eng|NewEngland|CHI||male|TD||Target_Child|||"
     with open(test_file, 'w', encoding='utf-8') as f:
         f.write(test_content)
     
     assert extract_age(test_file) is None
     
-    # Caso 3: Archivo vacío
+    # Case 3: Empty file
     with open(test_file, 'w', encoding='utf-8') as f:
         f.write("")
     
     assert extract_age(test_file) is None
     
-    # Limpieza
+    # Cleanup
     os.remove(test_file)
 
 def test_modify_cha_file():
-    # Preparar archivo de prueba
+    # Prepare test file
     test_content = """@UTF8
 @PID: test
 @Begin
@@ -41,23 +41,23 @@ def test_modify_cha_file():
     with open(test_file, 'w', encoding='utf-8') as f:
         f.write(test_content)
     
-    # Probar la modificación
+    # Test the modification
     child_name = "Target01"
     age = "1 years 06 months 26 days"
     modify_cha_file(test_file, child_name, age)
     
-    # Verificar el resultado
+    # Check the result
     with open(test_file, 'r', encoding='utf-8') as f:
         content = f.read()
     
     assert "@ChildAge: 1 years 06 months 26 days" in content
     assert "@ChildName: Target01" in content
     
-    # Limpieza
+    # Cleanup
     os.remove(test_file)
 
 def test_modify_cha_file_without_languages():
-    # Preparar archivo de prueba sin línea @Languages
+    # Prepare test file without an @Languages line
     test_content = """@UTF8
 @PID: test
 @Begin
@@ -68,34 +68,34 @@ def test_modify_cha_file_without_languages():
     with open(test_file, 'w', encoding='utf-8') as f:
         f.write(test_content)
     
-    # Probar la modificación
+    # Test the modification
     child_name = "Target01"
     age = "1 years 06 months 26 days"
     modify_cha_file(test_file, child_name, age)
     
-    # Verificar el resultado
+    # Check the result
     with open(test_file, 'r', encoding='utf-8') as f:
         content = f.read()
     
-    # El archivo debería permanecer sin cambios ya que no hay línea @Languages
+    # The file should remain unchanged because there is no @Languages line
     assert content == test_content
     
-    # Limpieza
+    # Cleanup
     os.remove(test_file)
 
 def test_process_directory():
-    # Crear estructura de directorios de prueba
+    # Create test directory structure
     source_dir = "test_source"
     target_dir = "test_target"
-    subdir = "14"  # Usamos un subdirectorio válido (14, 20, o 32)
+    subdir = "14"  # Use a valid subdirectory (14, 20, or 32)
     source_subdir = os.path.join(source_dir, subdir)
     
     try:
-        # Crear directorios
+        # Create directories
         os.makedirs(source_subdir, exist_ok=True)
         
-        # Crear archivo .cha de prueba con un número como nombre
-        test_file = os.path.join(source_subdir, "01.cha")  # Usamos un número como nombre de archivo
+        # Create a test .cha file with a number as its name
+        test_file = os.path.join(source_subdir, "01.cha")  # Use a number as the file name
         test_content = """@UTF8
 @PID: test
 @Begin
@@ -106,17 +106,17 @@ def test_process_directory():
         with open(test_file, 'w', encoding='utf-8') as f:
             f.write(test_content)
         
-        # Procesar directorio
+        # Process directory
         process_directory(source_dir, target_dir)
         
-        # Verificar que se creó el directorio de destino
+        # Check that the target directory was created
         assert os.path.exists(target_dir)
         
-        # Verificar que se creó el archivo modificado en Target01
+        # Check that the modified file was created in Target01
         target_file = os.path.join(target_dir, "Target01", "14.cha")
         assert os.path.exists(target_file)
         
-        # Verificar el contenido del archivo modificado
+        # Check the modified file content
         with open(target_file, 'r', encoding='utf-8') as f:
             content = f.read()
         
@@ -124,7 +124,7 @@ def test_process_directory():
         assert "@ChildName: Target01" in content
         
     finally:
-        # Limpieza
+        # Cleanup
         if os.path.exists(target_dir):
             for root, dirs, files in os.walk(target_dir, topdown=False):
                 for file in files:

@@ -1,16 +1,16 @@
 class WordDictionaryMerger:
     def __init__(self):
         """
-        Inicializa el merger con un array vacío de diccionarios.
+        Initializes the merger with an empty array of dictionaries.
         """
         self.dictionaries = []
     
     def add_dictionary(self, dictionary):
         """
-        Añade un nuevo diccionario al array.
+        Adds a new dictionary to the array.
         
         Args:
-            dictionary (dict): Diccionario que tiene strings como claves principales
+            dictionary (dict): Dictionary with strings as primary keys
         """
         if not isinstance(dictionary, dict):
             raise ValueError("El parámetro debe ser un diccionario")
@@ -18,20 +18,20 @@ class WordDictionaryMerger:
     
     def sort_by_parameter(self, parameter, comparison_op, threshold=None):
         """
-        Ordena las palabras basándose en un parámetro y una operación de comparación.
+        Sorts words based on a parameter and a comparison operation.
         
         Args:
-            parameter (str): Nombre del parámetro por el que se quiere ordenar
-            comparison_op (str): Operación de comparación ('gt' para mayor que, 'lt' para menor que)
-            threshold (float, optional): Valor umbral para la comparación
+            parameter (str): Name of the parameter to sort by
+            comparison_op (str): Comparison operation ('gt' for greater than, 'lt' for less than)
+            threshold (float, optional): Threshold value for the comparison
             
         Returns:
-            dict: Diccionario con las palabras que cumplen la condición, ordenadas por el parámetro
+            dict: Dictionary with words that meet the condition, sorted by the parameter
         """
         if not self.dictionaries:
             return {}
             
-        # Obtener todas las palabras y sus datos
+        # Get all words and their data
         all_words_data = {}
         for dictionary in self.dictionaries:
             for word, data in dictionary.items():
@@ -40,7 +40,7 @@ class WordDictionaryMerger:
                 else:
                     all_words_data[word].update(data)
         
-        # Filtrar y ordenar según la condición
+        # Filter and sort according to the condition
         filtered_words = {}
         for word, data in all_words_data.items():
             if parameter in data:
@@ -51,7 +51,7 @@ class WordDictionaryMerger:
                     elif comparison_op == 'lt' and (threshold is None or value < threshold):
                         filtered_words[word] = data
         
-        # Ordenar el diccionario por el parámetro
+        # Sort the dictionary by the parameter
         sorted_words = dict(sorted(
             filtered_words.items(),
             key=lambda x: x[1][parameter],
@@ -62,9 +62,9 @@ class WordDictionaryMerger:
     
     def obtain_merge(self):
         """
-        Obtiene dos resultados:
-        1. Un diccionario con las palabras que aparecen en todos los diccionarios, mergeando sus datos
-        2. Un array con los diccionarios de palabras que no se pudieron mergear
+        Gets two results:
+        1. A dictionary with words that appear in all dictionaries, merging their data
+        2. An array with dictionaries of words that could not be merged
         
         Returns:
             tuple: (merged_dict, unmerged_dictionaries)
@@ -72,17 +72,17 @@ class WordDictionaryMerger:
         if not self.dictionaries:
             return {}, []
         
-        # Obtener todas las palabras únicas
+        # Get all unique words
         all_words = set()
         for dictionary in self.dictionaries:
             all_words.update(dictionary.keys())
         
-        # Encontrar palabras comunes a todos los diccionarios
+        # Find words common to all dictionaries
         common_words = set(all_words)
         for dictionary in self.dictionaries:
             common_words.intersection_update(dictionary.keys())
         
-        # Crear el diccionario mergeado
+        # Create the merged dictionary
         merged_dict = {}
         for word in common_words:
             merged_data = {}
@@ -90,14 +90,14 @@ class WordDictionaryMerger:
                 merged_data.update(dictionary[word])
             merged_dict[word] = merged_data
         
-        # Crear los diccionarios no mergeados
+        # Create the unmerged dictionaries
         unmerged_dictionaries = []
         for dictionary in self.dictionaries:
             unmerged_dict = {}
             for word, data in dictionary.items():
                 if word not in common_words:
                     unmerged_dict[word] = data
-            if unmerged_dict:  # Solo añadir si hay palabras no mergeadas
+            if unmerged_dict:  # Only add if there are unmerged words
                 unmerged_dictionaries.append(unmerged_dict)
         
         return merged_dict, unmerged_dictionaries 

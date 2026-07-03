@@ -1,13 +1,13 @@
 def get_age_quarter(age_str):
     """
-    Convierte una cadena de edad en formato YYYYMMDD o
+    Converts an age string in YYYYMMDD format or
     "X years Y months Z days" a formato YYQ.
 
     Args:
         age_str (str): Edad en formato YYYYMMDD o "X years Y months Z days"
 
     Returns:
-        str: Edad en formato YYQ (años y cuarto)
+        str: Age in YYQ format (years and quarter)
     """
     try:
         if "years" in age_str:
@@ -28,13 +28,13 @@ def get_age_quarter(age_str):
 
 def group_data_by_age(processed_data):
     """
-    Agrupa los datos por edad del niño en cuartos de año.
+    Groups data by child age in yearly quarters.
 
     Args:
-        processed_data (dict): Datos procesados del corpus
+        processed_data (dict): Processed corpus data
 
     Returns:
-        dict: Datos agrupados por edad en formato YYQ
+        dict: Data grouped by age in YYQ format
     """
     data_grouped_by_age = {}
     processed_files = set()

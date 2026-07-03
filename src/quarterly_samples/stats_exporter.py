@@ -5,8 +5,8 @@ from pathlib import Path
 
 class ValidWordsStatsExporter:
     """
-    Exporta `valid_words_stats` a JSON y CSV usando la misma estructura
-    analítica que consume el plotter.
+    Exports `valid_words_stats` to JSON and CSV using the same structure
+    analytical structure consumed by the plotter.
     """
 
     def __init__(self, output_dir="quarterly_valid_words"):
@@ -14,17 +14,17 @@ class ValidWordsStatsExporter:
 
     def export(self, valid_words_stats):
         """
-        Genera:
-        - Un JSON por quarter y speaker_group
-        - Un CSV detallado por quarter y speaker_group
-        - Un CSV resumen por speaker_group
+        Generates:
+        - One JSON file per quarter and speaker_group
+        - One detailed CSV file per quarter and speaker_group
+        - One summary CSV file per speaker_group
 
         Args:
-            valid_words_stats (dict): Estructura devuelta por
+            valid_words_stats (dict): Structure returned by
                 process_valid_words_by_age_group(...)
 
         Returns:
-            dict: Rutas generadas
+            dict: Generated paths
         """
         outputs = {
             "adults": {},

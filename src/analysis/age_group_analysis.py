@@ -3,7 +3,7 @@ from src.analysis.word_counter import WordCounter
 
 def create_age_group_statistics(data_grouped_by_age, iconicity_model):
     """
-    Crea un diccionario con estadísticas de palabras e iconicidad por grupo de edad.
+    Creates a dictionary with word and iconicity statistics by age group.
     """
     age_group_stats = {}
     all_iconicity_words = iconicity_model.get_all_word_data()
@@ -30,7 +30,7 @@ def create_age_group_statistics(data_grouped_by_age, iconicity_model):
 
 def print_age_group_statistics(age_group_stats, num_words=10):
     """
-    Imprime las estadísticas de palabras por grupo de edad.
+    Prints word statistics by age group.
     """
     for age_group, stats in sorted(age_group_stats.items()):
         print(f"\n=== Grupo de edad {age_group} ===")
@@ -68,7 +68,7 @@ def print_age_group_statistics(age_group_stats, num_words=10):
 
 def process_valid_words_by_age_group(age_group_stats, iconicity_model):
     """
-    Procesa las palabras válidas por grupo de edad, clasificándolas en icónicas y no icónicas.
+    Processes valid words by age group, classifying them as iconic or non-iconic.
     """
     valid_words_stats = {}
     all_iconicity_words = iconicity_model.get_all_word_data()
@@ -132,7 +132,7 @@ def process_valid_words_by_age_group(age_group_stats, iconicity_model):
 
 def print_valid_words_statistics(valid_words_stats):
     """
-    Imprime las estadísticas de palabras válidas por grupo de edad.
+    Prints valid word statistics by age group.
     """
     for age_group, stats in sorted(valid_words_stats.items()):
         print(f"\n=== Grupo de edad {age_group} ===")

@@ -6,7 +6,7 @@ from pathlib import Path
 
 class GrammaticalCategoriesExporter:
     """
-    Exporta las categorías gramaticales agrupadas por quarter sin aplicar filtrado.
+    Exports grammatical categories grouped by quarter without applying filtering.
     """
 
     def __init__(self, output_dir="quarterly_grammatical_categories"):

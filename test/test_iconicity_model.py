@@ -55,25 +55,25 @@ def test_get_all_words(model):
     assert 'gato' in words
 
 def test_get_words_by_rating(model):
-    # Palabras con rating >= 4.0
+    # Words with rating >= 4.0
     high_rating_words = model.get_words_by_rating(min_rating=4.0)
     assert len(high_rating_words) == 2
     assert 'casa' in high_rating_words
     assert 'gato' in high_rating_words
     
-    # Palabras con rating entre 3.5 y 4.0
+    # Words with rating between 3.5 and 4.0
     mid_rating_words = model.get_words_by_rating(min_rating=3.5, max_rating=4.0)
     assert len(mid_rating_words) == 1
     assert 'perro' in mid_rating_words
 
 def test_get_words_by_known_proportion(model):
-    # Palabras con prop_known >= 0.8
+    # Words with prop_known >= 0.8
     high_prop_words = model.get_words_by_known_proportion(min_prop=0.8)
     assert len(high_prop_words) == 2
     assert 'casa' in high_prop_words
     assert 'perro' in high_prop_words
     
-    # Palabras con prop_known <= 0.8
+    # Words with prop_known <= 0.8
     low_prop_words = model.get_words_by_known_proportion(max_prop=0.8)
     assert len(low_prop_words) == 2
     assert 'casa' in low_prop_words
@@ -83,7 +83,7 @@ def test_invalid_word(model):
     assert model.get_word_data('nonexistent') is None
 
 def test_iconicity_model():
-    # Datos de prueba
+    # Test data
     test_data = {
         1: {
             'word': 'hola',
@@ -103,10 +103,10 @@ def test_iconicity_model():
         }
     }
     
-    # Crear instancia del modelo
+    # Create the model instance
     model = IconicityModel(test_data)
     
-    # Verificar que los datos se procesaron correctamente
+    # Check that the data was processed correctly
     hola_data = model.get_word_data('hola')
     assert hola_data is not None
     assert hola_data['n_ratings'] == 10
@@ -119,34 +119,34 @@ def test_iconicity_model():
     assert adios_data['rating'] == 4.0
     assert adios_data['prop_known'] == 0.9
     
-    # Verificar que get_all_words devuelve todas las palabras
+    # Check that get_all_words returns all words
     assert set(model.get_all_words()) == {'hola', 'adiós'}
     
-    # Verificar filtrado por rating
+    # Check filtering by rating
     high_rating_words = model.get_words_by_rating(min_rating=4.0)
     assert len(high_rating_words) == 1
     assert 'adiós' in high_rating_words
     
-    # Verificar filtrado por proporción conocida
+    # Check filtering by known proportion
     high_known_words = model.get_words_by_known_proportion(min_prop=0.85)
     assert len(high_known_words) == 1
     assert 'adiós' in high_known_words
 
 def test_get_all_word_data(model):
     """
-    Prueba que get_all_word_data devuelve correctamente todo el diccionario de datos.
+    Test that get_all_word_data correctly returns the full data dictionary.
     """
     all_data = model.get_all_word_data()
     
-    # Verificar que el diccionario contiene todas las palabras
+    # Check that the dictionary contains all words
     assert len(all_data) == 3
     
-    # Verificar que los datos de cada palabra están completos
+    # Check that each word data is complete
     assert 'casa' in all_data
     assert 'perro' in all_data
     assert 'gato' in all_data
     
-    # Verificar que los datos de cada palabra son correctos
+    # Check that each word data is correct
     casa_data = all_data['casa']
     assert casa_data['n_ratings'] == 10
     assert casa_data['n'] == 15

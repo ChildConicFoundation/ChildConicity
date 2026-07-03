@@ -143,11 +143,11 @@ def fetch_download_url(session, corpus_name):
 
 
 def _download_stream(session, url):
-    """Descarga url en memoria con detección de velocidad mínima. Devuelve bytes."""
+    """Downloads a URL into memory with minimum speed detection. Returns bytes."""
     CONNECT_TIMEOUT = 20
-    READ_TIMEOUT    = 30        # segundos sin recibir datos → timeout
-    MIN_SPEED_BPS   = 50 * 1024 # 50 KB/s mínimo
-    SPEED_CHECK_S   = 15        # intervalo de comprobación de velocidad
+    READ_TIMEOUT    = 30        # seconds without receiving data -> timeout
+    MIN_SPEED_BPS   = 50 * 1024 # 50 KB/s minimum
+    SPEED_CHECK_S   = 15        # speed check interval
     REPORT_EVERY    = 5 * 1024 * 1024
 
     response = session.get(url, stream=True, timeout=(CONNECT_TIMEOUT, READ_TIMEOUT))

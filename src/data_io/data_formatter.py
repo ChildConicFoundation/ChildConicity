@@ -20,13 +20,13 @@ class DataFormatter:
         other_child_speakers=None,
     ):
         """
-        Clasifica al hablante como niño objetivo, otro niño o adulto.
+        Classifies the speaker as target child, other child, or adult.
         
         Args:
-            speaker_code (str): Código del hablante
+            speaker_code (str): Speaker code
             
         Returns:
-            str: "target_child", "other_child" o "adult"
+            str: "target_child", "other_child", or "adult"
         """
         if target_child_speakers is None:
             target_child_speakers = {"CHI"}
@@ -46,13 +46,13 @@ class DataFormatter:
     
     def format_csv_data_from(self, file_path):
         """
-        Formatea los datos de un archivo CSV.
+        Formats data from a CSV file.
         
         Args:
-            file_path (str): Ruta del archivo CSV a leer
+            file_path (str): Path to the CSV file to read
             
         Returns:
-            dict: Diccionario con los datos formateados
+            dict: Dictionary with formatted data
         """
         data = self.reader.read_csv(file_path)
         if data is not None:
@@ -62,10 +62,10 @@ class DataFormatter:
     
     def format_cha_data_from(self, file_path):
         """
-        Formatea los datos de un archivo .cha.
+        Formats data from a .cha file.
         
         Args:
-            file_path (str): Ruta del archivo .cha a leer
+            file_path (str): Path to the .cha file to read
             
         Returns:
             tuple: (children_data, other_children_data, adults_data)
@@ -80,11 +80,11 @@ class DataFormatter:
             other_child_speakers = set(
                 data['metadata'].get('other_child_speakers', [])
             )
-            # Inicializar contadores independientes
+            # Initialize independent counters
             child_counter = 1
             other_child_counter = 1
             adult_counter = 1
-            # Separar las expresiones por hablante
+            # Separate utterances by speaker
             for utterance in utterances:
                 entry = {
                     'speaker': utterance['speaker'],
@@ -110,36 +110,36 @@ class DataFormatter:
     
     def get_children_data(self):
         """
-        Devuelve el diccionario con los datos de los niños.
+        Returns the dictionary with child data.
         
         Returns:
-            dict: Diccionario con los datos de los niños
+            dict: Dictionary with child data
         """
         return self.children_data
     
     def get_adults_data(self):
         """
-        Devuelve el diccionario con los datos de los adultos.
+        Returns the dictionary with adult data.
         
         Returns:
-            dict: Diccionario con los datos de los adultos
+            dict: Dictionary with adult data
         """
         return self.adults_data
 
     def get_other_children_data(self):
         """
-        Devuelve el diccionario con los datos de otros niños presentes.
+        Returns the dictionary with data for other children present.
 
         Returns:
-            dict: Diccionario con los datos de otros niños
+            dict: Dictionary with data for other children
         """
         return self.other_children_data
     
     def get_data(self):
         """
-        Devuelve el diccionario con todos los datos (para archivos CSV).
+        Returns the dictionary with all data for CSV files.
         
         Returns:
-            dict: Diccionario con todos los datos
+            dict: Dictionary with all data
         """
         return self.data_dict 

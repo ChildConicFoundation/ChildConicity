@@ -52,8 +52,8 @@ class GrammaticalDataFormatter:
 
     def format_cha_data_from(self, file_path):
         """
-        Formatea los datos morfológicos de un archivo .cha separándolos
-        en niños y adultos.
+        Formats morphological data from a .cha file, separating it
+        into child and adult data.
         """
         data = self.reader.read_cha(file_path)
         if data is None:

@@ -3,7 +3,7 @@ import re
 from src.data_io.data_formatter import DataFormatter
 
 class BrendManipulator:
-    """Manipulador específico para el corpus de Brend"""
+    """Specific manipulator for the Brend corpus"""
     
     def __init__(self):
         self.base_dir = None
@@ -11,16 +11,16 @@ class BrendManipulator:
         self.formatter = DataFormatter()
     
     def process_directory(self):
-        """Procesa el directorio del corpus de Brend"""
+        """Processes the Brend corpus directory"""
         if not self.base_dir:
             raise ValueError("base_dir no está configurado")
             
-        # Procesar todos los archivos .cha en el directorio
+        # Process all .cha files in the directory
         for root, dirs, files in os.walk(self.base_dir):
             for file in files:
                 if file.endswith('.cha'):
                     file_path = os.path.join(root, file)
-                    # Crear la estructura de directorios en el output_dir
+                    # Create the directory structure in output_dir
                     if self.output_dir:
                         rel_path = os.path.relpath(root, self.base_dir)
                         output_root = os.path.join(self.output_dir, rel_path)
@@ -29,24 +29,24 @@ class BrendManipulator:
                     else:
                         output_path = file_path
                     
-                    # Procesar el archivo
+                    # Process the file
                     self.process_file(file_path, output_path)
     
     def process_file(self, input_path, output_path):
-        """Procesa un archivo .cha individual del corpus de Brend"""
+        """Processes an individual .cha file from the Brend corpus"""
         try:
-            # Leer el contenido del archivo
+            # Read the file content
             with open(input_path, 'r', encoding='utf-8') as f:
                 content = f.read()
             
-            # Extraer la edad y el nombre del niño
+            # Extract the child age and name
             age = self.extract_age(content, input_path)
             child_name = self.extract_child_name(content, input_path)
             
-            # Modificar el archivo con la edad extraída y el nombre
+            # Modify the file with the extracted age and name
             modified_content = self.add_metadata_to_content(content, age, child_name)
             
-            # Guardar el archivo modificado
+            # Save the modified file
             with open(output_path, 'w', encoding='utf-8') as f:
                 f.write(modified_content)
                 
@@ -55,27 +55,27 @@ class BrendManipulator:
             print(f"Error al procesar el archivo {input_path}: {str(e)}")
     
     def extract_age(self, content, file_path=None):
-        """Extrae la edad del contenido del archivo y la formatea como 'X years YY months ZZ days'"""
+        """Extracts the age from the file content and formats it as 'X years YY months ZZ days'"""
         try:
             years = 0
             months = 0
             days = 0
             
-            # Si el contenido es una ruta de archivo, leer el archivo
+            # If the content is a file path, read the file
             if os.path.isfile(content):
                 with open(content, 'r', encoding='utf-8') as f:
                     content = f.read()
             
-            # Caso especial para Brent: extraer la edad del nombre del archivo
+            # Special case for Brent: extract the age from the file name
             if file_path and 'Brent' in file_path:
-                # El nombre del archivo tiene el formato YYMMDD.cha o m1-[r|f]DDmmmYY.cha
+                # The file name has the format YYMMDD.cha or m1-[r|f]DDmmmYY.cha
                 file_name = os.path.basename(file_path)
                 if file_name.endswith('.cha'):
-                    file_name = file_name[:-4]  # Quitar la extensión .cha
+                    file_name = file_name[:-4]  # Remove the .cha extension
                     
-                    # Caso especial para archivos m1
+                    # Special case for m1 files
                     if file_name.startswith('m1-'):
-                        # Formato: m1-[r|f]DDmmmYY
+                        # Format: m1-[r|f]DDmmmYY
                         # Ejemplo: m1-r27jul00
                         match = re.match(r'm1-[rf](\d{2})([a-z]{3})(\d{2})', file_name)
                         if match:
@@ -83,7 +83,7 @@ class BrendManipulator:
                             month_str = match.group(2).lower()
                             year = int(match.group(3))
                             
-                            # Convertir el mes de texto a número
+                            # Convert the text month to a number
                             month_map = {
                                 'jan': 1, 'feb': 2, 'mar': 3, 'apr': 4,
                                 'may': 5, 'jun': 6, 'jul': 7, 'aug': 8,
@@ -91,20 +91,20 @@ class BrendManipulator:
                             }
                             month = month_map.get(month_str, 0)
                             
-                            # Ajustar el año (00 -> 2000)
+                            # Adjust the year (00 -> 2000)
                             year = 2000 + year if year < 100 else year
                             
                             return f"0 years {month:02d} months {day:02d} days"
                     
-                    # Caso normal: YYMMDD.cha
-                    elif len(file_name) >= 6:  # Asegurarse de que tiene al menos 6 dígitos
+                    # Normal case: YYMMDD.cha
+                    elif len(file_name) >= 6:  # Make sure it has at least 6 digits
                         years = int(file_name[0:2])
                         months = int(file_name[2:4])
                         days = int(file_name[4:6])
                         return f"{years} years {months:02d} months {days:02d} days"
             
-            # Para otros casos, buscar en el contenido
-            # Buscar la edad en el PID
+            # For other cases, search the content
+            # Search for the age in the PID
             pid_pattern = r'@PID:.*?\|(\d+);(\d+)\|'
             match = re.search(pid_pattern, content)
             if match:
@@ -112,7 +112,7 @@ class BrendManipulator:
                 months = int(match.group(2))
                 return f"{years} years {months:02d} months {days:02d} days"
             
-            # Buscar la edad en el formato @ID: eng|VanKleeck|CHI|3;09.|male|TD||Target_Child|||
+            # Search for the age in the @ID format: eng|VanKleeck|CHI|3;09.|male|TD||Target_Child|||
             id_pattern = r'@ID:.*?CHI\|(\d+);(\d+)\.'
             match = re.search(id_pattern, content)
             if match:
@@ -120,7 +120,7 @@ class BrendManipulator:
                 months = int(match.group(2))
                 return f"{years} years {months:02d} months {days:02d} days"
             
-            # Si no se encuentra en el PID, buscar en el contenido
+            # If it is not found in the PID, search the content
             age_pattern = r'\*CHI:\s*.*?(\d+)[;:]'
             match = re.search(age_pattern, content)
             if match:
@@ -128,7 +128,7 @@ class BrendManipulator:
                 months = 0
                 return f"{years} years {months:02d} months {days:02d} days"
             
-            # Si no se encuentra la edad, devolver valor por defecto
+            # If the age is not found, return a default value
             return "0 years 00 months 00 days"
             
         except Exception as e:
@@ -136,24 +136,24 @@ class BrendManipulator:
             return "0 years 00 months 00 days"
     
     def extract_child_name(self, content, file_path=None):
-        """Extrae el nombre del niño del contenido del archivo de Brend."""
+        """Extracts the child name from the Brend file content."""
         try:
-            # Caso especial para Brend: extraer el nombre de la subcarpeta
+            # Special case for Brend: extract the name from the subfolder
             if file_path and 'Brent' in file_path:
-                # El patrón será Brent/[a-z]\d+/ (por ejemplo, Brent/c1/, Brent/d1/, etc.)
+                # The pattern is Brent/[a-z]\d+/ (for example, Brent/c1/, Brent/d1/, etc.)
                 brend_pattern = r'Brent/([a-z]\d+)/'
                 match = re.search(brend_pattern, file_path)
                 if match:
                     return match.group(1)
             
-            # Para otros casos, seguir con la lógica existente
-            # Buscar en la línea @ID
+            # For other cases, keep the existing logic
+            # Search in the @ID line
             id_pattern = r'@ID:\s*eng\|([^|]+)\|CHI'
             id_match = re.search(id_pattern, content)
             if id_match:
                 return id_match.group(1)
             
-            # Si no se encuentra en @ID, buscar en los participantes
+            # If it is not found in @ID, search participants
             participants_pattern = r'@Participants:\s*([^\n]+)'
             participants_match = re.search(participants_pattern, content)
             if participants_match:
@@ -163,7 +163,7 @@ class BrendManipulator:
                 if chi_match:
                     return chi_match.group(1)
                 
-            # Si no se encuentra en los participantes, buscar en el PID
+            # If it is not found in participants, search the PID
             pid_pattern = r'@PID:\s*([^\n]+)'
             pid_match = re.search(pid_pattern, content)
             if pid_match:
@@ -173,7 +173,7 @@ class BrendManipulator:
                 if child_match:
                     return child_match.group(1)
                 
-            # Si no se encuentra en ninguna parte, buscar en los comentarios
+            # If it is not found anywhere, search comments
             comment_pattern = r'@Comment:\s*([^\n]+)'
             comment_match = re.search(comment_pattern, content)
             if comment_match:
@@ -183,14 +183,14 @@ class BrendManipulator:
                 if name_match:
                     return name_match.group(1)
                 
-            # Si no se encuentra en ninguna parte, usar el nombre del archivo
+            # If it is not found anywhere, use the file name
             return "Target_Child"
         except Exception as e:
             print(f"Error al extraer el nombre del niño: {e}")
             return "Target_Child"
     
     def add_metadata_to_content(self, content, age, child_name):
-        """Añade los metadatos al contenido del archivo"""
+        """Adds metadata to the file content"""
         if content is None:
             return ""
         
@@ -201,7 +201,7 @@ class BrendManipulator:
         name_added = False
         
         for line in lines:
-            # Si la línea es un metadato de edad o nombre, la actualizamos
+            # If the line is age or name metadata, update it
             if line.startswith('@ChildAge:') and age:
                 new_lines.append(f'@ChildAge: {age}')
                 age_added = True
@@ -211,7 +211,7 @@ class BrendManipulator:
             else:
                 new_lines.append(line)
                 
-            # Si encontramos @Languages y aún no hemos añadido los metadatos, los añadimos
+            # If @Languages is found and metadata has not been added yet, add it
             if line.startswith('@Languages:') and not languages_found:
                 languages_found = True
                 if age and not age_added:

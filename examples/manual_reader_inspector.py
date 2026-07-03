@@ -4,24 +4,24 @@ from src.data_io.reader import Reader
 
 
 def inspect_reader_output():
-    # Crear instancia del Reader
+    # Create a Reader instance
     reader = Reader()
     
-    # Leer un archivo .cha de prueba
+    # Read a test .cha file
     test_file = "Corpora_modified/VanKleeck/walter/walter1.cha"
     
     if not os.path.exists(test_file):
         print(f"Error: No se encontró el archivo de prueba {test_file}")
         return
     
-    # Leer el archivo
+    # Read the file
     data = reader.read_cha(test_file)
     
     if data is None:
         print("Error al leer el archivo")
         return
     
-    # Imprimir los metadatos
+    # Print metadata
     print("\nMetadatos extraídos:")
     print("-" * 50)
     for key, value in data['metadata'].items():

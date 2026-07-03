@@ -29,13 +29,13 @@ class CorpusInitializer:
     output_root: str = DEFAULT_OUTPUT_ROOT
 
     def initialize_bates(self):
-        """Inicializa el corpus de Bates."""
+        """Initializes the Bates corpus."""
         print("\nInicializando corpus de Bates...")
         process_bates(self._source_dir("Bates"), self._output_dir("Bates"))
         print("¡Corpus de Bates inicializado!")
 
     def initialize_brent(self):
-        """Inicializa el corpus de Brent."""
+        """Initializes the Brent corpus."""
         print("\nInicializando corpus de Brent...")
 
         manipulator = BrendManipulator()
@@ -46,19 +46,19 @@ class CorpusInitializer:
         print("¡Corpus de Brent inicializado!")
 
     def initialize_new_england(self):
-        """Inicializa el corpus de NewEngland."""
+        """Initializes the NewEngland corpus."""
         print("\nInicializando corpus de NewEngland...")
         process_newengland(self._source_dir("NewEngland"), self._output_dir("NewEngland"))
         print("¡Corpus de NewEngland inicializado!")
 
     def initialize_post(self):
-        """Inicializa el corpus de Post."""
+        """Initializes the Post corpus."""
         print("\nInicializando corpus de Post...")
         process_post(self._source_dir("Post"), self._output_dir("Post"))
         print("¡Corpus de Post inicializado!")
 
     def initialize_bloom(self):
-        """Inicializa el corpus de Bloom."""
+        """Initializes the Bloom corpus."""
         print("\nInicializando corpus de Bloom...")
         process_bloom(
             self._source_dir("Bloom"),
@@ -67,7 +67,7 @@ class CorpusInitializer:
         print("¡Corpus de Bloom inicializado!")
 
     def initialize_brown(self):
-        """Inicializa el corpus de Brown."""
+        """Initializes the Brown corpus."""
         print("\nInicializando corpus de Brown...")
         process_brown(
             self._source_dir("Brown"),
@@ -76,7 +76,7 @@ class CorpusInitializer:
         print("¡Corpus de Brown inicializado!")
 
     def initialize_hslld(self):
-        """Inicializa el corpus de HSLLD."""
+        """Initializes the HSLLD corpus."""
         print("\nInicializando corpus de HSLLD...")
         process_hslld(
             self._source_dir("HSLLD"),
@@ -85,7 +85,7 @@ class CorpusInitializer:
         print("¡Corpus de HSLLD inicializado!")
 
     def initialize_kuczaj(self):
-        """Inicializa el corpus de Kuczaj."""
+        """Initializes the Kuczaj corpus."""
         print("\nInicializando corpus de Kuczaj...")
         process_kuczaj(
             self._source_dir("Kuczaj"),
@@ -94,7 +94,7 @@ class CorpusInitializer:
         print("¡Corpus de Kuczaj inicializado!")
 
     def initialize_sachs(self):
-        """Inicializa el corpus de Sachs."""
+        """Initializes the Sachs corpus."""
         print("\nInicializando corpus de Sachs...")
         process_sachs(
             self._source_dir("Sachs"),
@@ -103,19 +103,19 @@ class CorpusInitializer:
         print("¡Corpus de Sachs inicializado!")
 
     def initialize_van_kleeck(self):
-        """Inicializa el corpus de VanKleeck."""
+        """Initializes the VanKleeck corpus."""
         print("\nInicializando corpus de VanKleeck...")
         process_vankleeck(self._source_dir("VanKleeck"), self._output_dir("VanKleeck"))
         print("¡Corpus de VanKleeck inicializado!")
 
     def initialize_providence(self):
-        """Inicializa el corpus de Providence."""
+        """Initializes the Providence corpus."""
         print("\nInicializando corpus de Providence...")
         process_providence(self._source_dir("Providence"), self._output_dir("Providence"))
         print("¡Corpus de Providence inicializado!")
 
     def initialize_all(self):
-        """Inicializa todos los corpus."""
+        """Initializes all corpora."""
         print("Iniciando inicialización de corpus...")
         self.initialize_bates()
         self.initialize_brent()

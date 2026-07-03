@@ -10,17 +10,17 @@ class IconicityModel:
 
     def __init__(self, data_dict):
         """
-        Inicializa el modelo con los datos del CSV.
+        Initializes the model with CSV data.
 
-        Las palabras se normalizan a minúsculas para que casen con el
-        tokenizado del pipeline.
+        Words are normalized to lowercase so they match the
+        pipeline tokenization.
         """
         self.word_data = {}
         self._process_data(data_dict or {})
 
     def _process_data(self, data_dict):
         """
-        Procesa los datos del diccionario y los organiza por palabra.
+        Processes dictionary data and organizes it by word.
         """
         for entry in data_dict.values():
             if not self.REQUIRED_FIELDS.issubset(entry):
@@ -67,35 +67,35 @@ class IconicityModel:
 
     def get_word_data(self, word):
         """
-        Obtiene los datos de una palabra específica.
+        Gets data for a specific word.
 
         Args:
-            word (str): Palabra a buscar
+            word (str): Word to search for
 
         Returns:
-            dict: Datos de la palabra o None si no existe
+            dict: Word data or None if it does not exist
         """
         return self.word_data.get(self._normalize_word(word))
 
     def get_all_words(self):
         """
-        Obtiene todas las palabras en el modelo.
+        Gets all words in the model.
 
         Returns:
-            list: Lista de todas las palabras
+            list: List of all words
         """
         return list(self.word_data.keys())
 
     def get_words_by_rating(self, min_rating=None, max_rating=None):
         """
-        Obtiene las palabras filtradas por rango de valoración.
+        Gets words filtered by rating range.
 
         Args:
-            min_rating (float): Valoración mínima (opcional)
-            max_rating (float): Valoración máxima (opcional)
+            min_rating (float): Minimum rating (optional)
+            max_rating (float): Maximum rating (optional)
 
         Returns:
-            dict: Diccionario con las palabras y sus datos que cumplen el criterio
+            dict: Dictionary with words and data matching the criterion
         """
         filtered_words = {}
         for word, data in self.word_data.items():
@@ -108,14 +108,14 @@ class IconicityModel:
 
     def get_words_by_known_proportion(self, min_prop=None, max_prop=None):
         """
-        Obtiene las palabras filtradas por rango de proporción de conocimiento.
+        Gets words filtered by knowledge proportion range.
 
         Args:
-            min_prop (float): Proporción mínima (opcional)
-            max_prop (float): Proporción máxima (opcional)
+            min_prop (float): Minimum proportion (optional)
+            max_prop (float): Maximum proportion (optional)
 
         Returns:
-            dict: Diccionario con las palabras y sus datos que cumplen el criterio
+            dict: Dictionary with words and data matching the criterion
         """
         filtered_words = {}
         for word, data in self.word_data.items():
@@ -128,10 +128,10 @@ class IconicityModel:
 
     def get_all_word_data(self):
         """
-        Devuelve el diccionario completo con todos los datos de todas las palabras.
+        Returns the full dictionary with all data for all words.
 
         Returns:
-            dict: Diccionario donde las claves son las palabras y los valores son
-                 diccionarios con todos sus datos.
+            dict: Dictionary where keys are words and values are
+                 dictionaries with all their data.
         """
         return self.word_data

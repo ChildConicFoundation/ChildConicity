@@ -3,28 +3,28 @@ from collections import defaultdict
 
 class WordCounter:
     """
-    Clase para contar palabras en un texto.
+    Class for counting words in text.
     """
     
     def __init__(self):
         """
-        Inicializa el contador de palabras.
+        Initializes the word counter.
         """
         self.word_counts = defaultdict(int)
     
     def count_words(self, data):
         """
-        Cuenta las palabras en el texto proporcionado.
+        Counts words in the provided text.
         
         Args:
-            data (str or dict): String con texto o diccionario con campos 'text' para procesar.
+            data (str or dict): String with text or dictionary with 'text' fields to process.
         """
-        # Si data es un string, procesarlo directamente
+        # If data is a string, process it directly
         if isinstance(data, str):
             words = re.findall(r'\b\w+\b', data.lower())
             for word in words:
                 self.word_counts[word] += 1
-        # Si data es un diccionario, procesar cada entrada
+        # If data is a dictionary, process each entry
         elif isinstance(data, dict):
             if 'text' in data:
                 words = re.findall(r'\b\w+\b', data['text'].lower())
@@ -39,10 +39,10 @@ class WordCounter:
     
     def get_word_counts(self):
         """
-        Obtiene el diccionario de conteo de palabras.
+        Gets the word count dictionary.
         
         Returns:
-            dict: Diccionario con palabras como claves y diccionarios con conteos como valores.
+            dict: Dictionary with words as keys and count dictionaries as values.
         """
         result = {}
         for word, count in self.word_counts.items():
@@ -51,20 +51,20 @@ class WordCounter:
     
     def get_most_common(self, n=10):
         """
-        Obtiene las n palabras más comunes.
+        Gets the n most common words.
         
         Args:
-            n (int): Número de palabras a retornar.
+            n (int): Number of words to return.
             
         Returns:
-            list: Lista de tuplas (palabra, conteo) ordenadas por frecuencia.
+            list: List of tuples (word, count) sorted by frequency.
         """
-        # Ordenar por conteo y luego alfabéticamente para desempates
+        # Sort by count and then alphabetically to break ties
         return sorted(self.word_counts.items(), 
                      key=lambda x: (-x[1], x[0]))[:n]
     
     def clear(self):
         """
-        Limpia el contador de palabras.
+        Clears the word counter.
         """
         self.word_counts.clear() 

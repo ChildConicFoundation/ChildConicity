@@ -9,14 +9,14 @@ def formatter():
 
 @pytest.fixture
 def test_files():
-    # Crear archivo CSV de prueba
+    # Create a test CSV file
     test_csv_path = 'test_data.csv'
     pd.DataFrame({
         'word': ['casa', 'perro'],
         'rating': [4.5, 3.8]
     }).to_csv(test_csv_path, index=False)
     
-    # Crear archivo CHA de prueba
+    # Create a test CHA file
     test_cha_path = 'test_data.cha'
     with open(test_cha_path, 'w', encoding='utf-8') as f:
         f.write("""@UTF8
@@ -27,7 +27,7 @@ def test_files():
     
     yield {'csv': test_csv_path, 'cha': test_cha_path}
     
-    # Limpiar archivos después de las pruebas
+    # Clean up files after tests
     os.remove(test_csv_path)
     os.remove(test_cha_path)
 
@@ -54,11 +54,11 @@ def test_format_cha_data(formatter, test_files):
     assert other_children_data is not None
     assert adults_data is not None
     
-    # Verificar datos de niños
+    # Check child data
     assert len(children_data) == 2
     assert children_data[1]['text'].strip() == 'hola'
     
-    # Verificar datos de adultos
+    # Check adult data
     assert len(adults_data) == 1
     assert adults_data[1]['text'].strip() == 'buenos días'
     assert len(other_children_data) == 0

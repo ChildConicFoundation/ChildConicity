@@ -3,7 +3,7 @@ import re
 from src.data_io.data_formatter import DataFormatter
 
 class CorpusManipulator:
-    """Manipulador genérico para todos los corpus"""
+    """Generic manipulator for all corpora"""
     
     def __init__(self):
         self.base_dir = None
@@ -11,16 +11,16 @@ class CorpusManipulator:
         self.formatter = DataFormatter()
     
     def process_directory(self):
-        """Procesa el directorio del corpus"""
+        """Processes the corpus directory"""
         if not self.base_dir:
             raise ValueError("base_dir no está configurado")
             
-        # Procesar todos los archivos .cha en el directorio
+        # Process all .cha files in the directory
         for root, dirs, files in os.walk(self.base_dir):
             for file in files:
                 if file.endswith('.cha'):
                     file_path = os.path.join(root, file)
-                    # Crear la estructura de directorios en el output_dir
+                    # Create the directory structure in output_dir
                     if self.output_dir:
                         rel_path = os.path.relpath(root, self.base_dir)
                         output_root = os.path.join(self.output_dir, rel_path)
@@ -29,26 +29,26 @@ class CorpusManipulator:
                     else:
                         output_path = file_path
                     
-                    # Procesar el archivo
+                    # Process the file
                     self.process_file(file_path, output_path)
     
     def process_file(self, input_path, output_path):
-        """Procesa un archivo .cha individual"""
-        # Extraer la edad del archivo
+        """Processes an individual .cha file"""
+        # Extract the age from the file
         age = self.extract_age(input_path)
         
         try:
-            # Leer el contenido del archivo
+            # Read the file content
             with open(input_path, 'r', encoding='utf-8') as f:
                 content = f.read()
             
-            # Extraer el nombre del niño pasando también la ruta del archivo
+            # Extract the child name, also passing the file path
             child_name = self.extract_child_name(content, input_path)
             
-            # Modificar el archivo con la edad extraída y el nombre
+            # Modify the file with the extracted age and name
             modified_content = self.add_metadata_to_content(content, age, child_name)
             
-            # Guardar el archivo modificado
+            # Save the modified file
             with open(output_path, 'w', encoding='utf-8') as f:
                 f.write(modified_content)
                 
@@ -57,23 +57,23 @@ class CorpusManipulator:
             print(f"Error al procesar el archivo {input_path}: {str(e)}")
     
     def extract_age(self, file_path):
-        """Extrae la edad del archivo"""
+        """Extracts the age from the file"""
         try:
             with open(file_path, 'r', encoding='utf-8') as f:
                 content = f.read()
             
-            # Caso especial para Brent: extraer la edad del nombre del archivo
+            # Special case for Brent: extract the age from the file name
             if 'Brent' in file_path:
                 file_name = os.path.basename(file_path)
                 if file_name.endswith('.cha'):
-                    file_name = file_name[:-4]  # Quitar la extensión .cha
-                    if len(file_name) >= 6:  # Asegurarse de que tiene al menos 6 dígitos
+                    file_name = file_name[:-4]  # Remove the .cha extension
+                    if len(file_name) >= 6:  # Make sure it has at least 6 digits
                         years = int(file_name[0:2])
                         months = int(file_name[2:4])
                         days = int(file_name[4:6])
                         return f"{years};{months}"
             
-            # Buscar la edad en el PID
+            # Search for the age in the PID
             pid_pattern = r'@PID:.*?\|(\d+);(\d+)\|'
             match = re.search(pid_pattern, content)
             if match:
@@ -81,7 +81,7 @@ class CorpusManipulator:
                 months = int(match.group(2))
                 return f"{years};{months}"
                 
-            # Buscar la edad en el formato @ID: eng|VanKleeck|CHI|3;08.|male|TD||Target_Child|||
+            # Search for the age in the @ID format: eng|VanKleeck|CHI|3;08.|male|TD||Target_Child|||
             id_pattern = r'@ID:.*?CHI\|(\d+);(\d+)\.'
             match = re.search(id_pattern, content)
             if match:
@@ -89,7 +89,7 @@ class CorpusManipulator:
                 months = int(match.group(2))
                 return f"{years};{months}"
                 
-            # Si no se encuentra en el PID, buscar en el contenido
+            # If it is not found in the PID, search the content
             age_pattern = r'\*CHI:\s*.*?(\d+)[;:]'
             match = re.search(age_pattern, content)
             if match:
@@ -102,22 +102,22 @@ class CorpusManipulator:
             return None
     
     def modify_file(self, input_path, output_path, age):
-        """Modifica el archivo con la edad extraída"""
+        """Modifies the file with the extracted age"""
         if age is None:
             return
             
         try:
-            # Leer el contenido del archivo
+            # Read the file content
             with open(input_path, 'r', encoding='utf-8') as f:
                 content = f.read()
             
-            # Extraer el nombre del niño pasando también la ruta del archivo
+            # Extract the child name, also passing the file path
             child_name = self.extract_child_name(content, input_path)
             
-            # Modificar el contenido con la edad y el nombre
+            # Modify the content with age and name
             modified_content = self.add_metadata_to_content(content, age, child_name)
             
-            # Guardar el archivo modificado
+            # Save the modified file
             with open(output_path, 'w', encoding='utf-8') as f:
                 f.write(modified_content)
                 
@@ -126,24 +126,24 @@ class CorpusManipulator:
             print(f"Error al modificar el archivo {input_path}: {str(e)}")
     
     def extract_child_name(self, content, file_path=None):
-        """Extrae el nombre del niño del contenido del archivo."""
+        """Extracts the child name from the file content."""
         try:
-            # Caso especial para Brent: extraer el nombre de la subcarpeta
+            # Special case for Brent: extract the name from the subfolder
             if file_path and 'Brent' in file_path:
-                # El patrón será Brent/[a-z]\d+/ (por ejemplo, Brent/c1/, Brent/d1/, etc.)
+                # The pattern is Brent/[a-z]\d+/ (for example, Brent/c1/, Brent/d1/, etc.)
                 brent_pattern = r'Brent/([a-z]\d+)/'
                 match = re.search(brent_pattern, file_path)
                 if match:
                     return match.group(1)
             
-            # Para otros casos, seguir con la lógica existente
-            # Buscar en la línea @ID
+            # For other cases, keep the existing logic
+            # Search in the @ID line
             id_pattern = r'@ID:\s*eng\|([^|]+)\|CHI'
             id_match = re.search(id_pattern, content)
             if id_match:
                 return id_match.group(1)
             
-            # Si no se encuentra en @ID, buscar en los participantes
+            # If it is not found in @ID, search participants
             participants_pattern = r'@Participants:\s*([^\n]+)'
             participants_match = re.search(participants_pattern, content)
             if participants_match:
@@ -153,7 +153,7 @@ class CorpusManipulator:
                 if chi_match:
                     return chi_match.group(1)
                 
-            # Si no se encuentra en los participantes, buscar en el PID
+            # If it is not found in participants, search the PID
             pid_pattern = r'@PID:\s*([^\n]+)'
             pid_match = re.search(pid_pattern, content)
             if pid_match:
@@ -163,7 +163,7 @@ class CorpusManipulator:
                 if child_match:
                     return child_match.group(1)
                 
-            # Si no se encuentra en ninguna parte, buscar en los comentarios
+            # If it is not found anywhere, search comments
             comment_pattern = r'@Comment:\s*([^\n]+)'
             comment_match = re.search(comment_pattern, content)
             if comment_match:
@@ -173,14 +173,14 @@ class CorpusManipulator:
                 if name_match:
                     return name_match.group(1)
                 
-            # Si no se encuentra en ninguna parte, usar el nombre del archivo
+            # If it is not found anywhere, use the file name
             return "Target_Child"
         except Exception as e:
             print(f"Error al extraer el nombre del niño: {e}")
             return "Target_Child"
     
     def add_metadata_to_content(self, content, age, child_name):
-        """Añade los metadatos al contenido del archivo"""
+        """Adds metadata to the file content"""
         if content is None:
             return ""
         
@@ -191,7 +191,7 @@ class CorpusManipulator:
         name_added = False
         
         for line in lines:
-            # Si la línea es un metadato de edad o nombre, la actualizamos
+            # If the line is age or name metadata, update it
             if line.startswith('@Age:') and age:
                 new_lines.append(f'@Age: {age}')
                 age_added = True
@@ -201,7 +201,7 @@ class CorpusManipulator:
             else:
                 new_lines.append(line)
                 
-            # Si encontramos @Languages y aún no hemos añadido los metadatos, los añadimos
+            # If @Languages is found and metadata has not been added yet, add it
             if line.startswith('@Languages:') and not languages_found:
                 languages_found = True
                 if age and not age_added:

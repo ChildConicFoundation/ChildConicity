@@ -15,15 +15,15 @@ except ModuleNotFoundError:
 
 class DataAnalysisPlotter:
     """
-    Clase para analizar y visualizar datos estadísticos de palabras.
+    Class for analyzing and visualizing word statistics.
     """
     
     def __init__(self, data: Dict[str, Dict[str, Any]]):
         """
-        Inicializa el analizador de datos con los datos estadísticos.
+        Initializes the data analyzer with statistical data.
         
         Args:
-            data (Dict[str, Dict[str, Any]]): Diccionario con estadísticas de palabras.
+            data (Dict[str, Dict[str, Any]]): Dictionary with word statistics.
                 Formato esperado:
                 {
                     'age_group': {
@@ -56,10 +56,10 @@ class DataAnalysisPlotter:
         
     def _validate_data(self) -> bool:
         """
-        Valida que los datos tengan el formato correcto.
+        Validates that data has the correct format.
         
         Returns:
-            bool: True si los datos son válidos, False en caso contrario.
+            bool: True if the data is valid, False otherwise.
         """
         if not isinstance(self.data, dict):
             return False
@@ -84,11 +84,11 @@ class DataAnalysisPlotter:
 
     def plot_iconic_vs_non_iconic_by_age(self, save_path: str = None):
         """
-        Crea una gráfica de barras mostrando la proporción de palabras icónicas y no icónicas por grupo de edad, para niños y adultos.
-        Sin mostrar porcentajes para mantener la gráfica limpia.
+        Creates a bar plot showing the proportion of iconic and non-iconic words by age group, for children and adults.
+        Without showing percentages to keep the plot clean.
         
         Args:
-            save_path (str, optional): Ruta donde guardar la gráfica. Si es None, la gráfica se muestra en pantalla.
+            save_path (str, optional): Path where the plot should be saved. If None, the plot is shown on screen.
         """
         self._require_plotting_backend()
         age_groups = []
@@ -100,12 +100,12 @@ class DataAnalysisPlotter:
         for age_group, stats in sorted(self.data.items()):
             age_groups.append(age_group)
             
-            # Calcular porcentajes para niños
+            # Calculate percentages for children
             total_children = stats['children']['total_words']
             iconic_children_pct = (stats['children']['total_iconic_occurrences'] / total_children * 100) if total_children > 0 else 0
             non_iconic_children_pct = (stats['children']['total_non_iconic_occurrences'] / total_children * 100) if total_children > 0 else 0
             
-            # Calcular porcentajes para adultos
+            # Calculate percentages for adults
             total_adults = stats['adults']['total_words']
             iconic_adults_pct = (stats['adults']['total_iconic_occurrences'] / total_adults * 100) if total_adults > 0 else 0
             non_iconic_adults_pct = (stats['adults']['total_non_iconic_occurrences'] / total_adults * 100) if total_adults > 0 else 0
@@ -115,7 +115,7 @@ class DataAnalysisPlotter:
             iconic_adults.append(iconic_adults_pct)
             non_iconic_adults.append(non_iconic_adults_pct)
         
-        # Crear la gráfica
+        # Create the plot
         fig, ax = plt.subplots(figsize=(12, 6))
         x = np.arange(len(age_groups))
         width = 0.2
@@ -126,7 +126,7 @@ class DataAnalysisPlotter:
         ax.bar(x + 0.5*width, iconic_adults, width, label='Adultos - Icónicas')
         ax.bar(x + 1.5*width, non_iconic_adults, width, label='Adultos - No Icónicas')
         
-        # Configurar la gráfica
+        # Configure the plot
         ax.set_xlabel('Grupo de Edad')
         ax.set_ylabel('Porcentaje de Palabras (%)')
         ax.set_title('Proporción de Palabras Icónicas vs No Icónicas por Grupo de Edad')
@@ -144,11 +144,11 @@ class DataAnalysisPlotter:
 
     def plot_iconic_vs_non_iconic_by_age_adults(self, save_path: str = None):
         """
-        Crea una gráfica de barras mostrando la proporción de palabras icónicas y no icónicas por grupo de edad,
-        solo para adultos, incluyendo los porcentajes.
+        Creates a bar plot showing the proportion of iconic and non-iconic words by age group,
+        for adults only, including percentages.
         
         Args:
-            save_path (str, optional): Ruta donde guardar la gráfica. Si es None, la gráfica se muestra en pantalla.
+            save_path (str, optional): Path where the plot should be saved. If None, the plot is shown on screen.
         """
         self._require_plotting_backend()
         age_groups = []
@@ -158,7 +158,7 @@ class DataAnalysisPlotter:
         for age_group, stats in sorted(self.data.items()):
             age_groups.append(age_group)
             
-            # Calcular porcentajes para adultos
+            # Calculate percentages for adults
             total_adults = stats['adults']['total_words']
             iconic_adults_pct = (stats['adults']['total_iconic_occurrences'] / total_adults * 100) if total_adults > 0 else 0
             non_iconic_adults_pct = (stats['adults']['total_non_iconic_occurrences'] / total_adults * 100) if total_adults > 0 else 0
@@ -166,7 +166,7 @@ class DataAnalysisPlotter:
             iconic_adults.append(iconic_adults_pct)
             non_iconic_adults.append(non_iconic_adults_pct)
         
-        # Crear la gráfica
+        # Create the plot
         fig, ax = plt.subplots(figsize=(12, 6))
         x = np.arange(len(age_groups))
         width = 0.35
@@ -175,7 +175,7 @@ class DataAnalysisPlotter:
         bars1 = ax.bar(x - width/2, iconic_adults, width, label='Palabras Icónicas')
         bars2 = ax.bar(x + width/2, non_iconic_adults, width, label='Palabras No Icónicas')
         
-        # Configurar la gráfica
+        # Configure the plot
         ax.set_xlabel('Grupo de Edad')
         ax.set_ylabel('Porcentaje de Palabras (%)')
         ax.set_title('Proporción de Palabras Icónicas vs No Icónicas por Grupo de Edad (Adultos)')
@@ -183,7 +183,7 @@ class DataAnalysisPlotter:
         ax.set_xticklabels(age_groups)
         ax.legend()
         
-        # Añadir valores sobre las barras
+        # Add values above the bars
         def add_labels(bars):
             for bar in bars:
                 height = bar.get_height()
@@ -206,11 +206,11 @@ class DataAnalysisPlotter:
 
     def plot_iconic_vs_non_iconic_by_age_children(self, save_path: str = None):
         """
-        Crea una gráfica de barras mostrando la proporción de palabras icónicas y no icónicas por grupo de edad,
-        solo para niños, incluyendo los porcentajes.
+        Creates a bar plot showing the proportion of iconic and non-iconic words by age group,
+        for children only, including percentages.
         
         Args:
-            save_path (str, optional): Ruta donde guardar la gráfica. Si es None, la gráfica se muestra en pantalla.
+            save_path (str, optional): Path where the plot should be saved. If None, the plot is shown on screen.
         """
         self._require_plotting_backend()
         age_groups = []
@@ -220,7 +220,7 @@ class DataAnalysisPlotter:
         for age_group, stats in sorted(self.data.items()):
             age_groups.append(age_group)
             
-            # Calcular porcentajes para niños
+            # Calculate percentages for children
             total_children = stats['children']['total_words']
             iconic_children_pct = (stats['children']['total_iconic_occurrences'] / total_children * 100) if total_children > 0 else 0
             non_iconic_children_pct = (stats['children']['total_non_iconic_occurrences'] / total_children * 100) if total_children > 0 else 0
@@ -228,7 +228,7 @@ class DataAnalysisPlotter:
             iconic_children.append(iconic_children_pct)
             non_iconic_children.append(non_iconic_children_pct)
         
-        # Crear la gráfica
+        # Create the plot
         fig, ax = plt.subplots(figsize=(12, 6))
         x = np.arange(len(age_groups))
         width = 0.35
@@ -237,7 +237,7 @@ class DataAnalysisPlotter:
         bars1 = ax.bar(x - width/2, iconic_children, width, label='Palabras Icónicas')
         bars2 = ax.bar(x + width/2, non_iconic_children, width, label='Palabras No Icónicas')
         
-        # Configurar la gráfica
+        # Configure the plot
         ax.set_xlabel('Grupo de Edad')
         ax.set_ylabel('Porcentaje de Palabras (%)')
         ax.set_title('Proporción de Palabras Icónicas vs No Icónicas por Grupo de Edad (Niños)')
@@ -245,7 +245,7 @@ class DataAnalysisPlotter:
         ax.set_xticklabels(age_groups)
         ax.legend()
         
-        # Añadir valores sobre las barras
+        # Add values above the bars
         def add_labels(bars):
             for bar in bars:
                 height = bar.get_height()
@@ -275,16 +275,16 @@ class DataAnalysisPlotter:
         print_warnings: bool = True,
     ):
         """
-        Genera gráficas de distribución acumulativa de iconicidad para cada grupo de edad,
-        comparando niños y adultos. El eje Y representa el porcentaje acumulativo de ocurrencias
-        de palabras hasta cada valor de iconicidad.
+        Generates cumulative iconicity distribution plots for each age group,
+        comparing children and adults. The Y axis represents the cumulative percentage of occurrences
+        of words up to each iconicity value.
         
         Args:
-            save_dir (str, optional): Directorio donde guardar las gráficas. Si es None, las gráficas se muestran en pantalla.
-            filename_prefix (str, optional): Prefijo de los archivos generados.
-            title_suffix (str, optional): Texto para distinguir el conjunto de datos graficado.
-            print_statistics (bool, optional): Si es True, imprime el resumen usado por las graficas.
-            print_warnings (bool, optional): Si es True, avisa cuando un grupo no tiene datos.
+            save_dir (str, optional): Directory where plots should be saved. If None, plots are shown on screen.
+            filename_prefix (str, optional): Prefix for generated files.
+            title_suffix (str, optional): Text to distinguish the plotted data set.
+            print_statistics (bool, optional): If True, prints the summary used by the plots.
+            print_warnings (bool, optional): If True, warns when a group has no data.
         """
         self._require_plotting_backend()
         if print_statistics:
@@ -293,11 +293,11 @@ class DataAnalysisPlotter:
         generated_paths = []
 
         for age_group, stats in sorted(self.data.items()):
-            # Obtener las palabras con rating para adultos y niños
+            # Get words with ratings for adults and children
             adults_words_with_rating = stats['adults']['iconic_words']
             children_words_with_rating = stats['children']['iconic_words']
 
-            # Verificar si hay datos para adultos y niños
+            # Check whether adult and child data exists
             has_adult_data = len(adults_words_with_rating) > 0
             has_children_data = len(children_words_with_rating) > 0
 
@@ -306,17 +306,17 @@ class DataAnalysisPlotter:
                     print(f"\nNo hay datos de iconicidad para el grupo de edad {age_group}")
                 continue
 
-            # Crear listas de (rating, count) para adultos y niños
+            # Create (rating, count) lists for adults and children
             adults_ratings_counts = [(word_data['rating'], word_data['count']) 
                                    for word_data in adults_words_with_rating.values()]
             children_ratings_counts = [(word_data['rating'], word_data['count']) 
                                      for word_data in children_words_with_rating.values()]
 
-            # Obtener total de palabras para adultos y niños
+            # Get total word counts for adults and children
             total_adults = stats['adults']['total_iconic_occurrences']
             total_children = stats['children']['total_iconic_occurrences']
 
-            # Obtener mínimo y máximo de iconicidad
+            # Get minimum and maximum iconicity
             min_rating = float('inf')
             max_rating = float('-inf')
 
@@ -333,10 +333,10 @@ class DataAnalysisPlotter:
                     print(f"\nNo se pudieron calcular los rangos de iconicidad para el grupo de edad {age_group}")
                 continue
 
-            # Crear bins para la iconicidad
+            # Create bins for iconicity
             x_axis = np.arange(min_rating, max_rating + 0.25, 0.25)
             
-            # Ordenar las palabras por iconicidad
+            # Sort words by iconicity
             sorted_adults = sorted(adults_ratings_counts, key=lambda x: x[0])
             sorted_children = sorted(children_ratings_counts, key=lambda x: x[0])
 
@@ -349,14 +349,14 @@ class DataAnalysisPlotter:
                 x_axis,
             )
 
-            # Crear la gráfica
+            # Create the plot
             plt.figure(figsize=(10, 6))
             
-            # Plotear datos de adultos si existen
+            # Plot adult data if present
             if has_adult_data:
                 plt.plot(x_axis, adults_cumulative/total_adults * 100, label='Adultos', marker='o', markersize=4)
             
-            # Plotear datos de niños si existen
+            # Plot child data if present
             if has_children_data:
                 plt.plot(x_axis, children_cumulative/total_children * 100, label='Niños', marker='s', markersize=4)
             
@@ -366,7 +366,7 @@ class DataAnalysisPlotter:
             plt.legend()
             plt.grid(True)
             
-            # Guardar o mostrar la gráfica
+            # Save or show the plot
             if save_dir:
                 os.makedirs(save_dir, exist_ok=True)
                 save_path = os.path.join(save_dir, f'{filename_prefix}_{age_group}.png')
@@ -390,17 +390,17 @@ class DataAnalysisPlotter:
         print_warnings: bool = True,
     ):
         """
-        Genera una imagen por edad con varias curvas superpuestas.
+        Generates one image per age with several overlaid curves.
 
         Args:
-            stats_by_scope (dict): Mapa de etiqueta a datos con el mismo formato
-                que consume DataAnalysisPlotter.
-            save_dir (str, optional): Directorio donde guardar las graficas.
-            filename_prefix (str, optional): Prefijo de los archivos generados.
-            title_suffix (str, optional): Texto para distinguir el conjunto de datos.
+            stats_by_scope (dict): Map from label to data with the same format
+                consumed by DataAnalysisPlotter.
+            save_dir (str, optional): Directory where plots should be saved.
+            filename_prefix (str, optional): Prefix for generated files.
+            title_suffix (str, optional): Text to distinguish the data set.
             speaker_groups_to_plot (iterable, optional): Grupos de hablantes que
                 se deben dibujar. Por defecto dibuja adultos y ninos.
-            print_warnings (bool, optional): Si es True, avisa cuando un grupo no tiene datos.
+            print_warnings (bool, optional): If True, warns when a group has no data.
         """
         self._require_plotting_backend()
         generated_paths = []
@@ -573,20 +573,20 @@ class DataAnalysisPlotter:
 
     def plot_all_adults_iconicity_distribution(self, save_path: str = None):
         """
-        Genera una gráfica que muestra la distribución acumulativa de iconicidad para todos los grupos de edad
-        de adultos superpuestos en una sola gráfica.
+        Generates a plot showing the cumulative iconicity distribution for all age groups
+        for adults overlaid in a single plot.
         
         Args:
-            save_path (str, optional): Ruta donde guardar la gráfica. Si es None, la gráfica se muestra en pantalla.
+            save_path (str, optional): Path where the plot should be saved. If None, the plot is shown on screen.
         """
         self._require_plotting_backend()
         plt.figure(figsize=(12, 8))
         
-        # Obtener el rango global de iconicidad
+        # Get the global iconicity range
         min_rating = float('inf')
         max_rating = float('-inf')
         
-        # Primera pasada para obtener el rango global
+        # First pass to get the global range
         for age_group, stats in sorted(self.data.items()):
             adults_words_with_rating = stats['adults']['iconic_words']
             if adults_words_with_rating:
@@ -598,7 +598,7 @@ class DataAnalysisPlotter:
             print("No hay datos de iconicidad para adultos en ningún grupo de edad")
             return
         
-        # Crear bins para la iconicidad
+        # Create bins for iconicity
         x_axis = np.arange(min_rating, max_rating + 0.25, 0.25)
         
         # Plotear cada grupo de edad
@@ -607,7 +607,7 @@ class DataAnalysisPlotter:
             if not adults_words_with_rating:
                 continue
                 
-            # Crear lista de (rating, count) y ordenarla
+            # Create and sort a (rating, count) list
             ratings_counts = [(word_data['rating'], word_data['count']) 
                             for word_data in adults_words_with_rating.values()]
             sorted_ratings = sorted(ratings_counts, key=lambda x: x[0])
@@ -615,7 +615,7 @@ class DataAnalysisPlotter:
             total_words = sum(count for _, count in sorted_ratings)
             cumulative = self._calculate_cumulative_counts(sorted_ratings, x_axis)
             
-            # Plotear la línea para este grupo de edad
+            # Plot the line for this age group
             plt.plot(x_axis, cumulative/total_words * 100, 
                     label=f'Grupo {age_group}', 
                     marker='o', 
@@ -637,20 +637,20 @@ class DataAnalysisPlotter:
 
     def plot_all_children_iconicity_distribution(self, save_path: str = None):
         """
-        Genera una gráfica que muestra la distribución acumulativa de iconicidad para todos los grupos de edad
-        de niños superpuestos en una sola gráfica.
+        Generates a plot showing the cumulative iconicity distribution for all age groups
+        for children overlaid in a single plot.
         
         Args:
-            save_path (str, optional): Ruta donde guardar la gráfica. Si es None, la gráfica se muestra en pantalla.
+            save_path (str, optional): Path where the plot should be saved. If None, the plot is shown on screen.
         """
         self._require_plotting_backend()
         plt.figure(figsize=(12, 8))
         
-        # Obtener el rango global de iconicidad
+        # Get the global iconicity range
         min_rating = float('inf')
         max_rating = float('-inf')
         
-        # Primera pasada para obtener el rango global
+        # First pass to get the global range
         for age_group, stats in sorted(self.data.items()):
             children_words_with_rating = stats['children']['iconic_words']
             if children_words_with_rating:
@@ -662,7 +662,7 @@ class DataAnalysisPlotter:
             print("No hay datos de iconicidad para niños en ningún grupo de edad")
             return
         
-        # Crear bins para la iconicidad
+        # Create bins for iconicity
         x_axis = np.arange(min_rating, max_rating + 0.25, 0.25)
         
         # Plotear cada grupo de edad
@@ -671,7 +671,7 @@ class DataAnalysisPlotter:
             if not children_words_with_rating:
                 continue
                 
-            # Crear lista de (rating, count) y ordenarla
+            # Create and sort a (rating, count) list
             ratings_counts = [(word_data['rating'], word_data['count']) 
                             for word_data in children_words_with_rating.values()]
             sorted_ratings = sorted(ratings_counts, key=lambda x: x[0])
@@ -679,7 +679,7 @@ class DataAnalysisPlotter:
             total_words = sum(count for _, count in sorted_ratings)
             cumulative = self._calculate_cumulative_counts(sorted_ratings, x_axis)
             
-            # Plotear la línea para este grupo de edad
+            # Plot the line for this age group
             plt.plot(x_axis, cumulative/total_words * 100, 
                     label=f'Grupo {age_group}', 
                     marker='o', 
@@ -703,19 +703,19 @@ class DataAnalysisPlotter:
 
 def print_valid_words_statistics(valid_words_stats):
     """
-    Imprime las estadísticas de palabras válidas por grupo de edad.
+    Prints valid word statistics by age group.
     
     Args:
-        valid_words_stats (dict): Estadísticas de palabras válidas por grupo de edad
+        valid_words_stats (dict): Valid word statistics by age group
     """
     for age_group, stats in sorted(valid_words_stats.items()):
         print(f"\n=== Grupo de edad {age_group} ===")
         
-        # Estadísticas de adultos
+        # Adult statistics
         print("\nEstadísticas de adultos:")
         print(f"  Total de palabras: {stats['adults']['total_words']}")
         
-        # Calcular totales de ocurrencias de palabras icónicas y no icónicas
+        # Calculate total occurrences of iconic and non-iconic words
         total_iconic_occurrences_adults = stats['adults']['total_iconic_occurrences']
         total_non_iconic_occurrences_adults = stats['adults']['total_non_iconic_occurrences']
         
@@ -724,11 +724,11 @@ def print_valid_words_statistics(valid_words_stats):
         print(f"  Número de palabras icónicas diferentes: {len(stats['adults']['iconic_words'])}")
         print(f"  Número de palabras no icónicas diferentes: {len(stats['adults']['non_iconic_words'])}")
         
-        # Estadísticas de niños
+        # Child statistics
         print("\nEstadísticas de niños:")
         print(f"  Total de palabras: {stats['children']['total_words']}")
         
-        # Calcular totales de ocurrencias de palabras icónicas y no icónicas
+        # Calculate total occurrences of iconic and non-iconic words
         total_iconic_occurrences_children = stats['children']['total_iconic_occurrences']
         total_non_iconic_occurrences_children = stats['children']['total_non_iconic_occurrences']
         

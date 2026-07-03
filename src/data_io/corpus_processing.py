@@ -3,8 +3,8 @@ from src.data_io.data_formatter import DataFormatter
 
 def process_data_with_formatter(corpus_data):
     """
-    Procesa los datos usando DataFormatter para separar datos de niños y adultos,
-    manteniendo la estructura jerárquica del corpus.
+    Processes data using DataFormatter to separate child and adult data,
+    preserving the corpus hierarchy.
     """
     result = {"Corpora_modified": {}}
 

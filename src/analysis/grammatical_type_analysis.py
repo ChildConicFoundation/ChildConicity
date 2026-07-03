@@ -22,7 +22,7 @@ def create_grammatical_type_stats(
     count_mode=DEFAULT_TYPE_COUNT_MODE,
 ):
     """
-    Adapta los lemas de la capa %mor al formato que consume DataAnalysisPlotter.
+    Adapta los lemas de la capa %mor al formato consumed by DataAnalysisPlotter.
     """
     iconicity_words = _build_iconicity_words(iconicity_model)
     selected_category = _normalize_category(grammatical_category)

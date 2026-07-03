@@ -4,12 +4,12 @@ import shutil
 
 
 def extract_age(file_path, corpus_name):
-    """Extrae la edad del archivo .cha."""
+    """Extracts the age from the file .cha."""
     try:
         with open(file_path, "r", encoding="utf-8") as f:
             content = f.read()
 
-        # Acepta edades completas (1;06.26) o sin día explícito (2;01.)
+        # Accepts complete ages (1;06.26) or ages without an explicit day (2;01.)
         match = re.search(
             rf"@ID:\s*eng\|{re.escape(corpus_name)}\|CHI\|(\d+);(\d+)\.(\d*)\|",
             content,
@@ -25,7 +25,7 @@ def extract_age(file_path, corpus_name):
 
 
 def modify_cha_file(file_path, child_name, age):
-    """Modifica el archivo .cha para añadir los metadatos normalizados."""
+    """Modifies the .cha file to add metadata normalizados."""
     with open(file_path, "r", encoding="utf-8") as f:
         content = f.read()
 
@@ -48,7 +48,7 @@ def modify_cha_file(file_path, child_name, age):
 
 
 def process_directory(source_dir, target_dir, corpus_name):
-    """Procesa archivos .cha organizados por subcarpetas de niño."""
+    """Processes .cha files organized by child subfolders."""
     if not os.path.exists(target_dir):
         os.makedirs(target_dir)
 

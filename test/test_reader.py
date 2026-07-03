@@ -9,11 +9,11 @@ def reader():
 
 @pytest.fixture
 def test_files():
-    # Crear un archivo CSV de prueba
+    # Create a test CSV file
     test_csv_path = 'test_data.csv'
     pd.DataFrame({'col1': [1, 2], 'col2': ['a', 'b']}).to_csv(test_csv_path, index=False)
     
-    # Crear un archivo CHA de prueba
+    # Create a test CHA file
     test_cha_path = 'test_data.cha'
     with open(test_cha_path, 'w', encoding='utf-8') as f:
         f.write("""@UTF8
@@ -29,7 +29,7 @@ def test_files():
     
     yield {'csv': test_csv_path, 'cha': test_cha_path}
     
-    # Limpiar archivos después de las pruebas
+    # Clean up files after tests
     os.remove(test_csv_path)
     os.remove(test_cha_path)
 

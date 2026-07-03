@@ -2,11 +2,13 @@
 
 [![Python Tests](https://github.com/errowdrigorena/ChildConicity/actions/workflows/python-tests.yml/badge.svg)](https://github.com/errowdrigorena/ChildConicity/actions/workflows/python-tests.yml)
 
-ChildConicity permite procesar corpus CHILDES/TalkBank y analizar la iconicidad en el desarrollo del lenguaje infantil. El programa normaliza transcripciones `.cha`, agrupa los datos por edad en trimestres y genera resultados por tokens, categorías gramaticales y ratings de iconicidad.
+🇬🇧 English | [🇪🇸 Español](README.es.md)
 
-## Instalación
+ChildConicity processes CHILDES/TalkBank corpora and analyzes iconicity in child language development. It normalizes `.cha` transcripts, groups data by age in quarterly samples, and exports results for tokens, grammatical categories, and iconicity ratings.
 
-Se recomienda usar un entorno virtual:
+## Installation
+
+A virtual environment is recommended:
 
 ```bash
 python3 -m venv .venv
@@ -14,87 +16,87 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-Para descargar corpus desde TalkBank necesitas una cuenta de TalkBank y tener Chrome/Chromedriver disponible, porque la autenticación se hace con Selenium.
+To download corpora from TalkBank, you need a TalkBank account and Chrome/Chromedriver available, because authentication is handled with Selenium.
 
-## Uso recomendado: interfaz gráfica
+## Recommended Use: GUI
 
-La forma más sencilla de usar el programa es la GUI:
+The easiest way to use the project is through the GUI:
 
 ```bash
 source .venv/bin/activate
 python3 examples/gui.py
 ```
 
-En la ventana principal:
+In the main window:
 
-1. Si todavía no tienes corpus locales, introduce tu email y contraseña de TalkBank y pulsa `Descargar corpus`. Por defecto se descargan en `Corpora/`.
-2. Revisa las rutas:
-   - `Corpus origen`: carpeta con corpus originales, normalmente `Corpora/`.
-   - `Corpus procesado`: carpeta de salida normalizada, normalmente `Corpora_modified/`.
-3. Pulsa `Inicializar corpus` para transformar los corpus originales al formato que usan los análisis.
-4. Pulsa `Mostrar corpus inicializados` para cargar la lista de corpus disponibles.
-5. Selecciona `Todos los corpus` o marca corpus concretos.
-6. Elige el modo:
-   - `Tokens`: análisis de palabras icónicas y no icónicas por trimestre.
-   - `Types`: análisis por categorías gramaticales.
-7. Pulsa `Ejecutar análisis` para exportar datos o `Generar gráficas` para crear las visualizaciones.
-8. Para `Rated`, primero ejecuta `Types`; después usa la sección de exportación con iconicidad para generar `WordCount` con ratings y `LemaCount`.
+1. If you do not have local corpora yet, enter your TalkBank email and password and click `Descargar corpus`. By default, corpora are downloaded to `Corpora/`.
+2. Check the paths:
+   - `Corpus origen`: folder with the original corpora, usually `Corpora/`.
+   - `Corpus procesado`: normalized output folder, usually `Corpora_modified/`.
+3. Click `Inicializar corpus` to transform the original corpora into the format used by the analyses.
+4. Click `Mostrar corpus inicializados` to load the list of available corpora.
+5. Select `Todos los corpus` or choose specific corpora.
+6. Choose a mode:
+   - `Tokens`: analysis of iconic and non-iconic words by quarter.
+   - `Types`: grammatical category analysis.
+7. Click `Ejecutar análisis` to export data or `Generar gráficas` to create visualizations.
+8. For `Rated`, run `Types` first; then use the iconicity export section to generate `WordCount` with ratings and `LemaCount`.
 
-Directorios de salida por defecto:
+Default output directories:
 
-- `quarterly_valid_words/`: resultados del análisis de tokens.
-- `quarterly_grammatical_categories/`: resultados del análisis de types.
-- `rated_quarterly_grammatical_categories/`: resultados enriquecidos con ratings de iconicidad.
-- `iconic_vs_noniconic/` y `pruebas/`: gráficas de tokens cuando se generan desde línea de comandos sin personalizar rutas.
-- En la GUI, las gráficas de tokens se guardan dentro del directorio de salida elegido, en `iconic_vs_noniconic/` y `pruebas/`.
+- `quarterly_valid_words/`: token analysis results.
+- `quarterly_grammatical_categories/`: type analysis results.
+- `rated_quarterly_grammatical_categories/`: results enriched with iconicity ratings.
+- `iconic_vs_noniconic/` and `pruebas/`: token plots generated from the command line when no custom paths are provided.
+- In the GUI, token plots are saved inside the selected output directory, under `iconic_vs_noniconic/` and `pruebas/`.
 
-## Uso por línea de comandos
+## Command-Line Usage
 
-La GUI llama internamente a los mismos servicios que se pueden ejecutar desde terminal.
+The GUI internally calls the same services that can be run from the terminal.
 
-### Descargar corpus
+### Download Corpora
 
 ```bash
 source .venv/bin/activate
-python3 -m src.cli.download_corpora --user tu@email --password tu_password --corpora Brent Bloom
+python3 -m src.cli.download_corpora --user your@email --password your_password --corpora Brent Bloom
 ```
 
-Opciones útiles:
+Useful options:
 
-- `--corpora Brent Bloom`: descarga solo esos corpus. Si se omite, intenta descargar todos.
-- `--output-dir Corpora`: cambia la carpeta de destino.
-- `--force`: sobrescribe corpus ya existentes.
-- `--no-headless`: muestra el navegador durante el login.
+- `--corpora Brent Bloom`: download only those corpora. If omitted, the command tries to download all corpora.
+- `--output-dir Corpora`: change the target folder.
+- `--force`: overwrite existing corpora.
+- `--no-headless`: show the browser during login.
 
-### Descargar ratings de iconicidad
+### Download Iconicity Ratings
 
-Los análisis de iconicidad usan `iconicity_ratings/iconicity_ratings_cleaned.csv`.
-Si no lo tienes, o quieres volver a descargarlo desde OSF:
+Iconicity analyses use `iconicity_ratings/iconicity_ratings_cleaned.csv`.
+If you do not have it, or want to download it again from OSF:
 
 ```bash
 source .venv/bin/activate
 python3 -m src.cli.download_iconicity_ratings
 ```
 
-Opciones útiles:
+Useful options:
 
-- `--output FILE`: cambia la ruta de destino.
-- `--force`: sobrescribe el CSV si ya existe.
+- `--output FILE`: change the destination path.
+- `--force`: overwrite the CSV if it already exists.
 
-### Inicializar corpus
+### Initialize Corpora
 
 ```bash
 source .venv/bin/activate
 python3 examples/initialize_corpuses.py
 ```
 
-Por defecto lee desde `Corpora/` y escribe en `Corpora_modified/`.
+By default, this reads from `Corpora/` and writes to `Corpora_modified/`.
 
-Los normalizadores incluidos procesan estos corpus: `Bates`, `Bloom`, `Brent`, `Brown`, `HSLLD`, `Kuczaj`, `NewEngland`, `Post`, `Providence`, `Sachs` y `VanKleeck`.
+The included normalizers process these corpora: `Bates`, `Bloom`, `Brent`, `Brown`, `HSLLD`, `Kuczaj`, `NewEngland`, `Post`, `Providence`, `Sachs`, and `VanKleeck`.
 
-### Ejecutar análisis
+### Run Analyses
 
-El runner de análisis es:
+The analysis runner is:
 
 ```bash
 source .venv/bin/activate
@@ -103,16 +105,16 @@ python3 src/gui_analysis_runner.py types --processed-root Corpora_modified --gen
 python3 src/gui_analysis_runner.py rated --processed-root quarterly_grammatical_categories
 ```
 
-Opciones útiles:
+Useful options:
 
-- `--corpus NOMBRE`: filtra por corpus; puede repetirse.
-- `--category CATEGORIA`: filtra categorías gramaticales en modo `types`; puede repetirse.
-- `--output-dir DIR`: cambia la carpeta de salida.
-- `--iconicity-csv FILE`: usa otro CSV de ratings.
-- `--result-file FILE`: cambia el JSON resumen del runner.
-- `--type-count-mode with_repetitions|only_once`: cambia cómo se cuentan los types en las gráficas.
+- `--corpus NAME`: filter by corpus; can be repeated.
+- `--category CATEGORY`: filter grammatical categories in `types` mode; can be repeated.
+- `--output-dir DIR`: change the output folder.
+- `--iconicity-csv FILE`: use another ratings CSV.
+- `--result-file FILE`: change the runner summary JSON.
+- `--type-count-mode with_repetitions|only_once`: change how types are counted in plots.
 
-Ejemplos:
+Examples:
 
 ```bash
 python3 src/gui_analysis_runner.py tokens --processed-root Corpora_modified --corpus Brent --corpus Post
@@ -120,38 +122,38 @@ python3 src/gui_analysis_runner.py types --processed-root Corpora_modified --cat
 python3 src/gui_analysis_runner.py rated --processed-root quarterly_grammatical_categories --output-dir rated_quarterly_grammatical_categories
 ```
 
-## ¿Qué hace el análisis?
+## What Does the Analysis Do?
 
-El programa:
+The program:
 
-1. Lee corpus normalizados desde `Corpora_modified/`.
-2. Agrupa los datos por edad en trimestres.
-3. Separa producciones de adultos, niños y, cuando aplica, otros niños.
-4. Cruza las palabras o lemas con `iconicity_ratings/iconicity_ratings_cleaned.csv`.
-5. Exporta JSON/CSV con estadísticas por trimestre.
-6. Genera gráficas de distribución de iconicidad cuando se solicita.
+1. Reads normalized corpora from `Corpora_modified/`.
+2. Groups data by age in quarterly samples.
+3. Separates adult, child, and, when applicable, other-child productions.
+4. Matches words or lemmas against `iconicity_ratings/iconicity_ratings_cleaned.csv`.
+5. Exports JSON/CSV files with statistics by quarter.
+6. Generates iconicity distribution plots when requested.
 
-## Pruebas
+## Tests
 
-Para ejecutar las pruebas y generar el informe de cobertura:
+To run tests and generate the coverage report:
 
 ```bash
 source .venv/bin/activate
 ./run_tests.sh
 ```
 
-El script:
+The script:
 
-- Ejecuta todas las pruebas.
-- Genera un informe de cobertura HTML.
-- Verifica que la cobertura sea mayor al 80%.
-- Guarda el informe en `coverage_report/htmlcov/`.
+- Runs all tests.
+- Generates an HTML coverage report.
+- Checks that coverage is above 80%.
+- Saves the report in `coverage_report/htmlcov/`.
 
-El pipeline de GitHub Actions ejecuta las pruebas y publica el artefacto `coverage-report` con el informe de cobertura.
+The GitHub Actions pipeline runs the tests and publishes the `coverage-report` artifact with the coverage report.
 
-## Notas importantes
+## Important Notes
 
-- `iconicity_ratings/iconicity_ratings_cleaned.csv` se puede descargar desde la GUI o con `python3 -m src.cli.download_iconicity_ratings`.
-- La ejecución puede tardar varios minutos si se procesan muchos corpus.
-- Se generan múltiples archivos de salida en JSON, CSV y PNG.
-- Los nombres actuales de carpetas son `Corpora/` y `Corpora_modified/`.
+- `iconicity_ratings/iconicity_ratings_cleaned.csv` can be downloaded from the GUI or with `python3 -m src.cli.download_iconicity_ratings`.
+- Execution can take several minutes when many corpora are processed.
+- The project generates multiple output files in JSON, CSV, and PNG.
+- The current folder names are `Corpora/` and `Corpora_modified/`.

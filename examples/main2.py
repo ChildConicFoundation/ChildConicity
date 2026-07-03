@@ -85,7 +85,7 @@ def main(argv=None):
     # Crear el modelo de iconicidad
     print("\nCreando modelo de iconicidad...")
     formatter = DataFormatter()
-    csv_data = formatter.format_csv_data_from('iconicity_ratings_cleaned.csv')
+    csv_data = formatter.format_csv_data_from('iconicity_ratings/iconicity_ratings_cleaned.csv')
     iconicity_model = IconicityModel(csv_data)
     
     # Crear estadísticas por grupo de edad

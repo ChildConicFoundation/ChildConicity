@@ -10,7 +10,7 @@ def main():
     export_rated(
         source_root="quarterly_grammatical_categories",
         output_root="rated_quarterly_grammatical_categories",
-        iconicity_csv="iconicity_ratings_cleaned.csv",
+        iconicity_csv="iconicity_ratings/iconicity_ratings_cleaned.csv",
     )
     print("Exportación completada.")
 

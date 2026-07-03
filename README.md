@@ -66,6 +66,21 @@ Opciones útiles:
 - `--force`: sobrescribe corpus ya existentes.
 - `--no-headless`: muestra el navegador durante el login.
 
+### Descargar ratings de iconicidad
+
+Los análisis de iconicidad usan `iconicity_ratings/iconicity_ratings_cleaned.csv`.
+Si no lo tienes, o quieres volver a descargarlo desde OSF:
+
+```bash
+source .venv/bin/activate
+python3 -m src.cli.download_iconicity_ratings
+```
+
+Opciones útiles:
+
+- `--output FILE`: cambia la ruta de destino.
+- `--force`: sobrescribe el CSV si ya existe.
+
 ### Inicializar corpus
 
 ```bash
@@ -112,7 +127,7 @@ El programa:
 1. Lee corpus normalizados desde `Corpora_modified/`.
 2. Agrupa los datos por edad en trimestres.
 3. Separa producciones de adultos, niños y, cuando aplica, otros niños.
-4. Cruza las palabras o lemas con `iconicity_ratings_cleaned.csv`.
+4. Cruza las palabras o lemas con `iconicity_ratings/iconicity_ratings_cleaned.csv`.
 5. Exporta JSON/CSV con estadísticas por trimestre.
 6. Genera gráficas de distribución de iconicidad cuando se solicita.
 
@@ -136,7 +151,7 @@ El pipeline de GitHub Actions ejecuta las pruebas y publica el artefacto `covera
 
 ## Notas importantes
 
-- `iconicity_ratings_cleaned.csv` debe estar en la raíz del proyecto para los análisis de iconicidad.
+- `iconicity_ratings/iconicity_ratings_cleaned.csv` se puede descargar desde la GUI o con `python3 -m src.cli.download_iconicity_ratings`.
 - La ejecución puede tardar varios minutos si se procesan muchos corpus.
 - Se generan múltiples archivos de salida en JSON, CSV y PNG.
 - Los nombres actuales de carpetas son `Corpora/` y `Corpora_modified/`.

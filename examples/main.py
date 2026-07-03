@@ -103,7 +103,7 @@ def main():
     # Procesar el archivo CSV primero para tener los datos de iconicidad
     print("Procesando archivo CSV:")
     formatter = DataFormatter()
-    csv_data = formatter.format_csv_data_from('iconicity_ratings_cleaned.csv')
+    csv_data = formatter.format_csv_data_from('iconicity_ratings/iconicity_ratings_cleaned.csv')
     
     # Crear el modelo de iconicidad
     iconicity_model = IconicityModel(csv_data)
@@ -126,7 +126,7 @@ if __name__ == "__main__":
     # Procesar archivo CSV
     print("Procesando archivo CSV:")
     formatter = DataFormatter()
-    csv_data = formatter.format_csv_data_from('iconicity_ratings_cleaned.csv')
+    csv_data = formatter.format_csv_data_from('iconicity_ratings/iconicity_ratings_cleaned.csv')
     if csv_data is not None:
         print("\nPrimeras 5 entradas del CSV:")
         for id, entry in list(csv_data.items())[:5]:

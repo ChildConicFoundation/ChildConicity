@@ -180,7 +180,7 @@ class ChildConicityApp(tk.Tk):
         main_frame.bind("<Configure>", self._on_main_frame_configure)
         self.main_canvas.bind("<Configure>", self._on_main_canvas_configure)
 
-        download_frame = ttk.LabelFrame(main_frame, text="Descarga de corpus (TalkBank)", padding=10)
+        download_frame = ttk.LabelFrame(main_frame, text="Descargas", padding=10)
         download_frame.pack(fill="x")
         self._build_download_ui(download_frame)
 
@@ -241,8 +241,16 @@ class ChildConicityApp(tk.Tk):
             text="Descargar corpus",
             command=self._start_download_corpora,
         )
-        download_btn.grid(row=2, column=0, columnspan=2, sticky="w", pady=(10, 0))
+        download_btn.grid(row=2, column=0, sticky="w", pady=(10, 0))
         self._busy_widgets.append(download_btn)
+
+        iconicity_download_btn = ttk.Button(
+            parent,
+            text="Descargar ratings de iconicidad",
+            command=self._start_download_iconicity_ratings,
+        )
+        iconicity_download_btn.grid(row=2, column=1, sticky="w", padx=8, pady=(10, 0))
+        self._busy_widgets.append(iconicity_download_btn)
 
         parent.columnconfigure(1, weight=1)
 
@@ -580,6 +588,34 @@ class ChildConicityApp(tk.Tk):
         except Exception as exc:
             self._enqueue_callback(
                 lambda e=exc: messagebox.showerror("Error al descargar corpus", str(e))
+            )
+        finally:
+            self._enqueue_callback(lambda: self._set_busy_state(False, "Listo."))
+
+    def _start_download_iconicity_ratings(self):
+        if self._busy:
+            self._notify_busy("Ya hay otra tarea en curso.")
+            return
+
+        output_path = os.path.join(_project_root(), DEFAULT_ICONICITY_CSV)
+        self._append_log("\nIniciando descarga de ratings de iconicidad...\n")
+        self._run_in_background(
+            lambda: self._download_iconicity_ratings_worker(output_path)
+        )
+
+    def _download_iconicity_ratings_worker(self, output_path):
+        from src.cli.download_iconicity_ratings import download_iconicity_ratings
+
+        writer = _QueueWriter(self._enqueue_log)
+        try:
+            with redirect_stdout(writer), redirect_stderr(writer):
+                download_iconicity_ratings(output_path=output_path, force=True)
+            self._enqueue_log("\nDescarga de ratings completada.\n")
+        except Exception as exc:
+            self._enqueue_callback(
+                lambda e=exc: messagebox.showerror(
+                    "Error al descargar ratings de iconicidad", str(e)
+                )
             )
         finally:
             self._enqueue_callback(lambda: self._set_busy_state(False, "Listo."))

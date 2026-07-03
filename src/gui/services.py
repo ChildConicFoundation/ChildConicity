@@ -31,7 +31,7 @@ from src.quarterly_samples.rated_exporter import export_rated
 DEFAULT_TOKENS_OUTPUT_DIR = "quarterly_valid_words"
 DEFAULT_TYPES_OUTPUT_DIR = "quarterly_grammatical_categories"
 DEFAULT_RATED_OUTPUT_DIR = "rated_quarterly_grammatical_categories"
-DEFAULT_ICONICITY_CSV = "iconicity_ratings_cleaned.csv"
+DEFAULT_ICONICITY_CSV = "iconicity_ratings/iconicity_ratings_cleaned.csv"
 DEFAULT_PLOTS_DIR = "iconic_vs_noniconic"
 DEFAULT_DISTRIBUTION_DIR = "pruebas"
 DEFAULT_PLOT_COUNT_CRITERIA = ("adults", "children")

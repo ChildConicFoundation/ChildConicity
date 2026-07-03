@@ -27,6 +27,7 @@ share/python-wheels/
 MANIFEST
 
 # Project Created files
+Corpus/
 Corpus_processed/
 Corpus_modified/
 Corpora_modified/
@@ -186,3 +187,7 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+/.junie/
+/.claude/
+/.idea/
+.codex

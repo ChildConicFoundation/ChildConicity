@@ -6,8 +6,10 @@
 [![License: BSL-1.0](https://img.shields.io/badge/License-BSL--1.0-0052CC)](LICENSE)
 
 [![Platform](https://img.shields.io/badge/platform-Linux%20%7C%20macOS%20%7C%20Windows-555)](#installation)
-[![CHILDES / TalkBank](https://img.shields.io/badge/data-CHILDES%20%2F%20TalkBank-8B4513)](https://talkbank.org/childes/)
+[![Corpus](https://img.shields.io/badge/corpus-CHILDES%20%2F%20TalkBank-8B4513)](https://talkbank.org/childes/)
+[![Iconicity ratings](https://img.shields.io/badge/iconicity-OSF-orange)](https://osf.io/ex37k/)
 [![GUI](https://img.shields.io/badge/interface-Tkinter%20GUI-FF6F00)](#recommended-use-gui)
+[![Languages](https://img.shields.io/badge/languages-en%20%7C%20es-007ec6)](README.es.md)
 [![Last commit](https://img.shields.io/github/last-commit/ChildConicFoundation/ChildConicity)](https://github.com/ChildConicFoundation/ChildConicity/commits/main)
 [![Issues](https://img.shields.io/github/issues/ChildConicFoundation/ChildConicity)](https://github.com/ChildConicFoundation/ChildConicity/issues)
 
@@ -27,6 +29,8 @@ pip install -r requirements.txt
 
 To download corpora from TalkBank, you need a TalkBank account and Chrome/Chromedriver available, because authentication is handled with Selenium.
 
+Before running any analysis, you also need the iconicity ratings database at `iconicity_ratings/iconicity_ratings_cleaned.csv`. It is not included in the repository. Download it from the GUI (**Download iconicity ratings**) or from the terminal with `python3 -m src.cli.download_iconicity_ratings` (fetched from OSF; no account required).
+
 ## Recommended Use: GUI
 
 The easiest way to use the project is through the GUI:
@@ -39,7 +43,9 @@ python3 examples/gui.py
 In the main window:
 
 0. Choose **Language** (`English` / `Español`) at the top. The choice is saved in `.childconicity_locale` (or override with `CHILDCONICITY_LOCALE=en|es`).
-1. If you do not have local corpora yet, enter your TalkBank email and password and click `Download corpora`. By default, corpora are downloaded to `Corpora/`.
+1. In the **Downloads** section, fetch the data you need:
+   - **Download corpora**: requires TalkBank email and password; saves to `Corpora/`.
+   - **Download iconicity ratings**: downloads the iconicity database from OSF to `iconicity_ratings/iconicity_ratings_cleaned.csv` (required for all analyses).
 2. Check the paths:
    - `Source corpus`: folder with the original corpora, usually `Corpora/`.
    - `Processed corpus`: normalized output folder, usually `Corpora_modified/`.

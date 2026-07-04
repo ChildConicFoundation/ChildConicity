@@ -1,6 +1,6 @@
 # ChildConicity
 
-[![Python Tests](https://github.com/errowdrigorena/ChildConicity/actions/workflows/python-tests.yml/badge.svg)](https://github.com/errowdrigorena/ChildConicity/actions/workflows/python-tests.yml)
+[![Python Tests](https://github.com/ChildConicFoundation/ChildConicity/actions/workflows/python-tests.yml/badge.svg)](https://github.com/ChildConicFoundation/ChildConicity/actions/workflows/python-tests.yml)
 
 🇬🇧 English | [🇪🇸 Español](README.es.md)
 

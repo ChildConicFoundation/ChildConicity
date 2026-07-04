@@ -280,9 +280,9 @@ GitHub shows a **Cite this repository** button when [`CITATION.cff`](CITATION.cf
   author       = {Errowdrigorena and {ChildConic Foundation}},
   title        = {ChildConicity},
   year         = {2026},
-  version      = {1.0.1},
+  version      = {1.0.2},
   url          = {https://github.com/ChildConicFoundation/ChildConicity},
-  note         = {Release v1.0.1},
+  note         = {Release v1.0.2},
 }
 ```
 
@@ -300,7 +300,7 @@ For v1.0.0:
 
 ### APA (7th ed.)
 
-Errowdrigorena & ChildConic Foundation. (2026). *ChildConicity* (Version 1.0.1) [Computer software]. GitHub. https://github.com/ChildConicFoundation/ChildConicity
+Errowdrigorena & ChildConic Foundation. (2026). *ChildConicity* (Version 1.0.2) [Computer software]. GitHub. https://github.com/ChildConicFoundation/ChildConicity
 
 ### Related data sources
 

@@ -9,7 +9,10 @@ description = "Process CHILDES/TalkBank corpora and analyze iconicity in child l
 readme = "README.md"
 license = { text = "BSL-1.0" }
 requires-python = ">=3.10"
-authors = [{ name = "ChildConic Foundation" }]
+authors = [
+    { name = "Errowdrigorena", email = "xxlgran@gmail.com" },
+    { name = "ChildConic Foundation" },
+]
 keywords = ["childes", "talkbank", "iconicity", "corpus", "language-acquisition"]
 classifiers = [
     "Development Status :: 5 - Production/Stable",

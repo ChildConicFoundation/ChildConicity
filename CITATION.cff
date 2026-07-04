@@ -3,7 +3,9 @@ title: ChildConicity
 message: "If you use this software, please cite it as below."
 type: software
 authors:
-  - alias: Errowdrigorena
+  - given-names: Iban
+    family-names: Rodriguez Iglesias
+    alias: Errowdrigorena
     affiliation: ChildConic Foundation
   - name: ChildConic Foundation
 abstract: >-
@@ -11,7 +13,7 @@ abstract: >-
   development. Normalizes .cha transcripts, groups data by age in quarterly
   samples, and exports results for tokens, grammatical categories, and
   iconicity ratings.
-version: 1.0.5
+version: 1.0.6
 date-released: "2026-07-05"
 url: "https://github.com/ChildConicFoundation/ChildConicity"
 repository-code: "https://github.com/ChildConicFoundation/ChildConicity"

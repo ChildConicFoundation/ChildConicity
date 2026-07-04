@@ -4,13 +4,13 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "childconicity"
-version = "1.0.5"
+version = "1.0.6"
 description = "Process CHILDES/TalkBank corpora and analyze iconicity in child language development."
 readme = "README.md"
 license = { text = "BSL-1.0" }
 requires-python = ">=3.10"
 authors = [
-    { name = "Errowdrigorena", email = "xxlgran@gmail.com" },
+    { name = "Iban Rodriguez Iglesias", email = "xxlgran@gmail.com" },
     { name = "ChildConic Foundation" },
 ]
 keywords = ["childes", "talkbank", "iconicity", "corpus", "language-acquisition"]

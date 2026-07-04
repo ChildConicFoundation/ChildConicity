@@ -277,12 +277,12 @@ GitHub shows a **Cite this repository** button when [`CITATION.cff`](CITATION.cf
 
 ```bibtex
 @software{childconicity2026,
-  author       = {Errowdrigorena and {ChildConic Foundation}},
+  author       = {Rodriguez Iglesias, Iban and {ChildConic Foundation}},
   title        = {ChildConicity},
   year         = {2026},
-  version      = {1.0.5},
+  version      = {1.0.6},
   url          = {https://github.com/ChildConicFoundation/ChildConicity},
-  note         = {Release v1.0.5},
+  note         = {Release v1.0.6. GitHub alias: Errowdrigorena},
 }
 ```
 
@@ -300,7 +300,7 @@ For v1.0.0:
 
 ### APA (7th ed.)
 
-Errowdrigorena & ChildConic Foundation. (2026). *ChildConicity* (Version 1.0.5) [Computer software]. GitHub. https://github.com/ChildConicFoundation/ChildConicity
+Rodriguez Iglesias, I., & ChildConic Foundation. (2026). *ChildConicity* (Version 1.0.6) [Computer software]. GitHub. https://github.com/ChildConicFoundation/ChildConicity
 
 ### Related data sources
 

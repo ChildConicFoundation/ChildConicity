@@ -26,6 +26,7 @@ Se recomienda usar un entorno virtual:
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
+# o: pip install -e ".[dev]"   # instalación editable con dependencias de test
 ```
 
 Para descargar corpus desde TalkBank necesitas una cuenta de TalkBank y tener Chrome/Chromedriver disponible, porque la autenticación se hace con Selenium.

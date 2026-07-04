@@ -26,6 +26,7 @@ A virtual environment is recommended:
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
+# or: pip install -e ".[dev]"   # editable install with test dependencies
 ```
 
 To download corpora from TalkBank, you need a TalkBank account and Chrome/Chromedriver available, because authentication is handled with Selenium.

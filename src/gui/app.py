@@ -1106,6 +1106,13 @@ class ChildConicityApp(tk.Tk):
             return
         source_root = self.source_root.get().strip()
         processed_root = self.processed_root.get().strip()
+        validation_error = self._validate_initialize_inputs(
+            source_root,
+            processed_root,
+        )
+        if validation_error:
+            messagebox.showerror(t("gui.error.init_corpus"), validation_error)
+            return
         self._append_log(t("gui.log.init_start"))
         self._run_in_background(
             lambda: self._initialize_corpora_worker(source_root, processed_root)
@@ -1234,6 +1241,27 @@ class ChildConicityApp(tk.Tk):
                 "gui.validation.missing_corpora",
                 list=", ".join(missing_corpora),
             )
+
+        return None
+
+    def _validate_initialize_inputs(self, source_root, processed_root):
+        if not source_root:
+            return t("gui.validation.set_source_path")
+
+        if not os.path.isdir(source_root):
+            return t("gui.validation.source_missing", path=source_root)
+
+        if not processed_root:
+            return t("gui.validation.set_processed_path")
+
+        if os.path.basename(os.path.normpath(processed_root)) != CORPUS_DATA_ROOT_KEY:
+            return t(
+                "gui.validation.processed_name",
+                name=CORPUS_DATA_ROOT_KEY,
+            )
+
+        if os.path.abspath(source_root) == os.path.abspath(processed_root):
+            return t("gui.validation.source_processed_same")
 
         return None
 

@@ -1,4 +1,6 @@
 import os
+import shutil
+import tempfile
 from dataclasses import dataclass
 
 from src.corpus_normalizers.bates_normalizer import process_directory as process_bates
@@ -30,9 +32,7 @@ class CorpusInitializer:
 
     def initialize_bates(self):
         """Initializes the Bates corpus."""
-        print("\nInitializing Bates...")
-        process_bates(self._source_dir("Bates"), self._output_dir("Bates"))
-        print("Bates corpus initialized!")
+        self._initialize_corpus("Bates", process_bates)
 
     def initialize_brent(self):
         """Initializes the Brent corpus."""
@@ -40,79 +40,51 @@ class CorpusInitializer:
 
         manipulator = BrendManipulator()
         manipulator.base_dir = self._source_dir("Brent")
-        manipulator.output_dir = self._output_dir("Brent")
-        manipulator.process_directory()
+        manipulator.output_dir = self._prepare_output_dir("Brent")
+        try:
+            manipulator.process_directory()
+        except Exception:
+            self._discard_pending_output("Brent")
+            raise
+        self._commit_pending_output("Brent")
 
         print("Brent corpus initialized!")
 
     def initialize_new_england(self):
         """Initializes the NewEngland corpus."""
-        print("\nInitializing NewEngland...")
-        process_newengland(self._source_dir("NewEngland"), self._output_dir("NewEngland"))
-        print("NewEngland corpus initialized!")
+        self._initialize_corpus("NewEngland", process_newengland)
 
     def initialize_post(self):
         """Initializes the Post corpus."""
-        print("\nInitializing Post...")
-        process_post(self._source_dir("Post"), self._output_dir("Post"))
-        print("Post corpus initialized!")
+        self._initialize_corpus("Post", process_post)
 
     def initialize_bloom(self):
         """Initializes the Bloom corpus."""
-        print("\nInitializing Bloom...")
-        process_bloom(
-            self._source_dir("Bloom"),
-            self._output_dir("Bloom"),
-        )
-        print("Bloom corpus initialized!")
+        self._initialize_corpus("Bloom", process_bloom)
 
     def initialize_brown(self):
         """Initializes the Brown corpus."""
-        print("\nInitializing Brown...")
-        process_brown(
-            self._source_dir("Brown"),
-            self._output_dir("Brown"),
-        )
-        print("Brown corpus initialized!")
+        self._initialize_corpus("Brown", process_brown)
 
     def initialize_hslld(self):
         """Initializes the HSLLD corpus."""
-        print("\nInitializing HSLLD...")
-        process_hslld(
-            self._source_dir("HSLLD"),
-            self._output_dir("HSLLD"),
-        )
-        print("HSLLD corpus initialized!")
+        self._initialize_corpus("HSLLD", process_hslld)
 
     def initialize_kuczaj(self):
         """Initializes the Kuczaj corpus."""
-        print("\nInitializing Kuczaj...")
-        process_kuczaj(
-            self._source_dir("Kuczaj"),
-            self._output_dir("Kuczaj"),
-        )
-        print("Kuczaj corpus initialized!")
+        self._initialize_corpus("Kuczaj", process_kuczaj)
 
     def initialize_sachs(self):
         """Initializes the Sachs corpus."""
-        print("\nInitializing Sachs...")
-        process_sachs(
-            self._source_dir("Sachs"),
-            self._output_dir("Sachs"),
-        )
-        print("Sachs corpus initialized!")
+        self._initialize_corpus("Sachs", process_sachs)
 
     def initialize_van_kleeck(self):
         """Initializes the VanKleeck corpus."""
-        print("\nInitializing VanKleeck...")
-        process_vankleeck(self._source_dir("VanKleeck"), self._output_dir("VanKleeck"))
-        print("VanKleeck corpus initialized!")
+        self._initialize_corpus("VanKleeck", process_vankleeck)
 
     def initialize_providence(self):
         """Initializes the Providence corpus."""
-        print("\nInitializing Providence...")
-        process_providence(self._source_dir("Providence"), self._output_dir("Providence"))
-        print("Providence corpus initialized!")
+        self._initialize_corpus("Providence", process_providence)
 
     def initialize_all(self):
         """Initializes all corpora."""
@@ -135,3 +107,50 @@ class CorpusInitializer:
 
     def _output_dir(self, corpus_name):
         return os.path.join(self.output_root, corpus_name)
+
+    def _initialize_corpus(self, corpus_name, processor):
+        print(f"\nInitializing {corpus_name}...")
+        output_dir = self._prepare_output_dir(corpus_name)
+        try:
+            processor(self._source_dir(corpus_name), output_dir)
+        except Exception:
+            self._discard_pending_output(corpus_name)
+            raise
+        self._commit_pending_output(corpus_name)
+        print(f"{corpus_name} corpus initialized!")
+
+    def _prepare_output_dir(self, corpus_name):
+        os.makedirs(self.output_root, exist_ok=True)
+        pending_dir = self._pending_output_dir(corpus_name)
+        if os.path.exists(pending_dir):
+            shutil.rmtree(pending_dir)
+        os.makedirs(pending_dir, exist_ok=True)
+        return pending_dir
+
+    def _commit_pending_output(self, corpus_name):
+        output_dir = self._output_dir(corpus_name)
+        pending_dir = self._pending_output_dir(corpus_name)
+        backup_dir = None
+        if os.path.exists(output_dir):
+            backup_dir = tempfile.mkdtemp(
+                dir=self.output_root,
+                prefix=f".{corpus_name}.previous.",
+            )
+            os.rmdir(backup_dir)
+            os.replace(output_dir, backup_dir)
+        try:
+            os.replace(pending_dir, output_dir)
+        except Exception:
+            if backup_dir and os.path.exists(backup_dir):
+                os.replace(backup_dir, output_dir)
+            raise
+        if backup_dir and os.path.exists(backup_dir):
+            shutil.rmtree(backup_dir)
+
+    def _discard_pending_output(self, corpus_name):
+        pending_dir = self._pending_output_dir(corpus_name)
+        if os.path.exists(pending_dir):
+            shutil.rmtree(pending_dir)
+
+    def _pending_output_dir(self, corpus_name):
+        return os.path.join(self.output_root, f".{corpus_name}.pending")

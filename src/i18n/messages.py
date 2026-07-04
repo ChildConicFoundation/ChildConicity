@@ -95,9 +95,16 @@ MESSAGES = {
         "gui.common.none": "(none)",
         "gui.rated.data_found": "Data found in: {path}",
         "gui.rated.no_data": "No quarterly data found. Run the Types analysis first.",
+        "gui.validation.set_source_path": "Set the source corpus path first.",
+        "gui.validation.source_missing": (
+            "The source corpus folder does not exist: {path}"
+        ),
         "gui.validation.set_processed_path": "Set the processed corpus path first.",
         "gui.validation.processed_name": (
             "The processed corpus folder must be named {name}."
+        ),
+        "gui.validation.source_processed_same": (
+            "Source and processed corpus folders must be different."
         ),
         "gui.validation.processed_missing": (
             "The processed corpus folder does not exist: {path}"
@@ -222,9 +229,18 @@ MESSAGES = {
         "gui.rated.no_data": (
             "No se encuentran datos trimestrales. Ejecuta primero el análisis de Types."
         ),
+        "gui.validation.set_source_path": (
+            "Indica primero la ruta del corpus origen."
+        ),
+        "gui.validation.source_missing": (
+            "La carpeta del corpus origen no existe: {path}"
+        ),
         "gui.validation.set_processed_path": "Indica primero la ruta de corpus procesado.",
         "gui.validation.processed_name": (
             "La carpeta de corpus procesado debe llamarse {name}."
+        ),
+        "gui.validation.source_processed_same": (
+            "Las carpetas de corpus origen y procesado deben ser distintas."
         ),
         "gui.validation.processed_missing": (
             "La carpeta de corpus procesado no existe: {path}"

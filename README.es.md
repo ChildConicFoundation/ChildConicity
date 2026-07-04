@@ -9,6 +9,7 @@
 [![Corpus](https://img.shields.io/badge/corpus-CHILDES%20%2F%20TalkBank-8B4513)](https://talkbank.org/childes/)
 [![Iconicity ratings](https://img.shields.io/badge/iconicity-OSF-orange)](https://osf.io/ex37k/)
 [![GUI](https://img.shields.io/badge/interfaz-Tkinter%20GUI-FF6F00)](#uso-recomendado-interfaz-gráfica)
+[![CLI](https://img.shields.io/badge/automatización-CLI%20%7C%20agentes-2ea44f)](#automatización-e-integración-con-agentes-de-ia)
 [![Languages](https://img.shields.io/badge/idiomas-en%20%7C%20es-007ec6)](README.es.md)
 [![Last commit](https://img.shields.io/github/last-commit/ChildConicFoundation/ChildConicity)](https://github.com/ChildConicFoundation/ChildConicity/commits/main)
 [![Issues](https://img.shields.io/github/issues/ChildConicFoundation/ChildConicity)](https://github.com/ChildConicFoundation/ChildConicity/issues)
@@ -97,6 +98,7 @@ python3 -m src.cli.download_iconicity_ratings
 Opciones útiles:
 
 - `--output FILE`: cambia la ruta de destino.
+- `--url URL`: cambia la URL de descarga en OSF.
 - `--force`: sobrescribe el CSV si ya existe.
 
 ### Inicializar corpus
@@ -104,15 +106,21 @@ Opciones útiles:
 ```bash
 source .venv/bin/activate
 python3 examples/initialize_corpuses.py
+python3 examples/initialize_corpuses.py --source-root Corpora --output-root Corpora_modified
 ```
 
 Por defecto lee desde `Corpora/` y escribe en `Corpora_modified/`.
+
+Opciones útiles:
+
+- `--source-root DIR`: carpeta con corpus originales.
+- `--output-root DIR`: carpeta con corpus normalizados.
 
 Los normalizadores incluidos procesan estos corpus: `Bates`, `Bloom`, `Brent`, `Brown`, `HSLLD`, `Kuczaj`, `NewEngland`, `Post`, `Providence`, `Sachs` y `VanKleeck`.
 
 ### Ejecutar análisis
 
-El runner de análisis es:
+El runner de análisis es el mismo punto de entrada que usa la GUI en un subproceso:
 
 ```bash
 source .venv/bin/activate
@@ -121,14 +129,26 @@ python3 src/gui_analysis_runner.py types --processed-root Corpora_modified --gen
 python3 src/gui_analysis_runner.py rated --processed-root quarterly_grammatical_categories
 ```
 
+Modos:
+
+- `tokens`: conteo de palabras icónicas y no icónicas por trimestre.
+- `types`: exportación por categorías gramaticales. Es obligatorio antes de `rated`.
+- `rated`: enriquece la salida de `types` con ratings de iconicidad (`WordCount` con ratings y `LemaCount`).
+
 Opciones útiles:
 
 - `--corpus NOMBRE`: filtra por corpus; puede repetirse.
 - `--category CATEGORIA`: filtra categorías gramaticales en modo `types`; puede repetirse.
 - `--output-dir DIR`: cambia la carpeta de salida.
 - `--iconicity-csv FILE`: usa otro CSV de ratings.
-- `--result-file FILE`: cambia el JSON resumen del runner.
+- `--generate-plots`: genera visualizaciones PNG.
+- `--plots-dir DIR`: carpeta de gráficas de tokens o types (modos `tokens` y `types`).
+- `--distribution-dir DIR`: gráficas de distribución acumulada en modo `tokens`.
+- `--plot-count-criteria GRUPO`: grupos de hablantes para gráficas de types (`adults`, `children`, ...); puede repetirse.
+- `--result-file FILE`: escribe un JSON resumen legible por máquina (ver más abajo).
 - `--type-count-mode with_repetitions|only_once`: cambia cómo se cuentan los types en las gráficas.
+
+Archivos resumen por defecto si no se indica `--result-file`: `tokens_result.json`, `types_result.json` y `rated_result.json` en la raíz del proyecto. Son artefactos de ejecución y git los ignora (`*_result.json`).
 
 Ejemplos:
 
@@ -136,7 +156,74 @@ Ejemplos:
 python3 src/gui_analysis_runner.py tokens --processed-root Corpora_modified --corpus Brent --corpus Post
 python3 src/gui_analysis_runner.py types --processed-root Corpora_modified --category noun --category verb --generate-plots
 python3 src/gui_analysis_runner.py rated --processed-root quarterly_grammatical_categories --output-dir rated_quarterly_grammatical_categories
+python3 src/gui_analysis_runner.py tokens --processed-root Corpora_modified --generate-plots \
+  --plots-dir quarterly_valid_words/iconic_vs_noniconic \
+  --distribution-dir quarterly_valid_words/distribution \
+  --result-file /tmp/tokens_result.json
 ```
+
+#### JSON resumen del runner
+
+Al terminar, el runner escribe un JSON con las rutas generadas. Es el contrato principal para scripts y agentes:
+
+```json
+{
+  "outputs": { "...": "..." },
+  "plot_outputs": { "...": "..." }
+}
+```
+
+- `outputs`: rutas exportadas por el análisis. En modos `tokens` y `types` es un mapa anidado de JSON/CSV generados. En modo `rated` contiene `source_dir` y `output_dir`.
+- `plot_outputs`: solo aparece con `--generate-plots`. Incluye `plots_dir`, opcionalmente `distribution_dir`, y un mapa `files` con las rutas PNG.
+
+La GUI usa el mismo runner con un `--result-file` temporal y luego lee ese JSON para mostrar los archivos generados.
+
+## Automatización e integración con agentes de IA
+
+Para scripts, jobs de CI o agentes de IA, conviene usar la línea de comandos en lugar de la GUI Tkinter. La GUI no añade lógica de análisis: lanza `src/gui_analysis_runner.py` en un subproceso con los mismos servicios documentados arriba.
+
+### Pipeline recomendado
+
+Ejecuta estos pasos desde la raíz del proyecto con el entorno virtual activado:
+
+```bash
+python3 -m src.cli.download_iconicity_ratings
+python3 examples/initialize_corpuses.py --source-root Corpora --output-root Corpora_modified
+python3 src/gui_analysis_runner.py types --processed-root Corpora_modified --result-file /tmp/types_result.json
+python3 src/gui_analysis_runner.py rated \
+  --processed-root quarterly_grammatical_categories \
+  --output-dir rated_quarterly_grammatical_categories \
+  --result-file /tmp/rated_result.json
+```
+
+Análisis de tokens opcional:
+
+```bash
+python3 src/gui_analysis_runner.py tokens --processed-root Corpora_modified --result-file /tmp/tokens_result.json
+```
+
+### Por qué la CLI encaja bien con agentes
+
+- **Pasos composables**: cada comando tiene una responsabilidad y entradas/salidas claras.
+- **Paridad con la GUI**: los agentes obtienen el mismo comportamiento que la interfaz gráfica.
+- **Datos estructurados al finalizar**: usa `--result-file` y parsea el JSON en lugar de adivinar rutas de salida.
+- **Ejecuciones acotadas**: `--corpus` y `--category` reducen el tiempo en iteraciones.
+- **Descargas idempotentes**: ratings y corpus se omiten si ya existen, salvo con `--force`.
+- **Headless por defecto**: todos los análisis corren sin pantalla. Solo la descarga de corpus TalkBank requiere Chrome/Selenium.
+
+### Precondiciones que un agente debe comprobar
+
+1. Existe `iconicity_ratings/iconicity_ratings_cleaned.csv`.
+2. Existe `Corpora_modified/` con los corpus a analizar.
+3. Para `rated`, debe existir `quarterly_grammatical_categories/` de una ejecución previa de `types`.
+4. Para gráficas, deben estar instalados `matplotlib`, `numpy` y `seaborn` (ya figuran en `requirements.txt`).
+
+### Seguridad y notas operativas
+
+- Evita poner contraseñas de TalkBank en el historial de shell o en logs. Usa variables de entorno o un gestor de secretos y pásalas solo a `download_corpora` en tiempo de ejecución.
+- La descarga de TalkBank es el paso más frágil para automatización porque depende de Selenium y de una sesión real de navegador.
+- Las ejecuciones largas solo reportan progreso por stdout; aún no hay API de progreso en streaming.
+- Los ficheros `*_result.json` son artefactos locales. No los trates como entradas del proyecto ni los subas a git.
 
 ## ¿Qué hace el análisis?
 
@@ -173,3 +260,6 @@ El pipeline de GitHub Actions ejecuta las pruebas y publica el artefacto `covera
 - La ejecución puede tardar varios minutos si se procesan muchos corpus.
 - Se generan múltiples archivos de salida en JSON, CSV y PNG.
 - Los nombres actuales de carpetas son `Corpora/` y `Corpora_modified/`.
+- Los JSON resumen del runner (`*_result.json`) se generan localmente y git los ignora.
+- Las gráficas de types se guardan en subcarpetas dentro del directorio de salida elegido, por ejemplo `plots_count_criteria_all/`.
+- En modo `tokens`, si no pasas `--plots-dir` y `--distribution-dir`, las gráficas se escriben en `iconic_vs_noniconic/` y `distribution/` en la raíz del proyecto. La GUI, en cambio, las coloca dentro del directorio de salida seleccionado.

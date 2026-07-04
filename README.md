@@ -9,6 +9,7 @@
 [![Corpus](https://img.shields.io/badge/corpus-CHILDES%20%2F%20TalkBank-8B4513)](https://talkbank.org/childes/)
 [![Iconicity ratings](https://img.shields.io/badge/iconicity-OSF-orange)](https://osf.io/ex37k/)
 [![GUI](https://img.shields.io/badge/interface-Tkinter%20GUI-FF6F00)](#recommended-use-gui)
+[![CLI](https://img.shields.io/badge/automation-CLI%20%7C%20agents-2ea44f)](#automation-and-ai-agent-integration)
 [![Languages](https://img.shields.io/badge/languages-en%20%7C%20es-007ec6)](README.es.md)
 [![Last commit](https://img.shields.io/github/last-commit/ChildConicFoundation/ChildConicity)](https://github.com/ChildConicFoundation/ChildConicity/commits/main)
 [![Issues](https://img.shields.io/github/issues/ChildConicFoundation/ChildConicity)](https://github.com/ChildConicFoundation/ChildConicity/issues)
@@ -97,6 +98,7 @@ python3 -m src.cli.download_iconicity_ratings
 Useful options:
 
 - `--output FILE`: change the destination path.
+- `--url URL`: change the OSF download URL.
 - `--force`: overwrite the CSV if it already exists.
 
 ### Initialize Corpora
@@ -104,15 +106,21 @@ Useful options:
 ```bash
 source .venv/bin/activate
 python3 examples/initialize_corpuses.py
+python3 examples/initialize_corpuses.py --source-root Corpora --output-root Corpora_modified
 ```
 
 By default, this reads from `Corpora/` and writes to `Corpora_modified/`.
+
+Useful options:
+
+- `--source-root DIR`: folder with original corpora.
+- `--output-root DIR`: folder for normalized corpora.
 
 The included normalizers process these corpora: `Bates`, `Bloom`, `Brent`, `Brown`, `HSLLD`, `Kuczaj`, `NewEngland`, `Post`, `Providence`, `Sachs`, and `VanKleeck`.
 
 ### Run Analyses
 
-The analysis runner is:
+The analysis runner is the same entry point used by the GUI in a subprocess:
 
 ```bash
 source .venv/bin/activate
@@ -121,14 +129,26 @@ python3 src/gui_analysis_runner.py types --processed-root Corpora_modified --gen
 python3 src/gui_analysis_runner.py rated --processed-root quarterly_grammatical_categories
 ```
 
+Modes:
+
+- `tokens`: iconic and non-iconic word counts by quarter.
+- `types`: grammatical category export. Required before `rated`.
+- `rated`: enriches the `types` output with iconicity ratings (`WordCount` with ratings and `LemaCount`).
+
 Useful options:
 
 - `--corpus NAME`: filter by corpus; can be repeated.
 - `--category CATEGORY`: filter grammatical categories in `types` mode; can be repeated.
 - `--output-dir DIR`: change the output folder.
 - `--iconicity-csv FILE`: use another ratings CSV.
-- `--result-file FILE`: change the runner summary JSON.
+- `--generate-plots`: create PNG visualizations.
+- `--plots-dir DIR`: token or type plot folder (`tokens` and `types` modes).
+- `--distribution-dir DIR`: cumulative distribution plots for `tokens` mode.
+- `--plot-count-criteria GROUP`: speaker groups for type plots (`adults`, `children`, ...); can be repeated.
+- `--result-file FILE`: write a machine-readable summary JSON (see below).
 - `--type-count-mode with_repetitions|only_once`: change how types are counted in plots.
+
+Default summary files if `--result-file` is omitted: `tokens_result.json`, `types_result.json`, and `rated_result.json` in the project root. These are execution artifacts and are ignored by git (`*_result.json`).
 
 Examples:
 
@@ -136,7 +156,74 @@ Examples:
 python3 src/gui_analysis_runner.py tokens --processed-root Corpora_modified --corpus Brent --corpus Post
 python3 src/gui_analysis_runner.py types --processed-root Corpora_modified --category noun --category verb --generate-plots
 python3 src/gui_analysis_runner.py rated --processed-root quarterly_grammatical_categories --output-dir rated_quarterly_grammatical_categories
+python3 src/gui_analysis_runner.py tokens --processed-root Corpora_modified --generate-plots \
+  --plots-dir quarterly_valid_words/iconic_vs_noniconic \
+  --distribution-dir quarterly_valid_words/distribution \
+  --result-file /tmp/tokens_result.json
 ```
+
+#### Runner summary JSON
+
+When the analysis finishes, the runner writes a JSON file with the paths it generated. This is the main machine-readable contract for scripts and agents:
+
+```json
+{
+  "outputs": { "...": "..." },
+  "plot_outputs": { "...": "..." }
+}
+```
+
+- `outputs`: export paths from the analysis step. In `tokens` and `types` modes this is a nested map of generated JSON/CSV files. In `rated` mode it contains `source_dir` and `output_dir`.
+- `plot_outputs`: present only when `--generate-plots` is used. Includes `plots_dir`, optional `distribution_dir`, and a `files` map with PNG paths.
+
+The GUI uses the same runner with a temporary `--result-file` and then reads this JSON to show the generated files.
+
+## Automation and AI Agent Integration
+
+For scripts, CI jobs, or AI agents, prefer the command line over the Tkinter GUI. The GUI does not add analysis logic: it launches `src/gui_analysis_runner.py` in a subprocess with the same services documented above.
+
+### Recommended pipeline
+
+Run these steps from the project root with the virtual environment activated:
+
+```bash
+python3 -m src.cli.download_iconicity_ratings
+python3 examples/initialize_corpuses.py --source-root Corpora --output-root Corpora_modified
+python3 src/gui_analysis_runner.py types --processed-root Corpora_modified --result-file /tmp/types_result.json
+python3 src/gui_analysis_runner.py rated \
+  --processed-root quarterly_grammatical_categories \
+  --output-dir rated_quarterly_grammatical_categories \
+  --result-file /tmp/rated_result.json
+```
+
+Optional token analysis:
+
+```bash
+python3 src/gui_analysis_runner.py tokens --processed-root Corpora_modified --result-file /tmp/tokens_result.json
+```
+
+### Why the CLI works well for agents
+
+- **Composable steps**: each command has a single responsibility and clear inputs/outputs.
+- **Parity with the GUI**: agents get the same behavior as the graphical interface.
+- **Structured completion data**: pass `--result-file` and parse the JSON instead of guessing output paths.
+- **Scoped runs**: `--corpus` and `--category` reduce runtime during iteration.
+- **Idempotent downloads**: ratings and corpora are skipped when already present unless `--force` is used.
+- **Headless by default**: all analysis steps run without a display. Only TalkBank corpus download needs Chrome/Selenium.
+
+### Preconditions an agent should verify
+
+1. `iconicity_ratings/iconicity_ratings_cleaned.csv` exists.
+2. `Corpora_modified/` exists and contains the corpora to analyze.
+3. For `rated`, `quarterly_grammatical_categories/` must already exist from a prior `types` run.
+4. For plots, `matplotlib`, `numpy`, and `seaborn` must be installed (already listed in `requirements.txt`).
+
+### Security and operational notes
+
+- Avoid putting TalkBank passwords in shell history or logs. Prefer environment variables or a secrets manager and pass them only to `download_corpora` at runtime.
+- TalkBank download is the most fragile automation step because it depends on Selenium and a real browser session.
+- Long runs only report progress on stdout; there is no streaming progress API yet.
+- `*_result.json` files are local execution artifacts. Do not treat them as project inputs or commit them.
 
 ## What Does the Analysis Do?
 
@@ -173,3 +260,6 @@ The GitHub Actions pipeline runs the tests and publishes the `coverage-report` a
 - Execution can take several minutes when many corpora are processed.
 - The project generates multiple output files in JSON, CSV, and PNG.
 - The current folder names are `Corpora/` and `Corpora_modified/`.
+- Runner summary files (`*_result.json`) are generated locally and ignored by git.
+- Type plots are saved under subfolders inside the selected output directory, for example `plots_count_criteria_all/`.
+- In `tokens` mode, if you do not pass `--plots-dir` and `--distribution-dir`, plots are written to `iconic_vs_noniconic/` and `distribution/` at the project root. The GUI instead places them inside the selected output directory.

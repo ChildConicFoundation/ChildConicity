@@ -16,6 +16,27 @@ BASE_URL = "https://talkbank.org"
 INDEX_URL       = f"{BASE_URL}/childes/access/Eng-NA/"
 PHON_INDEX_URL  = f"{BASE_URL}/phon/access/Eng-NA/"
 DEFAULT_OUTPUT_DIR = "Corpora"
+TALKBANK_USER_ENV = "CHILDCONICITY_TALKBANK_USER"
+TALKBANK_PASSWORD_ENV = "CHILDCONICITY_TALKBANK_PASSWORD"
+
+
+def resolve_talkbank_credentials(user=None, password=None):
+    """Resolve TalkBank credentials from CLI args or environment variables."""
+    resolved_user = user or os.environ.get(TALKBANK_USER_ENV)
+    resolved_password = password or os.environ.get(TALKBANK_PASSWORD_ENV)
+
+    missing = []
+    if not resolved_user:
+        missing.append(f"--user or {TALKBANK_USER_ENV}")
+    if not resolved_password:
+        missing.append(f"--password or {TALKBANK_PASSWORD_ENV}")
+
+    if missing:
+        raise ValueError(
+            "TalkBank credentials are required: " + ", ".join(missing)
+        )
+
+    return resolved_user, resolved_password
 
 
 def _build_chrome(headless=True):
@@ -284,10 +305,22 @@ def main(argv=None):
         description="Download TalkBank CHILDES Eng-NA corpora into the Corpora/ folder."
     )
     parser.add_argument(
-        "--user", required=True, metavar="EMAIL",
-        help="TalkBank account email (e.g. user@example.com).",
+        "--user",
+        default=None,
+        metavar="EMAIL",
+        help=(
+            "TalkBank account email (e.g. user@example.com). "
+            f"Defaults to ${TALKBANK_USER_ENV} when omitted."
+        ),
     )
-    parser.add_argument("--password", required=True, help="TalkBank password.")
+    parser.add_argument(
+        "--password",
+        default=None,
+        help=(
+            "TalkBank password. "
+            f"Defaults to ${TALKBANK_PASSWORD_ENV} when omitted."
+        ),
+    )
     parser.add_argument(
         "--corpora",
         nargs="+",
@@ -311,9 +344,14 @@ def main(argv=None):
     )
 
     args = parser.parse_args(argv)
+    try:
+        email, password = resolve_talkbank_credentials(args.user, args.password)
+    except ValueError as exc:
+        parser.error(str(exc))
+
     run(
-        email=args.user,
-        password=args.password,
+        email=email,
+        password=password,
         corpora_filter=args.corpora,
         output_dir=args.output_dir,
         force=args.force,

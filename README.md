@@ -78,8 +78,20 @@ source .venv/bin/activate
 python3 -m src.cli.download_corpora --user your@email --password your_password --corpora Brent Bloom
 ```
 
+For scripts and agents, prefer environment variables so credentials do not appear in shell history:
+
+```bash
+export CHILDCONICITY_TALKBANK_USER=your@email
+export CHILDCONICITY_TALKBANK_PASSWORD=your_password
+python3 -m src.cli.download_corpora --corpora Brent Bloom
+```
+
+CLI flags override environment variables when both are provided.
+
 Useful options:
 
+- `--user EMAIL`: TalkBank email. Defaults to `CHILDCONICITY_TALKBANK_USER`.
+- `--password PASSWORD`: TalkBank password. Defaults to `CHILDCONICITY_TALKBANK_PASSWORD`.
 - `--corpora Brent Bloom`: download only those corpora. If omitted, the command tries to download all corpora.
 - `--output-dir Corpora`: change the target folder.
 - `--force`: overwrite existing corpora.
@@ -220,7 +232,7 @@ python3 src/gui_analysis_runner.py tokens --processed-root Corpora_modified --re
 
 ### Security and operational notes
 
-- Avoid putting TalkBank passwords in shell history or logs. Prefer environment variables or a secrets manager and pass them only to `download_corpora` at runtime.
+- Prefer `CHILDCONICITY_TALKBANK_USER` and `CHILDCONICITY_TALKBANK_PASSWORD` for TalkBank credentials instead of `--user` / `--password` on the command line.
 - TalkBank download is the most fragile automation step because it depends on Selenium and a real browser session.
 - Long runs only report progress on stdout; there is no streaming progress API yet.
 - `*_result.json` files are local execution artifacts. Do not treat them as project inputs or commit them.

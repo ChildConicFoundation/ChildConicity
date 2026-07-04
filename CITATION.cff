@@ -21,3 +21,22 @@ keywords:
   - iconicity
   - corpus
   - language-acquisition
+references:
+  - type: manual
+    title: "The CHILDES Project: Tools for Analyzing Talk"
+    authors:
+      - family-names: MacWhinney
+        given-names: Brian
+    edition: "3rd"
+    year: 2000
+    publisher:
+      name: Lawrence Erlbaum Associates
+    notes: >-
+      Cite CHILDES/TalkBank corpora used in your analysis. See
+      https://talkbank.org/0share/citation.html for corpus-specific
+      references. Acknowledge grant support NICHD HD082736.
+    url: "https://talkbank.org/childes/"
+  - type: dataset
+    title: Iconicity ratings database
+    url: "https://osf.io/ex37k/"
+    notes: Cite when your analysis uses iconicity_ratings_cleaned.csv.

@@ -302,7 +302,49 @@ For v1.0.0:
 
 Errowdrigorena & ChildConic Foundation. (2026). *ChildConicity* (Version 1.0.1) [Computer software]. GitHub. https://github.com/ChildConicFoundation/ChildConicity
 
-Also cite the iconicity ratings database when your analysis uses it: https://osf.io/ex37k/
+### Related data sources
+
+When your analysis uses external data processed by ChildConicity, cite those sources too:
+
+**CHILDES / TalkBank corpora** — cite the [CHILDES manual](https://talkbank.org/0info/manuals/CHAT.html) and, when possible, the original reference for each corpus you use (see [TalkBank citation rules](https://talkbank.org/0share/citation.html)):
+
+> MacWhinney, B. (2000). *The CHILDES Project: Tools for analyzing talk* (3rd ed.). Lawrence Erlbaum Associates. https://talkbank.org/childes/
+
+TalkBank also asks researchers to acknowledge grant support **NICHD HD082736** when citing CHILDES.
+
+Example BibTeX for the CHILDES database:
+
+```bibtex
+@book{macwhinney2000childes,
+  author    = {MacWhinney, Brian},
+  title     = {The {CHILDES} Project: Tools for Analyzing Talk},
+  edition   = {3rd},
+  year      = {2000},
+  publisher = {Lawrence Erlbaum Associates},
+  address   = {Mahwah, NJ},
+  url       = {https://talkbank.org/childes/},
+}
+```
+
+ChildConicity includes normalizers for these corpora. For each analysis, cite the official corpus page and at least one of the references requested there by TalkBank:
+
+| Corpus | Official page | Main reference requested by TalkBank |
+| --- | --- | --- |
+| `Bates` | [Bates](https://talkbank.org/childes/access/Eng-NA/Bates.html) | Bates, Bretherton, & Snyder (1988); Carlson-Luden (1979). |
+| `Bloom` | [Bloom](https://talkbank.org/childes/access/Eng-NA/Bloom.html) | Bloom (1970); Bloom, Hood, & Lightbown (1974); Bloom, Lightbown, & Hood (1975), depending on the data used. |
+| `Brent` | [Brent/Siskind](https://talkbank.org/childes/access/Eng-NA/Brent.html) | Brent & Siskind (2001). |
+| `Brown` | [Brown](https://talkbank.org/childes/access/Eng-NA/Brown.html) | Brown (1973). |
+| `HSLLD` | [HSLLD](https://talkbank.org/childes/access/Eng-NA/HSLLD.html) | Dickinson & Tabors (Eds.) (2001), plus the additional references relevant to the subset used. |
+| `Kuczaj` | [Kuczaj](https://talkbank.org/childes/access/Eng-NA/Kuczaj.html) | Kuczaj (1977); Kuczaj (1976a) for the full project description. |
+| `NewEngland` | [New England](https://talkbank.org/childes/access/Eng-NA/NewEngland.html) | Ninio, Snow, Pan, & Rollins (1994), plus the relevant additional references. |
+| `Post` | [Post](https://talkbank.org/childes/access/Eng-NA/Post.html) | Demetras, Post, & Snow (1986); Post (1992); Post (1994). |
+| `Providence` | [Providence](https://talkbank.org/phon/access/Eng-NA/Providence.html) | Börschinger, Johnson, & Demuth (2013); Song et al. (2013, 2012); Evans & Demuth (2012); Song, Sundara, & Demuth (2009); Demuth & McCullough (2009); Demuth, Culbertson, & Alter (2006), depending on the analysis. |
+| `Sachs` | [Sachs](https://talkbank.org/childes/access/Eng-NA/Sachs.html) | Sachs (1983). |
+| `VanKleeck` | [Van Kleeck](https://talkbank.org/childes/access/Eng-NA/VanKleeck.html) | Van Kleeck & Carpenter (1980); Van Kleeck & Street (1982); Street, Street, & Van Kleeck (1983); Tonn & Van Kleeck (1986), depending on the analysis. |
+
+**Iconicity ratings database** — cite when your analysis matches words against the ratings CSV:
+
+> https://osf.io/ex37k/
 
 ## Important Notes
 

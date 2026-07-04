@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+title: ChildConicity
+message: "If you use this software, please cite it as below."
+type: software
+authors:
+  - alias: Errowdrigorena
+  - name: ChildConic Foundation
+abstract: >-
+  Process CHILDES/TalkBank corpora and analyze iconicity in child language
+  development. Normalizes .cha transcripts, groups data by age in quarterly
+  samples, and exports results for tokens, grammatical categories, and
+  iconicity ratings.
+version: 1.0.1
+date-released: "2026-07-04"
+url: "https://github.com/ChildConicFoundation/ChildConicity"
+repository-code: "https://github.com/ChildConicFoundation/ChildConicity"
+license: BSL-1.0
+keywords:
+  - childes
+  - talkbank
+  - iconicity
+  - corpus
+  - language-acquisition

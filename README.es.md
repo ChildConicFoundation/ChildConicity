@@ -267,6 +267,43 @@ El script:
 
 El pipeline de GitHub Actions ejecuta las pruebas y publica el artefacto `coverage-report` con el informe de cobertura.
 
+## Cómo citar
+
+Si usas ChildConicity en un trabajo académico, cita el software y la versión concreta que hayas utilizado.
+
+GitHub muestra el botón **Cite this repository** cuando [`CITATION.cff`](CITATION.cff) está en la rama por defecto. Cambia la versión y la URL si usaste un release anterior.
+
+### BibTeX
+
+```bibtex
+@software{childconicity2026,
+  author       = {Errowdrigorena and {ChildConic Foundation}},
+  title        = {ChildConicity},
+  year         = {2026},
+  version      = {1.0.1},
+  url          = {https://github.com/ChildConicFoundation/ChildConicity},
+  note         = {Release v1.0.1},
+}
+```
+
+Para v1.0.0:
+
+```bibtex
+@software{childconicity2026v100,
+  author       = {Errowdrigorena and {ChildConic Foundation}},
+  title        = {ChildConicity},
+  year         = {2026},
+  version      = {1.0.0},
+  url          = {https://github.com/ChildConicFoundation/ChildConicity/releases/tag/v1.0.0},
+}
+```
+
+### APA (7.ª ed.)
+
+Errowdrigorena & ChildConic Foundation. (2026). *ChildConicity* (Versión 1.0.1) [Software informático]. GitHub. https://github.com/ChildConicFoundation/ChildConicity
+
+Cita también la base de datos de ratings de iconicidad si tu análisis la utiliza: https://osf.io/ex37k/
+
 ## Notas importantes
 
 - `iconicity_ratings/iconicity_ratings_cleaned.csv` se puede descargar desde la GUI o con `python3 -m src.cli.download_iconicity_ratings`.

@@ -1,6 +1,15 @@
 # ChildConicity
 
-[![Python Tests](https://github.com/ChildConicFoundation/ChildConicity/actions/workflows/python-tests.yml/badge.svg)](https://github.com/ChildConicFoundation/ChildConicity/actions/workflows/python-tests.yml)
+[![CI](https://github.com/ChildConicFoundation/ChildConicity/actions/workflows/python-tests.yml/badge.svg?branch=main)](https://github.com/ChildConicFoundation/ChildConicity/actions/workflows/python-tests.yml)
+[![Coverage](https://img.shields.io/badge/coverage-≥80%25-04e762?logo=pytest&logoColor=white)](https://github.com/ChildConicFoundation/ChildConicity#tests)
+[![Python](https://img.shields.io/badge/python-3.10+-3776AB?logo=python&logoColor=white)](https://www.python.org/downloads/)
+[![License: BSL-1.0](https://img.shields.io/badge/License-BSL--1.0-0052CC)](LICENSE)
+
+[![Platform](https://img.shields.io/badge/platform-Linux%20%7C%20macOS%20%7C%20Windows-555)](#installation)
+[![CHILDES / TalkBank](https://img.shields.io/badge/data-CHILDES%20%2F%20TalkBank-8B4513)](https://talkbank.org/childes/)
+[![GUI](https://img.shields.io/badge/interface-Tkinter%20GUI-FF6F00)](#recommended-use-gui)
+[![Last commit](https://img.shields.io/github/last-commit/ChildConicFoundation/ChildConicity)](https://github.com/ChildConicFoundation/ChildConicity/commits/main)
+[![Issues](https://img.shields.io/github/issues/ChildConicFoundation/ChildConicity)](https://github.com/ChildConicFoundation/ChildConicity/issues)
 
 🇬🇧 English | [🇪🇸 Español](README.es.md)
 

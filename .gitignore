@@ -28,6 +28,7 @@ MANIFEST
 
 # Project Created files
 .childconicity_locale
+*_result.json
 Corpus/
 Corpus_processed/
 Corpus_modified/

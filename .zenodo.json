@@ -1,13 +1,15 @@
 {
   "title": "ChildConicity",
   "upload_type": "software",
-  "description": "Process CHILDES/TalkBank corpora and analyze iconicity in child language development. ChildConicity normalizes .cha transcripts, groups data by age in quarterly samples, and exports results for tokens, grammatical categories, and iconicity ratings.",
+  "description": "Process CHILDES/TalkBank corpora and analyze iconicity in child language development. ChildConicity normalizes .cha transcripts, groups data by age in quarterly samples, and exports results for tokens, grammatical categories, and iconicity ratings.\n\nIf your analysis uses CHILDES/TalkBank corpora, also cite the CHILDES manual and the corpus-specific references requested by TalkBank. If your analysis uses iconicity_ratings_cleaned.csv, also cite the OSF iconicity ratings database.",
   "creators": [
     {
-      "name": "Errowdrigorena"
+      "name": "Errowdrigorena",
+      "affiliation": "ChildConic Foundation"
     },
     {
-      "name": "ChildConic Foundation"
+      "name": "ChildConic Foundation",
+      "affiliation": "ChildConic Foundation"
     }
   ],
   "access_right": "open",
@@ -18,24 +20,5 @@
     "iconicity",
     "corpus",
     "language-acquisition"
-  ],
-  "related_identifiers": [
-    {
-      "identifier": "https://github.com/ChildConicFoundation/ChildConicity",
-      "relation": "isSupplementTo",
-      "scheme": "url"
-    },
-    {
-      "identifier": "https://osf.io/ex37k/",
-      "relation": "references",
-      "scheme": "url"
-    },
-    {
-      "identifier": "https://talkbank.org/childes/",
-      "relation": "references",
-      "scheme": "url"
-    }
-  ],
-  "communities": [],
-  "notes": "If your analysis uses CHILDES/TalkBank corpora, also cite the CHILDES manual and the corpus-specific references requested by TalkBank. If your analysis uses iconicity_ratings_cleaned.csv, also cite the OSF iconicity ratings database."
+  ]
 }

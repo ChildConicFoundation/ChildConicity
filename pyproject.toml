@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "childconicity"
-version = "1.0.6"
+version = "1.0.7"
 description = "Process CHILDES/TalkBank corpora and analyze iconicity in child language development."
 readme = "README.md"
 license = { text = "BSL-1.0" }

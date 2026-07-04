@@ -1,5 +1,7 @@
 from unittest.mock import patch
 
+import pytest
+
 from src.data_io.corpus_inspector import (
     print_directory_structure,
     print_metadata,
@@ -37,6 +39,65 @@ def test_process_data_with_formatter_preserves_structure_and_splits_speakers():
     assert files[0]["other_children_data"] == {}
     assert files[0]["adults_data"]["1"]["text"] == "look"
     assert files[0]["metadata"]["file_path"].endswith(".cha")
+
+
+def test_process_data_with_formatter_includes_bates_and_providence():
+    corpus_data = {
+        "Corpora_modified": {
+            "Bates": {
+                "Amy": {
+                    "files": [
+                        {
+                            "metadata": {
+                                "file_path": "Corpora_modified/Bates/Amy/a.cha",
+                            }
+                        }
+                    ]
+                }
+            },
+            "Providence": {
+                "Alex": {
+                    "files": [
+                        {
+                            "metadata": {
+                                "file_path": "Corpora_modified/Providence/Alex/a.cha",
+                            }
+                        }
+                    ]
+                }
+            },
+        }
+    }
+
+    with patch("src.data_io.corpus_processing.DataFormatter.format_cha_data_from") as mock_format:
+        mock_format.return_value = ({"1": {"text": "ball"}}, {}, {})
+        result = process_data_with_formatter(corpus_data)
+
+    assert "Bates" in result["Corpora_modified"]
+    assert "Providence" in result["Corpora_modified"]
+    assert len(result["Corpora_modified"]["Bates"]["Amy"]["files"]) == 1
+    assert len(result["Corpora_modified"]["Providence"]["Alex"]["files"]) == 1
+
+
+def test_process_data_with_formatter_rejects_custom_root_key():
+    corpus_data = {
+        "MyCorpus": {
+            "Post": {
+                "Lew": {
+                    "files": [
+                        {
+                            "metadata": {
+                                "file_path": "MyCorpus/Post/Lew/a.cha",
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    }
+
+    with pytest.raises(ValueError, match="Corpora_modified"):
+        process_data_with_formatter(corpus_data)
 
 
 def test_corpus_inspector_functions_print_expected_info(capsys):

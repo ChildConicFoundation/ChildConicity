@@ -13,6 +13,7 @@ from tkinter.scrolledtext import ScrolledText
 
 from src.corpus_initialization import CorpusInitializer
 from src.gui.services import (
+    CORPUS_DATA_ROOT_KEY,
     DEFAULT_DISTRIBUTION_DIR,
     DEFAULT_ICONICITY_CSV,
     DEFAULT_PLOTS_DIR,
@@ -1067,6 +1068,12 @@ class ChildConicityApp(tk.Tk):
     def _validate_analysis_inputs(self, processed_root, selected_corpora):
         if not processed_root:
             return "Indica primero la ruta de corpus procesado."
+
+        if os.path.basename(os.path.normpath(processed_root)) != CORPUS_DATA_ROOT_KEY:
+            return (
+                "La carpeta de corpus procesado debe llamarse "
+                f"{CORPUS_DATA_ROOT_KEY}."
+            )
 
         if not os.path.isdir(processed_root):
             return (

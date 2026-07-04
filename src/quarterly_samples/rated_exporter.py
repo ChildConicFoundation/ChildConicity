@@ -34,7 +34,7 @@ def _enrich_entry(entry, ratings):
     return {**entry, **_iconicity_fields(entry.get("lemma", ""), ratings)}
 
 
-def _merge_to_lema(entries, ratings):
+def _merge_to_lema(entries, ratings, quarter=None, speaker_group=None):
     by_lemma = defaultdict(list)
     for entry in entries:
         by_lemma[entry["lemma"]].append(entry)
@@ -51,8 +51,8 @@ def _merge_to_lema(entries, ratings):
 
         first = group[0]
         entry = {
-            "quarter": first["quarter"],
-            "speaker_group": first["speaker_group"],
+            "quarter": first.get("quarter", quarter),
+            "speaker_group": first.get("speaker_group", speaker_group),
             "lemma": lemma,
             "category": "|".join(categories),
             "attributes": attributes,
@@ -128,7 +128,12 @@ def enrich_word_count(source, ratings):
 
 
 def build_lema_count(source, ratings):
-    merged = _merge_to_lema(source.get("lemma_entries", []), ratings)
+    merged = _merge_to_lema(
+        source.get("lemma_entries", []),
+        ratings,
+        quarter=source.get("quarter"),
+        speaker_group=source.get("speaker_group"),
+    )
     return {
         "quarter": source["quarter"],
         "speaker_group": source["speaker_group"],

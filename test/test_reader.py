@@ -71,3 +71,17 @@ def test_extract_utterances_keeps_valid_single_letter_words(reader):
 
     assert len(utterances) == 1
     assert utterances[0]["text"] == "I want it"
+
+
+def test_extract_participants_assigns_unique_ids_to_unnamed_entries(reader):
+    content = """@Participants: CHI, MOT Mother, INV, CHI
+"""
+
+    participants = reader._extract_participants(content)
+
+    assert participants == {
+        "CHI1": "CHI1",
+        "MOT": "Mother",
+        "INV1": "INV1",
+        "CHI2": "CHI2",
+    }

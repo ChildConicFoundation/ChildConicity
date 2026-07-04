@@ -113,11 +113,47 @@ class Reader:
         match = re.search(r'@Participants:\s*(.*)', content)
         if match:
             participants = {}
+            code_counts = {}
             for part in match.group(1).strip().split(','):
-                code, name = part.strip().split(' ', 1)
+                pieces = part.strip().split(' ', 1)
+                if not pieces or not pieces[0]:
+                    continue
+                raw_code = pieces[0]
+                has_name = len(pieces) > 1 and pieces[1].strip()
+                name = pieces[1].strip() if has_name else None
+                code = self._unique_participant_code(
+                    raw_code,
+                    participants,
+                    code_counts,
+                    force_numbered=not has_name,
+                )
+                if name is None:
+                    name = code
                 participants[code] = name
             return participants
         return {}
+
+    def _unique_participant_code(
+        self,
+        raw_code,
+        participants,
+        code_counts,
+        force_numbered=False,
+    ):
+        base_code = raw_code.strip()
+        if not base_code:
+            return base_code
+
+        code_counts[base_code] = code_counts.get(base_code, 0) + 1
+        if not force_numbered and base_code not in participants:
+            return base_code
+
+        candidate = f"{base_code}{code_counts[base_code]}"
+        while candidate in participants:
+            code_counts[base_code] += 1
+            candidate = f"{base_code}{code_counts[base_code]}"
+
+        return candidate
 
     def _extract_options(self, content):
         """Extracts the file options."""

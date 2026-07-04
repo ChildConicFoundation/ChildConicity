@@ -1,6 +1,11 @@
+import pytest
+
 from src.data_io.corpus_selection import (
+    CORPUS_DATA_ROOT_KEY,
+    TARGET_CORPORA,
     discover_available_corpora,
     filter_corpus_data,
+    require_corpus_data_root,
 )
 
 
@@ -37,3 +42,22 @@ def test_filter_corpus_data_returns_original_data_for_all():
     corpus_data = {"Corpora_modified": {"Brent": {"a": {}}}}
 
     assert filter_corpus_data(corpus_data, None) == corpus_data
+
+
+def test_require_corpus_data_root_rejects_custom_root_key():
+    corpus_data = {"MyCorpus": {"Brent": {"a": {}}}}
+
+    with pytest.raises(ValueError, match=CORPUS_DATA_ROOT_KEY):
+        require_corpus_data_root(corpus_data)
+
+
+def test_filter_corpus_data_rejects_custom_root_key():
+    corpus_data = {"MyCorpus": {"Brent": {"a": {}}, "Post": {"b": {}}}}
+
+    with pytest.raises(ValueError, match=CORPUS_DATA_ROOT_KEY):
+        filter_corpus_data(corpus_data, ["Post"])
+
+
+def test_target_corpora_include_bates_and_providence():
+    assert "Bates" in TARGET_CORPORA
+    assert "Providence" in TARGET_CORPORA

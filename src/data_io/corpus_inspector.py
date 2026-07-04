@@ -1,3 +1,10 @@
+from src.data_io.corpus_selection import (
+    CORPUS_DATA_ROOT_KEY,
+    TARGET_CORPORA,
+    require_corpus_data_root,
+)
+
+
 def print_directory_structure(data, level=0):
     """
     Prints the directory structure visually.
@@ -38,19 +45,19 @@ def print_sampled_metadata(data):
     """
     Prints metadata from 4 files for each corpus.
     """
-    main_dirs = ["Brent", "NewEngland", "Post", "Bloom", "Brown", "HSLLD", "Kuczaj", "Sachs", "VanKleeck"]
+    data = require_corpus_data_root(data)
 
-    for corpus in main_dirs:
+    for corpus in TARGET_CORPORA:
         print(f"\n=== Corpus {corpus} ===")
-        if corpus not in data["Corpora_modified"]:
+        if corpus not in data[CORPUS_DATA_ROOT_KEY]:
             continue
 
-        subdirs = list(data["Corpora_modified"][corpus].keys())
+        subdirs = list(data[CORPUS_DATA_ROOT_KEY][corpus].keys())
         if not subdirs:
             continue
 
         first_subdir = subdirs[0]
-        corpus_branch = data["Corpora_modified"][corpus][first_subdir]
+        corpus_branch = data[CORPUS_DATA_ROOT_KEY][corpus][first_subdir]
         if "files" not in corpus_branch:
             continue
 
@@ -70,13 +77,14 @@ def show_lew_early_expressions(processed_data):
     Shows Lew utterances when he was younger.
     """
     print("\n=== Expresiones tempranas de Lew ===")
+    processed_data = require_corpus_data_root(processed_data)
 
-    if "Post" not in processed_data["Corpora_modified"]:
+    if "Post" not in processed_data[CORPUS_DATA_ROOT_KEY]:
         return
-    if "Lew" not in processed_data["Corpora_modified"]["Post"]:
+    if "Lew" not in processed_data[CORPUS_DATA_ROOT_KEY]["Post"]:
         return
 
-    lew_files = processed_data["Corpora_modified"]["Post"]["Lew"]["files"]
+    lew_files = processed_data[CORPUS_DATA_ROOT_KEY]["Post"]["Lew"]["files"]
     sorted_files = sorted(lew_files, key=lambda x: x["metadata"].get("child_age", ""))
 
     if not sorted_files:

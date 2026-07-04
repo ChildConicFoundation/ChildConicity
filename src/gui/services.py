@@ -15,8 +15,10 @@ from src.analysis.grammatical_type_analysis import (
 from src.analysis.iconicity_model import IconicityModel
 from src.data_io.corpus_processing import process_data_with_formatter
 from src.data_io.corpus_selection import (
+    CORPUS_DATA_ROOT_KEY,
     discover_available_corpora,
     filter_corpus_data,
+    require_corpus_data_root_path,
 )
 from src.data_io.data_formatter import DataFormatter
 from src.data_io.grammatical_corpus_processing import (
@@ -76,11 +78,11 @@ DEFAULT_GRAMMATICAL_CATEGORIES = (
 
 def load_corpus_data(processed_root, selected_corpora=None):
     reader = Reader()
+    require_corpus_data_root_path(processed_root)
     if selected_corpora is None:
         corpus_data = reader.read_directory(processed_root)
         return filter_corpus_data(corpus_data, selected_corpora)
 
-    root_name = os.path.basename(os.path.normpath(processed_root))
     filtered_root = {}
     for corpus_name in selected_corpora:
         corpus_path = os.path.join(processed_root, corpus_name)
@@ -92,7 +94,7 @@ def load_corpus_data(processed_root, selected_corpora=None):
         if corpus_name in corpus_data:
             filtered_root[corpus_name] = corpus_data[corpus_name]
 
-    return {root_name: filtered_root}
+    return {CORPUS_DATA_ROOT_KEY: filtered_root}
 
 
 def get_available_corpora(processed_root):

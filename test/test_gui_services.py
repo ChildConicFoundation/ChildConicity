@@ -1,5 +1,7 @@
 from unittest.mock import patch
 
+import pytest
+
 from src.gui.services import (
     DEFAULT_GRAMMATICAL_CATEGORIES,
     TYPE_COUNT_ONLY_ONCE,
@@ -9,6 +11,26 @@ from src.gui.services import (
     run_tokens_analysis,
     run_types_analysis,
 )
+
+
+def test_load_corpus_data_rejects_custom_processed_root():
+    with patch("src.gui.services.Reader.read_directory") as mock_read_directory:
+        mock_read_directory.return_value = {
+            "CustomRoot": {"Post": {"b": {}}}
+        }
+
+        with pytest.raises(ValueError, match="Corpora_modified"):
+            load_corpus_data("/data/CustomRoot")
+
+    mock_read_directory.assert_not_called()
+
+
+def test_load_corpus_data_rejects_custom_processed_root_with_selected_corpora():
+    with patch("src.gui.services.Reader.read_directory") as mock_read_directory:
+        with pytest.raises(ValueError, match="Corpora_modified"):
+            load_corpus_data("/data/CustomRoot", selected_corpora=["Post"])
+
+    mock_read_directory.assert_not_called()
 
 
 def test_get_available_corpora_delegates_to_discovery():

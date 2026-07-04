@@ -5,7 +5,7 @@ from src.analysis.iconicity_model import IconicityModel
 def sample_data():
     return {
         1: {
-            'word': 'casa',
+            'word': 'house',
             'n_ratings': 10,
             'n': 15,
             'prop_known': 0.8,
@@ -13,7 +13,7 @@ def sample_data():
             'rating_sd': 1.2
         },
         2: {
-            'word': 'perro',
+            'word': 'dog',
             'n_ratings': 12,
             'n': 15,
             'prop_known': 0.9,
@@ -21,7 +21,7 @@ def sample_data():
             'rating_sd': 1.0
         },
         3: {
-            'word': 'gato',
+            'word': 'cat',
             'n_ratings': 8,
             'n': 15,
             'prop_known': 0.7,
@@ -36,48 +36,48 @@ def model(sample_data):
 
 def test_initialization(model):
     assert len(model.word_data) == 3
-    assert 'casa' in model.word_data
-    assert 'perro' in model.word_data
-    assert 'gato' in model.word_data
+    assert 'house' in model.word_data
+    assert 'dog' in model.word_data
+    assert 'cat' in model.word_data
 
 def test_get_word_data(model):
-    casa_data = model.get_word_data('casa')
-    assert casa_data is not None
-    assert casa_data['n_ratings'] == 10
-    assert casa_data['rating'] == 4.5
-    assert casa_data['prop_known'] == 0.8
+    house_data = model.get_word_data('house')
+    assert house_data is not None
+    assert house_data['n_ratings'] == 10
+    assert house_data['rating'] == 4.5
+    assert house_data['prop_known'] == 0.8
 
 def test_get_all_words(model):
     words = model.get_all_words()
     assert len(words) == 3
-    assert 'casa' in words
-    assert 'perro' in words
-    assert 'gato' in words
+    assert 'house' in words
+    assert 'dog' in words
+    assert 'cat' in words
 
 def test_get_words_by_rating(model):
     # Words with rating >= 4.0
     high_rating_words = model.get_words_by_rating(min_rating=4.0)
     assert len(high_rating_words) == 2
-    assert 'casa' in high_rating_words
-    assert 'gato' in high_rating_words
+    assert 'house' in high_rating_words
+    assert 'cat' in high_rating_words
     
     # Words with rating between 3.5 and 4.0
     mid_rating_words = model.get_words_by_rating(min_rating=3.5, max_rating=4.0)
     assert len(mid_rating_words) == 1
-    assert 'perro' in mid_rating_words
+    assert 'dog' in mid_rating_words
 
 def test_get_words_by_known_proportion(model):
     # Words with prop_known >= 0.8
     high_prop_words = model.get_words_by_known_proportion(min_prop=0.8)
     assert len(high_prop_words) == 2
-    assert 'casa' in high_prop_words
-    assert 'perro' in high_prop_words
+    assert 'house' in high_prop_words
+    assert 'dog' in high_prop_words
     
     # Words with prop_known <= 0.8
     low_prop_words = model.get_words_by_known_proportion(max_prop=0.8)
     assert len(low_prop_words) == 2
-    assert 'casa' in low_prop_words
-    assert 'gato' in low_prop_words
+    assert 'house' in low_prop_words
+    assert 'cat' in low_prop_words
 
 def test_invalid_word(model):
     assert model.get_word_data('nonexistent') is None
@@ -86,7 +86,7 @@ def test_iconicity_model():
     # Test data
     test_data = {
         1: {
-            'word': 'hola',
+            'word': 'hello',
             'n_ratings': 10,
             'n': 5,
             'prop_known': 0.8,
@@ -94,7 +94,7 @@ def test_iconicity_model():
             'rating_sd': 0.5
         },
         2: {
-            'word': 'adiós',
+            'word': 'goodbye',
             'n_ratings': 8,
             'n': 4,
             'prop_known': 0.9,
@@ -107,30 +107,30 @@ def test_iconicity_model():
     model = IconicityModel(test_data)
     
     # Check that the data was processed correctly
-    hola_data = model.get_word_data('hola')
-    assert hola_data is not None
-    assert hola_data['n_ratings'] == 10
-    assert hola_data['rating'] == 3.5
-    assert hola_data['prop_known'] == 0.8
+    hello_data = model.get_word_data('hello')
+    assert hello_data is not None
+    assert hello_data['n_ratings'] == 10
+    assert hello_data['rating'] == 3.5
+    assert hello_data['prop_known'] == 0.8
     
-    adios_data = model.get_word_data('adiós')
-    assert adios_data is not None
-    assert adios_data['n_ratings'] == 8
-    assert adios_data['rating'] == 4.0
-    assert adios_data['prop_known'] == 0.9
+    goodbye_data = model.get_word_data('goodbye')
+    assert goodbye_data is not None
+    assert goodbye_data['n_ratings'] == 8
+    assert goodbye_data['rating'] == 4.0
+    assert goodbye_data['prop_known'] == 0.9
     
     # Check that get_all_words returns all words
-    assert set(model.get_all_words()) == {'hola', 'adiós'}
+    assert set(model.get_all_words()) == {'hello', 'goodbye'}
     
     # Check filtering by rating
     high_rating_words = model.get_words_by_rating(min_rating=4.0)
     assert len(high_rating_words) == 1
-    assert 'adiós' in high_rating_words
+    assert 'goodbye' in high_rating_words
     
     # Check filtering by known proportion
     high_known_words = model.get_words_by_known_proportion(min_prop=0.85)
     assert len(high_known_words) == 1
-    assert 'adiós' in high_known_words
+    assert 'goodbye' in high_known_words
 
 def test_get_all_word_data(model):
     """
@@ -142,31 +142,31 @@ def test_get_all_word_data(model):
     assert len(all_data) == 3
     
     # Check that each word data is complete
-    assert 'casa' in all_data
-    assert 'perro' in all_data
-    assert 'gato' in all_data
+    assert 'house' in all_data
+    assert 'dog' in all_data
+    assert 'cat' in all_data
     
     # Check that each word data is correct
-    casa_data = all_data['casa']
-    assert casa_data['n_ratings'] == 10
-    assert casa_data['n'] == 15
-    assert casa_data['prop_known'] == 0.8
-    assert casa_data['rating'] == 4.5
-    assert casa_data['rating_sd'] == 1.2
+    house_data = all_data['house']
+    assert house_data['n_ratings'] == 10
+    assert house_data['n'] == 15
+    assert house_data['prop_known'] == 0.8
+    assert house_data['rating'] == 4.5
+    assert house_data['rating_sd'] == 1.2
     
-    perro_data = all_data['perro']
-    assert perro_data['n_ratings'] == 12
-    assert perro_data['n'] == 15
-    assert perro_data['prop_known'] == 0.9
-    assert perro_data['rating'] == 3.8
-    assert perro_data['rating_sd'] == 1.0
+    dog_data = all_data['dog']
+    assert dog_data['n_ratings'] == 12
+    assert dog_data['n'] == 15
+    assert dog_data['prop_known'] == 0.9
+    assert dog_data['rating'] == 3.8
+    assert dog_data['rating_sd'] == 1.0
     
-    gato_data = all_data['gato']
-    assert gato_data['n_ratings'] == 8
-    assert gato_data['n'] == 15
-    assert gato_data['prop_known'] == 0.7
-    assert gato_data['rating'] == 4.2
-    assert gato_data['rating_sd'] == 1.1 
+    cat_data = all_data['cat']
+    assert cat_data['n_ratings'] == 8
+    assert cat_data['n'] == 15
+    assert cat_data['prop_known'] == 0.7
+    assert cat_data['rating'] == 4.2
+    assert cat_data['rating_sd'] == 1.1 
 
 
 def test_iconicity_model_normalizes_word_lookup_case_insensitively():

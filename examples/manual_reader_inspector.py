@@ -11,18 +11,18 @@ def inspect_reader_output():
     test_file = "Corpora_modified/VanKleeck/walter/walter1.cha"
     
     if not os.path.exists(test_file):
-        print(f"Error: No se encontró el archivo de prueba {test_file}")
+        print(f"Error: Test file not found: {test_file}")
         return
     
     # Read the file
     data = reader.read_cha(test_file)
     
     if data is None:
-        print("Error al leer el archivo")
+        print("Error reading file")
         return
     
     # Print metadata
-    print("\nMetadatos extraídos:")
+    print("\nExtracted metadata:")
     print("-" * 50)
     for key, value in data['metadata'].items():
         print(f"{key}: {value}")

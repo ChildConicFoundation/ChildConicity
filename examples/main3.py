@@ -33,9 +33,9 @@ def main(argv=None):
     source_root = "Corpora"
     output_root = "Corpora_modified"
 
-    print("Inicializando corpus...")
+    print("Initializing corpora...")
     initialize_corpuses(source_root=source_root, output_root=output_root)
-    print("Corpus inicializados correctamente.")
+    print("Corpora initialized successfully.")
 
     available_corpora = discover_available_corpora(output_root)
     corpus_options, should_exit = prepare_corpus_cli_options(
@@ -58,20 +58,20 @@ def main(argv=None):
 
     selected_categories = options.categories
 
-    print("\nEstructura del corpus:")
+    print("\nCorpus structure:")
     print_directory_structure(corpus_data)
 
-    print("\nPrimeros 4 metadatos de cada archivo:")
+    print("\nFirst 4 metadata entries per file:")
     print_sampled_metadata(corpus_data)
 
-    print("\nProcesando datos gramaticales y exportando resultados...")
+    print("\nProcessing grammatical data and exporting results...")
     run_grammatical_pipeline(
         corpus_data,
         output_dir=options.output_dir,
         grammatical_categories=selected_categories,
     )
 
-    print("\nProceso gramatical completado.")
+    print("\nGrammatical processing completed.")
     return 0
 
 

@@ -75,7 +75,7 @@ def process_directory(source_dir, target_dir):
                 if age:
                     modify_cha_file(target_file, target_folder, age)
                 
-                print(f'Copiado y modificado {source_file} a {target_file}')
+                print(f'Copied and modified {source_file} to {target_file}')
 
 def main():
     """Main function that runs the reorganization process."""
@@ -94,9 +94,9 @@ def main():
     
     try:
         process_directory(str(source_dir), str(target_dir))
-        print('Reorganización completada')
+        print('Reorganization completed')
     except Exception as e:
-        print(f'Error durante la reorganización: {str(e)}')
+        print(f'Error during reorganization: {str(e)}')
         raise
 
 if __name__ == '__main__':

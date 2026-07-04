@@ -93,7 +93,7 @@ def test_download_iconicity_ratings_rejects_unexpected_csv(tmp_path):
     output_path = tmp_path / "iconicity_ratings_cleaned.csv"
     session = FakeSession(b"word,rating\nball,5.8\n")
 
-    with pytest.raises(ValueError, match="Faltan columnas"):
+    with pytest.raises(ValueError, match="Missing columns"):
         download_iconicity_ratings(output_path=output_path, session=session)
 
     assert not output_path.exists()

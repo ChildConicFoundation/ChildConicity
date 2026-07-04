@@ -76,7 +76,7 @@ def process_directory(source_dir, target_dir):
             if age:
                 modify_cha_file(target_file, child_name, age)
             
-            print(f'Copiado y modificado {source_file} a {target_file}')
+            print(f'Copied and modified {source_file} to {target_file}')
 
 def main():
     """Main function that runs the modification process."""
@@ -95,9 +95,9 @@ def main():
     
     try:
         process_directory(str(source_dir), str(target_dir))
-        print('Procesamiento completado exitosamente')
+        print('Processing completed successfully')
     except Exception as e:
-        print(f'Error durante el procesamiento: {str(e)}')
+        print(f'Error during processing: {str(e)}')
         raise
 
 if __name__ == '__main__':

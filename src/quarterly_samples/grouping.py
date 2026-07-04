@@ -98,14 +98,14 @@ def group_data_by_age(processed_data):
                 )
 
                 child_example = _build_entry_example(
-                    file["children_data"], "No hay expresiones de niños"
+                    file["children_data"], "No child utterances"
                 )
                 other_child_example = _build_entry_example(
                     file.get("other_children_data", {}),
-                    "No hay expresiones de otros niños",
+                    "No other-child utterances",
                 )
                 adult_example = _build_entry_example(
-                    file["adults_data"], "No hay expresiones de adultos"
+                    file["adults_data"], "No adult utterances"
                 )
 
                 data_grouped_by_age[age_quarter]["files"].append(

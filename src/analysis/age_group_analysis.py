@@ -33,16 +33,16 @@ def print_age_group_statistics(age_group_stats, num_words=10):
     Prints word statistics by age group.
     """
     for age_group, stats in sorted(age_group_stats.items()):
-        print(f"\n=== Grupo de edad {age_group} ===")
+        print(f"\n=== Age group {age_group} ===")
 
-        print("\nTop palabras de niños:")
+        print("\nTop child words:")
         children_words = sorted(
             stats["children_counted_words"].items(), key=lambda x: x[1], reverse=True
         )[:num_words]
         for word, count in children_words:
             print(f"  {word}: {count}")
 
-        print("\nTop palabras de adultos:")
+        print("\nTop adult words:")
         adults_words = sorted(
             stats["adults_counted_words"].items(), key=lambda x: x[1], reverse=True
         )[:num_words]
@@ -60,9 +60,9 @@ def print_age_group_statistics(age_group_stats, num_words=10):
             if word in stats["all_iconicity_words"]
         )
 
-        print("\nEstadísticas de iconicidad:")
-        print(f"  Palabras con iconicidad usadas por niños: {len(children_iconic)}")
-        print(f"  Palabras con iconicidad usadas por adultos: {len(adults_iconic)}")
+        print("\nIconicity statistics:")
+        print(f"  Iconic words used by children: {len(children_iconic)}")
+        print(f"  Iconic words used by adults: {len(adults_iconic)}")
         print("-" * 50)
 
 
@@ -135,10 +135,10 @@ def print_valid_words_statistics(valid_words_stats):
     Prints valid word statistics by age group.
     """
     for age_group, stats in sorted(valid_words_stats.items()):
-        print(f"\n=== Grupo de edad {age_group} ===")
+        print(f"\n=== Age group {age_group} ===")
 
-        print("\nEstadísticas de adultos:")
-        print(f"  Total de palabras: {stats['adults']['total_words']}")
+        print("\nAdult statistics:")
+        print(f"  Total words: {stats['adults']['total_words']}")
 
         total_iconic_occurrences_adults = stats["adults"]["total_iconic_occurrences"]
         total_non_iconic_occurrences_adults = stats["adults"][
@@ -146,24 +146,24 @@ def print_valid_words_statistics(valid_words_stats):
         ]
 
         print(
-            "  Número total de ocurrencias de palabras icónicas: "
+            "  Total iconic word occurrences: "
             f"{total_iconic_occurrences_adults}"
         )
         print(
-            "  Número total de ocurrencias de palabras no icónicas: "
+            "  Total non-iconic word occurrences: "
             f"{total_non_iconic_occurrences_adults}"
         )
         print(
-            "  Número de palabras icónicas diferentes: "
+            "  Unique iconic words: "
             f"{len(stats['adults']['iconic_words'])}"
         )
         print(
-            "  Número de palabras no icónicas diferentes: "
+            "  Unique non-iconic words: "
             f"{len(stats['adults']['non_iconic_words'])}"
         )
 
-        print("\nEstadísticas de niños:")
-        print(f"  Total de palabras: {stats['children']['total_words']}")
+        print("\nChildren statistics:")
+        print(f"  Total words: {stats['children']['total_words']}")
 
         total_iconic_occurrences_children = stats["children"][
             "total_iconic_occurrences"
@@ -173,23 +173,23 @@ def print_valid_words_statistics(valid_words_stats):
         ]
 
         print(
-            "  Número total de ocurrencias de palabras icónicas: "
+            "  Total iconic word occurrences: "
             f"{total_iconic_occurrences_children}"
         )
         print(
-            "  Número total de ocurrencias de palabras no icónicas: "
+            "  Total non-iconic word occurrences: "
             f"{total_non_iconic_occurrences_children}"
         )
         print(
-            "  Número de palabras icónicas diferentes: "
+            "  Unique iconic words: "
             f"{len(stats['children']['iconic_words'])}"
         )
         print(
-            "  Número de palabras no icónicas diferentes: "
+            "  Unique non-iconic words: "
             f"{len(stats['children']['non_iconic_words'])}"
         )
 
-        print("\nTop 10 palabras icónicas más usadas por adultos:")
+        print("\nTop 10 iconic words used by adults:")
         adult_iconic = sorted(
             stats["adults"]["iconic_words"].items(),
             key=lambda x: x[1]["count"],
@@ -202,13 +202,13 @@ def print_valid_words_statistics(valid_words_stats):
             else 0
         )
         for word, data in adult_iconic:
-            print(f"  {word}: {data['count']} usos, rating: {data['rating']}")
+            print(f"  {word}: {data['count']} uses, rating: {data['rating']}")
         print(
-            "  Porcentaje de uso de las top 10 palabras icónicas: "
-            f"{percentage_top10_adult_iconic:.1f}% del total de palabras icónicas"
+            "  Top 10 iconic word usage percentage: "
+            f"{percentage_top10_adult_iconic:.1f}% of total iconic words"
         )
 
-        print("\nTop 10 palabras icónicas más usadas por niños:")
+        print("\nTop 10 iconic words used by children:")
         child_iconic = sorted(
             stats["children"]["iconic_words"].items(),
             key=lambda x: x[1]["count"],
@@ -221,14 +221,14 @@ def print_valid_words_statistics(valid_words_stats):
             else 0
         )
         for word, data in child_iconic:
-            print(f"  {word}: {data['count']} usos, rating: {data['rating']}")
+            print(f"  {word}: {data['count']} uses, rating: {data['rating']}")
         print(
-            "  Porcentaje de uso de las top 10 palabras icónicas: "
-            f"{percentage_top10_child_iconic:.1f}% del total de palabras icónicas"
+            "  Top 10 iconic word usage percentage: "
+            f"{percentage_top10_child_iconic:.1f}% of total iconic words"
         )
         print("-" * 50)
 
-        print("\nTop 10 palabras NO icónicas más usadas por niños:")
+        print("\nTop 10 non-iconic words used by children:")
         child_non_iconic = sorted(
             stats["children"]["non_iconic_words"].items(),
             key=lambda x: x[1],
@@ -241,14 +241,14 @@ def print_valid_words_statistics(valid_words_stats):
             else 0
         )
         for word, count in child_non_iconic:
-            print(f"  {word}: {count} usos")
+            print(f"  {word}: {count} uses")
         print(
-            "  Porcentaje de uso de las top 10 palabras no icónicas: "
-            f"{percentage_top10_child_non_iconic:.1f}% del total de palabras no icónicas"
+            "  Top 10 non-iconic word usage percentage: "
+            f"{percentage_top10_child_non_iconic:.1f}% of total non-iconic words"
         )
         print("-" * 50)
 
-        print("\nTop 10 palabras NO icónicas más usadas por adultos:")
+        print("\nTop 10 non-iconic words used by adults:")
         adult_non_iconic = sorted(
             stats["adults"]["non_iconic_words"].items(),
             key=lambda x: x[1],
@@ -261,9 +261,9 @@ def print_valid_words_statistics(valid_words_stats):
             else 0
         )
         for word, count in adult_non_iconic:
-            print(f"  {word}: {count} usos")
+            print(f"  {word}: {count} uses")
         print(
-            "  Porcentaje de uso de las top 10 palabras no icónicas: "
-            f"{percentage_top10_adult_non_iconic:.1f}% del total de palabras no icónicas"
+            "  Top 10 non-iconic word usage percentage: "
+            f"{percentage_top10_adult_non_iconic:.1f}% of total non-iconic words"
         )
         print("-" * 50)

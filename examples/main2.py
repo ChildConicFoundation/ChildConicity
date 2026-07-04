@@ -34,7 +34,7 @@ def main(argv=None):
     parser = add_corpus_options(
         argparse.ArgumentParser(
             description=(
-                "Procesa el corpus por tokens y permite filtrar qué corpus usar."
+                "Process the corpus by tokens and filter which corpora to use."
             )
         )
     )
@@ -45,9 +45,9 @@ def main(argv=None):
     output_root = "Corpora_modified"
 
     # Initialize corpora
-    print("Inicializando corpus...")
+    print("Initializing corpora...")
     initialize_corpuses(source_root=source_root, output_root=output_root)
-    print("Corpus inicializados correctamente.")
+    print("Corpora initialized successfully.")
 
     available_corpora = discover_available_corpora(output_root)
     corpus_options, should_exit = prepare_corpus_cli_options(
@@ -67,46 +67,46 @@ def main(argv=None):
     corpus_data = filter_corpus_data(corpus_data, corpus_options.corpora)
     
     # Show the nested dictionary structure
-    print("\nEstructura del corpus:")
+    print("\nCorpus structure:")
     print_directory_structure(corpus_data)
     
     # Show the first 4 metadata entries for each file
-    print("\nPrimeros 4 metadatos de cada archivo:")
+    print("\nFirst 4 metadata entries per file:")
     print_sampled_metadata(corpus_data)
     
     # Process the data using DataFormatter
-    print("\nProcesando datos con DataFormatter...")
+    print("\nProcessing data with DataFormatter...")
     processed_data = process_data_with_formatter(corpus_data)
     
     # Group data by age
-    print("\nAgrupando datos por edad...")
+    print("\nGrouping data by age...")
     data_grouped_by_age = group_data_by_age(processed_data)
 
     # Create the iconicity model
-    print("\nCreando modelo de iconicidad...")
+    print("\nCreating iconicity model...")
     formatter = DataFormatter()
     csv_data = formatter.format_csv_data_from('iconicity_ratings/iconicity_ratings_cleaned.csv')
     iconicity_model = IconicityModel(csv_data)
     
     # Create statistics by age group
-    print("\nCreando estadísticas por grupo de edad...")
+    print("\nCreating age group statistics...")
     age_group_stats_raw = create_age_group_statistics(data_grouped_by_age, iconicity_model)
     
     # Process valid words by age group
-    print("\nProcesando palabras válidas por grupo de edad...")
+    print("\nProcessing valid words by age group...")
     valid_words_stats = process_valid_words_by_age_group(age_group_stats_raw, iconicity_model)
     
     # Show valid word statistics
-    print("\nMostrando estadísticas de palabras válidas por grupo de edad:")
+    print("\nValid word statistics by age group:")
     print_valid_words_statistics(valid_words_stats)
 
     # Export the valid statistics used by the plotter
-    print("\nExportando valid_words_stats a JSON y CSV...")
+    print("\nExporting valid_words_stats to JSON and CSV...")
     stats_exporter = ValidWordsStatsExporter("quarterly_valid_words")
     stats_exporter.export(valid_words_stats)
 
     # Create and show analysis plots
-    print("\nCreando gráficas de análisis...")
+    print("\nCreating analysis plots...")
     plotter = DataAnalysisPlotter(valid_words_stats)
     
     # Create a directory for plots if it does not exist
@@ -122,28 +122,35 @@ def main(argv=None):
     plotter.plot_iconic_vs_non_iconic_by_age_children(os.path.join(output_dir, 'iconic_vs_non_iconic_by_age_children.png'))
     
     # Show percentages of iconic and non-iconic words for adults
-    print("\nPorcentajes de palabras icónicas y no icónicas para adultos por grupo de edad:")
+    print("\nIconic and non-iconic word percentages for adults by age group:")
     for age_group, stats in sorted(valid_words_stats.items()):
         total_adults = stats['adults']['total_words']
         iconic_pct = (stats['adults']['total_iconic_occurrences'] / total_adults * 100) if total_adults > 0 else 0
         non_iconic_pct = (stats['adults']['total_non_iconic_occurrences'] / total_adults * 100) if total_adults > 0 else 0
-        print(f"\nGrupo de edad {age_group}:")
-        print(f"  Palabras icónicas: {iconic_pct:.1f}%")
-        print(f"  Palabras no icónicas: {non_iconic_pct:.1f}%")
+        print(f"\nAge group {age_group}:")
+        print(f"  Iconic words: {iconic_pct:.1f}%")
+        print(f"  Non-iconic words: {non_iconic_pct:.1f}%")
 
     # Create test directory and generate iconicity distribution plots
-    print("\nGenerando gráficas de distribución de iconicidad...")
-    pruebas_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "pruebas")
-    os.makedirs(pruebas_dir, exist_ok=True)
-    plotter.plot_iconicity_distribution_by_age_group(save_dir=pruebas_dir)
-    
+    print("\nGenerating iconicity distribution plots...")
+    distribution_dir = os.path.join(
+        os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+        "distribution",
+    )
+    os.makedirs(distribution_dir, exist_ok=True)
+    plotter.plot_iconicity_distribution_by_age_group(save_dir=distribution_dir)
+
     # Generate iconicity distribution plot for all adult groups
-    print("\nGenerando gráfica de distribución de iconicidad para todos los grupos de adultos...")
-    plotter.plot_all_adults_iconicity_distribution(os.path.join(pruebas_dir, 'distribucion_iconicidad_todos_adultos.png'))
+    print("\nGenerating iconicity distribution plot for all adult groups...")
+    plotter.plot_all_adults_iconicity_distribution(
+        os.path.join(distribution_dir, "iconicity_distribution_all_adults.png")
+    )
 
     # Generate iconicity distribution plot for all child groups
-    print("\nGenerando gráfica de distribución de iconicidad para todos los grupos de niños...")
-    plotter.plot_all_children_iconicity_distribution(os.path.join(pruebas_dir, 'distribucion_iconicidad_todos_ninos.png'))
+    print("\nGenerating iconicity distribution plot for all child groups...")
+    plotter.plot_all_children_iconicity_distribution(
+        os.path.join(distribution_dir, "iconicity_distribution_all_children.png")
+    )
 
 if __name__ == "__main__":
     try:

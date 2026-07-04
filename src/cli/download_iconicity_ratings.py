@@ -27,8 +27,8 @@ def _validate_iconicity_csv(path):
     if missing:
         missing_columns = ", ".join(sorted(missing))
         raise ValueError(
-            "El archivo descargado no parece ser el CSV de iconicidad esperado. "
-            f"Faltan columnas: {missing_columns}."
+            "The downloaded file does not appear to be the expected iconicity CSV. "
+            f"Missing columns: {missing_columns}."
         )
 
 
@@ -40,7 +40,7 @@ def download_iconicity_ratings(
 ):
     output_path = Path(output_path)
     if output_path.exists() and not force:
-        print(f"{output_path} ya existe, omitiendo (usa --force para sobrescribir).")
+        print(f"{output_path} already exists, skipping (use --force to overwrite).")
         return False
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
@@ -62,31 +62,30 @@ def download_iconicity_ratings(
         if temp_path.exists():
             temp_path.unlink()
 
-    print(f"Ratings de iconicidad descargados en {output_path}.")
+    print(f"Iconicity ratings downloaded to {output_path}.")
     return True
 
 
 def main(argv=None):
     parser = argparse.ArgumentParser(
         description=(
-            "Descarga iconicity_ratings_cleaned.csv desde OSF "
-            "para los análisis de iconicidad."
+            "Download iconicity_ratings_cleaned.csv from OSF for iconicity analyses."
         )
     )
     parser.add_argument(
         "--output",
         default=DEFAULT_OUTPUT_PATH,
-        help=f"Ruta de destino (por defecto: {DEFAULT_OUTPUT_PATH}).",
+        help=f"Destination path (default: {DEFAULT_OUTPUT_PATH}).",
     )
     parser.add_argument(
         "--url",
         default=DEFAULT_ICONICITY_RATINGS_URL,
-        help="URL de descarga de OSF.",
+        help="OSF download URL.",
     )
     parser.add_argument(
         "--force",
         action="store_true",
-        help="Sobrescribe el archivo si ya existe.",
+        help="Overwrite the file if it already exists.",
     )
 
     args = parser.parse_args(argv)

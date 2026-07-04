@@ -39,7 +39,7 @@ class CorpusCLIOptions:
 
         if "all" in corpora:
             raise ValueError(
-                "Usa 'all' por separado o una lista concreta de corpus, pero no ambos."
+                "Use 'all' on its own or a specific corpus list, but not both."
             )
 
         return corpora
@@ -61,9 +61,9 @@ class CorpusCLIOptions:
             available_corpora_text = ", ".join(available_corpora)
             missing_corpora_text = ", ".join(missing_corpora)
             raise ValueError(
-                "Los siguientes corpus no existen en Corpora_modified: "
+                "The following corpora do not exist in Corpora_modified: "
                 f"{missing_corpora_text}. "
-                f"Corpus disponibles: {available_corpora_text}"
+                f"Available corpora: {available_corpora_text}"
             )
 
         return CorpusCLIOptions(
@@ -78,20 +78,20 @@ def add_corpus_options(parser):
         nargs="+",
         default=["all"],
         help=(
-            "Usa 'all' para incluir todos los corpus, o una lista como "
+            "Use 'all' to include all corpora, or a list such as "
             "'--corpora Brent Post' o '--corpora Brent,Post'."
         ),
     )
     parser.add_argument(
         "--list-corpora",
         action="store_true",
-        help="Muestra los corpus disponibles en Corpora_modified y termina.",
+        help="List available corpora in Corpora_modified and exit.",
     )
     return parser
 
 
 def build_corpus_options_parser(
-    description="Procesa el corpus y permite filtrar qué corpus usar."
+    description="Process the corpus and filter which corpora to use."
 ):
     parser = argparse.ArgumentParser(description=description)
     return add_corpus_options(parser)

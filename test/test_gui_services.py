@@ -80,13 +80,13 @@ def test_run_types_analysis_delegates_to_grammatical_pipeline():
                 "Corpora_modified",
                 selected_corpora=["Post"],
                 categories=["noun"],
-                output_dir="salida_types",
+                output_dir="output_types",
             )
 
     assert result == {"outputs": {"children": {}}}
     mock_run_pipeline.assert_called_once_with(
         {"Corpora_modified": {"Post": {}}},
-        output_dir="salida_types",
+        output_dir="output_types",
         grammatical_categories=["noun"],
     )
 
@@ -110,7 +110,7 @@ def test_run_types_analysis_can_generate_type_plots():
 
                         result = run_types_analysis(
                             "Corpora_modified",
-                            output_dir="salida_types",
+                            output_dir="output_types",
                             iconicity_csv="iconicity.csv",
                             generate_plots=True,
                             plots_dir="plots_types",
@@ -154,7 +154,7 @@ def test_run_types_analysis_uses_category_named_plots_dir_by_default():
                                 run_types_analysis(
                                     "Corpora_modified",
                                     categories=["adj", "noun"],
-                                    output_dir="salida_types",
+                                    output_dir="output_types",
                                     generate_plots=True,
                                 )
 
@@ -166,7 +166,7 @@ def test_run_types_analysis_uses_category_named_plots_dir_by_default():
         categories_to_plot=["adj", "noun"],
         plot_count_criteria=("adults", "children"),
         type_count_mode="with_repetitions",
-        plots_dir="salida_types/plots_count_criteria_adj_noun",
+        plots_dir="output_types/plots_count_criteria_adj_noun",
     )
 
 
@@ -188,7 +188,7 @@ def test_run_types_analysis_uses_only_once_plots_dir_suffix_by_default():
 
                         run_types_analysis(
                             "Corpora_modified",
-                            output_dir="salida_types",
+                            output_dir="output_types",
                             generate_plots=True,
                             type_count_mode=TYPE_COUNT_ONLY_ONCE,
                         )
@@ -199,7 +199,7 @@ def test_run_types_analysis_uses_only_once_plots_dir_suffix_by_default():
         categories_to_plot=None,
         plot_count_criteria=("adults", "children"),
         type_count_mode=TYPE_COUNT_ONLY_ONCE,
-        plots_dir="salida_types/plots_count_criteria_all_only_once",
+        plots_dir="output_types/plots_count_criteria_all_only_once",
     )
 
 
@@ -234,7 +234,7 @@ def test_run_tokens_analysis_exports_valid_word_stats():
                                     result = run_tokens_analysis(
                                         "Corpora_modified",
                                         selected_corpora=["Post"],
-                                        output_dir="salida_tokens",
+                                        output_dir="output_tokens",
                                         iconicity_csv="iconicity.csv",
                                         generate_plots=False,
                                     )

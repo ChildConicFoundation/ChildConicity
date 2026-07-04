@@ -62,8 +62,8 @@ def test_type_distribution_series_use_total_scope_denominator():
         "02Y02Q",
     )
 
-    noun_series = next(serie for serie in series if serie["label"] == "Niños - noun")
-    total_series = next(serie for serie in series if serie["label"] == "Niños - total")
+    noun_series = next(serie for serie in series if serie["label"] == "Children - noun")
+    total_series = next(serie for serie in series if serie["label"] == "Children - total")
 
     assert total_series["total_words"] == 3
     assert total_series["denominator"] == 3
@@ -89,7 +89,7 @@ def test_type_distribution_series_can_be_limited_to_adults():
         speaker_groups_to_plot=("adults",),
     )
 
-    assert [serie["label"] for serie in series] == ["Adultos - total"]
+    assert [serie["label"] for serie in series] == ["Adults - total"]
 
 
 def test_calculate_cumulative_counts_keeps_intermediate_bins():

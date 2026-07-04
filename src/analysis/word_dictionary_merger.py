@@ -13,7 +13,7 @@ class WordDictionaryMerger:
             dictionary (dict): Dictionary with strings as primary keys
         """
         if not isinstance(dictionary, dict):
-            raise ValueError("El parámetro debe ser un diccionario")
+            raise ValueError("The parameter must be a dictionary")
         self.dictionaries.append(dictionary)
     
     def sort_by_parameter(self, parameter, comparison_op, threshold=None):

@@ -13,7 +13,7 @@ class CorpusManipulator:
     def process_directory(self):
         """Processes the corpus directory"""
         if not self.base_dir:
-            raise ValueError("base_dir no está configurado")
+            raise ValueError("base_dir is not configured")
             
         # Process all .cha files in the directory
         for root, dirs, files in os.walk(self.base_dir):
@@ -52,9 +52,9 @@ class CorpusManipulator:
             with open(output_path, 'w', encoding='utf-8') as f:
                 f.write(modified_content)
                 
-            print(f"Archivo modificado exitosamente: {output_path}")
+            print(f"File modified successfully: {output_path}")
         except Exception as e:
-            print(f"Error al procesar el archivo {input_path}: {str(e)}")
+            print(f"Error processing file {input_path}: {str(e)}")
     
     def extract_age(self, file_path):
         """Extracts the age from the file"""
@@ -98,7 +98,7 @@ class CorpusManipulator:
                 
             return None
         except Exception as e:
-            print(f"Error al extraer la edad de {file_path}: {str(e)}")
+            print(f"Error extracting age from {file_path}: {str(e)}")
             return None
     
     def modify_file(self, input_path, output_path, age):
@@ -121,9 +121,9 @@ class CorpusManipulator:
             with open(output_path, 'w', encoding='utf-8') as f:
                 f.write(modified_content)
                 
-            print(f"Archivo modificado exitosamente: {output_path}")
+            print(f"File modified successfully: {output_path}")
         except Exception as e:
-            print(f"Error al modificar el archivo {input_path}: {str(e)}")
+            print(f"Error modifying file {input_path}: {str(e)}")
     
     def extract_child_name(self, content, file_path=None):
         """Extracts the child name from the file content."""
@@ -176,7 +176,7 @@ class CorpusManipulator:
             # If it is not found anywhere, use the file name
             return "Target_Child"
         except Exception as e:
-            print(f"Error al extraer el nombre del niño: {e}")
+            print(f"Error extracting child name: {e}")
             return "Target_Child"
     
     def add_metadata_to_content(self, content, age, child_name):

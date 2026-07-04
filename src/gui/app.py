@@ -12,6 +12,7 @@ from tkinter import filedialog, messagebox, ttk
 from tkinter.scrolledtext import ScrolledText
 
 from src.corpus_initialization import CorpusInitializer
+from src.i18n import get_locale, save_locale, set_locale, t
 from src.gui.services import (
     CORPUS_DATA_ROOT_KEY,
     DEFAULT_DISTRIBUTION_DIR,
@@ -123,6 +124,12 @@ def _get_analysis_interpreter(mode, generate_plots):
 CORPUS_COLUMN_COUNT = 3
 CATEGORY_COLUMN_COUNT = 3
 
+LOCALE_DISPLAY = {
+    "en": "English",
+    "es": "Español",
+}
+DISPLAY_LOCALE = {label: code for code, label in LOCALE_DISPLAY.items()}
+
 
 class ChildConicityApp(tk.Tk):
     def __init__(self):
@@ -141,12 +148,16 @@ class ChildConicityApp(tk.Tk):
         self.type_count_mode = tk.StringVar(value=DEFAULT_TYPE_COUNT_MODE)
         self.talkbank_email = tk.StringVar(value="")
         self.talkbank_password = tk.StringVar(value="")
-        self.status_text = tk.StringVar(value="Listo.")
+        self.status_text = tk.StringVar(value=t("gui.status.ready"))
+        self.language_display = tk.StringVar(
+            value=LOCALE_DISPLAY.get(get_locale(), LOCALE_DISPLAY["en"])
+        )
         self.corpora_vars = {}
         self.corpus_checkbuttons = []
         self.category_vars = {}
         self.category_checkbuttons = []
         self._is_closing = False
+        self._i18n_bindings = []
 
         self._log_queue = queue.Queue()
         self._busy = False
@@ -155,6 +166,49 @@ class ChildConicityApp(tk.Tk):
         self._build_ui()
         self._poll_log_queue()
         self.after(0, self._initialize_available_data)
+
+    def _bind_i18n(self, widget, key, attr="text", **kwargs):
+        self._i18n_bindings.append((widget, key, attr, kwargs))
+        widget.configure(**{attr: t(key, **kwargs)})
+        return widget
+
+    def _apply_translations(self):
+        for widget, key, attr, kwargs in self._i18n_bindings:
+            if widget.winfo_exists():
+                widget.configure(**{attr: t(key, **kwargs)})
+
+        if self._busy:
+            self.status_text.set(t("gui.status.in_progress"))
+        else:
+            self.status_text.set(t("gui.status.ready"))
+
+        processed_root = self.processed_root.get().strip()
+        if processed_root and os.path.isdir(processed_root):
+            available_corpora = get_available_corpora(processed_root)
+            selected_corpora = set(self._get_selected_corpora() or [])
+            self._rebuild_corpora_checkboxes(available_corpora, selected_corpora)
+            if self.mode.get() == "types":
+                self._refresh_categories()
+        else:
+            empty_message = t("gui.empty.processed_not_found")
+            self._rebuild_corpora_checkboxes([], set(), empty_message=empty_message)
+            self._rebuild_category_checkboxes([], set(), empty_message=empty_message)
+
+        self._check_rated_availability()
+
+    def _on_language_changed(self, _event=None):
+        locale = DISPLAY_LOCALE.get(self.language_display.get())
+        if locale is None or locale == get_locale():
+            return
+
+        set_locale(locale)
+        save_locale(locale)
+        self._apply_translations()
+
+    def _analysis_action_text(self, mode, generate_plots):
+        if generate_plots:
+            return t(f"gui.action.{mode}_plot_generation")
+        return t(f"gui.action.{mode}_analysis")
 
     def _build_ui(self):
         outer_frame = ttk.Frame(self)
@@ -181,32 +235,54 @@ class ChildConicityApp(tk.Tk):
         main_frame.bind("<Configure>", self._on_main_frame_configure)
         self.main_canvas.bind("<Configure>", self._on_main_canvas_configure)
 
-        download_frame = ttk.LabelFrame(main_frame, text="Descargas", padding=10)
+        language_frame = ttk.Frame(main_frame)
+        language_frame.pack(fill="x", pady=(0, 12))
+        self._bind_i18n(
+            ttk.Label(language_frame, text="Language"),
+            "gui.language",
+        )
+        language_combo = ttk.Combobox(
+            language_frame,
+            textvariable=self.language_display,
+            values=list(LOCALE_DISPLAY.values()),
+            state="readonly",
+            width=12,
+        )
+        language_combo.pack(side="left", padx=(8, 0))
+        language_combo.bind("<<ComboboxSelected>>", self._on_language_changed)
+
+        download_frame = ttk.LabelFrame(main_frame, text="Downloads", padding=10)
         download_frame.pack(fill="x")
+        self._bind_i18n(download_frame, "gui.section.downloads")
         self._build_download_ui(download_frame)
 
-        paths_frame = ttk.LabelFrame(main_frame, text="Rutas", padding=10)
+        paths_frame = ttk.LabelFrame(main_frame, text="Paths", padding=10)
         paths_frame.pack(fill="x", pady=(12, 0))
+        self._bind_i18n(paths_frame, "gui.section.paths")
         self._build_paths_ui(paths_frame)
 
         corpus_frame = ttk.LabelFrame(main_frame, text="Corpus", padding=10)
         corpus_frame.pack(fill="both", expand=False, pady=(12, 0))
+        self._bind_i18n(corpus_frame, "gui.section.corpus")
         self._build_corpus_ui(corpus_frame)
 
-        mode_frame = ttk.LabelFrame(main_frame, text="Modo de análisis", padding=10)
+        mode_frame = ttk.LabelFrame(main_frame, text="Analysis mode", padding=10)
         mode_frame.pack(fill="x", pady=(12, 0))
+        self._bind_i18n(mode_frame, "gui.section.analysis_mode")
         self._build_mode_ui(mode_frame)
 
         self.types_frame = ttk.LabelFrame(
-            main_frame, text="Categorías gramaticales", padding=10
+            main_frame, text="Grammatical categories", padding=10
         )
         self.types_frame.pack(fill="both", expand=False, pady=(12, 0))
+        self._bind_i18n(self.types_frame, "gui.section.grammatical_categories")
         self._build_types_ui(self.types_frame)
 
         self.type_count_frame = ttk.LabelFrame(
-            main_frame, text="Cómo contar en las gráficas de types", padding=10
+            main_frame, text="How to count in type plots", padding=10
         )
         self.type_count_frame.pack(fill="x", pady=(12, 0))
+        self._bind_i18n(self.type_count_frame, "gui.section.type_count")
         self._build_type_count_ui(self.type_count_frame)
 
         self.actions_frame = ttk.Frame(main_frame)
@@ -214,65 +290,83 @@ class ChildConicityApp(tk.Tk):
         self._build_actions_ui(self.actions_frame)
 
         self.rated_frame = ttk.LabelFrame(
-            main_frame, text="Exportación con iconicidad (requiere Types)", padding=10
+            main_frame, text="Iconicity export (requires Types)", padding=10
         )
         self.rated_frame.pack(fill="x", pady=(12, 0))
+        self._bind_i18n(self.rated_frame, "gui.section.rated")
         self._build_rated_ui(self.rated_frame)
 
-        self.log_frame = ttk.LabelFrame(main_frame, text="Registro", padding=10)
+        self.log_frame = ttk.LabelFrame(main_frame, text="Log", padding=10)
         self.log_frame.pack(fill="both", expand=True, pady=(12, 0))
+        self._bind_i18n(self.log_frame, "gui.section.log")
         self.log_text = ScrolledText(self.log_frame, height=12, wrap="word")
         self.log_text.pack(fill="both", expand=True)
 
         self._sync_mode_ui()
 
     def _build_download_ui(self, parent):
-        ttk.Label(parent, text="Email TalkBank").grid(row=0, column=0, sticky="w")
+        self._bind_i18n(
+            ttk.Label(parent, text="Email TalkBank"),
+            "gui.label.email_talkbank",
+        ).grid(row=0, column=0, sticky="w")
         ttk.Entry(parent, textvariable=self.talkbank_email, width=50).grid(
             row=0, column=1, sticky="ew", padx=8
         )
 
-        ttk.Label(parent, text="Contraseña").grid(row=1, column=0, sticky="w", pady=(8, 0))
+        self._bind_i18n(
+            ttk.Label(parent, text="Password"),
+            "gui.label.password",
+        ).grid(row=1, column=0, sticky="w", pady=(8, 0))
         ttk.Entry(parent, textvariable=self.talkbank_password, show="*", width=50).grid(
             row=1, column=1, sticky="ew", padx=8, pady=(8, 0)
         )
 
         download_btn = ttk.Button(
             parent,
-            text="Descargar corpus",
+            text="Download corpora",
             command=self._start_download_corpora,
         )
+        self._bind_i18n(download_btn, "gui.button.download_corpora")
         download_btn.grid(row=2, column=0, sticky="w", pady=(10, 0))
         self._busy_widgets.append(download_btn)
 
         iconicity_download_btn = ttk.Button(
             parent,
-            text="Descargar ratings de iconicidad",
+            text="Download iconicity ratings",
             command=self._start_download_iconicity_ratings,
         )
+        self._bind_i18n(iconicity_download_btn, "gui.button.download_ratings")
         iconicity_download_btn.grid(row=2, column=1, sticky="w", padx=8, pady=(10, 0))
         self._busy_widgets.append(iconicity_download_btn)
 
         parent.columnconfigure(1, weight=1)
 
     def _build_paths_ui(self, parent):
-        ttk.Label(parent, text="Corpus origen").grid(row=0, column=0, sticky="w")
+        self._bind_i18n(
+            ttk.Label(parent, text="Source corpus"),
+            "gui.label.source_corpus",
+        ).grid(row=0, column=0, sticky="w")
         ttk.Entry(parent, textvariable=self.source_root, width=70).grid(
             row=0, column=1, sticky="ew", padx=8
         )
-        source_button = ttk.Button(parent, text="Buscar...", command=self._browse_source_root)
+        source_button = ttk.Button(parent, text="Browse...", command=self._browse_source_root)
+        self._bind_i18n(source_button, "gui.button.browse")
         source_button.grid(
             row=0, column=2
         )
         self._busy_widgets.append(source_button)
 
-        ttk.Label(parent, text="Corpus procesado").grid(row=1, column=0, sticky="w")
+        self._bind_i18n(
+            ttk.Label(parent, text="Processed corpus"),
+            "gui.label.processed_corpus",
+        ).grid(row=1, column=0, sticky="w")
         ttk.Entry(parent, textvariable=self.processed_root, width=70).grid(
             row=1, column=1, sticky="ew", padx=8, pady=(8, 0)
         )
         processed_button = ttk.Button(
-            parent, text="Buscar...", command=self._browse_processed_root
+            parent, text="Browse...", command=self._browse_processed_root
         )
+        self._bind_i18n(processed_button, "gui.button.browse")
         processed_button.grid(
             row=1, column=2, pady=(8, 0)
         )
@@ -283,16 +377,20 @@ class ChildConicityApp(tk.Tk):
     def _build_corpus_ui(self, parent):
         all_corpora_check = ttk.Checkbutton(
             parent,
-            text="Todos los corpus",
+            text="All corpora",
             variable=self.all_corpora,
             command=self._sync_corpora_ui,
         )
+        self._bind_i18n(all_corpora_check, "gui.checkbox.all_corpora")
         all_corpora_check.pack(anchor="w")
         self._busy_widgets.append(all_corpora_check)
 
-        ttk.Label(
-            parent,
-            text="Selecciona uno o varios corpus con casillas:",
+        self._bind_i18n(
+            ttk.Label(
+                parent,
+                text="Select one or more corpora using the checkboxes:",
+            ),
+            "gui.help.corpora_select",
         ).pack(anchor="w", pady=(8, 4))
 
         corpora_container = ttk.Frame(parent)
@@ -333,9 +431,7 @@ class ChildConicityApp(tk.Tk):
         self._rebuild_corpora_checkboxes(
             [],
             selected_corpora=set(),
-            empty_message=(
-                "Pulsa 'Mostrar corpus inicializados' para cargar los corpus disponibles."
-            ),
+            empty_message=t("gui.empty.click_show_corpora"),
         )
 
         buttons_frame = ttk.Frame(parent)
@@ -343,17 +439,19 @@ class ChildConicityApp(tk.Tk):
 
         initialize_button = ttk.Button(
             buttons_frame,
-            text="Inicializar corpus",
+            text="Initialize corpora",
             command=self._start_initialize_corpora,
         )
+        self._bind_i18n(initialize_button, "gui.button.initialize_corpora")
         initialize_button.pack(side="left")
         self._busy_widgets.append(initialize_button)
 
         refresh_button = ttk.Button(
             buttons_frame,
-            text="Mostrar corpus inicializados",
+            text="Show initialized corpora",
             command=self._refresh_corpora,
         )
+        self._bind_i18n(refresh_button, "gui.button.show_initialized")
         refresh_button.pack(side="left", padx=(8, 0))
         self._busy_widgets.append(refresh_button)
 
@@ -384,40 +482,49 @@ class ChildConicityApp(tk.Tk):
 
         output_frame = ttk.Frame(parent)
         output_frame.pack(fill="x", pady=(10, 0))
-        ttk.Label(output_frame, text="Directorio de salida").pack(side="left")
+        self._bind_i18n(
+            ttk.Label(output_frame, text="Output directory"),
+            "gui.label.output_directory",
+        ).pack(side="left")
         ttk.Entry(output_frame, textvariable=self.output_dir, width=55).pack(
             side="left", fill="x", expand=True, padx=(8, 0)
         )
 
     def _build_rated_ui(self, parent):
-        ttk.Label(
-            parent,
-            text=(
-                "Enriquece los datos trimestrales con ratings de iconicidad y genera "
-                "WordCount (con rating) y LemaCount (lemas colapsados). "
-                "Requiere haber ejecutado el análisis de Types previamente."
+        self._bind_i18n(
+            ttk.Label(
+                parent,
+                text=t("gui.help.rated"),
+                wraplength=860,
+                justify="left",
             ),
-            wraplength=860,
-            justify="left",
+            "gui.help.rated",
         ).pack(anchor="w")
 
         source_frame = ttk.Frame(parent)
         source_frame.pack(fill="x", pady=(10, 0))
-        ttk.Label(source_frame, text="Datos trimestrales").pack(side="left")
+        self._bind_i18n(
+            ttk.Label(source_frame, text="Quarterly data"),
+            "gui.label.quarterly_data",
+        ).pack(side="left")
         ttk.Entry(source_frame, textvariable=self.rated_source_dir, width=55).pack(
             side="left", fill="x", expand=True, padx=(8, 0)
         )
         browse_btn = ttk.Button(
             source_frame,
-            text="Buscar...",
+            text="Browse...",
             command=self._browse_rated_source_dir_and_refresh,
         )
+        self._bind_i18n(browse_btn, "gui.button.browse")
         browse_btn.pack(side="left", padx=(8, 0))
         self._busy_widgets.append(browse_btn)
 
         output_frame = ttk.Frame(parent)
         output_frame.pack(fill="x", pady=(8, 0))
-        ttk.Label(output_frame, text="Directorio de salida").pack(side="left")
+        self._bind_i18n(
+            ttk.Label(output_frame, text="Output directory"),
+            "gui.label.output_directory",
+        ).pack(side="left")
         ttk.Entry(output_frame, textvariable=self.rated_output_dir, width=55).pack(
             side="left", fill="x", expand=True, padx=(8, 0)
         )
@@ -427,25 +534,30 @@ class ChildConicityApp(tk.Tk):
 
         self.rated_run_button = ttk.Button(
             parent,
-            text="Ejecutar exportación",
+            text="Run export",
             command=self._start_rated_export,
             state=tk.DISABLED,
         )
+        self._bind_i18n(self.rated_run_button, "gui.button.run_export")
         self.rated_run_button.pack(anchor="w", pady=(8, 0))
 
     def _build_types_ui(self, parent):
         all_categories_check = ttk.Checkbutton(
             parent,
-            text="Todas las categorías",
+            text="All categories",
             variable=self.all_categories,
             command=self._sync_categories_ui,
         )
+        self._bind_i18n(all_categories_check, "gui.checkbox.all_categories")
         all_categories_check.pack(anchor="w")
         self._busy_widgets.append(all_categories_check)
 
-        ttk.Label(
-            parent,
-            text="Selecciona una o varias categorías con casillas:",
+        self._bind_i18n(
+            ttk.Label(
+                parent,
+                text="Select one or more categories using the checkboxes:",
+            ),
+            "gui.help.categories_select",
         ).pack(anchor="w", pady=(8, 4))
 
         categories_container = ttk.Frame(parent)
@@ -486,9 +598,7 @@ class ChildConicityApp(tk.Tk):
         self._rebuild_category_checkboxes(
             [],
             selected_categories=set(),
-            empty_message=(
-                "Pulsa 'Mostrar corpus inicializados' o espera a que se carguen las categorías."
-            ),
+            empty_message=t("gui.empty.click_show_or_wait"),
         )
 
         self.types_actions_frame = ttk.Frame(parent)
@@ -496,56 +606,60 @@ class ChildConicityApp(tk.Tk):
 
         self.types_run_analysis_button = ttk.Button(
             self.types_actions_frame,
-            text="Ejecutar análisis",
+            text="Run analysis",
             command=self._start_run_analysis,
         )
+        self._bind_i18n(self.types_run_analysis_button, "gui.button.run_analysis")
         self.types_run_analysis_button.pack(anchor="w")
         self._busy_widgets.append(self.types_run_analysis_button)
 
     def _build_type_count_ui(self, parent):
-        ttk.Label(
-            parent,
-            text=(
-                "Elige si las gráficas deben usar las repeticiones reales o contar "
-                "cada forma solo una vez. Esto solo afecta a las gráficas de Types; "
-                "los JSON exportados siguen en formato estándar."
+        self._bind_i18n(
+            ttk.Label(
+                parent,
+                text=t("gui.help.type_count"),
+                wraplength=860,
+                justify="left",
             ),
-            wraplength=860,
-            justify="left",
+            "gui.help.type_count",
         ).pack(anchor="w")
 
         with_repetitions_radio = ttk.Radiobutton(
             parent,
-            text="Con repeticiones",
+            text="With repetitions",
             value=TYPE_COUNT_WITH_REPETITIONS,
             variable=self.type_count_mode,
         )
+        self._bind_i18n(with_repetitions_radio, "gui.radio.with_repetitions")
         with_repetitions_radio.pack(anchor="w", pady=(8, 0))
         self._busy_widgets.append(with_repetitions_radio)
 
         only_once_radio = ttk.Radiobutton(
             parent,
-            text="Una vez por forma",
+            text="Once per form",
             value=TYPE_COUNT_ONLY_ONCE,
             variable=self.type_count_mode,
         )
+        self._bind_i18n(only_once_radio, "gui.radio.once_per_form")
         only_once_radio.pack(anchor="w", pady=(4, 0))
         self._busy_widgets.append(only_once_radio)
 
     def _build_actions_ui(self, parent):
         self.run_analysis_button = ttk.Button(
             parent,
-            text="Ejecutar análisis",
+            text="Run analysis",
             command=self._start_run_analysis,
         )
+        self._bind_i18n(self.run_analysis_button, "gui.button.run_analysis")
         self.run_analysis_button.pack(side="left")
         self._busy_widgets.append(self.run_analysis_button)
 
         self.generate_plots_button = ttk.Button(
             parent,
-            text="Generar gráficas",
+            text="Generate plots",
             command=self._start_generate_plots,
         )
+        self._bind_i18n(self.generate_plots_button, "gui.button.generate_plots")
         self.generate_plots_button.pack(side="left", padx=(8, 0))
         self._busy_widgets.append(self.generate_plots_button)
 
@@ -556,7 +670,7 @@ class ChildConicityApp(tk.Tk):
 
     def _start_download_corpora(self):
         if self._busy:
-            self._notify_busy("Ya hay otra tarea en curso.")
+            self._notify_busy(t("gui.notify.busy"))
             return
 
         email = self.talkbank_email.get().strip()
@@ -564,10 +678,13 @@ class ChildConicityApp(tk.Tk):
         output_dir = self.source_root.get().strip() or "Corpora"
 
         if not email or not password:
-            messagebox.showerror("Error", "Introduce el email y la contraseña de TalkBank.")
+            messagebox.showerror(
+                t("gui.error.title"),
+                t("gui.error.talkbank_credentials"),
+            )
             return
 
-        self._append_log("\nIniciando descarga de corpus de TalkBank...\n")
+        self._append_log(t("gui.log.download_corpora_start"))
         self._run_in_background(
             lambda: self._download_corpora_worker(email, password, output_dir)
         )
@@ -584,22 +701,24 @@ class ChildConicityApp(tk.Tk):
                     output_dir=output_dir,
                     force=False,
                 )
-            self._enqueue_log("\nDescarga completada.\n")
+            self._enqueue_log(t("gui.log.download_complete"))
             self._enqueue_callback(self._refresh_corpora)
         except Exception as exc:
             self._enqueue_callback(
-                lambda e=exc: messagebox.showerror("Error al descargar corpus", str(e))
+                lambda e=exc: messagebox.showerror(t("gui.error.corpus_download"), str(e))
             )
         finally:
-            self._enqueue_callback(lambda: self._set_busy_state(False, "Listo."))
+            self._enqueue_callback(
+                lambda: self._set_busy_state(False, t("gui.status.ready"))
+            )
 
     def _start_download_iconicity_ratings(self):
         if self._busy:
-            self._notify_busy("Ya hay otra tarea en curso.")
+            self._notify_busy(t("gui.notify.busy"))
             return
 
         output_path = os.path.join(_project_root(), DEFAULT_ICONICITY_CSV)
-        self._append_log("\nIniciando descarga de ratings de iconicidad...\n")
+        self._append_log(t("gui.log.ratings_download_start"))
         self._run_in_background(
             lambda: self._download_iconicity_ratings_worker(output_path)
         )
@@ -611,15 +730,17 @@ class ChildConicityApp(tk.Tk):
         try:
             with redirect_stdout(writer), redirect_stderr(writer):
                 download_iconicity_ratings(output_path=output_path, force=True)
-            self._enqueue_log("\nDescarga de ratings completada.\n")
+            self._enqueue_log(t("gui.log.ratings_download_complete"))
         except Exception as exc:
             self._enqueue_callback(
                 lambda e=exc: messagebox.showerror(
-                    "Error al descargar ratings de iconicidad", str(e)
+                    t("gui.error.ratings_download"), str(e)
                 )
             )
         finally:
-            self._enqueue_callback(lambda: self._set_busy_state(False, "Listo."))
+            self._enqueue_callback(
+                lambda: self._set_busy_state(False, t("gui.status.ready"))
+            )
 
     def _browse_source_root(self):
         selected_dir = filedialog.askdirectory(initialdir=self.source_root.get() or ".")
@@ -655,27 +776,27 @@ class ChildConicityApp(tk.Tk):
         )
         if has_data:
             self.rated_status_label.configure(
-                text=f"Datos encontrados en: {source}",
+                text=t("gui.rated.data_found", path=source),
                 foreground="green",
             )
             if not self._busy:
                 self.rated_run_button.configure(state=tk.NORMAL)
         else:
             self.rated_status_label.configure(
-                text="No se encuentran datos trimestrales. Ejecuta primero el análisis de Types.",
+                text=t("gui.rated.no_data"),
                 foreground="red",
             )
             self.rated_run_button.configure(state=tk.DISABLED)
 
     def _start_rated_export(self):
         if self._busy:
-            self._notify_busy("Ya hay otra tarea en curso.")
+            self._notify_busy(t("gui.notify.busy"))
             return
 
         rated_source = self.rated_source_dir.get().strip()
         output_dir = self.rated_output_dir.get().strip() or DEFAULT_RATED_OUTPUT_DIR
 
-        self._append_log("\nLanzando exportación con iconicidad...\n")
+        self._append_log(t("gui.log.iconicity_export_start"))
         self._run_in_background(
             lambda: self._run_analysis_worker(
                 mode="rated",
@@ -698,12 +819,12 @@ class ChildConicityApp(tk.Tk):
             self._rebuild_corpora_checkboxes(
                 [],
                 selected_corpora=set(),
-                empty_message="No se encuentra la carpeta de corpus procesado.",
+                empty_message=t("gui.empty.processed_not_found"),
             )
             self._rebuild_category_checkboxes(
                 [],
                 selected_categories=set(),
-                empty_message="No se encuentra la carpeta de corpus procesado.",
+                empty_message=t("gui.empty.processed_not_found"),
             )
             return
 
@@ -789,7 +910,10 @@ class ChildConicityApp(tk.Tk):
     def _refresh_corpora(self):
         processed_root = self.processed_root.get().strip()
         if not processed_root:
-            messagebox.showerror("Error", "Indica primero la ruta de corpus procesado.")
+            messagebox.showerror(
+                t("gui.error.title"),
+                t("gui.error.set_processed_path"),
+            )
             return
 
         available_corpora = get_available_corpora(processed_root)
@@ -797,10 +921,17 @@ class ChildConicityApp(tk.Tk):
         self._rebuild_corpora_checkboxes(available_corpora, selected_corpora)
 
         self._refresh_categories()
+        corpora_list = (
+            ", ".join(available_corpora)
+            if available_corpora
+            else t("gui.common.none")
+        )
         self._append_log(
-            f"Corpus inicializados en {processed_root}: "
-            + (", ".join(available_corpora) if available_corpora else "(ninguno)")
-            + "\n"
+            t(
+                "gui.log.corpora_refreshed",
+                path=processed_root,
+                list=corpora_list,
+            )
         )
 
     def _refresh_categories(self):
@@ -827,7 +958,7 @@ class ChildConicityApp(tk.Tk):
             self._rebuild_category_checkboxes(
                 [],
                 selected_categories=set(),
-                empty_message=f"No se pudieron cargar las categorías: {exc}",
+                empty_message=t("gui.log.categories_load_error", error=exc),
             )
 
     def _get_selected_corpora(self):
@@ -858,8 +989,10 @@ class ChildConicityApp(tk.Tk):
         self,
         categories,
         selected_categories,
-        empty_message="No hay categorías disponibles.",
+        empty_message=None,
     ):
+        if empty_message is None:
+            empty_message = t("gui.empty.no_categories")
         for child in self.categories_inner_frame.winfo_children():
             child.destroy()
 
@@ -909,8 +1042,10 @@ class ChildConicityApp(tk.Tk):
         self,
         corpora,
         selected_corpora,
-        empty_message="No hay corpus disponibles.",
+        empty_message=None,
     ):
+        if empty_message is None:
+            empty_message = t("gui.empty.no_corpora")
         for child in self.corpora_inner_frame.winfo_children():
             child.destroy()
 
@@ -967,11 +1102,11 @@ class ChildConicityApp(tk.Tk):
 
     def _start_initialize_corpora(self):
         if self._busy:
-            self._notify_busy("Ya hay otra tarea en curso.")
+            self._notify_busy(t("gui.notify.busy"))
             return
         source_root = self.source_root.get().strip()
         processed_root = self.processed_root.get().strip()
-        self._append_log("\nIniciando inicialización de corpus...\n")
+        self._append_log(t("gui.log.init_start"))
         self._run_in_background(
             lambda: self._initialize_corpora_worker(source_root, processed_root)
         )
@@ -984,7 +1119,7 @@ class ChildConicityApp(tk.Tk):
 
     def _start_analysis_request(self, generate_plots):
         if self._busy:
-            self._notify_busy("Ya hay otra tarea en curso.")
+            self._notify_busy(t("gui.notify.busy"))
             return
 
         mode = self.mode.get()
@@ -998,8 +1133,8 @@ class ChildConicityApp(tk.Tk):
             rated_source = self.rated_source_dir.get().strip()
             if not rated_source or not os.path.isdir(rated_source):
                 messagebox.showerror(
-                    "Error",
-                    f"La carpeta de datos trimestrales no existe: {rated_source}",
+                    t("gui.error.title"),
+                    t("gui.validation.quarterly_missing", path=rated_source),
                 )
                 return
         else:
@@ -1008,25 +1143,28 @@ class ChildConicityApp(tk.Tk):
                 selected_corpora,
             )
             if validation_error is not None:
-                messagebox.showerror("Error", validation_error)
+                messagebox.showerror(t("gui.error.title"), validation_error)
                 return
 
         if mode == "types" and selected_categories == []:
             messagebox.showerror(
-                "Error",
-                "Selecciona al menos una categoría o marca 'Todas las categorías'.",
+                t("gui.error.title"),
+                t("gui.error.select_category"),
             )
             return
 
-        action_text = (
-            f"generación de gráficas de {mode}"
-            if generate_plots
-            else f"análisis de {mode}"
+        action_text = self._analysis_action_text(mode, generate_plots)
+        corpora_text = (
+            ", ".join(selected_corpora)
+            if selected_corpora
+            else t("gui.common.all_corpora")
         )
         self._append_log(
-            "\nLanzando "
-            f"{action_text} para "
-            f"{', '.join(selected_corpora) if selected_corpora else 'todos los corpus'}...\n"
+            t(
+                "gui.log.analysis_start",
+                action=action_text,
+                corpora=corpora_text,
+            )
         )
         self._run_in_background(
             lambda: self._run_analysis_worker(
@@ -1042,10 +1180,10 @@ class ChildConicityApp(tk.Tk):
 
     def _notify_busy(self, text):
         self._append_log(f"\n{text}\n")
-        messagebox.showinfo("En curso", text)
+        messagebox.showinfo(t("gui.info.in_progress"), text)
 
     def _run_in_background(self, worker):
-        self._set_busy_state(True, "En curso...")
+        self._set_busy_state(True, t("gui.status.in_progress"))
         thread = threading.Thread(target=worker, daemon=True)
         thread.start()
 
@@ -1067,26 +1205,20 @@ class ChildConicityApp(tk.Tk):
 
     def _validate_analysis_inputs(self, processed_root, selected_corpora):
         if not processed_root:
-            return "Indica primero la ruta de corpus procesado."
+            return t("gui.validation.set_processed_path")
 
         if os.path.basename(os.path.normpath(processed_root)) != CORPUS_DATA_ROOT_KEY:
-            return (
-                "La carpeta de corpus procesado debe llamarse "
-                f"{CORPUS_DATA_ROOT_KEY}."
+            return t(
+                "gui.validation.processed_name",
+                name=CORPUS_DATA_ROOT_KEY,
             )
 
         if not os.path.isdir(processed_root):
-            return (
-                "La carpeta de corpus procesado no existe: "
-                f"{processed_root}"
-            )
+            return t("gui.validation.processed_missing", path=processed_root)
 
         available_corpora = get_available_corpora(processed_root)
         if not available_corpora:
-            return (
-                "No hay corpus procesados disponibles en "
-                f"{processed_root}. Inicializa o refresca primero."
-            )
+            return t("gui.validation.no_corpora", path=processed_root)
 
         if selected_corpora is None:
             return None
@@ -1098,9 +1230,9 @@ class ChildConicityApp(tk.Tk):
             or not os.path.isdir(os.path.join(processed_root, corpus_name))
         ]
         if missing_corpora:
-            return (
-                "Faltan corpus procesados para ejecutar el análisis: "
-                + ", ".join(missing_corpora)
+            return t(
+                "gui.validation.missing_corpora",
+                list=", ".join(missing_corpora),
             )
 
         return None
@@ -1114,16 +1246,18 @@ class ChildConicityApp(tk.Tk):
                     output_root=processed_root,
                 )
                 initializer.initialize_all()
-            self._enqueue_log("\nInicialización completada.\n")
+            self._enqueue_log(t("gui.log.init_complete"))
             self._enqueue_callback(self._refresh_corpora)
         except Exception as exc:
             self._enqueue_callback(
                 lambda e=exc: messagebox.showerror(
-                    "Error al inicializar corpus", str(e)
+                    t("gui.error.init_corpus"), str(e)
                 )
             )
         finally:
-            self._enqueue_callback(lambda: self._set_busy_state(False, "Listo."))
+            self._enqueue_callback(
+                lambda: self._set_busy_state(False, t("gui.status.ready"))
+            )
 
     def _run_analysis_worker(
         self,
@@ -1156,10 +1290,12 @@ class ChildConicityApp(tk.Tk):
                 )
         except Exception as exc:
             self._enqueue_callback(
-                lambda e=exc: messagebox.showerror("Error al ejecutar el análisis", str(e))
+                lambda e=exc: messagebox.showerror(t("gui.error.analysis"), str(e))
             )
         finally:
-            self._enqueue_callback(lambda: self._set_busy_state(False, "Listo."))
+            self._enqueue_callback(
+                lambda: self._set_busy_state(False, t("gui.status.ready"))
+            )
             self._enqueue_callback(self._check_rated_availability)
 
     def _run_analysis(
@@ -1175,7 +1311,7 @@ class ChildConicityApp(tk.Tk):
         analysis_interpreter = _get_analysis_interpreter(mode, generate_plots)
         if analysis_interpreter is not None:
             print(
-                "Usando interprete para el analisis:",
+                "Using interpreter for analysis:",
                 analysis_interpreter,
             )
             return self._run_analysis_in_subprocess(
@@ -1189,9 +1325,7 @@ class ChildConicityApp(tk.Tk):
                 type_count_mode=type_count_mode,
             )
 
-        raise RuntimeError(
-            "No hay un interprete disponible con las dependencias necesarias para el análisis."
-        )
+        raise RuntimeError(t("gui.error.no_interpreter"))
 
     def _run_analysis_in_subprocess(
         self,
@@ -1260,7 +1394,7 @@ class ChildConicityApp(tk.Tk):
                 ]
             )
 
-        print("Iniciando proceso externo de análisis...")
+        print("Starting external analysis process...")
         env = os.environ.copy()
         env.setdefault(
             "MPLCONFIGDIR",
@@ -1278,7 +1412,7 @@ class ChildConicityApp(tk.Tk):
             bufsize=1,
         )
         try:
-            print(f"Proceso externo iniciado (PID {process.pid}).")
+            print(f"External process started (PID {process.pid}).")
             if process.stdout is not None:
                 for line in process.stdout:
                     print(line, end="")
@@ -1286,7 +1420,7 @@ class ChildConicityApp(tk.Tk):
             return_code = process.wait()
             if return_code != 0:
                 raise RuntimeError(
-                    f"El analisis externo termino con codigo {return_code}."
+                    t("gui.error.external_exit", code=return_code)
                 )
 
             with open(result_path, "r", encoding="utf-8") as file:
@@ -1298,45 +1432,48 @@ class ChildConicityApp(tk.Tk):
     def _report_analysis_result(self, mode, output_dir, result, generate_plots):
         if mode == "rated":
             self._enqueue_log(
-                "\nExportación con iconicidad completada. Resultados en: "
-                f"{output_dir or DEFAULT_RATED_OUTPUT_DIR}\n"
+                t(
+                    "gui.log.iconicity_export_done",
+                    path=output_dir or DEFAULT_RATED_OUTPUT_DIR,
+                )
             )
             return
 
         if mode == "types":
             if generate_plots:
+                self._enqueue_log(t("gui.log.types_plots_done"))
+                self._enqueue_log(t("gui.log.types_plots_count_note"))
                 self._enqueue_log(
-                    "\nGeneración de gráficas de types completada.\n"
-                )
-                self._enqueue_log(
-                    "El criterio de conteo elegido solo se ha aplicado a las "
-                    "gráficas; los JSON exportados no cambian.\n"
-                )
-                self._enqueue_log(
-                    "Gráficas de types guardadas en: "
-                    f"{result['plot_outputs']['plots_dir']}\n"
+                    t(
+                        "gui.log.types_plots_saved",
+                        path=result["plot_outputs"]["plots_dir"],
+                    )
                 )
             else:
                 self._enqueue_log(
-                    "\nAnálisis de types completado. Resultados exportados en: "
-                    f"{output_dir or DEFAULT_TYPES_OUTPUT_DIR}\n"
+                    t(
+                        "gui.log.types_analysis_done",
+                        path=output_dir or DEFAULT_TYPES_OUTPUT_DIR,
+                    )
                 )
             return
 
         if generate_plots:
+            self._enqueue_log(t("gui.log.token_plots_done"))
             self._enqueue_log(
-                "\nGeneración de gráficas de tokens completada.\n"
-            )
-            self._enqueue_log(
-                "Gráficas guardadas en: "
-                f"{result['plot_outputs']['plots_dir']} y "
-                f"{result['plot_outputs']['distribution_dir']}\n"
+                t(
+                    "gui.log.plots_saved_pair",
+                    plots=result["plot_outputs"]["plots_dir"],
+                    distribution=result["plot_outputs"]["distribution_dir"],
+                )
             )
             return
 
         self._enqueue_log(
-            "\nAnálisis de tokens completado. Resultados exportados en: "
-            f"{output_dir or DEFAULT_TOKENS_OUTPUT_DIR}\n"
+            t(
+                "gui.log.token_analysis_done",
+                path=output_dir or DEFAULT_TOKENS_OUTPUT_DIR,
+            )
         )
 
     def _enqueue_log(self, text):

@@ -27,13 +27,13 @@ def print_metadata(data, level=0):
             for file in content["files"]:
                 print("  " * level + "📄 " + file["metadata"]["file_path"])
                 metadata = file["metadata"]
-                print("  " * (level + 1) + f"Nombre: {metadata.get('child_name', 'N/A')}")
-                print("  " * (level + 1) + f"Edad: {metadata.get('child_age', 'N/A')}")
+                print("  " * (level + 1) + f"Name: {metadata.get('child_name', 'N/A')}")
+                print("  " * (level + 1) + f"Age: {metadata.get('child_age', 'N/A')}")
                 print(
                     "  " * (level + 1)
-                    + f"Participantes: {metadata.get('participants', 'N/A')}"
+                    + f"Participants: {metadata.get('participants', 'N/A')}"
                 )
-                print("  " * (level + 1) + f"Tipos: {metadata.get('types', 'N/A')}")
+                print("  " * (level + 1) + f"Types: {metadata.get('types', 'N/A')}")
                 print()
 
         for key, value in content.items():
@@ -62,13 +62,13 @@ def print_sampled_metadata(data):
             continue
 
         for file in corpus_branch["files"][:4]:
-            print(f"\nArchivo: {file['metadata']['file_path']}")
-            print(f"Nombre del niño: {file['metadata'].get('child_name', 'N/A')}")
-            print(f"Edad: {file['metadata'].get('child_age', 'N/A')}")
-            print(f"Participantes: {file['metadata'].get('participants', 'N/A')}")
-            print(f"Tipos: {file['metadata'].get('types', 'N/A')}")
+            print(f"\nFile: {file['metadata']['file_path']}")
+            print(f"Child name: {file['metadata'].get('child_name', 'N/A')}")
+            print(f"Age: {file['metadata'].get('child_age', 'N/A')}")
+            print(f"Participants: {file['metadata'].get('participants', 'N/A')}")
+            print(f"Types: {file['metadata'].get('types', 'N/A')}")
             if file["metadata"].get("utterances"):
-                print(f"Primera expresión: {file['metadata']['utterances'][0]['text']}")
+                print(f"First utterance: {file['metadata']['utterances'][0]['text']}")
             print("-" * 50)
 
 
@@ -76,7 +76,7 @@ def show_lew_early_expressions(processed_data):
     """
     Shows Lew utterances when he was younger.
     """
-    print("\n=== Expresiones tempranas de Lew ===")
+    print("\n=== Lew early utterances ===")
     processed_data = require_corpus_data_root(processed_data)
 
     if "Post" not in processed_data[CORPUS_DATA_ROOT_KEY]:
@@ -91,11 +91,11 @@ def show_lew_early_expressions(processed_data):
         return
 
     oldest_file = sorted_files[0]
-    print(f"\nArchivo: {oldest_file['metadata']['file_path']}")
-    print(f"Edad: {oldest_file['metadata'].get('child_age', 'N/A')}")
-    print("\nPrimeras 20 expresiones de Lew:")
+    print(f"\nFile: {oldest_file['metadata']['file_path']}")
+    print(f"Age: {oldest_file['metadata'].get('child_age', 'N/A')}")
+    print("\nFirst 20 Lew utterances:")
 
     for i, (_, entry) in enumerate(list(oldest_file["children_data"].items())[:20]):
         print(f"\n{i + 1}. {entry['text']}")
         if entry.get("timestamp"):
-            print(f"   Tiempo: {entry['timestamp']['start']}-{entry['timestamp']['end']}")
+            print(f"   Time: {entry['timestamp']['start']}-{entry['timestamp']['end']}")

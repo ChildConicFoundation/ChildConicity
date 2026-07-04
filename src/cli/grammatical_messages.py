@@ -1,6 +1,6 @@
 def prepare_grammatical_cli_options(options, available_categories, writer=print):
     if options.list_categories:
-        writer("\nCategorías gramaticales disponibles:")
+        writer("\nAvailable grammatical categories:")
         for category in available_categories:
             writer(f"- {category}")
         return options, True
@@ -8,10 +8,10 @@ def prepare_grammatical_cli_options(options, available_categories, writer=print)
     validated_options = options.validate_against(available_categories)
 
     if validated_options.categories is None:
-        writer("\nTrabajando con todas las categorías gramaticales.")
+        writer("\nWorking with all grammatical categories.")
     else:
         writer(
-            "\nTrabajando con estas categorías gramaticales: "
+            "\nWorking with these grammatical categories: "
             + ", ".join(validated_options.categories)
         )
 

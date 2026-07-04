@@ -45,28 +45,28 @@ def main():
         }
     
     # Show results
-    print(f"\nResultados para {corpus_name}:")
+    print(f"\nResults for {corpus_name}:")
     for directory, data in directory_data.items():
-        print(f"\nDirectorio: {directory}")
-        print(f"  Número de expresiones de niños: {len(data['children_data'])}")
-        print(f"  Número de expresiones de adultos: {len(data['adults_data'])}")
+        print(f"\nDirectory: {directory}")
+        print(f"  Number of child utterances: {len(data['children_data'])}")
+        print(f"  Number of adult utterances: {len(data['adults_data'])}")
         
         # Show examples
-        print("\n  Ejemplos de expresiones de niños:")
+        print("\n  Sample child utterances:")
         for i, (key, value) in enumerate(list(data['children_data'].items())[:3]):
             print(f"    {key}:")
-            print(f"      Hablante: {value['speaker']}")
-            print(f"      Texto: {value['text']}")
+            print(f"      Speaker: {value['speaker']}")
+            print(f"      Text: {value['text']}")
             if value['timestamp']:
-                print(f"      Tiempo: {value['timestamp']['start']}-{value['timestamp']['end']}")
+                print(f"      Time: {value['timestamp']['start']}-{value['timestamp']['end']}")
         
-        print("\n  Ejemplos de expresiones de adultos:")
+        print("\n  Sample adult utterances:")
         for i, (key, value) in enumerate(list(data['adults_data'].items())[:3]):
             print(f"    {key}:")
-            print(f"      Hablante: {value['speaker']}")
-            print(f"      Texto: {value['text']}")
+            print(f"      Speaker: {value['speaker']}")
+            print(f"      Text: {value['text']}")
             if value['timestamp']:
-                print(f"      Tiempo: {value['timestamp']['start']}-{value['timestamp']['end']}")
+                print(f"      Time: {value['timestamp']['start']}-{value['timestamp']['end']}")
 
 def process_cha_files(data, current_path=""):
     """Recursively processes all .cha files in the directory structure"""
@@ -79,7 +79,7 @@ def process_cha_files(data, current_path=""):
             for file in content['files']:
                 if file['metadata']['file_path'].endswith('.cha'):
                     file_path = file['metadata']['file_path']
-                    print(f"Procesando archivo: {file_path}")
+                    print(f"Processing file: {file_path}")
                     file_formatter = DataFormatter()
                     children_data, _, adults_data = file_formatter.format_cha_data_from(file_path)
                     
@@ -101,7 +101,7 @@ def process_cha_files(data, current_path=""):
 
 def main():
     # Process the CSV file first to get iconicity data
-    print("Procesando archivo CSV:")
+    print("Processing CSV file:")
     formatter = DataFormatter()
     csv_data = formatter.format_csv_data_from('iconicity_ratings/iconicity_ratings_cleaned.csv')
     
@@ -124,11 +124,11 @@ if __name__ == "__main__":
     main()
 
     # Process CSV file
-    print("Procesando archivo CSV:")
+    print("Processing CSV file:")
     formatter = DataFormatter()
     csv_data = formatter.format_csv_data_from('iconicity_ratings/iconicity_ratings_cleaned.csv')
     if csv_data is not None:
-        print("\nPrimeras 5 entradas del CSV:")
+        print("\nFirst 5 CSV entries:")
         for id, entry in list(csv_data.items())[:5]:
             print(f"\n{id}:")
             for key, value in entry.items():
@@ -137,83 +137,83 @@ if __name__ == "__main__":
     print("\n" + "="*50 + "\n")
     
     # Process .cha file
-    print("Procesando archivo .cha:")
+    print("Processing .cha file:")
     children_data, _, adults_data = formatter.format_cha_data_from('record.cha')
     
-    print("\nPrimeras 10 expresiones de niños:")
+    print("\nFirst 10 child utterances:")
     for id, entry in list(children_data.items())[:10]:
         print(f"\n{id}:")
-        print(f"  Hablante: {entry['speaker']}")
-        print(f"  Texto: {entry['text']}")
+        print(f"  Speaker: {entry['speaker']}")
+        print(f"  Text: {entry['text']}")
         if entry['timestamp']:
-            print(f"  Tiempo: {entry['timestamp']['start']}-{entry['timestamp']['end']}")
+            print(f"  Time: {entry['timestamp']['start']}-{entry['timestamp']['end']}")
     
     print("\n" + "="*50 + "\n")
     
-    print("Primeras 10 expresiones de adultos:")
+    print("First 10 adult utterances:")
     for id, entry in list(adults_data.items())[:10]:
         print(f"\n{id}:")
-        print(f"  Hablante: {entry['speaker']}")
-        print(f"  Texto: {entry['text']}")
+        print(f"  Speaker: {entry['speaker']}")
+        print(f"  Text: {entry['text']}")
         if entry['timestamp']:
-            print(f"  Tiempo: {entry['timestamp']['start']}-{entry['timestamp']['end']}")
+            print(f"  Time: {entry['timestamp']['start']}-{entry['timestamp']['end']}")
     
     print("\n" + "="*50 + "\n")
     
     # Show .cha file metadata
-    print("Metadatos del archivo .cha:")
+    print(".cha file metadata:")
     reader = Reader()
     cha_data = reader.read_cha('record.cha')
     if cha_data is not None:
         metadata = cha_data['metadata']
-        print(f"Codificación: {metadata['encoding']}")
+        print(f"Encoding: {metadata['encoding']}")
         print(f"PID: {metadata['pid']}")
-        print(f"Idiomas: {', '.join(metadata['languages'])}")
-        print("\nParticipantes:")
+        print(f"Languages: {', '.join(metadata['languages'])}")
+        print("\nParticipants:")
         for code, name in metadata['participants'].items():
             print(f"  {code}: {name}")
-        print(f"\nOpciones: {', '.join(metadata['options'])}")
-        print(f"Medios: {metadata['media']['id']} ({metadata['media']['type']})")
-        print(f"Fecha: {metadata['date']}")
-        print(f"Tipos: {', '.join(metadata['types'])}")
+        print(f"\nOptions: {', '.join(metadata['options'])}")
+        print(f"Media: {metadata['media']['id']} ({metadata['media']['type']})")
+        print(f"Date: {metadata['date']}")
+        print(f"Types: {', '.join(metadata['types'])}")
     
     print("\n" + "="*50 + "\n")
     
     # Word analysis
-    print("Análisis de palabras:")
+    print("Word analysis:")
     
     # Count words in child utterances
-    print("\nPalabras más comunes en niños:")
+    print("\nMost common child words:")
     child_counter = WordCounter()
     child_counts = child_counter.count_words(children_data)
-    print("\n10 palabras más comunes en niños:")
+    print("\n10 most common child words:")
     for word, count in child_counter.get_most_common(10):
-        print(f"{word}: {count} veces")
+        print(f"{word}: {count} times")
     
     print("\n" + "="*50 + "\n")
     
     # Count words in adult utterances
-    print("Palabras más comunes en adultos:")
+    print("Most common adult words:")
     adult_counter = WordCounter()
     adult_counts = adult_counter.count_words(adults_data)
-    print("\n10 palabras más comunes en adultos:")
+    print("\n10 most common adult words:")
     for word, count in adult_counter.get_most_common(10):
-        print(f"{word}: {count} veces")
+        print(f"{word}: {count} times")
     
     print("\n" + "="*50 + "\n")
     
     # Iconicity analysis
-    print("Análisis de iconicidad:")
+    print("Iconicity analysis:")
     
     # Check the contents of csv_data
-    print("\nVerificación de datos CSV:")
+    print("\nCSV data verification:")
     if csv_data is None:
-        print("Error: No se pudieron cargar los datos del CSV")
+        print("Error: Could not load CSV data")
     else:
-        print(f"Total de entradas en CSV: {len(csv_data)}")
+        print(f"Total CSV entries: {len(csv_data)}")
         if len(csv_data) > 0:
             first_entry = next(iter(csv_data.values()))
-            print("\nEstructura de una entrada:")
+            print("\nSample entry structure:")
             for key, value in first_entry.items():
                 print(f"{key}: {value}")
     
@@ -221,7 +221,7 @@ if __name__ == "__main__":
     iconicity_model = IconicityModel(csv_data)
     
     # Check the model contents
-    print("\nVerificación del modelo de iconicidad:")
+    print("\nIconicity model verification:")
     all_words = iconicity_model.get_all_word_data()
     
     # Create a WordDictionaryMerger instance and add dictionaries
@@ -234,19 +234,19 @@ if __name__ == "__main__":
     merged_dict, unmerged_dictionaries = merger.obtain_merge()
     
     # Show some statistics
-    print("\nEstadísticas del merge:")
-    print(f"Número de palabras en el diccionario mergeado: {len(merged_dict)}")
-    print(f"Número de diccionarios no mergeados: {len(unmerged_dictionaries)}")
+    print("\nMerge statistics:")
+    print(f"Words in merged dictionary: {len(merged_dict)}")
+    print(f"Unmerged dictionaries: {len(unmerged_dictionaries)}")
     
     # Show some words from the merged dictionary
-    print("\nEjemplos de palabras en el diccionario mergeado:")
+    print("\nSample words in merged dictionary:")
     for i, (word, data) in enumerate(merged_dict.items()):
         if i < 5:  # Show only the first 5 words
-            print(f"\nPalabra: {word}")
-            print(f"Datos: {data}")
+            print(f"\nWord: {word}")
+            print(f"Data: {data}")
 
     # Sort the merged dictionary by rating from highest to lowest
-    print("\nDiccionario mergeado ordenado por rating (de mayor a menor):")
+    print("\nMerged dictionary sorted by rating (highest to lowest):")
     sorted_merged_dict = dict(sorted(
         merged_dict.items(),
         key=lambda x: x[1]['rating'],
@@ -254,15 +254,15 @@ if __name__ == "__main__":
     ))
     
     # Show the first 10 sorted words
-    print("\nTop 10 palabras por rating:")
+    print("\nTop 10 words by rating:")
     for i, (word, data) in enumerate(sorted_merged_dict.items()):
         if i >= 10:
             break
         print(f"{word}: Rating={data['rating']}, Count={data.get('count', 0)}")    
 
-    # Read DirectorioBrent
+    # Read Brent directory
     print("\n" + "="*50 + "\n")
-    print("Leyendo Brent:")
+    print("Reading Brent:")
     reader = Reader()
     corpus_data = reader.read_directory('Corpus')
     
@@ -289,51 +289,51 @@ if __name__ == "__main__":
                     print_directory_structure({key: value}, level + 1)
     
     # Show the directory structure
-    print("\nEstructura de Brent:")
+    print("\nBrent structure:")
     print_directory_structure(corpus_data)
 
     # Show the contents of a specific file
     print("\n" + "="*50 + "\n")
-    print("Contenido del primer archivo encontrado:")
+    print("First file found:")
     
     # Get the contents of the first file found
     first_file = None
     for dir_name, content in corpus_data['Brent'].items():
         if 'files' in content and content['files']:
             first_file = content['files'][0]
-            print(f"Archivo: {first_file['metadata']['file_path']}")
+            print(f"File: {first_file['metadata']['file_path']}")
             break
     
     if first_file:
         # Show metadata
-        print("\nMetadatos:")
+        print("\nMetadata:")
         for key, value in first_file['metadata'].items():
             print(f"{key}: {value}")
         
         # Process the file using DataFormatter
-        print("\nProcesando archivo con DataFormatter:")
+        print("\nProcessing file with DataFormatter:")
         file_path = first_file['metadata']['file_path']
         children_data, _, adults_data = formatter.format_cha_data_from(file_path)
         
-        print("\nPrimeras 10 expresiones de niños:")
+        print("\nFirst 10 child utterances:")
         for id, entry in list(children_data.items())[:10]:
             print(f"\n{id}:")
-            print(f"  Hablante: {entry['speaker']}")
-            print(f"  Texto: {entry['text']}")
+            print(f"  Speaker: {entry['speaker']}")
+            print(f"  Text: {entry['text']}")
             if entry['timestamp']:
-                print(f"  Tiempo: {entry['timestamp']['start']}-{entry['timestamp']['end']}")
+                print(f"  Time: {entry['timestamp']['start']}-{entry['timestamp']['end']}")
         
-        print("\nPrimeras 10 expresiones de adultos:")
+        print("\nFirst 10 adult utterances:")
         for id, entry in list(adults_data.items())[:10]:
             print(f"\n{id}:")
-            print(f"  Hablante: {entry['speaker']}")
-            print(f"  Texto: {entry['text']}")
+            print(f"  Speaker: {entry['speaker']}")
+            print(f"  Text: {entry['text']}")
             if entry['timestamp']:
-                print(f"  Tiempo: {entry['timestamp']['start']}-{entry['timestamp']['end']}")
+                print(f"  Time: {entry['timestamp']['start']}-{entry['timestamp']['end']}")
 
     # Process all .cha files en corpus_data
     print("\n" + "="*50 + "\n")
-    print("Procesando archivos .cha en corpus_data:")
+    print("Processing .cha files in corpus_data:")
     
     def process_cha_files(data, current_path=""):
         """
@@ -353,7 +353,7 @@ if __name__ == "__main__":
                 for file in content['files']:
                     if file['metadata']['file_path'].endswith('.cha'):
                         file_path = file['metadata']['file_path']
-                        print(f"Procesando archivo: {file_path}")
+                        print(f"Processing file: {file_path}")
                         # Create a new formatter for each file
                         file_formatter = DataFormatter()
                         children_data, _, adults_data = file_formatter.format_cha_data_from(file_path)
@@ -409,28 +409,28 @@ if __name__ == "__main__":
         }
     
     # Show the dictionary structure by directory
-    print("\nEstructura del diccionario por directorio:")
+    print("\nDirectory dictionary structure:")
     for directory, data in directory_data.items():
-        print(f"\nDirectorio: {directory}")
-        print(f"  Número de expresiones de niños: {len(data['children_data'])}")
-        print(f"  Número de expresiones de adultos: {len(data['adults_data'])}")
+        print(f"\nDirectory: {directory}")
+        print(f"  Number of child utterances: {len(data['children_data'])}")
+        print(f"  Number of adult utterances: {len(data['adults_data'])}")
         
         # Show some examples from each directory
-        print("\n  Ejemplos de expresiones de niños:")
+        print("\n  Sample child utterances:")
         for i, (key, value) in enumerate(list(data['children_data'].items())[:3]):
             print(f"    {key}:")
-            print(f"      Hablante: {value['speaker']}")
-            print(f"      Texto: {value['text']}")
+            print(f"      Speaker: {value['speaker']}")
+            print(f"      Text: {value['text']}")
             if value['timestamp']:
-                print(f"      Tiempo: {value['timestamp']['start']}-{value['timestamp']['end']}")
+                print(f"      Time: {value['timestamp']['start']}-{value['timestamp']['end']}")
         
-        print("\n  Ejemplos de expresiones de adultos:")
+        print("\n  Sample adult utterances:")
         for i, (key, value) in enumerate(list(data['adults_data'].items())[:3]):
             print(f"    {key}:")
-            print(f"      Hablante: {value['speaker']}")
-            print(f"      Texto: {value['text']}")
+            print(f"      Speaker: {value['speaker']}")
+            print(f"      Text: {value['text']}")
             if value['timestamp']:
-                print(f"      Tiempo: {value['timestamp']['start']}-{value['timestamp']['end']}")
+                print(f"      Time: {value['timestamp']['start']}-{value['timestamp']['end']}")
     
     # Create a counter dictionary
     word_counter_dictionary = {}
@@ -448,12 +448,12 @@ if __name__ == "__main__":
         }
 
     # Print the first 5 dictionary entries
-    print("\nPrimeras 5 entradas del diccionario word_counter_dictionary:")
+    print("\nFirst 5 entries in word_counter_dictionary:")
     for i, (directory, counters) in enumerate(list(word_counter_dictionary.items())[:5]):
-        print(f"\n{i+1}. Directorio: {directory}")
-        print("\nContador de niños:")
+        print(f"\n{i+1}. Directory: {directory}")
+        print("\nChildren counter:")
         print(counters['children'].get_word_counts())
-        print("\nContador de adultos:")
+        print("\nAdults counter:")
         print(counters['adults'].get_word_counts())
         print("\n" + "="*50)
 
@@ -486,12 +486,12 @@ if __name__ == "__main__":
         }
         
         # Print some results for verification
-        print(f"\nResultados para el directorio {directory}:")
-        print("\nPalabras más comunes en niños:")
+        print(f"\nResults for el directorio {directory}:")
+        print("\nMost common child words:")
         for word, data in sorted(children_merged.items(), key=lambda x: x[1]['count'], reverse=True)[:5]:
             print(f"{word}: {data}")
         
-        print("\nPalabras más comunes en adultos:")
+        print("\nMost common adult words:")
         for word, data in sorted(adults_merged.items(), key=lambda x: x[1]['count'], reverse=True)[:5]:
             print(f"{word}: {data}")
     

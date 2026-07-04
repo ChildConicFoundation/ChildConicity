@@ -190,4 +190,4 @@ def export_rated(
                 out_lc_dir / f"{stem}_additional_data.csv", lc
             )
 
-        print(f"[{group}] {len(files)} trimestres procesados")
+        print(f"[{group}] {len(files)} quarters processed")

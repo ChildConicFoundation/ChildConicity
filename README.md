@@ -29,17 +29,18 @@ python3 examples/gui.py
 
 In the main window:
 
-1. If you do not have local corpora yet, enter your TalkBank email and password and click `Descargar corpus`. By default, corpora are downloaded to `Corpora/`.
+0. Choose **Language** (`English` / `Español`) at the top. The choice is saved in `.childconicity_locale` (or override with `CHILDCONICITY_LOCALE=en|es`).
+1. If you do not have local corpora yet, enter your TalkBank email and password and click `Download corpora`. By default, corpora are downloaded to `Corpora/`.
 2. Check the paths:
-   - `Corpus origen`: folder with the original corpora, usually `Corpora/`.
-   - `Corpus procesado`: normalized output folder, usually `Corpora_modified/`.
-3. Click `Inicializar corpus` to transform the original corpora into the format used by the analyses.
-4. Click `Mostrar corpus inicializados` to load the list of available corpora.
-5. Select `Todos los corpus` or choose specific corpora.
+   - `Source corpus`: folder with the original corpora, usually `Corpora/`.
+   - `Processed corpus`: normalized output folder, usually `Corpora_modified/`.
+3. Click `Initialize corpora` to transform the original corpora into the format used by the analyses.
+4. Click `Show initialized corpora` to load the list of available corpora.
+5. Select `All corpora` or choose specific corpora.
 6. Choose a mode:
    - `Tokens`: analysis of iconic and non-iconic words by quarter.
    - `Types`: grammatical category analysis.
-7. Click `Ejecutar análisis` to export data or `Generar gráficas` to create visualizations.
+7. Click `Run analysis` to export data or `Generate plots` to create visualizations.
 8. For `Rated`, run `Types` first; then use the iconicity export section to generate `WordCount` with ratings and `LemaCount`.
 
 Default output directories:
@@ -47,8 +48,8 @@ Default output directories:
 - `quarterly_valid_words/`: token analysis results.
 - `quarterly_grammatical_categories/`: type analysis results.
 - `rated_quarterly_grammatical_categories/`: results enriched with iconicity ratings.
-- `iconic_vs_noniconic/` and `pruebas/`: token plots generated from the command line when no custom paths are provided.
-- In the GUI, token plots are saved inside the selected output directory, under `iconic_vs_noniconic/` and `pruebas/`.
+- `iconic_vs_noniconic/` and `distribution/`: token plots generated from the command line when no custom paths are provided.
+- In the GUI, token plots are saved inside the selected output directory, under `iconic_vs_noniconic/` and `distribution/`.
 
 ## Command-Line Usage
 

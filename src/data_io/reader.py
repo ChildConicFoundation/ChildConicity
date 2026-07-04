@@ -35,14 +35,14 @@ class Reader:
             return self.data
         except ModuleNotFoundError:
             print(
-                "Error: pandas no está instalado y es necesario para leer archivos CSV."
+                "Error: pandas is not installed and is required to read CSV files."
             )
             return None
         except FileNotFoundError:
-            print(f"Error: No se encontró el archivo {file_path}")
+            print(f"Error: File not found: {file_path}")
             return None
         except Exception as e:
-            print(f"Error al leer el archivo CSV: {str(e)}")
+            print(f"Error reading CSV file: {str(e)}")
             return None
 
     def read_cha(self, file_path):
@@ -87,10 +87,10 @@ class Reader:
             }
             return self.data
         except FileNotFoundError:
-            print(f"Error: No se encontró el archivo {file_path}")
+            print(f"Error: File not found: {file_path}")
             return None
         except Exception as e:
-            print(f"Error al leer el archivo .cha: {str(e)}")
+            print(f"Error reading .cha file: {str(e)}")
             return None
 
     def _extract_encoding(self, content):

@@ -74,4 +74,4 @@ def process_directory(source_dir, target_dir, corpus_name):
             if age:
                 modify_cha_file(target_file, subdir, age)
 
-            print(f"Copiado y modificado {source_file} a {target_file}")
+            print(f"Copied and modified {source_file} to {target_file}")

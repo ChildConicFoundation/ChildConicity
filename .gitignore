@@ -27,6 +27,7 @@ share/python-wheels/
 MANIFEST
 
 # Project Created files
+.childconicity_locale
 Corpus/
 Corpus_processed/
 Corpus_modified/

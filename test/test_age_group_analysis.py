@@ -223,7 +223,7 @@ def test_print_functions_emit_summary(capsys):
     print_valid_words_statistics(valid_words_stats)
     captured = capsys.readouterr().out
 
-    assert "Grupo de edad 01Y01Q" in captured
-    assert "Top palabras de niños" in captured
-    assert "Top 10 palabras icónicas más usadas por adultos" in captured
-    assert "Porcentaje de uso de las top 10 palabras icónicas" in captured
+    assert "Age group 01Y01Q" in captured
+    assert "Top child words" in captured
+    assert "Top 10 iconic words used by adults" in captured
+    assert "Top 10 iconic word usage percentage" in captured

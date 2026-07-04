@@ -35,7 +35,7 @@ DEFAULT_TYPES_OUTPUT_DIR = "quarterly_grammatical_categories"
 DEFAULT_RATED_OUTPUT_DIR = "rated_quarterly_grammatical_categories"
 DEFAULT_ICONICITY_CSV = "iconicity_ratings/iconicity_ratings_cleaned.csv"
 DEFAULT_PLOTS_DIR = "iconic_vs_noniconic"
-DEFAULT_DISTRIBUTION_DIR = "pruebas"
+DEFAULT_DISTRIBUTION_DIR = "distribution"
 DEFAULT_PLOT_COUNT_CRITERIA = ("adults", "children")
 DEFAULT_GRAMMATICAL_CATEGORIES = (
     "noun",
@@ -117,17 +117,17 @@ def run_types_analysis(
     type_count_mode=DEFAULT_TYPE_COUNT_MODE,
 ):
     corpora_to_load = selected_corpora or get_available_corpora(processed_root)
-    print(f"Cargando corpus procesado desde {processed_root}...")
+    print(f"Loading processed corpus from {processed_root}...")
     print(
-        "Corpus a cargar "
-        f"({len(corpora_to_load)}): {', '.join(corpora_to_load) if corpora_to_load else '(ninguno)'}"
+        "Corpora to load "
+        f"({len(corpora_to_load)}): {', '.join(corpora_to_load) if corpora_to_load else '(none)'}"
     )
     corpus_data = load_corpus_data(processed_root, selected_corpora)
-    print("Corpus cargados.")
+    print("Corpora loaded.")
     if generate_plots:
-        print("Exportando datos gramaticales estándar para types...")
+        print("Exporting standard grammatical data for types...")
     else:
-        print("Procesando datos gramaticales y exportando resultados...")
+        print("Processing grammatical data and exporting results...")
     result = run_grammatical_pipeline(
         corpus_data,
         output_dir=output_dir,
@@ -135,16 +135,16 @@ def run_types_analysis(
     )
     if generate_plots:
         print(
-            "Exportación gramatical estándar completada. "
-            "El modo de conteo seleccionado solo afecta a las gráficas."
+            "Standard grammatical export completed. "
+            "The selected count mode only affects plots."
         )
     else:
-        print("Exportación gramatical completada.")
+        print("Grammatical export completed.")
 
     if not generate_plots:
         return result
 
-    print("Cargando ratings de iconicidad...")
+    print("Loading iconicity ratings...")
     formatter = DataFormatter()
     csv_data = formatter.format_csv_data_from(iconicity_csv)
     iconicity_model = IconicityModel(csv_data)
@@ -152,7 +152,7 @@ def run_types_analysis(
     grouped_data_for_plots = result["grouped_data"]
     if categories is not None:
         print(
-            "Reprocesando datos sin filtro para mantener el total global de las gráficas..."
+            "Reprocessing unfiltered data to preserve global plot totals..."
         )
         processed_data_for_plots = process_grammatical_data_with_formatter(corpus_data)
         grouped_data_for_plots = group_data_by_age(processed_data_for_plots)
@@ -160,7 +160,7 @@ def run_types_analysis(
     result = result.copy()
     selected_type_count_mode = normalize_type_count_mode(type_count_mode)
     print(
-        "Generando gráficas de types "
+        "Generating type plots "
         f"con criterio de conteo: {_type_count_mode_label(selected_type_count_mode)}..."
     )
     result["plot_outputs"] = _generate_type_plots(
@@ -189,33 +189,33 @@ def run_tokens_analysis(
     distribution_dir=DEFAULT_DISTRIBUTION_DIR,
 ):
     corpora_to_load = selected_corpora or get_available_corpora(processed_root)
-    print(f"Cargando corpus procesado desde {processed_root}...")
+    print(f"Loading processed corpus from {processed_root}...")
     print(
-        "Corpus a cargar "
-        f"({len(corpora_to_load)}): {', '.join(corpora_to_load) if corpora_to_load else '(ninguno)'}"
+        "Corpora to load "
+        f"({len(corpora_to_load)}): {', '.join(corpora_to_load) if corpora_to_load else '(none)'}"
     )
     corpus_data = load_corpus_data(processed_root, selected_corpora)
-    print("Corpus cargados.")
-    print("Procesando corpus por tokens...")
+    print("Corpora loaded.")
+    print("Processing corpus by tokens...")
     processed_data = process_data_with_formatter(corpus_data)
     grouped_data = group_data_by_age(processed_data)
 
-    print("Cargando ratings de iconicidad...")
+    print("Loading iconicity ratings...")
     formatter = DataFormatter()
     csv_data = formatter.format_csv_data_from(iconicity_csv)
     iconicity_model = IconicityModel(csv_data)
 
-    print("Calculando estadísticas por grupo de edad...")
+    print("Computing statistics by age group...")
     age_group_stats = create_age_group_statistics(grouped_data, iconicity_model)
     valid_words_stats = process_valid_words_by_age_group(
         age_group_stats, iconicity_model
     )
-    print("Exportando estadísticas de palabras válidas...")
+    print("Exporting valid word statistics...")
     outputs = ValidWordsStatsExporter(output_dir).export(valid_words_stats)
 
     plot_outputs = None
     if generate_plots:
-        print("Generando gráficas de tokens...")
+        print("Generating token plots...")
         plot_outputs = _generate_token_plots(
             valid_words_stats,
             plots_dir=plots_dir,
@@ -245,10 +245,10 @@ def _generate_token_plots(valid_words_stats, plots_dir, distribution_dir):
     adults_path = os.path.join(plots_dir, "iconic_vs_non_iconic_by_age_adults.png")
     children_path = os.path.join(plots_dir, "iconic_vs_non_iconic_by_age_children.png")
     all_adults_path = os.path.join(
-        distribution_dir, "distribucion_iconicidad_todos_adultos.png"
+        distribution_dir, "iconicity_distribution_all_adults.png"
     )
     all_children_path = os.path.join(
-        distribution_dir, "distribucion_iconicidad_todos_ninos.png"
+        distribution_dir, "iconicity_distribution_all_children.png"
     )
 
     plotter.plot_iconic_vs_non_iconic_by_age(by_age_path)
@@ -286,14 +286,14 @@ def _generate_type_plots(
     selected_type_count_mode = normalize_type_count_mode(type_count_mode)
     os.makedirs(plots_dir, exist_ok=True)
 
-    print("Preparando estadísticas globales para las gráficas...")
+    print("Preparing global statistics for plots...")
     total_stats = create_grammatical_type_stats(
         grouped_data,
         iconicity_model,
         count_mode=selected_type_count_mode,
     )
     stats_by_scope = {"total": total_stats}
-    print("Preparando estadísticas por categoría...")
+    print("Preparing statistics by category...")
     category_stats = create_grammatical_type_stats_by_category(
         grouped_data,
         iconicity_model,
@@ -305,18 +305,18 @@ def _generate_type_plots(
     )
     stats_by_scope.update(selected_category_stats)
     print(
-        "Categorías incluidas en las gráficas: "
+        "Categories included in plots: "
         f"{len(selected_category_stats)}"
     )
     print(
-        "Renderizando imágenes por grupo de edad: "
+        "Rendering images by age group: "
         f"{len(total_stats)}"
     )
 
     files = DataAnalysisPlotter(total_stats).plot_iconicity_distribution_scopes_by_age_group(
         stats_by_scope,
         save_dir=plots_dir,
-        filename_prefix="distribucion_iconicidad_types",
+        filename_prefix="iconicity_distribution_types",
         title_suffix=f" - Types ({_type_count_mode_label(selected_type_count_mode)})",
         speaker_groups_to_plot=plot_count_criteria,
         print_progress=True,
@@ -388,13 +388,13 @@ def run_rated_export(
     output_dir=DEFAULT_RATED_OUTPUT_DIR,
     iconicity_csv=DEFAULT_ICONICITY_CSV,
 ):
-    print(f"Enriqueciendo WordCount desde {source_dir}...")
+    print(f"Enriching WordCount from {source_dir}...")
     export_rated(
         source_root=source_dir,
         output_root=output_dir,
         iconicity_csv=iconicity_csv,
     )
-    print("Exportación con ratings completada.")
+    print("Rated export completed.")
     return {
         "outputs": {
             "source_dir": source_dir,

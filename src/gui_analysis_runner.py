@@ -41,7 +41,7 @@ _DEFAULT_RESULT_FILE = {
 
 def main(argv=None):
     parser = argparse.ArgumentParser(
-        description="Ejecuta analisis de la GUI con un interprete alternativo."
+        description="Run GUI analysis with an alternate interpreter."
     )
     parser.add_argument("mode", choices=("tokens", "types", "rated"))
     parser.add_argument("--processed-root", default=None)
@@ -72,11 +72,11 @@ def main(argv=None):
     selected_corpora = args.selected_corpora or []
     categories = args.categories or []
     print(
-        "Runner de análisis iniciado:"
+        "Analysis runner started:"
         f" mode={args.mode},"
-        f" corpora={selected_corpora if selected_corpora else 'todos'},"
-        f" plots={'si' if args.generate_plots else 'no'},"
-        f" categories={categories if categories else 'todas'},"
+        f" corpora={selected_corpora if selected_corpora else 'all'},"
+        f" plots={'yes' if args.generate_plots else 'no'},"
+        f" categories={categories if categories else 'all'},"
         f" type_count_mode={args.type_count_mode}"
     )
     sys.stdout.flush()

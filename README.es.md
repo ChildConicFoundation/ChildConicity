@@ -29,17 +29,18 @@ python3 examples/gui.py
 
 En la ventana principal:
 
-1. Si todavía no tienes corpus locales, introduce tu email y contraseña de TalkBank y pulsa `Descargar corpus`. Por defecto se descargan en `Corpora/`.
+0. Elige **Idioma** (`English` / `Español`) arriba. La preferencia se guarda en `.childconicity_locale` (o usa `CHILDCONICITY_LOCALE=en|es`).
+1. Si todavía no tienes corpus locales, introduce tu email y contraseña de TalkBank y pulsa `Download corpora`. Por defecto se descargan en `Corpora/`.
 2. Revisa las rutas:
-   - `Corpus origen`: carpeta con corpus originales, normalmente `Corpora/`.
-   - `Corpus procesado`: carpeta de salida normalizada, normalmente `Corpora_modified/`.
-3. Pulsa `Inicializar corpus` para transformar los corpus originales al formato que usan los análisis.
-4. Pulsa `Mostrar corpus inicializados` para cargar la lista de corpus disponibles.
-5. Selecciona `Todos los corpus` o marca corpus concretos.
+   - `Source corpus`: carpeta con corpus originales, normalmente `Corpora/`.
+   - `Processed corpus`: carpeta de salida normalizada, normalmente `Corpora_modified/`.
+3. Pulsa `Initialize corpora` para transformar los corpus originales al formato que usan los análisis.
+4. Pulsa `Show initialized corpora` para cargar la lista de corpus disponibles.
+5. Selecciona `All corpora` o marca corpus concretos.
 6. Elige el modo:
    - `Tokens`: análisis de palabras icónicas y no icónicas por trimestre.
    - `Types`: análisis por categorías gramaticales.
-7. Pulsa `Ejecutar análisis` para exportar datos o `Generar gráficas` para crear las visualizaciones.
+7. Pulsa `Run analysis` para exportar datos o `Generate plots` para crear las visualizaciones.
 8. Para `Rated`, primero ejecuta `Types`; después usa la sección de exportación con iconicidad para generar `WordCount` con ratings y `LemaCount`.
 
 Directorios de salida por defecto:
@@ -47,8 +48,8 @@ Directorios de salida por defecto:
 - `quarterly_valid_words/`: resultados del análisis de tokens.
 - `quarterly_grammatical_categories/`: resultados del análisis de types.
 - `rated_quarterly_grammatical_categories/`: resultados enriquecidos con ratings de iconicidad.
-- `iconic_vs_noniconic/` y `pruebas/`: gráficas de tokens cuando se generan desde línea de comandos sin personalizar rutas.
-- En la GUI, las gráficas de tokens se guardan dentro del directorio de salida elegido, en `iconic_vs_noniconic/` y `pruebas/`.
+- `iconic_vs_noniconic/` y `distribution/`: gráficas de tokens cuando se generan desde línea de comandos sin personalizar rutas.
+- En la GUI, las gráficas de tokens se guardan dentro del directorio de salida elegido, en `iconic_vs_noniconic/` y `distribution/`.
 
 ## Uso por línea de comandos
 

@@ -51,13 +51,13 @@ def process_directory(source_dir, target_dir):
 
             source_file = os.path.join(root, file_name)
             if not has_target_child(source_file):
-                print(f"Saltando archivo sin CHI objetivo: {source_file}")
+                print(f"Skipping file without target CHI: {source_file}")
                 continue
 
             child_name = extract_child_name(source_file)
             age = extract_age(source_file)
             if child_name is None or age is None:
-                print(f"Saltando archivo no normalizable: {source_file}")
+                print(f"Skipping non-normalizable file: {source_file}")
                 continue
 
             target_subdir = os.path.join(target_dir, child_name)
@@ -67,4 +67,4 @@ def process_directory(source_dir, target_dir):
             shutil.copy2(source_file, target_file)
             modify_cha_file(target_file, child_name, age)
 
-            print(f"Copiado y modificado {source_file} a {target_file}")
+            print(f"Copied and modified {source_file} to {target_file}")

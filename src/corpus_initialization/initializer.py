@@ -30,93 +30,93 @@ class CorpusInitializer:
 
     def initialize_bates(self):
         """Initializes the Bates corpus."""
-        print("\nInicializando corpus de Bates...")
+        print("\nInitializing Bates...")
         process_bates(self._source_dir("Bates"), self._output_dir("Bates"))
-        print("¡Corpus de Bates inicializado!")
+        print("Bates corpus initialized!")
 
     def initialize_brent(self):
         """Initializes the Brent corpus."""
-        print("\nInicializando corpus de Brent...")
+        print("\nInitializing Brent...")
 
         manipulator = BrendManipulator()
         manipulator.base_dir = self._source_dir("Brent")
         manipulator.output_dir = self._output_dir("Brent")
         manipulator.process_directory()
 
-        print("¡Corpus de Brent inicializado!")
+        print("Brent corpus initialized!")
 
     def initialize_new_england(self):
         """Initializes the NewEngland corpus."""
-        print("\nInicializando corpus de NewEngland...")
+        print("\nInitializing NewEngland...")
         process_newengland(self._source_dir("NewEngland"), self._output_dir("NewEngland"))
-        print("¡Corpus de NewEngland inicializado!")
+        print("NewEngland corpus initialized!")
 
     def initialize_post(self):
         """Initializes the Post corpus."""
-        print("\nInicializando corpus de Post...")
+        print("\nInitializing Post...")
         process_post(self._source_dir("Post"), self._output_dir("Post"))
-        print("¡Corpus de Post inicializado!")
+        print("Post corpus initialized!")
 
     def initialize_bloom(self):
         """Initializes the Bloom corpus."""
-        print("\nInicializando corpus de Bloom...")
+        print("\nInitializing Bloom...")
         process_bloom(
             self._source_dir("Bloom"),
             self._output_dir("Bloom"),
         )
-        print("¡Corpus de Bloom inicializado!")
+        print("Bloom corpus initialized!")
 
     def initialize_brown(self):
         """Initializes the Brown corpus."""
-        print("\nInicializando corpus de Brown...")
+        print("\nInitializing Brown...")
         process_brown(
             self._source_dir("Brown"),
             self._output_dir("Brown"),
         )
-        print("¡Corpus de Brown inicializado!")
+        print("Brown corpus initialized!")
 
     def initialize_hslld(self):
         """Initializes the HSLLD corpus."""
-        print("\nInicializando corpus de HSLLD...")
+        print("\nInitializing HSLLD...")
         process_hslld(
             self._source_dir("HSLLD"),
             self._output_dir("HSLLD"),
         )
-        print("¡Corpus de HSLLD inicializado!")
+        print("HSLLD corpus initialized!")
 
     def initialize_kuczaj(self):
         """Initializes the Kuczaj corpus."""
-        print("\nInicializando corpus de Kuczaj...")
+        print("\nInitializing Kuczaj...")
         process_kuczaj(
             self._source_dir("Kuczaj"),
             self._output_dir("Kuczaj"),
         )
-        print("¡Corpus de Kuczaj inicializado!")
+        print("Kuczaj corpus initialized!")
 
     def initialize_sachs(self):
         """Initializes the Sachs corpus."""
-        print("\nInicializando corpus de Sachs...")
+        print("\nInitializing Sachs...")
         process_sachs(
             self._source_dir("Sachs"),
             self._output_dir("Sachs"),
         )
-        print("¡Corpus de Sachs inicializado!")
+        print("Sachs corpus initialized!")
 
     def initialize_van_kleeck(self):
         """Initializes the VanKleeck corpus."""
-        print("\nInicializando corpus de VanKleeck...")
+        print("\nInitializing VanKleeck...")
         process_vankleeck(self._source_dir("VanKleeck"), self._output_dir("VanKleeck"))
-        print("¡Corpus de VanKleeck inicializado!")
+        print("VanKleeck corpus initialized!")
 
     def initialize_providence(self):
         """Initializes the Providence corpus."""
-        print("\nInicializando corpus de Providence...")
+        print("\nInitializing Providence...")
         process_providence(self._source_dir("Providence"), self._output_dir("Providence"))
-        print("¡Corpus de Providence inicializado!")
+        print("Providence corpus initialized!")
 
     def initialize_all(self):
         """Initializes all corpora."""
-        print("Iniciando inicialización de corpus...")
+        print("Starting corpus initialization...")
         self.initialize_bates()
         self.initialize_brent()
         self.initialize_new_england()
@@ -128,7 +128,7 @@ class CorpusInitializer:
         self.initialize_sachs()
         self.initialize_van_kleeck()
         self.initialize_providence()
-        print("\n¡Inicialización de corpus completada!")
+        print("\nCorpus initialization completed!")
 
     def _source_dir(self, corpus_name):
         return os.path.join(self.source_root, corpus_name)

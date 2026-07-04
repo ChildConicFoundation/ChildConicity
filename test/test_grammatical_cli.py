@@ -31,9 +31,9 @@ def test_grammatical_cli_options_rejects_invalid_mixed_all_selection():
     try:
         parse_grammatical_cli_options(["--categories", "all", "noun"])
     except ValueError as exc:
-        assert "Usa 'all' por separado" in str(exc)
+        assert "Use 'all' on its own" in str(exc)
     else:
-        raise AssertionError("Se esperaba ValueError al mezclar 'all' con categorías.")
+        raise AssertionError("Expected ValueError when mixing 'all' with categories.")
 
 
 def test_grammatical_cli_options_rejects_unknown_categories():
@@ -45,7 +45,7 @@ def test_grammatical_cli_options_rejects_unknown_categories():
         assert "verb" in str(exc)
     else:
         raise AssertionError(
-            "Se esperaba ValueError al usar una categoría inexistente."
+            "Expected ValueError when using a nonexistent category."
         )
 
 
@@ -60,7 +60,7 @@ def test_prepare_grammatical_cli_options_lists_categories_and_exits():
     assert prepared_options == options
     assert should_exit is True
     assert messages == [
-        "\nCategorías gramaticales disponibles:",
+        "\nAvailable grammatical categories:",
         "- adj",
         "- noun",
     ]
@@ -77,5 +77,5 @@ def test_prepare_grammatical_cli_options_reports_selected_categories():
     assert should_exit is False
     assert prepared_options.categories == ["noun", "verb"]
     assert messages == [
-        "\nTrabajando con estas categorías gramaticales: noun, verb"
+        "\nWorking with these grammatical categories: noun, verb"
     ]

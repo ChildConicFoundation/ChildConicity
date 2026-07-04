@@ -48,4 +48,4 @@ def process_directory(source_dir, target_dir):
             if age:
                 modify_cha_file(tgt_file, child_name, age)
 
-            print(f"Copiado y modificado {src_file} a {tgt_file}")
+            print(f"Copied and modified {src_file} to {tgt_file}")

@@ -29,11 +29,11 @@ class TestBrendManipulator(unittest.TestCase):
 @Media: video, audio
 @Date: 2000-08-28
 @Types: CHI Target_Child, MOT Mother, FAT Father
-*CHI: hola mama.
-%mor: hola mama
+*CHI: hello mom.
+%mor: hello mom
 %gra: 1|1|INTJ 2|2|N
-*MOT: hola cariño.
-%mor: hola cariño
+*MOT: hello dear.
+%mor: hello dear
 %gra: 1|1|INTJ 2|2|N
 """
         with open(self.test_file, 'w', encoding='utf-8') as f:
@@ -60,13 +60,13 @@ class TestBrendManipulator(unittest.TestCase):
     def test_process_file_with_error(self):
         """Test error handling in process_file"""
         # Try processing a file that does not exist
-        self.manipulator.process_file("archivo_inexistente.cha", "salida.cha")
+        self.manipulator.process_file("nonexistent.cha", "output.cha")
         # It should not raise an exception, only print an error message
     
     def test_extract_age_with_error(self):
         """Test error handling in extract_age"""
         # Try extracting the age from a file that does not exist
-        age = self.manipulator.extract_age("archivo_inexistente.cha")
+        age = self.manipulator.extract_age("nonexistent.cha")
         self.assertEqual(age, "0 years 00 months 00 days")
     
     def test_extract_child_name_from_brend_path(self):
@@ -187,6 +187,6 @@ class TestBrendManipulator(unittest.TestCase):
     def test_process_file_with_output_dir_none(self):
         """Test process_file when output_dir is None"""
         self.manipulator.output_dir = None
-        self.manipulator.process_file(self.test_file, "salida.cha")
-        self.assertTrue(os.path.exists("salida.cha"))
-        os.remove("salida.cha") 
+        self.manipulator.process_file(self.test_file, "output.cha")
+        self.assertTrue(os.path.exists("output.cha"))
+        os.remove("output.cha") 

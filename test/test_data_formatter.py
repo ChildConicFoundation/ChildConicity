@@ -12,7 +12,7 @@ def test_files():
     # Create a test CSV file
     test_csv_path = 'test_data.csv'
     pd.DataFrame({
-        'word': ['casa', 'perro'],
+        'word': ['house', 'dog'],
         'rating': [4.5, 3.8]
     }).to_csv(test_csv_path, index=False)
     
@@ -21,9 +21,9 @@ def test_files():
     with open(test_cha_path, 'w', encoding='utf-8') as f:
         f.write("""@UTF8
 @Participants: CHI Target_Child, MOT Mother
-*CHI: hola 1525_4985
-*MOT: buenos días 1555_4975
-*CHI: adiós 1585_7985""")
+*CHI: hello 1525_4985
+*MOT: good morning 1555_4975
+*CHI: goodbye 1585_7985""")
     
     yield {'csv': test_csv_path, 'cha': test_cha_path}
     
@@ -43,7 +43,7 @@ def test_format_csv_data(formatter, test_files):
     data = formatter.format_csv_data_from(test_files['csv'])
     assert data is not None
     assert len(data) == 2
-    assert data[1]['word'] == 'casa'
+    assert data[1]['word'] == 'house'
 
 def test_format_cha_data(formatter, test_files):
     children_data, other_children_data, adults_data = formatter.format_cha_data_from(
@@ -56,11 +56,11 @@ def test_format_cha_data(formatter, test_files):
     
     # Check child data
     assert len(children_data) == 2
-    assert children_data[1]['text'].strip() == 'hola'
+    assert children_data[1]['text'].strip() == 'hello'
     
     # Check adult data
     assert len(adults_data) == 1
-    assert adults_data[1]['text'].strip() == 'buenos días'
+    assert adults_data[1]['text'].strip() == 'good morning'
     assert len(other_children_data) == 0
 
 def test_get_data_methods(formatter, test_files):
@@ -87,9 +87,9 @@ def test_format_cha_data_separates_non_target_children(tmp_path):
 @ID: eng|Bloom|CHI|2;00.10|male|TD||Target_Child|||
 @ID: eng|Bloom|JEN|||||Sister|||
 @ID: eng|Bloom|MOT||female|||Mother|||
-*CHI: hola .
-*JEN: yo también .
-*MOT: buenos días .
+*CHI: hello .
+*JEN: me too .
+*MOT: good morning .
 """,
         encoding="utf-8",
     )
@@ -116,9 +116,9 @@ def test_format_cha_data_separates_playmates_as_other_children(tmp_path):
 @ID: eng|Sachs|CHI|2;05.05|female|||Target_Child|||
 @ID: eng|Sachs|JEN|||||Playmate|||
 @ID: eng|Sachs|MOT||female|||Mother|||
-*CHI: mío .
+*CHI: mine .
 *JEN: no .
-*MOT: comparte .
+*MOT: share .
 """,
         encoding="utf-8",
     )
@@ -143,15 +143,15 @@ def test_format_cha_data_resets_previous_state_between_calls(tmp_path):
     first_file.write_text(
         """@UTF8
 @Participants: CHI Target_Child, MOT Mother
-*CHI: hola .
-*MOT: adiós .
+*CHI: hello .
+*MOT: goodbye .
 """,
         encoding="utf-8",
     )
     second_file.write_text(
         """@UTF8
 @Participants: CHI Target_Child
-*CHI: uno .
+*CHI: one .
 """,
         encoding="utf-8",
     )
@@ -165,4 +165,4 @@ def test_format_cha_data_resets_previous_state_between_calls(tmp_path):
     assert len(children_data) == 1
     assert len(other_children_data) == 0
     assert len(adults_data) == 0
-    assert children_data[1]["text"] == "uno"
+    assert children_data[1]["text"] == "one"

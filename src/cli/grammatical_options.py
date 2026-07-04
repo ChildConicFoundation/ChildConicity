@@ -44,7 +44,7 @@ class GrammaticalCLIOptions:
 
         if "all" in categories:
             raise ValueError(
-                "Usa 'all' por separado o una lista concreta de categorías, pero no ambos."
+                "Use 'all' on its own or a specific category list, but not both."
             )
 
         return categories
@@ -64,9 +64,9 @@ class GrammaticalCLIOptions:
             available_categories_text = ", ".join(available_categories)
             missing_categories_text = ", ".join(missing_categories)
             raise ValueError(
-                "Las siguientes categorías no existen en el corpus: "
+                "The following categories do not exist in the corpus: "
                 f"{missing_categories_text}. "
-                f"Categorías disponibles: {available_categories_text}"
+                f"Available categories: {available_categories_text}"
             )
 
         return GrammaticalCLIOptions(
@@ -79,8 +79,7 @@ class GrammaticalCLIOptions:
 def build_grammatical_options_parser():
     parser = argparse.ArgumentParser(
         description=(
-            "Procesa el corpus por types y permite filtrar por categorías "
-            "gramaticales."
+            "Process the corpus by types and filter by grammatical categories."
         )
     )
     parser.add_argument(
@@ -88,19 +87,19 @@ def build_grammatical_options_parser():
         nargs="+",
         default=["all"],
         help=(
-            "Usa 'all' para incluir todas las categorías, o una lista como "
+            "Use 'all' to include all categories, or a list such as "
             "'--categories noun verb' o '--categories noun,verb'."
         ),
     )
     parser.add_argument(
         "--list-categories",
         action="store_true",
-        help="Muestra las categorías gramaticales disponibles y termina.",
+        help="List available grammatical categories and exit.",
     )
     parser.add_argument(
         "--output-dir",
         default=DEFAULT_OUTPUT_DIR,
-        help="Directorio donde se exportarán los resultados.",
+        help="Directory where results will be exported.",
     )
     return parser
 

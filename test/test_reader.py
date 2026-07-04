@@ -24,8 +24,8 @@ def test_files():
 @Media: example, audio
 @Date: 12-MAR-2024
 @Types: long, free
-*CHI: hola 1525_4985
-*MOT: buenos días 1585_4985""")
+*CHI: hello 1525_4985
+*MOT: good morning 1585_4985""")
     
     yield {'csv': test_csv_path, 'cha': test_cha_path}
     

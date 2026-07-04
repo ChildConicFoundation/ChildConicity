@@ -32,7 +32,7 @@ def login_and_get_cookies(email, password, headless=True):
     """Opens a real Chrome session, logs in via TalkBank's JS auth modal, returns cookies."""
     from selenium.common.exceptions import StaleElementReferenceException
 
-    print("Abriendo navegador para autenticar en TalkBank...")
+    print("Opening browser to authenticate with TalkBank...")
     driver = _build_chrome(headless=headless)
     try:
         driver.get(f"{INDEX_URL}Brent.html")
@@ -71,7 +71,7 @@ def login_and_get_cookies(email, password, headless=True):
         try:
             long.until(_outcome)
         except ValueError as exc:
-            raise PermissionError(f"Error de autenticación: {exc}") from None
+            raise PermissionError(f"Authentication error: {exc}") from None
 
         # Wait for the new page to finish loading
         WebDriverWait(driver, 15).until(
@@ -83,7 +83,7 @@ def login_and_get_cookies(email, password, headless=True):
         driver.quit()
 
     cookies = {c["name"]: c["value"] for c in selenium_cookies}
-    print(f"Autenticación correcta ({len(cookies)} cookies obtenidas).\n")
+    print(f"Authentication successful ({len(cookies)} cookies obtained).\n")
     return cookies
 
 
@@ -156,8 +156,8 @@ def _download_stream(session, url):
     content_type = response.headers.get("content-type", "")
     if "text/html" in content_type:
         raise PermissionError(
-            "El servidor devolvió HTML en lugar del ZIP. "
-            "La sesión puede haber expirado o tu cuenta no tiene acceso a este corpus."
+            "The server returned HTML instead of a ZIP. "
+            "The session may have expired or your account may not have access to this corpus."
         )
 
     total = int(response.headers.get("content-length", 0))
@@ -177,7 +177,7 @@ def _download_stream(session, url):
             speed = (downloaded - bytes_at_last_check) / elapsed
             if speed < MIN_SPEED_BPS:
                 raise TimeoutError(
-                    f"Descarga demasiado lenta ({speed / 1024:.1f} KB/s < 50 KB/s)."
+                    f"Download too slow ({speed / 1024:.1f} KB/s < 50 KB/s)."
                 )
             t_speed_check = now
             bytes_at_last_check = downloaded
@@ -188,7 +188,7 @@ def _download_stream(session, url):
                 pct = downloaded * 100 // total
                 print(f"    {pct}% ({downloaded // 1024 // 1024} MB / {total // 1024 // 1024} MB)", flush=True)
             else:
-                print(f"    {downloaded // 1024 // 1024} MB descargados...", flush=True)
+                print(f"    {downloaded // 1024 // 1024} MB downloaded...", flush=True)
 
     return b"".join(chunks)
 
@@ -197,15 +197,15 @@ def download_corpus(session, corpus_name, output_dir, force, retries=2):
     corpus_dir = os.path.join(output_dir, corpus_name)
 
     if os.path.exists(corpus_dir) and not force:
-        print(f"  [{corpus_name}] Ya existe, omitiendo (usa --force para sobreescribir).")
+        print(f"  [{corpus_name}] Already exists, skipping (use --force to overwrite).")
         return False
 
     download_url = fetch_download_url(session, corpus_name)
     if download_url is None:
-        print(f"  [{corpus_name}] No se encontró enlace de descarga.")
+        print(f"  [{corpus_name}] Download link not found.")
         return False
 
-    print(f"  [{corpus_name}] Descargando desde {download_url} ...", flush=True)
+    print(f"  [{corpus_name}] Downloading from {download_url} ...", flush=True)
 
     last_error = None
     for attempt in range(1, retries + 2):  # retries + el intento inicial
@@ -216,7 +216,7 @@ def download_corpus(session, corpus_name, output_dir, force, retries=2):
             last_error = e
             if attempt <= retries:
                 wait = 5 * attempt
-                print(f"    Intento {attempt} fallido ({e}). Reintentando en {wait} s...", flush=True)
+                print(f"    Attempt {attempt} failed ({e}). Retrying in {wait} s...", flush=True)
                 time.sleep(wait)
             else:
                 raise last_error from None
@@ -229,7 +229,7 @@ def download_corpus(session, corpus_name, output_dir, force, retries=2):
             os.makedirs(corpus_dir, exist_ok=True)
             zf.extractall(corpus_dir)
 
-    print(f"  [{corpus_name}] Extraído en {corpus_dir}")
+    print(f"  [{corpus_name}] Extracted to {corpus_dir}")
     return True
 
 
@@ -245,20 +245,20 @@ def run(email, password, corpora_filter, output_dir, force, headless=True):
     session = requests.Session()
     session.cookies.update(cookies)
 
-    print("Obteniendo lista de corpus de TalkBank...")
+    print("Fetching TalkBank corpus list...")
     all_corpora = fetch_corpus_names(session)
-    print(f"Corpus encontrados: {', '.join(all_corpora)}\n")
+    print(f"Corpora found: {', '.join(all_corpora)}\n")
 
     if corpora_filter:
         normalized_filter = {c.casefold() for c in corpora_filter}
         selected = [c for c in all_corpora if c.casefold() in normalized_filter]
         missing = normalized_filter - {c.casefold() for c in selected}
         if missing:
-            print(f"Advertencia: estos corpus no existen en TalkBank: {', '.join(missing)}")
+            print(f"Warning: these corpora do not exist on TalkBank: {', '.join(missing)}")
     else:
         selected = all_corpora
 
-    print(f"Descargando {len(selected)} corpus en '{output_dir}'...\n")
+    print(f"Downloading {len(selected)} corpora to '{output_dir}'...\n")
     ok = 0
     skipped = 0
     failed = 0
@@ -270,44 +270,44 @@ def run(email, password, corpora_filter, output_dir, force, headless=True):
             else:
                 skipped += 1
         except PermissionError as e:
-            print(f"  [{corpus}] ERROR DE ACCESO: {e}")
+            print(f"  [{corpus}] ACCESS ERROR: {e}")
             failed += 1
         except Exception as e:
             print(f"  [{corpus}] ERROR: {e}")
             failed += 1
 
-    print(f"\nResumen: {ok} descargados, {skipped} omitidos, {failed} con error.")
+    print(f"\nSummary: {ok} downloaded, {skipped} skipped, {failed} failed.")
 
 
 def main(argv=None):
     parser = argparse.ArgumentParser(
-        description="Descarga corpus de TalkBank CHILDES Eng-NA en la carpeta Corpora/."
+        description="Download TalkBank CHILDES Eng-NA corpora into the Corpora/ folder."
     )
     parser.add_argument(
         "--user", required=True, metavar="EMAIL",
-        help="Email de la cuenta TalkBank (ej: usuario@ejemplo.com).",
+        help="TalkBank account email (e.g. user@example.com).",
     )
-    parser.add_argument("--password", required=True, help="Contraseña de TalkBank.")
+    parser.add_argument("--password", required=True, help="TalkBank password.")
     parser.add_argument(
         "--corpora",
         nargs="+",
         default=None,
-        help="Corpus a descargar (por defecto todos). Ej: --corpora Brent Bloom",
+        help="Corpora to download (default: all). E.g.: --corpora Brent Bloom",
     )
     parser.add_argument(
         "--output-dir",
         default=DEFAULT_OUTPUT_DIR,
-        help=f"Carpeta de destino (por defecto: {DEFAULT_OUTPUT_DIR}).",
+        help=f"Destination folder (default: {DEFAULT_OUTPUT_DIR}).",
     )
     parser.add_argument(
         "--force",
         action="store_true",
-        help="Sobreescribe corpus que ya existan en la carpeta de destino.",
+        help="Overwrite corpora that already exist in the destination folder.",
     )
     parser.add_argument(
         "--no-headless",
         action="store_true",
-        help="Muestra el navegador durante el login (útil para depurar).",
+        help="Show the browser during login (useful for debugging).",
     )
 
     args = parser.parse_args(argv)

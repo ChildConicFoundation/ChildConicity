@@ -129,8 +129,8 @@ def test_corpus_inspector_functions_print_expected_info(capsys):
 
     assert "Corpora_modified" in captured
     assert "Corpora_modified/Post/Lew/a.cha" in captured
-    assert "Nombre del niño: Lew" in captured
-    assert "Primera expresión: ball" in captured
+    assert "Child name: Lew" in captured
+    assert "First utterance: ball" in captured
 
 
 def test_show_lew_early_expressions_handles_present_and_missing_data(capsys):
@@ -165,7 +165,7 @@ def test_show_lew_early_expressions_handles_present_and_missing_data(capsys):
     show_lew_early_expressions({"Corpora_modified": {}})
     captured = capsys.readouterr().out
 
-    assert "Expresiones tempranas de Lew" in captured
+    assert "Lew early utterances" in captured
     assert "Corpora_modified/Post/Lew/a.cha" in captured
     assert "first words" in captured
-    assert "Tiempo: 1-2" in captured
+    assert "Time: 1-2" in captured

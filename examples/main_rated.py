@@ -12,7 +12,7 @@ def main():
         output_root="rated_quarterly_grammatical_categories",
         iconicity_csv="iconicity_ratings/iconicity_ratings_cleaned.csv",
     )
-    print("Exportación completada.")
+    print("Export completed.")
 
 
 if __name__ == "__main__":

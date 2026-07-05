@@ -39,7 +39,20 @@ references:
       https://talkbank.org/0share/citation.html for corpus-specific
       references. Acknowledge grant support NICHD HD082736.
     url: "https://talkbank.org/childes/"
-  - type: dataset
-    title: Iconicity ratings database
+  - type: data
+    title: Iconicity ratings
+    authors:
+      - family-names: Winter
+        given-names: Bodo
+      - family-names: Lupyan
+        given-names: Gary
+      - family-names: Perry
+        given-names: Lynn K.
+      - family-names: Perlman
+        given-names: Marcus
+      - family-names: Dingemanse
+        given-names: Mark
+    doi: 10.3758/s13428-023-02112-6
+    date-published: "2023-04-20"
     url: "https://osf.io/ex37k/"
     notes: Cite when your analysis uses iconicity_ratings_cleaned.csv.

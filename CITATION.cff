@@ -14,6 +14,7 @@ abstract: >-
   samples, and exports results for tokens, grammatical categories, and
   iconicity ratings.
 version: 1.0.8
+doi: 10.5281/zenodo.21199304
 date-released: "2026-07-05"
 url: "https://github.com/ChildConicFoundation/ChildConicity"
 repository-code: "https://github.com/ChildConicFoundation/ChildConicity"

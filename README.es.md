@@ -4,6 +4,7 @@
 [![Coverage](https://img.shields.io/badge/coverage-≥80%25-04e762?logo=pytest&logoColor=white)](https://github.com/ChildConicFoundation/ChildConicity#pruebas)
 [![Python](https://img.shields.io/badge/python-3.10+-3776AB?logo=python&logoColor=white)](https://www.python.org/downloads/)
 [![License: BSL-1.0](https://img.shields.io/badge/License-BSL--1.0-0052CC)](LICENSE)
+[![DOI](https://zenodo.org/badge/966707656.svg)](https://doi.org/10.5281/zenodo.21199303)
 
 [![Platform](https://img.shields.io/badge/platform-Linux%20%7C%20macOS%20%7C%20Windows-555)](#instalación)
 [![Corpus](https://img.shields.io/badge/corpus-CHILDES%20%2F%20TalkBank-8B4513)](https://talkbank.org/childes/)

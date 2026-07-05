@@ -13,7 +13,7 @@ abstract: >-
   development. Normalizes .cha transcripts, groups data by age in quarterly
   samples, and exports results for tokens, grammatical categories, and
   iconicity ratings.
-version: 1.0.7
+version: 1.0.8
 date-released: "2026-07-05"
 url: "https://github.com/ChildConicFoundation/ChildConicity"
 repository-code: "https://github.com/ChildConicFoundation/ChildConicity"

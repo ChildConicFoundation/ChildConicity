@@ -1,9 +1,9 @@
 import os
 import pytest
 import shutil
+from src.corpus_normalizers.child_subdir_normalizer import modify_cha_file
 from src.corpus_normalizers.post_normalizer import (
     extract_age,
-    modify_cha_file,
     process_directory,
 )
 

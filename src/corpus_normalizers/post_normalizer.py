@@ -1,8 +1,5 @@
 from src.corpus_normalizers.child_subdir_normalizer import (
     extract_age as _extract_age,
-)
-from src.corpus_normalizers.child_subdir_normalizer import (
-    modify_cha_file,
     process_directory as _process_directory,
 )
 

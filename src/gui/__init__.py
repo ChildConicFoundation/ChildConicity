@@ -1,3 +1,5 @@
+from .app import ChildConicityApp
+
 __all__ = ["ChildConicityApp", "run_app"]
 
 

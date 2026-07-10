@@ -1,6 +1,5 @@
 import csv
 import json
-from pathlib import Path
 
 from src.quarterly_samples.rated_exporter import (
     build_lema_count,

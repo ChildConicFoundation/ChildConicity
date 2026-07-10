@@ -1,12 +1,9 @@
 import json
 from unittest.mock import patch
 
-import pytest
-
 from src.gui.services import (
     DEFAULT_ICONICITY_CSV,
     DEFAULT_RATED_OUTPUT_DIR,
-    DEFAULT_TOKENS_OUTPUT_DIR,
     DEFAULT_TYPES_OUTPUT_DIR,
     TYPE_COUNT_ONLY_ONCE,
 )

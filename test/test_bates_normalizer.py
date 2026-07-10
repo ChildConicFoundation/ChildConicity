@@ -1,6 +1,4 @@
-import os
 import textwrap
-from unittest.mock import patch, mock_open
 
 import pytest
 

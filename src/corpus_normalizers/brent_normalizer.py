@@ -81,8 +81,7 @@ class BrendManipulator:
                         if match:
                             day = int(match.group(1))
                             month_str = match.group(2).lower()
-                            year = int(match.group(3))
-                            
+
                             # Convert the text month to a number
                             month_map = {
                                 'jan': 1, 'feb': 2, 'mar': 3, 'apr': 4,
@@ -90,10 +89,7 @@ class BrendManipulator:
                                 'sep': 9, 'oct': 10, 'nov': 11, 'dec': 12
                             }
                             month = month_map.get(month_str, 0)
-                            
-                            # Adjust the year (00 -> 2000)
-                            year = 2000 + year if year < 100 else year
-                            
+
                             return f"0 years {month:02d} months {day:02d} days"
                     
                     # Normal case: YYMMDD.cha

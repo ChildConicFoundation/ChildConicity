@@ -70,7 +70,6 @@ class CorpusManipulator:
                     if len(file_name) >= 6:  # Make sure it has at least 6 digits
                         years = int(file_name[0:2])
                         months = int(file_name[2:4])
-                        days = int(file_name[4:6])
                         return f"{years};{months}"
             
             # Search for the age in the PID

@@ -25,7 +25,8 @@ def load_locale():
 
     config_path = locale_config_path()
     if os.path.isfile(config_path):
-        stored = open(config_path, encoding="utf-8").read().strip().lower()
+        with open(config_path, encoding="utf-8") as file:
+            stored = file.read().strip().lower()
         if stored in SUPPORTED_LOCALES:
             _LOCALE = stored
             return _LOCALE

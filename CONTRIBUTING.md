@@ -43,6 +43,10 @@ Useful pull requests include bug fixes, tests, documentation, and new or improve
 
 Open an issue first if the change is large or changes analysis results. Do not bump the package version, edit release metadata, or create tags; maintainers handle releases.
 
+## AI-assisted contributions
+
+AI tools are welcome. A human still has to review the change, understand it, and confirm it behaves as intended before opening the pull request. Passing CI is not a substitute for that review. You are responsible for the patch you submit, including any AI-generated parts.
+
 ## License
 
 By contributing, you agree that your work is included under the [Boost Software License 1.0](LICENSE).

@@ -43,6 +43,10 @@ Encajan bien las correcciones, los tests, la documentación y los normalizadores
 
 Abre un issue antes si el cambio es grande o altera resultados de análisis. No subas la versión del paquete, no edites metadatos de release y no crees tags; los releases los hacen los maintainers.
 
+## Contribuciones con IA
+
+Aceptamos el uso de herramientas de IA. Sigue siendo imprescindible que un humano haya revisado el cambio, lo entienda y garantice que funciona como debe antes de abrir el pull request. Que la CI pase no sustituye esa revisión. Eres responsable del parche que envías, incluida cualquier parte generada por IA.
+
 ## Licencia
 
 Al contribuir, aceptas que tu trabajo quede bajo la [Boost Software License 1.0](LICENSE).

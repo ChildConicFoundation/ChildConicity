@@ -19,6 +19,8 @@
 
 ChildConicity processes CHILDES/TalkBank corpora and analyzes iconicity in child language development. It normalizes `.cha` transcripts, groups data by age in quarterly samples, and exports results for tokens, grammatical categories, and iconicity ratings.
 
+To contribute, see [CONTRIBUTING.md](CONTRIBUTING.md). Pull requests must target `develop`, not `main`.
+
 ## Installation
 
 A virtual environment is recommended:
@@ -267,6 +269,12 @@ The script:
 - Saves the report in `coverage_report/htmlcov/`.
 
 The GitHub Actions pipeline runs the tests and publishes the `coverage-report` artifact with the coverage report.
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) ([español](CONTRIBUTING.es.md)).
+
+Work from `develop`, open a branch, and send a pull request against `develop`. Maintainers review the PR and merge it. `main` is the published line; do not open pull requests against it.
 
 ## Citation
 

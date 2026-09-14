@@ -19,6 +19,8 @@
 
 ChildConicity permite procesar corpus CHILDES/TalkBank y analizar la iconicidad en el desarrollo del lenguaje infantil. El programa normaliza transcripciones `.cha`, agrupa los datos por edad en trimestres y genera resultados por tokens, categorías gramaticales y ratings de iconicidad.
 
+Para contribuir, lee [CONTRIBUTING.es.md](CONTRIBUTING.es.md). Los pull requests tienen que ir a `develop`, no a `main`.
+
 ## Instalación
 
 Se recomienda usar un entorno virtual:
@@ -267,6 +269,12 @@ El script:
 - Guarda el informe en `coverage_report/htmlcov/`.
 
 El pipeline de GitHub Actions ejecuta las pruebas y publica el artefacto `coverage-report` con el informe de cobertura.
+
+## Cómo contribuir
+
+Lee [CONTRIBUTING.es.md](CONTRIBUTING.es.md) ([English](CONTRIBUTING.md)).
+
+Parte de `develop`, abre una rama y manda un pull request contra `develop`. Los maintainers revisan el PR y lo mergean. `main` es la línea publicada; no abras pull requests contra ella.
 
 ## Cómo citar
 

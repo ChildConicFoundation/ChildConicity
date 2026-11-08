@@ -11,6 +11,12 @@ from contextlib import redirect_stderr, redirect_stdout
 from tkinter import filedialog, messagebox, ttk
 from tkinter.scrolledtext import ScrolledText
 
+from src.analysis.shared_preconditions import (
+    inspect_processed_corpora,
+    missing_selected_corpora,
+    rated_source_ready,
+    required_analysis_modules,
+)
 from src.corpus_initialization import CorpusInitializer
 from src.i18n import get_locale, save_locale, set_locale, t
 from src.gui.services import (
@@ -56,16 +62,7 @@ def _has_importable_modules(module_names):
 
 
 def _required_analysis_modules(mode, generate_plots):
-    if mode == "tokens":
-        required_modules = ["pandas"]
-        if generate_plots:
-            required_modules.extend(["matplotlib", "numpy", "seaborn"])
-        return required_modules
-
-    if mode == "types" and generate_plots:
-        return ["pandas", "matplotlib", "numpy", "seaborn"]
-
-    return []
+    return required_analysis_modules(mode, generate_plots)
 
 
 def _analysis_runner_path():
@@ -765,15 +762,7 @@ class ChildConicityApp(tk.Tk):
 
     def _check_rated_availability(self):
         source = self.rated_source_dir.get().strip()
-        has_data = (
-            bool(source)
-            and os.path.isdir(source)
-            and any(
-                (p / "WordCount").is_dir()
-                for p in __import__("pathlib").Path(source).iterdir()
-                if p.is_dir()
-            )
-        )
+        has_data = rated_source_ready(source)
         if has_data:
             self.rated_status_label.configure(
                 text=t("gui.rated.data_found", path=source),
@@ -1214,28 +1203,27 @@ class ChildConicityApp(tk.Tk):
         if not processed_root:
             return t("gui.validation.set_processed_path")
 
-        if os.path.basename(os.path.normpath(processed_root)) != CORPUS_DATA_ROOT_KEY:
+        status = inspect_processed_corpora(processed_root)
+        if not status["name_ok"]:
             return t(
                 "gui.validation.processed_name",
                 name=CORPUS_DATA_ROOT_KEY,
             )
 
-        if not os.path.isdir(processed_root):
+        if not status["exists"]:
             return t("gui.validation.processed_missing", path=processed_root)
 
-        available_corpora = get_available_corpora(processed_root)
-        if not available_corpora:
+        if not status["corpora"]:
             return t("gui.validation.no_corpora", path=processed_root)
 
         if selected_corpora is None:
             return None
 
-        missing_corpora = [
-            corpus_name
-            for corpus_name in selected_corpora
-            if corpus_name not in available_corpora
-            or not os.path.isdir(os.path.join(processed_root, corpus_name))
-        ]
+        missing_corpora = missing_selected_corpora(
+            processed_root,
+            selected_corpora,
+            status["corpora"],
+        )
         if missing_corpora:
             return t(
                 "gui.validation.missing_corpora",
@@ -1254,7 +1242,7 @@ class ChildConicityApp(tk.Tk):
         if not processed_root:
             return t("gui.validation.set_processed_path")
 
-        if os.path.basename(os.path.normpath(processed_root)) != CORPUS_DATA_ROOT_KEY:
+        if not inspect_processed_corpora(processed_root)["name_ok"]:
             return t(
                 "gui.validation.processed_name",
                 name=CORPUS_DATA_ROOT_KEY,

@@ -5,7 +5,6 @@ from src.cli.download_corpora import (
     TALKBANK_USER_ENV,
     main,
     resolve_talkbank_credentials,
-    run,
 )
 
 
@@ -86,57 +85,3 @@ def test_main_reports_missing_credentials(monkeypatch, capsys):
     captured = capsys.readouterr()
     assert TALKBANK_USER_ENV in captured.err
     assert TALKBANK_PASSWORD_ENV in captured.err
-
-
-def test_run_reports_each_corpus_and_returns_summary(monkeypatch, tmp_path):
-    monkeypatch.setattr(
-        "src.cli.download_corpora.login_and_get_cookies",
-        lambda *args, **kwargs: {"session": "ok"},
-    )
-    monkeypatch.setattr(
-        "src.cli.download_corpora.fetch_corpus_names",
-        lambda session: ["Brent", "Bloom"],
-    )
-    monkeypatch.setattr(
-        "src.cli.download_corpora.download_corpus",
-        lambda *args, **kwargs: True,
-    )
-    seen = []
-
-    summary = run(
-        "person@example.com",
-        "secret-value",
-        ["Brent"],
-        str(tmp_path),
-        False,
-        on_corpus=lambda name, index, total: seen.append((name, index, total)),
-    )
-
-    assert seen == [("Brent", 1, 1)]
-    assert summary == {
-        "downloaded": 1,
-        "skipped": 0,
-        "failed": 0,
-        "requested": ["Brent"],
-        "error": None,
-    }
-    assert "secret-value" not in str(summary)
-
-
-def test_run_returns_login_error(monkeypatch, tmp_path):
-    def reject_login(*args, **kwargs):
-        raise PermissionError("Authentication error: rejected")
-
-    monkeypatch.setattr("src.cli.download_corpora.login_and_get_cookies", reject_login)
-
-    summary = run(
-        "person@example.com",
-        "secret-value",
-        ["Brent"],
-        str(tmp_path),
-        False,
-    )
-
-    assert summary["error"] == "login"
-    assert summary["downloaded"] == 0
-    assert "secret-value" not in str(summary)

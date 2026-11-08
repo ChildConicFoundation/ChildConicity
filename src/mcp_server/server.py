@@ -86,15 +86,9 @@ def build_server() -> MCPServer:
         Credentials are read from CHILDCONICITY_TALKBANK_USER and
         CHILDCONICITY_TALKBANK_PASSWORD. This tool has no password argument.
         """
-
-        def _run() -> dict:
-            def _on_corpus(name: str, index: int, total: int) -> None:
-                _report_from_thread(ctx, index, total, f"Downloading {name}")
-
-            return tools.download_corpora(corpora, force=force, on_corpus=_on_corpus)
-
-        await _safe_progress(ctx, 0, max(len(corpora), 1), "Starting TalkBank download")
-        return await _in_thread(ctx, "Downloading corpora", _run, report_start=False)
+        return await _in_thread(
+            ctx, "Downloading corpora", tools.download_corpora, corpora, force
+        )
 
     @server.tool(structured_output=False)
     async def normalize_corpora(

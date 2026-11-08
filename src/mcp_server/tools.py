@@ -6,8 +6,10 @@ stream is sent to stderr so it cannot corrupt the stdio MCP channel.
 
 import contextlib
 import importlib.util
+import io
 import json
 import os
+import re
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
@@ -287,11 +289,11 @@ def download_iconicity_ratings(force: bool = False) -> dict:
     return {"path": display_path(path), "downloaded": bool(downloaded)}
 
 
-def download_corpora(corpora: list[str], force: bool = False, on_corpus=None) -> dict:
+def download_corpora(corpora: list[str], force: bool = False) -> dict:
     """Download TalkBank corpora with headless Chrome.
 
     Credentials come from the environment. This function has no user or
-    password parameter.
+    password parameter. It calls the existing CLI and does not change it.
     """
     if not corpora:
         raise ToolError("Select at least one corpus to download.")
@@ -305,35 +307,45 @@ def download_corpora(corpora: list[str], force: bool = False, on_corpus=None) ->
         ) from exc
 
     output_dir = resolve_path(DEFAULT_OUTPUT_DIR)
+    captured = io.StringIO()
     try:
-        with _quiet_stdout():
-            summary = run_download(
+        with contextlib.redirect_stdout(captured):
+            run_download(
                 email,
                 password,
                 corpora,
                 str(output_dir),
                 force,
                 headless=True,
-                on_corpus=on_corpus,
             )
     except PermissionError as exc:
         raise ToolError(_LOGIN_FAILURE) from exc
     except (requests.RequestException, WebDriverException, OSError) as exc:
         raise ToolError(_DOWNLOAD_FAILURE) from exc
+    finally:
+        sys.stderr.write(captured.getvalue())
 
-    if not summary or summary.get("error"):
+    text = captured.getvalue()
+    if "Summary:" not in text:
         raise ToolError(_LOGIN_FAILURE)
-    if summary["failed"] and not summary["downloaded"] and not summary["skipped"]:
+    match = re.search(
+        r"Summary: (\d+) downloaded, (\d+) skipped, (\d+) failed\.",
+        text,
+    )
+    downloaded = skipped = failed = 0
+    if match:
+        downloaded, skipped, failed = (int(match.group(index)) for index in range(1, 4))
+    if failed and not downloaded and not skipped:
         raise ToolError(
-            f"TalkBank download failed for {summary['failed']} corpora. "
+            f"TalkBank download failed for {failed} corpora. "
             "Check Chrome, the network, and the corpus names, then retry."
         )
     return {
         "output_dir": display_path(output_dir),
-        "requested": list(summary["requested"]),
-        "downloaded": summary["downloaded"],
-        "skipped": summary["skipped"],
-        "failed": summary["failed"],
+        "requested": list(corpora),
+        "downloaded": downloaded,
+        "skipped": skipped,
+        "failed": failed,
     }
 
 

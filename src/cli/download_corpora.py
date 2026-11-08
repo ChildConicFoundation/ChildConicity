@@ -254,28 +254,14 @@ def download_corpus(session, corpus_name, output_dir, force, retries=2):
     return True
 
 
-def run(
-    email,
-    password,
-    corpora_filter,
-    output_dir,
-    force,
-    headless=True,
-    on_corpus=None,
-):
+def run(email, password, corpora_filter, output_dir, force, headless=True):
     os.makedirs(output_dir, exist_ok=True)
 
     try:
         cookies = login_and_get_cookies(email, password, headless=headless)
     except PermissionError as exc:
         print(f"ERROR: {exc}")
-        return {
-            "downloaded": 0,
-            "skipped": 0,
-            "failed": 0,
-            "requested": list(corpora_filter or []),
-            "error": "login",
-        }
+        return
 
     session = requests.Session()
     session.cookies.update(cookies)
@@ -297,10 +283,7 @@ def run(
     ok = 0
     skipped = 0
     failed = 0
-    total = len(selected)
-    for index, corpus in enumerate(selected, start=1):
-        if on_corpus is not None:
-            on_corpus(corpus, index, total)
+    for corpus in selected:
         try:
             result = download_corpus(session, corpus, output_dir, force)
             if result:
@@ -315,13 +298,6 @@ def run(
             failed += 1
 
     print(f"\nSummary: {ok} downloaded, {skipped} skipped, {failed} failed.")
-    return {
-        "downloaded": ok,
-        "skipped": skipped,
-        "failed": failed,
-        "requested": selected,
-        "error": None,
-    }
 
 
 def main(argv=None):

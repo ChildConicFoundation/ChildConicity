@@ -246,13 +246,8 @@ def test_download_corpora_login_failure_omits_the_secret(tmp_path, monkeypatch):
     def fake_run(*args, **kwargs):
         assert args[1] == "super-secret-value"
         assert kwargs["headless"] is True
-        return {
-            "downloaded": 0,
-            "skipped": 0,
-            "failed": 0,
-            "requested": ["Brent"],
-            "error": "login",
-        }
+        assert "on_corpus" not in kwargs
+        print("ERROR: Authentication error: rejected")
 
     monkeypatch.setattr("src.mcp_server.tools.run_download", fake_run)
 
@@ -462,15 +457,7 @@ def test_download_corpora_reports_permission_and_total_failure(tmp_path, monkeyp
     assert "super-secret-value" not in str(exc_info.value)
 
     def failed(*args, **kwargs):
-        if kwargs.get("on_corpus") is not None:
-            kwargs["on_corpus"]("Brent", 1, 1)
-        return {
-            "downloaded": 0,
-            "skipped": 0,
-            "failed": 1,
-            "requested": ["Brent"],
-            "error": None,
-        }
+        print("Summary: 0 downloaded, 0 skipped, 1 failed.")
 
     monkeypatch.setattr("src.mcp_server.tools.run_download", failed)
     with pytest.raises(ToolError, match="failed for 1"):
@@ -609,14 +596,7 @@ def test_server_runs_the_remaining_tools(tmp_path, monkeypatch, capsys):
     monkeypatch.setenv(TALKBANK_PASSWORD_ENV, "super-secret-value")
 
     def fake_download(*args, **kwargs):
-        kwargs["on_corpus"]("Brent", 1, 1)
-        return {
-            "downloaded": 1,
-            "skipped": 0,
-            "failed": 0,
-            "requested": ["Brent"],
-            "error": None,
-        }
+        print("Summary: 1 downloaded, 0 skipped, 0 failed.")
 
     class FakeInitializer:
         def __init__(self, source_root, output_root):

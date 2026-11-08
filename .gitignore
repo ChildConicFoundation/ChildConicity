@@ -43,6 +43,7 @@ quarterly_grammatical_categories/
 quarterly_lema_count/
 rated_quarterly_grammatical_categories/
 iconicity_ratings/
+.childconicity_mcp/
 
 # PyInstaller
 #  Usually these files are written by a python script from a template

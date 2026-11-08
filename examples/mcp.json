@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "childconicity": {
+      "command": "python",
+      "args": ["-m", "src.mcp_server.server"],
+      "cwd": "/absolute/path/to/ChildConicity",
+      "env": {
+        "CHILDCONICITY_PROJECT_ROOT": "/absolute/path/to/ChildConicity",
+        "CHILDCONICITY_TALKBANK_USER": "",
+        "CHILDCONICITY_TALKBANK_PASSWORD": ""
+      }
+    }
+  }
+}

@@ -238,8 +238,33 @@ python3 src/gui_analysis_runner.py tokens --processed-root Corpora_modified --re
 
 - Prefer `CHILDCONICITY_TALKBANK_USER` and `CHILDCONICITY_TALKBANK_PASSWORD` for TalkBank credentials instead of `--user` / `--password` on the command line.
 - TalkBank download is the most fragile automation step because it depends on Selenium and a real browser session.
-- Long runs only report progress on stdout; there is no streaming progress API yet.
+- The CLI reports long-run progress on stdout. The MCP server reports progress to the client.
 - `*_result.json` files are local execution artifacts. Do not treat them as project inputs or commit them.
+
+### MCP server
+
+A local stdio server wraps this same pipeline for MCP clients. It does not add analysis logic.
+
+From a checkout:
+
+```bash
+pip install -e ".[mcp]"
+python -m src.mcp_server.server
+```
+
+The installed command is `childconicity-mcp`. `examples/mcp.json` shows a client entry. Point `cwd` and `CHILDCONICITY_PROJECT_ROOT` at the project root. TalkBank credentials stay in `CHILDCONICITY_TALKBANK_USER` and `CHILDCONICITY_TALKBANK_PASSWORD`. The download tool has no user or password argument.
+
+Tools, in pipeline order:
+
+1. `download_iconicity_ratings`
+2. `download_corpora` (headless Chrome; this step can take a long time)
+3. `normalize_corpora`
+4. `analyze_types` (pass an explicit `corpora` list)
+5. `export_rated`
+
+`analyze_tokens` is optional. `check_preconditions`, `list_corpora`, and `list_categories` inspect local state.
+
+Each analysis tool returns a short summary. The full path map is the resource `childconicity://results/{name}` (the name is the file at the end of `result_file`). Corpus names are `childconicity://corpora`. The software citation is `childconicity://citation`.
 
 ## What Does the Analysis Do?
 

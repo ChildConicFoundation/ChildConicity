@@ -39,6 +39,12 @@ dev = [
     "pytest>=8.0.0",
     "pytest-cov>=6.0.0",
 ]
+mcp = [
+    "mcp>=2.3,<3",
+]
+
+[project.scripts]
+childconicity-mcp = "src.mcp_server.server:main"
 
 [project.urls]
 Homepage = "https://github.com/ChildConicFoundation/ChildConicity"

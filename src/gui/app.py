@@ -162,6 +162,7 @@ class ChildConicityApp(tk.Tk):
         self._log_queue = queue.Queue()
         self._busy = False
         self._busy_widgets = []
+        self._after_id = None
         self.protocol("WM_DELETE_WINDOW", self._handle_close)
         self._build_ui()
         self._poll_log_queue()
@@ -811,6 +812,12 @@ class ChildConicityApp(tk.Tk):
 
     def _handle_close(self):
         self._is_closing = True
+        if self._after_id is not None:
+            try:
+                self.after_cancel(self._after_id)
+            except tk.TclError:
+                pass
+            self._after_id = None
         self.destroy()
 
     def _initialize_available_data(self):
@@ -1373,7 +1380,7 @@ class ChildConicityApp(tk.Tk):
             result_path = result_file.name
 
         if mode == "rated":
-            effective_source = self.rated_source_dir.get().strip() or DEFAULT_TYPES_OUTPUT_DIR
+            effective_source = processed_root or DEFAULT_TYPES_OUTPUT_DIR
         else:
             effective_source = processed_root
 
@@ -1526,7 +1533,7 @@ class ChildConicityApp(tk.Tk):
                 payload()
 
         if not self._is_closing:
-            self.after(100, self._poll_log_queue)
+            self._after_id = self.after(100, self._poll_log_queue)
 
     def _append_log(self, text):
         self.log_text.insert(tk.END, text)

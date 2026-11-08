@@ -52,3 +52,6 @@ include = ["src*"]
 
 [tool.pytest.ini_options]
 testpaths = ["test"]
+markers = [
+    "gui: manual Tkinter workflows; needs a display or xvfb",
+]

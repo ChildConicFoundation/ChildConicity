@@ -1,3 +1,4 @@
+import ctypes
 import io
 import json
 import os
@@ -130,9 +131,31 @@ LOCALE_DISPLAY = {
 }
 DISPLAY_LOCALE = {label: code for code, label in LOCALE_DISPLAY.items()}
 
+_x11_threads_ready = False
+
+
+def _allow_subprocess_from_tk_threads():
+    """Let a worker thread start a process while Tk is handling events.
+
+    Without XInitThreads, a fork made during an X11 call can leave Popen
+    waiting forever on the child. The call has to happen before Tk opens
+    the display.
+    """
+    global _x11_threads_ready
+    if _x11_threads_ready or sys.platform != "linux":
+        return
+
+    _x11_threads_ready = True
+    try:
+        libx11 = ctypes.CDLL("libX11.so.6")
+    except OSError:
+        return
+    libx11.XInitThreads()
+
 
 class ChildConicityApp(tk.Tk):
     def __init__(self):
+        _allow_subprocess_from_tk_threads()
         super().__init__()
         self.title("ChildConicity")
         self.geometry("980x720")
@@ -1521,19 +1544,28 @@ class ChildConicityApp(tk.Tk):
         if self._is_closing:
             return
 
-        while True:
-            try:
-                item_type, payload = self._log_queue.get_nowait()
-            except queue.Empty:
-                break
+        try:
+            while True:
+                try:
+                    item_type, payload = self._log_queue.get_nowait()
+                except queue.Empty:
+                    break
 
-            if item_type == "log":
-                self._append_log(payload)
-            elif item_type == "callback":
-                payload()
-
-        if not self._is_closing:
-            self._after_id = self.after(100, self._poll_log_queue)
+                try:
+                    if item_type == "log":
+                        self._append_log(payload)
+                    elif item_type == "callback":
+                        payload()
+                except tk.TclError:
+                    if self._is_closing:
+                        return
+                    raise
+        finally:
+            if not self._is_closing:
+                try:
+                    self._after_id = self.after(100, self._poll_log_queue)
+                except tk.TclError:
+                    pass
 
     def _append_log(self, text):
         self.log_text.insert(tk.END, text)

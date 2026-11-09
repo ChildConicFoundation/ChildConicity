@@ -8,7 +8,6 @@ The names follow Flutter's widget tests:
 """
 
 import json
-import subprocess
 import threading
 import time
 import tkinter as tk
@@ -54,10 +53,11 @@ class DirectoryChooser:
 
 
 class AnalysisProcessDouble:
-    """Stand in for the analysis subprocess the GUI launches.
+    """Stand in for every process the GUI starts while the window is open.
 
-    The window still builds the real command line. This double only replaces
-    the long-running process so a workflow test can finish locally.
+    Forking a real process from the worker thread while Tk is inside
+    ``update()`` can hang on Linux. The window still builds the real analysis
+    command; this double only replaces the launch.
     """
 
     def __init__(self):
@@ -66,12 +66,11 @@ class AnalysisProcessDouble:
         self.release.set()
         self._invocations = []
         self._lock = threading.Lock()
-        self._real_popen = subprocess.Popen
 
     def __call__(self, command, **kwargs):
-        command = tuple(command)
-        if not any(str(part).endswith("gui_analysis_runner.py") for part in command):
-            return self._real_popen(command, **kwargs)
+        command = tuple(str(part) for part in command)
+        if not any(part.endswith("gui_analysis_runner.py") for part in command):
+            return _SuccessfulProbe(command)
 
         with self._lock:
             self._invocations.append((command, kwargs.get("cwd")))
@@ -96,6 +95,7 @@ class AnalysisProcessDouble:
         return _FakeProcess(
             release=self.release,
             return_code=lambda: self.return_code,
+            args=command,
         )
 
     @property
@@ -109,17 +109,68 @@ class AnalysisProcessDouble:
             return [cwd for _command, cwd in self._invocations]
 
 
+class _SuccessfulProbe:
+    """Stand-in for the interpreter check, which must not fork."""
+
+    def __init__(self, args):
+        self.args = args
+        self.pid = 0
+        self.returncode = 0
+        self.stdout = None
+        self.stderr = None
+
+    def communicate(self, input=None, timeout=None):
+        return (None, None)
+
+    def poll(self):
+        return self.returncode
+
+    def wait(self, timeout=None):
+        return self.returncode
+
+    def kill(self):
+        return None
+
+    def __enter__(self):
+        return self
+
+    def __exit__(self, exc_type, exc, traceback):
+        return False
+
+
 class _FakeProcess:
-    def __init__(self, release, return_code):
+    def __init__(self, release, return_code, args):
+        self.args = args
         self.pid = 4242
+        self.returncode = None
         self.stdout = _BlockingStdout(("external analysis output\n",), release)
+        self.stderr = None
         self._release = release
         self._return_code = return_code
 
-    def wait(self):
-        if not self._release.wait(timeout=30):
+    def communicate(self, input=None, timeout=None):
+        output = "".join(self.stdout)
+        self.returncode = self.wait(timeout=timeout)
+        return (output, None)
+
+    def poll(self):
+        return self.returncode
+
+    def wait(self, timeout=None):
+        if not self._release.wait(timeout=30 if timeout is None else timeout):
             return 1
-        return self._return_code()
+        self.returncode = self._return_code()
+        return self.returncode
+
+    def kill(self):
+        self._release.set()
+
+    def __enter__(self):
+        return self
+
+    def __exit__(self, exc_type, exc, traceback):
+        self.wait()
+        return False
 
 
 class _BlockingStdout:

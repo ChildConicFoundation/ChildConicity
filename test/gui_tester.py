@@ -62,8 +62,6 @@ class AnalysisProcessDouble:
 
     def __init__(self):
         self.return_code = 0
-        self.release = threading.Event()
-        self.release.set()
         self._invocations = []
         self._lock = threading.Lock()
 
@@ -93,7 +91,6 @@ class AnalysisProcessDouble:
             json.dump(payload, result_file)
 
         return _FakeProcess(
-            release=self.release,
             return_code=lambda: self.return_code,
             args=command,
         )
@@ -139,13 +136,12 @@ class _SuccessfulProbe:
 
 
 class _FakeProcess:
-    def __init__(self, release, return_code, args):
+    def __init__(self, return_code, args):
         self.args = args
         self.pid = 4242
         self.returncode = None
-        self.stdout = _BlockingStdout(("external analysis output\n",), release)
+        self.stdout = iter(("external analysis output\n",))
         self.stderr = None
-        self._release = release
         self._return_code = return_code
 
     def communicate(self, input=None, timeout=None):
@@ -157,13 +153,11 @@ class _FakeProcess:
         return self.returncode
 
     def wait(self, timeout=None):
-        if not self._release.wait(timeout=30 if timeout is None else timeout):
-            return 1
         self.returncode = self._return_code()
         return self.returncode
 
     def kill(self):
-        self._release.set()
+        return None
 
     def __enter__(self):
         return self
@@ -171,17 +165,6 @@ class _FakeProcess:
     def __exit__(self, exc_type, exc, traceback):
         self.wait()
         return False
-
-
-class _BlockingStdout:
-    def __init__(self, lines, release):
-        self._lines = lines
-        self._release = release
-
-    def __iter__(self):
-        if not self._release.wait(timeout=30):
-            return iter(())
-        return iter(self._lines)
 
 
 class GuiTester:

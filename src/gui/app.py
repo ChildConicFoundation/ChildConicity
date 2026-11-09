@@ -77,6 +77,21 @@ def _venv_python_path():
     return os.path.join(_project_root(), ".venv", "bin", "python")
 
 
+def _analysis_environment():
+    """Snapshot the environment before a worker thread starts.
+
+    ``os.environ`` is process-global. Copying it from the analysis thread
+    while Tk is inside ``update()`` can stall that thread on Linux.
+    """
+    env = os.environ.copy()
+    env.setdefault(
+        "MPLCONFIGDIR",
+        os.path.join(tempfile.gettempdir(), "childconicity_mpl"),
+    )
+    os.makedirs(env["MPLCONFIGDIR"], exist_ok=True)
+    return env
+
+
 def _token_plot_directories(output_dir):
     base_output_dir = output_dir or DEFAULT_TOKENS_OUTPUT_DIR
     return (
@@ -821,6 +836,7 @@ class ChildConicityApp(tk.Tk):
         output_dir = self.rated_output_dir.get().strip() or DEFAULT_RATED_OUTPUT_DIR
 
         self._append_log(t("gui.log.iconicity_export_start"))
+        analysis_env = _analysis_environment()
         self._run_in_background(
             lambda: self._run_analysis_worker(
                 mode="rated",
@@ -830,6 +846,7 @@ class ChildConicityApp(tk.Tk):
                 selected_corpora=None,
                 selected_categories=None,
                 type_count_mode=DEFAULT_TYPE_COUNT_MODE,
+                analysis_env=analysis_env,
             )
         )
 
@@ -1203,6 +1220,7 @@ class ChildConicityApp(tk.Tk):
                 corpora=corpora_text,
             )
         )
+        analysis_env = _analysis_environment()
         self._run_in_background(
             lambda: self._run_analysis_worker(
                 mode=mode,
@@ -1212,6 +1230,7 @@ class ChildConicityApp(tk.Tk):
                 selected_corpora=selected_corpora,
                 selected_categories=selected_categories,
                 type_count_mode=type_count_mode,
+                analysis_env=analysis_env,
             )
         )
 
@@ -1326,6 +1345,7 @@ class ChildConicityApp(tk.Tk):
         selected_corpora,
         selected_categories,
         type_count_mode,
+        analysis_env,
     ):
         writer = _QueueWriter(self._enqueue_log)
 
@@ -1339,6 +1359,7 @@ class ChildConicityApp(tk.Tk):
                     selected_corpora=selected_corpora,
                     selected_categories=selected_categories,
                     type_count_mode=type_count_mode,
+                    analysis_env=analysis_env,
                 )
                 self._report_analysis_result(
                     mode,
@@ -1365,6 +1386,7 @@ class ChildConicityApp(tk.Tk):
         selected_corpora,
         selected_categories,
         type_count_mode,
+        analysis_env,
     ):
         analysis_interpreter = _get_analysis_interpreter(mode, generate_plots)
         if analysis_interpreter is not None:
@@ -1381,6 +1403,7 @@ class ChildConicityApp(tk.Tk):
                 selected_corpora=selected_corpora,
                 selected_categories=selected_categories,
                 type_count_mode=type_count_mode,
+                analysis_env=analysis_env,
             )
 
         raise RuntimeError(t("gui.error.no_interpreter"))
@@ -1395,6 +1418,7 @@ class ChildConicityApp(tk.Tk):
         selected_corpora,
         selected_categories,
         type_count_mode,
+        analysis_env,
     ):
         with tempfile.NamedTemporaryFile(
             delete=False,
@@ -1453,17 +1477,10 @@ class ChildConicityApp(tk.Tk):
             )
 
         print("Starting external analysis process...")
-        env = os.environ.copy()
-        env.setdefault(
-            "MPLCONFIGDIR",
-            os.path.join(tempfile.gettempdir(), "childconicity_mpl"),
-        )
-        os.makedirs(env["MPLCONFIGDIR"], exist_ok=True)
-
         process = subprocess.Popen(
             command,
             cwd=_project_root(),
-            env=env,
+            env=analysis_env,
             stdout=subprocess.PIPE,
             stderr=subprocess.STDOUT,
             text=True,

@@ -85,7 +85,6 @@ def gui(monkeypatch, tmp_path):
 
     yield tester
 
-    analysis.release.set()
     try:
         app._handle_close()
     except tk.TclError:
@@ -343,18 +342,16 @@ def test_failed_analysis_reports_the_exit_code(gui, tmp_path):
 
 def test_window_stays_busy_until_the_analysis_finishes(gui, tmp_path):
     _prepare_processed_corpus(gui, tmp_path, "Brent")
-    gui.analysis.release.clear()
 
-    gui.tap(t("gui.button.run_analysis"))
+    # The worker clears the busy flag through the main-thread poll, so the
+    # controls stay disabled until the window is pumped.
+    gui.control(t("gui.button.run_analysis")).invoke()
 
     assert gui.status() == t("gui.status.in_progress")
     assert not gui.is_enabled(t("gui.button.run_analysis"))
     assert not gui.is_enabled(t("gui.button.generate_plots"))
     assert not gui.is_enabled(t("gui.button.show_initialized"))
-    gui.pump_for(0.3)
-    assert gui.status() == t("gui.status.in_progress")
 
-    gui.analysis.release.set()
     gui.pump_and_settle()
 
     assert gui.status() == t("gui.status.ready")

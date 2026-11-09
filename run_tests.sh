@@ -10,15 +10,23 @@ echo "🚀 Running tests and generating coverage report..."
 # Create report directory if it does not exist
 mkdir -p coverage_report
 
+# Use a virtual display when this shell has none, so the GUI workflow tests run.
+if [ -z "${DISPLAY:-}" ] && command -v xvfb-run >/dev/null 2>&1; then
+    echo "No DISPLAY found; running GUI tests under Xvfb."
+    PYTEST=(xvfb-run -a python3 -m pytest)
+else
+    PYTEST=(python3 -m pytest)
+fi
+
 # Run tests with coverage, excluding examples/
-python3 -m pytest test/ -v --cov=src --cov-report=html --cov-report=term-missing --cov-config=.coveragerc
+"${PYTEST[@]}" test/ -v --cov=src --cov-report=html --cov-report=term-missing --cov-config=.coveragerc
 
 # Check whether tests passed
 if [ $? -eq 0 ]; then
     echo -e "${GREEN}✅ All tests passed${NC}"
     
     # Check the coverage threshold
-    python3 -m pytest test/ --cov=src --cov-fail-under=80 --cov-config=.coveragerc
+    "${PYTEST[@]}" test/ --cov=src --cov-fail-under=80 --cov-config=.coveragerc
     
     if [ $? -eq 0 ]; then
         echo -e "${GREEN}✅ Code coverage is above 80%${NC}"

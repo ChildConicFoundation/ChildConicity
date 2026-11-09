@@ -268,6 +268,18 @@ The script:
 - Checks that coverage is above 80%.
 - Saves the report in `coverage_report/htmlcov/`.
 
+GUI workflow tests (`test/test_gui_workflow.py`) open the Tkinter window and walk a manual session: type paths, press buttons, switch language, and wait until the window is idle. The heavy analysis process is replaced so the test checks the window and the command it builds. With a display:
+
+```bash
+python3 -m pytest test/test_gui_workflow.py -v
+```
+
+Without a display:
+
+```bash
+xvfb-run -a python3 -m pytest test/test_gui_workflow.py -v
+```
+
 The GitHub Actions pipeline runs the tests and publishes the `coverage-report` artifact with the coverage report.
 
 ## Contributing

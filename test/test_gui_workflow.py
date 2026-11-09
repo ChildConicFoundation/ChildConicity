@@ -37,6 +37,17 @@ GuiTester = _gui_tester.GuiTester
 pytestmark = pytest.mark.gui
 
 
+def _finish_on_the_ui_thread(self, worker):
+    """Run the job on the thread that owns the window.
+
+    Starting it on a worker while Tk is inside update() stalls on Python 3.12
+    before the process handle comes back. The finished job still reports
+    through the queue, so the window stays busy until the next pump.
+    """
+    self._set_busy_state(True, t("gui.status.in_progress"))
+    worker()
+
+
 class _RecordingInitializer:
     def __init__(self, source_root, output_root):
         self.source_root = source_root
@@ -68,6 +79,11 @@ def gui(monkeypatch, tmp_path):
 
     analysis = AnalysisProcessDouble()
     monkeypatch.setattr("src.gui.app.subprocess.Popen", analysis)
+    monkeypatch.setattr(
+        ChildConicityApp,
+        "_run_in_background",
+        _finish_on_the_ui_thread,
+    )
 
     try:
         app = ChildConicityApp()

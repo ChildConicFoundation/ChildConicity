@@ -36,7 +36,9 @@ if [ $? -eq 0 ]; then
     
     # Move the coverage report to the coverage_report directory
     mv htmlcov coverage_report/
-    mv .coverage* coverage_report/ 2>/dev/null || true
+    # .coveragerc is the config file. Only the data files start with .coverage.
+    mv .coverage coverage_report/ 2>/dev/null || true
+    mv .coverage.* coverage_report/ 2>/dev/null || true
     
     echo -e "\n📊 To view the coverage report, open:"
     echo -e "${GREEN}file://$(pwd)/coverage_report/htmlcov/index.html${NC}"

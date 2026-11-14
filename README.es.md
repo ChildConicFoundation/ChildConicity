@@ -268,6 +268,18 @@ El script:
 - Verifica que la cobertura sea mayor al 80%.
 - Guarda el informe en `coverage_report/htmlcov/`.
 
+Las pruebas de flujo de la GUI (`test/test_gui_workflow.py`) abren la ventana de Tkinter y recorren una sesión manual: escribir rutas, pulsar botones, cambiar de idioma y esperar a que la ventana quede libre. El proceso de análisis pesado se sustituye para comprobar la ventana y el comando que construye. Con pantalla:
+
+```bash
+python3 -m pytest test/test_gui_workflow.py -v
+```
+
+Sin pantalla:
+
+```bash
+xvfb-run -a python3 -m pytest test/test_gui_workflow.py -v
+```
+
 El pipeline de GitHub Actions ejecuta las pruebas y publica el artefacto `coverage-report` con el informe de cobertura.
 
 ## Cómo contribuir

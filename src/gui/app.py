@@ -1,3 +1,4 @@
+import ctypes
 import io
 import json
 import os
@@ -76,6 +77,21 @@ def _venv_python_path():
     return os.path.join(_project_root(), ".venv", "bin", "python")
 
 
+def _analysis_environment():
+    """Snapshot the environment before a worker thread starts.
+
+    ``os.environ`` is process-global. Copying it from the analysis thread
+    while Tk is inside ``update()`` can stall that thread on Linux.
+    """
+    env = os.environ.copy()
+    env.setdefault(
+        "MPLCONFIGDIR",
+        os.path.join(tempfile.gettempdir(), "childconicity_mpl"),
+    )
+    os.makedirs(env["MPLCONFIGDIR"], exist_ok=True)
+    return env
+
+
 def _token_plot_directories(output_dir):
     base_output_dir = output_dir or DEFAULT_TOKENS_OUTPUT_DIR
     return (
@@ -130,9 +146,31 @@ LOCALE_DISPLAY = {
 }
 DISPLAY_LOCALE = {label: code for code, label in LOCALE_DISPLAY.items()}
 
+_x11_threads_ready = False
+
+
+def _allow_subprocess_from_tk_threads():
+    """Let a worker thread start a process while Tk is handling events.
+
+    Without XInitThreads, a fork made during an X11 call can leave Popen
+    waiting forever on the child. The call has to happen before Tk opens
+    the display.
+    """
+    global _x11_threads_ready
+    if _x11_threads_ready or sys.platform != "linux":
+        return
+
+    _x11_threads_ready = True
+    try:
+        libx11 = ctypes.CDLL("libX11.so.6")
+    except OSError:
+        return
+    libx11.XInitThreads()
+
 
 class ChildConicityApp(tk.Tk):
     def __init__(self):
+        _allow_subprocess_from_tk_threads()
         super().__init__()
         self.title("ChildConicity")
         self.geometry("980x720")
@@ -162,6 +200,7 @@ class ChildConicityApp(tk.Tk):
         self._log_queue = queue.Queue()
         self._busy = False
         self._busy_widgets = []
+        self._after_id = None
         self.protocol("WM_DELETE_WINDOW", self._handle_close)
         self._build_ui()
         self._poll_log_queue()
@@ -797,6 +836,7 @@ class ChildConicityApp(tk.Tk):
         output_dir = self.rated_output_dir.get().strip() or DEFAULT_RATED_OUTPUT_DIR
 
         self._append_log(t("gui.log.iconicity_export_start"))
+        analysis_env = _analysis_environment()
         self._run_in_background(
             lambda: self._run_analysis_worker(
                 mode="rated",
@@ -806,11 +846,18 @@ class ChildConicityApp(tk.Tk):
                 selected_corpora=None,
                 selected_categories=None,
                 type_count_mode=DEFAULT_TYPE_COUNT_MODE,
+                analysis_env=analysis_env,
             )
         )
 
     def _handle_close(self):
         self._is_closing = True
+        if self._after_id is not None:
+            try:
+                self.after_cancel(self._after_id)
+            except tk.TclError:
+                pass
+            self._after_id = None
         self.destroy()
 
     def _initialize_available_data(self):
@@ -1173,6 +1220,7 @@ class ChildConicityApp(tk.Tk):
                 corpora=corpora_text,
             )
         )
+        analysis_env = _analysis_environment()
         self._run_in_background(
             lambda: self._run_analysis_worker(
                 mode=mode,
@@ -1182,6 +1230,7 @@ class ChildConicityApp(tk.Tk):
                 selected_corpora=selected_corpora,
                 selected_categories=selected_categories,
                 type_count_mode=type_count_mode,
+                analysis_env=analysis_env,
             )
         )
 
@@ -1296,6 +1345,7 @@ class ChildConicityApp(tk.Tk):
         selected_corpora,
         selected_categories,
         type_count_mode,
+        analysis_env,
     ):
         writer = _QueueWriter(self._enqueue_log)
 
@@ -1309,6 +1359,7 @@ class ChildConicityApp(tk.Tk):
                     selected_corpora=selected_corpora,
                     selected_categories=selected_categories,
                     type_count_mode=type_count_mode,
+                    analysis_env=analysis_env,
                 )
                 self._report_analysis_result(
                     mode,
@@ -1335,6 +1386,7 @@ class ChildConicityApp(tk.Tk):
         selected_corpora,
         selected_categories,
         type_count_mode,
+        analysis_env,
     ):
         analysis_interpreter = _get_analysis_interpreter(mode, generate_plots)
         if analysis_interpreter is not None:
@@ -1351,6 +1403,7 @@ class ChildConicityApp(tk.Tk):
                 selected_corpora=selected_corpora,
                 selected_categories=selected_categories,
                 type_count_mode=type_count_mode,
+                analysis_env=analysis_env,
             )
 
         raise RuntimeError(t("gui.error.no_interpreter"))
@@ -1365,6 +1418,7 @@ class ChildConicityApp(tk.Tk):
         selected_corpora,
         selected_categories,
         type_count_mode,
+        analysis_env,
     ):
         with tempfile.NamedTemporaryFile(
             delete=False,
@@ -1373,7 +1427,7 @@ class ChildConicityApp(tk.Tk):
             result_path = result_file.name
 
         if mode == "rated":
-            effective_source = self.rated_source_dir.get().strip() or DEFAULT_TYPES_OUTPUT_DIR
+            effective_source = processed_root or DEFAULT_TYPES_OUTPUT_DIR
         else:
             effective_source = processed_root
 
@@ -1423,17 +1477,10 @@ class ChildConicityApp(tk.Tk):
             )
 
         print("Starting external analysis process...")
-        env = os.environ.copy()
-        env.setdefault(
-            "MPLCONFIGDIR",
-            os.path.join(tempfile.gettempdir(), "childconicity_mpl"),
-        )
-        os.makedirs(env["MPLCONFIGDIR"], exist_ok=True)
-
         process = subprocess.Popen(
             command,
             cwd=_project_root(),
-            env=env,
+            env=analysis_env,
             stdout=subprocess.PIPE,
             stderr=subprocess.STDOUT,
             text=True,
@@ -1514,19 +1561,28 @@ class ChildConicityApp(tk.Tk):
         if self._is_closing:
             return
 
-        while True:
-            try:
-                item_type, payload = self._log_queue.get_nowait()
-            except queue.Empty:
-                break
+        try:
+            while True:
+                try:
+                    item_type, payload = self._log_queue.get_nowait()
+                except queue.Empty:
+                    break
 
-            if item_type == "log":
-                self._append_log(payload)
-            elif item_type == "callback":
-                payload()
-
-        if not self._is_closing:
-            self.after(100, self._poll_log_queue)
+                try:
+                    if item_type == "log":
+                        self._append_log(payload)
+                    elif item_type == "callback":
+                        payload()
+                except tk.TclError:
+                    if self._is_closing:
+                        return
+                    raise
+        finally:
+            if not self._is_closing:
+                try:
+                    self._after_id = self.after(100, self._poll_log_queue)
+                except tk.TclError:
+                    pass
 
     def _append_log(self, text):
         self.log_text.insert(tk.END, text)

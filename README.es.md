@@ -1,6 +1,6 @@
 # ChildConicity
 
-[![CI](https://github.com/ChildConicFoundation/ChildConicity/actions/workflows/python-tests.yml/badge.svg?branch=main)](https://github.com/ChildConicFoundation/ChildConicity/actions/workflows/python-tests.yml)
+[![CI](https://github.com/ChildConicFoundation/ChildConicity/actions/workflows/python-tests.yml/badge.svg?branch=develop)](https://github.com/ChildConicFoundation/ChildConicity/actions/workflows/python-tests.yml?query=branch%3Adevelop)
 [![Coverage](https://img.shields.io/badge/coverage-≥80%25-04e762?logo=pytest&logoColor=white)](https://github.com/ChildConicFoundation/ChildConicity#pruebas)
 [![Python](https://img.shields.io/badge/python-3.10+-3776AB?logo=python&logoColor=white)](https://www.python.org/downloads/)
 [![License: BSL-1.0](https://img.shields.io/badge/License-BSL--1.0-0052CC)](LICENSE)
@@ -12,7 +12,7 @@
 [![GUI](https://img.shields.io/badge/interfaz-Tkinter%20GUI-FF6F00)](#uso-recomendado-interfaz-gráfica)
 [![CLI](https://img.shields.io/badge/automatización-CLI%20%7C%20agentes-2ea44f)](#automatización-e-integración-con-agentes-de-ia)
 [![Languages](https://img.shields.io/badge/idiomas-en%20%7C%20es-007ec6)](README.es.md)
-[![Last commit](https://img.shields.io/github/last-commit/ChildConicFoundation/ChildConicity)](https://github.com/ChildConicFoundation/ChildConicity/commits/main)
+[![Last commit](https://img.shields.io/github/last-commit/ChildConicFoundation/ChildConicity/develop)](https://github.com/ChildConicFoundation/ChildConicity/commits/develop)
 [![Issues](https://img.shields.io/github/issues/ChildConicFoundation/ChildConicity)](https://github.com/ChildConicFoundation/ChildConicity/issues)
 
 [🇬🇧 English](README.md) | 🇪🇸 Español
